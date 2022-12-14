@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Markdown Features
@@ -25,19 +25,61 @@ slug: /my-custom-url
 Markdown text with [links](./hello.md)
 ```
 
-## Links
+## Linking documents
 
 Regular Markdown links are supported, using url paths or relative file paths.
 
 ```md
-Let's see how to [Create a page](/create-a-page).
+Let's see how to [Create a page](/create-a-document).
 ```
 
 ```md
-Let's see how to [Create a page](./create-a-page.md).
+Let's see how to [Create a page](./create-a-document.md).
 ```
 
-**Result:** Let's see how to [Create a page](./create-a-page.md).
+**Result:** Let's see how to [Create a page](./create-a-document.md).
+
+
+## Linking headings
+
+You can link to headings in the same document by adding an id to the heading:
+
+```md
+## Level 2 title {#id-level-2}
+
+### Level 3 title {#id-level-3}
+
+#### Level 4 title {#id-level-4}
+```
+
+Go to [Level 2 title](#id-level-2) or [Level 3 title](#id-level-3) or [Level 4 title](#id-level-4).
+
+## Level 2 title {#id-level-2}
+```
+
+
+
+
+
+```
+
+### Level 3 title {#id-level-3}
+```
+
+
+
+
+
+```
+
+#### Level 4 title {#id-level-4}
+```
+
+
+
+
+
+```
 
 ## Images
 
@@ -50,8 +92,6 @@ You can use absolute paths to reference images in the static directory (`static/
 ```
 
 ![Docusaurus logo](/img/docusaurus.png)
-
-You can reference images relative to the current file as well, as shown in [the extra guides](../tutorial-extras/manage-docs-versions.md).
 
 ## Code Blocks
 
@@ -99,48 +139,22 @@ This action is dangerous
 
 :::
 
-## MDX and React Components
+## Quotes
 
-[MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**:
+Markdown quotes are beautifully styled:
 
-```jsx
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`)
-    }}>
-    {children}
-  </span>
-);
-
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
+```md
+> Easy to maintain open source documentation websites.
+>
+> — Docusaurus
 ```
 
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`);
-    }}>
-    {children}
-  </span>
-);
+> Easy to maintain open source documentation websites.
+>
+> — Docusaurus
 
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
 
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
+
+
+
+

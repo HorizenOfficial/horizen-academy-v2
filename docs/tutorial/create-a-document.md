@@ -39,19 +39,26 @@ sidebar_position: 3
 This is my **first Docusaurus document**!
 ```
 
-It is also possible to create your sidebar explicitly in `sidebars.js`:
 
-```js title="sidebars.js"
-module.exports = {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
+## Doc URLs
+
+By default, a document's URL location is its file path relative to the docs folder. Use the slug front matter to change a document's URL.
+
+For example, suppose your site structure looks like this:
+
+```bash
+website # Root directory of your site
+└── docs
+    └── guide
+        └── hello.md
+```
+
+By default hello.md will be available at /docs/guide/hello. You can change its URL location to /docs/bonjour:
+
+```bash
+---
+slug: /bonjour
+---
+
+Lorem ipsum
 ```
