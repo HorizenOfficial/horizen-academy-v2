@@ -8,8 +8,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "proxima-nova";
+  src: local("Proxima-Nova-Thin"),
+    url(/fonts/proxima-nova-thin.otf) format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: local("Proxima-Nova-Light"),
+    url(/fonts/proxima-nova-light.otf) format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: local("Proxima-Nova"),
+    url(/fonts/proxima-nova-normal.otf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: local("Proxima-Nova-Semibold"),
+    url(/fonts/proxima-nova-semibold.otf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: local("Proxima-Nova-Bold"),
+    url(/fonts/proxima-nova-bold.otf) format("truetype");
+  font-weight: 700;
+}
+
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-font-family-base: "proxima-nova";
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -22,7 +58,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
