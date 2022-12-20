@@ -39,7 +39,6 @@ Let's see how to [Create a page](./create-a-document.md).
 
 **Result:** Let's see how to [Create a page](./create-a-document.md).
 
-
 ## Linking headings
 
 You can link to headings in the same document by adding an id to the heading:
@@ -55,6 +54,7 @@ You can link to headings in the same document by adding an id to the heading:
 Go to [Level 2 title](#id-level-2) or [Level 3 title](#id-level-3) or [Level 4 title](#id-level-4).
 
 ## Level 2 title {#id-level-2}
+
 ```
 
 
@@ -64,6 +64,7 @@ Go to [Level 2 title](#id-level-2) or [Level 3 title](#id-level-3) or [Level 4 t
 ```
 
 ### Level 3 title {#id-level-3}
+
 ```
 
 
@@ -73,6 +74,7 @@ Go to [Level 2 title](#id-level-2) or [Level 3 title](#id-level-3) or [Level 4 t
 ```
 
 #### Level 4 title {#id-level-4}
+
 ```
 
 
@@ -107,7 +109,7 @@ Markdown code blocks are supported with Syntax highlighting.
 
 ```jsx title="src/components/HelloDocusaurus.js"
 function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
+    return <h1>Hello, Docusaurus!</h1>
 }
 ```
 
@@ -152,9 +154,3 @@ Markdown quotes are beautifully styled:
 > Easy to maintain open source documentation websites.
 >
 > — Docusaurus
-
-
-
-
-
-

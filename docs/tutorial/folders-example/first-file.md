@@ -10,7 +10,6 @@ This is a ref to the second file: [Second file](./second-file.md)
 
 This is a ref to the first file on the sub folder: [First subfolder file](./sub-tutorials/sub-folder-first-file.md)
 
-
 ## H2
 
 ### H3
