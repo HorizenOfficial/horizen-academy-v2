@@ -5,7 +5,7 @@ import styles from "./styles.module.css"
 type FeatureItem = {
     title: string
     Svg: React.ComponentType<React.ComponentProps<"svg">>
-    description: JSX.Element
+    description: React.ReactElement
 }
 
 const FeatureList: FeatureItem[] = [
@@ -43,7 +43,7 @@ const FeatureList: FeatureItem[] = [
     },
 ]
 
-function Feature({ title, Svg, description }: FeatureItem) {
+const Feature = ({ title, Svg, description }: FeatureItem) => {
     return (
         <div className={clsx("col col--4")}>
             <div className="text--center">
@@ -57,12 +57,13 @@ function Feature({ title, Svg, description }: FeatureItem) {
     )
 }
 
-export default function HomepageFeatures(): JSX.Element {
+const HomepageFeatures = () => {
     return (
         <section className={styles.features}>
             <div className="container">
                 <div className="row">
                     {FeatureList.map((props, idx) => (
+                        // eslint-disable-next-line react/no-array-index-key, react/jsx-props-no-spreading
                         <Feature key={idx} {...props} />
                     ))}
                 </div>
@@ -70,3 +71,5 @@ export default function HomepageFeatures(): JSX.Element {
         </section>
     )
 }
+
+export default HomepageFeatures

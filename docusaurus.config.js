@@ -122,7 +122,9 @@ const config = {
                 name: "docusaurus-tailwindcss",
                 configurePostCss(postcssOptions) {
                     // Appends TailwindCSS and AutoPrefixer.
+                    // eslint-disable-next-line import/no-extraneous-dependencies
                     postcssOptions.plugins.push(require("tailwindcss"))
+                    // eslint-disable-next-line import/no-extraneous-dependencies
                     postcssOptions.plugins.push(require("autoprefixer"))
                     return postcssOptions
                 },
