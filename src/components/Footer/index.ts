@@ -1,0 +1,6 @@
+export { default as FooterCopyright } from "./FooterCopyright"
+export { default as FooterLayout } from "./FooterLayout"
+export { default as FooterLogo } from "./FooterLogo"
+export { default as FooterSocialLinks } from "./FooterSocialLinks"
+export { default as config } from "./config"
+export * from "./types"

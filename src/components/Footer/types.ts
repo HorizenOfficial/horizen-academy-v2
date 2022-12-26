@@ -25,8 +25,8 @@ interface IFooterCopyright {
 
 interface IFooterConfig {
     logo: IFooterImageLink
-    // links: IFooterLinks[];
-    // socialLinks: IFooterSocialLinks[];
+    // links: IFooterLinks;
+    socialLinks: IFooterSocialLinks
     copyright: IFooterCopyright
 }
 
