@@ -5,7 +5,8 @@ module.exports = {
         extend: {
             colors: {
                 "horizen-grey": "#C8CFD4",
-                "horizen-blue-dark": "#0C0C1C",
+                "horizen-blue-dark": "#051331",
+                "horizen-blue-darker": "#0C0C1C",
                 "horizen-blue": "#0E9DE5",
                 "horizen-green": "#26DB8D",
             },
