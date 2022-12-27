@@ -79,6 +79,6 @@
     }
 
     a {
-        @apply text-horizen-blue text-base;
+        @apply text-horizen-blue text-base hover:underline transition-colors duration-150 ease-out;
     }
 }
