@@ -1,8 +1,8 @@
 import React from "react"
-import { IFooterCopyright } from "./types"
+import { IFooterConfig } from "./types"
 
 interface FooterCopyrightProps {
-    data: IFooterCopyright
+    data: IFooterConfig["copyright"]
 }
 
 const FooterCopyright: React.FC<FooterCopyrightProps> = ({ data }) => {
