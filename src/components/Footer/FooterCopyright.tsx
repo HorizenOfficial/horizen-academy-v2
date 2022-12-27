@@ -7,7 +7,7 @@ interface FooterCopyrightProps {
 
 const FooterCopyright: React.FC<FooterCopyrightProps> = ({ data }) => {
     return (
-        <div className="flex items-center flex-col mt-2 sm:mt-24 text-center">
+        <div className="flex items-center flex-col text-center">
             <span className="text-[#a9adba]">{data.text}</span>
             <span className="space-x-2">
                 <a href={data.legal.url} className="text-links">

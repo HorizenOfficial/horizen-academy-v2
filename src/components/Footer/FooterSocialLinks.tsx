@@ -25,10 +25,10 @@ interface FooterSocialLinksProps {
 const FooterSocialLinks: React.FC<FooterSocialLinksProps> = ({ data }) => {
     return (
         <div>
-            <span className="font-bold text-xl text-white capitalize mb-3 block">
+            <span className="font-bold text-xl text-white capitalize mb-3 block text-center sm:text-left">
                 {data.title}
             </span>
-            <div className="grid grid-cols-5 gap-y-4 justify-items-center md:justify-items-start">
+            <div className="grid grid-cols-5 gap-x-4 gap-y-4 justify-items-center sm:justify-items-start">
                 {data.items.map((item, index) => (
                     <FooterSocialLink
                         // eslint-disable-next-line react/no-array-index-key

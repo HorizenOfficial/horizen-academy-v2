@@ -7,7 +7,7 @@ interface FooterLinksProps {
 
 const FooterLinks: React.FC<FooterLinksProps> = ({ data }) => {
     return (
-        <div>
+        <div className="text-center sm:text-left">
             <span className="font-bold text-xl text-white capitalize mb-3 block">
                 {data.title}
             </span>
