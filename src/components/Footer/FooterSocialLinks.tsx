@@ -9,9 +9,9 @@ const FooterSocialLink: React.FC<FooterSocialLinkProps> = ({ data }) => {
     return (
         <a
             href={data.url}
-            target="_blank"
-            rel="noreferrer"
-            className="h-[35px] w-[35px] bg-horizen-blue-darker hover:bg-horizen-blue transition-colors rounded-full grid place-items-center"
+            target={data.openNewTab ? "_blank" : ""}
+            rel="noopener noreferrer"
+            className="h-[35px] w-[35px] bg-horizen-blue-darker hover:bg-horizen-blue rounded-full grid place-items-center"
         >
             <img src={data.imageUrl} alt={data.title} />
         </a>
