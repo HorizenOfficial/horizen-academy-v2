@@ -1,41 +1,25 @@
-interface IFooterLink {
-    title: string
-    url: string
-    openNewTab?: boolean
-}
+import {
+    IRegularLink,
+    IImageLink,
+    IRegularGroup,
+    ISocialGroup,
+} from "./Links/types"
 
 interface IFooterLinks {
-    title: string
-    items: IFooterLink[]
-}
-
-interface IFooterImageLink extends IFooterLink {
-    imageUrl: string
-}
-
-interface IFooterSocialLinks {
-    title: string
-    items: IFooterImageLink[]
+    regular: IRegularGroup[]
+    social: ISocialGroup
 }
 
 interface IFooterCopyright {
     text: string
-    legal: IFooterLink
-    privacyPolicy: IFooterLink
+    legal: IRegularLink
+    privacyPolicy: IRegularLink
 }
 
 interface IFooterConfig {
-    logo: IFooterImageLink
-    links: IFooterLinks[]
-    socialLinks: IFooterSocialLinks
+    logo: IImageLink
+    links: IFooterLinks
     copyright: IFooterCopyright
 }
 
-export type {
-    IFooterConfig,
-    IFooterLink,
-    IFooterLinks,
-    IFooterImageLink,
-    IFooterSocialLinks,
-    IFooterCopyright,
-}
+export type { IFooterConfig, IFooterLinks, IFooterCopyright }

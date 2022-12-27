@@ -1,30 +1,23 @@
 import React from "react"
-import { IFooterLinks } from "./types"
+import RegularLinks from "./Links/RegularLinks"
+import SocialLinks from "./Links/SocialLinks"
+import { IFooterConfig } from "./types"
 
 interface FooterLinksProps {
-    data: IFooterLinks
+    data: IFooterConfig["links"]
 }
 
 const FooterLinks: React.FC<FooterLinksProps> = ({ data }) => {
     return (
-        <div className="text-center sm:text-left">
-            <span className="font-bold text-xl text-white capitalize mb-3 block">
-                {data.title}
-            </span>
-            <ul>
-                {data.items.map((item) => (
-                    <li key={`footer-link-${item.title}`}>
-                        <a
-                            className="text-[#7A7E8C] hover:text-white block mb-2"
-                            href={item.url}
-                            target={item.openNewTab ? "_blank" : ""}
-                            rel="noopener noreferrer"
-                        >
-                            {item.title}
-                        </a>
-                    </li>
-                ))}
-            </ul>
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-y-12 gap-x-8 xl:gap-x-24 xl:flex">
+            {data.regular.map((item, index) => (
+                // eslint-disable-next-line react/no-array-index-key
+                <RegularLinks key={`footer-links-${index}`} data={item} />
+            ))}
+
+            <div className="max-w-[280px] w-full mx-auto sm:mx-0 xl:ml-auto">
+                <SocialLinks data={data.social} />
+            </div>
         </div>
     )
 }
