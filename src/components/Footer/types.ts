@@ -1,6 +1,7 @@
 interface IFooterLink {
     title: string
     url: string
+    openNewTab?: boolean
 }
 
 interface IFooterLinks {
@@ -25,7 +26,7 @@ interface IFooterCopyright {
 
 interface IFooterConfig {
     logo: IFooterImageLink
-    // links: IFooterLinks;
+    links: IFooterLinks[]
     socialLinks: IFooterSocialLinks
     copyright: IFooterCopyright
 }
