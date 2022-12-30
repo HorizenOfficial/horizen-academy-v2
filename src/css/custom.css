@@ -78,3 +78,15 @@
         @apply inline-block align-baseline;
     }
 }
+
+@layer components {
+    .input {
+        @apply border w-full text-base text-white focus:border-horizen-blue leading-6 py-2 pl-5 bg-transparent aria-[invalid=true]:border-red-700;
+    }
+}
+
+@layer utilities {
+    .center {
+        @apply flex justify-center items-center;
+    }
+}
