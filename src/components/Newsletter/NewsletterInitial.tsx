@@ -31,21 +31,20 @@ const NewsletterInitial: React.FC<NewsletterInitialProps> = ({
 
     return (
         <form
-            className="flex items-center justify-center my-auto mx-auto max-w-[400px] lg:max-w-full flex-col lg:flex-row w-full gap-y-8 lg:gap-x-14"
+            className="flex flex-col lg:flex-row gap-x-16 gap-y-8 w-full m-auto max-w-[400px] lg:max-w-full"
             onSubmit={handleSubmit(onSubmit)}
         >
-            <div className="text-white font-bold text-2xl center">
+            <div className="w-full text-white font-bold text-2xl center lg:w-[300px] lg:justify-start">
                 Get the newest updates
             </div>
-
-            <div className="w-full flex flex-grow flex-col gap-y-4 lg:gap-x-3 lg:flex-row">
+            <div className="grow flex flex-col gap-y-4 lg:flex-row lg:gap-x-4">
                 <input
                     {...register("firstName", {
                         required: true,
                     })}
                     type="text"
                     placeholder="First Name"
-                    className="input lg:w-[170px]"
+                    className="input lg:w-[170px] lg:shrink-0"
                     aria-invalid={errors.firstName ? "true" : "false"}
                 />
 
@@ -55,14 +54,10 @@ const NewsletterInitial: React.FC<NewsletterInitialProps> = ({
                     })}
                     type="email"
                     placeholder="Email"
-                    className="input lg:max-w-[490px]"
+                    className="input w-full grow lg:max-w-[490px]"
                     aria-invalid={errors.email ? "true" : "false"}
                 />
-
-                <Button
-                    classname="mx-auto !mt-4 lg:!mt-0 lg:mx-0"
-                    type="submit"
-                >
+                <Button classname="mt-4 mx-auto lg:mx-0 lg:mt-0" type="submit">
                     Subscribe
                 </Button>
             </div>
