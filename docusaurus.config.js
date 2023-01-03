@@ -50,21 +50,40 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             navbar: {
-                title: "My Site",
                 logo: {
                     alt: "My Site Logo",
                     src: "img/logo.svg",
                 },
                 items: [
                     {
+                        href: "/",
+                        label: "Home",
+                        position: "left",
+                    },
+                    {
                         type: "doc",
                         docId: "tutorial/intro",
                         position: "left",
-                        label: "Tutorial",
+                        label: "Articles",
                     },
                     {
-                        href: "https://github.com/HorizenOfficial/horizen-academy-v2",
-                        label: "GitHub",
+                        type: "dropdown",
+                        label: "Community",
+                        position: "left",
+                        items: [
+                            {
+                                label: "Facebook",
+                                href: "https://www.facebook.com",
+                            },
+                            {
+                                label: "Test",
+                                href: "https://www.facebook.com",
+                            },
+                        ],
+                    },
+                    {
+                        href: "https://horizen.io/",
+                        label: "Main Horizen Website",
                         position: "right",
                     },
                 ],
