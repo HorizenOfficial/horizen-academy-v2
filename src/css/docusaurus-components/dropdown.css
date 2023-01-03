@@ -1,0 +1,30 @@
+[data-theme="dark"]:root {
+    --ifm-dropdown-link-color: #c8cfd4;
+    --ifm-dropdown-background-color: var(--ifm-background-color);
+}
+
+.dropdown__menu {
+    border: 0.5px solid white;
+}
+
+.dropdown__link:hover {
+    text-shadow: 0.5px 0 0 currentColor;
+    color: white;
+}
+
+.dropdown__link--active {
+    font-weight: bold;
+    text-shadow: none !important;
+    color: white;
+}
+
+.dropdown .navbar__link::after {
+    all: unset;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.5' fill-rule='evenodd' clip-rule='evenodd' d='M11.3 0.300098C10.9134 -0.0865017 10.2866 -0.0865015 9.9 0.300098L6 4.2001L2.1 0.300097C1.7134 -0.0865019 1.0866 -0.0865018 0.7 0.300098C0.313401 0.686697 0.313401 1.3135 0.7 1.7001L6 7.0001L11.3 1.7001C11.6866 1.3135 11.6866 0.686697 11.3 0.300098Z' fill='%23C8CFD5'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 7.4px;
+    margin-left: 0.3em;
+    content: "";
+    display: inline-block;
+}

@@ -1,0 +1,33 @@
+:root {
+    --ifm-menu-link-sublist-icon: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.65674 8.82837L3.99988 8.82837L6.82831 5.99994L9.65674 8.82837Z' fill='%230E9DE5'/%3E%3C/svg%3E%0A");
+    --menu-link-sublist-icon-collapsed: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.65674 8.82837L3.99988 8.82837L6.82831 5.99994L9.65674 8.82837Z' fill='%237A7E8C'/%3E%3C/svg%3E%0A");
+    --ifm-menu-color-background-active: unset;
+    --ifm-menu-link-sublist-icon-filter: invert(100%) sepia(94%) saturate(17%)
+        hue-rotate(223deg) brightness(104%) contrast(98%);
+}
+
+[data-theme="dark"]:root {
+    --ifm-menu-color: #7a7e8c;
+    --ifm-menu-color-active: white;
+}
+
+.menu__link {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.menu__link:hover,
+.menu__link--active {
+    color: var(--ifm-menu-color-active);
+    font-weight: 500;
+}
+
+.menu__link--sublist {
+    font-weight: bold !important;
+}
+
+/* Dropdown icon */
+.menu__list-item--collapsed .menu__link--sublist:after,
+.menu__list-item--collapsed .menu__caret:before {
+    background-image: var(--menu-link-sublist-icon-collapsed);
+}
