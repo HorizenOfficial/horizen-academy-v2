@@ -1,7 +1,7 @@
 import React, { useCallback } from "react"
 import { useForm } from "react-hook-form"
 import { Button } from "@site/src/components"
-import { TFormData } from "./types"
+import { TFormData } from "../types"
 
 interface NewsletterInitialProps {
     onSubmit: (data: TFormData) => void
@@ -57,7 +57,7 @@ const NewsletterInitial: React.FC<NewsletterInitialProps> = ({
                     className="input w-full grow lg:max-w-[490px]"
                     aria-invalid={errors.email ? "true" : "false"}
                 />
-                <Button classname="mt-4 mx-auto lg:mx-0 lg:mt-0" type="submit">
+                <Button className="mt-4 mx-auto lg:mx-0 lg:mt-0" type="submit">
                     Subscribe
                 </Button>
             </div>
