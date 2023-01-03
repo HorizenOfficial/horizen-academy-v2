@@ -1,6 +1,6 @@
 /* eslint-disable react/button-has-type */
 import React from "react"
-import { twMerge } from "tailwind-merge"
+import { clsx } from "clsx"
 
 interface ButtonProps {
     children?: React.ReactNode
@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
 
     return (
         <button
-            className={twMerge(
+            className={clsx(
                 baseClassname,
                 capitalLetters && "uppercase",
                 classnameProp

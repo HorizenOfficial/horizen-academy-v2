@@ -4,46 +4,9 @@
  * work well for content-centric websites.
  */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("./fonts.css");
 
 @import url("./docusaurus-components");
-
-@font-face {
-    font-family: "proxima-nova";
-    src: local("Proxima-Nova-Thin"),
-        url(/fonts/proxima-nova-thin.otf) format("truetype");
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: "proxima-nova";
-    src: local("Proxima-Nova-Light"),
-        url(/fonts/proxima-nova-light.otf) format("truetype");
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "proxima-nova";
-    src: local("Proxima-Nova"),
-        url(/fonts/proxima-nova-normal.otf) format("truetype");
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "proxima-nova";
-    src: local("Proxima-Nova-Semibold"),
-        url(/fonts/proxima-nova-semibold.otf) format("truetype");
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "proxima-nova";
-    src: local("Proxima-Nova-Bold"),
-        url(/fonts/proxima-nova-bold.otf) format("truetype");
-    font-weight: 700;
-}
 
 html {
     /* undoing what tailwind broke */
@@ -68,26 +31,4 @@ html {
     --ifm-color-primary-lighter: rgb(255, 0, 0);
     --ifm-color-primary-lightest: rgb(255, 0, 0);
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-}
-
-@layer base {
-    svg {
-        @apply inline-block align-baseline;
-    }
-
-    a {
-        @apply text-horizen-blue text-base hover:underline transition-colors duration-150 ease-out;
-    }
-}
-
-@layer components {
-    .input {
-        @apply border w-full text-base text-white focus:border-horizen-blue leading-6 py-2 pl-5 bg-transparent aria-[invalid=true]:border-red-700;
-    }
-}
-
-@layer utilities {
-    .center {
-        @apply flex justify-center items-center;
-    }
 }
