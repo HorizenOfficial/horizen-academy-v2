@@ -67,10 +67,27 @@ html {
     --ifm-color-primary-light: rgb(255, 0, 0);
     --ifm-color-primary-lighter: rgb(255, 0, 0);
     --ifm-color-primary-lightest: rgb(255, 0, 0);
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 @layer base {
     svg {
         @apply inline-block align-baseline;
+    }
+
+    a {
+        @apply text-horizen-blue text-base hover:underline transition-colors duration-150 ease-out;
+    }
+}
+
+@layer components {
+    .input {
+        @apply border w-full text-base text-white focus:border-horizen-blue leading-6 py-2 pl-5 bg-transparent aria-[invalid=true]:border-red-700;
+    }
+}
+
+@layer utilities {
+    .center {
+        @apply flex justify-center items-center;
     }
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import React from "react"
 import { twMerge } from "tailwind-merge"
 
@@ -6,6 +7,8 @@ interface ButtonProps {
     classname?: string
     capitalLetters?: boolean
     onClick?: () => void
+    type?: React.ButtonHTMLAttributes<HTMLButtonElement>["type"]
+    disabled?: boolean
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -13,8 +16,10 @@ const Button: React.FC<ButtonProps> = ({
     classname: classnameProp,
     onClick,
     capitalLetters = true,
+    type = "button",
+    disabled = false,
 }) => {
-    const baseClassname = `relative after:absolute after:w-2 after:h-full after:border-2 after:top-0 before:top-0
+    const baseClassname = `relative block after:absolute after:w-2 after:h-full after:border-2 after:top-0 before:top-0
     after:right-0 after:border-l-0 before:border-horizen-blue before:absolute before:w-2 before:h-full 
     before:border-2 before:left-0 before:border-r-0 after:border-horizen-blue hover:before:border-horizen-green hover:after:border-horizen-green 
     disabled:after:border-horizen-grey disabled:before:border-horizen-grey
@@ -29,7 +34,8 @@ const Button: React.FC<ButtonProps> = ({
                 classnameProp
             )}
             onClick={onClick}
-            type="button"
+            type={type}
+            disabled={disabled}
         >
             {children}
         </button>

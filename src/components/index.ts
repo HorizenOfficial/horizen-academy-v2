@@ -1,2 +1,4 @@
+export { default as Button } from "./Button"
+export * from "./Footer"
 export { default as HomepageFeatures } from "./HomepageFeatures"
-export { default as button } from "./button"
+export * from "./Newsletter"

@@ -63,7 +63,7 @@ const HomepageFeatures = () => {
             <div className="container">
                 <div className="row">
                     {FeatureList.map((props, idx) => (
-                        // eslint-disable-next-line react/no-array-index-key, react/jsx-props-no-spreading
+                        // eslint-disable-next-line react/jsx-props-no-spreading
                         <Feature key={idx} {...props} />
                     ))}
                 </div>
