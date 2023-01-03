@@ -1,4 +1,4 @@
-import { Newsletter } from "@site/src/components"
+import { Newsletter, Footer } from "@site/src/components"
 import React from "react"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
@@ -8,6 +8,7 @@ const FooterWrapper = () => {
     return (
         <QueryClientProvider client={queryClient}>
             <Newsletter />
+            <Footer />
         </QueryClientProvider>
     )
 }
