@@ -14,13 +14,8 @@
     width: 260px;
 }
 
-.navbar__link:hover {
-    text-shadow: 0.5px 0 0 currentColor;
-}
-
 .navbar__link--active {
     font-weight: bold;
-    text-shadow: none !important;
 }
 
 .navbar-sidebar__back {
