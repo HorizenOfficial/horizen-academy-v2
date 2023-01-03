@@ -13,7 +13,6 @@ const SocialLinks: React.FC<SocialLinksProps> = ({ data }) => {
             </span>
             <ul className="grid grid-cols-5 gap-x-4 gap-y-4 justify-items-center sm:justify-items-start">
                 {data.items.map((item, index) => (
-                    // eslint-disable-next-line react/no-array-index-key
                     <li key={`footer-social-link-${index}`}>
                         <a
                             href={item.url}

@@ -11,7 +11,6 @@ const FooterLinks: React.FC<FooterLinksProps> = ({ data }) => {
     return (
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-y-12 gap-x-8 xl:gap-x-24 xl:flex">
             {data.regular.map((item, index) => (
-                // eslint-disable-next-line react/no-array-index-key
                 <RegularLinks key={`footer-links-${index}`} data={item} />
             ))}
 
