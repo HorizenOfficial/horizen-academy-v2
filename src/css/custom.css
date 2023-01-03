@@ -13,6 +13,13 @@ html {
     font: var(--ifm-font-size-base) / var(--ifm-line-height-base)
         var(--ifm-font-family-base);
 }
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
 /* You can override the default Infima variables here. */
 :root {
     --ifm-font-family-base: "proxima-nova", sans-serif;

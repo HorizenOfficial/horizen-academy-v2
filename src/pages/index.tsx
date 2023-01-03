@@ -4,8 +4,8 @@ import Link from "@docusaurus/Link"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import HomepageFeatures from "@site/src/components/HomepageFeatures"
 import Layout from "@theme/Layout"
+import { Button } from "@site/src/components"
 import styles from "./index.module.css"
-import Button from "../components/Button"
 
 const HomepageHeader = () => {
     const { siteConfig } = useDocusaurusContext()

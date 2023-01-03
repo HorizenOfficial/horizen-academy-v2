@@ -1,6 +1,6 @@
 import React, { useCallback } from "react"
 import { useForm } from "react-hook-form"
-import Button from "@site/src/components/Button"
+import { Button } from "@site/src/components"
 import { TFormData } from "./types"
 
 interface NewsletterInitialProps {
