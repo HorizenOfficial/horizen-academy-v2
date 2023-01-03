@@ -1,6 +1,6 @@
 import React from "react"
 import { Loader } from "@site/src/components"
-import styles from "./newsletter.styles.module.css"
+import styles from "./Newsletter.module.css"
 
 const NewsletterLoading = () => {
     return (

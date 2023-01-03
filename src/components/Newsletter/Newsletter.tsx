@@ -1,11 +1,11 @@
 import React from "react"
 import clsx from "clsx"
-import NewsletterSuccess from "./newsletter-success"
-import NewsletterError from "./newsletter-error"
-import NewsletterLoading from "./newsletter-loading"
-import { NewsletterInitial } from "./newsletter-initial"
-import useNewsletter, { NEWSLETTER_STATUS } from "./useNewsletter"
-import styles from "./newsletter.styles.module.css"
+import NewsletterSuccess from "./NewsletterSuccess"
+import NewsletterError from "./NewsletterError"
+import NewsletterLoading from "./NewsletterLoading"
+import NewsletterInitial from "./NewsletterInitial"
+import useNewsletter, { NEWSLETTER_STATUS } from "./Newsletter.hooks"
+import styles from "./Newsletter.module.css"
 
 const Newsletter = () => {
     const { sendData, status } = useNewsletter()

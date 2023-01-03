@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./newsletter.styles.module.css"
+import styles from "./Newsletter.module.css"
 
 const NewsletterError = () => {
     return (
