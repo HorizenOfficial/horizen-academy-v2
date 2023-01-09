@@ -4,7 +4,7 @@ const config: IFooterConfig = {
     logo: {
         title: "Logo",
         url: "/",
-        imageUrl: "/img/logo.svg",
+        imageUrl: "/img/horizen-logo.svg",
     },
     copyright: {
         text: `© ${new Date().getFullYear()} Horizen. All Rights Reserved.`,
