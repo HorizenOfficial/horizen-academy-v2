@@ -1,7 +1,11 @@
 import React, { useCallback } from "react"
 import { useForm } from "react-hook-form"
 import { Button } from "@site/src/components"
+import clsx from "clsx"
 import { TFormData } from "./Newsletter.types"
+import Input from "../Input/Input"
+import commonStyles from "./Newsletter.module.css"
+import styles from "./NewsletterInitial.module.css"
 
 interface NewsletterInitialProps {
     onSubmit: (data: TFormData) => void
@@ -31,33 +35,41 @@ const NewsletterInitial: React.FC<NewsletterInitialProps> = ({
 
     return (
         <form
-            className="flex flex-col lg:flex-row gap-x-16 gap-y-8 w-full m-auto max-w-[400px] lg:max-w-full"
+            className={styles.newsletter_initial}
             onSubmit={handleSubmit(onSubmit)}
         >
-            <div className="w-full text-white font-bold text-2xl center lg:w-[300px] lg:justify-start">
+            <div
+                className={clsx(
+                    commonStyles.newsletter__heading,
+                    styles.newsletter_initial__heading
+                )}
+            >
                 Get the newest updates
             </div>
-            <div className="grow flex flex-col gap-y-4 lg:flex-row lg:gap-x-4">
-                <input
+            <div className={styles.newsletter_initial__body}>
+                <Input
                     {...register("firstName", {
                         required: true,
                     })}
                     type="text"
                     placeholder="First Name"
-                    className="input lg:w-[170px] lg:shrink-0"
+                    className={styles.newsletter_initial__input_name}
                     aria-invalid={errors.firstName ? "true" : "false"}
                 />
 
-                <input
+                <Input
                     {...register("email", {
                         required: true,
                     })}
                     type="email"
                     placeholder="Email"
-                    className="input w-full grow lg:max-w-[490px]"
+                    className={styles.newsletter_initial__input_email}
                     aria-invalid={errors.email ? "true" : "false"}
                 />
-                <Button className="mt-4 mx-auto lg:mx-0 lg:mt-0" type="submit">
+                <Button
+                    className={styles.newsletter_initial__button}
+                    type="submit"
+                >
                     Subscribe
                 </Button>
             </div>
