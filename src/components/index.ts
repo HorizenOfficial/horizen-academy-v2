@@ -1,5 +1,6 @@
 export * from "./button"
 export * from "./loader"
 export * from "./Newsletter"
+export * from "./Input"
 export * from "./Footer"
 export { default as HomepageFeatures } from "./HomepageFeatures"

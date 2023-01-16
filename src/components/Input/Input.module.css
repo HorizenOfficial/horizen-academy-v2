@@ -1,0 +1,30 @@
+:root {
+    --c-red: #b91c1c;
+    --c-blue: #00a8ff;
+
+    --input-text-c: white;
+    --input-border-c: white;
+    --input-hover-border-c: var(--c-blue);
+    --input-error-border-c: var(--c-red);
+    --input-bg-c: transparent;
+}
+
+.input {
+    font-size: 16px;
+    padding: 8px 0;
+    padding-left: 20px;
+    display: block;
+    border: 1px solid var(--input-border-c);
+    background-color: var(--input-bg-c);
+    color: var(--input-text-c);
+}
+
+.input:focus,
+.input:hover,
+.input:active {
+    border-color: var(--input-hover-border-c);
+}
+
+.input[aria-invalid="true"] {
+    border-color: var(--input-error-border-c) !important;
+}
