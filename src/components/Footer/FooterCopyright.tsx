@@ -1,5 +1,6 @@
 import React from "react"
 import { IFooterConfig } from "./types"
+import styles from "./FooterCopyright.module.css"
 
 interface FooterCopyrightProps {
     data: IFooterConfig["copyright"]
@@ -7,13 +8,13 @@ interface FooterCopyrightProps {
 
 const FooterCopyright: React.FC<FooterCopyrightProps> = ({ data }) => {
     return (
-        <div className="flex items-center flex-col text-center">
-            <span className="text-[#a9adba]">{data.text}</span>
-            <span className="space-x-2">
+        <div className={styles.footer_copyright}>
+            <span>{data.text}</span>
+            <span className={styles.footer_copyright__links}>
                 <a href={data.legal.url} className="text-links">
                     {data.legal.title}
                 </a>
-                <span className="text-[#a9adba]">|</span>
+                |
                 <a href={data.privacyPolicy.url} className="text-links">
                     {data.privacyPolicy.title}
                 </a>

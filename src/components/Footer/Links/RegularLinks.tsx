@@ -1,5 +1,6 @@
 import React from "react"
 import { IRegularGroup } from "./types"
+import styles from "./RegularLinks.module.css"
 
 interface RegularLinksProps {
     data: IRegularGroup
@@ -7,15 +8,13 @@ interface RegularLinksProps {
 
 const RegularLinks: React.FC<RegularLinksProps> = ({ data }) => {
     return (
-        <div className="text-center sm:text-left">
-            <span className="font-bold text-xl text-white capitalize mb-3 block">
-                {data.title}
-            </span>
-            <ul>
+        <div className={styles.regular_links}>
+            <div className={styles.regular_links__title}>{data.title}</div>
+            <ul className={styles.regular_links__links}>
                 {data.items.map((item) => (
                     <li key={`footer-link-${item.title}`}>
                         <a
-                            className="text-[#7A7E8C] hover:text-white block mb-2"
+                            className={styles.regular_links__link}
                             href={item.url}
                             target={item.openNewTab ? "_blank" : ""}
                             rel="noopener noreferrer"

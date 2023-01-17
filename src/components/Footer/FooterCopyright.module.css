@@ -1,0 +1,12 @@
+.footer_copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #a9adba;
+}
+
+.footer_copyright__links {
+    display: flex;
+    column-gap: 8px;
+}

@@ -2,6 +2,7 @@ import React from "react"
 import RegularLinks from "./Links/RegularLinks"
 import SocialLinks from "./Links/SocialLinks"
 import { IFooterConfig } from "./types"
+import styles from "./FooterLinks.module.css"
 
 interface FooterLinksProps {
     data: IFooterConfig["links"]
@@ -9,12 +10,12 @@ interface FooterLinksProps {
 
 const FooterLinks: React.FC<FooterLinksProps> = ({ data }) => {
     return (
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-y-12 gap-x-8 xl:gap-x-24 xl:flex">
+        <div className={styles.footer_links}>
             {data.regular.map((item, index) => (
                 <RegularLinks key={`footer-links-${index}`} data={item} />
             ))}
 
-            <div className="max-w-[280px] w-full mx-auto sm:mx-0 xl:ml-auto">
+            <div className={styles.footer_links__social}>
                 <SocialLinks data={data.social} />
             </div>
         </div>

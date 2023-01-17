@@ -1,5 +1,6 @@
 import React from "react"
 import { IFooterConfig } from "./types"
+import styles from "./FooterLogo.module.css"
 
 interface FooterLogoProps {
     data: IFooterConfig["logo"]
@@ -7,10 +8,7 @@ interface FooterLogoProps {
 
 const FooterLogo: React.FC<FooterLogoProps> = ({ data }) => {
     return (
-        <a
-            href={data.url}
-            className="h-[58px] w-[169px] flex items-center justify-center"
-        >
+        <a href={data.url} className={styles.footer_logo}>
             <img src={data.imageUrl} alt={data.title} />
         </a>
     )
