@@ -1,14 +1,10 @@
 :root {
-    --c-blue: #00a8ff;
-    --c-green: #00ff9d;
-    --c-grey: #bfbfbf;
-
     --btn-text-c: white;
-    --btn-text-disabled-c: var(--c-grey);
+    --btn-text-disabled-c: var(--c-grey-dark);
     --btn-bg-c: transparent;
     --btn-border-c: var(--c-blue);
     --btn-hover-border-c: var(--c-green);
-    --btn-disabled-border-c: var(--c-grey);
+    --btn-disabled-border-c: var(--c-grey-dark);
 }
 
 .btn {

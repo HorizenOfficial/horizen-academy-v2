@@ -1,6 +1,5 @@
 :root {
-    --c-grey: #7a7e8c;
-    --footer-regular-link-color: var(--c-grey);
+    --footer-regular-link-color: var(--c-grey-dark);
     --footer-regular-link-color-hover: white;
 }
 
@@ -30,8 +29,12 @@
 
 .regular_links__link {
     color: var(--footer-regular-link-color);
+    margin-bottom: 8px;
+    display: inline-block;
+    font-weight: 500;
 }
 
 .regular_links__link:hover {
     color: var(--footer-regular-link-color-hover);
+    text-decoration: none;
 }

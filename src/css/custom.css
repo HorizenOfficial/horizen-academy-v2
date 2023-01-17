@@ -22,15 +22,23 @@ html {
 
 /* You can override the default Infima variables here. */
 :root {
+    --c-blue: #0e9de5;
+    --c-blue-dark: #051331;
+    --c-blue-darker: #0c1326;
+    --c-blue-darkest: #0c0c1c;
+    --c-green: #26db8d;
+    --c-grey: #c8cfd4;
+    --c-grey-dark: #7a7e8c;
+    --c-red: #b91c1c;
     --ifm-font-family-base: "proxima-nova", sans-serif;
     --ifm-global-radius: 0rem;
 }
 
 [data-theme="dark"]:root {
-    --ifm-background-color: #0c0c1c;
-    --ifm-background-surface-color: #0c1326;
+    --ifm-background-color: var(--c-blue-darkest);
+    --ifm-background-surface-color: var(--c-blue-darker);
     --ifm-hover-overlay: unset;
-    --ifm-color-primary: #0e9de5;
+    --ifm-color-primary: var(--c-blue);
     --ifm-color-primary-dark: rgb(255, 0, 0);
     --ifm-color-primary-darker: rgb(255, 0, 0);
     --ifm-color-primary-darkest: rgb(255, 0, 0);

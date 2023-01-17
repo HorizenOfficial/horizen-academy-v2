@@ -1,9 +1,6 @@
 :root {
-    --c-blue: #00b0ff;
-    --c-gray: #e0e0e0;
-
     --loader-c: var(--c-blue);
-    --loader-bg-c: var(--c-gray);
+    --loader-bg-c: var(--c-grey);
 }
 
 .loader {

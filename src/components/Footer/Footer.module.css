@@ -1,6 +1,5 @@
 :root {
-    --c-dark-blue: #0a0a23;
-    --footer-bg-color: var(--c-dark-blue);
+    --footer-bg-color: var(--c-blue-dark);
 }
 
 .footer {

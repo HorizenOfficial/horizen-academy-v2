@@ -1,7 +1,4 @@
 :root {
-    --c-red: #b91c1c;
-    --c-blue: #00a8ff;
-
     --input-text-c: white;
     --input-border-c: white;
     --input-hover-border-c: var(--c-blue);

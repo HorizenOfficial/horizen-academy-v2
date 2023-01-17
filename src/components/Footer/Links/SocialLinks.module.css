@@ -1,6 +1,6 @@
 :root {
-    --footer-social-link-color: #0c0c1c;
-    --footer-social-link-color-hover: #0e9de5;
+    --footer-social-link-color: var(--c-blue-darkest);
+    --footer-social-link-color-hover: var(--c-blue);
 }
 
 .social_links__title {

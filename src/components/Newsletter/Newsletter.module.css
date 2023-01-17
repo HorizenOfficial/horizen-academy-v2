@@ -1,8 +1,5 @@
-::root {
-    --c-grey: #bfbfbf;
-    --c-dark-blue: #0a0a0a;
-
-    --newsletter-bg-c: var(--c-dark-blue);
+:root {
+    --newsletter-bg-c: transparent;
     --newsletter-heading-c: #fff;
     --newsletter-body-c: var(--c-grey);
 }
@@ -43,5 +40,5 @@
 .newsletter__body {
     line-height: 1.75rem;
     font-size: 1.125rem;
-    color: var(--newsletter-heading-c);
+    color: var(--newsletter-body-c);
 }

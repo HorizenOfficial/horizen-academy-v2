@@ -1,9 +1,13 @@
+:root {
+    --copyright-c: #a9adba;
+}
+
 .footer_copyright {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    color: #a9adba;
+    color: var(--copyright-c);
 }
 
 .footer_copyright__links {
