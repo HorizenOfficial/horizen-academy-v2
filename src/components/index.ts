@@ -1,4 +1,4 @@
-export * from "./button"
+export * from "./Button"
 export * from "./loader"
 export * from "./Newsletter"
 export * from "./Input"
