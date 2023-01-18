@@ -1,5 +1,5 @@
 export * from "./Button"
-export * from "./loader"
+export * from "./Loader"
 export * from "./Newsletter"
 export * from "./Input"
 export * from "./Footer"
