@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 37
 sidebar_label: MultiSig
 title: What is MultiSig? - Multi-Signature
 slug: /multisig/
 description: In order to spend a UTXO, a valid cryptographic signature is required. Multi-signature transactions, or MultiSig, rely on more than one signature.
+image: /img/multisig/multisig-meta.jpg
 
 ---
 
@@ -11,11 +13,11 @@ description: In order to spend a UTXO, a valid cryptographic signature is requir
 
 ## MultiSig Functionality
 
-In order to spend an [*Unspent Transaction Output* (UTXO)]({{ site.baseurl }}{% post_url /technology/expert/2022-04-02-utxo-vs-account-model %}), a valid cryptographic signature is required. It can only be provided if the private key corresponding to the address the UTXO was sent to is known. 
+In order to spend an [Unspent Transaction Output](https://www.horizen.io/academy/utxo-vs-account-model/), a valid cryptographic signature is required. It can only be provided if the private key corresponding to the [address](https://www.horizen.io/academy/wallet-addresses/) the UTXO was sent to is known. 
 
 Most transactions have a single digital signature attached and hence we could call them **single signature transactions**.
 
-Most blockchains also support a more complex transaction verification type based on _several digital signatures_. These **multi-signature transactions,** mostly called *MultiSig**, rely on more than one signature. 
+Most blockchains also support a more complex transaction verification type based on _several digital signatures_. These **multi-signature transactions,** mostly called **MultiSig**, rely on more than one signature. 
 
 Generally speaking, multi signature accounts follow an **M-of-N scheme**:
 - **N** is the total number of keys that can provide valid signatures
@@ -29,7 +31,7 @@ There are several useful applications for MultiSig accounts.
 
 _For instance_, a married couple could have _two_ individual private keys and _two_ types of _Multi Signature, or MultiSig_, accounts. 
 
-- One account could act as a spending account**, meaning either one of the two private keys can initiate a transaction. 
+- One account could act as a **spending account**, meaning either one of the two private keys can initiate a transaction. 
 
 - The other account could act as a **savings account**, which would require _both_ keys to sign off before sending any outgoing transactions.
 
@@ -54,9 +56,13 @@ As long as you have access _to two of your keys_, you will always be able to rec
 
 The spending conditions of a UTXO are defined in the _pubkey script_. It essentially determines the verification process of the transaction.
 
+![single sig spending](/img/multisig/single-sig-spending.jpg)
+
 A regular “single-signature” transaction _only_ involves the verification of one signature. 
 
 The **Pubkey Script** is based on the public key that the money is sent to. The _digital signature_ that can authorize spending of this money must be based on the corresponding private key.
+
+![multisig transaction](/img/payment-channels/multisig-transaction.jpg)
 
 The spending conditions for MultiSig transactions are defined in a so-called _redeem script_. 
 
@@ -70,13 +76,15 @@ Redeem scripts can also involve other conditions, such as a time-sensitive compo
 
 Imagine Alice bought ZEN on an exchange and wants to store them using a MultiSig setup. This means she needs to create a multi signature address and withdraw her funds to it.
 
+![creating a multisig address](/img/multisig/creating-a-multisig-address.jpg)
+
 1. First, she _generates_ a set of **private keys**. The number of keys generated depends on the MultiSig scheme she wants to use. 
 	- Let’s assume she wants to setup a simple _1-of-2 scheme_, she generates two keys, either one of which is sufficient to authorize a transaction.
 2. Next, she _creates_ the **redeem script_**. It contains the information about the scheme used, _1-of-2_ in Alice’s case, and the two public keys corresponding to the two private keys generated in the _first_ step.
 3. Third, she _hashes_ the **redeem script**. The hash of the redeem script is encoded into a **P2SH** address.
 4. Lastly, she _withdraws_ her _money_ from the exchange to her **P2SH** address.
 
-There are several wallet implementations that offer multi signature support. This means, the wallet takes care of generating the keys and generating the redeem script. 
+There are several [wallet implementations](https://www.horizen.io/academy/crypto-wallets/) that offer multi signature support. This means, the wallet takes care of generating the keys and generating the redeem script. 
 
 It also stores the _unhashed_ redeem script. This is necessary because one needs to provide the redeem script to be able to spend the funds. 
 
@@ -88,13 +96,15 @@ It is also possible to regenerate it on demand, based on the **N** defined publi
 
 Verification of a transaction from a _P2SH_ address involves checking if the redeem script hashes to the redeem script hash included in the _UTXO’s_ pubkey script. 
 
+![spending p2sh](/img/multisig/spending-p2sh.jpg)
+
 In a second step, they will verify if the provided digital signature(s) satisfy the public key-based spending conditions included in the full redeem script.
 
 **To spend from a P2SH address, the following steps are necessary:**
 
 1. First, Alice will use the UTXO from the funding transaction and use it as an input to her spending transaction.
 2. Second, she places the full redeem script in the signature script part of the output.
-3. Third, she creates the required amount of digital signatures using her private keys. 
+3. Third, she creates the required amount of [digital signatures](https://www.horizen.io/academy/digital-signatures/) using her private keys. 
 	- If we follow the example from above, she is using a **1-of-2** signature scheme and a single signatures created with either key **A** or **B** will suffice.
 4. Lastly, the transaction is broadcast to the network.
 
@@ -110,7 +120,7 @@ The first is called **Merkelized Abstract Syntax Trees** (_MAST_).
 
 Here, the spending conditions are arranged in a _merkle tree_ structure and the _merkle root_ is included instead of the redeem script hash. 
 
-By providing the fulfilled scrip conditions, _redeemScripts_, and the _merkle path_, a node can verify if a transaction is valid but _does not learn_ anything about the other unfulfilled spending conditions.
+By providing the fulfilled scrip conditions, _redeemScripts_, and the _merkle path_, a [node](https://www.horizen.io/academy/nodes/) can verify if a transaction is valid but _does not learn_ anything about the other unfulfilled spending conditions.
 
 ### Shnorr
 
