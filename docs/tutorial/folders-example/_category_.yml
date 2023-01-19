@@ -1,5 +1,0 @@
-position: 5 # Position in the menu
-label: Folders Example # Label in the menu
-link:
-  type: generated-index # no need to change this
-  title: Check your browser's tab # Title of the page for this folder
