@@ -4,63 +4,41 @@
  * work well for content-centric websites.
  */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("./fonts.css");
 
 @import url("./docusaurus-components");
-
-@font-face {
-    font-family: "proxima-nova";
-    src: local("Proxima-Nova-Thin"),
-        url(/fonts/proxima-nova-thin.otf) format("truetype");
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: "proxima-nova";
-    src: local("Proxima-Nova-Light"),
-        url(/fonts/proxima-nova-light.otf) format("truetype");
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "proxima-nova";
-    src: local("Proxima-Nova"),
-        url(/fonts/proxima-nova-normal.otf) format("truetype");
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "proxima-nova";
-    src: local("Proxima-Nova-Semibold"),
-        url(/fonts/proxima-nova-semibold.otf) format("truetype");
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "proxima-nova";
-    src: local("Proxima-Nova-Bold"),
-        url(/fonts/proxima-nova-bold.otf) format("truetype");
-    font-weight: 700;
-}
 
 html {
     /* undoing what tailwind broke */
     font: var(--ifm-font-size-base) / var(--ifm-line-height-base)
         var(--ifm-font-family-base);
 }
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
 /* You can override the default Infima variables here. */
 :root {
+    --c-blue: #0e9de5;
+    --c-blue-dark: #051331;
+    --c-blue-darker: #0c1326;
+    --c-blue-darkest: #0c0c1c;
+    --c-green: #26db8d;
+    --c-grey: #c8cfd4;
+    --c-grey-dark: #7a7e8c;
+    --c-red: #b91c1c;
     --ifm-font-family-base: "proxima-nova", sans-serif;
     --ifm-global-radius: 0rem;
 }
 
 [data-theme="dark"]:root {
-    --ifm-background-color: #0c0c1c;
-    --ifm-background-surface-color: #0c1326;
+    --ifm-background-color: var(--c-blue-darkest);
+    --ifm-background-surface-color: var(--c-blue-darker);
     --ifm-hover-overlay: unset;
-    --ifm-color-primary: #0e9de5;
+    --ifm-color-primary: var(--c-blue);
     --ifm-color-primary-dark: rgb(255, 0, 0);
     --ifm-color-primary-darker: rgb(255, 0, 0);
     --ifm-color-primary-darkest: rgb(255, 0, 0);
@@ -68,26 +46,4 @@ html {
     --ifm-color-primary-lighter: rgb(255, 0, 0);
     --ifm-color-primary-lightest: rgb(255, 0, 0);
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-}
-
-@layer base {
-    svg {
-        @apply inline-block align-baseline;
-    }
-
-    a {
-        @apply text-horizen-blue text-base hover:underline transition-colors duration-150 ease-out;
-    }
-}
-
-@layer components {
-    .input {
-        @apply border w-full text-base text-white focus:border-horizen-blue leading-6 py-2 pl-5 bg-transparent aria-[invalid=true]:border-red-700;
-    }
-}
-
-@layer utilities {
-    .center {
-        @apply flex justify-center items-center;
-    }
 }

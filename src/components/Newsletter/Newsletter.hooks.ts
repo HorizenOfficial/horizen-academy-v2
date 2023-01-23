@@ -1,7 +1,7 @@
 import { useMutation } from "@tanstack/react-query"
 import axios from "axios"
 import { useCallback, useState } from "react"
-import { TFormData } from "./types"
+import { TFormData } from "./Newsletter.types"
 
 enum NEWSLETTER_STATUS {
     INITIAL,

@@ -1,0 +1,40 @@
+:root {
+    --footer-regular-link-color: var(--c-grey-dark);
+    --footer-regular-link-color-hover: white;
+}
+
+.regular_links {
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .regular_links {
+        text-align: left;
+    }
+}
+
+.regular_links__title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+.regular_links__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.regular_links__link {
+    color: var(--footer-regular-link-color);
+    margin-bottom: 8px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.regular_links__link:hover {
+    color: var(--footer-regular-link-color-hover);
+    text-decoration: none;
+}

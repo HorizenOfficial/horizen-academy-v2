@@ -1,12 +1,13 @@
 import React from "react"
+import styles from "./Newsletter.module.css"
 
 const NewsletterError = () => {
     return (
-        <div className="flex-grow text-center">
-            <div className="text-white font-bold text-2xl">
+        <div className={styles.newsletter__inner}>
+            <div className={styles.newsletter__heading}>
                 Looks like something went wrong.
             </div>
-            <div className="text-lg text-horizen-grey">
+            <div className={styles.newsletter__body}>
                 Please try again later.
             </div>
         </div>

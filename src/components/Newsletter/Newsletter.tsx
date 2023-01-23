@@ -1,16 +1,18 @@
 import React from "react"
+import clsx from "clsx"
 import NewsletterSuccess from "./NewsletterSuccess"
 import NewsletterError from "./NewsletterError"
 import NewsletterLoading from "./NewsletterLoading"
 import NewsletterInitial from "./NewsletterInitial"
-import useNewsletter, { NEWSLETTER_STATUS } from "./useNewsletter"
+import useNewsletter, { NEWSLETTER_STATUS } from "./Newsletter.hooks"
+import styles from "./Newsletter.module.css"
 
 const Newsletter = () => {
     const { sendData, status } = useNewsletter()
 
     return (
-        <div className="border-t border-b bg-horizen-blue-dark border-white pt-6 pb-9 lg:py-0">
-            <div className="container center lg:h-[114px]">
+        <div className={styles.newsletter}>
+            <div className={clsx("container", styles.newsletter__container)}>
                 {status === NEWSLETTER_STATUS.INITIAL && (
                     <NewsletterInitial onSubmit={sendData} />
                 )}
