@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: Selfish Mining
+title: What is Selfish Mining?
+slug: /selfish-mining/
+description: The general idea of selfish mining is to selectively publish blocks to increase revenue in the long term.
+
+---
+
+# What is Selfish Mining?
 
 It is assumed that most miners are rational, meaning they don't mind following the protocol as long as it is the most profitable strategy. 
 

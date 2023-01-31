@@ -1,7 +1,17 @@
-﻿
+﻿---
+
+sidebar_label: Blockchain Components 
+title: The Components of Blockchain
+slug: /components-of-blockchain/
+description: In this article, we give you an advanced overview of the different elements that make a blockchain work.
+
+---
+
+# The Components of a Blockchain
+
 A protocol is a set of rules. These rules govern a blockchain and restrict what you can and cannot do. They also define standards for how participants communicate. 
 
-There are rules on what order information must be provided if you want to send a transaction. Luckily you don’t have to know those rules - your [wallet](https://academy.horizen.io/technology/advanced/types-of-wallets/) will take care of this. 
+There are rules on what order information must be provided if you want to send a transaction. Luckily you don’t have to know those rules - your [wallet](https://www.horizen.io/academy/crypto-wallets/) will take care of this. 
 
 _An example of another rule would be the following:_
 
@@ -91,7 +101,7 @@ When Satoshi Nakamoto released the Bitcoin whitepaper, he presented an innovatio
 
 The verification of data is an important aspect when building a data structure on a decentralized network. Participants need a way to reliably distinguish between valid data and malicious information.
 
-[Hash functions](https://academy.horizen.io/technology/advanced/hash-functions/) are mathematical one-way functions used to verify data in blockchains and a major building block of the technology. They are applied in several important steps from creating an address to proving ownership, and even verifying the integrity of the blockchain itself. 
+[Hash functions](https://www.horizen.io/academy/hash-functions/) are mathematical one-way functions used to verify data in blockchains and a major building block of the technology. They are applied in several important steps from creating an address to proving ownership, and even verifying the integrity of the blockchain itself. 
 
 The first notable property of all hash functions is that they consume inputs of variable length and produce an output of fixed length called the ***hash value***, *hash digest* or simply, *hash*.
 
@@ -113,7 +123,7 @@ One of the most commonly used hash functions is **SHA256**, *Secure Hash Algorit
 
 We must have a concept of identity to have ownership. You want to be the sole owner of your funds, and there must be a way to associate the funds with you. This is where cryptography enters the scene.
   
-[_Public-Key Cryptography_](https://academy.horizen.io/technology/advanced/public-key-cryptography/)  is also known as *asymmetric cryptography*. With symmetric cryptography, you encrypt and decrypt a message using the same key, like with a padlock.
+[_Public-Key Cryptography_](https://www.horizen.io/academy/public-key-cryptography-pkc/)  is also known as *asymmetric cryptography*. With symmetric cryptography, you encrypt and decrypt a message using the same key, like with a padlock.
 
 The term *asymmetric* stems from the property of keys always coming in pairs and being used complementary. If you encrypt something with one of the keys, you need the other one to decrypt it, and vice versa. 
 
@@ -143,7 +153,7 @@ A digital signature works similarly to how you authorize real-life transactions 
 
 The type of public-key cryptography used in blockchains is one of the safest means of encryption available today.
 
-All of this would be cumbersome to do manually and require quite some skill. Luckily there are [wallets](https://academy.horizen.io/technology/advanced/types-of-wallets/) that help you do all the above. Wallets generate and manage your keys and take care of all the necessary encryption and decryption. 
+All of this would be cumbersome to do manually and require quite some skill. Luckily there are wallets that help you do all the above. Wallets generate and manage your keys and take care of all the necessary encryption and decryption. 
 
 What is important is to understand that your private key authorizes the spending of your funds. 
 
@@ -151,7 +161,7 @@ Keeping it safe is the first and most important lesson. Nobody can help you reco
 
 ### Elliptic Curve Cryptography
 
-There are many different public-key cryptography schemes, and in blockchains, [*Elliptic Curve Cryptography*](https://academy.horizen.io/technology/expert/elliptic-curve-cryptography/) (ECC) is predominant. Cryptography relies on one-way functions, and multiplication on an elliptic curve is another one-way function of note. 
+There are many different public-key cryptography schemes, and in blockchains, [*Elliptic Curve Cryptography*](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/) (ECC) is predominant. Cryptography relies on one-way functions, and multiplication on an elliptic curve is another one-way function of note. 
 
 This type of *discrete math* works and is a well suited tool to build a concept of ownership on a distributed peer-to-peer network.
 
@@ -163,7 +173,7 @@ You rarely use a public key when transferring cryptocurrency. You primarily use 
 
 ### Digital Signatures
 
-Anyone can create a raw transaction spending someone else’s money, but in order for the transaction to be recognized by the network, it needs to have a valid [*digital signature*](https://academy.horizen.io/technology/expert/digital-signatures/). The private key associated with the address where the funds are located is required to sign a transaction. 
+Anyone can create a raw transaction spending someone else’s money, but in order for the transaction to be recognized by the network, it needs to have a valid [*digital signature*](https://www.horizen.io/academy/digital-signatures/). The private key associated with the address where the funds are located is required to sign a transaction. 
 
 The signature consists of two values that can only be provided by the rightful owner, **R** and **s**.
 
@@ -175,7 +185,7 @@ The result of the verification is a binary output: either the signature is valid
 
 Public blockchains are commodities, a digital good that anyone with an internet connection can access. Nobody owns these commodities, so there is no central provider for their infrastructure. Instead, the infrastructure is provided by many independent peers spread across the globe. 
 
-Because the nodes of the network run independently from one another, the infrastructure as a whole, the distributed [*Peer-to-Peer network*](https://academy.horizen.io/technology/advanced/a-peer-to-peer-p2p-network/), is highly resilient.
+Because the nodes of the network run independently from one another, the infrastructure as a whole, the distributed [*Peer-to-Peer network*](https://www.horizen.io/academy/peer-to-peer-networks-p2p/), is highly resilient.
 
 You have probably come across the term Peer-to-Peer (P2P) network before, most likely in the context of file-sharing services like BitTorrent. In these distributed P2P networks, the users don’t connect to a central server to access a service, but to many peers. The peers are other network participants and all of them provide the service to each other. 
 
@@ -187,7 +197,7 @@ The Peer-to-Peer network plays a significant part in giving blockchains these pr
 
 ## Consensus Mechanism
 
-The [*consensus mechanism*](https://academy.horizen.io/technology/advanced/consensus-mechanisms/) of a blockchain ensures that all participants maintain a consistent record of transactions. The peers agree on a common version of history with every block. There are different ways to achieve consensus in distributed networks.
+The [*consensus mechanism*](https://www.horizen.io/academy/consensus-mechanisms/) of a blockchain ensures that all participants maintain a consistent record of transactions. The peers agree on a common version of history with every block. There are different ways to achieve consensus in distributed networks.
 
 If you want to build a form of digital money on a P2P network with many unknown participants, you will need to build *consensus* on the order of transactions.
 
@@ -205,13 +215,13 @@ There are many consensus mechanisms. The “original” Sybil-Resistance Mechani
 
 PoW creates a bridge between the physical and the real world and maintains the block creation process. There are different mining algorithms used in PoW and they have several things in common.  
   
-Performing the Proof-of-Work in blockchains is called [mining](https://academy.horizen.io/technology/advanced/mining/). Miners extend the blockchain with new blocks in predefined time intervals. Miners secure the ledger and give it its immutability attribute by attaching a Proof-of-Work to each block.
+Performing the Proof-of-Work in blockchains is called [mining](https://www.horizen.io/academy/mining-in-blockchain/). Miners extend the blockchain with new blocks in predefined time intervals. Miners secure the ledger and give it its immutability attribute by attaching a Proof-of-Work to each block.
 
 Mining is more than just performing Proof-of-Work, it comes with economic implications, from choosing which blockchain to mine, what hardware to use, and even what strategies to apply.
 
 ### Blockchain Governance
 
-One of the most highly valued properties of public blockchain protocols is their level of decentralization. Usually, there is a lot of focus on how decentralized the block generation process is, but little on how code and other changes are decided upon. [Governance](https://academy.horizen.io/technology/expert/blockchain-governance/) is the keyword here.
+One of the most highly valued properties of public blockchain protocols is their level of decentralization. Usually, there is a lot of focus on how decentralized the block generation process is, but little on how code and other changes are decided upon. [Governance](https://www.horizen.io/academy/blockchain-governance/) is the keyword here.
 
 Open source protocol governance is something that’s constantly iterated and improved upon. The blockchain space is relatively young compared to traditional governance processes. The large number of different blockchain projects represent a huge *real-world sandbox*. 
 

@@ -1,11 +1,21 @@
-﻿
+﻿---
+
+sidebar_label: Zendoo
+title: Zendoo - Cross-Chain Platform
+slug: /zendoo/
+description: The Zendoo protocol allows a Bitcoin-based blockchain protocol to operate with any domain-specific blockchain or blockchain-like system.
+
+---
+
+# Zendoo - Cross-Chain Platform
+
 ## The Zendoo Protocol
 
 Horizen’s current sidechain implementation, the [Zendoo protocol](https://www.horizen.io/zendoo/) was released early in 2020**. It introduces:
 
 > “a standardized mechanism to register and interact with separate sidechain systems. By interaction, we mean the Cross-Chain Transfer Protocol, which enables sending a native asset to a sidechain and receiving it back in a secure and verifiable way without the mainchain knowing anything about the internal sidechain construction or operations.”
 
-In more general terms, the Zendoo protocol allows a Bitcoin-based blockchain protocol to operate with any domain-specific blockchain or blockchain-like system. The [blockchain protocol](https://academy.horizen.io/technology/advanced/a-protocol-to-transfer-value/) is upgraded only once to introduce the mechanism for deploying sidechains and to enable cross-chain transfers.
+In more general terms, the Zendoo protocol allows a Bitcoin-based blockchain protocol to operate with any domain-specific blockchain or blockchain-like system. The [blockchain protocol](https://www.horizen.io/academy/blockchain-protocols/) is upgraded only once to introduce the mechanism for deploying sidechains and to enable cross-chain transfers.
 
 **Zendoo** allows backward transfers to be verified by the mainchain without relying on external validators or certifiers. The mainchain does not monitor sidechains (asymmetric peg) and doesn’t know anything about their internal structure. Zendoo accomplishes this by generating recursive proofs for each sidechain state transition.
 
@@ -21,7 +31,7 @@ Depending on the sidechain structure, these components can be either highly depe
 
 ## The Mainchain Consensus Protocol - MCP
 
-Horizen’s mainchain consensus protocol comprises the [Proof of Work](https://academy.horizen.io/technology/expert/proof-of-work/) and Nakamoto consensus algorithm, the [UTXO accounting model](https://academy.horizen.io/technology/expert/utxo-vs-account-model/), and the transaction logic. The Zendoo specific parts of the MCP are the deployment of new sidechains via special bootstrapping transactions, a new transaction type to transfer assets to a sidechain as well as the verification of incoming backward transfers from sidechains.
+Horizen’s mainchain consensus protocol comprises the [Proof of Work](https://www.horizen.io/academy/proof-of-work-pow/) and Nakamoto consensus algorithm, the [UTXO accounting model](https://www.horizen.io/academy/utxo-vs-account-model/), and the transaction logic. The Zendoo specific parts of the MCP are the deployment of new sidechains via special bootstrapping transactions, a new transaction type to transfer assets to a sidechain as well as the verification of incoming backward transfers from sidechains.
 
 ### The Cross-Chain Transfer Protocol - CCTP
 
@@ -39,7 +49,7 @@ Every sidechain needs a mechanism to generate valid withdrawal certificates. Eac
 
 The sidechain consensus protocol includes all parameters of the sidechain. Typically, the consensus algorithm would describe the mechanism to agree on a single version of history.
 
-A sidechain in Zendoo can run a different [consensus mechanism](https://academy.horizen.io/technology/advanced/consensus-mechanisms/), [accounting model](https://academy.horizen.io/technology/expert/utxo-vs-account-model/) or [data structure](https://academy.horizen.io/technology/advanced/blockchain-as-a-data-structure/) than the mainchain. The sidechain doesn’t even have to be a blockchain at all, as long as it adheres to the cross-chain transfer protocol, it will be able to communicate with the main blockchain.
+A sidechain in Zendoo can run a different [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/), accounting model or [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) than the mainchain. The sidechain doesn’t even have to be a blockchain at all, as long as it adheres to the cross-chain transfer protocol, it will be able to communicate with the main blockchain.
 
 A Horizen-compatible sidechain allows for great freedom. 
 
@@ -71,9 +81,9 @@ Instead of the validator redoing the entire computation to verify the result, th
 
 A **proof** comprises a set of values that the verifier uses to compute a _binary output_ - true or **false. When the verification function returns true the computation was performed correctly, if it returns false, it wasn’t.
 
-Verifying state transitions in a system is one great use case for a proof system. A blockchain is a [state machine](https://academy.horizen.io/technology/expert/utxo-vs-account-model/#the-blockchain-is-a-state-machine) in the sense that every block records new transactions onto the ledger, changing the state of the system. Nodes verify each block before they add it to their version of the ledger. 
+Verifying state transitions in a system is one great use case for a proof system. A blockchain is a state machine in the sense that every block records new transactions onto the ledger, changing the state of the system. Nodes verify each block before they add it to their version of the ledger. 
 
-They check if transactions have valid [digital signatures](https://academy.horizen.io/technology/expert/digital-signatures/) attached, if only previously [unspent transaction outputs](https://academy.horizen.io/technology/expert/utxo-vs-account-model/) are spent, and if the [Proof of Work](https://academy.horizen.io/technology/expert/proof-of-work/) attached to the block meets the current [difficulty](https://academy.horizen.io/technology/expert/proof-of-work/#finding-a-nonce). 
+They check if transactions have valid [digital signatures](https://www.horizen.io/academy/digital-signatures/) attached, if only previously unspent transaction outputs] are spent, and if the Proof of Work attached to the block meets the current difficulty. 
 
 With a proof system, a miner could generate a proof that the state transition (new block) was performed according to the protocol. _All other nodes_ would simply have to verify if the proof is correct and could save themselves from verifying each part of the block individually.
 
@@ -278,7 +288,7 @@ A new sidechain in *endoo needs to register with the mainchain using a special t
 - **First**, a unique identifier, the `ledgerId` for the sidechain is defined in the bootstrapping transaction.
 - **Next**, it is defined from which mainchain block onward the sidechain will become active.
 
-A number of cryptographic keys are proclaimed for each sidechain, namely the verification keys needed to verify proofs generated on the sidechain. There is a verification key **\\(vk\*{WCert}\\)** for withdrawal certificate proofs, a verification key **\\(vk\*{BTR}\\) f**or [Backward Transfer Request](https://academy.horizen.io/technology/expert/cross-chain-transactions/#backward-transfer-requests) proofs and a verification key **\\(vk\_{CSW}\\**) for [Ceased Sidechain Withdrawal](https://academy.horizen.io/technology/expert/cross-chain-transactions/#ceased-sidechain-withdrawals) proofs.
+A number of cryptographic keys are proclaimed for each sidechain, namely the verification keys needed to verify proofs generated on the sidechain. There is a verification key **\\(vk\*{WCert}\\)** for withdrawal certificate proofs, a verification key **\\(vk\*{BTR}\\) f**or Backward Transfer Request proofs and a verification key **\\(vk\_{CSW}\\**) for Ceased Sidechain Withdrawal proofs.
 
 Lastly, it is defined how the proof data will be provided from the sidechain to the mainchain (number and types of included data elements).
 

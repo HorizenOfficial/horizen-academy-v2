@@ -1,4 +1,14 @@
-﻿
+﻿---
+
+sidebar_label: Modular vs Monolithic Blockchains
+title: Modular vs Monolithic Blockchains
+slug: /modular-vs-monolithic-blockchains/
+description: While blockchain modularization seems like the obvious approach to solving the scalability trilemma, it can come with its own share of challenges.
+
+---
+
+# Modular vs Monolithic Blockchains
+
 At its core, a blockchain is a social and technological experiment that seeks to identify the best way to coordinate large groups of autonomous individuals (represented as computers) to achieve rapid consensus on highly consequential decisions about the nature of truth in the digital realm.
 
 The main challenge associated with this coordination experiment is called the _scalability trilemma_.

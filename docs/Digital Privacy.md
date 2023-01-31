@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: Digital Privacy
+title: Protecting Your Digital Privacy
+slug: /digital-privacy/
+description: In this article, we show you how your online privacy is compromised digitally, as well as strategies and tools to protect your privacy.
+
+---
+
+# Protecting Your Digital Privacy
 
 A **phone** and **computer** are arguably the two most used devices these days. We use them regularly every day and most of us even work with them for several hours in a row or even for a whole day.
 

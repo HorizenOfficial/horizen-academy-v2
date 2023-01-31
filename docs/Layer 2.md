@@ -1,5 +1,13 @@
-﻿
-## What is a Layer 2?
+﻿---
+
+sidebar_label: Layer 2
+title: What is a Layer 2 Blockchain?
+slug: /layer-2/
+description: A Layer 2 is a scaling solution that sits on top of a layer 1 blockchain like Bitcoin. L2s increase the speed and reduce the cost of transacting on a blockchain.
+
+---
+
+# What is a Layer 2 Blockchain?
 
 **The scalability trilemma** is a persistent problem that has plagued blockchain developers ever since the Bitcoin blockchain was launched in 2009.
 
@@ -57,7 +65,7 @@ _By contrast_, **layer 2 networks** exist primarily to scale a _single_ layer 1 
 
 ## Types of Layer 2 Scaling Solutions
 
-A layer 2 scaling solution can be designed as a [payment or state channel ](https://academy.horizen.io/technology/expert/state-and-payment-channels/)for processing transactions between 2 participants using smart contracts, or as an entirely separate network (or sidechain) with its own set of validator nodes.
+A layer 2 scaling solution can be designed as a [payment or state channel ](https://www.horizen.io/academy/payment-channels/)for processing transactions between 2 participants using smart contracts, or as an entirely separate network (or sidechain) with its own set of validator nodes.
 
 ### Payment Channels
 
@@ -99,13 +107,13 @@ This state channel mechanism makes it possible for play-to-earn games and other 
 
 ### Sidechains
 
-Unlike payment or state channels, **Sidechains** are independent blockchains with their own set of _validator nodes_. [Sidechains](https://academy.horizen.io/horizen/advanced/sidechains/) will normally have fewer nodes than the L1 mainchain, which allows them to achieve consensus faster. 
+Unlike payment or state channels, **Sidechains** are independent blockchains with their own set of _validator nodes_. [Sidechains](https://www.horizen.io/academy/sidechains/) will normally have fewer nodes than the L1 mainchain, which allows them to achieve consensus faster. 
 
 A developer might adopt a sidechain over a payment or state channel if they need even more flexibility and control over their underlying infrastructure.
 
 This could be for the purpose of launching a token or dapp while still taking advantage of the low cost and faster speeds enabled by not deploying smart contracts directly on the L1.
 
-_Sidechains operate using their own [consensus mechanism](https://academy.horizen.io/technology/advanced/consensus-mechanisms/), which means developers can optimize their network for **scalability**, **security** or **decentralization**, and can even choose to make their networks **private** and _permissioned_ or **public** and _permissionless_._
+_Sidechains operate using their own [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/), which means developers can optimize their network for **scalability**, **security** or **decentralization**, and can even choose to make their networks **private** and _permissioned_ or **public** and _permissionless_._
 
 While side chains are not required to submit state data to the mainchain, many still choose to do so in order to leverage the larger, more decentralized chain's security.
 

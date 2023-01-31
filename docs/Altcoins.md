@@ -1,5 +1,13 @@
-﻿
-## What are Altcoins?
+﻿---
+
+sidebar_label: Altcoins
+title: What are Altcoins?
+slug: /altcoins/
+description: The term 'altcoin' stems from a combination of 'alternative' and 'coin' in cryptocurrency. All cryptocurrencies besides Bitcoin are referred to as altcoins.
+
+---
+
+# What are Altcoins?
 
 The term **altcoin** stems from a combination of '_alternative_' and '_coin_' in the sense of cryptocurrency coins. 
 

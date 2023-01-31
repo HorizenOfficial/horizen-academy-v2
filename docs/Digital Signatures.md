@@ -1,4 +1,14 @@
-﻿
+﻿---
+
+sidebar_label: Digital Signatures
+title: What is a Digital Signature?
+slug: /digital-signatures/
+description: Digital signatures allow you to prove your knowledge of a private key corresponding to a particular address without revealing any information about it.
+
+---
+
+# What is a Digital Signature?
+
 **Public-Key Cryptography** is used to verify ownership on a blockchain.
 
 **Digital signatures** allow you to prove your knowledge of a private key corresponding to a particular address without revealing any information about it.
@@ -30,7 +40,7 @@ Either way, you need three values.
 - *Scalars* are written with small letters, like the private key: **sk**
 - *Vectors* are written with capital letters, like the public key: **PK**
 
-*It's important to note that the hash of a vector is a scalar.* The [hash function](https://academy.horizen.io/technology/advanced/hash-functions/) consumes the _tuple_ of values as an input, and produces a scalar as an output.
+*It's important to note that the hash of a vector is a scalar.* The [hash function](https://www.horizen.io/academy/hash-functions/) consumes the _tuple_ of values as an input, and produces a scalar as an output.
 
 We use the **\\(\bullet\\)** operator when we are referring to multiplication on the elliptic curve. We use the **\\(\cdot\\)** operator when we are referring to regular multiplication of scalars. 
 

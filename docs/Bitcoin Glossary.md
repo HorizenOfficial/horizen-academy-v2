@@ -1,4 +1,14 @@
-﻿
+﻿---
+
+sidebar_label: Bitcoin Glossary
+title: What is Bitcoin? - A Bitcoin Glossary
+slug: /bitcoin-glossary/
+description: Bitcoin is the first form of money to rely solely on a transparent and globally distributed network of nodes abiding by a unified set of protocols
+
+---
+
+# What is Bitcoin? - A Bitcoin Glossary
+
 ## Bitcoin Terminology
 
 To understand how Bitcoin works, it is important to first define each of the key terms and components that make up the Bitcoin network:
@@ -139,17 +149,17 @@ A unique number that is produced from the signer's private key and is used as ve
 
 ## Bitcoin Facts
 
-In **2008**, a pseudo-anonymous individual or group named _[Satoshi Nakamoto](https://www.horizen.io/blockchain-academy/history/satoshi-nakamoto/)_ invented Bitcoin, the first decentralized peer-to-peer digital currency.
+In **2008**, a pseudo-anonymous individual or group named _[Satoshi Nakamoto](https://www.horizen.io/academy/satoshi-nakamoto/)_ invented Bitcoin, the first decentralized peer-to-peer digital currency.
 
 Bitcoin was the first use case of blockchain technology, as well as the first form of money to rely solely on a transparent and globally distributed network of nodes abiding by a unified set of protocols, rather than the policies of a government or central bank.
 
-- Bitcoin is a cryptocurrency that is used to [transfer](https://www.horizen.io/blockchain-academy/technology/advanced/a-protocol-to-transfer-value/) and store value digitally.
-- Bitcoin sits on top of the Bitcoin blockchain, which is a public blockchain network that tracks the ownership of Bitcoin held in digital [wallets](https://www.horizen.io/blockchain-academy/technology/advanced/types-of-wallets/) and also validates all Bitcoin transactions that occur on the network.
-- In order for transactions on the Bitcoin blockchain to be validated, [consensus](https://www.horizen.io/blockchain-academy/technology/advanced/consensus-mechanisms/) must be achieved between the nodes that operate the network.
+- Bitcoin is a cryptocurrency that is used to [transfer](https://www.horizen.io/academy/blockchain-protocols/) and store value digitally.
+- Bitcoin sits on top of the Bitcoin blockchain, which is a public blockchain network that tracks the ownership of Bitcoin held in digital [wallets](https://www.horizen.io/academy/crypto-wallets/) and also validates all Bitcoin transactions that occur on the network.
+- In order for transactions on the Bitcoin blockchain to be validated, [consensus](https://www.horizen.io/academy/consensus-mechanisms/) must be achieved between the nodes that operate the network.
 - A consensus mechanism is the backbone of a blockchain. It is the process by which nodes come to an agreement on the state of the ledger.
-- The Bitcoin blockchain is operated by [miners](https://www.horizen.io/blockchain-academy/technology/advanced/mining/), who are individuals or entities that run nodes that are responsible for either validating transactions that occur on the network, or storing a history of transactions that occur on the network.
+- The Bitcoin blockchain is operated by [miners](https://www.horizen.io/academy/mining-in-blockchain/), who are individuals or entities that run nodes that are responsible for either validating transactions that occur on the network, or storing a history of transactions that occur on the network.
 - Miners coordinate with each other to achieve consensus on whether a transaction that occurred on the network was correct, that it went to the right person and the correct amount was exchanged.
-- This method of consensus is called ‘[proof of work](https://www.horizen.io/blockchain-academy/technology/expert/proof-of-work/)’
+- This method of consensus is called ‘[proof of work](https://www.horizen.io/academy/proof-of-work-pow/)’
 - For helping to validate transactions, miners are rewarded with newly issued bitcoin from the network.
 - Anyone can confirm exactly how much bitcoin will ever exist in the world and who owns each bitcoin by simply reading the blockchain.
 - There is a total of 21 million bitcoin, with 18.7 million currently in circulation.
@@ -159,7 +169,7 @@ Bitcoin was the first use case of blockchain technology, as well as the first fo
 - In 2012 the reward was 25 BTC, in 2016 it was 12.5 BTC, in 2020 it was 6.25 BTC, and in 2024 it will be 3.125 BTC
 - Based on the rate at which new bitcoin is mined, it will take until the year 2140 for all 21 million bitcoin to be in circulation.
 - A single ‘block’ on a blockchain contains information about recorded transactions, in addition to timestamp and details about the previous block that it is linked to. In this way it forms a ‘chain’.
-- When a new block is added to the Bitcoin blockchain, a cryptographic [hash function](https://www.horizen.io/blockchain-academy/technology/advanced/hash-functions/) is used to link it to the previous block.
+- When a new block is added to the Bitcoin blockchain, a cryptographic [hash function](https://www.horizen.io/academy/hash-functions/) is used to link it to the previous block.
 - Cryptographic hash functions convert transaction data into a unique text string or ‘hash’. These hash values cannot be altered without changing the previous block's hash value and the entire history of the blockchain. This link between different blocks is why blockchains are considered to be immutable. In making this the Bitcoin network's history public and verifiable, it can be said that bitcoin is the first form of money to have a tamper proof system of memory.
 - Bitcoin is considered “digital gold'' because like gold, it is a scarce asset that cannot be replicated beyond 21 million fixed supply.
 - While gold's scarcity is enforced by physical limitations, Bitcoin's scarcity is enforced by permanent rules imprinted into computer code.
@@ -167,7 +177,7 @@ Bitcoin was the first use case of blockchain technology, as well as the first fo
 - Under the proof of work consensus mechanism, miners compete to solve complex mathematical puzzles in order to win the right to validate the next block of transactions and earn the 6.25 newly issued bitcoin from the network, the block reward.
 - This process requires significant hardware and energy requirements just to generate enough computing power to operate competitively as a miner.
 - The mathematical puzzles that miners must solve are artificial hurdles that exist to make it difficult for new bitcoin to come into circulation, which thereby reinforces its scarcity.
-- The energy requirements also ensure that security of the network is upheld, as it would require a bad actor to generate more computing power than 50% of all the miners on the Bitcoin network in order to possibly manipulate transactions on the network. The most recent estimates show that a [51% attacks](https://www.horizen.io/blockchain-academy/technology/advanced/51-attacks/) would cost over $13 billion.
+- The energy requirements also ensure that security of the network is upheld, as it would require a bad actor to generate more computing power than 50% of all the miners on the Bitcoin network in order to possibly manipulate transactions on the network. The most recent estimates show that a [51% attacks](https://www.horizen.io/academy/51-attacks/) would cost over $13 billion.
 - The value of Bitcoin is derived from the power of blockchain technology, which allows Bitcoin to achieve the highest level of security, transparency and decentralization of any asset that exists today. These properties are also what ultimately makes it the ideal store of value.
 - The Bitcoin blockchain doesn't just provide a secure means of payment, it keeps track of the history of bitcoin transactions dating all the way back to the genesis block that was mined by Satoshi in 2009. Readable on the Bitcoin blockchain is a tamper proof history of everything that has ever happened on the network.
 
@@ -183,7 +193,7 @@ This data includes all of the information required to process a transaction, inc
 
 No private keys or other types of confidential information are included in this information used to process the transaction.
 
-Upon creating the transaction, John must provide a [digital signature](https://www.horizen.io/blockchain-academy/technology/expert/digital-signatures/) that will authorize his wallet (the input) to spend 1 BTC.
+Upon creating the transaction, John must provide a [digital signature](https://www.horizen.io/academy/digital-signatures/) that will authorize his wallet (the input) to spend 1 BTC.
 
 ### Broadcast the Signed Transaction to the Network
 
@@ -203,7 +213,7 @@ Once verified, the transaction will be shared to other nodes that the first node
 
 Each node will share the signed transaction to other nodes until all nodes on the network have received and verified the signed transaction.
 
-On the Bitcoin network, all nodes must independently verify each signed transaction before the transaction goes on to be validated by a mining node and added to the next block. This process allows the network to be resistant to denial-of-service (DDoS) [attacks](https://www.horizen.io/blockchain-academy/technology/advanced/attacks-on-blockchain/).
+On the Bitcoin network, all nodes must independently verify each signed transaction before the transaction goes on to be validated by a mining node and added to the next block. This process allows the network to be resistant to denial-of-service (DDoS) [attacks](https://www.horizen.io/academy/blockchain-attacks/).
 
 ### Record the transaction on the next block
 

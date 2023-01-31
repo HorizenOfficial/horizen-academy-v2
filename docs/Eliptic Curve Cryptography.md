@@ -1,6 +1,13 @@
-﻿
+﻿---
 
-## What is Elliptic Curve Cryptography?
+sidebar_label: Elliptic Curve Cryptography
+title: What is Elliptic Curve Cryptography? - ECC
+slug: /elliptic-curve-cryptography-ecc/
+description: Elliptic curve cryptography is based on discrete mathematics. In discrete math, elements can only take on certain discrete values.
+
+---
+
+# What is Elliptic Curve Cryptography?
 
 To explore *Elliptic Curve Cryptography*, we must discuss _public-key cryptography_ (_PKC_) schemes.
 

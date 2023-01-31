@@ -1,6 +1,13 @@
-﻿
+﻿---
 
-## What is a Fork?
+sidebar_label: Forks
+title: What is a Fork in Crypto?
+slug: /blockchain-forks/
+description: When an upgrade is made to a blockchains underlying protocol, it is called a Fork. Learn more about forks in the Horizen Academy
+
+---
+
+# What is a Fork in Crypto?
 
 One of the main benefits of blockchain technology is that it gives anyone the freedom to opt into their preferred system of governance.
 

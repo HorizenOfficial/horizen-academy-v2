@@ -1,4 +1,13 @@
-﻿## What is Interoperability?
+﻿---
+
+sidebar_label: Interoperability
+title: What is Blockchain Interoperability?
+slug: /blockchain-interoperability/
+description: Interoperability is the process of enabling different computer systems to exchange information with each other using a common framework.
+
+---
+
+# What is Blockchain Interoperability?
 
 **Interoperability** is the process of enabling different computer systems to exchange information with each other using a common framework.
 

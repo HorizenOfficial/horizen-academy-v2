@@ -1,4 +1,14 @@
-﻿
+﻿---
+
+sidebar_label: Automated Market Maker - AMM
+title: What is an AMAM? Automated Market Maker
+slug: /automated-market-maker-amm/
+description: In DeFi, the traditional market maker is replaced by an Automated Market Maker, which is a set of rules written into code and executed via smart contracts.
+
+---
+
+# What is an AMAM? Automated Market Maker
+
 Automated Market Makers or **_AMMs_** are one of the defining innovations in decentralized finance. 
 
 AMMs, along with _smart contracts_, _liquidity pools_ and _oracles_, are the building blocks of any decentralized exchange, or _DEX_. These are critical features that enable investors and traders to exchange tokens at optimal prices in a manner that is transparent, trustless and secure.
@@ -92,7 +102,7 @@ If the pool starts to contain a greater number of DAI than ETH, it means there i
 
 The pricing formula will recognize this imbalance and may raise the price of ETH or reduce the price of DAI in accordance with the level of imbalance between the pairs. 
 
-Liquidity pools also leverage _decentralized data feeds_ or **[Oracles](https://www.horizen.io/blockchain-academy/technology/advanced/blockchain-oracle/)** to relay the current price of ETH from other exchanges to their smart contract. This information serves as a reference point to the AMM and informs its pricing formula of where the price of either ETH or DAI _should_ be.
+Liquidity pools also leverage _decentralized data feeds_ or **[Oracles](https://www.horizen.io/academy/blockchain-oracles/)** to relay the current price of ETH from other exchanges to their smart contract. This information serves as a reference point to the AMM and informs its pricing formula of where the price of either ETH or DAI _should_ be.
 
 At the same time, traders seeking to make a profit from _arbitrage_ opportunities will identify dislocations in the price of either asset and seek to exploit it. 
 

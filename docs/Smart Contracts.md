@@ -1,9 +1,17 @@
-﻿
-## What is a Smart Contract?
+﻿---
+
+sidebar_label: Smart Contracts
+title: What are Smart Contracts?
+slug: /smart-contracts/
+description: Smart contracts can not only be used to govern the transfer of digital assets such as cryptocurrencies, they could govern many other types of value transfer.
+
+---
+
+# What is a Smart Contract?
 
 A blockchain can do more than simply storing data; it can also execute applications. 
 
-Programs on a blockchain are called **smart contracts** and need to be written in a specific language defined by the [protocol](https://academy.horizen.io/technology/advanced/a-protocol-to-transfer-value/). 
+Programs on a blockchain are called **smart contracts** and need to be written in a specific language defined by the [protocol](https://www.horizen.io/academy/blockchain-protocols/). 
 
 In general, a contract is an agreement between parties that binds them to something happening in the future. The term **_“smart”_** comes from the automatic execution of these digital contracts. 
 
@@ -21,7 +29,7 @@ A **token** is issued within a smart contract that defines the total supply and 
 
 The **ERC-20 token standard** is a smart contract template that allows for easy issuance and integration with different wallets and exchanges.
 
-Other use cases of smart contracts that are oftentimes omitted, are [payment and state channels](https://academy.horizen.io/technology/expert/state-and-payment-channels/), as well as [HTLCs](https://en.bitcoin.it/wiki/Hash_Time_Locked_Contracts) - _Hashed Timelock Contracts_ - which enables atomic swaps. 
+Other use cases of smart contracts that are oftentimes omitted, are [payment and state channels](https://www.horizen.io/academy/payment-channels/), as well as [HTLCs](https://en.bitcoin.it/wiki/Hash_Time_Locked_Contracts) - _Hashed Timelock Contracts_ - which enables atomic swaps. 
 
 In most general terms, they allow for interaction happening off-chain to be just as trustless, as if they were to happen on-chain. The most popular payment channel network is arguably the [Lightning Network](https://lightning.network/) on Bitcoin.
 
@@ -120,7 +128,7 @@ Imagine a future with smart contract libraries that hold a large number of templ
 
 The smart contracts can be used to detect incoming payments from users, issue payments to its users, to serve as an escrow, or to trigger an action based on some form of submitted data. We are still in the early stages of decentralized applications. There have been and will be many growing pains such as bugs that cause loss of funds and inefficient usage of on-chain transactions.
 
-While well developed and audited smart contract libraries will make the development of smart contracts easier and more secure, scaling methods like [state channels](https://academy.horizen.io/technology/expert/state-and-payment-channels/) will allow the communication of smart contracts off-chain. 
+While well developed and audited smart contract libraries will make the development of smart contracts easier and more secure, scaling methods like state channels will allow the communication of smart contracts off-chain. 
 
 **Smart contract platforms** are specifically designed to enable not just money on the blockchain, but also the deployment of smart contracts and dApps.
 
@@ -160,7 +168,7 @@ Smart contracts put an additional burden on the limited throughput of a blockcha
 
 The launch of _CryptoKitties_ put a lot of stress on the Ethereum blockchain, resulting in a sharp rise in transaction costs and long confirmation times.
 
-There are two different balance or accounting systems in blockchains - the [UTXO model and the Account-Based Model](https://academy.horizen.io/technology/expert/utxo-vs-account-model/). 
+There are two different balance or accounting systems in blockchains - the [UTXO model and the Account-Based Model](https://www.horizen.io/academy/utxo-vs-account-model/). 
 
 The following quote helps to differentiate between them.
 
@@ -179,11 +187,11 @@ After that, the two parties can interact indefinitely without broadcasting to th
 > “[T]he interaction of the parties with the contract instance is always “local”, i.e., the parties themselves compute the new states […] and
 > then just exchange signatures [on it].” - **Dziembowski, Faust, Hostáková**, State Channel Paper
 
-Another scaling approach is using [sidechains](https://academy.horizen.io/horizen/advanced/sidechains/). While sometimes referred to as a second-layer technology as well, it is actually an approach based on parallelization. 
+Another scaling approach is using [sidechains](https://www.horizen.io/academy/sidechains/). While sometimes referred to as a second-layer technology as well, it is actually an approach based on parallelization. 
 
 A **sidechain** is a blockchain in itself with the ability to communicate with the mainchain. This communication can comprise the exchange of data or assets.
 
-A dApp can be launched on a _sidechain_, possibly even running a different [consensus mechanism](https://academy.horizen.io/technology/advanced/consensus-mechanisms/) than the _mainchain_. 
+A dApp can be launched on a _sidechain_, possibly even running a different [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) than the _mainchain_. 
 
 Depending on the specific construction, incentives might have to be provided in order for nodes to run sidechains, in a PoS sidechain model, or for miners to perform merged mining in a PoW sidechain model.
 
@@ -243,9 +251,9 @@ Before we can see widespread adoption of smart contracts we have to overcome som
 
 Smart Contracts can ensure objective execution on the basis of mutually agreed-upon terms enforced by code. They have the potential to reduce middlemen and thereby reduce cost and save time. They will most likely foster a closer connection between software developers and the judicial system.
 
-The creation of tokens and the deployment of [state and payment channel networks](https://academy.horizen.io/technology/expert/state-and-payment-channels/) are the most common use cases for smart contracts. Before we can see widespread adoption, we have to overcome some hurdles. 
+The creation of tokens and the deployment of state and payment channel networks are the most common use cases for smart contracts. Before we can see widespread adoption, we have to overcome some hurdles. 
 
-Scaling issues have to be addressed because smart contracts running entirely on-chain put a lot of stress on their underlying blockchain. Second layer technologies such as state channels or parallelization approaches like [sidechains](https://academy.horizen.io/horizen/advanced/sidechains/) could solve this.
+Scaling issues have to be addressed because smart contracts running entirely on-chain put a lot of stress on their underlying blockchain. Second layer technologies such as state channels or parallelization approaches like sidechains could solve this.
 
 For many use cases, smart contracts need to learn about real-world events through oracles. Centralized solutions remove the killer feature of smart contracts - trustlessness - while _prediction markets_ might create incentives around the probability of an event in a problematic fashion. 
 

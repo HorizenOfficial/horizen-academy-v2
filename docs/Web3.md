@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: Web3
+title: What is Web3? - Web 3.0
+slug: /web3/
+description: Web3 refers to a category of technologies that leverage internet protocols built on top of open source, distributed and decentralized systems.
+
+---
+
+# What is Web3? - Web 3.0
 
 Every few decades, a new technological advancement is made that reshapes the way in which information and value is created and shared between people. 
 

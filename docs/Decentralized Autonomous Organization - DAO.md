@@ -1,6 +1,13 @@
-﻿
+﻿---
 
-## What is a Dao?
+sidebar_label: Decentralized Autonomous Organization - DAO
+title: What is a DAO? - Decentralized Autonomous Organizations
+slug: /decentralized-autonomous-organization-dao/
+description: A DAO, or Decentralized Autonomous Organization, is software that acts as an organization with a number of predefined rules and procedures.
+
+---
+
+# What is a Dao?
 
 A _DAO_, or **Decentralized Autonomous Organization**, is software that acts as an organization with a number of predefined rules and procedures.
 
@@ -185,7 +192,7 @@ Voters will get rewarded proportionally to their stake and experts will get rewa
 
 ### The Horizen Voting System Implementation Plan
 
-We plan to integrate the treasury system on a sidechain. [Sidechains](https://academy.horizen.io/horizen/advanced/sidechains/) are one of the major protocol upgrades that Horizen is working on. It will enable different dApps to each run on their own sidechain with decoupled security guarantees. 
+We plan to integrate the treasury system on a sidechain. [Sidechains](https://www.horizen.io/academy/sidechains/) are one of the major protocol upgrades that Horizen is working on. It will enable different dApps to each run on their own sidechain with decoupled security guarantees. 
 
 _Even if something goes wrong on a sidechain, the mainchain will stay unaffected._
 

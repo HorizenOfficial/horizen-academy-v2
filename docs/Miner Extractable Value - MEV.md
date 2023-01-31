@@ -1,4 +1,14 @@
-﻿
+﻿---
+
+sidebar_label: Miner Extractable Value - MEV
+title: What is MEV? Miner Extractable Value
+slug: /miner-extractable-value-mev/
+description: MEV is the process of reordering, inserting or censoring transactions within a block in order to extract additional value.
+
+---
+
+# What is MEV? Miner Extractable Value
+
 **Miner Extractable Value** or MEV, _Maximum Extractable Value_ for non-proof of work blockchains, has become a major topic of conversation amongst the more technical and trading focused users in the crypto space. 
 
 We explore what MEV is and how it impacts both miners/validators and users of decentralized exchanges. 

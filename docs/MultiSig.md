@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: MultiSig
+title: What is MultiSig? - Multi-Signature
+slug: /multisig/
+description: In order to spend a UTXO, a valid cryptographic signature is required. Multi-signature transactions, or MultiSig, rely on more than one signature.
+
+---
+
+# What is MultiSig? - Multi-Signature
 
 ## MultiSig Functionality
 

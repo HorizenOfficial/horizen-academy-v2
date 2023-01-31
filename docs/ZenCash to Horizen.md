@@ -1,7 +1,15 @@
-﻿
+﻿---
 
-### The Birth of ZenCash
+sidebar_label: ZenCash to Horizen
+title: From ZenCash to Horizen
+slug: /zencash-to-horizen/
+description: This article describes our journey from ZenCash to Horizen. The initial Horizen team was not selected, it emerged from committed, passionate volunteers.
 
+---
+
+# From ZenCash to Horizen
+
+## The Birth of ZenCash
 
 _It started almost by accident_. **Rob Viglione**, the _co-founder_ of **Horizen**, was finishing his Ph.D. at the University of South Carolina, teaching a blockchain course, and working at ZClassic as a part-time hobby. 
 

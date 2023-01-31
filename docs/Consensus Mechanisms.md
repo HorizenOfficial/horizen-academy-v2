@@ -1,4 +1,14 @@
-﻿
+﻿---
+
+sidebar_label: Consensus Mechanisms
+title: What are Consensus Mechanisms?
+slug: /consensus-mechanisms/
+description: A Consensus Mechanism is the set of protocols used by nodes on a blockchain or DLS to come to an agreement on the current state of the network.
+
+---
+
+# What are Consensus Mechanisms?
+
 A **Consensus Mechanism** is the set of protocols used by nodes on a blockchain or distributed ledger system to come to an agreement on the current state of the network: *the most up to date account of wallet balances and token transfers on the ledger.* 
 
 _Today, the most popular consensus mechanisms include:_

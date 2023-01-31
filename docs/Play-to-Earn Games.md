@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: Play-to-Earn Games
+title: What are Play-to-Earn Games? - Blockchain Games
+slug: /play-to-earn-games/
+description: Play-to-Earn is a type of game where players can earn tokens or NFTs when they win or accumulate tokens in the process of gameplay.
+
+---
+
+# What are Play-to-Earn Games? - Blockchain Games
 
 Blockchain technology is seeping its way into many important industries like _logistics_, _finance_ and _healthcare_. 
 
@@ -35,7 +44,7 @@ _This means that the in-game assets can be:_
 - Transferred to anyone on the blockchain _network_
 - Traded for different assets or cryptocurrencies using a _DEX_ 
 
-In-game assets could also be made **interoperable**, meaning they can be transferred between different gaming environments if the blockchain games operate on the same blockchain network or a blockchain that is [EVM-compatible](https://www.horizen.io/blockchain-academy/technology/advanced/evm-ethereum-virtual-machine/). 
+In-game assets could also be made **interoperable**, meaning they can be transferred between different gaming environments if the blockchain games operate on the same blockchain network or a blockchain that is [EVM-compatible](https://www.horizen.io/academy/ethereum-virtual-machine-evm/). 
 
 This can provide significant benefits to avid gamers who are already familiar with using tokens as currency within digital economies, but have never truly been able to claim ownership of the assets and achievements they accumulate in a game. 
 

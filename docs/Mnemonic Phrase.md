@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: Mnemonic Phrases
+title: What are Mnemonic Phrases?
+slug: /mnemonic-phrases/
+description: A Mnemonic Phrase is a backup of your private key that is used by most wallets, it is a list of random words given to you when creating a wallet.
+
+---
+
+# What are Mnemonic Phrases?
 
 The basis for generating keys and addresses is _randomness_. Ownership on the blockchain is highly secure, as long as the private key cannot be reproduced by an adversary. 
 

@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: Directed Acyclic Graph - DAG
+title: What is a DAG? - Directed Acyclic Graphs
+slug: /directed-acyclic-graph-dag/
+description: The term DAG stands for Directed Acyclic Graph. A DAG is a mathematical concept, technically, a blockchain is the most simple form of a DAG.
+
+---
+
+# What is a DAG? - Directed Acyclic Graphs
 
 One of the main engineering challenges in the blockchain space is _scalability_. 
 
@@ -43,9 +52,9 @@ A high rate of orphaned blocks reduces the overall security of the protocol, bec
 
 **There are generally three approaches to scalability:**
 
-- **Second-layer technologies** like [payment or state channels](https://academy.horizen.io/technology/expert/state-and-payment-channels/) which are used in the _Lightning Network_ that take transactions off-chain with the option to settle on-chain at any time.
+- **Second-layer technologies** like [payment or state channels](https://www.horizen.io/academy/payment-channels/) which are used in the _Lightning Network_ that take transactions off-chain with the option to settle on-chain at any time.
 - **Sidechain** approaches, which can best be described as a parallelization of blockchains. Assets can be transferred from one chain to another via a _two-way peg_ (_2WP_) and the transactional load is shared between the mainchain and its sidechains.
-- **Directed acyclic graphs** (_DAGs_) have a different [data structure](https://academy.horizen.io/technology/advanced/blockchain-as-a-data-structure/) than blockchains. Many blocks can be produced in parallel which requires modifications to the consensus mechanism.
+- **Directed acyclic graphs** (_DAGs_) have a different [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) than blockchains. Many blocks can be produced in parallel which requires modifications to the consensus mechanism.
 
 ## What is a DAG?
 
@@ -196,7 +205,7 @@ Finding this cluster is an _NP-hard problem_, which means it cannot directly be 
 
 ## Miners in Our Block-DAG Protocol
 
-As you might know, there are [miners](https://academy.horizen.io/technology/advanced/mining/) in traditional Proof-of-Work blockchains that secure the ledger with large amounts of computing power. Miners are _incentivized_ to do this work by being rewarded with newly created coins. 
+As you might know, there are [miners](https://www.horizen.io/academy/mining-in-blockchain/) in traditional Proof-of-Work blockchains that secure the ledger with large amounts of computing power. Miners are _incentivized_ to do this work by being rewarded with newly created coins. 
 
 **There will also be miners in our Block-DAG protocol**.
 

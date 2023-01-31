@@ -1,5 +1,13 @@
-﻿
-## What is a Layer 0 Network?
+﻿---
+
+sidebar_label: Layer 0
+title: What is a Layer 0 Blockchain?
+slug: /layer-0/
+description: Layer 0 networks solve three critical problems for web3 development and adoption - scalability, flexibility and interoperability. Learn more in this article
+
+---
+
+# What is a Layer 0 Blockchain?
 
 Over the past 3 years, the cryptocurrency ecosystem has seen an explosive growth in new and innovative projects offering novel ways to deliver _banking services_, _exchange digital art_, _trade financial products_ and more. 
 

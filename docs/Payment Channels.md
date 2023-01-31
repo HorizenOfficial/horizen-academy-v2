@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: Payment Channels
+title: What are Payment Channels?
+slug: /payment-channels/
+description: We cover a highly promising approach to make blockchains security promise accessible to a more substantial user-base - payment and state channels
+
+---
+
+# What are Payment Channels?
 
 A common criticism of blockchain technology is that it doesn't scale in a decentralized setting and therefore is not able to support mainstream adoption. 
 
@@ -6,9 +15,9 @@ Now there are different ways to scale blockchains and increase their throughput,
 
  _Meet layer-two transactions on payment channels_.
 
-We introduced [sidechains](https://academy.horizen.io/horizen/advanced/sidechains/) as a scaling approach that spreads the workload otherwise performed by a single set of mainchain nodes to several sets of nodes, each responsible for their sidechain.
+We introduced [sidechains](https://www.horizen.io/academy/sidechains/) as a scaling approach that spreads the workload otherwise performed by a single set of mainchain nodes to several sets of nodes, each responsible for their sidechain.
 
-We also talked about [Directed Acyclic Graphs (DAGs)](https://academy.horizen.io/horizen/advanced/block-dag/) that hold the potential to dynamically adjust the on-chain, or "_on-DAG_", throughput by introducing a new type of data structure supporting _two-dimensionality_ in an otherwise mostly _one-dimensional_ blockchain world.
+We also talked about [Directed Acyclic Graphs (DAGs)](https://www.horizen.io/academy/directed-acyclic-graph-dag/) that hold the potential to dynamically adjust the on-chain, or "_on-DAG_", throughput by introducing a new type of data structure supporting _two-dimensionality_ in an otherwise mostly _one-dimensional_ blockchain world.
 
 We will cover another highly promising approach to make blockchains security promise accessible to a more substantial user-base - _payment channels_. 
 
@@ -25,14 +34,14 @@ Payment channels are no trivial topic, and many different projects are working o
 
 The primitives used to build a payment channel are:
 
-- **Regular transactions** in the [UTXO model](https://academy.horizen.io/technology/expert/utxo-vs-account-model/)
+- **Regular transactions** in the [UTXO model](https://www.horizen.io/academy/utxo-vs-account-model/)
 - **P2SH addresses**, and more specifically _MultiSig addresses_
-- [**Cryptographic hash functions**](https://academy.horizen.io/technology/advanced/hash-functions/)
+- [**Cryptographic hash functions**](https://www.horizen.io/academy/hash-functions/)
 - **Timelocks**
 
 One premise is the construction being trustless by design: You must not have to rely on your counterparty to transact securely. 
 
-Whereas the underlying blockchain derives its security from the computational power of its miners in [Proof of Work](https://academy.horizen.io/technology/expert/proof-of-work/) blockchains, _payment channels_ derive security from economic disincentives. 
+Whereas the underlying blockchain derives its security from the computational power of its miners in [Proof of Work](https://www.horizen.io/academy/proof-of-work-pow/) blockchains, _payment channels_ derive security from economic disincentives. 
 
 Namely, when one party tries to cheat, the other party will be granted all the money within the bilateral channel. This mechanism allows participants to consider updates to the channel as "final," although only computed locally.
 
@@ -40,7 +49,7 @@ Namely, when one party tries to cheat, the other party will be granted all the m
 
 Simply speaking, a payment channel is a _2-of-2 MultiSig account_, or more generally speaking, a _Pay to Script Hash_ (P2SH) address. 
 
-This can be understood as a simple [smart contract](https://academy.horizen.io/technology/advanced/guaranteed-execution-with-smart-contracts/) controlling funds, the **channel balance**, and defining the conditions under which these funds can be spent. 
+This can be understood as a simple [smart contract](https://www.horizen.io/academy/smart-contracts/) controlling funds, the **channel balance**, and defining the conditions under which these funds can be spent. 
 
 A **2-of-2 MultiSig account** is based on two private keys, both of which need to sign a transaction for it to be valid.
 
@@ -221,7 +230,7 @@ It's time to apply the second mechanism ensuring honest behavior: _one-time priv
 
 ### Using One-Time Keys to Prevent Theft
 
-Note: For the sake of simplicity we consider [private keys](https://academy.horizen.io/technology/expert/generating-keys-and-addresses/) and [digital signatures](https://academy.horizen.io/technology/expert/digital-signatures/) as "equivalent" in this article. 
+Note: For the sake of simplicity we consider [private keys](https://www.horizen.io/academy/wallet-addresses/) and [digital signatures](https://www.horizen.io/academy/digital-signatures/) as "equivalent" in this article. 
 
 **Digital signatures** are generated using a private key and a message. 
 
@@ -334,7 +343,7 @@ To connect three nodes, you need three edges; for five nodes, you need ten edges
 
 *In other words**: Individual connections don't scale well.
 
-As the name suggests, HTLCs rely on cryptographic [hash functions](https://academy.horizen.io/technology/advanced/hash-functions/) and for the most part on two of their fundamental properties: 
+As the name suggests, HTLCs rely on cryptographic [hash functions](https://www.horizen.io/academy/hash-functions/) and for the most part on two of their fundamental properties: 
 - Being _preimage resistant one-way functions_ 
 - And mapping inputs to an ample output space making them _collision-resistant_. 
 

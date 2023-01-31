@@ -1,4 +1,14 @@
-﻿
+﻿---
+
+sidebar_label: Oracles
+title: What are Blockchain Oracles?
+slug: /blockchain-oracles/
+description: An Oracle is a decentralized protocol that transmits data from external sources into smart contracts to help them execute according to predefined conditions.
+
+---
+
+# What are Blockchain Oracles?
+
 _The primary objective of a blockchain_ is to ensure that transactions that occur within the network are correctly validated and recorded based on a set of protocols executed by the network's nodes.
 
 This sophisticated system has enabled millions of users to _securely_ and _transparently_ record _billions of dollars_ in transactions _without_ the need of a centralized intermediary.
@@ -9,7 +19,7 @@ While there are many obvious benefits to this technology, _one major flaw in the
 
 This means that a blockchain on its own is essentially just an isolated network, similar to a computer with no internet connection.
 
-Blockchain [consensus mechanisms](https://academy.horizen.io/technology/advanced/consensus-mechanisms/) are predicated on the assumption that any external data that is inputted into the blockchain must be correct, otherwise, any transactions that are validated and recorded based on false data will remain _permanently_ embedded into the blockchain as truth.
+Blockchain [consensus mechanisms](https://www.horizen.io/academy/consensus-mechanisms/) are predicated on the assumption that any external data that is inputted into the blockchain must be correct, otherwise, any transactions that are validated and recorded based on false data will remain _permanently_ embedded into the blockchain as truth.
 
 In order for blockchains to exist as more than siloed systems and to be adopted for real world use cases, there needs to be a _trustless_, _tamper proof_ solution for feeding correct data from the external environment into the blockchain through smart contracts. 
 
@@ -27,7 +37,7 @@ This solution is called an _Oracle_, and it is a critical piece of technology th
 
 Before defining what oracles are, it is essential that we explain what _smart contracts_ are and how they work.
 
-**A [smart contract](https://academy.horizen.io/technology/advanced/guaranteed-execution-with-smart-contracts/)** is a computer program that automatically executes a set of functions based on predefined rules or conditions set by the developer.
+**A [smart contract](https://www.horizen.io/academy/smart-contracts/)** is a computer program that automatically executes a set of functions based on predefined rules or conditions set by the developer.
 
 _With smart contracts_, users can conduct all kinds of agreements that involve anywhere from _two individuals to several thousands of people without_ the need of an intermediary.
 
@@ -66,7 +76,7 @@ A **Blockchain Oracle** is a piece of _middleware_ implemented within a computer
 - **Listen**: Monitoring the blockchain for incoming requests from users or smart contracts for off-chain data
 - **Extract**: Retrieving data from one of multiple systems that are external to the blockchain, such as off-chain APIs hosted on 3rd party servers
 - **Format**: Converting data from an external API into a readable blockchain format (i.e an input) or make it compatible with an external API (i.e an output)
-- **Validate**: Using [digital signatures](https://academy.horizen.io/technology/expert/digital-signatures/) or zero-knowledge proofs to create a cryptographic proof that confirms the performance of a data oracle
+- **Validate**: Using [digital signatures](https://www.horizen.io/academy/digital-signatures/) or zero-knowledge proofs to create a cryptographic proof that confirms the performance of a data oracle
 - **Compute**: Performing secure computations off-chain in order to calculate variables such as the median result from multiple oracle data submissions.
 - **Broadcast**: In a similar way to how nodes sign and broadcast transactions on a blockchain so that all other nodes can verify them, oracle nodes sign and broadcast data along with corresponding proofs to the blockchain so that they can be consumed by smart contracts
 - **Output**: In certain cases, oracles will send data from a smart contract to an external system in order for that system to take actions that correspond to actions taken within the blockchain network. 

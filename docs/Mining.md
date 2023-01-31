@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: Mining
+title: What is Crypto Mining?
+slug: /mining-in-blockchain/
+description: In this article, you learn about how cryptocurrency miners secure the blockchain with their computational power at an advanced level.
+
+---
+
+# What is Crypto Mining?
 
 Not every blockchain has _miners_. Only in _Proof of Work_ is there _mining_, and therefore, miners. 
 
@@ -24,7 +33,7 @@ The winning miner’s opinion will become the truth accepted by everybody else o
 
 ## How Does Mining Work?
 
-Mining describes the activity of performing a computationally expensive task - the [Proof of Work (PoW)](https://academy.horizen.io/technology/expert/proof-of-work/).
+Mining describes the activity of performing a computationally expensive task - the [Proof of Work (PoW)](https://www.horizen.io/academy/proof-of-work-pow/).
 
 In the simplest case, this task is finding a _nonce_ that when hashed together with the rest of the block header produces a _block hash_ below a certain threshold which is called the _target_.
 
@@ -78,7 +87,7 @@ The miner that solves the puzzle first, gets to extend the blockchain with his b
 
 ### Finding a Nonce
 
-So what is the puzzle that miners are trying to solve? This is where we need to talk about [hash functions](https://academy.horizen.io/technology/advanced/hash-functions/) again.
+So what is the puzzle that miners are trying to solve? This is where we need to talk about [hash functions](https://www.horizen.io/academy/hash-functions/) again.
 
 One of the important properties of cryptographic hash functions is being _pseudorandom_. You must not be able to predict a change in the output that results from a change of the input.
 
@@ -162,13 +171,13 @@ _Now you might ask_ why it is necessary to make block production computationally
 
 In a **Sybil Attack**, an attacker creates a large number of malicious nodes in an effort to achieve some goal. In the blockchain context, this goal can be including malicious transactions in a block, _censoring_ transactions from a given network participant or performing a _double spend_ after a block reorganization.
 
-Spinning up a node comes at a very low cost, so there is not much to prevent an attacker from creating a large number of them. The [consensus mechanism](https://academy.horizen.io/technology/advanced/consensus-mechanisms/) represents an abstract form of voting on different versions of the transaction history.
+Spinning up a node comes at a very low cost, so there is not much to prevent an attacker from creating a large number of them. The [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) represents an abstract form of voting on different versions of the transaction history.
 
 If voting was tied to an _IP_ address, an attacker could manipulate the vote easily by creating _Sybil_ nodes. By tying the voting power to external costs, electricity and hardware, interfering with the voting process on blocks becomes much harder.
 
 ### Providing Immutability
 
-Not only does PoW prevent _Byzantine_ actors from obstructing the block production process, but it also protects the history recorded on the blockchain from being tampered with. All nodes following the [protocol of a blockchain](https://academy.horizen.io/technology/advanced/a-protocol-to-transfer-value/) will reject versions of the blockchain that do not have a chain of references form the current block all the way back to the genesis block, each protected with a Proof of Work.
+Not only does PoW prevent _Byzantine_ actors from obstructing the block production process, but it also protects the history recorded on the blockchain from being tampered with. All nodes following the [protocol of a blockchain](https://www.horizen.io/academy/blockchain-protocols/) will reject versions of the blockchain that do not have a chain of references form the current block all the way back to the genesis block, each protected with a Proof of Work.
 
 _Without_ a Proof of Work, this chain of references could be reconstructed at almost _zero_ cost. Only by securing each link between two blocks with a large amount of spent electricity, the blockchain becomes _immutable_. 
 
@@ -207,7 +216,7 @@ The algorithm needs to be _deterministic_ so the verification of the proof is gu
 
 ## Mining Hardware
 
-In our article on [PoW](https://academy.horizen.io/technology/expert/proof-of-work/) we introduced two metrics to assess computational hardness. 
+In our article on [PoW](https://www.horizen.io/academy/proof-of-work-pow/) we introduced two metrics to assess computational hardness. 
 
 **Space complexity** refers to the memory intensiveness of the computation, while **time complexity** describes the reliance on the processor.
 

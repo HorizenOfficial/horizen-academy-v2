@@ -1,6 +1,13 @@
-﻿
+﻿---
 
-## Private Transactions in Crypto
+sidebar_label: Private Transactions
+title: Private Transactions in Crypto
+slug: /private-transactions/
+description: In this article, we introduce you to the different technologies that enable private transactions on a public blockchain.
+
+---
+
+# Private Transactions in Crypto
 
 One of the great value propositions of blockchains is the _transparency_ that such public ledgers offer. There are many cases though where it is desirable to conduct _private transactions_. 
 
@@ -112,7 +119,7 @@ In your wallet, you can either generate **t-Addresses** (_transparent Addresses_
 
 - If you transact between **two** z-Addresses, no information about the transaction gets publicly recorded - neither the sender, receiver nor the amount. 
 
-If you want to try this feature, you can download our flagship app [Sphere by Horizen](https://www.horizen.io/spherebyhorizen/). Make sure to activate **full mode** in the settings otherwise, you won't be able to generate _z-Addresses_.
+If you want to try this feature, you can download our flagship app [Sphere by Horizen](https://www.horizen.io/wallets/spherebyhorizen/). Make sure to activate **full mode** in the settings otherwise, you won't be able to generate _z-Addresses_.
 
 ## Summary - Private Transactions on the Blockchain
 

@@ -1,4 +1,14 @@
-﻿
+﻿---
+
+sidebar_label: Satoshi Nakamoto
+title: Who is Satoshi Nakamoto?
+slug: /satoshi-nakamoto/
+description: There have been many attempts to identify the man/woman/group behind the pseudonym Satoshi Nakamoto, the creator of Bitcoin, none of them successful.
+
+---
+
+# Who is Satoshi Nakamoto?
+
 **Bitcoin** just celebrated its 13th birthday, but the _creator_ of the first cryptocurrency blockchain still remains _anonymous_. 
 
 There have been many attempts to identify the _man/woman/group_ behind the pseudonym, **Satoshi Nakamoto**, none of them successful.

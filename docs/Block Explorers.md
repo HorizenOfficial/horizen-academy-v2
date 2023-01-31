@@ -1,5 +1,13 @@
-﻿
-## What is a Block Explorer?
+﻿---
+
+sidebar_label: Block Explorers
+title: What is a Blockchain Explorer?
+slug: /blockchain-explorers/
+description: In this article, you will learn how a block explorer lets you browse the data on a blockchain and the kind of data you will find.
+
+---
+
+# What is a Block Explorer?
 
 An often-cited benefit of blockchain technology is the _transparency_ it offers. 
 

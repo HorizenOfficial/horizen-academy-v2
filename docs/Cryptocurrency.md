@@ -1,4 +1,15 @@
-﻿<strong>A cryptocurrency is digital money</strong>. There are many cryptocurrencies, just like there are many currencies like the dollar, the euro, and the ruble.
+﻿---
+
+sidebar_label: Cryptocurrency
+title: What is Cryptocurrency?
+slug: /cryptocurrency/
+description: A cryptocurrency is digital money. There are many cryptocurrencies, just like there are many currencies like the dollar, the euro, and the peso.
+
+---
+
+# What is Cryptocurrency?
+
+<strong>A cryptocurrency is digital money</strong>. There are many cryptocurrencies, just like there are many currencies like the dollar, the euro, and the ruble.
        
 Each cryptocurrency runs on its own blockchain, because every currency needs its own record of transactions.
 

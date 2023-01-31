@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: Zero Knowledge Proofs - ZKP
+title: What are Zero Knowledge Proofs? - ZKPs
+slug: /zero-knowledge-proofs-zkp/
+description: A Zero Knowledge Proof algorithm must contain the following 3 properties - Completeness, Soundness, and Zero-Knowledge
+
+---
+
+# What are Zero Knowledge Proofs?
 
 _Zero knowledge proofs_ are ushering in a new era of dapps and blockchains that offer greater scalability and privacy through advanced cryptography. 
 

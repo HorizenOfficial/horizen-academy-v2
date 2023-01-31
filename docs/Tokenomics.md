@@ -1,6 +1,13 @@
-﻿
+﻿---
 
-## What is Tokenomics?
+sidebar_label: Tokenomics
+title: What are Tokenomics?
+slug: /tokenomics/
+description: Tokenomics, or token-economics, is defined as the economic incentive model created within a blockchain through the use of tokens or cryptocurrencies
+
+---
+
+# What are Tokenomics?
 
 **Tokenomics**, or _token-economics_, is defined as the economic incentive models, including distribution and rewards, created within a blockchain through the use of tokens or cryptocurrencies.
 

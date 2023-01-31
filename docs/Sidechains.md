@@ -1,9 +1,19 @@
-﻿
+﻿---
+
+sidebar_label: Sidechains
+title: What is a Sidechain?
+slug: /sidechains/
+description: Sidechains benefit from the decentralization and security of the underlying main blockchain, and maintain the flexibility to solve highly specific use cases.
+
+---
+
+# What is a Sidechain?
+
 Blockchain technology offers some unique properties, such as achieving consensus among unknown actors and providing a strong incentive mechanism for honest behavior. _However_, building real-world applications on blockchain technology can be challenging.
 
 The _first_ challenge of building applications on the blockchain is _security_. A blockchain’s security increases as the number of network participants grows. As a result, spinning up a small application-specific blockchain with just a few stakeholders does not provide the same security level as utilizing an established one with thousands of nodes.
 
-A blockchain’s security model, in turn, depends on utilizing a token with real value, tradeable on established markets. This holds in the case of [_Proof of Work_](https://academy.horizen.io/technology/expert/proof-of-work/) blockchains in which _miners_ get rewarded for their computational power with a token, as well as in _Proof of Stake_ blockchains where a validator’s security deposit needs to have economic weight. 
+A blockchain’s security model, in turn, depends on utilizing a token with real value, tradeable on established markets. This holds in the case of [_Proof of Work_](https://www.horizen.io/academy/proof-of-work-pow/) blockchains in which _miners_ get rewarded for their computational power with a token, as well as in _Proof of Stake_ blockchains where a validator’s security deposit needs to have economic weight. 
 
 A native token with real-world value, thus incentivizes users to provide additional security to the network by mining or staking and allows applications to transfer value easily.
 
@@ -164,13 +174,13 @@ The most significant number of sidechain protocols are built on the Ethereum net
 - The _design_ is **symmetric**, requiring the mainchain to monitor all sidechains to verify backward transfers 
 - The _construction_ is **asymmetric**, and the mainchain relies on some sort of certifiers to verify and broadcast transactions from the sidechains to the mainchain.
 
-_A first iteration_ of [Horizen’s sidechain construction](https://www.horizen.global/assets/files/Horizen-Sidechains-Decoupled-Consensus-Between-Chains.pdf) also relied on certifiers to sign backward transfers batched in withdrawal certificates.
+_A first iteration_ of [Horizen’s sidechain construction](https://www.horizen.io/assets/files/Horizen-Sidechains-Decoupled-Consensus-Between-Chains.pdf) also relied on certifiers to sign backward transfers batched in withdrawal certificates.
 
 ## Why Does Horizen Look at Sidechains?
 
 The Horizen blockchain project has set itself ambitious goals. 
 
-We plan on including features such as a treasury system for the [DAO](https://academy.horizen.io/horizen/advanced/dao-decentralized-autonomous-organization/), in cooperation with IOHK. Work continues on a decentralized solution for tracking Secure and Super Nodes, and handling their rewards, as well as developing a [Block-DAG](https://academy.horizen.io/horizen/advanced/block-dag/) protocol to increase transaction throughput.
+We plan on including features such as a treasury system for the [DAO](https://www.horizen.io/academy/decentralized-autonomous-organization-dao/), in cooperation with IOHK. Work continues on a decentralized solution for tracking Secure and Super Nodes, and handling their rewards, as well as developing a [Block-DAG](https://www.horizen.io/academy/directed-acyclic-graph-dag/) protocol to increase transaction throughput.
 
 _You can probably see the benefits of developing a sidechain first as some of these functionalities would require significant modifications of the core client if implemented directly into the existing codebase_. 
 
@@ -178,7 +188,7 @@ Building new features and making changes to the protocol, even if they are small
 
 The idea is to implement a robust sidechain model, one that simplifies adding new features, and use that process to expand the Horizen ecosystem afterward. Sidechain implementations will be completely decoupled from the mainchain and can run entirely different consensus algorithms.
 
-This way, it would be possible to run the sidechains facilitating the treasury and node-tracking system with a [Proof-of-Stake](https://academy.horizen.io/technology/advanced/consensus-mechanisms/) like consensus protocol, while maintaining the mainchain with a more “traditional” [Proof-of-Work](https://academy.horizen.io/technology/expert/proof-of-work/) consensus mechanism.
+This way, it would be possible to run the sidechains facilitating the treasury and node-tracking system with a [Proof-of-Stake](https://www.horizen.io/academy/consensus-mechanisms/) like consensus protocol, while maintaining the mainchain with a more “traditional” [Proof-of-Work](https://www.horizen.io/academy/proof-of-work-pow/) consensus mechanism.
 
 ### How Does It Work Now?
 

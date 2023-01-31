@@ -1,6 +1,13 @@
-﻿
+﻿---
 
-# What is Ethereum?
+sidebar_label: Ethereum Glossary
+title: What is Ethereum? - An Ethereum Glossary
+slug: /ethereum-glossary/
+description: Ethereum is a blockchain network that enables developers to launch their own tokens and build decentralized applications (DApps) using smart contracts.
+
+---
+
+# What is Ethereum? - An Ethereum Glossary
 
 _Ethereum_ is a blockchain network that enables developers to launch their own tokens and build decentralized applications (DApps) using smart contracts. 
 
@@ -17,7 +24,7 @@ Ether, or _ETH_, is the currency of the Ethereum blockchain. It is used to pay m
 
 One of the core features of the Ethereum network is the _Smart Contract_, which is a type of computer program that executes a set of functions based on predefined rules or conditions set by the developer.
 
-With [smart contracts](https://www.horizen.io/blockchain-academy/technology/advanced/guaranteed-execution-with-smart-contracts/), users can conduct all kinds of agreements that involve anywhere from two individuals to several thousands of people without the need of an intermediary. 
+With [smart contracts](https://www.horizen.io/academy/smart-contracts/), users can conduct all kinds of agreements that involve anywhere from two individuals to several thousands of people without the need of an intermediary. 
 
 ### Smart Contract Example
 
@@ -44,7 +51,7 @@ Ethereum **nodes** record and transmit copies of transaction data, including sma
 
 The **Ethereum Virtual Machine** is a computation engine that is in charge of executing smart contract transactions and computing the state for every new block added to the Ethereum blockchain. 
 
-We can think of the [EVM](https://www.horizen.io/blockchain-academy/technology/advanced/evm-ethereum-virtual-machine/) as a piece of software that sits on top of the hardware/node infrastructure of the blockchain and performs critical functions such as running and compiling code used for dApps and smart contracts. 
+We can think of the [EVM](https://www.horizen.io/academy/ethereum-virtual-machine-evm/) as a piece of software that sits on top of the hardware/node infrastructure of the blockchain and performs critical functions such as running and compiling code used for dApps and smart contracts. 
 
 The EVM is a **turing complete software**, meaning that the software is agile enough to run any code defined by the developer. The virtual machine enables smart contract code to be executed by a global P2P network of computers. 
 

@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: POS vs POW
+title: Proof of Stake vs Proof of Work
+slug: /pos-vs-pow/
+description: In this article, we define and compare two of the most popular consensus mechanisms in blockchain - Proof of Work and Proof of Stake.
+
+---
+
+# Proof of Stake vs Proof of Work
 
 The distributed network of a blockchain comprises many thousands of participants - some of them *altruistic*, others *rational*, and some of them *malicious*. 
 
@@ -30,7 +39,7 @@ The generalization _Demiro Massessi_ has formulated applies to both:
 
 **Miners** are the entities who work to achieve consensus within the network in a _Proof of Work  blockchain_. 
 
-They collect all transactions that are forwarded to them through the [P2P network](https://academy.horizen.io/technology/advanced/a-peer-to-peer-p2p-network/) and save them in their *mempool* (memory pool). While they collect incoming transactions, they verify if the transactions are valid according to the protocol and add them to the block they are currently working on. 
+They collect all transactions that are forwarded to them through the [P2P network](https://www.horizen.io/academy/peer-to-peer-networks-p2p/) and save them in their *mempool* (memory pool). While they collect incoming transactions, they verify if the transactions are valid according to the protocol and add them to the block they are currently working on. 
 
 *At the same time, they are solving a computationally expensive puzzle.*
 

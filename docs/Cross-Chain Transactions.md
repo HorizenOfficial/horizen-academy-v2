@@ -1,4 +1,13 @@
-﻿
+﻿---
+
+sidebar_label: Cross Chain Transactions
+title: What are Cross Chain Transactions?
+slug: /cross-chain-transactions/
+description: In this article, we take a close look at transactions that move assets between different blockchains, specifically a mainchain and its sidechains
+
+---
+
+# What are Cross Chain Transactions?
 
 In this article, we take a close look at transactions that move assets _between_ different blockchains, specifically a _mainchain_ and its _sidechains_. 
 
@@ -115,15 +124,15 @@ Lastly, forward transfers, which cannot be processed, are collected to be includ
 
 There are several ways to realize sidechain-internal transactions in Zendoo. As long as a sidechain adheres to the cross-chain transfer protocol, internal transactions can be implemented; however, the use case deems appropriate. 
 
-One of the first considerations that needs to go into a decision of the transactional model, is if the sidechain will run the [UTXO or account model](https://academy.horizen.io/technology/expert/utxo-vs-account-model/). One reason to diverge from the UTXO model used in Horizen's mainchain and the Latus sidechain construction would be the easier implementation of complex [smart contract](https://academy.horizen.io/technology/advanced/guaranteed-execution-with-smart-contracts/) functionalities in the account model.
+One of the first considerations that needs to go into a decision of the transactional model, is if the sidechain will run the [UTXO or account model](https://www.horizen.io/academy/wallet-addresses/). One reason to diverge from the UTXO model used in Horizen's mainchain and the Latus sidechain construction would be the easier implementation of complex [smart contract](https://www.horizen.io/academy/smart-contracts/) functionalities in the account model.
 
-Recall how the Zendoo protocol doesn't require a sidechain to be a blockchain at all. User account balances could be maintained in a more traditional data structure, or even a highly progressive one like a [directed acyclic graph (DAG)](https://academy.horizen.io/horizen/advanced/block-dag/). 
+Recall how the Zendoo protocol doesn't require a sidechain to be a blockchain at all. User account balances could be maintained in a more traditional data structure, or even a highly progressive one like a [directed acyclic graph (DAG)](https://www.horizen.io/academy/directed-acyclic-graph-dag/). 
 
 The option space for implementing sidechain internal transactions is very large.
 
 ### Sidechain Internal Transactions in Latus
 
-Latus uses the UTXO accounting model. Transactions on Latus sidechains work just like regular UTXO on-chain transactions. At least one input is consumed with each transaction, spending of which is authorized through a [digital signature](https://academy.horizen.io/technology/expert/digital-signatures/). 
+Latus uses the UTXO accounting model. Transactions on Latus sidechains work just like regular UTXO on-chain transactions. At least one input is consumed with each transaction, spending of which is authorized through a [digital signature](https://www.horizen.io/academy/digital-signatures/). 
 
 The total amount of the outputs created must be less than or equal to the number of inputs consumed.
 
@@ -184,7 +193,7 @@ A _backward transfer request_ is a special type of transaction created on the ma
 
 The **nullifier** serves as a unique identifier of coins on a sidechain. Additionally, a _proof_ and _proofdata_ is submitted with the **BTR**, which allows sidechain nodes to verify incoming backward transfer requests. 
 
-The _proofdata_ contains one or more UTXOs on the sidechain, which will be consumed by the BTR. The right to spend the UTXO(s), i.e. the [digital signature](https://academy.horizen.io/technology/expert/digital-signatures/), is provided in the _proof_ part.
+The _proofdata_ contains one or more UTXOs on the sidechain, which will be consumed by the BTR. The right to spend the UTXO(s), i.e. the digital signature, is provided in the _proof_ part.
 
 When a backward transfer request is submitted on the mainchain, it will be synchronized to the sidechain through the same mechanism used to process forward transfers. 
 

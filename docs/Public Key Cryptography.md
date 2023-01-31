@@ -1,8 +1,17 @@
-﻿
+﻿---
+
+sidebar_label: Public Key Cryptography
+title: What is Public Key Cryptography? - PKC
+slug: /public-key-cryptography-pkc/
+description: Public-Key Cryptography makes it possible to represent identity on the blockchain. It is the second cornerstone of blockchain technology besides hash functions
+
+---
+
+# What is Public Key Cryptography? - PKC
 
 Since the goal of the original blockchain design was to enable a new and fair form of money, it would be great to be able to actually own money in this system, wouldn’t it? There must be a concept of identity to have ownership on the blockchain - you cannot have ownership if there is no representation of the owner.
 
-_Public-Key Cryptography_ makes it possible to represent identity on the blockchain. It is the second cornerstone of blockchain technology besides [hash functions](https://academy.horizen.io/technology/advanced/hash-functions/). 
+_Public-Key Cryptography_ makes it possible to represent identity on the blockchain. It is the second cornerstone of blockchain technology besides [hash functions](https://www.horizen.io/academy/hash-functions/). 
 
 While hash functions are used to verify the authenticity and integrity of data, **public-key cryptography** is used to verify ownership on the blockchain.
 

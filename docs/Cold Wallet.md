@@ -1,5 +1,13 @@
-﻿
-## What is a Cold Wallet?
+﻿---
+
+sidebar_label: Cold Wallets
+title: What are Cold Wallets?
+slug: /cold-wallets/
+description: A cold wallet or hardware wallet is a type of wallet that lives on a hardware device like a USB and does not require a connection to the internet to function.
+
+---
+
+# What is a Cold Wallet?
 
 A **cold wallet** or _hardware wallet_ is a type of wallet that lives on a hardware device like a USB and _does not require_ a connection to the internet to function.
 
@@ -7,9 +15,9 @@ Cold wallets allow you to store, send and receive crypto assets just like a hot 
 
 ## Why Do We Need Wallets?
 
-A wallet is essential for storing as well as sending and receiving cryptocurrencies.
+A [wallet](https://www.horizen.io/academy/crypto-wallets/) is essential for storing as well as sending and receiving cryptocurrencies.
 
-[Wallets](https://academy.horizen.io/technology/advanced/transactions/) contain your **public key,** which you send to people in order to receive crypto, like an email address, and your **private key/seed phrase**, which must be kept secret as it gives you access to your wallet and the ability to sign and authorize transactions.
+Wallets contain your [**public key**](https://www.horizen.io/academy/wallet-addresses/_), which you send to people in order to receive crypto, like an email address, and your **private key/seed phrase**, which must be kept secret as it gives you access to your wallet and the ability to sign and authorize transactions.
 
 **Both your public and private key are necessary to give you the ability to hold, receive and spend your crypto while keeping it secure.** 
 

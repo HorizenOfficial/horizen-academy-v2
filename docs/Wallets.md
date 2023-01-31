@@ -1,7 +1,14 @@
-﻿
-## What is a Crypto Wallet?
+﻿---
 
-A **wallet** is an app for generating, managing, and storing cryptographic keys - your [public and private keys](https://academy.horizen.io/technology/advanced/public-key-cryptography/).
+sidebar_label: Wallets
+title: What is a Crypto Wallet?
+slug: /crypto-wallets/
+description: A wallet is an app for generating, managing, and storing cryptographic keys - public and private keys. You can check your balance, receive, and send funds.
+
+---
+# What is a Crypto Wallet?
+
+A **wallet** is an app for generating, managing, and storing cryptographic keys - your [public and private keys](https://www.horizen.io/academy/public-key-cryptography-pkc/).
 
 With a wallet, you can: 
 - Check your balance
@@ -14,10 +21,10 @@ _All_ exchanges provide you with wallets to store your coins in after you buy th
 
 A wallet: 
 - Generates a random _private key_, **sk**
-- Derives your _public key_, **pk**, using [elliptic curve cryptography](https://academy.horizen.io/technology/expert/elliptic-curve-cryptography/) 
+- Derives your _public key_, **pk**, using [elliptic curve cryptography](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/) 
 - Derives your address(es) from your public key
 - Stores your private key(s) 
-- And takes care of [signing transactions](https://academy.horizen.io/technology/expert/digital-signatures/)
+- And takes care of [signing transactions](https://www.horizen.io/academy/digital-signatures/)
 
 In this article, we want to give you an overview of what types of wallets there are and help you find the right wallet for you. We show you how your _mnemonic phrase_ is generated, and how it relates to your actual private key. 
 
@@ -192,7 +199,7 @@ It's the same as with cash: you don't carry around all your money in a wallet. Y
 
 With **desktop** and **mobile wallets**, there is a choice between _single_ and _multi-currency_ wallets. Those should be rather self-explanatory terms. The _former_ allows you to store _one_ coin, while the _latter_ supports _multiple_ currencies. 
 
-Some of the more popular examples of _desktop_ wallets include _Coinomi_ and [_Sphere by Horizen_](https://www.horizen.io/spherebyhorizen/). For _mobile_, there are _Mycelium_ or _Paytomat_, just to name a few.
+Some of the more popular examples of _desktop_ wallets include _Coinomi_ and [_Sphere by Horizen_](https://www.horizen.io/wallets/spherebyhorizen/). For _mobile_, there are _Mycelium_ or _Paytomat_, just to name a few.
 
 If you get your first coins on an exchange, I would recommend you transfer your funds out of the exchange from the hosted web wallet, onto a _desktop_, _paper_, or _hardware wallet_. 
 

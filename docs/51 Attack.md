@@ -1,4 +1,13 @@
-﻿A **51% attack** is an attempt by a bad actor to control over 50% of a _proof of work_ blockchains hash rate (computer power) or to acquire over 50% of staked tokens on a _proof of stake blockchain_.
+﻿---
+sidebar_label: 51% Attacks
+title: What is a 51% Attack?
+slug: /51-attacks/
+description: 51% attacks are seen as a greater threat for newer blockchain networks that are still small in size and are therefore vulnerable to being taken over.
+---
+
+# What is a 51% Attack?
+
+A **51% attack** is an attempt by a bad actor to control over 50% of a _proof of work_ blockchains hash rate (computer power) or to acquire over 50% of staked tokens on a _proof of stake blockchain_.
 
 Controlling 51% of a network allows an attacker to potentially reverse a transaction or commit a double spend, which would allow them to spend the same coins in their wallet multiple times.
 
@@ -6,7 +15,7 @@ Controlling 51% of a network allows an attacker to potentially reverse a transac
 
 ## 51% Attacks on Proof of Work Blockchains
 
-For [proof of work](https://www.horizen.io/blockchain-academy/technology/expert/proof-of-work/) chains, the _biggest_ factor that determines whether one can successfully pull off a 51% attack is their ability to amass enough mining rigs to produce more hashing power than 50% of the network.
+For [proof of work](https://www.horizen.io/academy/proof-of-work-pow/) chains, the _biggest_ factor that determines whether one can successfully pull off a 51% attack is their ability to amass enough mining rigs to produce more hashing power than 50% of the network.
 
 So, _could Bitcoin suffer a 51% attack?_
 
@@ -34,7 +43,7 @@ A 51% attack would certainly not be a good outcome for investors. However, this 
 
 **For example**, one could imagine a powerful group or entity wanting to perform a 51% attack on a network in order to enforce protocol changes that was not considered popular by the majority of miners but had some support from a vocal minority.
 
-While such situations would normally result in a _[fork](https://www.horizen.io/blockchain-academy/technology/advanced/blockchain-forks/)_, it’s not out of the realm of possibility that the minority would choose to force control of the existing network instead of spinning off a new network and losing the benefits of accrued network effects.
+While such situations would normally result in a _[fork](https://www.horizen.io/academy/blockchain-forks/)_, it’s not out of the realm of possibility that the minority would choose to force control of the existing network instead of spinning off a new network and losing the benefits of accrued network effects.
 
 This would be more in line with a _hostile takeover,_ in which case the network's cryptocurrency (much like the stock of a company experiencing a hostile takeover) would likely become very volatile due to the uncertainty of the network's future.
 

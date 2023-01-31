@@ -1,6 +1,14 @@
-﻿
+﻿---
 
-## What is Proof of Work?
+sidebar_label: Proof of Work - POW
+title: What is Proof of Work? - POW
+slug: /proof-of-work-pow/
+description: Proof of Work makes it infeasible to change records on the blockchain because an attacker would have to redo all the work that went into building the blocks.
+
+---
+
+
+# What is Proof of Work?
 
 **Proof of Work** (PoW) is a concept that has been around for millennia. [Andreas Antonopolous](https://www.youtube.com/watch?t=152&v=rsLrJp6cLf4&feature=youtu.be), one of Bitcoin's greatest advocates, tells this story best.
 
@@ -14,7 +22,7 @@ It's a _proof of work_.
 
 Blockchain proof of work serves a similar purpose. It demonstrates the difficulty of building a blockchain by adding zeros to every block hash. 
 
-While the [blockchain as a data structure](https://academy.horizen.io/technology/advanced/blockchain-as-a-data-structure/) is inherently _tamper-evident_, only PoW makes it _immutable_. A blockchain allows spectators to easily detect changes to records, but it doesn't prevent changes from occurring. 
+While the [blockchain as a data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) is inherently _tamper-evident_, only PoW makes it _immutable_. A blockchain allows spectators to easily detect changes to records, but it doesn't prevent changes from occurring. 
 
 **Proof of Work** on the other hand, makes it infeasible to change any records, because an attacker would have to redo all the work that went into building the block(s).
 
@@ -174,7 +182,7 @@ As we mentioned above, this design didn't keep them ASIC resistant for long. It 
 
 ### An Edge-Case - The Tangle
 
-An interesting side note is that bandwidth is a consideration in the IOTA [Tangle](https://blog.iota.org/the-tangle-an-illustrated-introduction-4d5eae6fe8d4/), designed for use in IOT devices performing many micro transactions. The Tangle is a [Directed Acyclic Graph (DAG)](https://academy.horizen.io/horizen/advanced/block-dag/) consisting of individual transactions. 
+An interesting side note is that bandwidth is a consideration in the IOTA [Tangle](https://blog.iota.org/the-tangle-an-illustrated-introduction-4d5eae6fe8d4/), designed for use in IOT devices performing many micro transactions. The Tangle is a [Directed Acyclic Graph (DAG)](https://www.horizen.io/academy/directed-acyclic-graph-dag/) consisting of individual transactions. 
 
 Each transaction has a small proof of work attached. The protocol's security is based on the assumption that honest participants will make up the majority of transactions and also make up the majority of computational power.
 
