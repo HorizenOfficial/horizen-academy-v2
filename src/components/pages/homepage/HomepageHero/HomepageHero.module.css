@@ -1,0 +1,26 @@
+.hero {
+    background-color: var(--ifm-background-color);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 660px;
+}
+
+.hero__icon {
+    max-height: 62px;
+    max-width: 84px;
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+@media (min-width: 576px) {
+    .hero__title {
+        font-size: 61px;
+        line-height: 69px;
+    }
+}

@@ -1,7 +1,8 @@
 /* Markdown text default */
 
-.markdown {
-    --ifm-font-size-base: 1.125rem;
+.markdown,
+p {
+    --ifm-font-size-base: 18px;
     font-size: var(--ifm-font-size-base);
 }
 
@@ -31,6 +32,7 @@
 }
 
 .markdown > h1,
+.markdown h1:first-child,
 .markdown > h2,
 .markdown > h3,
 .markdown > h4,
@@ -56,6 +58,7 @@
     }
 
     .markdown > h1,
+    .markdown h1:first-child,
     .markdown > h2,
     .markdown > h3,
     .markdown > h4,
