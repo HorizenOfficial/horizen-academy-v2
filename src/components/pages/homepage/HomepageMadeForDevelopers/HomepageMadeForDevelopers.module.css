@@ -26,12 +26,12 @@
         grid-row: 1/3;
     }
 
-    .card__content {
+    .card {
         display: flex;
         align-items: center;
     }
 
-    .card--small .card__content {
+    .card.card--small {
         display: block;
     }
 }

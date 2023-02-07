@@ -16,10 +16,8 @@ const CardWContent: React.FC<CardWContentProps> = ({ title, body }) => {
             className={clsx(styles.card, body && styles["card--small"])}
             external
         >
-            <div className={styles.card__content}>
-                <h3 className={commonStyles.card__title}>{title}</h3>
-                {body && <p className={commonStyles.card__body}>{body}</p>}
-            </div>
+            <h3 className={commonStyles.card__title}>{title}</h3>
+            {body && <p className={commonStyles.card__body}>{body}</p>}
         </Card>
     )
 }
