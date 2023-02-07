@@ -10,6 +10,11 @@
     --ifm-menu-link-sublist-icon-filter: unset;
 }
 
+.menu {
+    --ifm-font-size-base: 14px;
+    font-size: var(--ifm-font-size-base);
+}
+
 .menu__link {
     padding-top: 7px;
     padding-bottom: 7px;

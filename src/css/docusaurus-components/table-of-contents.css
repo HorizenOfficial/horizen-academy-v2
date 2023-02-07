@@ -1,0 +1,4 @@
+.table-of-contents {
+    --ifm-font-size-base: 14px;
+    font-size: var(--ifm-font-size-base);
+}

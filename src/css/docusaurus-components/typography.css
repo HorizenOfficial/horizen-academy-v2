@@ -1,9 +1,6 @@
 /* Markdown text default */
-
-.markdown,
-p {
+:root {
     --ifm-font-size-base: 18px;
-    font-size: var(--ifm-font-size-base);
 }
 
 /* Lists */
