@@ -5,6 +5,7 @@ import {
     HomepageAllThingsHorizen,
     HomepageHero,
 } from "@site/src/components/pages/homepage"
+import { HomepagePopularTopics } from "../components/pages/homepage/HomepagePopularTopics"
 
 const Home = () => {
     const { siteConfig } = useDocusaurusContext()
@@ -16,6 +17,7 @@ const Home = () => {
             <HomepageHero />
             <main>
                 <HomepageAllThingsHorizen />
+                <HomepagePopularTopics />
             </main>
         </Layout>
     )

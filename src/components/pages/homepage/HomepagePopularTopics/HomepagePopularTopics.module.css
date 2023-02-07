@@ -16,18 +16,13 @@
     }
 }
 
-.card__content {
-    text-align: center;
-}
-
 .card__img {
-    max-height: 160px;
-    max-width: 160px;
+    max-height: 38px;
+    max-width: 38px;
     width: 100%;
-    height: 160px;
+    height: 38px;
     display: block;
-    margin-bottom: 30px;
-    margin-left: auto;
+    margin-bottom: 20px;
     margin-right: auto;
     background-color: aliceblue;
 }
