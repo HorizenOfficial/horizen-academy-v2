@@ -1,0 +1,19 @@
+.section {
+    padding: 110px 0;
+}
+
+.section:first-of-type {
+    padding-top: 0;
+}
+
+.section__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 45px;
+}
+
+.card__title {
+    margin-bottom: 0;
+}

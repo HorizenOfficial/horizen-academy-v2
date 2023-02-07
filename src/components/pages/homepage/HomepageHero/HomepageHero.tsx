@@ -21,7 +21,7 @@ const HomepageHero = () => {
                     className={styles.hero__icon}
                 />
                 <h1 className={styles.hero__title}>Horizen Academy</h1>
-                <p>
+                <p className={styles.hero__body}>
                     All about blockchain and online privacy.
                     <br />
                     Introduction to Horizen Ecosystem.

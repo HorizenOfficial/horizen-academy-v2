@@ -18,9 +18,19 @@
     margin-bottom: 22px;
 }
 
+.hero__title {
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 45px;
+}
+
 @media (min-width: 576px) {
     .hero__title {
         font-size: 61px;
         line-height: 69px;
     }
+}
+
+.hero__body {
+    color: var(--c-grey);
 }
