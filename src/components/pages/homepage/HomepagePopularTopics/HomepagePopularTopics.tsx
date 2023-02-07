@@ -3,15 +3,21 @@ import commonStyles from "@site/src/components/pages/homepage/common.module.css"
 import { Card } from "@site/src/components/Card"
 import styles from "./HomepagePopularTopics.module.css"
 
-const CardWContent = () => {
+interface CardWContentProps {
+    title: string
+    image?: string
+    imageAlt?: string
+}
+
+const CardWContent: React.FC<CardWContentProps> = ({
+    title,
+    image,
+    imageAlt,
+}) => {
     return (
-        <Card href="/">
-            <div className={styles.card__content}>
-                <div className={styles.card__img} />
-                <h3 className={commonStyles.card__title}>
-                    How does the blockchain work?
-                </h3>
-            </div>
+        <Card href="/" className={styles.card}>
+            <div className={styles.card__img} />
+            <h3 className={commonStyles.card__title}>{title}</h3>
         </Card>
     )
 }
@@ -22,9 +28,9 @@ const HomepagePopularTopics = () => {
             <div className="container">
                 <h2 className={commonStyles.section__title}>Popular Topics</h2>
                 <div className={styles["card-list"]}>
-                    <CardWContent />
-                    <CardWContent />
-                    <CardWContent />
+                    <CardWContent title="How does the blockchain work?" />
+                    <CardWContent title="EMV - Ethereum Virtual Machine" />
+                    <CardWContent title="Zero Knowledge Proofs" />
                 </div>
             </div>
         </div>

@@ -16,6 +16,10 @@
     }
 }
 
+.card {
+    min-height: 156px;
+}
+
 .card__img {
     max-height: 38px;
     max-width: 38px;

@@ -16,7 +16,8 @@
     }
 }
 
-.card__content {
+.card {
+    min-height: 290px;
     text-align: center;
 }
 
