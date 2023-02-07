@@ -24,7 +24,7 @@ const CardWContent: React.FC<CardWContentProps> = ({
 
 const HomepageAllThingsHorizen = () => {
     return (
-        <div className={commonStyles.section}>
+        <section className={commonStyles.section}>
             <div className="container">
                 <h2 className={commonStyles.section__title}>
                     All things Horizen
@@ -35,7 +35,7 @@ const HomepageAllThingsHorizen = () => {
                     <CardWContent title="Launching Tokens on Horizen" />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

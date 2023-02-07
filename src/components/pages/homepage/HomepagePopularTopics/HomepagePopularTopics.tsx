@@ -24,7 +24,7 @@ const CardWContent: React.FC<CardWContentProps> = ({
 
 const HomepagePopularTopics = () => {
     return (
-        <div className={commonStyles.section}>
+        <section className={commonStyles.section}>
             <div className="container">
                 <h2 className={commonStyles.section__title}>Popular Topics</h2>
                 <div className={styles["card-list"]}>
@@ -33,7 +33,7 @@ const HomepagePopularTopics = () => {
                     <CardWContent title="Zero Knowledge Proofs" />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

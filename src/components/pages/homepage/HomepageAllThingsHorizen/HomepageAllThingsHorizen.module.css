@@ -18,6 +18,7 @@
 
 .card {
     min-height: 290px;
+    height: 100%;
     text-align: center;
 }
 

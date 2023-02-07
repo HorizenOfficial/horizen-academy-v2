@@ -18,6 +18,7 @@
 
 .card {
     min-height: 156px;
+    height: 100%;
 }
 
 .card__img {

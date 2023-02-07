@@ -6,6 +6,10 @@
     padding-top: 0;
 }
 
+.section:last-of-type {
+    padding-bottom: 220px;
+}
+
 .section__title {
     margin-bottom: 50px;
     text-align: center;

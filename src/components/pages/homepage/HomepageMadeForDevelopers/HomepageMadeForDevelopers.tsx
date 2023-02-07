@@ -24,7 +24,7 @@ const CardWContent: React.FC<CardWContentProps> = ({ title, body }) => {
 
 const HomepageMadeForDevelopers = () => {
     return (
-        <div className={commonStyles.section}>
+        <section className={commonStyles.section}>
             <div className="container">
                 <h2 className={commonStyles.section__title}>
                     Made for Developers
@@ -38,7 +38,7 @@ const HomepageMadeForDevelopers = () => {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
