@@ -10,6 +10,10 @@
     --ifm-menu-link-sublist-icon-filter: unset;
 }
 
+aside {
+    margin-right: 18px;
+}
+
 .menu {
     --ifm-font-size-base: 14px;
     font-size: var(--ifm-font-size-base);

@@ -2,3 +2,11 @@
     --ifm-font-size-base: 14px;
     font-size: var(--ifm-font-size-base);
 }
+
+.table-of-contents__link {
+    color: var(--c-grey-dark);
+}
+
+.table-of-contents__link--active {
+    color: white;
+}
