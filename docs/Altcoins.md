@@ -53,8 +53,6 @@ Right now there are many different implementations of the same idea being tested
 
 _This is a necessary development_. You cannot know for sure if an idea works if you haven't tried it out.
 
-The image below was taken from the [*MapOfCoins*](https://mapofcoins.com/bitcoin) which is still being maintained today.
-
 ### Varying Types of Altcoins
 
  - Stablecoins
