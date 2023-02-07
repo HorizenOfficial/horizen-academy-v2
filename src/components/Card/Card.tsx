@@ -6,12 +6,22 @@ import styles from "./Card.module.css"
 interface CardProps extends React.PropsWithChildren {
     href: string
     external?: boolean
+    className?: string
 }
 
-const Card: React.FC<CardProps> = ({ children, href, external = false }) => {
+const Card: React.FC<CardProps> = ({
+    children,
+    href,
+    external = false,
+    className: propsClassName,
+}) => {
     return (
         <Link
-            className={clsx(styles.card, external && styles["external-link"])}
+            className={clsx(
+                styles.card,
+                external && styles["external-link"],
+                propsClassName
+            )}
             href={href}
         >
             {children}

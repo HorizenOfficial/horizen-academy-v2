@@ -1,0 +1,37 @@
+.card-list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 576px) {
+    .card-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        grid-column: 1 / 3;
+    }
+
+    .card--small {
+        grid-column: 3 / 4;
+        grid-row: 1/3;
+    }
+
+    .card__content {
+        display: flex;
+        align-items: center;
+    }
+
+    .card--small .card__content {
+        display: block;
+    }
+}

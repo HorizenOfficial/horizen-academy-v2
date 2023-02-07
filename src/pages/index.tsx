@@ -4,8 +4,9 @@ import Layout from "@theme/Layout"
 import {
     HomepageAllThingsHorizen,
     HomepageHero,
+    HomepagePopularTopics,
+    HomepageMadeForDevelopers,
 } from "@site/src/components/pages/homepage"
-import { HomepagePopularTopics } from "../components/pages/homepage/HomepagePopularTopics"
 
 const Home = () => {
     const { siteConfig } = useDocusaurusContext()
@@ -18,6 +19,7 @@ const Home = () => {
             <main>
                 <HomepageAllThingsHorizen />
                 <HomepagePopularTopics />
+                <HomepageMadeForDevelopers />
             </main>
         </Layout>
     )
