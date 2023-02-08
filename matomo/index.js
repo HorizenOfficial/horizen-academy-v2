@@ -18,6 +18,13 @@ module.exports = function (_context) {
             return {
                 headTags: [
                     {
+                        tagName: "link",
+                        attributes: {
+                            rel: "preconnect",
+                            href: `https://horizen.matomo.cloud/`,
+                        },
+                    },
+                    {
                         tagName: "script",
                         innerHTML: `
             var _paq = window._paq = window._paq || [];
