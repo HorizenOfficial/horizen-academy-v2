@@ -139,7 +139,7 @@ const config = {
             },
         }),
 
-    plugins: [],
+    plugins: ["./matomo"],
 }
 
 module.exports = config
