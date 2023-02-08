@@ -42,12 +42,6 @@ module.exports = function (_context) {
                             })();
                         `,
                     },
-                    {
-                        tagName: "noscript",
-                        innerHTML: `
-                            <p><img src="https://horizen.matomo.cloud/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p>
-                        `,
-                    },
                 ],
             }
         },
