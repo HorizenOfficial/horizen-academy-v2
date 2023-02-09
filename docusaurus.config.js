@@ -38,6 +38,8 @@ const config = {
                     // Remove this to remove the "edit this page" links.
                     editUrl:
                         "https://github.com/HorizenOfficial/horizen-academy-v2/",
+                    showLastUpdateAuthor: true,
+                    showLastUpdateTime: true,
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
@@ -139,7 +141,7 @@ const config = {
             },
         }),
 
-    plugins: [],
+    plugins: ["./matomo"],
 }
 
 module.exports = config
