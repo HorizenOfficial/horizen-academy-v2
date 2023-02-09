@@ -5,22 +5,39 @@ import styles from "./HomepageBigCardsSection.module.css"
 
 interface CardWContentProps {
     title: string
+    link: string
     image?: string
     imageAlt?: string
 }
 
 const CardWContent: React.FC<CardWContentProps> = ({
     title,
+    link,
     image,
     imageAlt,
 }) => {
     return (
-        <Card href="/" className={styles.card}>
+        <Card href={link} className={styles.card}>
             <div className={styles.card__img} />
             <h3 className={commonStyles.card__title}>{title}</h3>
         </Card>
     )
 }
+
+const cards: CardWContentProps[] = [
+    {
+        title: "Zero Knowelege Proofs",
+        link: "/docs/zero-knowledge-proofs-zkp",
+    },
+    {
+        title: "The Ethereum Virtual Machine",
+        link: "/docs/ethereum-virtual-machine-evm",
+    },
+    {
+        title: "All Things Tokenomics",
+        link: "/docs/tokenomics",
+    },
+]
 
 const HomepageBigCardsSection = () => {
     return (
@@ -30,9 +47,15 @@ const HomepageBigCardsSection = () => {
                     All things Horizen
                 </h2>
                 <div className={styles["card-list"]}>
-                    <CardWContent title="Zendoo - The most powerful cross-chain protocol" />
-                    <CardWContent title="DAO - Decentralized Autonomous Organization" />
-                    <CardWContent title="Launching Tokens on Horizen" />
+                    {cards.map((card) => (
+                        <CardWContent
+                            key={card.title}
+                            title={card.title}
+                            link={card.link}
+                            image={card.image}
+                            imageAlt={card.imageAlt}
+                        />
+                    ))}
                 </div>
             </div>
         </section>
