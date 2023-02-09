@@ -1,4 +1,4 @@
-export * from "./HomepageBigCardsSection"
 export * from "./HomepageHero"
-export * from "./HomepageMadeForDevelopers"
-export * from "./HomepagePopularTopics"
+export * from "./HomepageBigCardsSection"
+export * from "./HomepageMixedSizeCardsSection"
+export * from "./HomepageSmallCardsSection"

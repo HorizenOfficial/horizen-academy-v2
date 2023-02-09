@@ -2,10 +2,10 @@ import React from "react"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import Layout from "@theme/Layout"
 import {
-    HomepageBigCardsSection,
     HomepageHero,
-    HomepagePopularTopics,
-    HomepageMadeForDevelopers,
+    HomepageBigCardsSection,
+    HomepageSmallCardsSection,
+    HomepageMixedSizeCardsSection,
 } from "@site/src/components/pages/homepage"
 
 const Home = () => {
@@ -18,8 +18,8 @@ const Home = () => {
             <HomepageHero />
             <main>
                 <HomepageBigCardsSection />
-                <HomepagePopularTopics />
-                <HomepageMadeForDevelopers />
+                <HomepageSmallCardsSection />
+                <HomepageMixedSizeCardsSection />
             </main>
         </Layout>
     )

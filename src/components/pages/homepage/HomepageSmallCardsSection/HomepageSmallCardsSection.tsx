@@ -1,7 +1,7 @@
 import React from "react"
 import commonStyles from "@site/src/components/pages/homepage/common.module.css"
 import { Card } from "@site/src/components/Card"
-import styles from "./HomepagePopularTopics.module.css"
+import styles from "./HomepageSmallCardsSection.module.css"
 
 interface CardWContentProps {
     title: string
@@ -22,7 +22,7 @@ const CardWContent: React.FC<CardWContentProps> = ({
     )
 }
 
-const HomepagePopularTopics = () => {
+const HomepageSmallCardsSection = () => {
     return (
         <section className={commonStyles.section}>
             <div className="container">
@@ -37,4 +37,4 @@ const HomepagePopularTopics = () => {
     )
 }
 
-export default HomepagePopularTopics
+export default HomepageSmallCardsSection

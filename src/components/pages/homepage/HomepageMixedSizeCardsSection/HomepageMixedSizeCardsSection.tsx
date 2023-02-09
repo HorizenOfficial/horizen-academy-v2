@@ -2,7 +2,7 @@ import React from "react"
 import commonStyles from "@site/src/components/pages/homepage/common.module.css"
 import { Card } from "@site/src/components/Card"
 import clsx from "clsx"
-import styles from "./HomepageMadeForDevelopers.module.css"
+import styles from "./HomepageMixedSizeCardsSection.module.css"
 
 interface CardWContentProps {
     title: string
@@ -22,7 +22,7 @@ const CardWContent: React.FC<CardWContentProps> = ({ title, body }) => {
     )
 }
 
-const HomepageMadeForDevelopers = () => {
+const HomepageMixedSizeCardsSection = () => {
     return (
         <section className={commonStyles.section}>
             <div className="container">
@@ -42,4 +42,4 @@ const HomepageMadeForDevelopers = () => {
     )
 }
 
-export default HomepageMadeForDevelopers
+export default HomepageMixedSizeCardsSection
