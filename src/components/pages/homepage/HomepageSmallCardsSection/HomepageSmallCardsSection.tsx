@@ -1,6 +1,7 @@
 import React from "react"
 import commonStyles from "@site/src/components/pages/homepage/common.module.css"
 import { Card } from "@site/src/components/Card"
+import { Button } from "@site/src/components/Button"
 import styles from "./HomepageSmallCardsSection.module.css"
 
 interface CardWContentProps {
@@ -27,27 +28,27 @@ const CardWContent: React.FC<CardWContentProps> = ({
 const cards: CardWContentProps[] = [
     {
         title: "What is an AMM?",
-        link: "docs/automated-market-maker-amm",
+        link: "/docs/automated-market-maker-amm",
     },
     {
         title: "Play-to-Earn Games",
-        link: "docs/play-to-earn-games",
+        link: "/docs/play-to-earn-games",
     },
     {
         title: "Crypto Lending",
-        link: "docs/crypto-lending",
+        link: "/docs/crypto-lending",
     },
     {
         title: "Bitcoin: A Glossary",
-        link: "docs/bitcoin-glossary",
+        link: "/docs/bitcoin-glossary",
     },
     {
         title: "Modular vs Monolithic Blockchains",
-        link: "docs/modular-vs-monolithic-blockchains",
+        link: "/docs/modular-vs-monolithic-blockchains",
     },
     {
         title: "Decentralized Prediction Markets",
-        link: "docs/decentralized-prediction-markets",
+        link: "/docs/decentralized-prediction-markets",
     },
 ]
 
@@ -67,6 +68,12 @@ const HomepageSmallCardsSection = () => {
                         />
                     ))}
                 </div>
+                <Button
+                    href="/docs/ethereum-virtual-machine-evm"
+                    className={styles.btn}
+                >
+                    Explore More Topics
+                </Button>
             </div>
         </section>
     )
