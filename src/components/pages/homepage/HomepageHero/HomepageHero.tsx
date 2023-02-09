@@ -51,9 +51,14 @@ const HomepageHero = () => {
                 />
                 <h1 className={styles.hero__title}>Horizen Academy</h1>
                 <p className={styles.hero__body}>
-                    All about blockchain and online privacy.
+                    Welcome to Horizen's educational hub on blockchain
+                    technology where you'll find expertly written guides on
+                    topics of decetralized ledger technology, cryptocurrency and
+                    the exciting world of Web3.
                     <br />
-                    Introduction to Horizen Ecosystem.
+                    <br />
+                    The future is built on Blockchain. The future is built on
+                    Horizen.
                 </p>
             </div>
         </header>
