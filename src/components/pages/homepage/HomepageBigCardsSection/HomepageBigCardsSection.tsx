@@ -1,7 +1,7 @@
 import { Card } from "@site/src/components/Card"
 import React from "react"
 import commonStyles from "@site/src/components/pages/homepage/common.module.css"
-import styles from "./HomepageAllThingsHorizen.module.css"
+import styles from "./HomepageBigCardsSection.module.css"
 
 interface CardWContentProps {
     title: string
@@ -22,7 +22,7 @@ const CardWContent: React.FC<CardWContentProps> = ({
     )
 }
 
-const HomepageAllThingsHorizen = () => {
+const HomepageBigCardsSection = () => {
     return (
         <section className={commonStyles.section}>
             <div className="container">
@@ -39,4 +39,4 @@ const HomepageAllThingsHorizen = () => {
     )
 }
 
-export default HomepageAllThingsHorizen
+export default HomepageBigCardsSection

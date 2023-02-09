@@ -2,7 +2,7 @@ import React from "react"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import Layout from "@theme/Layout"
 import {
-    HomepageAllThingsHorizen,
+    HomepageBigCardsSection,
     HomepageHero,
     HomepagePopularTopics,
     HomepageMadeForDevelopers,
@@ -17,7 +17,7 @@ const Home = () => {
         >
             <HomepageHero />
             <main>
-                <HomepageAllThingsHorizen />
+                <HomepageBigCardsSection />
                 <HomepagePopularTopics />
                 <HomepageMadeForDevelopers />
             </main>
