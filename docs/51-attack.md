@@ -1,21 +1,23 @@
 ﻿---
+
 sidebar_label: 51% Attacks
 title: What is a 51% Attack?
 slug: /51-attacks/
 description: 51% attacks are seen as a greater threat for newer blockchain networks that are still small in size and are therefore vulnerable to being taken over.
+image: /img/51-attack/51-percent-attack-meta.jpg
+last_update:
+  date: 1/1/2000
+  author: james is the man
+
 ---
 
-# What is a 51% Attack?
+# What is a 51% Attack?(#)
 
 A **51% attack** is an attempt by a bad actor to control over 50% of a _proof of work_ blockchains hash rate (computer power) or to acquire over 50% of staked tokens on a _proof of stake blockchain_.
-
-
 
 Controlling 51% of a network allows an attacker to potentially reverse a transaction or commit a double spend, which would allow them to spend the same coins in their wallet multiple times.
 
 51% attacks are seen as a greater threat for newer blockchain networks that are still small in size and are therefore vulnerable to being taken over.
-
-
 
 ## 51% Attacks on Proof of Work Blockchains
 

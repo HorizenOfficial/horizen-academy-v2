@@ -81,6 +81,8 @@ Within the payment channel, the IOUs will be accepted as money because both part
 
 _To close out the channel_, a user can submit the latest state update (i.e the final balance of both users accounts) to the L1, which validates this entry as a single transaction on the blockchain.
 
+(/temp/ZBF_Layer2_graphic-4_payment_channels.jpg/)
+
 _Payments_ made with an L2 channel are _much_ faster because they don’t require broad network consensus to verify.
 
 They are also much cheaper because users only need to pay a fee to the L1 when locking their funds in a smart contract to open the channel, and when submitting the final balances to the L1 in order to close the channel.
@@ -93,7 +95,9 @@ _Payment channels_ can be set up for one-off transactions or kept open for exten
 
 ### Lightning Network
 
-_Lightning Network is the most popular example of an L2 payment channel for the Bitcoin blockchain._
+Lightning Network is the most popular example of an L2 payment channel for the Bitcoin blockchain.
+
+(/temp/ZBF_Layer2_graphic-4_lightning_network.jpg/)
 
 ### State Channels
 
@@ -102,6 +106,8 @@ _Lightning Network is the most popular example of an L2 payment channel for the 
 An example of an operation that could be conducted in a state channel is a game of tic-tac-toe between 2 users, where the ‘game logic’ contains the rules of the game and the ‘state logic’ records the current state of the game while also determining where the funds locked in the smart contract should go based on the final outcome.
 
 *Like a payments channel*, fees are only incurred to open and close the channel, and any transactions that occur between users within the channel are essentially instantaneous and free.
+
+(/temp/ZBF_Layer2_graphic-4_state_channels_v1.jpg/)
 
 This state channel mechanism makes it possible for play-to-earn games and other dapps that are not strictly financial to be launched on an L2.
 
