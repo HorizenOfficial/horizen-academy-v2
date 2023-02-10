@@ -1,7 +1,6 @@
 import React from "react"
 import commonStyles from "@site/src/components/pages/homepage/common.module.css"
 import { Card } from "@site/src/components/Card"
-import { Button } from "@site/src/components/Button"
 import useBaseUrl from "@docusaurus/useBaseUrl"
 import styles from "./HomepageSmallCardsSection.module.css"
 
@@ -85,12 +84,6 @@ const HomepageSmallCardsSection = () => {
                         />
                     ))}
                 </div>
-                <Button
-                    href="/docs/ethereum-virtual-machine-evm"
-                    className={styles.btn}
-                >
-                    Recent Academy Releases
-                </Button>
             </div>
         </section>
     )
