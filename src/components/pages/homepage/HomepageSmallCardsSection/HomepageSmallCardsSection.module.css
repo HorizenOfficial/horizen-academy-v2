@@ -25,11 +25,11 @@
     max-height: 38px;
     max-width: 38px;
     width: 100%;
-    height: 38px;
+    height: 100%;
+    width: 100%;
     display: block;
     margin-bottom: 20px;
     margin-right: auto;
-    background-color: aliceblue;
 }
 
 .btn {

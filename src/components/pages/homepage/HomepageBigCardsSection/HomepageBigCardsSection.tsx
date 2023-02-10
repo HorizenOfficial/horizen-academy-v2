@@ -1,6 +1,7 @@
 import { Card } from "@site/src/components/Card"
 import React from "react"
 import commonStyles from "@site/src/components/pages/homepage/common.module.css"
+import useBaseUrl from "@docusaurus/useBaseUrl"
 import styles from "./HomepageBigCardsSection.module.css"
 
 interface CardWContentProps {
@@ -18,7 +19,11 @@ const CardWContent: React.FC<CardWContentProps> = ({
 }) => {
     return (
         <Card href={link} className={styles.card}>
-            <div className={styles.card__img} />
+            <img
+                src={useBaseUrl(image)}
+                alt={imageAlt}
+                className={styles.card__img}
+            />
             <h3 className={commonStyles.card__title}>{title}</h3>
         </Card>
     )
@@ -28,14 +33,20 @@ const cards: CardWContentProps[] = [
     {
         title: "Zero Knowelege Proofs",
         link: "/docs/zero-knowledge-proofs-zkp",
+        image: "/assets/pages/homepage/article-logo-zendoo.svg",
+        imageAlt: "Zero Knowelege Proofs icon",
     },
     {
         title: "The Ethereum Virtual Machine",
         link: "/docs/ethereum-virtual-machine-evm",
+        image: "/assets/pages/homepage/article-logo-token.svg",
+        imageAlt: "The Ethereum Virtual Machine icon",
     },
     {
         title: "All Things Tokenomics",
         link: "/docs/tokenomics",
+        image: "/assets/pages/homepage/article-logo-dao.svg",
+        imageAlt: "All Things Tokenomics icon",
     },
 ]
 
@@ -44,7 +55,7 @@ const HomepageBigCardsSection = () => {
         <section className={commonStyles.section}>
             <div className="container">
                 <h2 className={commonStyles.section__title}>
-                    All things Horizen
+                    Trending Topics on Horizen Academy
                 </h2>
                 <div className={styles["card-list"]}>
                     {cards.map((card) => (

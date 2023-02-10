@@ -7,12 +7,13 @@ import styles from "./HomepageMixedSizeCardsSection.module.css"
 interface CardWContentProps {
     title: string
     body?: string
+    link: string
 }
 
-const CardWContent: React.FC<CardWContentProps> = ({ title, body }) => {
+const CardWContent: React.FC<CardWContentProps> = ({ title, body, link }) => {
     return (
         <Card
-            href="/"
+            href={link}
             className={clsx(styles.card, body && styles["card--small"])}
             external
         >
@@ -22,20 +23,33 @@ const CardWContent: React.FC<CardWContentProps> = ({ title, body }) => {
     )
 }
 
+const cards: CardWContentProps[] = [
+    {
+        title: "The World of Web3",
+        link: "/docs/web3/",
+    },
+    {
+        title: "What is a Token?",
+        link: "/docs/what-is-a-token/",
+    },
+    {
+        title: "How Does Blockchain Work?",
+        body: "Covering the Basics",
+        link: "/docs/how-does-blockchain-work/",
+    },
+]
+
 const HomepageMixedSizeCardsSection = () => {
     return (
         <section className={commonStyles.section}>
             <div className="container">
                 <h2 className={commonStyles.section__title}>
-                    Made for Developers
+                    Essentials of Blockchain & Web3
                 </h2>
                 <div className={styles["card-list"]}>
-                    <CardWContent title="Test new releases" />
-                    <CardWContent title="Horizen early adopet program (HEAP)" />
-                    <CardWContent
-                        title="Horizen Developer Environment"
-                        body="Complete tasks and get rewarded."
-                    />
+                    {cards.map((card) => (
+                        <CardWContent key={card.title} {...card} />
+                    ))}
                 </div>
             </div>
         </section>
