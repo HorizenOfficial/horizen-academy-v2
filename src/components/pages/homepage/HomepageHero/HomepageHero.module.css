@@ -31,7 +31,7 @@
 .hero__content {
     position: relative;
     z-index: 1;
-    max-width: 700px;
+    max-width: 700px !important;
     text-shadow: var(--ifm-background-color) 1px 0 10px;
 }
 
