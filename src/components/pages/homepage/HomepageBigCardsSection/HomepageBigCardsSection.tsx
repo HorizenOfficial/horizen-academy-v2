@@ -37,10 +37,10 @@ const cards: CardWContentProps[] = [
         imageAlt: "Zero Knowelege Proofs icon",
     },
     {
-        title: "The Ethereum Virtual Machine",
+        title: "Ethereum Virtual Machine",
         link: "/docs/ethereum-virtual-machine-evm",
         image: "/assets/pages/homepage/article-logo-token.svg",
-        imageAlt: "The Ethereum Virtual Machine icon",
+        imageAlt: "Ethereum Virtual Machine icon",
     },
     {
         title: "All Things Tokenomics",
