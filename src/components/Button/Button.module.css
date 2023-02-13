@@ -10,14 +10,20 @@
 .btn {
     position: relative;
     display: block;
+    width: fit-content;
     color: var(--btn-text-c);
     font-weight: bold;
     font-size: 16px;
     padding: 8px 16px;
-    letter-spacing: 0.3rem;
+    letter-spacing: 4.8px;
     cursor: pointer;
     border: none;
     background-color: transparent;
+}
+
+.btn:hover {
+    text-decoration: none;
+    color: currentColor;
 }
 
 .btn:disabled {
@@ -62,7 +68,7 @@
 
 @media (min-width: 768px) {
     .btn {
-        font-size: 18px;
+        font-size: 20px;
         padding: 8px 24px;
     }
 }
