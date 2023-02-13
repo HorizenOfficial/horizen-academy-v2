@@ -7,6 +7,8 @@
 }
 
 .navbar {
+    --ifm-font-size-base: 16px;
+    font-size: var(--ifm-font-size-base);
     border-bottom: 0.5px solid white;
 }
 
