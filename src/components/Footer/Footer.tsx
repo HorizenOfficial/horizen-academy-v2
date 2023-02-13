@@ -1,12 +1,13 @@
 import React from "react"
 import clsx from "clsx"
-import config from "./config"
+import useFooterConfig from "./useFooterConfig"
 import FooterCopyright from "./FooterCopyright"
 import FooterLinks from "./FooterLinks"
 import FooterLogo from "./FooterLogo"
 import styles from "./Footer.module.css"
 
 const Footer = () => {
+    const config = useFooterConfig()
     return (
         <footer className={styles.footer}>
             <div className={clsx("container", styles.footer__container)}>
