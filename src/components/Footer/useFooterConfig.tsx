@@ -12,11 +12,11 @@ const useFooterConfig = (): IFooterConfig => {
             text: `© ${new Date().getFullYear()} Horizen. All Rights Reserved.`,
             legal: {
                 title: "Legal",
-                url: "horizen.io/legal",
+                url: "https://horizen.io/legal",
             },
             privacyPolicy: {
                 title: "Privacy Policy",
-                url: "horizen.io/privacy",
+                url: "https://horizen.io/privacy",
             },
         },
         links: {
