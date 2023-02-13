@@ -32,8 +32,8 @@
 .newsletter__heading {
     color: var(--newsletter-heading-c);
     font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 24px;
+    line-height: 32px;
     margin-bottom: 12px;
 }
 

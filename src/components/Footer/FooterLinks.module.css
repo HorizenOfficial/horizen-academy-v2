@@ -4,6 +4,8 @@
     grid-template-columns: 1fr;
     column-gap: 48px;
     row-gap: 32px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 @media (min-width: 640px) {

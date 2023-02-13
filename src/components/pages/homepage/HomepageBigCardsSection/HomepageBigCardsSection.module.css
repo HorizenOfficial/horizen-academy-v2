@@ -1,0 +1,34 @@
+.card-list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 576px) {
+    .card-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    min-height: 290px;
+    height: 100%;
+    text-align: center;
+}
+
+.card__img {
+    max-height: 160px;
+    max-width: 160px;
+    width: 100%;
+    height: 160px;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -38,6 +38,8 @@ const config = {
                     // Remove this to remove the "edit this page" links.
                     editUrl:
                         "https://github.com/HorizenOfficial/horizen-academy-v2/",
+                    showLastUpdateAuthor: true,
+                    showLastUpdateTime: true,
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
@@ -61,25 +63,41 @@ const config = {
                         position: "left",
                     },
                     {
-                        type: "doc",
-                        docId: "tutorial/intro",
+                        href: "/docs/ethereum-virtual-machine-evm/",
                         position: "left",
                         label: "Articles",
                     },
                     {
                         type: "dropdown",
-                        label: "Community",
+                        label: "Popular Articles",
                         position: "left",
                         items: [
                             {
-                                label: "Facebook",
-                                href: "https://www.facebook.com",
+                                label: "Why Create a Token?",
+                                href: "/docs/why-create-a-token/",
                             },
                             {
-                                label: "Test",
-                                href: "https://www.facebook.com",
+                                label: "Oracles in Blockchain",
+                                href: "/docs/blockchain-oracles/",
+                            },
+                            {
+                                label: "Mining Economics",
+                                href: "/docs/economies-of-mining/",
+                            },
+                            {
+                                label: "What is EVM?",
+                                href: "/docs/ethereum-virtual-machine-evm/",
+                            },
+                            {
+                                label: "Blockchain Explorers",
+                                href: "/docs/blockchain-explorers/",
                             },
                         ],
+                    },
+                    {
+                        href: "https://twitter.com/HorizenAcademy",
+                        label: "Community",
+                        position: "right",
                     },
                     {
                         href: "https://horizen.io/",
@@ -87,47 +105,6 @@ const config = {
                         position: "right",
                     },
                 ],
-            },
-            footer: {
-                style: "dark",
-                links: [
-                    {
-                        title: "Docs",
-                        items: [
-                            {
-                                label: "Tutorial",
-                                to: "/docs/tutorial/intro",
-                            },
-                        ],
-                    },
-                    {
-                        title: "Community",
-                        items: [
-                            {
-                                label: "Stack Overflow",
-                                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-                            },
-                            {
-                                label: "Discord",
-                                href: "https://discordapp.com/invite/docusaurus",
-                            },
-                            {
-                                label: "Twitter",
-                                href: "https://twitter.com/docusaurus",
-                            },
-                        ],
-                    },
-                    {
-                        title: "More",
-                        items: [
-                            {
-                                label: "GitHub",
-                                href: "https://github.com/HorizenOfficial/horizen-academy-v2",
-                            },
-                        ],
-                    },
-                ],
-                copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
             },
             prism: {
                 theme: lightCodeTheme,
