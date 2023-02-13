@@ -29,6 +29,8 @@ A valid transaction requires a _signature_. This signature can only be created b
 
 _HTLCs_ are based on a technology called **state channels**. All you need to know is that they allow you to exchange signed transactions securely. Only once the participants decide they are done transacting, the final _state_ is broadcast to the blockchain.
 
+![state channel hierarchy](/img/atomic-swaps/state-channel-hierarchy.jpg)
+
 The "Hashed" part of _HTLC_ means that a hash serves as a lock for the contract, to protect it from a third party accessing it. The "Timelock" part refers to the contract having an expiration date.
 
 **Two conditions must be met to perform an Atomic Swap between two crypto assets:** 
@@ -39,6 +41,8 @@ The "Hashed" part of _HTLC_ means that a hash serves as a lock for the contract,
 ## The Process of Atomic Swaps
 
 The process of an Atomic Swap would generally look like the following. Let's assume **Alice** has some _BTC_ and **Bob** has some _ZEN_. Both agree to swap a certain amount of their assets.
+
+![atomic swaps step 1](/img/atomic-swaps/atomic-swaps-step-1.jpg)
 
 **First**, **Alice** creates an _HTLC_ on the _Bitcoin Blockchain_ that we will simply call a _contract_. The contract comes with an address, otherwise, you could not interact with it. 
 
@@ -55,6 +59,8 @@ Now she deposits the amount of bitcoin she and **Bob** agreed to exchange in the
 
 **Now it's Bob's turn.**
 
+![atomic swaps step 2](/img/atomic-swaps/atomic-swaps-step-2.jpg)
+
 **Bob** also creates a Hashed Timelock Contract, but this time on the _Horizen blockchain_. 
 His contract also has an address, _BCD_ in this example. 
 
@@ -68,6 +74,7 @@ Either Bob gets refunded after a timeout period or Alice provides the secret and
 
 Now, both contracts are set up on their respective blockchain. Alice has to take the next step within the locking period, otherwise, both are refunded as nothing happened at all.
 
+![atomic swaps step 3](/img/atomic-swaps/atomic-swaps-step-3.jpg)
 
 Alice will now use the secret she chose earlier to unlock the _hashlock_ of Bob's contract on the _Horizen blockchain_ and the _ZEN_ will be released to her. _This is a public operation, auditable on the blockchain_. 
 

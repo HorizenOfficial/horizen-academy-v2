@@ -73,6 +73,8 @@ Failures can broadly be categorized into one of the following three cases:
 
 Handling Byzantine behavior is difficult because parties can be online or offline and can lie, coordinate or act arbitrarily.
 
+![node failures](/img/p2p-networks/node-failures.jpg)
+
 The system should be fault-tolerant, in that it continues to work regardless of failures in its components. Depending on which type of failures it can handle, the distributed system can be classified as either _simple fault tolerant_ or _Byzantine Fault-Tolerant_.
 
 A **simple fault tolerant** system handles the first two types of failures, crash and omission. 
@@ -88,6 +90,8 @@ The system needs to be robust enough to handle communication failure. If you ass
 If you base your system design on the assumption that certain components won’t work as planned, the system design becomes much more challenging, but the result will be robust - or even better - *antifragile.*
 
 There are three standard models for how well the message propagation works, which affect the system design to a great extent.
+
+![network failures](/img/p2p-networks/network-failures.jpg)
 
 -   When you assume **synchronous** message propagation, all messages are received within some fixed and known amount of time by the receiver.
     
@@ -203,6 +207,8 @@ It also uses timeouts in case a state transition fails and can therefore handle 
 
 What we can learn from Paxos and Raft is that handling Byzantine behavior in an asynchronous environment is a hard problem.
 
+![paxos raft](/img/consensus-in-distributed-systems/paxos-raft.jpg)
+
 ### The Byzantine Generals Problem
 
 The challenge of handling Byzantine actors is widely researched. 
@@ -212,6 +218,8 @@ It is referred to as the **Byzantine Generals Problem** in a paper by *Lamport, 
 A major contribution of their work was precisely defining the number of Byzantine Nodes a system can handle while still being able to reach consensus.
 
 The result is less than a third of all nodes *n*: \\(\frac{(n-1)}{3}\\)
+
+![maximum byzantine actors](/img/consensus-in-distributed-systems/maximum-byzantine-actors.jpg)
 
 **The argumentation for getting this result is straight-forward:**
 
@@ -233,6 +241,8 @@ The *DLS algorithm* contributed greatly to the development of consensus research
 
 It assumed a synchronized clock between all nodes, an assumption that is not realistic in a permissionless system.
 
+![dls](/img/consensus-in-distributed-systems/dls.jpg)
+
 ### pBFT - Practical Byzantine Fault-Tolerance
 
 In 1999, yet another consensus algorithm was published - [*practical Byzantine Fault-Tolerance*](http://pmg.csail.mit.edu/papers/osdi99.pdf) (pBFT) by _Castro and Liskov_. 
@@ -240,6 +250,8 @@ In 1999, yet another consensus algorithm was published - [*practical Byzantine F
 **It got pretty close to achieving the final goal:** 
 
 *Handling malicious actors in an unreliable network while ensuring safety and liveness.*
+
+![pbft](/img/consensus-in-distributed-systems/pbft.jpg)
 
 pBFT can guarantee safety under all circumstances (assuming a maximum of \\(x = \frac{(n-1)}{3}\\) Byzantine nodes), but it relies on the synchronous model to achieve liveness. 
 
@@ -262,6 +274,8 @@ The consensus mechanism therefore had nodes agreed on some fixed new state.
 In the non-deterministic model, the consensus mechanism lets all nodes agree on the probability of a new state being the global state. Remember that a new state in a blockchain is reached when a new block is added to the chain. 
 
 When a new, valid block is proposed, nodes can be fairly certain that it will stay valid, but they do not know for sure. With each additional state transition - in our context each new block or confirmation - the probability of the state being *safe* slowly but surely approaches **1**.
+
+![nakamoto consensus](/img/consensus-in-distributed-systems/nakamoto-consensus.jpg)
 
 It is important to note, that the *Nakamoto Consensus* cannot provide finality. Although the probability of a block being reversed approaches _0_ the more confirmations it has, it *never actually equals* _zero_.
 
@@ -305,6 +319,8 @@ The longest chain rule is applied in case two miners find valid blocks at roughl
 The other miners start building on the block they received first, but keep the second candidate in memory. Different miners can have different views on which block came first, depending on their geographical location and their connectivity in the network graph. 
 
 The tie is broken once the next block is found.
+
+![longest chain rule](/img/consensus-mechanisms/longest-chain-rule.jpg)
 
 The resulting chain of state transitions - *the blockchain* - does not only entail the chronological order of events, but also proves that it came from the largest pool of computing power.
 

@@ -4,18 +4,16 @@ sidebar_label: 51% Attacks
 title: What is a 51% Attack?
 slug: /51-attacks/
 description: 51% attacks are seen as a greater threat for newer blockchain networks that are still small in size and are therefore vulnerable to being taken over.
-image: /img/51-attack/51-percent-attack-meta.jpg
-last_update:
-  date: 1/1/2000
-  author: james is the man
 
 ---
 
-# What is a 51% Attack?(#)
+# What is a 51% Attack?
 
 A **51% attack** is an attempt by a bad actor to control over 50% of a _proof of work_ blockchains hash rate (computer power) or to acquire over 50% of staked tokens on a _proof of stake blockchain_.
 
 Controlling 51% of a network allows an attacker to potentially reverse a transaction or commit a double spend, which would allow them to spend the same coins in their wallet multiple times.
+
+![51 attack](/img/51-attack/51-attack.jpg)
 
 51% attacks are seen as a greater threat for newer blockchain networks that are still small in size and are therefore vulnerable to being taken over.
 
@@ -30,6 +28,8 @@ This is not only incredibly expensive, current estimates put the cost of a 51% o
 _For one thing_, accumulating enough mining rigs to attempt a 51% attack on the Bitcoin network would take a considerable amount of time and attract enough attention that the attack would likely be perceived well in advance.
 
 This means that miners could vote to fork the chain unto a new network with different consensus or hardware requirements before the attacker could amass the necessary hashrate to make their attempt.
+
+![51 attack example](/img/51-attack/51-attack-example.gif)
 
 In this short clip, Bitcoin Educator [Andreas Antonopolous](https://www.youtube.com/watch?v=ncPyMUfNyVM) eloquently summarizes the likely sequence of events that would occur if an attacker, presumably a large nation state, did manage to successfully attack and control the network.
 

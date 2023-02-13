@@ -106,6 +106,8 @@ These agreements specify how much of the _Chainlink token_ (_LINK_) will be rewa
 
 The oracle node will also need to stake a certain amount of LINK token as collateral before they can engage in a service agreement, _which acts as a deterrent against falsifying data or accepting a job that they cannot complete._
 
+![how chainlink works](/img/blockchain-oracles/how-chainlink-works.jpg)
+
 **Service agreements** are supported by a _reputation system_, which allow requesting smart contracts to review the reputation of an oracle node by checking the history of data that a node has sent to the network based on the digital signatures they must include in every transmission.
 
 The benefit of a decentralized oracle system is that it introduces _token incentives_ as well as market competition through service agreements that nodes must bid for and can only continue to earn by maintaining a good reputation overtime.
@@ -121,6 +123,8 @@ Without a reputation system, market competition or token incentives, users in th
 ### Security
 
 In addition, like any centralized system, a centralized oracle is also less secure because it has a _single point of failure_. This increases the risk that a bad actor could successfully hack the oracle and influence the data transmitted to the blockchain network.
+
+![centralized oracle risk](/img/blockchain-oracles/centralized-oracle-risk.jpg)
 
 For these reasons, decentralized oracles offer a much more reliable and secure method for submitting off-chain data to on-chain smart contracts.
 

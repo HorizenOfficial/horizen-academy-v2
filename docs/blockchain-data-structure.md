@@ -39,6 +39,8 @@ You likely use one of these two methods each time you write down information on 
 
 The term blockchain comes from the structure that stores your data. All data becomes separated into blocks. Every _block_ states which block came before it creating a “_chain_” of blocks. Stating which block came previously is commonly referred to as referencing.
 
+![data structure examples](/img/blockchain-data-structure/data-structure-examples.jpg)
+
 ### A Database: Efficient but Centralized
 
 A database is a highly efficient data structure. Databases are an excellent way to store large amounts of data, but are usually operated by a central entity. 
@@ -65,6 +67,8 @@ The transaction is then broadcast to the network, and every participant (or node
 
 The amount of copies makes a blockchain slower than a database but makes it more secure.
 
+![clearing and settlement](/img/blockchain-data-structure/clearing-and-settlement.jpg)
+
 ### Where Does the Term Blockchain Come From?
 
 The blockchain does not keep data in a single huge continuous ledger, but separates the data into _blocks_. These blocks are then connected like individual pages in a book. 
@@ -74,6 +78,8 @@ That is how the term *blockchain* came to be.
 Imagine a bookie recording entries using single pages of a book instead of one large scroll. Every few minutes, he starts using a new page and adds a reference to the last page - _“this page follows page x”_. 
 
 The reference he includes “chains” the pages together. He can easily arrange the pages if he ever drops them because each page references its predecessor.
+
+![blockchain book example](/img/blockchain-data-structure/blockchain-book-example.jpg)
 
 One of these single pages represents a block in this comparison, and the pile of the pages he already used represent the blockchain. Instead of one bookkeeper, there are many of them working simultaneously on a blockchain. 
 
@@ -103,6 +109,9 @@ This means you check the elements one by one - starting at index 0 - until you f
 
 Arrays are useful for their simplicity and instant access property.
 
+![one dimensional array](/img/blockchain-data-structure/one-dimensional-array.jpg)
+
+
 ### Linked Lists
 
 _Nodes_ are the data elements in a linked list. 
@@ -117,15 +126,21 @@ If you are searching for a specific piece of data in your linked list you will l
 
 If this node does not contain the data you were looking for either, you continue by following the links throughout all nodes until you find the desired data.
 
+![linked list](/img/blockchain-data-structure/linked-list-2.jpg)
+
 Programs that use a linked list to store data don’t have to know how many data elements you want to store beforehand, but the linked list does need to know what each element consists of. As previously stated, data elements of a linked list are called nodes. Each node can contain several objects of different types.
 
 For example. If you were to store information about cars in a linked list, you could define a node as the set of information about the brand, model, year produced, and license plate.
 
 The first element of a linked list is called the head, and the last one is called the tail.
 
+![linked list](/img/blockchain-data-structure/linked-list.jpg)
+
 Each node also contains a _pointer_ to the next node. 
 
 The **pointer** tells your computer where the following node is located in memory. This allows you to expand a linked list easily because the data doesn’t have to be in a single, continuous location in memory.
+
+![array vs linked list](/img/blockchain-data-structure/array-vs-linked-list.jpg)
 
 When searching for a piece of data, your computer will check the head of the linked list first. If it’s not there, it will look at the pointer, go to the location in memory where the following node is stored, and continue following pointers until it finds the desired data. 
 
@@ -153,6 +168,8 @@ If the hash table is well-dimensioned, the cost, or the number of instructions/c
 
 The location is defined by the data itself, making it convenient for systems that have to store large amounts of data and repeatedly access them.
 
+![hash table](/img/blockchain-data-structure/hash-table-data-structure.jpg)
+
 There are many different data structures; each of them comes with some trade-offs, and depending on the use case, one might choose one over the other. Sophisticated data structures often leverage several more simple concepts in combination to achieve the set of desired properties. 
 We chose the three examples above to show how an array and a linked list can be used to build a hash table.
 
@@ -166,17 +183,23 @@ The **blockchain** organizes data by splitting it into subsets or containers, re
 
 This serves as a link to the preceding block and establishes the order throughout the chain of blocks.
 
+![how blocks link](/img/blockchain-data-structure/how-blocks-link.jpg)
+
 Each block contains several elements. _The elements of a block_ are generally separated into the _block header_ and its _transactions_. While the transactions in a block account for most of the data, the block header contains essential metadata about each block, such as a timestamp and _block height_.
 
 The key difference between a blockchain and a linked list is that each reference in a blockchain is cryptographically secured, and therefore _tamper-evident_. In contrast, the pointers in a linked list can be changed at any time without affecting the integrity of the data. 
 
 The secured references establish order throughout the blocks and effectively make the blockchain an _append-only_ data structure where new data can only be added with new blocks. This means you can only add data to a blockchain by appending it to the front.
 
+![blockchain schematic](/img/blockchain-data-structure/blockchain-schematic.jpg)
+
 The hash value of the previous block header is included in the following block as a reference because the block hash depends on the data of a block, even changing a single character in one of the transactions would invalidate the reference.
 
 The secured links are constantly checked for validity. If you were to insert a malicious block in the middle of a blockchain or change data in an existing block, for example, between **Blocks 1** and **3** in the graphic below, you could include a reference to its predecessor, **Block 1**. 
 
 Still, it would be infeasible to make **Block 3** reference your newly inserted block.
+
+![malicious block](/img/blockchain-data-structure/malicious-block.jpg)
 
 Each new block built on top of an existing block is commonly known as a **confirmation**. The older a block gets, the more confirmations it will have. Each confirmation makes tampering with the data in a block more difficult because you have to recreate additional valid references.
 
@@ -231,6 +254,8 @@ After looking at the properties that result from the design, let’s take a look
 
 Blocks consist of a **header** that contains essential data about the block - a sort of summary. The largest part of a block in terms of storage comprises the transactions.
 
+![structure of a block](/img/blockchain-data-structure/structure-of-a-block.jpg)
+
 ### The Block Header
 
 The _block header_ contains the most important information about a block.
@@ -257,9 +282,13 @@ Constructing a Merkle tree goes like this:
 - If the number of transactions is odd, the last transaction’s hash is concatenated with a copy of itself. 
 - This process continues until only a single hash is left - the Merkle root.
 
+![merkle tree](/img/proof-of-work-pow/merkle-tree.jpg)
+
 The **Merkle path** is simply the set of hash values needed to reconstruct the entire tree. The Merkle path for transaction **K** consists of the hash of transaction **L (\\(HL\\))** it is first concatenated with and the combined hashes **\\(H{IJ}\\), \\(H{MNOP}\\)** and lastly, **\\(H{ABCDEFGH}\\)**.
 
  Those four hashes, together with the original transaction, allow a verifier to check the tree's integrity.
+
+ ![merkle path](/img/blockchain-data-structure/merkle-path.jpg)
 
 ## What does a Transaction look like?
 

@@ -77,6 +77,8 @@ Lastly, blockchains can vary greatly in terms of size and complexity. Some are r
 
 Another way in which blockchain explorers could be improved is to create a single explorer that aggregates all data shared across multiple block explorers. 
 
+![zen explorer address](/img/blockchain-explorers/zen-explorer-address.jpeg)
+
 This would be a highly useful tool for investors, researchers and financial institutions who may be looking to capture a birds eye view of the entire crypto ecosystem and more easily discover new dapps and protocols.
 
 ## Horizen's Block Explorer
@@ -88,6 +90,8 @@ The _address_ that was looked up for this example on a Horizen block explorer is
 On the top of the page, you will find a summary of the addresses _activity_. The information provided here will include the total amount _received_ and _sent_ from this address, as well as the current _balance_. 
 
 The address we are looking at received a total of **42** ZEN. Bob didn’t send any ZEN to other addresses yet, and therefore still has a balance of **42** ZEN.
+
+![zen explorer transaction id](/img/blockchain-explorers/zen-explorer-transaction-id.jpeg)
 
 You will find all the transactions that this address was involved in below the _address summary_. This particular address was only part of a _single_ transaction thus far. Every transaction is characterized by its _identifier_ - the **transaction ID** - which is the blue string at the top of the gray box. 
 
@@ -109,6 +113,8 @@ Let’s explore the beginning of blockchain technology and have a look at Bitcoi
 
 ## A Bitcoin Block Explorer
 
+![bitcoin explorer latest blocks](/img/blockchain-explorers/bitcoin-explorer-latest-blocks.jpeg)
+
 There are a number of block explorers out there, _oftentimes_ several versions for the same blockchain. Since we want to go all the way back to the beginning of cryptocurrencies in this example, we will look at one of the most popular Bitcoin [explorers](https://www.blockchain.com/explorer) out there.
 
 You will see an overview of the most recently created blocks on the landing page. 
@@ -129,6 +135,8 @@ You will see an overview of the most recently created blocks on the landing page
 Let’s have a look at a single _block_. 
 
 The height of the very first block is **0** as we said before. If we want to look at the very _first_ Bitcoin block, we can use the search function and enter “**0**”. The very first block of a given chain is usually called the **genesis block**.
+
+![bitcoin genesis block](/img/blockchain-explorers/bitcoin-genesis-block.jpeg)
 
 The genesis block contains only _one_ transaction. 
 
@@ -173,6 +181,8 @@ What you will most likely use a block explorer for is checking a _transaction st
 Most wallets will show you the transaction ID for all of your transactions.
 
 If we want to look at the very first cryptocurrency transaction ever done, we need to go to Block #170, where Satoshi Nakamoto sent Hal Finney **10** BTC.
+
+![bitcoin transaction block explorer](/img/blockchain-explorers/bitcoin-transaction-block-explorer.jpeg)
 
 It is the _first_ block on the Bitcoin blockchain that contains _more_ than one transaction. We can find the coinbase transaction on the very top. 
 

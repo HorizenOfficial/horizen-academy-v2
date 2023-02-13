@@ -18,12 +18,12 @@ Simply put, the **EVM** is a computation engine that is in charge of _deploying_
 ### Key Takeaways - EVM
 
 - The **Ethereum Virtual Machine**, or EVM, is a computation engine that is in charge of deploying and executing smart contracts and computing the state for every new block added to the Ethereum blockchain.
+
 - **EVM compatibility** is an essential feature of blockchains that have enable many popular networks - including _Avalanche_, _Binance Smart Chain_, _Polygon_, _Solana_, _Harmony_ and _Fantom_ - to become highly successful by reducing the barriers to entry for application developers to deploy smart contracts on these new chains due to the code being compatible with the _Ethereum_ network.
+
 - **EVM has some drawbacks**, including the increase in _gas fees_ which sometimes make dapps too expensive to use during times of network congestion. _However_, layer 2 scaling solutions like _Optimistic_ and _ZK-Roll Ups_ are aiming to solve this problem.
 
 To better understand what this all means, it is important to first understand **Ethereum**, **Dapps**, **Smart Contracts** and **Gas**.
-
-(/temp/ZBF_Academy_article_what-is-EVM.jpg/)
 
 ### What is Ethereum?
 
@@ -52,8 +52,6 @@ With _smart contracts_, users can conduct all kinds of agreements that involve a
 The **EVM** is a computation engine that is in charge of deploying and executing smart contracts and computing the state (i.e the latest record of token transfers and account balances reflected on the ledger) for every new block added to the Ethereum blockchain.
 
 We can think of the EVM as a piece of software that sits on top of the hardware/node infrastructure of the blockchain and performs critical functions such as running and compiling code used for dApps and smart contracts.
-
-(/temp/ZBF_academy_image_dark_EVM.jpg/)
 
 ### What is a Virtual Machine?
 

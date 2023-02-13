@@ -281,6 +281,8 @@ It explains the rationale behind the proposed idea and elaborates on why certain
 
 The document needs to contain an abstract, a section about the motivation for the proposed change, a specification, as well as a reference implementation. The draft is publicized by creating a pull request against the [ZenIP GitHub repository](https://github.com/HorizenOfficial/ZenIPs).
 
+![zenip process](/img/blockchain-governance/zenip-process.jpg)
+
 _Editors act as the repository maintainers and there are currently three of them:_
 - One representing **the Zen Blockchain Foundation**
 - One representing the **Horizen Community Council** 
@@ -317,6 +319,8 @@ History's first forms of democracy were **direct democracies**. They offered the
 Most democracies evolved into **representative democracies** over time for this reason. While they allow a large number of voters to participate in the decision-making process, there are many issues. 
 
 These issues include the transparency of representatives’ votes, accountability of representatives, and high barriers to entry for participants wanting to get involved in the decision-making process.
+
+![comparing democracies](/img/blockchain-governance/comparing-democracies.jpg)
 
 **Liquid democracy** can be understood as a dynamic hybrid of direct and representative democracies**. It combines many of the upsides of each while doing away with most of their weaknesses. With liquid democracy, you have the option of delegating your vote to an "expert" who represents your views.
 

@@ -35,6 +35,8 @@ The generalization _Demiro Massessi_ has formulated applies to both:
 
 > “*The main difference between consensus mechanisms is the way in which they delegate and reward the verification of transactions. (…) In one way or another, blockchain consensus algorithms boil down to some kind of vote where the number of votes that a user has is tied to the amount of a limited resource that is under the user’s control.*” - *Demiro Massessi*
 
+![consensus in blockchain](/img/pos-vs-pow/consensus-in-blockchain.jpg)
+
 ## Proof of Work - PoW
 
 **Miners** are the entities who work to achieve consensus within the network in a _Proof of Work  blockchain_. 
@@ -66,6 +68,8 @@ You cannot calculate a solution, you need to find it through a trial-and-error a
 
 **Approximation-free** means that it is not possible to have a part of the solution or to “be close to solving the problem”. You either have a solution or not, making it a binary situation.
 
+![proof of work](/img/pos-vs-pow/proof-of-work.jpg)
+
 All nodes and miners verify the validity of a new block as soon as it is discovered and broadcast. If it is valid, they add it to their local copy of the blockchain and delete all transactions that are now already recorded on the blockchain from their mempool.
 
 The *mempool* only ever contains valid but unconfirmed transactions. Then they start working on the next block and the process is repeated. This is how the network agrees on a single version of the history of all transactions in a Proof of Work blockchain.
@@ -87,6 +91,8 @@ The other block is disregarded and called an *orphan block*. This procedure of b
 If **80%** of miners receive block * first and the other **20%** block B, then the chances of block A getting extended are **80%**, assuming all miners have the same computational power. In a way, the miners vote with their computational power on one version of the history. 
 
 This aligns perfectly with our quote from the beginning of the article.
+
+![longest chain rule](/img/consensus-mechanisms/longest-chain-rule.jpg)
 
 Proof of Work is one of the most secure consensus mechanisms but it is only secure if there is a sufficient amount of hash rate on the network. The Bitcoin protocol has proven how secure Proof of Work consensus can be for *over 10 years*.
 
@@ -113,6 +119,8 @@ If the validator were to include fraudulent transactions in his block, he would 
 
 In most Proof of Stake blockchains, there is no block reward. The validator’s incentive to achieve consensus is solely based on collecting the transaction fees attached to each transaction.
 
+![proof of stake](/img/pos-vs-pow/proof-of-stake.jpg)
+
 ## Proof of Work vs Proof of Stake
 
 Skeptics question the overall security of the Proof of Stake consensus model because it doesn’t consume real-world resources to be a validator. 
@@ -122,6 +130,8 @@ There is no cost associated with building a new block on top of both branches wh
 In PoW, there is a real-world cost, electricity, to every block that gets mined. 
 
 It remains to be seen if PoS blockchains can provide the same security guarantees over an extended period of time that Bitcoin with its PoW blockchain has shown for over a decade now.
+
+![proof of work vs proof of stake](/img/pos-vs-pow/proof-of-work-vs-proof-of-stake.jpg)
 
 Another difference between PoW and PoS is that in a PoS blockchain each validating node needs to be identifiable. The staked coins must be held accountable for any malicious acts. 
 

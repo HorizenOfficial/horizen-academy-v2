@@ -29,6 +29,8 @@ The Zendoo sidechain construction allows the deployment of an arbitrary number o
 
 Zendoo is based on an _asymmetric peg_ between the mainchain and its sidechains. The sidechains monitor events on the mainchain, but the main blockchain is agnostic to its sidechains.
 
+![zendoo sidechain protocol](/img/cross-chain-transactions/zendoo-sidechain-protocol.jpg)
+
 _Forward transfers_ from mainchain to sidechain are simpler to construct than _backward transfers_ that return assets to the mainchain. 
 
 Here, the receiving chain (mainchain) cannot verify incoming backward transfers easily. Zendoo introduces a _SNARK-based proving system_, where sidechains generate a proof for each given period, or _Epoch_, that is submitted to the mainchain together with that epoch's backward transfers. 
@@ -100,6 +102,8 @@ The overall idea is to group forward transfers from one or more mainchain blocks
 
 A _forward transfers transaction_ comprises only outputs from forward transfers. There will be no forward transfers transaction if there are no forward transfers to a sidechain over a period of mainchain blocks.
 
+![forward transfers sidechains](/img/cross-chain-transactions/forward-transfers-sidechains.jpg)
+
 In **Latus**, the `receiverMetadata` entails the _receiver's_ address on the sidechain, and a _payback_ address used to refund the sender on the mainchain if a forward transfer was to fail. This could be because the mainchain block that includes the forward transfer is not referenced, or the receiver's address is not provided correctly. 
 
 The latter would only become apparent once the forward transfer is synched to the sidechain as the mainchain does not verify sidechain specific data. 
@@ -164,6 +168,8 @@ Note that the mainchain consensus protocol does not impose any rules on how exac
 
 The concept of **withdrawal epochs** is introduced as a number of mainchain blocks in which a sidechain is collecting backward transfers to be broadcasted to the mainchain. One withdrawal certificate is submitted per withdrawal epoch, accompanied by a SNARK proof that all backward transfers are valid.
 
+![withdrawal epochs](/img/cross-chain-transactions/withdrawal-epochs.jpg)
+
 The length of a withdrawal epoch, defined over a number of mainchain blocks, is _fixed_ with the deployment of the sidechain. The choice of withdrawal epochs length depends on parameters like the block time of a sidechain. 
 
 If blocks are produced at a high frequency, for instance, because the sidechain is built for many _in-game micro-payments_, the withdrawal epoch in terms of mainchain blocks can be short. This can prevent withdrawal certificates from becoming too large due to the number of included backward transfers. 
@@ -194,6 +200,8 @@ A _backward transfer request_ is a special type of transaction created on the ma
 The **nullifier** serves as a unique identifier of coins on a sidechain. Additionally, a _proof_ and _proofdata_ is submitted with the **BTR**, which allows sidechain nodes to verify incoming backward transfer requests. 
 
 The _proofdata_ contains one or more UTXOs on the sidechain, which will be consumed by the BTR. The right to spend the UTXO(s), i.e. the digital signature, is provided in the _proof_ part.
+
+![backward transfers sidechains](/img/cross-chain-transactions/backward-transfers-sidechains.jpg)
 
 When a backward transfer request is submitted on the mainchain, it will be synchronized to the sidechain through the same mechanism used to process forward transfers. 
 

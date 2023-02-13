@@ -25,6 +25,8 @@ The castle is very robust and the army inside is strong. You have arranged a num
 
 If they all attack at the same time the chances of victory are very high. If the attack is uncoordinated then they will most likely suffer defeat.
 
+![the byzantine generals problem](/img/blockchain-attacks/the-byzantine-generals-problem.jpg)
+
 **You as the general have the following problem:** 
 
 How can you make sure all armies are attacking at the same time? In other terms, how can you achieve consensus on the time of the attack? 
@@ -41,6 +43,7 @@ Even without the risk of imposters transferring fraudulent messages and traitors
 
 Blockchain technology solved this dilemma - although this would not really have helped the Byzantine army.
 
+![blockchain byzantine generals problem](/img/blockchain-attacks/blockchain-byzantine-generals-problem.jpg)
 
 _Each General now has a ledger_ of events that is synchronized with the other General's ledgers. No central party is in charge of the coordination. Every time a block gets mined, all the participants agree on the order of events for the last couple of minutes. 
 
@@ -61,6 +64,8 @@ A malicious miner wanting to perform a double spend will first create a regular 
 - **First**, they will not include their own transaction spending their coins in their privately mined chain.
 - **Second**, they will not broadcast the blocks they find to the network, therefore we call it the private chain.
 
+![51 attack](/img/51-attack/51-attack.jpg)
+
 If they control a majority of the computing power, their chain will grow faster than the honest chain. 
 
 The **Longest Chain Rule** in PoW blockchains governs what happens in case of such a fork. The branch that has more blocks to it and accordingly represents the chain created with a larger amount of computing power is considered the valid chain.
@@ -68,6 +73,8 @@ The **Longest Chain Rule** in PoW blockchains governs what happens in case of su
 Once the attacker has received the good or other currency bought with their coins, they will broadcast the private branch to the entire network. All honest miners will drop the honest branch and start mining on top of the malicious chain. 
 
 The network treats the attacker's transaction as if it never happened because the attacker did not include it in his malicious chain. The attacker is still in control of their funds and can now spend them again.
+
+![51 attack example](/img/51-attack/51-attack-example.gif)
 
 _This has happened to many smaller blockchains in the past._
 
@@ -91,6 +98,8 @@ A number of _Sybil nodes_ can surround your node and prevent it from connecting 
 
 This "use case" of a Sybil attack is also called **Eclipse Attack**.
 
+![sybil attack](/img/blockchain-attacks/sybil-attack.jpg)
+
 **One way to mitigate Sybil attacks is to introduce or raise the cost to create an identity.**
 
 This cost must be carefully balanced. It has to be low enough so that new participants aren't restricted from joining the network and creating legitimate identities. It must also be high enough that creating a large number of identities in a short period of time becomes very expensive.
@@ -112,6 +121,8 @@ In a simple form, the DOS (**Denial-of-Service**) attack, all these requests ori
 If a single IP-address sends a huge amount of requests that cannot be justified by legitimate reasons, you can have a measure in place that automatically blocks this IP-address. 
 
 _In the case of a DDOS attack_, the _distributed_ part refers to a large number of different sources that the malicious requests originate from.
+
+![ddos attack](/img/blockchain-attacks/ddos-attack.jpg)
 
 A _DDOS_ attack is much harder to tackle because to do so you need to differentiate between legitimate and malicious requests. This is a very hard problem. In the context of blockchains, this comes down to an almost ideological question. 
 

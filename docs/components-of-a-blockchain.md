@@ -25,6 +25,8 @@ A blockchain works like a large book on the internet. This book keeps track of h
 
 You can fit only so many words on one page before the page is full and you have to use the next one.
 
+![blockchain book example](/img/how-do-blockchains-work/blockchain-book-example.jpg)
+
 The blockchain documents every transfer of money. This ensures that no one can spend the same set of his or her money twice. If you have one ZEN and send it to a friend or an online shop, the recipient is now in control of that ZEN and you cannot use it anymore.
 
 Blockchains solved a major problem in the digital world. When I send you a picture in an email, I actually just send you a copy of that picture, and afterward, we both have a copy. I could send the same picture to another person later on.
@@ -51,6 +53,8 @@ In this case, you are going to connect to a full node first before you can inter
 
 Most wallets out there are light nodes, which means they store your keys but don’t maintain a copy of the blockchain. With our flagship wallet [Sphere by Horizen](https://www.horizen.io/spherebyhorizen/), you can choose to run it as a full or light node.
 
+![node types](/img/components-of-a-blockchain/node-types.jpg)
+
 ## Miners
 
 Miners are nodes as well. They support the network by forwarding information and maintaining a copy of the blockchain, just like all the other nodes. Additionally, the miners are responsible for creating new blocks.
@@ -60,6 +64,8 @@ The purpose of miners for the network is the following: *Each new block can be u
 The network comes to a consensus on the order of transactions for that time period. For Horizen, this time period is 2.5 min on average, for Bitcoin, it is 10 minutes.
 
 Each miner has a slightly different block than the other miners. The difference is because it takes some time for a new transaction to spread across the entire network, and different miners might receive those transactions in a different order.
+
+![adding a block pow](/img/crypto-mining/adding-a-block-pow.jpg)
 
 Miners have to solve a cryptographic puzzle to create a valid block. The miners start working on a new block - and therefore new puzzle - immediately after the previous block is added to the chain. They gather all the transactions on the network that have not been included in a block yet and put them in their version of the next block.
 
@@ -119,13 +125,19 @@ The input doesn’t have to be a number, it can be any sort of data from a singl
 
 One of the most commonly used hash functions is **SHA256**, *Secure Hash Algorithm 256 bit*. The number indicates the output of the hash function has 256 bit. A hash value can serve as a fingerprint of data. One can verify the integrity of files and detect changes by comparing their hashes.
 
+![hash function example](/img/components-of-a-blockchain/hash-function-example.jpg)
+
 ## Public-Key Cryptography
 
 We must have a concept of identity to have ownership. You want to be the sole owner of your funds, and there must be a way to associate the funds with you. This is where cryptography enters the scene.
   
 [_Public-Key Cryptography_](https://www.horizen.io/academy/public-key-cryptography-pkc/)  is also known as *asymmetric cryptography*. With symmetric cryptography, you encrypt and decrypt a message using the same key, like with a padlock.
 
+![symmetric cryptography](/img/components-of-a-blockchain/symmetric-cryptography.jpg)
+
 The term *asymmetric* stems from the property of keys always coming in pairs and being used complementary. If you encrypt something with one of the keys, you need the other one to decrypt it, and vice versa. 
+
+![asymmetric cryptography](/img/components-of-a-blockchain/asymmetric-cryptography.jpg)
 
 The keys are called **public key** and **private key**, also *spending key* or *secret key*. Your keys translate to your identity on the blockchain. You receive funds with your public key and send funds with your private key.
 
@@ -149,6 +161,8 @@ Your keys are important for sending and receiving transactions. Technically, a t
 
 This information is then encrypted with your private key, a step we call *signing a transaction.*
 
+![digital signature example](/img/components-of-a-blockchain/digital-signature-example.jpg)
+
 A digital signature works similarly to how you authorize real-life transactions using your “analog” signature. Even with modern supercomputers, it is infeasible to forge such a digital signature. 
 
 The type of public-key cryptography used in blockchains is one of the safest means of encryption available today.
@@ -171,6 +185,8 @@ Money or data sent to a public key can only be accessed by someone who has knowl
 
 You rarely use a public key when transferring cryptocurrency. You primarily use the address that was generated from a public key. This step relies on the one-wayness of hash functions that we introduced before.
 
+![address derivation](/img/wallet-addresses/address-derivation.jpg)
+
 ### Digital Signatures
 
 Anyone can create a raw transaction spending someone else’s money, but in order for the transaction to be recognized by the network, it needs to have a valid [*digital signature*](https://www.horizen.io/academy/digital-signatures/). The private key associated with the address where the funds are located is required to sign a transaction. 
@@ -180,6 +196,8 @@ The signature consists of two values that can only be provided by the rightful o
 When a transaction is broadcast to the network, every full node and miner verifies it based on the *message*, public key or address, and signature. 
 
 The result of the verification is a binary output: either the signature is valid or invalid. The *verifier* does not learn anything about the private key used to create the signature in this process.
+
+![digital signatures](/img/digital-signatures/digital-signatures.jpg)
 
 ## A Peer-to-Peer Network
 
@@ -195,6 +213,8 @@ Blockchains make use of this concept, and it is one reason why they are so robus
 
 The Peer-to-Peer network plays a significant part in giving blockchains these properties.
 
+![centralized decentralized distributed](/img/p2p-networks/centralized-decentralized-distributed.jpg)
+
 ## Consensus Mechanism
 
 The [*consensus mechanism*](https://www.horizen.io/academy/consensus-mechanisms/) of a blockchain ensures that all participants maintain a consistent record of transactions. The peers agree on a common version of history with every block. There are different ways to achieve consensus in distributed networks.
@@ -205,9 +225,13 @@ If a user has one ZEN and creates two different transactions that spend that sam
 
 The network needs to come to an agreement, or consensus, on which of the two transactions happened first and is valid. The consensus mechanism is what enables a large number of different entities that neither know, nor trust each other to agree on a single version of the blockchain.
 
+![consensus mechanism example](/img/components-of-a-blockchain/consensus-mechanism-example.jpg)
+
 ### Consensus in Distributed Systems
 
 There are challenges to creating consensus in distributed systems. The consensus mechanism has to tolerate malicious actors and handle a network providing unreliable communication. We define *liveness* as the property of the system not stalling, and safety as all nodes agreeing on new blocks. Nakamoto Consensus is brilliant in that it defines consensus in a novel way: non-deterministic.
+
+![consensus in distributed systems](/img/components-of-a-blockchain/consensus-in-distributed-systems.jpg)
 
 ### Mining
 
@@ -222,6 +246,8 @@ Mining is more than just performing Proof-of-Work, it comes with economic implic
 ### Blockchain Governance
 
 One of the most highly valued properties of public blockchain protocols is their level of decentralization. Usually, there is a lot of focus on how decentralized the block generation process is, but little on how code and other changes are decided upon. [Governance](https://www.horizen.io/academy/blockchain-governance/) is the keyword here.
+
+![comparing democracies](/img/blockchain-governance/comparing-democracies.jpg)
 
 Open source protocol governance is something that’s constantly iterated and improved upon. The blockchain space is relatively young compared to traditional governance processes. The large number of different blockchain projects represent a huge *real-world sandbox*. 
 

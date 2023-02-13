@@ -84,7 +84,7 @@ The protocol requires you to add a small transaction fee - similar to a stamp - 
 - The amount to transfer
 - And your signature
 
-
+![protocol comparisons](/img/blockchain-protocols/protocol-comparisons.jpg)
 
 [Wallets](https://www.horizen.io/academy/crypto-wallets/) make it easy to receive and send transactions. 
 
@@ -123,6 +123,7 @@ You can distinguish between several broad types of networking protocols. _Some e
 - **Network management protocols** such as _SNMP_ and _ICMP_ (Simple Network Management Protocol/Internet Control Message Protocol)
 - **Value transfer protocols** such as _Horizen_ or _Bitcoin_
 
+![network protocols](/img/blockchain-protocols/network-protocols.jpg)
 
 Above you see a collection of protocols, many of which you use every day. 
 
@@ -171,6 +172,8 @@ _Another subset of rules_ is concerned with the structure of a valid block. A **
 
 Following the block header, the block contains all the transactions that were included.
 
+![blockchain block example](/img/blockchain-protocols/blockchain-block-example.jpg)
+
 Now there needs to be a set of rules describing what an individual transaction must look like. 
 
 A transaction needs to include:
@@ -185,6 +188,8 @@ The **consensus mechanism** determines how the process of adding new blocks to t
 
 The **longest chain rule** or _Nakamoto Consensus_ determines which block is valid in case two miners find two valid blocks shortly after another, creating a tie situation.
 
+![longest chain rule](/img/consensus-mechanisms/longest-chain-rule.jpg)
+
 To keep the growth of the blockchain stable with regards to the number of blocks added per time unit, a _difficulty adjustment_ is in place. The more miners support a network with their _hashpower_, the faster they would find blocks on average if there was no countermeasure in place. 
 
 If the total _hashrate_ increases, the block difficulty does, too. The average _block time_ is kept more or less constant through this mechanism.
@@ -192,6 +197,8 @@ If the total _hashrate_ increases, the block difficulty does, too. The average _
 Lastly, the monetary policy is defined in the protocol. Most cryptocurrencies have a maximum circulating supply defined with their inception. 
 
 By cutting the _block subsidy_ in half regularly, with Horizen every 840,000 blocks, with Bitcoin every 210,000 blocks, both roughly equal to 4 years, the total circulating supply asymptotically approaches its limit but never crosses it.
+
+![block reward halving](/img/blockchain-protocols/block-reward-halving.jpg)
 
 This type of monetary schedule is referred to as _disinflationary_.
 
@@ -291,6 +298,8 @@ Each transaction comes with three entries:
 - And a _public_ receipt, the recorded transaction on the ledger
 
 Because everyone can keep a copy of the entire transaction history, no actor can create a fraudulent credit for themselves. You can trust the system itself instead of having to trust a third party like auditors or banks.
+
+![triple entry accounting](/img/blockchain-protocols/triple-entry-accounting.jpg)
 
 _Triple-entry bookkeeping still comes with a downside_: the total transaction throughput is limited, as it has to be processed by all participants of the network. 
 

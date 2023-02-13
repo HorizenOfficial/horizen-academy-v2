@@ -44,7 +44,9 @@ One way to think about a consensus protocol is as a unique language or way of sp
 
 Imagine, for example, a group of kids sitting in a circle playing the telephone game. 
 
-The goal is for a message to travel from one person's ear to the next and go all the way around the circle without being changed. Each person's responsibility is to carefully listen to the message and then deliver it to the next person clearly so that it is not misinterpreted by the time it reaches the last person's ear. 
+The goal is for a message to travel from one person's ear to the next and go all the way around the circle without being changed. Each person's responsibility is to carefully listen to the message and then deliver it to the next person clearly so that it is not misinterpreted by the time it reaches the last person's ear.
+
+![telephone game consensus mechanism example](/img/consensus-mechanisms/telephone-game-consensus-mechanism-example.jpeg)
 
 _How do we solve the problem of getting the message across in a timely manner without someone mistakenly or intentionally changing it?_
 
@@ -222,6 +224,8 @@ _The primary goal_- creating a scalability-driven path to mainstream adoption.
 Horizen’s core product **Zendoo** makes it easy to be consensus agnostic. It provides a sidechain SDK that enables businesses and developers to create custom sidechains on top of the Horizen mainchain. This in turn means that they can leverage the most secure form of PoW used by the mainchain.
 
 Each custom blockchain can have its own unique consensus mechanism. Additionally, custom blockchains can communicate and exchange value with other blockchains in the Horizen ecosystem using its novel **Cross-Chain Transfer Protocol**, or CCTP. 
+
+![horizen sidechains](/img/modular-vs-monolithic-blockchains/horizen-sidechains.jpeg)
 
 What this means is that a developer who is looking to build both an exchange and an identity storage and authentication solution, does not need to compromise security to achieve high transaction throughput, nor speed to achieve decentralization. 
 
