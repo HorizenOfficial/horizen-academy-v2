@@ -187,7 +187,7 @@ After that, the two parties can interact indefinitely without broadcasting to th
 > “[T]he interaction of the parties with the contract instance is always “local”, i.e., the parties themselves compute the new states […] and
 > then just exchange signatures [on it].” - **Dziembowski, Faust, Hostáková**, State Channel Paper
 
-Another scaling approach is using [sidechains](Sidechains.md). While sometimes referred to as a second-layer technology as well, it is actually an approach based on parallelization. 
+Another scaling approach is using [sidechains](sidechains.md). While sometimes referred to as a second-layer technology as well, it is actually an approach based on parallelization. 
 
 A **sidechain** is a blockchain in itself with the ability to communicate with the mainchain. This communication can comprise the exchange of data or assets.
 

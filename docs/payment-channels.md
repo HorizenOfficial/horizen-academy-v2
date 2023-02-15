@@ -15,7 +15,7 @@ Now there are different ways to scale blockchains and increase their throughput,
 
  _Meet layer-two transactions on payment channels_.
 
-We introduced [sidechains](Sidechains.md) as a scaling approach that spreads the workload otherwise performed by a single set of mainchain nodes to several sets of nodes, each responsible for their sidechain.
+We introduced [sidechains](sidechains.md) as a scaling approach that spreads the workload otherwise performed by a single set of mainchain nodes to several sets of nodes, each responsible for their sidechain.
 
 We also talked about [Directed Acyclic Graphs (DAGs)](directed-acyclic-graph-dag.md) that hold the potential to dynamically adjust the on-chain, or "_on-DAG_", throughput by introducing a new type of data structure supporting _two-dimensionality_ in an otherwise mostly _one-dimensional_ blockchain world.
 

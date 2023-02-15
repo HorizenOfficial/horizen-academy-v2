@@ -177,7 +177,7 @@ This increase in demand to mine bitcoin naturally leads to an increase in the di
 
 Conversely, falling prices correlate to a decrease in the hashing rate as fewer miners are able to remain profitable to secure the network. 
 
-_The decrease in hashrate makes the network less secure_, as it is an indicator for the amount of energy a bad actor would potentially need to exceed in order to successfully perform a [51% attack](51-attacks.md). 
+_The decrease in hashrate makes the network less secure_, as it is an indicator for the amount of energy a bad actor would potentially need to exceed in order to successfully perform a [51% attack](51-attack.md). 
 
 As price and hashing power decreases, we see a decrease in the difficulty to mine new blocks over time. This acts as a counterbalance to the decrease in miner participation caused by lower profitability, inviting a new wave of miners to start contributing hashing power to secure the network. 
 

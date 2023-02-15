@@ -265,7 +265,7 @@ One second layer technology, [state and payment channels](payment-channels.md), 
 
 The other approach that could arguably be referred to as a second layer technology is sharding. _Sharding_ is a term originating from the traditional database world. 
 
-**Sharding** describes partitioning a database into several shards in order to keep each individual partition more performant, in turn improving the entire system. Horizen's [sidechain](Sidechains.md) can be considered a sharding mechanism.
+**Sharding** describes partitioning a database into several shards in order to keep each individual partition more performant, in turn improving the entire system. Horizen's [sidechain](sidechains.md) can be considered a sharding mechanism.
 
 We'll now compare both accounting methods and will assume that both systems have similar user and transaction counts.
 

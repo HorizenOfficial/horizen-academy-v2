@@ -109,7 +109,7 @@ This state channel mechanism makes it possible for play-to-earn games and other 
 
 ### Sidechains
 
-Unlike payment or state channels, **Sidechains** are independent blockchains with their own set of _validator nodes_. [Sidechains](Sidechains.md) will normally have fewer nodes than the L1 mainchain, which allows them to achieve consensus faster. 
+Unlike payment or state channels, **Sidechains** are independent blockchains with their own set of _validator nodes_. [Sidechains](sidechains.md) will normally have fewer nodes than the L1 mainchain, which allows them to achieve consensus faster. 
 
 A developer might adopt a sidechain over a payment or state channel if they need even more flexibility and control over their underlying infrastructure.
 
