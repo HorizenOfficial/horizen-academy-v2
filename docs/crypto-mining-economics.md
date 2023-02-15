@@ -17,7 +17,7 @@ Cryptocurrency mining has long been viewed as a highly rewarding activity for ea
 
 The first is the _consensus mechanism_. The act of ‘mining’ is most commonly associated with proof of work blockchains like Bitcoin, Litecoin, Bitcoin Cash or Horizen. 
 
-Under a [proof of work](https://www.horizen.io/academy/proof-of-work-pow/) consensus mechanism, like on the Bitcoin network, miners compete to solve mathematical puzzles using computing power in order to earn the right to add transactions to the next block in the chain and receive newly issued bitcoin from the network, known as the block reward.  
+Under a [proof of work](proof-of-work-pow.md) consensus mechanism, like on the Bitcoin network, miners compete to solve mathematical puzzles using computing power in order to earn the right to add transactions to the next block in the chain and receive newly issued bitcoin from the network, known as the block reward.  
 
 _Computing power_, otherwise known as **hashing power**, is generated through the computer that runs the Bitcoin software in addition to hardware machines called mining rigs, which are computer systems built specifically to mine cryptocurrencies. 
 
@@ -177,7 +177,7 @@ This increase in demand to mine bitcoin naturally leads to an increase in the di
 
 Conversely, falling prices correlate to a decrease in the hashing rate as fewer miners are able to remain profitable to secure the network. 
 
-_The decrease in hashrate makes the network less secure_, as it is an indicator for the amount of energy a bad actor would potentially need to exceed in order to successfully perform a [51% attack](https://www.horizen.io/academy/51-attacks/). 
+_The decrease in hashrate makes the network less secure_, as it is an indicator for the amount of energy a bad actor would potentially need to exceed in order to successfully perform a [51% attack](51-attacks.md). 
 
 As price and hashing power decreases, we see a decrease in the difficulty to mine new blocks over time. This acts as a counterbalance to the decrease in miner participation caused by lower profitability, inviting a new wave of miners to start contributing hashing power to secure the network. 
 
@@ -203,7 +203,7 @@ Essentially, as more transactions are recorded on a blockchain, more blocks are 
 
 This is particularly true for full nodes, which are responsible for storing an archive of the entire history of the blockchain dating back to its inception. While it is difficult to place specific numbers on these costs, what’s clear is that the longer a blockchain exists, the greater the state bloat and the more expensive it becomes for validators to run nodes. 
 
-One of the ways in which the state bloat problem is being resolved is through creating a more [modular blockchain](https://www.horizen.io/academy/modular-vs-monolithic-blockchains/) design in which side chains can be sprung up for the purpose of storing parts of the main chains history so that nodes on the mainchain can reduce the amount of data their nodes need to store. 
+One of the ways in which the state bloat problem is being resolved is through creating a more [modular blockchain](modular-vs-monolithic-blockchains.md) design in which side chains can be sprung up for the purpose of storing parts of the main chains history so that nodes on the mainchain can reduce the amount of data their nodes need to store. 
 
 Through a process called ‘anchoring’, a cryptographic hash of the data can be stored on another chain and validated by the nodes on that chain. You can think of this like a zip file that is stored in a separate computer server in order to free up space on your current computer. 
 

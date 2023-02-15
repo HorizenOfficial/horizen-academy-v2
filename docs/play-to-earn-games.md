@@ -44,7 +44,7 @@ _This means that the in-game assets can be:_
 - Transferred to anyone on the blockchain _network_
 - Traded for different assets or cryptocurrencies using a _DEX_ 
 
-In-game assets could also be made **interoperable**, meaning they can be transferred between different gaming environments if the blockchain games operate on the same blockchain network or a blockchain that is [EVM-compatible](https://www.horizen.io/academy/ethereum-virtual-machine-evm/). 
+In-game assets could also be made **interoperable**, meaning they can be transferred between different gaming environments if the blockchain games operate on the same blockchain network or a blockchain that is [EVM-compatible](ethereum-virtual-machine-evm.md). 
 
 This can provide significant benefits to avid gamers who are already familiar with using tokens as currency within digital economies, but have never truly been able to claim ownership of the assets and achievements they accumulate in a game. 
 

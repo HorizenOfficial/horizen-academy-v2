@@ -83,11 +83,11 @@ There is a wide range of decisions with varying degrees of consequences. Some de
 - the **consensus mechanism**
 - **Block production parameters** like _block time_, _block size_, etc.
 - Support for **smart contracts** and if so, using which programming language
-- **Native support** for off-chain scaling solutions like [_sidechains_](https://www.horizen.io/academy/sidechains/) or _state channels_
+- **Native support** for off-chain scaling solutions like [_sidechains_](sidechains.md) or _state channels_
 
 ### Choosing a Consensus Mechanism
 
-An important design decision is the choice of the [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/), and in case of [Proof of Work](https://www.horizen.io/academy/proof-of-work-pow/) blockchains, the mining algorithm. 
+An important design decision is the choice of the [consensus mechanism](consensus-mechanisms.md), and in case of [Proof of Work](proof-of-work-pow.md) blockchains, the mining algorithm. 
 
 These types of decisions affect the economies of the project, as well as the ecosystem around the protocol. When mining is involved, existing miners with specialized hardware can be approached. Conversely, projects can try to avoid **ASICs** and choose an algorithm better suited for general purpose hardware.
 
@@ -183,7 +183,7 @@ The Decentralized Autonomous Organization (DAO) is an entity governed by rules w
 
 Shareholders have the power to change the rules of the DAO, but only if making changes to them was foreseen and enabled at the DAO's inception. Rules might just as well be hardcoded, without the option to adapt them later on.
 
-Interactions with a DAO are tracked with timestamps and [digital signatures](https://www.horizen.io/academy/digital-signatures/) recorded on-chain. The general concept was introduced as a [_decentralized autonomous corporation_](https://letstalkbitcoin.com/is-bitcoin-overpaying-for-false-security) (DAC) in an article by Dan Larimer in 2013. Vitalik Buterin went one step further and proposed that human management could be made obsolete if the smart contracts governing the DAO were written in a _turing complete_ language.
+Interactions with a DAO are tracked with timestamps and [digital signatures](digital-signatures.md) recorded on-chain. The general concept was introduced as a [_decentralized autonomous corporation_](https://letstalkbitcoin.com/is-bitcoin-overpaying-for-false-security) (DAC) in an article by Dan Larimer in 2013. Vitalik Buterin went one step further and proposed that human management could be made obsolete if the smart contracts governing the DAO were written in a _turing complete_ language.
 
 Building a DAO is no simple endeavor. The code governing a DAO is public and anyone can review it. This also means anyone can analyze the code to find potential vulnerabilities. Fixing the code after launch is difficult, as any decision related to rule changes is subject to building consensus.
 
@@ -298,7 +298,7 @@ We invite you to check out the [ZenIP repository](https://github.com/HorizenOffi
 
 ### The Horizen Treasury DAO
 
-Horizen is dedicated to building a DAO as one of the first [sidechain](https://www.horizen.io/academy/sidechains/) applications. It will enable decentralized, community based governance, especially with regards to resource allocation. 
+Horizen is dedicated to building a DAO as one of the first [sidechain](sidechains.md) applications. It will enable decentralized, community based governance, especially with regards to resource allocation. 
 
 Part of the Horizen block subsidy goes to the _Zen Blockchain Foundation_ treasury, which uses it to fund fund the development of the _protocol_, _sidechain implementation_, _marketing_ and _business development_.
 

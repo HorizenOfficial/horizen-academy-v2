@@ -9,7 +9,7 @@ description: In this article, you learn why hash functions are an important part
 
 # What is a Hash Function in Cryptography?
 
-The verification of data is an important aspect when building a [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) on a decentralized network. Participants need a way to reliably distinguish between valid data and malicious information. 
+The verification of data is an important aspect when building a [data structure](blockchain-data-structure.md) on a decentralized network. Participants need a way to reliably distinguish between valid data and malicious information. 
 
 Blockchains are a way to record data in an immutable way. For this to be a valuable feature, the data written to the blockchain must be accurate. Verifying what data gets added makes a lot of sense, especially as storage on the blockchain is limited.
 
@@ -142,19 +142,19 @@ Larger inputs are split and the compression function is applied to the fragments
 
 In cryptocurrencies **SHA-256** (_Secure Hash Algorithm 256_) and **RIPEMD 160** (_RACE Integrity Primitives Evaluation Message Digest 160_), the **BLAKE** family and **Keccak**, which is the basis for the _SHA-3_ family, are the most common hash functions.
 
-In Bitcoin and related protocols, such as Horizen, [addresses are obtained](https://www.horizen.io/academy/payment-channels/) through performing a combination of _SHA-256_ and _RIPEMD 160_ protocols on a given public key. One can only speculate why Satoshi made that choice, but most likely they did so to mitigate the risk of one function becoming vulnerable (e.g. one-wayness is broken).
+In Bitcoin and related protocols, such as Horizen, [addresses are obtained](payment-channels.md) through performing a combination of _SHA-256_ and _RIPEMD 160_ protocols on a given public key. One can only speculate why Satoshi made that choice, but most likely they did so to mitigate the risk of one function becoming vulnerable (e.g. one-wayness is broken).
 
 ## Where are Hash Functions Used?
 
 ### Mining
 
-Hash functions are most often talked about in the context of cryptocurrency [mining](https://www.horizen.io/academy/mining-in-blockchain/). This is not necessarily because it is the most important (though a very important) application of hash functions from a technical perspective. It’s also because by now an entire industry has been built around performing hash operations on a large scale.
+Hash functions are most often talked about in the context of cryptocurrency [mining](crypto-mining.md). This is not necessarily because it is the most important (though a very important) application of hash functions from a technical perspective. It’s also because by now an entire industry has been built around performing hash operations on a large scale.
 
 Miners continuously hash the block header of new blocks, together with a variable, the **nonce**. 
 
 The goal is to find a nonce that when hashed together with the rest of the header produces a hash below a certain threshold, the **target**. When that happens, they broadcast the block to the network and it's attached to the blockchain.
 
-Using hash functions makes for a good [Proof-of-Work](https://www.horizen.io/academy/proof-of-work-pow/) because finding a hash below the target is an optimization and approximation free problem.
+Using hash functions makes for a good [Proof-of-Work](proof-of-work-pow.md) because finding a hash below the target is an optimization and approximation free problem.
 
 - **Optimization free** means there is no shortcut to using a trial-and-error approach.
 - **Approximation free** means there is no “being close” to solving a block. It’s a binary situation, either a solution is found, or not.
@@ -179,13 +179,13 @@ If there is an odd number of transactions in a given round, the last transaction
 
 ### Creating Addresses
 
-Hash functions are also an important step in the [creation of addresses](https://www.horizen.io/academy/wallet-addresses/) and in the authorization of spending funds via [digital signatures](https://www.horizen.io/academy/digital-signatures/).
+Hash functions are also an important step in the [creation of addresses](wallet-addresses.md) and in the authorization of spending funds via [digital signatures](digital-signatures.md).
 
 ### HLCs and HTLCs
 
 Hash functions are integral to **Hash-Locked Contracts** (_HLCs_) and [**_Hash Time Locked Contracts (HTLCs_**)](https://en.bitcoin.it/wiki/Hash_Time_Locked_Contracts). 
 
-The idea is to place a lock on a [UTXO](https://www.horizen.io/academy/utxo-vs-account-model/) that is based on a hash value. In order to unlock the UTXO, one has to prove knowledge of the preimage of the hash. 
+The idea is to place a lock on a [UTXO](utxo-vs-account-model.md) that is based on a hash value. In order to unlock the UTXO, one has to prove knowledge of the preimage of the hash. 
 
 Only the rightful owner can choose to reveal the preimage and have another party unlock the UTXO because hash functions are preimage resistant.
 

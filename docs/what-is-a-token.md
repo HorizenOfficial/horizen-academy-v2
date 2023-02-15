@@ -75,7 +75,7 @@ Token reward instruments can also be presented in the form of a *voucher* that i
 
 **There are many other interesting use cases that can be applied to tokens**:
 
-- **Voting** on proposals set by a decentralized autonomous organization or [DAO](https://www.horizen.io/academy/decentralized-autonomous-organization-dao/)
+- **Voting** on proposals set by a decentralized autonomous organization or [DAO](decentralized-autonomous-organization-dao.md)
 - Using tokens as **collateral** to receive loans or perform tasks that would otherwise require trust
 - Through the use of **non-fungible tokens**, you can even create a unique digital identity or certify the scarcity of a digital item by showing proof of its limited supply.
 
@@ -101,7 +101,7 @@ _Examples of tokens include_:
 
 **MANA** - A token used to pay for virtual land on the metaverse project Decentraland.
 
-Tokens are created using a [smart contract](https://www.horizen.io/academy/smart-contracts/), which is a computer program that automatically executes a set of functions based on predefined rules or conditions set by the developer.
+Tokens are created using a [smart contract](smart-contracts.md), which is a computer program that automatically executes a set of functions based on predefined rules or conditions set by the developer.
 
 These rules include the tokens:
 

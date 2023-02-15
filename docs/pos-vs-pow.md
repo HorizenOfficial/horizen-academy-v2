@@ -41,7 +41,7 @@ The generalization _Demiro Massessi_ has formulated applies to both:
 
 **Miners** are the entities who work to achieve consensus within the network in a _Proof of Work  blockchain_. 
 
-They collect all transactions that are forwarded to them through the [P2P network](https://www.horizen.io/academy/peer-to-peer-networks-p2p/) and save them in their *mempool* (memory pool). While they collect incoming transactions, they verify if the transactions are valid according to the protocol and add them to the block they are currently working on. 
+They collect all transactions that are forwarded to them through the [P2P network](p2p-networks.md) and save them in their *mempool* (memory pool). While they collect incoming transactions, they verify if the transactions are valid according to the protocol and add them to the block they are currently working on. 
 
 *At the same time, they are solving a computationally expensive puzzle.*
 

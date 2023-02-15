@@ -26,7 +26,7 @@ _The security of any public key cryptography (PKC) scheme relies on one property
 
 - It should be easy to derive a public key from a private key, but it must be infeasible to reverse that operation and derive a private key from a given public key.
 
-With elliptic curve cryptography (ECC), this property is based on the _discrete log problem_, which refers to division on the elliptic curve being computationally difficult while multiplication is easy. Deriving a public key from an address is also computationally difficult, as you would have to find the _preimage_ of a [hash function](https://www.horizen.io/academy/hash-functions/), which means deriving an _input_ from an _output_.
+With elliptic curve cryptography (ECC), this property is based on the _discrete log problem_, which refers to division on the elliptic curve being computationally difficult while multiplication is easy. Deriving a public key from an address is also computationally difficult, as you would have to find the _preimage_ of a [hash function](hash-functions.md), which means deriving an _input_ from an _output_.
 
 Not being able to derive a public key from an address is an important aspect when considering privacy. Using a new address for every incoming transaction makes tracking transactions much harder for an adversary. 
 
@@ -36,7 +36,7 @@ Now let's get into the actual process of creating a crypto wallet address from s
 
 ## Generating the Private Key
 
-The purpose of a private key is to prove ownership of a UTXO-set by creating [digital signatures](https://www.horizen.io/academy/digital-signatures/) to authorize spending.
+The purpose of a private key is to prove ownership of a UTXO-set by creating [digital signatures](digital-signatures.md) to authorize spending.
 
 Private keys are sometimes also called _secret keys_ or _spending keys_. 
 
@@ -80,7 +80,7 @@ If you would like to go through the process of creating a [private key ](https:/
 
 ### Mnemonic Phrases
 
-It is good practice to backup your private key in an analog format but copying and writing down your private key in one of the formats above is very error prone. In 2013 a _Bitcoin Improvement Proposal_ (**BIP**) was submitted suggesting the use of [mnemonic phrases](https://www.horizen.io/academy/mnemonic-phrases/) to represent private keys.
+It is good practice to backup your private key in an analog format but copying and writing down your private key in one of the formats above is very error prone. In 2013 a _Bitcoin Improvement Proposal_ (**BIP**) was submitted suggesting the use of [mnemonic phrases](mnemonic-phrases.md) to represent private keys.
 
 > _"A mnemonic code or sentence is superior for human interaction compared to the handling of raw binary or hexadecimal representations of a wallet seed. The sentence could be written on paper or spoken over the telephone. This guide is meant to be a way to transport computer-generated randomness with a human readable transcription." - [BIP 0039](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), Palatinus, Rusnak, Voisine, Bowe_
 

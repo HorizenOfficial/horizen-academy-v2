@@ -9,7 +9,7 @@ description: Just like a website for selling sneakers or an app for delivering f
 
 # Why Create a Cryptocurrency Token?
 
-For many people who are new to the web3 space, the idea of launching a [token](https://www.horizen.io/academy/what-is-a-token/) is as exciting and innovative as it was to create a website in the late 90’s or a mobile app in the early 2010’s.
+For many people who are new to the web3 space, the idea of launching a [token](what-is-a-token.md) is as exciting and innovative as it was to create a website in the late 90’s or a mobile app in the early 2010’s.
 
 In the past, the invention of critical infrastructure like the internet empowered millions of entrepreneurs to launch websites and build their business online.
 

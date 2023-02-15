@@ -86,7 +86,7 @@ The protocol requires you to add a small transaction fee - similar to a stamp - 
 
 ![protocol comparisons](/img/blockchain-protocols/protocol-comparisons.jpg)
 
-[Wallets](https://www.horizen.io/academy/crypto-wallets/) make it easy to receive and send transactions. 
+[Wallets](crypto-wallets.md) make it easy to receive and send transactions. 
 
 They also create your signature for you, without you even noticing, so don’t worry if this sounds complex at first. _Addresses on a blockchain_ are, of course, a little different to addresses that you are used to - they look like this:
 
@@ -139,7 +139,7 @@ Developers become attracted to the increasing number of libraries and tools avai
 
 _Bitcoin_ is in a good position to become the agreed-upon standard for the storage and transfer of value across the internet. Bitcoin is a convention that specifies rules, procedures, and formats for the transfer of money online without intermediaries. Horizen aims to become the standard for private value and data transfer in the decentralized web 3.0.
 
-People like to point out that the throughput, mostly referring to the number of transactions per second, blockchains can handle, is not sufficient for mass adoption. We believe that using [sidechains](https://www.horizen.io/academy/sidechains/) is a viable way to overcome those growing pains.
+People like to point out that the throughput, mostly referring to the number of transactions per second, blockchains can handle, is not sufficient for mass adoption. We believe that using [sidechains](sidechains.md) is a viable way to overcome those growing pains.
 
 _Scalability_ is a discussion in and of its own. We are confident in saying that a distributed ledger of some sort will become the agreed upon standard to transfer value in the future. Bitcoin has the greatest adoption of all cryptocurrencies today. 
 
@@ -234,7 +234,7 @@ Even if a perfectly designed set of rules is in place, it still has to be enforc
 
 **Game Theory** is the study of mathematical models of strategic interaction between rational decision-makers. _Miners_, _nodes_, and _users_ of cryptocurrencies are the rational decision-makers
 
-Here, rational means each person is trying to maximize their personal benefit. When [Satoshi Nakamoto](https://www.horizen.io/academy/satoshi-nakamoto/) published the Bitcoin whitepaper, he introduced a system in which each participant is economically incentivized to follow the rules of the protocol. 
+Here, rational means each person is trying to maximize their personal benefit. When [Satoshi Nakamoto](satoshi-nakamoto.md) published the Bitcoin whitepaper, he introduced a system in which each participant is economically incentivized to follow the rules of the protocol. 
 
 In other words, it is more profitable to play according to the rules, than to break them - we say Bitcoin is _incentive compatible_. This seems to hold true, even 10 years after the inception of the protocol. One cannot overestimate the foresight and thought that went into building such a system.
 

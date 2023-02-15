@@ -22,7 +22,7 @@ It's a _proof of work_.
 
 Blockchain proof of work serves a similar purpose. It demonstrates the difficulty of building a blockchain by adding zeros to every block hash. 
 
-While the [blockchain as a data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) is inherently _tamper-evident_, only PoW makes it _immutable_. A blockchain allows spectators to easily detect changes to records, but it doesn't prevent changes from occurring. 
+While the [blockchain as a data structure](blockchain-data-structure.md) is inherently _tamper-evident_, only PoW makes it _immutable_. A blockchain allows spectators to easily detect changes to records, but it doesn't prevent changes from occurring. 
 
 **Proof of Work** on the other hand, makes it infeasible to change any records, because an attacker would have to redo all the work that went into building the block(s).
 
@@ -182,7 +182,7 @@ As we mentioned above, this design didn't keep them ASIC resistant for long. It 
 
 ### An Edge-Case - The Tangle
 
-An interesting side note is that bandwidth is a consideration in the IOTA [Tangle](https://blog.iota.org/the-tangle-an-illustrated-introduction-4d5eae6fe8d4/), designed for use in IOT devices performing many micro transactions. The Tangle is a [Directed Acyclic Graph (DAG)](https://www.horizen.io/academy/directed-acyclic-graph-dag/) consisting of individual transactions. 
+An interesting side note is that bandwidth is a consideration in the IOTA [Tangle](https://blog.iota.org/the-tangle-an-illustrated-introduction-4d5eae6fe8d4/), designed for use in IOT devices performing many micro transactions. The Tangle is a [Directed Acyclic Graph (DAG)](directed-acyclic-graph-dag.md) consisting of individual transactions. 
 
 Each transaction has a small proof of work attached. The protocol's security is based on the assumption that honest participants will make up the majority of transactions and also make up the majority of computational power.
 

@@ -100,7 +100,7 @@ Every block after the genesis block contains transaction data, along with a hash
 
 A **Hash** is a sequence of numbers and letters that represents a snapshot of any size of data. A hash is uniquely linked to another piece of data such that altering a single piece of the linked data will also alter the hash.
 
-A **[Hash Function](https://www.horizen.io/academy/hash-functions/)** is a mathematical function that takes a data input of arbitrary length and size and produces an output of a fixed length and size. Any changes made to the input produces an entirely new output.
+A **[Hash Function](hash-functions.md)** is a mathematical function that takes a data input of arbitrary length and size and produces an output of a fixed length and size. Any changes made to the input produces an entirely new output.
 
 The Bitcoin blockchain uses a special type of hash function called **SHA-256**. SHA-256 plays a key role in the recording of transactions and the mining process on the Bitcoin blockchain.
 
@@ -153,13 +153,13 @@ A **_Merkle tree_** is a binary tree of hashes. A hash is cryptographic recordin
 
 Contained within each block is information about the hash of the previous block, the timestamp, the nonce value (sequential numbers added to an encrypted block for miners to calculate), the version number of the block, and its current difficulty target.
 
-Transactions are digitally signed on the blockchain to ensure the security and integrity of the data stored on it. **_[Digital signatures](https://www.horizen.io/academy/digital-signatures/)_** use asymmetric cryptography to secure information about the block, transactions and transacting parties.
+Transactions are digitally signed on the blockchain to ensure the security and integrity of the data stored on it. **_[Digital signatures](digital-signatures.md)_** use asymmetric cryptography to secure information about the block, transactions and transacting parties.
 
 ### Network Layer
 
 The network layer, or P2P layer, is where nodes communicate and synchronize with each other to maintain a valid current state of the blockchain network. Before a transaction is committed to the ledger, it is first broadcast across the network of nodes, which coordinate to reach consensus before on whether it should be accepted into the ledger.
 
-Within the network layer, transactions flow in a sequence of steps that highlight the interaction between nodes in a P2P network. A **[P2P network](https://www.horizen.io/academy/peer-to-peer-networks-p2p//)** is a computer network where computers (nodes) are distributed and share the network’s workload to reach the end goal.
+Within the network layer, transactions flow in a sequence of steps that highlight the interaction between nodes in a P2P network. A **[P2P network](p2p-networks.md)** is a computer network where computers (nodes) are distributed and share the network’s workload to reach the end goal.
 
 ### Consensus Layer
 
@@ -247,15 +247,15 @@ This is because the value of the data is greater and the number of times that da
 
 There are other factors to consider when constructing a blockchain network, such as:
 
-**[Interoperability](https://www.horizen.io/academy/blockchain-interoperability/)**
+**[Interoperability](blockchain-interoperability.md)**
 
 The ability for blockchain networks to communicate and transfer data between each other in a seamless manner regardless of the differences in their consensus mechanisms or underlying architecture.
 
-**[Modularity](https://www.horizen.io/academy/modular-vs-monolithic-blockchains/)**
+**[Modularity](modular-vs-monolithic-blockchains.md)**
 
 The separation of a blockchain network into 3 specialized components: execution, consensus and data availability.
 
-**[Composability](https://www.horizen.io/academy/ethereum-virtual-machine-evm/)**
+**[Composability](ethereum-virtual-machine-evm.md)**
 
 The ability for the components of one system to be reused in another.
 

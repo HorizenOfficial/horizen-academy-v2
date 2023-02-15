@@ -33,13 +33,13 @@ Ethereum is a blockchain network that enables developers to launch their own tok
 
 **Decentralized applications** (or **_Dapps_**) are applications that are built on top of blockchain protocols and leverage smart contract technology.
 
-Dapps take many of the operating models of web2 platforms and traditional banking services and apply _blockchain technology_ to make them operate in a format that is [_peer-to-peer_](https://www.horizen.io/academy/peer-to-peer-networks-p2p/), _trustless_ and _more transparent_.
+Dapps take many of the operating models of web2 platforms and traditional banking services and apply _blockchain technology_ to make them operate in a format that is [_peer-to-peer_](p2p-networks.md), _trustless_ and _more transparent_.
 
 **Ether** (or **ETH**) is the currency of the Ethereum blockchain. It is used to pay miners to validate transactions and also used to pay for products and services on the various Dapps and marketplaces built on the Ethereum network (e.g purchasing NFTs on OpenSea).
 
 ### What is a Smart Contract?
 
-One of the core features of the Ethereum network is the ‘[**Smart Contract**](https://www.horizen.io/academy/smart-contracts/)’, which is a type of computer program that executes a set of functions based on predefined rules or conditions set by the developer.
+One of the core features of the Ethereum network is the ‘[**Smart Contract**](smart-contracts.md)’, which is a type of computer program that executes a set of functions based on predefined rules or conditions set by the developer.
 
 With _smart contracts_, users can conduct all kinds of agreements that involve anywhere from _two_ individuals to _several thousands_ of people without the need of an intermediary.
 
@@ -123,7 +123,7 @@ In a **fee market**, an increase in demand for block space leads to an increase 
 
 EVM chains like Polygon solve the gas fee problem by leveraging layer 2 scaling solutions like _Optimistic_ and _ZK-Roll Ups_.
 
-With **roll ups**, transactions on Polygon are executed ‘off chain’ via [payment channels](https://www.horizen.io/academy/payment-channels/) or independent blockchains consisting of a smaller group of validators, and then periodically bundled together as one large transaction that is confirmed on the Ethereum network.
+With **roll ups**, transactions on Polygon are executed ‘off chain’ via [payment channels](payment-channels.md) or independent blockchains consisting of a smaller group of validators, and then periodically bundled together as one large transaction that is confirmed on the Ethereum network.
 
 This allows the Polygon EVM to execute smart contracts and users to transact more frequently while saving on gas fees. 
 

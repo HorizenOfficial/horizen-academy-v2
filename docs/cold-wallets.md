@@ -15,9 +15,9 @@ Cold wallets allow you to store, send and receive crypto assets just like a hot 
 
 ## Why Do We Need Wallets?
 
-A [wallet](https://www.horizen.io/academy/crypto-wallets/) is essential for storing as well as sending and receiving cryptocurrencies.
+A [wallet](crypto-wallets.md) is essential for storing as well as sending and receiving cryptocurrencies.
 
-Wallets contain your [**public key**](https://www.horizen.io/academy/wallet-addresses/_), which you send to people in order to receive crypto, like an email address, and your **private key/seed phrase**, which must be kept secret as it gives you access to your wallet and the ability to sign and authorize transactions.
+Wallets contain your [**public key**](wallet-addresses.md), which you send to people in order to receive crypto, like an email address, and your **private key/seed phrase**, which must be kept secret as it gives you access to your wallet and the ability to sign and authorize transactions.
 
 **Both your public and private key are necessary to give you the ability to hold, receive and spend your crypto while keeping it secure.** 
 

@@ -118,7 +118,7 @@ This, in turn, means that the least performant nodes (in terms of bandwidth and/
 
 To illustrate distributed networks we use graphs. 
 
-This term sounds very simple at first but there is a bit more to it. The field of graph theory is a mathematical discipline studying the different types of graphs. We touch on graph theory in an article on [Directed Acyclic Graphs](https://www.horizen.io/academy/directed-acyclic-graph-dag/) or DAGs. 
+This term sounds very simple at first but there is a bit more to it. The field of graph theory is a mathematical discipline studying the different types of graphs. We touch on graph theory in an article on [Directed Acyclic Graphs](directed-acyclic-graph-dag.md) or DAGs. 
 
 There, we talked about graphs in the context of data structures - namely how blocks can be interconnected at the application layer. Here the graph describes the connectivity between nodes at the network layer.
 
@@ -132,7 +132,7 @@ A fully dynamic graph changes at a rate that prevents an adversary from learning
 
 ### Node and Network Failures
 
-When we talked about [distributed consensus](https://www.horizen.io/academy/consensus-mechanisms/) we introduced two types of malfunctions at the network layer: **_node failures_** and **_network failures_**.
+When we talked about [distributed consensus](consensus-mechanisms.md) we introduced two types of malfunctions at the network layer: **_node failures_** and **_network failures_**.
 
 **Nodes can crash** or go offline, they can have trouble receiving or processing messages, or they can display _Byzantine_ behavior. When nodes act Byzantine, this means they act randomly and deviate from the protocol. Usually the term is used to refer to malicious behavior.
 
@@ -212,7 +212,7 @@ This mechanism needs to ensure that all messages reach all nodes within some tim
 
 **It is desirable for the broadcasting mechanism to display the following properties:**
 
-- **Low Latency** - The maximum time for a message to reach all nodes should be bounded and small. This affects the network’s overall security since data consistency within nodes is crucial. The lower the latency of the broadcasting mechanism the lower the risk of reaching an inconsistent state. A low latency spreading mechanism also means a lower stale rate and less wasted [PoW](https://www.horizen.io/academy/proof-of-work-pow/).
+- **Low Latency** - The maximum time for a message to reach all nodes should be bounded and small. This affects the network’s overall security since data consistency within nodes is crucial. The lower the latency of the broadcasting mechanism the lower the risk of reaching an inconsistent state. A low latency spreading mechanism also means a lower stale rate and less wasted [PoW](proof-of-work-pow.md).
 - **Fairness** - All nodes should experience roughly the same latency, assuming they have the same bandwidth.
 - **Anonymity** - A potential adversary should be unable to link transaction messages and therefore the associated public keys to the IP address the message originated from.
 

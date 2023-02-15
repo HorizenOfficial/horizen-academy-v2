@@ -23,7 +23,7 @@ Let’s take a closer look at the first use case for blockchain technology - _di
 
 Imagine if every person could access and modify the databases kept by banks. It would be a disaster.
 
-In order to make decentralized money a reality, a method of accounting had to be developed - the [**UTXO model**](https://www.horizen.io/academy/utxo-vs-account-model/), also referred to as _triple-entry accounting_. You can compute every account balance at any time by storing all transactions in a _digital ledger_.
+In order to make decentralized money a reality, a method of accounting had to be developed - the [**UTXO model**](utxo-vs-account-model.md), also referred to as _triple-entry accounting_. You can compute every account balance at any time by storing all transactions in a _digital ledger_.
 
 A digital ledger used for digital money requires a set of properties that were not achievable before blockchain came along.
 
@@ -150,7 +150,7 @@ Using a linked list gives you more flexibility in terms of expanding the list la
 
 ### Hash Table
 
-The last data structure we want to look at before moving on to the blockchain is the _hash table_. The data elements you are storing in a hash table are called _keys_. To store a _key_, it is first hashed using a [hash function](https://www.horizen.io/academy/hash-functions/). 
+The last data structure we want to look at before moving on to the blockchain is the _hash table_. The data elements you are storing in a hash table are called _keys_. To store a _key_, it is first hashed using a [hash function](hash-functions.md). 
 
 All you need to know at this point is that a hash function uses an _argument_ of variable length as input and produces an output of fixed length. In the example below, the output is a three-digit number.
 
@@ -265,7 +265,7 @@ The _block header_ contains the most important information about a block.
 - The **Merkle Root Hash** - _hashMerkleRoot_ - represents a summary of all transactions included in the block.
 - The **Time** is the _Unix epoch time_ when the miner started hashing the header for the mining process.
 - The **Bits** or _nBits_ are an encoded version of the current difficulty of finding a new block.
-- The **Nonce** - or _number used once_ - is the variable that miners change to modify the block headers hash for its value to meet the difficulty. This process is covered in detail in our article on [mining](https://www.horizen.io/academy/mining-in-blockchain/).
+- The **Nonce** - or _number used once_ - is the variable that miners change to modify the block headers hash for its value to meet the difficulty. This process is covered in detail in our article on [mining](crypto-mining.md).
 
 Merkle Trees play an important role in ensuring the integrity of data in the blockchain. They are also used in other systems such as **IPFS**, the _InterPlanetary File System_ and several implementations of **NoSQL** databases. Let’s take a look at how they work and what they do before we continue with what a transaction looks like from a data perspective.
 
@@ -302,7 +302,7 @@ A transaction is a message to the network informing it about a transfer of money
 - **tx\_ in count:** Is the number of Inputs used - so the number of UTXOs consumed.
 - **tx\_ in:** Each input used is characterized by four data points: the outpoint it spends, the size of the _signature_ required to spend that outpoint, the signature itself, and the _sequence number_. The sequence number can be used to modify the _spending conditions_ of an outpoint, but we are getting ahead of ourselves.
 - **tx\_ out count:** Is the number of outputs created in the transaction.
-- **tx\_ out:** Transaction outputs. Each output is characterized by three data points: the amount spent, the size of the spending condition, and the spending condition itself that can be satisfied with a [digital signature](https://www.horizen.io/academy/digital-privacy/) based on the new owners private key.
+- **tx\_ out:** Transaction outputs. Each output is characterized by three data points: the amount spent, the size of the spending condition, and the spending condition itself that can be satisfied with a [digital signature](digital-privacy.md) based on the new owners private key.
 - **lock\_ time:** Is the Unix epoch time or block number after which the outputs are spendable. This is optional.
 
 Each transaction is broadcast in a serialized byte format called raw format. It is then hashed twice **(_SHA256(SHA256())_)** to create its transaction ID - **TXID** - which, as you already know, is used to create the Merkle tree.
@@ -310,7 +310,7 @@ Each transaction is broadcast in a serialized byte format called raw format. It 
 Transactions, being the basic building block of a blockchain, are an example of this:
 
 - **First**, an understanding of the UTXO accounting model is necessary.
-- **Second**, to understand the ownable part of the data on a blockchain one needs to understand the basic principles of [public-key cryptography](https://www.horizen.io/academy/public-key-cryptography-pkc/): _private keys, public keys, addresses, and digital signatures_. 
+- **Second**, to understand the ownable part of the data on a blockchain one needs to understand the basic principles of [public-key cryptography](public-key-cryptography-pkc.md): _private keys, public keys, addresses, and digital signatures_. 
 	- Each transaction input includes a signature that authorizes spending, and each newly created output includes information about what a signature needs to look like in order to authorize its spending.
 - **Lastly**, the overall structure of the blockchain needs to be understood.
 

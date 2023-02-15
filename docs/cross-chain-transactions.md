@@ -128,15 +128,15 @@ Lastly, forward transfers, which cannot be processed, are collected to be includ
 
 There are several ways to realize sidechain-internal transactions in Zendoo. As long as a sidechain adheres to the cross-chain transfer protocol, internal transactions can be implemented; however, the use case deems appropriate. 
 
-One of the first considerations that needs to go into a decision of the transactional model, is if the sidechain will run the [UTXO or account model](https://www.horizen.io/academy/wallet-addresses/). One reason to diverge from the UTXO model used in Horizen's mainchain and the Latus sidechain construction would be the easier implementation of complex [smart contract](https://www.horizen.io/academy/smart-contracts/) functionalities in the account model.
+One of the first considerations that needs to go into a decision of the transactional model, is if the sidechain will run the [UTXO or account model](wallet-addresses.md). One reason to diverge from the UTXO model used in Horizen's mainchain and the Latus sidechain construction would be the easier implementation of complex [smart contract](smart-contracts.md) functionalities in the account model.
 
-Recall how the Zendoo protocol doesn't require a sidechain to be a blockchain at all. User account balances could be maintained in a more traditional data structure, or even a highly progressive one like a [directed acyclic graph (DAG)](https://www.horizen.io/academy/directed-acyclic-graph-dag/). 
+Recall how the Zendoo protocol doesn't require a sidechain to be a blockchain at all. User account balances could be maintained in a more traditional data structure, or even a highly progressive one like a [directed acyclic graph (DAG)](directed-acyclic-graph-dag.md). 
 
 The option space for implementing sidechain internal transactions is very large.
 
 ### Sidechain Internal Transactions in Latus
 
-Latus uses the UTXO accounting model. Transactions on Latus sidechains work just like regular UTXO on-chain transactions. At least one input is consumed with each transaction, spending of which is authorized through a [digital signature](https://www.horizen.io/academy/digital-signatures/). 
+Latus uses the UTXO accounting model. Transactions on Latus sidechains work just like regular UTXO on-chain transactions. At least one input is consumed with each transaction, spending of which is authorized through a [digital signature](digital-signatures.md). 
 
 The total amount of the outputs created must be less than or equal to the number of inputs consumed.
 

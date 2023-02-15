@@ -25,7 +25,7 @@ Before we get into the different balance models, it makes sense to take a step b
 
 A **_system_** is described as stateful, only if it is configured to remember preceding events or user interactions. The retained information is defined as the _state of the system_. _Hence_, a blockchain qualifies as a stateful system. 
 
-Its entire purpose is to record past events and user interactions. With each new block the system undergoes a state transition that happens according to the state transition logic defined in its [protocol](https://www.horizen.io/academy/blockchain-protocols/).
+Its entire purpose is to record past events and user interactions. With each new block the system undergoes a state transition that happens according to the state transition logic defined in its [protocol](blockchain-protocols.md).
 
 **Every blockchain, no matter if it uses the _UTXO_ or _account_ model, follows this scheme:**
 
@@ -46,13 +46,13 @@ In a **directed graph**, each edge has a direction, usually indicated through ar
 
 **Directed acyclic graphs** don’t allow circular relationships between nodes. The graphic above shows a directed acyclic graph of the UTXO model on the left. 
 
-Each _state_ represents a block in the blockchain. Each _transaction output_ comprises a _node_ in the [DAG](https://www.horizen.io/academy/directed-acyclic-graph-dag/), and each _transaction_ is represented by one or more _edges_ originating from a transaction output. 
+Each _state_ represents a block in the blockchain. Each _transaction output_ comprises a _node_ in the [DAG](directed-acyclic-graph-dag.md), and each _transaction_ is represented by one or more _edges_ originating from a transaction output. 
 
 Hence, an unspent transaction output does not have an edge originating from it. In the example above, the transaction outputs **3**, **5**, **6**, and **7** are unspent.
 
 On the right, the graphic shows a representation of the different states in the account model. With each new block, the state of the system is updated according to the transactions contained in the block. 
 
-The number of accounts remains constant and independent of the number of transactions conducted, as long as the number of users or [smart contracts](https://www.horizen.io/academy/smart-contracts/) remains constant.
+The number of accounts remains constant and independent of the number of transactions conducted, as long as the number of users or [smart contracts](smart-contracts.md) remains constant.
 
 **In the UTXO model,** the entire graph of transaction outputs, spent and unspent, represents the _global state_. 
 
@@ -97,7 +97,7 @@ The sum of all unspent transaction outputs it can control determines the current
 
 Each transaction in the UTXO model can transition the system to a new state, but transitioning to a new state with each transaction is infeasible. All network participants must stay in sync on the current state. 
 
-Designing a [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) that keeps all nodes synchronized becomes harder, when state transitions happen more frequently. This becomes intuitive when you consider that the time interval between blocks gives nodes the chance to download the most recent block and process it.
+Designing a [consensus mechanism](consensus-mechanisms.md) that keeps all nodes synchronized becomes harder, when state transitions happen more frequently. This becomes intuitive when you consider that the time interval between blocks gives nodes the chance to download the most recent block and process it.
 
 The _shorter_ the period for nodes to update the state, the higher the chance of reaching an inconsistent state where some nodes have a different view of past events than others. As a result, transactions are batched into blocks, and each new block presents a system state transition.
 
@@ -109,7 +109,7 @@ Assume **Alice** wants to transfer **8** ZEN to **Bob**, and she controls a sing
 
 To spend a UTXO, it needs to be "unlocked."
 
-The **Pubkey Script** included in each transaction output defines the spending conditions. The data necessary to satisfy this script is provided with the spending transaction and includes the [digital signature](https://www.horizen.io/academy/digital-signatures/) of the owner - in this case Alice.
+The **Pubkey Script** included in each transaction output defines the spending conditions. The data necessary to satisfy this script is provided with the spending transaction and includes the [digital signature](digital-signatures.md) of the owner - in this case Alice.
 
 _Next_, she defines what should happen to her money. She does this by creating transaction outputs. 
 
@@ -261,11 +261,11 @@ There are several approaches we can use to compare the scalability of the UTXO a
 - One way is to focus on the overall storage requirements of each system. 
 - Another way is to consider which model is better suited for the deployment of second-layer technologies on top of the main blockchain.
 
-One second layer technology, [state and payment channels](https://www.horizen.io/academy/payment-channels/), moves the exchange of data from the blockchain to a dedicated trustless network of bidirectional communication channels.
+One second layer technology, [state and payment channels](payment-channels.md), moves the exchange of data from the blockchain to a dedicated trustless network of bidirectional communication channels.
 
 The other approach that could arguably be referred to as a second layer technology is sharding. _Sharding_ is a term originating from the traditional database world. 
 
-**Sharding** describes partitioning a database into several shards in order to keep each individual partition more performant, in turn improving the entire system. Horizen's [sidechain](https://www.horizen.io/academy/sidechains/) can be considered a sharding mechanism.
+**Sharding** describes partitioning a database into several shards in order to keep each individual partition more performant, in turn improving the entire system. Horizen's [sidechain](Sidechains.md) can be considered a sharding mechanism.
 
 We'll now compare both accounting methods and will assume that both systems have similar user and transaction counts.
 

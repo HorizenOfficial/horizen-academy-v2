@@ -46,7 +46,7 @@ The process of an Atomic Swap would generally look like the following. Let's ass
 
 **First**, **Alice** creates an _HTLC_ on the _Bitcoin Blockchain_ that we will simply call a _contract_. The contract comes with an address, otherwise, you could not interact with it. 
 
-**Next**, Alice generates or picks a secret - in this example her secret is _XYZ_. Using a [hash function](https://www.horizen.io/academy/hash-functions/) she generates a lock, here: _1b9f..._, which is simply the hash of the secret. 
+**Next**, Alice generates or picks a secret - in this example her secret is _XYZ_. Using a [hash function](hash-functions.md) she generates a lock, here: _1b9f..._, which is simply the hash of the secret. 
 
 Now she deposits the amount of bitcoin she and **Bob** agreed to exchange in the contract where they are locked. 
 

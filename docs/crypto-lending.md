@@ -19,7 +19,7 @@ In this article we’ll explore what crypto lending is, how it works, as well as
 
 ## How Does Crypto Lending Work?
 
-One of the core features of blockchain technology is the **[Smart Contract](https://www.horizen.io/academy/smart-contracts/)**, which is a type of computer program that executes a set of functions based on predefined rules or conditions set by the developer.
+One of the core features of blockchain technology is the **[Smart Contract](smart-contracts.md)**, which is a type of computer program that executes a set of functions based on predefined rules or conditions set by the developer.
 
 With _smart contracts_, users can conduct all kinds of agreements that involve anywhere from two individuals to several thousands of people without the need of an intermediary. 
 
@@ -50,7 +50,7 @@ With crypto loans, this entire process is automatically managed by smart contrac
 
 This means the borrower must pay close attention to how close their loans are to being liquidated and post margin if necessary, as there is no human intermediary to provide a warning. 
 
-Lending smart contracts rely on **[Oracles](https://www.horizen.io/academy/blockchain-oracles/)** that stream real time price information for various cryptocurrencies from exchanges to the blockchain. This makes it possible for them to react based on the latest information. 
+Lending smart contracts rely on **[Oracles](blockchain-oracles.md)** that stream real time price information for various cryptocurrencies from exchanges to the blockchain. This makes it possible for them to react based on the latest information. 
 
 The dramatic rise of crypto lending companies is largely due to the low interest rate environment of 2020-2021 that gave fuel to many hedge funds, exchanges, and similar trade-fi institutions that were desperately seeking ways to generate yield for their clients. 
 

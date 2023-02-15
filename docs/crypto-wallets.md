@@ -8,7 +8,7 @@ description: A wallet is an app for generating, managing, and storing cryptograp
 ---
 # What is a Crypto Wallet?
 
-A **wallet** is an app for generating, managing, and storing cryptographic keys - your [public and private keys](https://www.horizen.io/academy/public-key-cryptography-pkc/).
+A **wallet** is an app for generating, managing, and storing cryptographic keys - your [public and private keys](public-key-cryptography-pkc.md).
 
 With a wallet, you can: 
 - Check your balance
@@ -21,10 +21,10 @@ _All_ exchanges provide you with wallets to store your coins in after you buy th
 
 A wallet: 
 - Generates a random _private key_, **sk**
-- Derives your _public key_, **pk**, using [elliptic curve cryptography](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/) 
+- Derives your _public key_, **pk**, using [elliptic curve cryptography](elliptic-curve-cryptography-ecc.md) 
 - Derives your address(es) from your public key
 - Stores your private key(s) 
-- And takes care of [signing transactions](https://www.horizen.io/academy/digital-signatures/)
+- And takes care of [signing transactions](digital-signatures.md)
 
 In this article, we want to give you an overview of what types of wallets there are and help you find the right wallet for you. We show you how your _mnemonic phrase_ is generated, and how it relates to your actual private key. 
 

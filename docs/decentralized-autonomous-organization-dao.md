@@ -192,7 +192,7 @@ Voters will get rewarded proportionally to their stake and experts will get rewa
 
 ### The Horizen Voting System Implementation Plan
 
-We plan to integrate the treasury system on a sidechain. [Sidechains](https://www.horizen.io/academy/sidechains/) are one of the major protocol upgrades that Horizen is working on. It will enable different dApps to each run on their own sidechain with decoupled security guarantees. 
+We plan to integrate the treasury system on a sidechain. [Sidechains](sidechains.md) are one of the major protocol upgrades that Horizen is working on. It will enable different dApps to each run on their own sidechain with decoupled security guarantees. 
 
 _Even if something goes wrong on a sidechain, the mainchain will stay unaffected._
 

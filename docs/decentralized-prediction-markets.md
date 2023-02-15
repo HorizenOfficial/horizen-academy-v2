@@ -165,7 +165,7 @@ As a result, it is not uncommon to see the same prediction running on multiple n
 
 This problem can be solved by developing solutions to enable cross chain prediction markets to form, thereby concentrating liquidity and providing a better betting experience for well capitalized players.
 
-Horizen’s recent implementation of the [Ethereum Virtual Machine](https://eon.horizen.io/) or EVM can significantly advance interoperability of prediction markets on the Ethereum network as well as other [EVM-compatible](https://www.horizen.io/academy/ethereum-virtual-machine-evm/) chains such as Avalanche, Fantom and Polygon. 
+Horizen’s recent implementation of the [Ethereum Virtual Machine](https://eon.horizen.io/) or EVM can significantly advance interoperability of prediction markets on the Ethereum network as well as other [EVM-compatible](ethereum-virtual-machine-evm.md) chains such as Avalanche, Fantom and Polygon. 
 
 ### Smart Contract Security Risks
 
@@ -184,7 +184,7 @@ From a regulators perspective, decentralization prediction markets could potenti
 - KYC - Know Your Customer
 - AML - Anti-Money Laundering
 
-[Zero-knowledge proof technology](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/), a core offering of the Horizen network, can be utilized here to allow participants to confirm basic information about their counterparties. 
+[Zero-knowledge proof technology](zero-knowledge-proofs-zkp.md), a core offering of the Horizen network, can be utilized here to allow participants to confirm basic information about their counterparties. 
 
 This includes whether they are compliant tax paying citizens or entities form non-sanctioned nations, or whether their funds have touched any blacklisted addresses, without knowing the personal details of each player - _protecting sensitive information_.  
 
@@ -213,7 +213,7 @@ While there is so much promise for this technology, there remain several hurdles
 * Regulatory risks
     * Which can be addressed by adopting privacy-enabled KYC/AML solutions using zero knowledge proofs. 
 
-With newer [web3](https://www.horizen.io/academy/web3/) technologies, including:
+With newer [web3](web3.md) technologies, including:
 
 - Zero-knowledge enabled Ethereum virtual machines - or ZK-EVMs
 

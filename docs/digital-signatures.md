@@ -40,7 +40,7 @@ Either way, you need three values.
 - *Scalars* are written with small letters, like the private key: **sk**
 - *Vectors* are written with capital letters, like the public key: **PK**
 
-*It's important to note that the hash of a vector is a scalar.* The [hash function](https://www.horizen.io/academy/hash-functions/) consumes the _tuple_ of values as an input, and produces a scalar as an output.
+*It's important to note that the hash of a vector is a scalar.* The [hash function](hash-functions.md) consumes the _tuple_ of values as an input, and produces a scalar as an output.
 
 We use the **\\(\bullet\\)** operator when we are referring to multiplication on the elliptic curve. We use the **\\(\cdot\\)** operator when we are referring to regular multiplication of scalars. 
 

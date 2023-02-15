@@ -102,7 +102,7 @@ If the pool starts to contain a greater number of DAI than ETH, it means there i
 
 The pricing formula will recognize this imbalance and may raise the price of ETH or reduce the price of DAI in accordance with the level of imbalance between the pairs. 
 
-Liquidity pools also leverage _decentralized data feeds_ or **[Oracles](https://www.horizen.io/academy/blockchain-oracles/)** to relay the current price of ETH from other exchanges to their smart contract. This information serves as a reference point to the AMM and informs its pricing formula of where the price of either ETH or DAI _should_ be.
+Liquidity pools also leverage _decentralized data feeds_ or **[Oracles](blockchain-oracles.md)** to relay the current price of ETH from other exchanges to their smart contract. This information serves as a reference point to the AMM and informs its pricing formula of where the price of either ETH or DAI _should_ be.
 
 At the same time, traders seeking to make a profit from _arbitrage_ opportunities will identify dislocations in the price of either asset and seek to exploit it. 
 

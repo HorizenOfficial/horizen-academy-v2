@@ -26,7 +26,7 @@ _In this article_ we will explore what differentiates these 2 methods for privac
 
 Before we dive into zk-SNARKs vs zk-STARKs, we will first lay out an example of how the ZKP technology works in practice on the _Horizen_ network.
 
-Horizen uses ZKPs to allow a prover, a [sidechain](https://www.horizen.io/academy/sidechains/), to prove that a transaction is valid to a verifier, our mainchain, without the mainchain nodes knowing the details of the transaction (i.e. addresses or values transferred).
+Horizen uses ZKPs to allow a prover, a [sidechain](sidechains.md), to prove that a transaction is valid to a verifier, our mainchain, without the mainchain nodes knowing the details of the transaction (i.e. addresses or values transferred).
 
 The sidechain does this by first validating transactions in its blockchain as normal, then constructing a **‘proof’**, which is essentially a certificate that proves that the transactions within the sidechain have been correctly validated based on a standard process that is recognized by the mainchain.
 
@@ -36,7 +36,7 @@ This **proof or certificate** is used to accurately represent the state of the s
 
 The nodes on the mainchain then use a special algorithm to validate this certificate just like they would for any other transaction. If the algorithm confirms that the certificate/proof is correct, the mainchain nodes will take this as evidence that the transactions in the sidechains have all been correctly validated without needing to perform the validation process themselves.
 
-In other words, instead of the mainchain nodes validating every single [sidechain transaction](https://www.horizen.io/academy/cross-chain-transactions/), the mainchain can simply verify **‘proof of computation’** for tens to hundreds of thousands of sidechain transactions within a single block.
+In other words, instead of the mainchain nodes validating every single [sidechain transaction](cross-chain-transactions.md), the mainchain can simply verify **‘proof of computation’** for tens to hundreds of thousands of sidechain transactions within a single block.
 
 ## zk-SNARKs and zk-STARKs
 

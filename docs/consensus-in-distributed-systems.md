@@ -69,7 +69,7 @@ Failures can broadly be categorized into one of the following three cases:
     
 
 - Lastly, **Byzantine** failures refer to random behavior that can be guided by malicious intentions or simply malfunctioning clients. They are the hardest failures to address as they are random by definition. 
-	- Any malicious actor trying to attack the system by deviating from the [protocol](https://www.horizen.io/academy/blockchain-protocols/) would be an example of a Byzantine failure. 
+	- Any malicious actor trying to attack the system by deviating from the [protocol](blockchain-protocols.md) would be an example of a Byzantine failure. 
 
 Handling Byzantine behavior is difficult because parties can be online or offline and can lie, coordinate or act arbitrarily.
 
@@ -293,7 +293,7 @@ This coordination displays characteristics of a ballot. A shortened *Demiro Mass
 
 > *“In one way or another, […] consensus algorithms boil down to some kind of vote […].” - Demiro Massessi*
 
-Nakamoto consensus with [Proof-of-Work](https://www.horizen.io/academy/proof-of-work-pow/) (PoW) does not require a leader (proposer) selection of any kind. Anybody is free to start mining and thereby proposing blocks. The consensus is based on who can find a nonce, that hashed together with the proposed block header, yields a block hash below the current target value. 
+Nakamoto consensus with [Proof-of-Work](proof-of-work-pow.md) (PoW) does not require a leader (proposer) selection of any kind. Anybody is free to start mining and thereby proposing blocks. The consensus is based on who can find a nonce, that hashed together with the proposed block header, yields a block hash below the current target value. 
 
 The chance of finding such a *nonce* is proportional to the relative hash power - or computing power - a given miner controls. This means state transitions are voted on with computational power, and the state transition logic is defined by the target a valid block hash has to meet.
 
