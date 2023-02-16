@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 44
 sidebar_label: Private Transactions
 title: Private Transactions in Crypto
 slug: /private-transactions/
 description: In this article, we introduce you to the different technologies that enable private transactions on a public blockchain.
+image: /img/private-transactions/private-transactions-meta.jpeg
 
 ---
 
@@ -13,7 +15,7 @@ One of the great value propositions of blockchains is the _transparency_ that su
 
 In this article, we want to introduce you to _four concepts_ that aim to increase the level of privacy for transactions on public blockchains. It is a common misconception that cryptocurrencies are anonymous. 
 
-Most of them are **pseudonymous**, meaning that real-world identities are represented by addresses. Addresses and identities can be connected through ongoing data analysis.
+Most of them are **pseudonymous**, meaning that real-world identities are represented by addresses. [Addresses](https://www.horizen.io/academy/wallet-addresses/) and identities can be connected through ongoing data analysis.
 
 The more transactions you have received and sent, the more metadata there is. 
 
@@ -30,9 +32,11 @@ There are many good reasons why one would like to transact privately, and we bel
 
 ### Change Addresses
 
-_Change addresses_ were introduced so people you are transacting with don't have access to your entire transaction history just by looking up the address you used for transacting with them. _Most wallets automatically generate change addresses_ for you when you create a transaction. 
+_Change addresses_ were introduced so people you are transacting with don't have access to your entire transaction history just by looking up the address you used for transacting with them. _Most [wallets](https://www.horizen.io/academy/crypto-wallets/) automatically generate change addresses_ for you when you create a transaction. 
 
-In the example above of a regular bitcoin transaction, you can see one input and two outputs to the transaction. The first output went to a different address and is the amount the user wanted to spend. The remainder of the UTXO went back to the same address the funds originated from.
+In the example above of a regular [bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) transaction, you can see one input and two outputs to the transaction. The first output went to a different address and is the amount the user wanted to spend. The remainder of the [UTXO](https://www.horizen.io/academy/utxo-vs-account-model/) went back to the same address the funds originated from.
+
+![change address](/img/private-transactions/change-address.jpeg)
 
 A wallet that supports change addresses will generate a new address, every time you are receiving funds, no matter if they are change or regular transactions. 
 
@@ -44,7 +48,9 @@ Coin mixing protocols like SharedCoin, TumbleBit or CoinJoin , which is used by 
 
 Several inputs are mixed by creating a single transaction from them, oftentimes during several intermediary transactions.
 
-_Coin mixing_ doesn't require any changes to the basic blockchain protocol. In the graphic above you can see the schematics of a coin mixing transaction. 
+![coinjoin transaction](/img/private-transactions/coinjoin-transaction.jpg)
+
+_Coin mixing_ doesn't require any changes to the [basic blockchain protocol](https://www.horizen.io/academy/blockchain-protocols/). In the graphic above you can see the schematics of a coin mixing transaction. 
 
 A number of inputs are combined in a mixing pool (center) and later distributed to their destination addresses. A coin mixing transaction makes it harder for an attacker to figure out who was sending money to whom.
 
@@ -68,15 +74,17 @@ She needs to make sure the journalists who receive the leak have a way to verify
 
 To construct the **ring signature** all she needs is her private key and the public keys of some other officials, for example other members of the cabinet like **Bob** and **Carol**.
 
+![ring signatures](/img/private-transactions/ring-signatures.jpg)
+
 The verifier, the journalist, can verify that the message was indeed signed by a high ranking official, but he cannot determine who constructed the signature - _Alice_, _Bob_ or _Carol_.
 
 In the context of cryptocurrencies, a user can collect a bunch of public keys, create a transaction and sign it using his private key. The set of verifiers, being the _nodes_ on the network can verify that the transaction is valid and that one of the group members has signed the message. 
 
-They cannot tell who signed the transaction, which makes Ring Signatures great for private transactions. Monero is the most notable cryptocurrency making use of ring signatures which are part of the CryptoNote protocol that _Monero_ is built on.
+They cannot tell who signed the transaction, which makes Ring Signatures great for private transactions. Monero is the most notable [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) making use of ring signatures which are part of the CryptoNote protocol that _Monero_ is built on.
 
 ### Zero-Knowledge Proofs
 
-Zero-Knowledge Proofs, or _zk-Proofs_, were known long before blockchain technology emerged but with distributed ledgers, a whole new set of possible use-cases came around. Simply speaking, a **Zero-Knowledge Proof** lets you prove to a _verifier_ that you know something, without revealing that knowledge.
+Zero-Knowledge Proofs, or [_zk-Proofs_](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/), were known long before blockchain technology emerged but with distributed ledgers, a whole new set of possible use-cases came around. Simply speaking, a **Zero-Knowledge Proof** lets you prove to a _verifier_ that you know something, without revealing that knowledge.
 
 A non-digital example of what this can look like can be constructed with a seeing person as the _prover_, a blindfolded person as the verifier, and two balls of a different color. Other than the color the balls are identical - same _haptic_, same _weight_, same _size_.
 
@@ -85,6 +93,8 @@ The seeing person, the **prover**, wants to convince the blindfolded person, the
 The blindfolded person puts both balls under the table now and shows one ball in a second round - either the same one as before or the other one. 
 - If she chooses to show the same ball, the prover will know because of the color
 - If she were to switch balls under the table and show the other ball, the prover could tell with certainty
+
+![zero knowledge proofs](/img/private-transactions/zero-knowledge-proofs.jpg)
 
 In the second round, the prover would have a fifty-fifty chance of getting the right answer if he had to guess. He would have to guess in case the claim that he is trying to prove, the balls are of a different color, was false. 
 
@@ -96,7 +106,7 @@ The blindfolded person can be pretty sure by now, that the two balls are indeed 
 
 _The idea of using Zero-Knowledge Proofs for cryptocurrency transactions is the following:_
 
-You construct a proof that the transaction you want to send would be considered valid by a verifying node without revealing any of the actual transaction data.
+You construct a proof that the transaction you want to send would be considered valid by a [verifying node](https://www.horizen.io/academy/nodes/) without revealing any of the actual transaction data.
 
 This allows the _sender_, _receiver_, and the _amount_ to remain private.
 
@@ -104,7 +114,7 @@ Another use-case that is perfect for the application of zk-Proofs is identity ve
 
 For example, you could prove to an entity that you are of a certain age without revealing any personal data like your DOB. Horizen uses _zk-SNARKs_ for it's _shielded_ transactions. 
 
-zk-SNARKs are a special type of _Zero-Knowledge Proofs_, namely **Zero-Knowledge Succinct Non-interactive Arguments of Knowledge**.
+[zk-SNARKs](https://www.horizen.io/academy/zk-snarks-vs-zk-starks/) are a special type of _Zero-Knowledge Proofs_, namely **Zero-Knowledge Succinct Non-interactive Arguments of Knowledge**.
 
 - **_Succinct_**: refers to the proofs being short in the sense of easy to compute and verify.
 - **_Non-interactive_**: means that the prover and verifier don't have to be online at the same time. With the ball-example above, the prover and verifier have to go back and forth several times before the verifier actually has proof of the claim. 

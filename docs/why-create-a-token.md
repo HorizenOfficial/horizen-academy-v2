@@ -1,15 +1,17 @@
 ﻿---
 
+sidebar_position: 54
 sidebar_label: Tokens - Why Create Them?
 title: Why Create a Cryptocurrency Token?
 slug: /why-create-a-token/
 description: Just like a website for selling sneakers or an app for delivering food, a token must have a clear and obvious reason for existing.
+image: /img/why-create-a-token/why-create-a-token-meta.jpg
 
 ---
 
 # Why Create a Cryptocurrency Token?
 
-For many people who are new to the web3 space, the idea of launching a [token](what-is-a-token.md) is as exciting and innovative as it was to create a website in the late 90’s or a mobile app in the early 2010’s.
+For many people who are new to the [web3 space](https://www.horizen.io/academy/web3/), the idea of launching a [token](https://www.horizen.io/academy/what-is-a-token/) is as exciting and innovative as it was to create a website in the late 90’s or a mobile app in the early 2010’s.
 
 In the past, the invention of critical infrastructure like the internet empowered millions of entrepreneurs to launch websites and build their business online.
 
@@ -39,7 +41,7 @@ Tokens can be a great tool to increase product adoption if they can be exchanged
 
 **In the first case**, your token is essentially a form of money that can be traded for other types of money.
 
-What’s beneficial about launching your own token is that your cost of capital (i.e your cost of acquiring the money) is essentially **0**. Because you created your token from scratch, there was no cost besides a small network fee to produce something that can now potentially be exchanged from real money like Dollars, Bitcoin or ETH.
+What’s beneficial about launching your own token is that your cost of capital (i.e your cost of acquiring the money) is essentially **0**. Because you created your token from scratch, there was no cost besides a small network fee to produce something that can now potentially be exchanged from real money like Dollars, [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) or ETH.
 
 This essentially means that you can generate a free marketing budget for yourself, which can be used to reward users who test your product, provide feedback or promote it to their networks. You can issue token rewards as part of a contest, or as a reward for your most loyal customers.
 
@@ -57,9 +59,9 @@ You might be asking yourself; if many of these reward programs already exist for
 
 While a token is not necessary to create these rewards programs, using a token does come with some additional benefits. For one, tokens exist on the blockchain and are therefore more transparent and globally accessible than reward points of gift vouchers.
 
-With a token, anyone in the world can participate in your reward programs and earn tokens that are stored in their digital wallet. Users also benefit from being able to see exactly how token rewards were distributed for online contests, which can help build trust in your brand.
+With a token, anyone in the world can participate in your reward programs and earn tokens that are stored in their [digital wallet](https://www.horizen.io/academy/crypto-wallets/). Users also benefit from being able to see exactly how token rewards were distributed for online contests, which can help build trust in your brand.
 
-In addition, the blockchain provides a permanent and public audit trail of who owns your tokens. Think about this like a customer mailing list, except instead of an email address you have a list of wallet addresses.
+In addition, the blockchain provides a permanent and public audit trail of who owns your tokens. Think about this like a customer mailing list, except instead of an email address you have a list of [wallet addresses](https://www.horizen.io/academy/wallet-addresses/).
 
 This can come in handy much later as your product grows in adoption. If you decide to create new rewards or even launch new tokens, you will have a clear way to reward your first customers by airdropping the rewards to their wallet address, thereby ensuring that those customers will continue to support your product in the future. 
 
@@ -87,13 +89,13 @@ Generally, you should consider making any token-based reward program temporary. 
 
 This not only ensures that you preserve the remaining tokens you have created for future reward programs, it also allows you to assess what is really driving the growth in your product adoption. If you notice a steep drop in user engagement and product use after removing the token incentives, then you need to re-evaluate your product offerings to make it more attractive on its own.
 
-Currently, many **play-to-earn** (_P2E_) games in the crypto space are experiencing this problem. While many teams in crypto assumed that video game fans would be attracted to games that allow them to also earn tokens while playing, what they’ve come to realize from games like Axie infinity and others is that most of the players of these P2E games are only interested in earning the tokens. 
+Currently, many [**play-to-earn** (_P2E_)](https://www.horizen.io/academy/play-to-earn-games/) games in the crypto space are experiencing this problem. While many teams in crypto assumed that video game fans would be attracted to games that allow them to also earn tokens while playing, what they’ve come to realize from games like Axie infinity and others is that most of the players of these P2E games are only interested in earning the tokens. 
 
 Players rarely stick around to continue playing the game once the token rewards subside or the price of the token falls.
 
 Furthermore, _as a result of misaligned incentives_, many crypto game developers spend more time creating complex token incentive models than focusing on building games that are actually fun and engaging, leading to the creation of mediocre, poorly performing games that do not appeal to mainstream audiences.
 
-The solution to this is simple; crypto game developers need to adjust their frame of thinking from ‘play to earn’ to ‘play AND earn’. 
+The solution to this is simple; crypto game developers need to adjust their frame of thinking from ‘[play to earn](https://www.horizen.io/academy/play-to-earn-games/)’ to ‘play AND earn’. 
 
 Meaning, the first and most important component to building a successful GameFi product is to build a great game that everyone wants to play even if they do not get rewarded tokens.
 
@@ -198,6 +200,6 @@ This is why we have created [**TokenMint**](https://tokenmint.global/) - a tool 
 **On TokenMint, you can:**
 
 - Instantly launch a fungible token without any technical expertise required
-- Customize your tokenomics including supply, distribution, and more
+- [Customize your tokenomics](https://www.horizen.io/academy/tokenomics/) including supply, distribution, and more
 - Store your token on our [Cobalt Wallet](https://blog.horizen.io/cobalt-wallet-user-guide-2/) extension
 - View the transaction history of tokens on our [TokenMint Block Explorer](https://explorer.tokenmint.global/)

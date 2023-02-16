@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 33
 sidebar_label: Mining
 title: What is Crypto Mining?
 slug: /mining-in-blockchain/
 description: In this article, you learn about how cryptocurrency miners secure the blockchain with their computational power at an advanced level.
+image: /img/crypto-mining/crypto-mining-meta.jpeg
 
 ---
 
@@ -13,7 +15,7 @@ Not every blockchain has _miners_. Only in _Proof of Work_ is there _mining_, an
 
 They work to secure the blockchain against _attacks_ and _protect the history_ recorded against changes.
 
-Mining is more than just performing _Proof of Work_, it comes with highly interesting economic implications, from choosing which blockchain to mine, to what hardware to use and what strategies to apply.
+Mining is more than just performing _Proof of Work_, it comes with highly interesting [economic implications](https://www.horizen.io/academy/economies-of-mining/), from choosing which blockchain to mine, to what hardware to use and what strategies to apply.
 
 We will often use the term _decentralizing_ and _centralizing_ to express in which direction a given development shifts the overall level of coordination. There is no absolute _decentralization_ or _centralization_ and a system is moving on a scale between the two. 
 
@@ -43,6 +45,8 @@ This type of _PoW_ is called **Hashcash Proof of Work** and was introduced by _A
 
 **The idea is simple:** Adding a small PoW to an email does not impact an honest user sending only a few mails per day. Automated spam on the other hand would become computationally expensive because every single email would need to have a valid PoW attached.
 
+![hashcash proof of work](/img/crypto-mining/hashcash-proof-of-work.jpg)
+
 The graphic above shows the mining process in a _Hashcash_ style PoW scheme. 
 
 The _block header_ is repeatedly hashed using a different nonce each time. The header is hashed twice using _SHA256_ and the resulting candidate block hash is compared with the current target. 
@@ -51,11 +55,13 @@ If it is greater than the target the nonce is discarded and the process starts a
 
 Once a miner finds a nonce producing a block hash less than or equal to the target, it is broadcast to the network, verified by all other nodes (including other miners) and appended to the blockchain.
 
+![nonce proof of work](/img/crypto-mining/nonce-proof-of-work.jpg)
+
 The _difficult_ is a different way to express the current target. The difficulty is a relative measure of the current target compared to the initial _maximum target_ that is defined with the genesis block of a blockchain.
 
 $$Difficulty = \frac{max. target}{target}$$
 
-On the Bitcoin network, which has seen the biggest growth in hash power since its inception the current difficulty (at the time of writing) is about \\(1.3 \cdot 10^{13}\\), meaning it is _13 trillion_ times harder to find a block _today_, than it was when the protocol was _launched_.
+On the [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) network, which has seen the biggest growth in hash power since its inception the current difficulty (at the time of writing) is about \\(1.3 \cdot 10^{13}\\), meaning it is _13 trillion_ times harder to find a block _today_, than it was when the [protocol](https://www.horizen.io/academy/blockchain-protocols/) was _launched_.
 
 ## What is the Role of a Miner?
 
@@ -63,7 +69,7 @@ _The main job of a miner is to collect all transactions that are broadcast to th
 
 The miner verifies if the transactions are valid according to the protocol and then places them in a data container - the _block_. The first transaction in a block is special, the **coinbase transaction** - sound familiar?
 
-In the _coinbase transaction_, the miner rewards his own address with the block reward, _12.5 BTC_ or _12.5 ZEN_ at the moment. 
+In the _coinbase transaction_, the miner rewards his own [address](https://www.horizen.io/academy/wallet-addresses/) with the block reward, _12.5 BTC_ or _12.5 ZEN_ at the moment. 
 
 Actually _7.5 ZEN_ on Horizen, as _10%_ of block rewards go to _Secure Node_ and _Super Node_ operators respectively, _20%_ to the _Horizen Treasury_. 
 
@@ -84,6 +90,8 @@ In times of high network activity and full blocks, a block has a maximum file si
 _Many miners are working on a block simultaneously_. Each miner has a slightly different block, either because he received the transactions in a different order than his competitors, or because he chose to include a different set of transactions based on the attached transaction fees. 
 
 The miner that solves the puzzle first, gets to extend the blockchain with his block, including the coinbase transaction that rewards him the newly created coins.
+
+![adding a block pow](/img/crypto-mining/adding-a-block-pow.jpg)
 
 ### Finding a Nonce
 
@@ -121,6 +129,8 @@ When a miner first attempts to solve the block, they will put a random value in 
 
 _For the sake of simplicity_, let’s say the nonce value the miner starts with is “0”. The block hash will be a seemingly random value in the possible range of the hash function.
 
+![hashcash proof of work](/img/crypto-mining/hashcash-proof-of-work.jpg)
+
 **So the process looks like this:**
 
 - The _miner_ uses the _hash function_ to calculate the _hash_ of the _block_ - the _candidate block hash_ as we named it in the graphic above. In the example, the _block hash_ using **0** as a nonce doesn’t meet the target.
@@ -132,6 +142,8 @@ _For the sake of simplicity_, let’s say the nonce value the miner starts with 
 This means that all miners combined try _208,680,000_ different values for the nonce _every second_. You can check the [current value](https://whattomine.com/coins/185-zen-equihash) here.
 
 Miners can’t cheat this process of trial and error because of the properties of cryptographic hash functions.
+
+![cryptographic hash functions](/img/crypto-mining/cryptographic-hash-functions.jpg)v
 
 There is no way to calculate a valid nonce from the desired output because the hash function is a _one-way function_. 
 
@@ -161,7 +173,7 @@ You also know that changing one little piece of information in a block will alte
 
 If an _attacker_ wanted to tamper with any record on the blockchain, they would have to find a valid _nonce_ for the block they edited, as well as all the following blocks. The attacker would have to do all this by themselves, and at a faster rate than the network is performing the mining process. 
 
-The _longest chain rule_ determines which branch of the blockchain is the valid one in case a fork occurs. As long as the attacker does not control a majority of the hash rate, he won’t be able to change the blockchain.
+The _longest chain rule_ determines which branch of the blockchain is the valid one in case a [fork](https://www.horizen.io/academy/blockchain-forks/) occurs. As long as the attacker does not control a majority of the hash rate, he won’t be able to change the blockchain.
 
 ## The Purpose of Miners
 
@@ -169,11 +181,11 @@ _Now you might ask_ why it is necessary to make block production computationally
 
 ### Sybil-Resistance
 
-In a **Sybil Attack**, an attacker creates a large number of malicious nodes in an effort to achieve some goal. In the blockchain context, this goal can be including malicious transactions in a block, _censoring_ transactions from a given network participant or performing a _double spend_ after a block reorganization.
+In a [Sybil Attack](https://www.horizen.io/academy/blockchain-attacks/), an attacker creates a large number of malicious nodes in an effort to achieve some goal. In the blockchain context, this goal can be including malicious transactions in a block, _censoring_ transactions from a given network participant or performing a _double spend_ after a block reorganization.
 
 Spinning up a node comes at a very low cost, so there is not much to prevent an attacker from creating a large number of them. The [consensus mechanism](consensus-mechanisms.md) represents an abstract form of voting on different versions of the transaction history.
 
-If voting was tied to an _IP_ address, an attacker could manipulate the vote easily by creating _Sybil_ nodes. By tying the voting power to external costs, electricity and hardware, interfering with the voting process on blocks becomes much harder.
+If voting was tied to an _IP_ address, an attacker could manipulate the vote easily by creating [_Sybil_ nodes](https://www.horizen.io/academy/nodes/). By tying the voting power to external costs, electricity and hardware, interfering with the voting process on blocks becomes much harder.
 
 ### Providing Immutability
 
@@ -188,6 +200,8 @@ A _node_ with access to the most recent protocol can verify the entire blockchai
 It will start with the first block, reconstruct the _Merkle tree_ of transactions to verify the _Merkle root_ included in the block header is valid, validate if the block hash meets the target given the nonce used to produce it and finally moves on to the next block.
 
 It can also compute the difficulty at any point in time as the rules for when and how the difficulty changes are part of the protocol.
+
+![block reward](/img/crypto-mining/block-reward.jpg)
 
 For their contribution to the network, miners are allowed to include the _coinbase transaction_. In this transaction miners are sending the current _block subsidy_ and the aggregate _transaction fees_ included in the block to a self-controlled address.
 
@@ -242,7 +256,9 @@ In the early days of cryptocurrency mining, people used the hardware they had at
 
 _People with a gaming setup_ were now at a _serious_ advantage compared to CPU miners.
 
-Mining started to become more lucrative and hence more competitive. People started configuring _FPGAs_ to suit the requirements of efficient mining. The last major evolutionary step in mining happened in 2013 when the first _ASIC_ designed for cryptocurrency mining was released.
+Mining started to become more lucrative and hence more competitive. People started configuring _FPGAs_ to suit the requirements of efficient mining. The last major evolutionary step in mining happened in 2013 when the first _ASIC_ designed for [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) mining was released.
+
+![flexibility efficiency trade off](/img/crypto-mining/flexibility-efficiency-trade-off.jpg)
 
 ### ASIC Resistance
 
@@ -299,7 +315,7 @@ When you look at the economics from a miners perspective you first need to think
 The costs can be divided into two categories, _capital expenditures_ (**CAPEX**) and _operational expenditures_ (**OPEX**):
 
 - **CAPEX** are the cost of _acquiring_ non-monetary capital like mining gear, racks, and property (if bought).
-- **OPEX** are ongoing _expenditures_ like wages, electricity cost for the rigs as well as cooling and property (if rented).
+- **OPEX** are ongoing _expenditures_ like wages, electricity cost for the [rigs](https://www.horizen.io/academy/economies-of-mining/) as well as cooling and property (if rented).
 
 Setting up a mining operation will usually come with both capital and operational expenditures but depending on the circumstances it can be set up to tend towards being CAPEX or OPEX-heavy.
 
@@ -337,7 +353,7 @@ _As we mentioned earlier_, mining is a rather intransparent business, and crypto
 - A **rational miner** will act to maximize profit, either by adhering to the protocol or deriving from it, depending on the incentives provided.
 - A **malicious miner** will derive from the protocol to achieve their objective.
 
-It can be assumed that the majority of miners are rational participants, meaning they follow the protocol as long as it is the most profitable strategy. Though some strategies have evolved that are used to gain an unfair competitive advantage - most notably selfish mining.
+It can be assumed that the majority of miners are rational participants, meaning they follow the protocol as long as it is the most profitable strategy. Though some strategies have evolved that are used to gain an unfair competitive advantage - most notably [selfish mining](https://www.horizen.io/academy/selfish-mining/).
 
 ## Energy Consumption in Mining
 

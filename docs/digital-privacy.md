@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 19
 sidebar_label: Digital Privacy
 title: Protecting Your Digital Privacy
 slug: /digital-privacy/
 description: In this article, we show you how your online privacy is compromised digitally, as well as strategies and tools to protect your privacy.
+image: /img/digital-privacy/digital-privacy-meta.jpeg
 
 ---
 
@@ -31,7 +33,7 @@ Have you seen laptops with webcam covers? There is a real reason people concerne
 
 Mobile phones of today are tiny powerful computers - they have tons of storage and processing power available at their disposal and because of portability, ease and frequency of use, there are tons of productivity applications available for smartphones, not seen on a personal computer. 
 
-Mail, messaging, chat apps, wallets, banking software, personal notes, photos and videos are just a tiny example of what we use or store on our phones. The increased attack surface of smartphones attracts a lot of malevolent interest to them. 
+Mail, messaging, chat apps, [wallets](https://www.horizen.io/academy/crypto-wallets/), banking software, personal notes, photos and videos are just a tiny example of what we use or store on our phones. The increased attack surface of smartphones attracts a lot of malevolent interest to them. 
 
 **Let us touch on some ways of privacy compromise in detail.**
 
@@ -147,7 +149,7 @@ The difficult and less secure method would be to add some sort of code to the en
 *This way you could use:*
 
 - “**IwetoscinWoPaanplsodufase_fcbk**” for your _Facebook_ account
--  And “**IwetoscinWoPaanplsodufase_mzn**” for your _Amazon_ Login. 
+-  And “**IwetoscinWoPaanplsodufase_amzn**” for your _Amazon_ Login. 
 
 There have been many incidents of password databases being hacked and this method would make you vulnerable to such a data breach because the attackers could derive your other passwords if they figure out the scheme you used to adapt the password.
 
@@ -176,6 +178,8 @@ Enabling 2FA is one of the best security best practices you can employ as it pro
 2FA works by requiring you to prove your identity by a secondary method of authentication in addition to your password. 
 
 Most commonly the secondary method of authentication is an SMS message sent to your phone number or a code generated on a dedicated application, like **Microsoft Authenticator,** **Google Authenticator** or others.
+
+![two factor authentication](/img/digital-privacy/two-factor-authentication.jpg)
 
 ### 2FA Through Text Messages
 
@@ -217,14 +221,19 @@ Make sure to familiarize yourself with the backup procedure for the method of yo
 
 _Government surveillance programs do not threaten privacy unless they discover illegal activities. And, if they do discover illegal activities, the person responsible for activities does not have the right to keep them private. Therefore, a person who is in favor of this argument may state - they've got nothing to hide - and therefore doesn’t express opposition to government oversight and surveillance. Individuals using this argument may express that a person should not worry about government or surveillance if they have “**nothing to hide.**”_
 
-<h5>We think this argument is very flawed because:</h5>
+**We think this argument is very flawed because:**
 
-<strong>Privacy is not about hiding, it is about protecting</strong>: Would you give passwords to your email and other accounts to anyone? Would you allow everyone to read your social media messages? Would you love to have someone always around who eavesdrops on each and every conversation of yours, see your medical records and know about your appointments with your doctor? Or let's go very trivial - why do you ever have curtains on the shady side of your house or even wear pants?
+- Privacy is not about hiding, it is about protecting**: Would you give passwords to your email and other accounts to anyone? Would you allow everyone to read your social media messages? Would you love to have someone always around who eavesdrops on each and every conversation of yours, see your medical records and know about your appointments with your doctor? Or let's go very trivial - why do you ever have curtains on the shady side of your house or even wear pants?
 
-<strong>Privacy is a fundamental human right</strong>: The right to free speech and the right to assemble are the basic fundamental human rights even if you do not have anything to say or protest now. So is privacy. Think about voting, medical information, and banking information. It is obvious that you wish them to be kept private. <strong>Lack of privacy is harmful</strong>: You might get discriminated against or harassed based on your personal information or become a victim of identity theft or impersonation. <strong>Location data is sensitive</strong>: It can determine where you live, where you work, where you shop and hang out with friends. Every modern smartphone detects home and workplace just after several days of usage. 
+- **Privacy is a fundamental human right**: The right to free speech and the right to assemble are the basic fundamental human rights even if you do not have anything to say or protest now. So is privacy. Think about voting, medical information, and banking information. It is obvious that you wish them to be kept private.
 
-<strong>Social media gathers even more</strong>: What you like or follow and what applications you use on social media determine what types of ads you will see. Your age, sex, occupation, job title, and every other little detail can also be taken into account for ad targeting. Social media is the best marketing platform we have seen to date. Not only do those details determine what kind of ads you see, but sometimes also what price is shown to you. Especially when you book flights your metadata determines what prices will be available.
-<strong>Every little bit counts</strong>: Some companies gather emails while others locate where you go shop or eat. Some large search engines even keep your search history if you use their account. Others aggregate all the data and form a complete picture of who you are, where you go and with whom and what you do. As the great article over spreadprivacy.com says - If that feels creepy, it’s because it is.
+- **Lack of privacy is harmful**: You might get discriminated against or harassed based on your personal information or become a victim of identity theft or impersonation. 
+
+- **Location data is sensitive**: It can determine where you live, where you work, where you shop and hang out with friends. Every modern smartphone detects home and workplace just after several days of usage. 
+
+- **Social media gathers even more**: What you like or follow and what applications you use on social media determine what types of ads you will see. Your age, sex, occupation, job title, and every other little detail can also be taken into account for ad targeting. Social media is the best marketing platform we have seen to date. Not only do those details determine what kind of ads you see, but sometimes also what price is shown to you. Especially when you book flights your metadata determines what prices will be available.
+
+- **Every little bit counts:** Some companies gather emails while others locate where you go shop or eat. Some large search engines even keep your search history if you use their account. Others aggregate all the data and form a complete picture of who you are, where you go and with whom and what you do. As the great article over spreadprivacy.com says - If that feels creepy, it’s because it is.
 
 **The “nothing to hide” argument is flawed and irrelevant today.** 
 
@@ -336,6 +345,8 @@ Usually, you are at risk of having the data you are sending and receiving interc
 
 By using a **Virtual Private Network** (_VPN_) you can rest assured that the entire communication between your computer and the endpoint of your connection is protected. A VPN will encrypt all the data you are transmitting on your device and decrypts the data when it reaches its desired endpoint.
 
+![vpn diagram](/img/digital-privacy/vpn-diagram.jpg)
+
 **A VPN is a secure tunnel between two or more devices.** 
 
 A VPN secures your connection just like if you were using a private network. For example, many companies require their employees to use a VPN to access the private office network when they are working remotely. 
@@ -378,7 +389,7 @@ There are **add-ons** for email service providers such as _Gmail_. _Apple Mail_ 
 
 The **second** and maybe a less convenient option is to switch to a secure email client.
 
- These clients such as **ProtonMail**, **CipherPost**, **Hushmail**, or **Disroot** support email encryption natively from the regular interface. Most of these privacy-centric email providers will support the )OpenPGP_ standard, which is open source and free.
+ These clients such as **ProtonMail**, **CipherPost**, **Hushmail**, or **Disroot** support email encryption natively from the regular interface. Most of these privacy-centric email providers will support the _OpenPGP_ standard, which is open source and free.
 
 It’s important to note that exchanging encrypted emails only works with people that have set up their encryption as well, either by using an add-on or by configuring their email managers. You need to exchange your public keys before you can address an encrypted email to somebody.
 
@@ -420,7 +431,7 @@ It is important to pay attention to such things as company and infrastructure ju
 
 #### Ricochet Refresh
 
-Although an experiment according to its author, _“[Ricochet](https://www.ricochetrefresh.net/) uses the Tor network to reach your contacts without relying on messaging servers. It creates a hidden service to rendezvous with your contacts without revealing your location or IP address. Instead of a username, you get a unique address that looks like **ricochet:rs7ce36jsj24ogfw**. 
+Although an experiment according to its author, [Ricochet](https://www.ricochetrefresh.net/) uses the Tor network to reach your contacts without relying on messaging servers. It creates a hidden service to rendezvous with your contacts without revealing your location or IP address. Instead of a username, you get a unique address that looks like **ricochet:rs7ce36jsj24ogfw**. 
 
 Other Ricochet users can use this address to send a contact request by asking to be added to your contacts list. 
 

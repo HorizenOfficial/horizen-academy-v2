@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 36
 sidebar_label: Modular vs Monolithic Blockchains
 title: Modular vs Monolithic Blockchains
 slug: /modular-vs-monolithic-blockchains/
 description: While blockchain modularization seems like the obvious approach to solving the scalability trilemma, it can come with its own share of challenges.
+image: /img/modular-vs-monolithic-blockchains/modular-vs-monolithic-blockchains-meta.jpg
 
 ---
 
@@ -17,7 +19,9 @@ It is impossible to truly understand where we are in the evolution of blockchain
 
 ## The Scalability Trilemma
 
-The **scalability trilemma** is a series of trade-offs between decentralization, speed/scalability, and security that one must make when designing a blockchain and constructing rules for its on-chain governance.
+The **scalability trilemma** is a series of trade-offs between decentralization, speed/scalability, and security that one must make when designing a blockchain and constructing rules for its [on-chain governance](https://www.horizen.io/academy/blockchain-governance/).
+
+![scalability trilemma](/img/layer-0/scalability-trilemma.jpg)
 
 - **Centralization** = Increased Speed, Decreased Security & Censorship Resistance
 - **Decentralization** = Decreased Speed, Increased Security & Censorship Resistance
@@ -32,7 +36,7 @@ Blockchains like any network-driven business require commercial viability in ord
 
 In order for commercially viable applications such as DEX’s, P2E games or NFT marketplaces to exist, users must be able to transact as quickly and cheaply as they are used to doing on Web2 applications.
 
-The launch of Ethereum and subsequent competitors have all been an attempt to improve blockchain scalability.
+The launch of [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) and subsequent competitors have all been an attempt to improve blockchain scalability.
 
 Projects like Binance Smart Chain and Solana are tackling this problem by creating blockchains with larger block sizes, fewer nodes, or consensus mechanisms that require less participation amongst all nodes in order to come to agreement on the state of the network.
 
@@ -52,7 +56,7 @@ In this episode, hosts _David Hoffman_ and _Ryan Sean Adams_ describe the modula
 
 A **monolithic blockchain** is one in which transaction execution, network consensus (the ordering and confirming of transactions by nodes) and data availability (the ability to verify that all the data from new blocks has been published are all achieved on the same network.
 
-This design describes the vast majority of blockchains, from Bitcoin and Ethereum to Solana and others.
+This design describes the vast majority of blockchains, from [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) and Ethereum to Solana and others.
 
 In a **modular blockchain**, the data availability function can be split up between multiple chains through a process called _sharding_, which allows nodes to divide up the number of transactions that they need to verify to ensure that all the correct data for each block is published.
 
@@ -61,6 +65,8 @@ In a **modular blockchain**, the data availability function can be split up betw
 - The **application/execution layer** - where transactions are executed
 - The **network**/**consensus layer** - where consensus is achieved on what transactions are true and what order they should be arranged in. _Consensus and network layers are technically separate, but highly interconnected._
 - The **protocol/data layer** - where the history of validated transactions are stored and can easily be audited
+
+![blockchain primary layers](/img/modular-vs-monolithic-blockchains/blockchain-primary-layers.jpg)
 
 Each layer represents one component in a sequence of downstream events that encapsulate all activities within a blockchain network.
 
@@ -80,6 +86,8 @@ The lack of specialization amongst teams would lead to lower quality outcomes, a
 
 This problem broadly describes the difference between modular vs. monolithic architectures.
 
+![monolithic modular architecture](/img/modular-vs-monolithic-blockchains/monolithic-modular-architecture.jpg)
+
 _Ethereum_ is a monolithic blockchain optimized for _decentralization_.
 
 It prioritizes the consensus and data layers over the execution layer, which is why it can only process 15 transactions per second, with gas fees reaching as high as $200 per transaction during times of network congestion.
@@ -94,19 +102,19 @@ The tradeoff for Solana is decentralization and a suboptimal consensus and data 
 
 When a modular process is applied to manufacturing cars, tasks are broken up into smaller components and handled by specialized teams, the engine design team, the car body team, etc..
 
-Similarly, with blockchains, a **modular architecture** is one in which the main responsibilities of transaction execution, consensus, and data storage are broken up and delegated to a network of independent blockchains (sidechains) or layer 2 (L2) channels.
+Similarly, with blockchains, a **modular architecture** is one in which the main responsibilities of transaction execution, consensus, and data storage are broken up and delegated to a network of independent blockchains (sidechains) or [layer 2 (L2) channels](https://www.horizen.io/academy/layer-2/).
 
-Each sidechain or L2 is designed to make up for the tradeoffs taken by the main blockchain, known as the mainchain). An L2 or sidechain will typically be optimized for transaction execution, enabling faster transactions by leveraging a smaller network of nodes.
+Each sidechain or L2 is designed to make up for the tradeoffs taken by the main blockchain, known as the mainchain). An L2 or sidechain will typically be optimized for transaction execution, enabling faster transactions by leveraging a smaller [network of nodes](https://www.horizen.io/academy/nodes/).
 
 The mainchain as the most secure and decentralized network acts as a settlement layer where final consensus is reached on the state of operations within the sidechains/L2s (i.e., what is true).
 
-The storage of validated transaction data can either be done on the mainchain or across different sidechains. This allows the network to alleviate congestion and increase data storage capacity by dispersing transactions across a larger set of nodes. 
+The storage of validated transaction data can either be done on the mainchain or across different [sidechains](https://www.horizen.io/academy/sidechains/). This allows the network to alleviate congestion and increase data storage capacity by dispersing transactions across a larger set of nodes. 
 
 This is called increasing transaction throughput.
 
 ## Differences Between L2s and Sidechains
 
-**L2s** are considered off-chain scaling solutions for blockchains and Dapps, typically set up as payment channels to exchange funds between a small group of participants using a smart contract.
+**L2s** are considered off-chain scaling solutions for blockchains and Dapps, typically set up as [payment channels](https://www.horizen.io/academy/payment-channels/) to exchange funds between a small group of participants using a smart contract.
 
 L2’s can exist as simple payment channels, like Lightning Network, or as an entirely separate node network, like Polygon.
 
@@ -116,7 +124,7 @@ By contrast, **Sidechains** are independent blockchains that can operate their o
 
 This however does not mean that transactions on a sidechain cannot also be validated by its mainchain, it is just not a requirement for the security of the network to be maintained.
 
-By enabling sidechains and L2s to communicate and transfer value between each other and between the mainchain (a process known as interoperability), a network of blockchains could perform and operate as 1 single blockchain, having solved the scalability trilemma through specialization as opposed to making tradeoffs.
+By enabling sidechains and L2s to communicate and transfer value between each other and between the mainchain (a process known as [interoperability](https://www.horizen.io/academy/blockchain-interoperability/)), a network of blockchains could perform and operate as 1 single blockchain, having solved the scalability trilemma through specialization as opposed to making tradeoffs.
 
 _Additionally_, with a modular architecture, increased specialization means that sidechains can be optimized for specific traits like _speed_, _security_, _privacy_, and _decentralization_, instead of all of those traits being forced into one single blockchain with less effective results.
 
@@ -146,17 +154,19 @@ One of the main challenges of modularizing a blockchain is that it can take a lo
 
 It hosts about 262 Dapps and blockchains, including Binance Smart Chain and the Terra blockchain.
 
-Cosmos is a scalable and interoperable network of blockchains, commonly referred to as the ‘internet of blockchains’. Using the Cosmos SDK, developers can launch their own PoS blockchains, or ‘Zones’.
+Cosmos is a scalable and interoperable network of blockchains, commonly referred to as the ‘internet of blockchains’. Using the Cosmos SDK, developers can launch their own [PoS blockchains](https://www.horizen.io/academy/pos-vs-pow/), or ‘Zones’.
 
 Cosmos **Zones** are connected by a central blockchain network called the Hub. **Hubs** receive a stream of block-commits from Zones, which allows them to keep up with the state of each Zone.
 
 Using a mechanism called the **Inter-Blockchain Communication protocol** (_IBC_), Zones can communicate and transfer value between each other using the HUB as a central checkpoint and intermediary.
 
-The Cosmos Hub is secured by 125 validators using PoS. **ATOM** tokens are earned for validating transactions on the Hub.
+![cosmos modular architecture](/img/modular-vs-monolithic-blockchains/cosmos-modular-architecture.jpg)
+
+The Cosmos Hub is secured by 125 validators using PoS. **ATOM** [tokens](https://www.horizen.io/academy/what-is-a-token/) are earned for validating transactions on the Hub.
 
 Zones are independent blockchains and can therefore have as many or as few validator nodes as desired. In addition, the security of a Zone is strictly managed by the nodes on the Zone and there is no reliance on the mainchain Hub.
 
-Cosmos is commonly referred to as a layer 0 protocol. Layer 0’s enable developers to launch multiple layer 1 blockchains/sidechains that can be designed to serve a specific purpose and cater to 1 or 2 dimensions of the scalability trilemma as opposed to all 3.
+Cosmos is commonly referred to as a layer 0 protocol. [Layer 0’s](https://www.horizen.io/academy/layer-0/) enable developers to launch multiple layer 1 blockchains/sidechains that can be designed to serve a specific purpose and cater to 1 or 2 dimensions of the scalability trilemma as opposed to all 3.
 
 Through interoperability features, these L1 networks can also be made to communicate with each other such that the end-user can have the experience of using one blockchain while they are, in fact, using multiple.
 
@@ -173,7 +183,9 @@ Rather than a simple mainchain and sidechain structure, the Avalanche network is
 1. **Primary Network** - A special subnet responsible for validating Avalanches 3 blockchains (X-Chain, C-Chain, and P-Chain). Becoming a member of the primary network required staking Avalanches native token AVAX.
 2. **Exchange Chain** (X-Chain) - Designed for creating, managing, and transacting tokens on the Avalanche network
 3. **Platform Chain** (P-Chain) - Designed for managing subnets and coordinating validator nodes and the staking mechanism
-4. **Contract Chain** (C-Chain) - Designed for creating smart contracts using an instance of the Ethereum virtual machine (EVM) - enables developers to deploy Ethereum Dapps to the Avalanche ecosystem
+4. **Contract Chain** (C-Chain) - Designed for [creating smart contracts](https://www.horizen.io/academy/smart-contracts/) using an instance of the Ethereum virtual machine (EVM) - enables developers to deploy Ethereum Dapps to the Avalanche ecosystem
+
+![avalanche modular architecture](/img/modular-vs-monolithic-blockchains/avalanche-modular-architecture.jpg)
 
 ### Polkadot
 
@@ -181,9 +193,13 @@ Rather than a simple mainchain and sidechain structure, the Avalanche network is
 - **Mainchain** = Relay Chain
 - **Interoperability Mechanism** = Bridges
 
-**Polkadot** is a blockchain protocol that unites an entire network of purpose-built blockchains known as _‘parachains’_.
+![polkadot parachains](/img/modular-vs-monolithic-blockchains/polkadot-parachains.jpg)
+
+**Polkadot** is a [blockchain protocol](https://www.horizen.io/academy/blockchain-protocols/) that unites an entire network of purpose-built blockchains known as _‘parachains’_.
 
 **Parachains** are connected and secured by the Polkadot Relay Chain. They can also connect with external networks via _bridges_.
+
+![polkadot relay chain](/img/modular-vs-monolithic-blockchains/polkadot-relay-chain.jpg)
 
 _Additionally_, Polkadot’s network provides a shared security model between parachains, meaning that the Relay chain validators are responsible for validating transactions of all parachains on the network and securing them through their staked DOT tokens.
 
@@ -198,11 +214,13 @@ Under the shared security model, parachains function like an L2 in that they rel
 - **Interoperability Mechanism** = Cross-chain transfer protocol
 - **Sidechain Protocol**: Zendoo
 
-Horizen is building a network of independent blockchains, sidechains, that connect to a proof of work mainchain.
+Horizen is building a network of independent blockchains, sidechains, that connect to a [proof of work mainchain](https://www.horizen.io/academy/proof-of-work-pow/).
 
 Horizen’s unique differentiators include its emphasis on privacy-preserving technologies like _zk-SNARK_ and its highly secure _proof-of-work_ mainchain.
 
-Horizen uses **zk-SNARKs**, _Zero-Knowledge Succinct Non-Interactive Argument of Knowledge_, to enable transactions that occur on its sidechains to be verified on the Horizen mainchain without the nodes knowing the sidechain transaction data being validated.
+![horizen sidechains](/img/modular-vs-monolithic-blockchains/horizen-sidechains.jpeg)
+
+Horizen uses **zk-SNARKs**, [Zero-Knowledge Succinct Non-Interactive Argument of Knowledge](https://www.horizen.io/academy/zk-snarks-vs-zk-starks/), to enable transactions that occur on its sidechains to be verified on the Horizen mainchain without the nodes knowing the sidechain transaction data being validated.
 
 Mainchain nodes on Horizen do not need to validate sidechain transactions using PoW. Instead, using zk-SNARKs, the nodes only need to verify ‘proof of computation’ for virtually any number of sidechain transactions that have occurred on the network.
 
@@ -212,7 +230,7 @@ As we have seen from the three previous examples, the common design amongst modu
 
 To perform these functions, the mainchains need to serve as the definitive point of truth.
 
-To achieve this, a mainchain needs to be highly secure, which is why Horizen is the only modular network that has chosen to stick with PoW and has actually designed a more secure version of the PoW consensus mechanism; leveraging a ‘[penalty system for delayed block submission](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against 51% attacks.
+To achieve this, a mainchain needs to be highly secure, which is why Horizen is the only modular network that has chosen to stick with PoW and has actually designed a more secure version of the PoW consensus mechanism; leveraging a ‘[penalty system for delayed block submission](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against [51% attacks](https://www.horizen.io/academy/51-attacks/).
 
 The Horizen mainchain also consists of over 35,000 nodes, making it the largest node network in the Web3 space.
 
@@ -226,7 +244,7 @@ These distinctions make Horizen one of the most flexible modular blockchain netw
 
 - **Sidechain** = Shards/Shard Chains
 - **Mainchain** = Ethereum Mainnet (soon to be the Beacon Chain)
-- **Interoperability Mechanism** = Bridges, Optimistic Rollups, ZK Rollups
+- **Interoperability Mechanism** = Bridges, Optimistic Rollups, [ZK Rollups](https://www.horizen.io/academy/zk-rollups/)
 
 It is already widely known that as part of the upgrade to ETH 2.0, Ethereum transitioned from a proof-of-work (PoW) consensus mechanism to a proof-of-stake (PoS).
 
@@ -238,15 +256,17 @@ The way Ethereum plans to achieve modularization is by launching parallel sidech
 
 In the beginning, there will be just 64 shard chains, with the Beacon Chain being the first shard chain that will become the new PoS mainchain as the ETH 2.0 upgrade is complete.
 
+![ethereum modulation](/img/modular-vs-monolithic-blockchains/ethereum-modulation.jpg)
+
 The Ethereum mainchain will adopt shard chains as a way to enhance scalability on the Ethereum network by reducing network congestion.
 
 L2s like LoopRing, Optimism, and Arbitrum will continue to operate on top of the Ethereum network and inherit the security of the Ethereum mainchain by having all withdrawal transactions from the L2 validated on the mainchain and stored across multiple shard chains.
 
 Since shard chains operate like independent blockchains, L2s could also be formed on a shard to enhance each shard’s scalability further.
 
-### Optimistic Rollups and ZK Rollups
+### Optimistic Rollups and zk-Rollups
 
-The two main methods of transferring value between Shards or L2s and the Ethereum mainchain are Optimistic rollups and ZK Rollups.
+The two main methods of transferring value between Shards or L2s and the Ethereum mainchain are Optimistic rollups and zk-Rollups.
 
 Both offer different approaches for the Ethereum mainchain (consensus layer) to confirm the true state of operations on the execution layers (i.e., account balances and total values in each L2) without validating every single transaction.
 
@@ -254,9 +274,9 @@ Both offer different approaches for the Ethereum mainchain (consensus layer) to 
 
 The party responsible for submitting batches of transactions to the Ethereum network must post a bond of ETH that can be taken away (slashed) if their submission is discovered to be fraudulent.
 
-**ZK Rollups** enable thousands of layer 2 transactions to be bundled into one transaction and then transmitted and validated by the Ethereum network without the Ethereum nodes knowing the details of each transaction.
+**Zk-Rollups** enable thousands of layer 2 transactions to be bundled into one transaction and then transmitted and validated by the Ethereum network without the Ethereum nodes knowing the details of each transaction.
 
-ZK Rollups leverage _ZK-SNARKs_ to offer greater scalability to the Ethereum network by only requiring the Ethereum nodes to verify the proof of computation of batches of transactions rather than verifying each transaction on the mainchain.
+ZK-Rollups leverage _ZK-SNARKs_ to offer greater scalability to the Ethereum network by only requiring the Ethereum nodes to verify the proof of computation of batches of transactions rather than verifying each transaction on the mainchain.
 
 ## The Case for Horizen as the Ultimate Modular Blockchain
 
@@ -272,7 +292,7 @@ Horizen stands out from other modular architectures because it adopts a PoW cons
 
 The value of the execution layer is not just in its ability to process transactions at a higher speed, but also in how efficiently it can transfer information to the mainchain.
 
-If the mainchain has to validate all transactions that occur on the L2 or sidechain, it cannot afford to adopt a consensus mechanism like PoW because transaction speeds are too slow. Therefore, it must opt for a faster yet less secure consensus mechanism like PoS (Solana, Cosmos, Polkadot, Ethereum 2.0) or DAG (Avalanche).
+If the mainchain has to validate all transactions that occur on the L2 or sidechain, it cannot afford to adopt a [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) like PoW because transaction speeds are too slow. Therefore, it must opt for a faster yet less secure consensus mechanism like PoS (Solana, Cosmos, Polkadot, Ethereum 2.0) or DAG (Avalanche).
 
 By leveraging ZK-SNARKs, the Horizen mainchain is relieved of much of the burden of validating transactions that occur on the execution layer because it only needs to verify proof of computation of transactions, which takes up significantly less data.
 
@@ -298,13 +318,13 @@ This is similar to how one should think about the consensus mechanism of a scala
 
 In other words, as a validator who holds a large amount of tokens on one chain, it is easier for me to become a large token holder and dominant validator on another PoS chain because I can simply exchange a portion of my wealth for the tokens of the new chain.
 
-In fact, as a wealthy individual, I would likely have access to these newer tokens before other participants, which means I also get to accumulate them at favorable prices.
+In fact, as a wealthy individual, I would likely have access to these [newer tokens](https://www.horizen.io/academy/why-create-a-token/) before other participants, which means I also get to accumulate them at favorable prices.
 
 This can lead to a situation where a small group of participants make up the majority of validator nodes across multiple interconnected PoS chains, creating centralization and censorship risk for the entire ecosystem.
 
 By anchoring a modular blockchain system to a proof-of-work-based mainchain, you create a counterbalance to this centralization risk because the advantages associated with being a large token holder on a PoS chain do not necessarily translate over to being a dominant miner on a PoW chain.
 
-**With PoW**, there are other external factors such as the accumulation of mining rigs, which is more a factor of supply chain dynamics than money, and the operation and maintenance of facilities which require a strong understanding of mining economics.
+**With PoW**, there are other external factors such as the accumulation of [mining rigs](https://www.horizen.io/academy/mining-in-blockchain/), which is more a factor of supply chain dynamics than money, and the operation and maintenance of facilities which require a strong understanding of [mining economics](https://www.horizen.io/academy/economies-of-mining/).
 
 How much space is needed to store my rigs? What is the cost of cooling? How do I acclimate to difficulty adjustments? etc..
 
@@ -312,11 +332,11 @@ It is for this reason that there is very little overlap between the largest ETH 
 
 In order to design the ideal modular blockchain architecture, it is important for both PoS and PoW consensus mechanisms to co-exist because they each act as a check against the other due to the limited transferability of privilege between validators and miners.
 
-This coexistence is also essential for institutions to adopt Web3 platforms and deploy high-value assets on sidechains and L2s, knowing that the data is reinforced by PoW, which is the most secure and battle-tested consensus mechanism available.
+This coexistence is also essential for institutions to adopt [Web3 platforms](https://www.horizen.io/academy/web3/) and deploy high-value assets on sidechains and L2s, knowing that the data is reinforced by PoW, which is the most secure and battle-tested consensus mechanism available.
 
 When it comes to data storage, critical features like Sharding will not be available on Ethereum 2.0 until 2023.
 
-Meanwhile, on Horizen, it is currently possible to drastically increase data storage capacity (i.e., (transaction throughput) by operating up to 10,000 parallel sidechains simultaneously using Horizen’s recently launched sidechain protocol - Zendoo.
+Meanwhile, on Horizen, it is currently possible to drastically increase data storage capacity (i.e., (transaction throughput) by operating up to 10,000 parallel sidechains simultaneously using Horizen’s recently launched [sidechain protocol - Zendoo](https://www.horizen.io/academy/zendoo/).
 
 Ultimately, the best modular design offers a highly scalable and flexible infrastructure to allow Dapps to achieve commercial viability while simultaneously offering trustless and censorship resistance validation and storage of high-value digital assets.
 

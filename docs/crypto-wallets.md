@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 57
 sidebar_label: Wallets
 title: What is a Crypto Wallet?
 slug: /crypto-wallets/
 description: A wallet is an app for generating, managing, and storing cryptographic keys - public and private keys. You can check your balance, receive, and send funds.
+image: /img/crypto-wallets/crypto-wallets-meta.jpg
 
 ---
 # What is a Crypto Wallet?
@@ -12,8 +14,10 @@ A **wallet** is an app for generating, managing, and storing cryptographic keys 
 
 With a wallet, you can: 
 - Check your balance
--  Receive funds
+- Receive funds
 - And send funds
+
+![wallet transaction 1 balance](/img/crypto-wallets/wallet-transaction-1-balance.jpg)
 
 Wallets generally don’t allow you to buy cryptocurrencies; that is what [exchanges](https://www.horizen.io/exchanges/) are for. 
 
@@ -21,12 +25,12 @@ _All_ exchanges provide you with wallets to store your coins in after you buy th
 
 A wallet: 
 - Generates a random _private key_, **sk**
-- Derives your _public key_, **pk**, using [elliptic curve cryptography](elliptic-curve-cryptography-ecc.md) 
-- Derives your address(es) from your public key
+- Derives your _public key_, **pk**, using [elliptic curve cryptography](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/) 
+- Derives your [address(es)](https://www.horizen.io/academy/wallet-addresses/) from your public key
 - Stores your private key(s) 
 - And takes care of [signing transactions](digital-signatures.md)
 
-In this article, we want to give you an overview of what types of wallets there are and help you find the right wallet for you. We show you how your _mnemonic phrase_ is generated, and how it relates to your actual private key. 
+In this article, we want to give you an overview of what types of wallets there are and help you find the right wallet for you. We show you how your [_mnemonic phrase_](https://www.horizen.io/academy/mnemonic-phrases/) is generated, and how it relates to your actual private key. 
 
 Depending on the wallet implementation, the process for generating your address from a private key looks slightly _different_.
 
@@ -37,6 +41,8 @@ A wallet is a program that has *three* main functions:
 1. Generating, storing and handling your **keys** and **addresses**
 2. Showing you your **balance**
 3. Creating and signing _transactions_ to send funds
+
+![what is a crypto wallet](/img/crypto-wallets/what-is-a-crypto-wallet.jpg)
 
 The _first_ function is the primary function and main differentiator of all wallets: _generating_, _storing_, and _handling_ your keys. 
 
@@ -60,6 +66,8 @@ The main function of a blockchain is to store all transactions in the correct or
 
 If you receive **10 ZEN** in a transaction and receive another **10 ZEN** later on. It is clear that you, the _owner_ of the key pair, owns **20 ZEN.**
 
+![crypto keys in wallet](/img/crypto-wallets/crypto-keys-in-wallet.jpg)
+
 To spend your money, you need the _private key_ stored in your wallet. This is why a keychain is a good analogy for what a wallet does. 
 
 **If you don’t control your keys, you don’t control your funds.** 
@@ -82,21 +90,29 @@ When Bob wants to spend that **one** ZEN, he will create a new message to the ne
 
 This is how money is sent from one person to another _without_ the help of a central third party.
 
+![blockchain transactions](/img/how-do-blockchains-work/blockchain-transactions.jpg)
+
 _A wallet gets your balance from_ monitoring the blockchain for any transactions that involve your address. Initially, all transactions are _cryptographically locked_. 
 
 The lock is based on the address the transaction is sent to, and can only be unlocked with the corresponding private key.
 
 **Let’s assume this is your wallet**:
 
+![wallet transaction 1 balance](/img/crypto-wallets/wallet-transaction-1-balance.jpg)
+
 You received a total of **20** ZEN in two _different_ transactions of **10** ZEN each. Now you want to spend **2** ZEN at lunch. Your wallet starts with a blank transaction and, in a first step, chooses one of your prior transactions to spend. 
 
 In this case, both transactions are of sufficient value, so your wallet might randomly choose the first one.
+
+![wallet transaction 2 inputs](/img/crypto-wallets/wallet-transaction-2-inputs.jpg)
 
 The money that is being spent in a transaction is called the **input**, and the money that is being received is called the **output**.
 
 Your wallet places one of the outputs you own in the empty transaction and uses your private key to unlock it, so it becomes _spendable_ - this is what we called **signing** the transaction. 
 
 The unlocked output is now used as an input to a new transaction.
+
+![wallet transaction 3 outputs](/img/crypto-wallets/wallet-transaction-3-outputs.jpg)
 
 Next, your wallet creates the _outputs_. It asks you for an _address_ to send money to and an _amount_. 
 
@@ -106,11 +122,15 @@ The second output is generated automatically - its called the _change output_.Ou
 
 Your wallet automatically includes the change in the transaction. The newly generated outputs are locked by default.
 
-Lastly, your wallet broadcasts the transaction to the network, where _all_ nodes and miners will verify if the signature you used to unlock your money is valid. If it is, miners will include your transaction in the next block. 
+![wallet transaction 4 broadcast](/img/crypto-wallets/wallet-transaction-4-broadcast.jpg)
+
+Lastly, your wallet broadcasts the transaction to the network, where _all_ [nodes](https://www.horizen.io/academy/nodes/) and miners will verify if the signature you used to unlock your money is valid. If it is, miners will include your transaction in the next block. 
 
 The output of **10** ZEN you used is from now on publicly visible as _spent_. The newly created outputs of **2** and **8** ZEN are included in a new block and locked - or _unspent_.
 
-Then you come across the term **UTXO** - _Unspent Transaction Output_ - this is what it refers to.
+Then you come across the term [**UTXO** - _Unspent Transaction Output_](https://www.horizen.io/academy/utxo-vs-account-model/) - this is what it refers to.
+
+![wallet transaction 5 confirmed](/img/crypto-wallets/wallet-transaction-5-confirmed.jpg)
 
 When you own **10** ZEN, it means you received **10** ZEN in a transaction, and you have _not_ unlocked and spent that output, yet.
 
@@ -122,13 +142,15 @@ _There is nobody that can help you recover your keys if you lose them._
 
 If anybody were able to recover your keys for you, they would also be able to _steal_ your funds. This would eliminate the trustless aspect of blockchains. 
 
-You may have heard stories about people searching for old hard drives because they have “lost their Bitcoins”. _More accurately_, they lost the keys to _access_ their Bitcoin.
+You may have heard stories about people searching for old hard drives because they have “lost their Bitcoins”. _More accurately_, they lost the keys to _access_ their [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/).
 
 But there is a sort of recovery mechanism with many wallets called a _mnemonic phrase_, or backup phrase. A **mnemonic phrase** usually consists of **12** or **24** words. With these words, you can recover your keys. You receive your mnemonic phrase when you install and set up your wallet.
 
 It’s _essential_ to understand that your backup phrase is just as important as your private key itself. If _anybody_ gets their hands on your backup phrase, they can access your money. Saving it as a screenshot or text file on your computer is not a good idea!
 
 ## Types of Cryptocurrency Wallets
+
+![types of crypto wallets](/img/crypto-wallets/types-of-crypto-wallets.jpg)
 
 Let's take a look at the following types of crypto wallets:
 
@@ -144,6 +166,8 @@ Let's take a look at the following types of crypto wallets:
 We can distinguish between _hosted_ and _non-hosted_ web wallets. With _hosted web wallets_, your keys are stored online by a trusted third party. 
 
 These parties are mostly exchanges such as _Coinbase_, _Binance_, or _Bittrex_. When you create an account with these entities, they will create an entry in their internal database linking your account to a set of _key pairs_ for the different coins they have listed.
+
+![hosted web wallet](/img/crypto-wallets/hosted-web-wallet.jpg)
 
 An advantage to a hosted web wallet is the _option_ to recover your password in case you forget or misplace it. Losing your private keys, together with your mnemonic phrase, leads to a loss of funds _in all other cases_.
 
@@ -165,7 +189,7 @@ You _will_ need to keep some funds on an exchange if you plan to trade often.
 
 ### Non-Hosted Web Wallets
 
-Besides hosted web wallets, there is also a range of _non-hosted web wallets_. One of the most popular non-hosted web wallet is likely _MyEtherWallet_, which can store _Ether_ (ETH) and _all_ _ERC-20_ tokens, tokens that are "living" on the _Ethereum_ blockchain. 
+Besides hosted web wallets, there is also a range of _non-hosted web wallets_. One of the most popular non-hosted web wallet is likely _MyEtherWallet_, which can store _Ether_ (ETH) and _all_ _ERC-20_ tokens, [tokens](https://www.horizen.io/academy/what-is-a-token/) that are "living" on the [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) blockchain. 
 
 These wallets provide an interface to check your funds or create transactions in your web browser, _but_ you have to provide the keys with each login.
 
@@ -221,6 +245,8 @@ When _printing_ your paper wallet, you should not use a _shared_ printer, like t
 
 You will end up with something looking like this after printing the wallet.
 
+![crypto paper wallet](/img/crypto-wallets/crypto-paper-wallet.jpg)
+
 There is only one thing left to do: send your coins to the public key. After that, you have a perfect long term storage solution for your coins. 
 
 The main risk with a paper wallet is you actually _losing_ or _destroying_ the wallet by accident. If you don't have a mnemonic phrase to recover the private key, you are at risk of losing all funds on the wallet. 
@@ -246,6 +272,8 @@ Using this feature is pretty straightforward: if you click the receive button, t
 If you want to send money, the app creates the _raw transaction_ that needs to be _signed_. The _unsigned_ transaction is now sent to your hardware wallet, where it gets signed with your _private key_. 
 
 The signature is then returned to your computer and the complete transaction, including the signature, is broadcasted to the network.
+
+![hard wallet transaction](/img/crypto-wallets/hard-wallet-transaction.jpg)
 
 _Your private key(s) do not leave the device, so they are not visible to the computer you are using your hardware wallet with at any time_. This is why a hardware wallet is considered the most secure way of storing crypto, especially large amounts.
 

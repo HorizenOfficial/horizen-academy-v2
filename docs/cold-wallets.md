@@ -1,15 +1,17 @@
 ﻿---
 
+sidebar_position: 11
 sidebar_label: Cold Wallets
 title: What are Cold Wallets?
 slug: /cold-wallets/
 description: A cold wallet or hardware wallet is a type of wallet that lives on a hardware device like a USB and does not require a connection to the internet to function.
+image: /img/cold-wallets/cold-wallets-meta.jpg
 
 ---
 
 # What is a Cold Wallet?
 
-A **cold wallet** or _hardware wallet_ is a type of wallet that lives on a hardware device like a USB and _does not require_ a connection to the internet to function.
+A **cold wallet** or _hardware wallet_ is a [type of wallet](https://www.horizen.io/academy/crypto-wallets/) that lives on a hardware device like a USB and _does not require_ a connection to the internet to function.
 
 Cold wallets allow you to store, send and receive crypto assets just like a hot wallet, however with cold wallets, the user's private keys are stored offline.
 
@@ -39,7 +41,7 @@ These wallets allow you to instantly deploy assets unto dapps by using your priv
 
 Metmask, Coinbase wallet and Trust wallet are all examples of hot wallets that are always connected to the internet.
 
-_While hot wallets make it easier for users to store and use their crypto assets on different dapps for trading, buying NFTs and more, the downside is that you are at _greater risk_ of losing your funds due to an online hack or a bug in the wallet or smart contract you interact with._
+_While hot wallets make it easier for users to store and use their crypto assets on different dapps for trading, buying NFTs and more, the downside is that you are at greater risk of losing your funds due to an online hack or a bug in the wallet or smart contract you interact with._
 
 **When using a hot wallet**, a hack can potentially occur anytime you sign a transaction and approve a smart contract to spend tokens from your wallet. If the contract is malicious, you could accidentally grant it permission to drain all of your funds.
 
@@ -53,11 +55,13 @@ For these reasons, it is normally advised that users only keep a _small amount_ 
 
 Cold wallets are generally considered to be _more secure_ because a bad actor has to physically steal your device in order for them to steal your funds.
 
-_With hot wallets_, anyone on the internet could potentially steal your funds while it is online, especially if you are signing a transaction to approve spending of tokens by a dapps smart contract, which may be faulty or maliciously set up to withdraw funds without your permission.
+_With hot wallets_, anyone on the internet could potentially steal your funds while it is online, especially if you are signing a transaction to approve [spending of tokens](https://www.horizen.io/academy/what-is-a-token/) by a dapps smart contract, which may be faulty or maliciously set up to withdraw funds without your permission.
+
+![hot wallets vs cold wallets](/img/cold-wallets/hot-wallets-vs-cold-wallets.jpeg)
 
 **When using a cold wallet**, a transaction is first signed from within the device itself. It must then be connected to the internet before this transaction can be broadcast to the blockchain network and confirmed.
 
-This removes the possibility of interacting with a malicious smart contract because it is not able to directly connect to your hard wallet or authorize spending of funds. Instead, you can only use your hardware wallet to send and receive crypto.
+This removes the possibility of interacting with a [malicious smart contract](https://www.horizen.io/academy/smart-contracts/) because it is not able to directly connect to your hard wallet or authorize spending of funds. Instead, you can only use your hardware wallet to send and receive crypto.
 
 _Also_, cold wallets require a special pin number to be entered before you can access the device.
 
@@ -83,7 +87,7 @@ The _risks_ with paper wallets are that they are _much_ easier to lose, can quic
 
 **Physical Bitcoins** are similar to paper wallets except rather than a piece of paper, they are metal coins that store the private key of a wallet underneath a tamper proof sticker or hologram. 
 
-People typically purchase these just for the novelty of owning a physical Bitcoin or physical version of some other cryptocurrency.
+People typically purchase these just for the novelty of owning a physical [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) or physical version of some other [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/).
 
 Though both of these alternatives are mostly outdated, they can still provide you with a secure way to store your crypto offline. 
 
@@ -179,7 +183,7 @@ Though both of these alternatives are mostly outdated, they can still provide yo
    </td>
    <td>$190
    </td>
-   <td>Bitcoin, Bitcoin Cash, Bitcoin Gold, DASH, Dogecoin, Namecoin, Ethereum, Litecoin, etc.
+   <td>Bitcoin, Bitcoin Cash, Bitcoin Gold, DASH, Dogecoin, Namecoin, [Ethereum](https://www.horizen.io/academy/ethereum-glossary/), Litecoin, etc.
    </td>
    <td>Yes
    </td>

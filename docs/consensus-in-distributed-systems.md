@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 12
 sidebar_label: Consensus in Distributed Systems
 title: Consensus in Distributed Systems
 slug: /consensus-in-distributed-systems/
 description: Distributed Systems - A set of processes, distributed across many locations, trying to achieve a common goal through coordination and communication via messages.
+image: /img/consensus-in-distributed-systems/consensus-in-distributed-systems-meta.jpeg
 
 ---
 
@@ -17,7 +19,7 @@ Although such distributed systems have many advantages, they also come with thei
 
 We want to show you what a distributed system does, what challenges it poses, and how these challenges are addressed. 
 
-Bitcoin introduced the **Nakamoto Consensus**, an innovative method allowing all peers on the network to agree on a single version of the blockchain.
+[Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) introduced the **Nakamoto Consensus**, an innovative method allowing all peers on the network to agree on a single version of the blockchain.
 
 ## What is a Distributed System?
 
@@ -47,7 +49,7 @@ While peer-to-peer networks come with unique advantages, they also have challeng
 
 -   **Concurrency** means that the individual processes, running on the nodes of the network, simultaneously execute the same program. Some level of coordination is necessary for them to reach their shared goal.
     
--   There is no **global clock** that can keep all participants in sync. A mechanism that allows the synchronization of nodes is needed.
+-   There is no **global clock** that can keep all participants in sync. A mechanism that allows the [synchronization of nodes](https://www.horizen.io/academy/nodes/) is needed.
     
 -   An **independent failure** of the constituents may occur. Servers can crash or the internet connection can temporarily break down. A mechanism to make the system *fault-tolerant* is needed.
     
@@ -263,7 +265,7 @@ The number of messages needed to keep the network in sync grows exponentially wi
 
 ## Changing the Definition of Consensus
 
-The problem of achieving consensus reliably has obviously been solved, otherwise we wouldn’t be here. *But how did Satoshi do this?*
+The problem of achieving consensus reliably has obviously been solved, otherwise we wouldn’t be here. *But how did [Satoshi](https://www.horizen.io/academy/satoshi-nakamoto/) do this?*
 
 The important leap was moving away from a deterministic definition of consensus. While some might argue this is moving goalposts, in practice it is what makes public blockchains work - *a non-deterministic definition of consensus*. 
 
@@ -293,7 +295,7 @@ This coordination displays characteristics of a ballot. A shortened *Demiro Mass
 
 > *“In one way or another, […] consensus algorithms boil down to some kind of vote […].” - Demiro Massessi*
 
-Nakamoto consensus with [Proof-of-Work](proof-of-work-pow.md) (PoW) does not require a leader (proposer) selection of any kind. Anybody is free to start mining and thereby proposing blocks. The consensus is based on who can find a nonce, that hashed together with the proposed block header, yields a block hash below the current target value. 
+Nakamoto consensus with [Proof-of-Work](https://www.horizen.io/academy/proof-of-work-pow/) (PoW) does not require a leader (proposer) selection of any kind. Anybody is free to start [mining](https://www.horizen.io/academy/mining-in-blockchain/) and thereby proposing blocks. The consensus is based on who can find a nonce, that hashed together with the proposed block header, yields a block hash below the current target value. 
 
 The chance of finding such a *nonce* is proportional to the relative hash power - or computing power - a given miner controls. This means state transitions are voted on with computational power, and the state transition logic is defined by the target a valid block hash has to meet.
 
@@ -330,7 +332,7 @@ Nakamoto Consensus not only attempts to solve the Byzantine Generals Problem, bu
 
 This share is defined via the amount of computational power rather than nodes on the network.
 
-PoW and its relatives can be seen as _Sybil-resistance mechanisms_. In a **Sybil Attack**, a malicious party creates a large number of centrally controlled identities and tries to achieve certain, mostly malicious, goals by exerting influence through these fake identities. 
+PoW and its relatives can be seen as _Sybil-resistance mechanisms_. In a [Sybil Attack](https://www.horizen.io/academy/blockchain-attacks/), a malicious party creates a large number of centrally controlled identities and tries to achieve certain, mostly malicious, goals by exerting influence through these fake identities. 
 
 Online voting is the most intuitive example of a situation, where many fake identities can be used to game the results. Sybil-resistance mechanisms prevent this by tying an entity's voting power to a scarce resource that is harder to obtain than fake user-accounts or IP-addresses. 
 

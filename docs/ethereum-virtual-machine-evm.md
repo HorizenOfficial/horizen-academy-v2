@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 24
 sidebar_label: Ethereum Virtual Machine - EVM
 title: What is EVM? - Ethereum Virtual Machine
 slug: /ethereum-virtual-machine-evm/
 description: In this article, we’ll cover what the Ethereum Virtual Machine or EVM is, and why it is a critical piece to the growth of the blockchain ecosystem.
+image: /img/ethereum-virtual-machine-evm/ethereum-virtual-machine-meta.jpg
 
 ---
 
@@ -17,21 +19,23 @@ Simply put, the **EVM** is a computation engine that is in charge of _deploying_
 
 ### Key Takeaways - EVM
 
-- The **Ethereum Virtual Machine**, or EVM, is a computation engine that is in charge of deploying and executing smart contracts and computing the state for every new block added to the Ethereum blockchain.
+- The **Ethereum Virtual Machine**, or EVM, is a computation engine that is in charge of deploying and [executing smart contracts](https://www.horizen.io/academy/smart-contracts/) and computing the state for every new block added to the Ethereum blockchain.
 
 - **EVM compatibility** is an essential feature of blockchains that have enable many popular networks - including _Avalanche_, _Binance Smart Chain_, _Polygon_, _Solana_, _Harmony_ and _Fantom_ - to become highly successful by reducing the barriers to entry for application developers to deploy smart contracts on these new chains due to the code being compatible with the _Ethereum_ network.
 
-- **EVM has some drawbacks**, including the increase in _gas fees_ which sometimes make dapps too expensive to use during times of network congestion. _However_, layer 2 scaling solutions like _Optimistic_ and _ZK-Roll Ups_ are aiming to solve this problem.
+- **EVM has some drawbacks**, including the increase in _gas fees_ which sometimes make dapps too expensive to use during times of network congestion. _However_, [layer 2 scaling solutions](https://www.horizen.io/academy/layer-2/) like _Optimistic_ and _zk-rollups_ are aiming to solve this problem.
 
 To better understand what this all means, it is important to first understand **Ethereum**, **Dapps**, **Smart Contracts** and **Gas**.
 
+![what is evm](/img/ethereum-glossary/what-is-evm.jpeg)
+
 ### What is Ethereum?
 
-Ethereum is a blockchain network that enables developers to launch their own tokens and build decentralized applications (Dapps) using smart contracts.
+[Ethereum](https://www.horizen.io/academy/ethereum-glossary/) is a blockchain network that enables developers to [launch their own tokens](https://www.horizen.io/academy/why-create-a-token/) and build decentralized applications (Dapps) using smart contracts.
 
 ### What are Dapps?
 
-**Decentralized applications** (or **_Dapps_**) are applications that are built on top of blockchain protocols and leverage smart contract technology.
+**Decentralized applications** (or **_Dapps_**) are applications that are built on top of [blockchain protocols](https://www.horizen.io/academy/blockchain-protocols/) and leverage smart contract technology.
 
 Dapps take many of the operating models of web2 platforms and traditional banking services and apply _blockchain technology_ to make them operate in a format that is [_peer-to-peer_](p2p-networks.md), _trustless_ and _more transparent_.
 
@@ -53,6 +57,8 @@ The **EVM** is a computation engine that is in charge of deploying and executing
 
 We can think of the EVM as a piece of software that sits on top of the hardware/node infrastructure of the blockchain and performs critical functions such as running and compiling code used for dApps and smart contracts.
 
+![evm architecture](/img/ethereum-virtual-machine-evm/evm-architecture.jpg)
+
 ### What is a Virtual Machine?
 
 The term ‘**virtual machine**’ (or _VM_) refers to the idea of _virtualizing_ a physical computer. This means to run a software system that can replicate the functions of a hardware system, such as running other software programs and deploying applications.
@@ -67,7 +73,7 @@ In the enterprise technology industry, virtual machines are typically used in on
 
 ## How does the Ethereum Virtual Machine Work?
 
-Ethereum nodes record and transmit copies of transaction and smart contract data on the Ethereum blockchain, which is then processed by the EVM to update the ledger.
+[Ethereum nodes](https://www.horizen.io/academy/nodes/) record and transmit copies of transaction and smart contract data on the Ethereum blockchain, which is then processed by the EVM to update the ledger.
 
 By being positioned between the nodes and the smart contracts, the EVM can compile different kinds of smart contract code into a standard format known as ‘**bytecode**’, which makes it readable by the Ethereum network and therefore enables those transactions to be recorded by the Ethereum nodes.
 
@@ -101,11 +107,11 @@ As we mentioned before, the EVM compiles different kinds of smart contract code 
 
 This ‘**plug and play**’ capability greatly expands the possibilities for emerging blockchains to attract developers to their ecosystem by reducing the time it takes to launch new Dapps and begin capturing market share from within a brand new network.
 
-This phenomenon occurred with the launch of Avalanche and DeFi apps like _TraderJoe_ or _Benqi-Finance_ that quickly emerged on the network due to the ability to seamlessly replicate the automated market maker functionality of Uniswap’s DEX and the smart contract lending functionality of Aave.
+This phenomenon occurred with the launch of Avalanche and DeFi apps like _TraderJoe_ or _Benqi-Finance_ that quickly emerged on the network due to the ability to seamlessly replicate the [automated market maker](https://www.horizen.io/academy/automated-market-maker-amm/) functionality of Uniswap’s DEX and the smart contract [lending](https://www.horizen.io/academy/crypto-lending/) functionality of Aave.
 
 From a users perspective, there is a large incentive to adopt new EVM compatible chains because they allow users to become the first testers of a newly launched Dapp, which can lead to them being rewarded with airdrops (some of which have been worth as much as 6 figures). 
 
-New blockchains and Defi protocols often also provide early users with higher returns on the capital they deploy to staking or liquidity pools, which creates a greater incentive to purchase the network's tokens.
+New blockchains and Defi protocols often also provide early users with higher returns on the capital they deploy to staking or liquidity pools, which creates a greater incentive to purchase the [network's tokens](https://www.horizen.io/academy/what-is-a-token/).
 
 _EVM compatibility_ is also essential for forming **cross-chain bridges** that enable funds to be transferred from one network to another with minimal friction.
 
@@ -113,7 +119,7 @@ Much of the success of Binance Smart Chain was due to the ease in which Ethereum
 
 A few months later, similar bridges like the _Avalanche_ bridge and _SpookySwap's_ bridge on Fantom would emerge based on the same EVM compatibility.
 
-Just like how a city can only thrive if it has bridges that allow for traffic to be directed in and out of the city, giving local businesses new customers to sell to and enabling the local government to increase its tax revenues, all blockchain networks need a certain level of interoperability with other blockchains in order to benefit from the network effects created by the movement of users and capital between chains.
+Just like how a city can only thrive if it has bridges that allow for traffic to be directed in and out of the city, giving local businesses new customers to sell to and enabling the local government to increase its tax revenues, all blockchain networks need a certain [level of interoperability](https://www.horizen.io/academy/blockchain-interoperability/) with other blockchains in order to benefit from the network effects created by the movement of users and capital between chains.
 
 ### Downsides of EVMs
 
@@ -121,9 +127,9 @@ Just like how a city can only thrive if it has bridges that allow for traffic to
 
 In a **fee market**, an increase in demand for block space leads to an increase in the gas fees that must be paid to miners in order to get your transaction confirmed in the next block.
 
-EVM chains like Polygon solve the gas fee problem by leveraging layer 2 scaling solutions like _Optimistic_ and _ZK-Roll Ups_.
+EVM chains like Polygon solve the gas fee problem by leveraging layer 2 scaling solutions like _Optimistic_ and _zk-Rollups_.
 
-With **roll ups**, transactions on Polygon are executed ‘off chain’ via [payment channels](payment-channels.md) or independent blockchains consisting of a smaller group of validators, and then periodically bundled together as one large transaction that is confirmed on the Ethereum network.
+With **rollups**, transactions on Polygon are executed ‘off chain’ via [payment channels](https://www.horizen.io/academy/payment-channels/) or independent blockchains consisting of a smaller group of validators, and then periodically bundled together as one large transaction that is confirmed on the Ethereum network.
 
 This allows the Polygon EVM to execute smart contracts and users to transact more frequently while saving on gas fees. 
 
@@ -144,7 +150,7 @@ The Horizen network offers many unique advantages that blockchain developers hav
 
 - **Increased flexibility through consensus agnostic sidechain protocol**
 
-Using Zendoo, Horizen’s sidechain deployment protocol, developers can deploy their own independent blockchain that is based on any kind of consensus mechanism, including *PoW*, *PoS*, *DAG*, etc
+Using Zendoo, [Horizen’s sidechain deployment protocol](https://www.horizen.io/academy/zendoo/), developers can deploy their own independent blockchain that is based on any kind of [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/), including *PoW*, *PoS*, *DAG*, etc
 
 This gives developers greater control and flexibility over the speed, security and decentralization of their applications.
 
@@ -154,9 +160,9 @@ Developers can simultaneously manage up to 1,000 blockchain networks that each p
 
 - **Privacy preserving functionality**
 
-Horizen also offers privacy preserving capabilities through its use of zk-SNARKS.
+Horizen also offers privacy preserving capabilities through its use of zk-SNARKs.
 
-zk-SNARKS enable transactions that are recorded on a sidechain network to be verified on the Horizen mainchain without the mainchain nodes having access to the data.
+[zk-SNARKS enable transactions](https://www.horizen.io/academy/zk-snarks-vs-zk-starks/) that are recorded on a [sidechain network](https://www.horizen.io/academy/sidechains/) to be verified on the Horizen mainchain without the mainchain nodes having access to the data.
 
 ## Conclusion
 

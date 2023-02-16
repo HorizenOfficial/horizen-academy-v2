@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 60
 sidebar_label: Zendoo
 title: Zendoo - Cross-Chain Platform
 slug: /zendoo/
 description: The Zendoo protocol allows a Bitcoin-based blockchain protocol to operate with any domain-specific blockchain or blockchain-like system.
+image: /img/zendoo/zendoo-meta.jpeg
 
 ---
 
@@ -11,11 +13,11 @@ description: The Zendoo protocol allows a Bitcoin-based blockchain protocol to o
 
 ## The Zendoo Protocol
 
-Horizen’s current sidechain implementation, the [Zendoo protocol](https://www.horizen.io/zendoo/) was released early in 2020**. It introduces:
+Horizen’s current sidechain implementation, the [Zendoo protocol](https://www.horizen.io/zendoo/) was released early in 2020. It introduces:
 
-> “a standardized mechanism to register and interact with separate sidechain systems. By interaction, we mean the Cross-Chain Transfer Protocol, which enables sending a native asset to a sidechain and receiving it back in a secure and verifiable way without the mainchain knowing anything about the internal sidechain construction or operations.”
+> “A standardized mechanism to register and interact with separate [sidechain systems](https://www.horizen.io/academy/sidechains/). By interaction, we mean the Cross-Chain Transfer Protocol, which enables sending a native asset to a sidechain and receiving it back in a secure and verifiable way without the mainchain knowing anything about the internal sidechain construction or operations.”
 
-In more general terms, the Zendoo protocol allows a Bitcoin-based blockchain protocol to operate with any domain-specific blockchain or blockchain-like system. The [blockchain protocol](blockchain-protocols.md) is upgraded only once to introduce the mechanism for deploying sidechains and to enable cross-chain transfers.
+In more general terms, the Zendoo protocol allows a [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/)-based blockchain protocol to operate with any domain-specific blockchain or blockchain-like system. The [blockchain protocol](https://www.horizen.io/academy/blockchain-protocols/) is upgraded only once to introduce the mechanism for deploying sidechains and to enable cross-chain transfers.
 
 **Zendoo** allows backward transfers to be verified by the mainchain without relying on external validators or certifiers. The mainchain does not monitor sidechains (asymmetric peg) and doesn’t know anything about their internal structure. Zendoo accomplishes this by generating recursive proofs for each sidechain state transition.
 
@@ -28,6 +30,8 @@ _Most sidechain constructions consist of three elements:_
 - **The Sidechain Consensus Protocol** - SCP
 
 Depending on the sidechain structure, these components can be either highly dependent on one another or highly decoupled. The Zendoo protocol allows various degrees of freedom concerning the SCP. The Cross-Chain Transfer Protocol serves as a bridge between MCP and all sidechains.
+
+![zendoo components](/img/zendoo/zendoo-components.jpg)
 
 ## The Mainchain Consensus Protocol - MCP
 
@@ -79,15 +83,15 @@ Ideally, backward transfers are objectively verifiable without the need to rely 
 On the highest level, a **proof system** allows a prover to prove to a validator that a given statement is true. 
 Instead of the validator redoing the entire computation to verify the result, the prover can generate a _proof_ for its correctness. 
 
-A **proof** comprises a set of values that the verifier uses to compute a _binary output_ - true or **false. When the verification function returns true the computation was performed correctly, if it returns false, it wasn’t.
+A **proof** comprises a set of values that the verifier uses to compute a _binary output_ - true or false. When the verification function returns true the computation was performed correctly, if it returns false, it wasn’t.
 
 Verifying state transitions in a system is one great use case for a proof system. A blockchain is a state machine in the sense that every block records new transactions onto the ledger, changing the state of the system. Nodes verify each block before they add it to their version of the ledger. 
 
 They check if transactions have valid [digital signatures](digital-signatures.md) attached, if only previously unspent transaction outputs] are spent, and if the Proof of Work attached to the block meets the current difficulty. 
 
-With a proof system, a miner could generate a proof that the state transition (new block) was performed according to the protocol. _All other nodes_ would simply have to verify if the proof is correct and could save themselves from verifying each part of the block individually.
+With a proof system, a miner could generate a proof that the state transition (new block) was performed according to the protocol. All [other nodes](https://www.horizen.io/academy/nodes/) would simply have to verify if the proof is correct and could save themselves from verifying each part of the block individually.
 
-**Zero-Knowledge proofs** such as **zkSNARKs** are best known for their application in privacy-preserving cryptocurrencies. Horizen, Zcash and other protocols utilize _zkSNARKs_ to enable the private transfer of money. When proofs are used to transfer money privately, a user creates a transaction according to the blockchain’s protocol.
+[**Zero-Knowledge proofs**](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/) such as [**zk-SNARKs**](https://www.horizen.io/academy/zk-snarks-vs-zk-starks/) are best known for their application in privacy-preserving cryptocurrencies. Horizen, Zcash and other protocols utilize _zkSNARKs_ to enable the [private transfer of money](https://www.horizen.io/academy/private-transactions/). When proofs are used to transfer money privately, a user creates a transaction according to the blockchain’s protocol.
 
 Instead of broadcasting this transaction in plaintext to the network, the user generates a proof that the transaction is valid and broadcasts this proof. The proof entails all necessary information about the transaction: the previously unspent inputs and the digital signature(s) satisfying the spending conditions of the inputs.
 
@@ -124,11 +128,13 @@ $$
 
 Writing a function that calculates the factorial of a given number is elegantly achieved using recursion. 
 
-The idea is that the factorial of the number 5_ is equal to five times the factorial of the number four:
+The idea is that the factorial of the number 5 is equal to five times the factorial of the number four:
 
 **\\(5! = 5 \cdot 4!\\)**
 
 The solution to the problem _5!_ then depends on a smaller instance of the same problem: **4!**.
+
+![recursive factorial](/img/zendoo/recursive-factorial.jpg)
 
 In the example above, the recursive function starts with the first recursive case \\(5! = 5 \cdot 4!\\), then starts another instance of the function that computes 4! - and so on. This continues until the base case is reached. 
 
@@ -156,6 +162,8 @@ We want to achieve a proof of state transitions in the context of our sidechains
 
 The blockchain's state transition logic is a function that takes the current state **\\(s\*i\\)** and the most recent set of transactions **\\(t_i\\)** as an input, and returns the next state **\\(s\*{i+1}\\)** as an output. The factorial of five is expressed as the number five times the result of the function for computing the factorial of four. The current state can also be computed based on the current transition and the result of the function for computing the last state. Let us look at a tangible example.
 
+![states and state transitions](/img/sidechains/states-and-state-transitions.jpg)
+
 Let's assume a sidechain starts in state **1 \\(s_1\\)** with its genesis block. 
 
 The first transition **\\(t_1\\)** consists of all transactions included in the first "real" block applied to the first state. The transition function, let's call it `update`, takes these two parameters, the initial state (Genesis Block) and the first transition (read: transactions), and computes the next state **\\(s_2\\)**, given the inputs constitute valid arguments to the `update` function.
@@ -164,7 +172,7 @@ $$
 s_2 = update(t_1, s_1)
 $$
 
-The same logic applies for the second state transition. Based on state **\\(s_2\\)** and the second transition **\\(t_2\\)** the `update` function computes the third*state \\(s_3\\).
+The same logic applies for the second state transition. Based on state **\\(s_2\\)** and the second transition **\\(t_2\\)** the `update` function computes the third state \\(s_3\\).
 
 $$
 s_3 = update(t_2, s_2)
@@ -181,6 +189,8 @@ We simply replaced **\\(s_2\\)** from the second formula in this section with th
 #### Recursive State Transition Proofs
 
 The construction shown above follows the same pattern we discussed when calculating the factorial. _Do you recognize the recursive pattern?_ The function `update` calls itself subsequently and opens new instances of the same function until the base case is reached.
+
+![recursive state](/img/zendoo/recursive-state.jpg)
 
 The base case here is the first state transition resulting in state **\\(s_2\\)**. Once this base case is reached, the different instances of the `update` function return their result to the next highest instance of the same function until finally, the current state is returned and all instances of the function are closed.
 
@@ -211,6 +221,8 @@ The proof system used for the Zendoo sidechain construction is a **SNARK** proof
 With _SNARKs_ we can produce proofs of constant size for almost any type of computation. 
 
 **A SNARK proving system comprises a triplet of algorithms:** _Setup_, _Prove_, and _Verify_.
+
+![proof generation and verification](/img/zendoo/proof-generation-and-verification.jpg)
 
 When a SNARK system is setup, a proving key **\\(pk\\)** and a verification key **\\(vk\\)** are generated for the system **C**. The verification key is registered on the mainchain at the time of sidechain deployment.
 
@@ -273,11 +285,13 @@ Besides the regular Merkle root included in a block header serving as a summary 
 
 All these sidechain-related events are placed into a Merkle tree, grouped by sidechain identifiers into different branches. The resulting Merkle tree root is placed in the mainchain block header as the sidechain transactions commitment.
 
-Including this data in the block header allows sidechain nodes to easily synchronize and verify sidechain related transactions (sidechains DO monitor the mainchain) without the need to transmit the entire mainchain block. Furthermore, it allows the construction of a SNARK, proving that all sidechain-related transactions of a given mainchain block have been processed correctly.
+![sidechain transaction commitment](/img/zendoo/sidechain-transaction-commitment.jpg)
+
+Including this data in the block header allows sidechain nodes to easily synchronize and verify sidechain related transactions (sidechains DO monitor the mainchain) without the need to transmit the enti4re mainchain block. Furthermore, it allows the construction of a SNARK, proving that all sidechain-related transactions of a given mainchain block have been processed correctly.
 
 ### Withdrawal Safeguard
 
-_Uncontrolled inflation of the monetary supply is one of the most devastating bugs a blockchain can suffer from. _One has to consider an event where a malfunctioning sidechain is trying to transfer more assets to the mainchain than it initially received. This could be malicious intent or simply an honest mistake.
+_Uncontrolled inflation of the monetary supply is one of the most devastating bugs a blockchain can suffer from._ One has to consider an event where a malfunctioning sidechain is trying to transfer more assets to the mainchain than it initially received. This could be malicious intent or simply an honest mistake.
 
 Horizen implemented a withdrawal safeguard to prevent this. The mainchain keeps track of how much money was transferred to a given sidechain, and will only accept incoming backward transfers up to that amount. This way uncontrolled inflation becomes impossible.
 
@@ -296,7 +310,7 @@ Lastly, it is defined how the proof data will be provided from the sidechain to 
 
 Several sidechain implementations exist, some of them closer to production than others. A common shortcoming is that these constructions oftentimes either rely on the mainchain keeping track of sidechains, or they require some sort of certifiers to process backward transfers from side to mainchain. The Zendoo protocol allows an asymmetric sidechain construction where the mainchain doesn’t monitor sidechains but can rely on objectively verifiable proofs to validate Backward Transfers.
 
-Zendoo comprises three main elements: The mainchain consensus protocol, the sidechain consensus protocol for which the Latus reference implementation is provided, and the cross-chain transfer protoco*. 
+Zendoo comprises three main elements: The mainchain consensus protocol, the sidechain consensus protocol for which the Latus reference implementation is provided, and the *cross-chain transfer protocol*. 
 
 _MCP_ and _CCTP_ are fixed, while there are many degrees of freedom with regards to the _SCP_.
 

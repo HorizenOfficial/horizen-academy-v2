@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 41
 sidebar_label: Payment Channels
 title: What are Payment Channels?
 slug: /payment-channels/
 description: We cover a highly promising approach to make blockchains security promise accessible to a more substantial user-base - payment and state channels
+image: /img/payment-channels/payment-channels-meta.jpeg
 
 ---
 
@@ -15,9 +17,11 @@ Now there are different ways to scale blockchains and increase their throughput,
 
  _Meet layer-two transactions on payment channels_.
 
-We introduced [sidechains](sidechains.md) as a scaling approach that spreads the workload otherwise performed by a single set of mainchain nodes to several sets of nodes, each responsible for their sidechain.
+ ![scalability challenges in blockchain networks](/img/payment-channels/scalability-challenges-in-blockchain-networks.jpg)
 
-We also talked about [Directed Acyclic Graphs (DAGs)](directed-acyclic-graph-dag.md) that hold the potential to dynamically adjust the on-chain, or "_on-DAG_", throughput by introducing a new type of data structure supporting _two-dimensionality_ in an otherwise mostly _one-dimensional_ blockchain world.
+We introduced [sidechains](https://www.horizen.io/academy/sidechains/) as a scaling approach that spreads the workload otherwise performed by a single set of mainchain nodes to several sets of nodes, each responsible for their sidechain.
+
+We also talked about [Directed Acyclic Graphs (DAGs)](https://www.horizen.io/academy/directed-acyclic-graph-dag/) that hold the potential to dynamically adjust the on-chain, or "_on-DAG_", throughput by introducing a new type of [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) supporting _two-dimensionality_ in an otherwise mostly _one-dimensional_ blockchain world.
 
 We will cover another highly promising approach to make blockchains security promise accessible to a more substantial user-base - _payment channels_. 
 
@@ -34,9 +38,9 @@ Payment channels are no trivial topic, and many different projects are working o
 
 The primitives used to build a payment channel are:
 
-- **Regular transactions** in the [UTXO model](utxo-vs-account-model.md)
-- **P2SH addresses**, and more specifically _MultiSig addresses_
-- [**Cryptographic hash functions**](hash-functions.md)
+- **Regular transactions** in the [UTXO model](https://www.horizen.io/academy/utxo-vs-account-model/)
+- **P2SH addresses**, and more specifically [_MultiSig addresses_](https://www.horizen.io/academy/multisig/)
+- [**Cryptographic hash functions**](https://www.horizen.io/academy/hash-functions/)
 - **Timelocks**
 
 One premise is the construction being trustless by design: You must not have to rely on your counterparty to transact securely. 
@@ -53,6 +57,8 @@ This can be understood as a simple [smart contract](smart-contracts.md) controll
 
 A **2-of-2 MultiSig account** is based on two private keys, both of which need to sign a transaction for it to be valid.
 
+![multisig transaction](/img/payment-channels/multisig-transaction.jpg)
+
 The spending conditions for the MultiSig account are defined in the **redeem script**. The hash of the redeem script functions as the address - a **Pay to Script-Hash** (P2SH) address. 
 
 This address and the information contained in the redeem script comprises the locking script of UTXO sent to the P2SH address.
@@ -65,6 +71,8 @@ The general idea of a payment channel is the following:
 - Both parties need to sign off on any **TX** that spends from this account. 
 - Both parties exchange signed transactions repeatedly spending from the same funding transaction whenever they transact (`TX 002` - `TX n`).
 
+![payment channel concept](/img/payment-channels/payment-channel-concept.jpg)
+
 - These commitment transactions updating the channel state, although valid on-chain transactions, are never broadcast, but kept locally by the _channel participants_. They serve as verifiable receipts of channel state modifications. 
 - Only when participants want to close the channel will they broadcast a final channel update via a **closing transaction** on the blockchain (`TX (n+1)`).
 
@@ -74,13 +82,13 @@ The general idea of a payment channel is the following:
 
 ### Payment Channel Networks
 
-Payment channel networks are built from multiple separate channels that can be coupled when needed. There are several payment channel networks built on top of different blockchain protocols, some even making protocols interoperable:
+Payment channel networks are built from multiple separate channels that can be coupled when needed. There are several payment channel networks built on top of different [blockchain protocols](https://www.horizen.io/academy/blockchain-protocols/), some even making protocols interoperable:
 
 - The best-known payment channel protocol built on Ethereum is [Raiden](https://raiden.network/101.html). It supports the transfer of ether, as well as _ERC20_ tokens off-chain.
 
 - [Bolt](https://eprint.iacr.org/2016/701.pdf) is a network proposed by Matthew Green and Ian Miers in 2016. _Bolt_ stands for _Blind Off-chain Lightweight Transactions_. It is currently being considered for the _Zcash_ protocol by the Zcash Foundation, but could also be deployed on top of other blockchain protocols. 
-	- Bolt achieves high privacy guarantees by leveraging _blind signatures_ and _zero-knowledge proofs_. To make privacy guarantees even stronger, the channel opening can be done through _shielded transactions_.
-	-  The authors not only plan to deploy Bolt on Zcash, but also retrofit it to offer a private payment channel option on Bitcoin and Litecoin.
+	- Bolt achieves high privacy guarantees by leveraging _blind signatures_ and [_zero-knowledge proofs_](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/). To make privacy guarantees even stronger, the channel opening can be done through _shielded transactions_.
+	-  The authors not only plan to deploy Bolt on Zcash, but also retrofit it to offer a private payment channel option on [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) and Litecoin.
 
 - The [Lightning Network](https://lightning.network/lightning-network-paper.pdf) is a payment channel network built on top of the Bitcoin protocol, but also deployed on Litecoin. It is the _second layer network_ that has seen the most activity in terms of development and [transacted volume](https://1ml.com/). 
 	- We use the lightning network as an example to lead you through the creation of a payment channel, updating its balance, and finally closing it.
@@ -124,6 +132,8 @@ She also passes the outpoint to **Bob**, who will create his version of the same
 
 Soon we will see why we need two different versions of the same TX.
 
+![open payment channel lightning](/img/payment-channels/open-payment-channel-lightning.jpg)
+
 Only at this point is **Alice** safe to broadcast her funding transaction. 
 
 She knows she can reclaim the money at any point as she already has a _commitment transaction_ signed by **Bob** spending her funding **TX** and refunding her. 
@@ -131,6 +141,8 @@ She knows she can reclaim the money at any point as she already has a _commitmen
 She also knows **Bob** cannot spend her money as both of their signatures are required to consume the funding UTXO, and the transaction she signed and passed to **Bob** is refunding her. 
 
 The worst-case scenario at this point is **Alice** paying for transaction fees sending her money on a round-trip.
+
+![establish payment channel lightning](/img/payment-channels/establish-payment-channel-lightning.jpg)
 
 The established **payment channel** now comprises a signed and broadcast funding transaction and a first commitment transaction serving as insurance for **Alice**. 
 
@@ -153,6 +165,7 @@ She can sign this **TX** and send it to **Bob** for him to keep. **Bob** creates
 
 Now there are _two_ versions of the same commitment transaction, each paying the participants the same amount of money. We'll get to the _why_ in a moment.
 
+![lightning payment channel](/img/payment-channels/lightning-payment-channel.jpg)
 
 At this point, there is a first incentive for one of the participants to cheat. 
 
@@ -160,9 +173,11 @@ A few days after both parties agreed on the updated commitment **TX**, **Alice**
 
 **Bob**, on the other hand, has an interest in the more recent state hitting the chain.
 
+![commitment transactions](/img/payment-channels/commitment-transactions.jpg)
+
 All commitment **TXs** are valid Bitcoin transactions. Although they are meant to stay on the Lightning Network, they can be broadcast on-chain. 
 
-Blockchain nodes are agnostic of payment channels and have no way to verify whether a broadcast transaction represents the most recent channel state or an old one.
+[Blockchain nodes](https://www.horizen.io/academy/nodes/) are agnostic of payment channels and have no way to verify whether a broadcast transaction represents the most recent channel state or an old one.
 
 In the Lightning Network, strong incentives were put in place for payment channels participants to act honestly. If Alice were to broadcast an old state, Bob would be credited with the entire balance of the channel and vice versa.
 
@@ -200,7 +215,7 @@ When a transaction output has a timelock placed in it, it adds another item to t
 
 The output we modify to prevent **Alice** from cheating is the one in the first commitment transaction: the one she would broadcast to steal **Bob's** **0.2** BTC. 
 
-_There are two versions of this transaction:*_
+_There are two versions of this transaction:_
 - One created and signed by **Alice** and sent to **Bob**
 - The other created and signed by **Bob** and shared with **Alice**. 
 
@@ -211,6 +226,8 @@ Let's assume **Alice** and **Bob** agreed to provide each other with a **10**-da
 In reality, this would mean a relative timelock of **1440** blocks in Bitcoin or **5760** blocks in Horizen. 
 
 For simplicity, we will pretend we can use _ten days_ as a time unit.
+
+![timelock](/img/payment-channels/timelock.jpg)
 
 Remember, this transaction initially served as an assurance for **Alice** that she would get refunded in case **Bob** becomes unresponsive. By placing a timelock in the output, we have ensured **Bob** has time to react if **Alice** were to cheat. 
 
@@ -244,6 +261,8 @@ These keys are generated when the first commitment **TXs** (**TX 002A** and **00
 
  When participants agree on the first channel update, here **Alice** paying **Bob 0.2** BTC (**TX 003**), the one-time keys `Alice2` and `Bob2` used in the original commitment transaction's spending condition are exchanged.
 
+ ![commitment keys](/img/payment-channels/commitment-keys.jpg)
+
 At this point, **Bob** can be sure the transaction he already signed (`TX 002A`) can't be broadcast and spent immediately by **Alice** due to the timelock. 
 
 **Alice** can be sure that if **Bob** becomes unresponsive, she is save to broadcast the transaction because she has not shared the key `Alice2` yet, and **Bob** can't steal the money.
@@ -251,6 +270,8 @@ At this point, **Bob** can be sure the transaction he already signed (`TX 002A`)
 This explains why it was important that **Alice** and **Bob** generated two versions of the same transaction. Remember that **Bob** created `TX 002A`. He placed the timelock in **Alice's** spending condition to protect himself from **Alice** broadcasting an old state. 
 
 Without including the second MultiSig condition, **Alice** would not have agreed to fund the channel in the first place. Since **Bob** has no interest in broadcasting the first commitment transaction, it is sufficient for **Alice** to place a single spending condition on her version's output.
+
+![multisig security](/img/payment-channels/multisig-security.jpg)
 
 Above, you can see the two different versions of the initial commitment TX refunding **Alice**. The green signature indicates which party has created and already signed it. 
 
@@ -271,6 +292,8 @@ This property is also crucial in this context, as it ensures the output in `TX 0
 
 The last set of transactions we need to look at are the ones paying **Bob 0.2** BTC. While we looked at the, schematically, we didn't consider the spending conditions placed in their outputs yet.
 
+![second commitment transaction](/img/payment-channels/second-commitment-transaction.jpg)
+
 The first version signed by **Bob** and broadcast-able by **Alice** uses the same spending conditions in **Alice's** output of **0.8** BTC as the previous commitment **TX** did. 
 
 It serves the same function: If **Alice** made a second payment to **Bob**, she would again be incentivized to broadcast an old state once she received the goods. 
@@ -289,6 +312,8 @@ The _bilateral payment channel_ between **Alice** and **Bob** can be closed in t
 ### Mutually Closing a Channel
 
 Let's assume **Alice** and **Bob** realize that they won't use their channel anymore. Both are happy with the current state of the channel paying **Bob 0.2** BTC and **Alice** the remaining **0.8** BTC.
+
+![mutual channel closing](/img/payment-channels/mutual-channel-closing.jpg)
 
 They will cooperatively create and sign a closing transaction, with both outputs spendable immediately by either participant. 
 
@@ -339,9 +364,9 @@ $$
 e = \frac{n(n-1)}{2}
 $$
 
-To connect three nodes, you need three edges; for five nodes, you need ten edges, and for **5000** nodes, you need **12,497,500** edges. *
+To connect three nodes, you need three edges; for five nodes, you need ten edges, and for **5000** nodes, you need **12,497,500** edges.
 
-*In other words**: Individual connections don't scale well.
+**In other words**: Individual connections don't scale well.
 
 As the name suggests, HTLCs rely on cryptographic [hash functions](hash-functions.md) and for the most part on two of their fundamental properties: 
 - Being _preimage resistant one-way functions_ 
@@ -358,6 +383,8 @@ If **Alice** were to pay **Bob** through **Ingrid**, **Bob** would create a secr
 **Alice** creates a transaction commitment) paying **Ingrid**, and **Ingrid** creates a transaction (commitment) paying **Bob**. The hash is part of the spending condition in each of those transactions. Revealing its preimage (the secret) allows a payee to claim the money. 
 
 Once all transactions are set up, **Bob** reveals his secret and claims his money from Ingrid. **Ingrid** learns the secret in the process and uses it to unlock **Alice's** transaction paying her.
+
+![payment routing](/img/payment-channels/payment-routing.jpg)
 
 The design should ensure that the intermediaries are never at risk of losing money and that funds can be retrieved from the payment route if one of the parties becomes inactive.
 
@@ -387,11 +414,11 @@ Now, there is more that you can do with blockchain besides "simple" payments. Sm
 
 But does it really make sense to have each move of your virtual chess game processed and verified by thousands of nodes all around the world? Scalability is an issue in blockchain-land.
 
-With regards to throughput, it suffices to look at the events around the launch of [CryptoKitties](https://www.cryptokitties.co/) on the Ethereum network in November 2017.
+With regards to throughput, it suffices to look at the events around the launch of [CryptoKitties](https://www.cryptokitties.co/) on the [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) network in November 2017.
 
 It was the first dApp that gained significant traction. At some point, the dApp accounted for around **10%** of total traffic on the Ethereum blockchain, causing transaction confirmation to take much longer than usual and increasing transaction fees significantly.
 
-Many dApps don't just rely on the transfer of a token, but also the transmission of data. This data, _sent to a smart contract_, updates the contracts state to represent the most recent contract interactions. The idea behind more generalized state channel constructions is moving these data transfers off-chain into state channel networks where they can be performed at a lower financial and computational cost. 
+Many dApps don't just rely on the transfer of a [token](https://www.horizen.io/academy/what-is-a-token/), but also the transmission of data. This data, _sent to a smart contract_, updates the contracts state to represent the most recent contract interactions. The idea behind more generalized state channel constructions is moving these data transfers off-chain into state channel networks where they can be performed at a lower financial and computational cost. 
 
 Just like with payment channels, only the channel opening and closing happen on-chain, while participants can transact money and data almost indefinitely while the channel is established. State channels are designed in a way that makes channel updates broadcast-able on the underlying blockchain, just like commitment transactions in payment channels represent valid on-chain transactions when broadcast. 
 

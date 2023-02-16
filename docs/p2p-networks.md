@@ -1,9 +1,12 @@
 ﻿---
 
+sidebar_position: 40
 sidebar_label: P2P Networks
 title: What is a P2P Network? - Peer-to-Peer Networks
 slug: /peer-to-peer-networks-p2p/
 description: In this article, you learn about the peer-to-peer network, also known as the physical infrastructure that blockchains run on.
+image: /img/p2p-networks/p2p-networks-meta.jpeg
+
 
 ---
 
@@ -13,9 +16,9 @@ There are many ways to classify a blockchain. One of them is to determine if the
 
 Public blockchains are commodities, digital goods that anyone with an internet connection can access. Nobody owns these commodities, so there is no central infrastructure provider. Instead, the infrastructure is provided by many independent peers, spread all over the globe. 
 
-The distributed **Peer-to-Peer** (_P2P_) network of a decentralized blockchain is highly resilient because the network’s nodes run independently from one another.
+The distributed **Peer-to-Peer** (_P2P_) network of a decentralized blockchain is highly resilient because the [network’s nodes](https://www.horizen.io/academy/nodes/) run independently from one another.
 
-We’ll focus on the protocol of a blockchain at the _network layer_. At the network layer, peers are identified by their IP addresses.
+We’ll focus on the [protocol of a blockchain](https://www.horizen.io/academy/blockchain-protocols/) at the _network layer_. At the network layer, peers are identified by their IP addresses.
 
 It handles the communication between nodes via inter-node _TCP_ connections - read: *the internet.* 
 
@@ -33,11 +36,13 @@ If this computer happens to have a problem, the website won’t work. With a P2P
 
 In a P2P network, you are usually connected to several peers and if one goes offline, everything still works as usual. This makes blockchain networks very robust.
 
+![peer to peer network](/img/p2p-networks/peer-to-peer-network.jpg)
+
 ### Peer-to-Peer Networks
 
 The Internet that we are experiencing today is highly centralized. Most data that we as the users of the internet produce, end up in the hands of a few large corporations. But there are a number of truly distributed systems out there living on the internet.
 
-One example of a truly distributed system on the internet is _BitTorrent_. 
+One example of a truly [distributed system](https://www.horizen.io/academy/consensus-in-distributed-systems/) on the internet is _BitTorrent_. 
 
 Like any other technology, Peer-to-Peer networks have enabled legitimate use-cases, such as the reliable exchange of open-source software as well as illegitimate use-cases, such as pirating music and movies. 
 
@@ -55,11 +60,13 @@ But there are some downsides compared to centralized systems. The high level of 
 
 Taking a look at data storage is the most obvious example here. 
 
-Many nodes, in the case of the _Horizen_ network, more than _35,000_, store a copy of the blockchain. This is not very storage efficient but makes the blockchain highly resilient against attacks and gives it its immutability.
+Many nodes, in the case of the _Horizen_ network, more than _35,000_, store a copy of the blockchain. This is not very storage efficient but makes the blockchain highly resilient against [attacks](https://www.horizen.io/academy/blockchain-attacks/) and gives it its immutability.
 
 In computer science, the _CAP theorem_ describes the cost of a robust and scalable distributed network as the time it takes for the network to reach consistency. It takes some time for an event, like a transaction, to be broadcast to every node on the network.
 
 In a second step, all the nodes have to reach consensus on the order in which events happened.
+
+![centralized decentralized distributed](/img/p2p-networks/centralized-decentralized-distributed.jpg)
 
 We have found a simple yet great visualization of a [distributed system](http://mg8.org/processing/bt.html) that demonstrates the process of new peers joining a network and syncing with all other nodes. It lets you add and delete random nodes to show the robustness of the overall system.
 
@@ -100,7 +107,7 @@ Because every node stores a copy of the blockchain, _peer discovery_ is more imp
 When you put yourself into the position of someone wanting to launch a distributed system, like a blockchain, running it on a P2P network is the obvious choice for at least two reasons:
 
 - **First,** it doesn’t require many resources to bootstrap. The P2P network can be spun up with only a handful of nodes at near zero cost. Once the network gains traction, new nodes can be added seamlessly.
-- **Second,** it provides a high level of resilience. The more people join the network, the more resilient it becomes. One of the stated goals of Bitcoin is to be able to withstand state-level actors trying to attack the network. In the very beginning, when there were only a few nodes, this was not the case.
+- **Second,** it provides a high level of resilience. The more people join the network, the more resilient it becomes. One of the stated goals of [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) is to be able to withstand state-level actors trying to attack the network. In the very beginning, when there were only a few nodes, this was not the case.
 
 However, at the same time, the incentives for potential attackers to target the network were small. As more people joined the network, the network’s value increased, and so did the incentives to target the network. 
 
@@ -120,7 +127,9 @@ To illustrate distributed networks we use graphs.
 
 This term sounds very simple at first but there is a bit more to it. The field of graph theory is a mathematical discipline studying the different types of graphs. We touch on graph theory in an article on [Directed Acyclic Graphs](directed-acyclic-graph-dag.md) or DAGs. 
 
-There, we talked about graphs in the context of data structures - namely how blocks can be interconnected at the application layer. Here the graph describes the connectivity between nodes at the network layer.
+There, we talked about graphs in the context of [data structures](https://www.horizen.io/academy/blockchain-as-a-data-structure/) - namely how blocks can be interconnected at the application layer. Here the graph describes the connectivity between nodes at the network layer.
+
+![distributed network graph](/img/p2p-networks/distributed-network-graph.jpg)
 
 A graph \\(G = (V, E)\\) is defined as a set of vertices $V$ and edges $E$. Each edge connects two vertices and has a time delay $d$ for a message to travel along its path. The graph of a distributed network changes constantly. 
 
@@ -134,7 +143,11 @@ A fully dynamic graph changes at a rate that prevents an adversary from learning
 
 When we talked about [distributed consensus](consensus-mechanisms.md) we introduced two types of malfunctions at the network layer: **_node failures_** and **_network failures_**.
 
+![node failures](/img/p2p-networks/node-failures.jpg)
+
 **Nodes can crash** or go offline, they can have trouble receiving or processing messages, or they can display _Byzantine_ behavior. When nodes act Byzantine, this means they act randomly and deviate from the protocol. Usually the term is used to refer to malicious behavior.
+
+![network failures](/img/p2p-networks/network-failures.jpg)
 
 **Network failures** are classified using their effect on message propagation, not by the reason that led to the failure.
 
@@ -144,7 +157,7 @@ When we talked about [distributed consensus](consensus-mechanisms.md) we introdu
 - In the **Partially Synchronous Model,** messages arrive with a bounded delay, but the bound is not known.
 - In the **Asynchronous Model**, the message delay is unknown and unbound. This makes the asynchronous model the “hardest assumption” on which to build a reliable system.
 
-Not only does the consensus mechanism have to account for node failures and network failures, but so does the P2P network itself. 
+Not only does the [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) have to account for node failures and network failures, but so does the P2P network itself. 
 
 What does a node do in case its peer goes offline? And how does it find a set of nodes to connect to in the first place?
 
@@ -220,6 +233,8 @@ This mechanism needs to ensure that all messages reach all nodes within some tim
 
 _Flooding, diffusion, and the Dandelion protocol_. 
 
+![broadcasting protocols](/img/p2p-networks/broadcasting-protocols.jpg)
+
 ### Flooding
 
 **Let’s consider a node creating a new transaction:** 
@@ -235,6 +250,8 @@ Although information travels with the speed of light, over long distances these 
 This implies that flooding produces the most predictable spreading pattern. An adversarial node will receive all messages from a given node in a deterministic timing pattern. 
 
 Knowledge of these timing patterns together with knowledge of the graph structure allows a Byzantine actor to link IP addresses to public keys - a potential attack vector.
+
+![flooding and diffusion](/img/p2p-networks/flooding-and-diffusion.jpg)
 
 ### Diffusion
 
@@ -282,6 +299,8 @@ _Honest nodes_ and _adversarial nodes_ colluding to deanonymize users.
 
 An attacker can apply two different techniques to deanonymize users, _eavesdropping_ or the _spy-based approach_:
 
+![spy based vs eavesdropping](/img/p2p-networks/spy-based-vs-eavesdropping.jpg)
+
 The **eavesdropper** connects to as many nodes as possible using a highly performant node. This node can establish several connections to a single honest server, with each connection coming from a different IP address.
 
 The _honest node_ doesn’t realize that more than one of its connections originates from the same node.
@@ -296,7 +315,7 @@ The **spy-based** adversary corrupts a fraction of nodes and observes the timest
 
 Most blockchains provide little to no incentive for running nodes on the network. In the early days of Bitcoin, most nodes also mined BTC and therefore collected the block reward.
 
-Another good reason to run a node is to safely accept payments. Most wallets are actually light nodes. They connect to a full node in order to “speak” with the blockchain. 
+Another good reason to run a node is to safely accept payments. Most [wallets](https://www.horizen.io/academy/crypto-wallets/) are actually light nodes. They connect to a full node in order to “speak” with the blockchain. 
 
 This means they have to trust the full node operator to feed them truthful information. By running a full node yourself, you don’t have to trust anybody - you can verify for yourself. 
 
@@ -316,7 +335,7 @@ On a permissioned blockchain that a consortium of companies is running, e.g. to 
 
 We believe that Web 3.0 will benefit largely from the emergence of distributed networks and that we will see a transition from centralized services to decentralized ones.
 
-Those computational requirements are verified using an interactive challenge-response protocol - a type of Proof of Work if you will. Nodes receive computational challenges on a regular basis and by monitoring the time it takes them to respond to these challenges, one can derive an estimate on their capabilities. 
+Those computational requirements are verified using an interactive challenge-response protocol - a type of [Proof of Work](https://www.horizen.io/academy/proof-of-work-pow/) if you will. Nodes receive computational challenges on a regular basis and by monitoring the time it takes them to respond to these challenges, one can derive an estimate on their capabilities. 
 
 Nodes need to meet a certain target with their response time, otherwise they are not considered eligible for node reward payments.
 

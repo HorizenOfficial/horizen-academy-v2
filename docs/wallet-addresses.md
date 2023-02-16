@@ -1,17 +1,21 @@
 ﻿---
 
+sidebar_position: 56
 sidebar_label: Wallet Addresses
 title: What is a Wallet Address?
 slug: /wallet-addresses/
 description: A public key is derived from the newly generated private key through elliptic curve multiplication, while addresses are derived from public keys.
+image: /img/wallet-addresses/wallet-addresses-and-keys-meta.jpeg
 
 ---
 
 # What is a Wallet Address?
 
-When you install and set up a wallet on your phone or computer, the first thing you will do is actually fund your wallet by transferring some crypto to your address. 
+When you install and set up a wallet on your phone or computer, the first thing you will do is actually [fund your wallet](https://www.horizen.io/academy/crypto-wallets/) by transferring some crypto to your address. 
 
 Lets take a look at where wallet addresses come from and how they relate to  _private keys_.
+
+![address derivation](/img/wallet-addresses/address-derivation.jpg)
 
 ## How are Wallet Addresses Derived?
 
@@ -22,21 +26,21 @@ _Wallet addresses are derived from public keys in two main steps:_
 1. By **hashing** the public key
 2. By **Base58Check** encoding it
 
-_The security of any public key cryptography (PKC) scheme relies on one property:_
+_The security of any [public key cryptography (PKC) scheme](https://www.horizen.io/academy/public-key-cryptography-pkc/) relies on one property:_
 
 - It should be easy to derive a public key from a private key, but it must be infeasible to reverse that operation and derive a private key from a given public key.
 
-With elliptic curve cryptography (ECC), this property is based on the _discrete log problem_, which refers to division on the elliptic curve being computationally difficult while multiplication is easy. Deriving a public key from an address is also computationally difficult, as you would have to find the _preimage_ of a [hash function](hash-functions.md), which means deriving an _input_ from an _output_.
+With [elliptic curve cryptography (ECC)](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/), this property is based on the _discrete log problem_, which refers to division on the elliptic curve being computationally difficult while multiplication is easy. Deriving a public key from an address is also computationally difficult, as you would have to find the _preimage_ of a [hash function](https://www.horizen.io/academy/hash-functions/), which means deriving an _input_ from an _output_.
 
 Not being able to derive a public key from an address is an important aspect when considering privacy. Using a new address for every incoming transaction makes tracking transactions much harder for an adversary. 
 
 If you were able to derive a public key from an address, you could find all addresses of a user, assuming they were derived from the same public key. This would render [change addresses](https://en.bitcoin.it/wiki/Change) useless.
 
-Now let's get into the actual process of creating a crypto wallet address from scratch.
+Now let's get into the actual process of creating a [crypto wallet address](https://www.horizen.io/academy/crypto-wallets/) from scratch.
 
 ## Generating the Private Key
 
-The purpose of a private key is to prove ownership of a UTXO-set by creating [digital signatures](digital-signatures.md) to authorize spending.
+The purpose of a private key is to prove ownership of a [UTXO-set](https://www.horizen.io/academy/utxo-vs-account-model/) by creating [digital signatures](https://www.horizen.io/academy/digital-signatures/) to authorize spending.
 
 Private keys are sometimes also called _secret keys_ or _spending keys_. 
 
@@ -84,6 +88,8 @@ It is good practice to backup your private key in an analog format but copying a
 
 > _"A mnemonic code or sentence is superior for human interaction compared to the handling of raw binary or hexadecimal representations of a wallet seed. The sentence could be written on paper or spoken over the telephone. This guide is meant to be a way to transport computer-generated randomness with a human readable transcription." - [BIP 0039](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), Palatinus, Rusnak, Voisine, Bowe_
 
+![generating a mnemonic phrase](/img/crypto-wallets/generating-a-mnemonic-phrase.jpg)
+
 - First, randomness is generated using one of the methods described above
 - Then a checksum is calculated and parts of it are linked together with the initial entropy. 
 	- This data is split into groups of **11** bits each. 
@@ -108,6 +114,8 @@ Alternatively, the _triple_ of **x**, **y**, and **z**-values can be used.
 - Scalars are written with small letters, like - $sk$
 - Vectors are written with capital letters, like - $PK$
 
+![scalars vs vectors](/img/digital-signatures/scalars-vs-vectors.jpg)
+
 A _generator point_ or _base point_ is defined for the **secp256k1** curve and its coordinates are:
 
 $$x = 55066263022277343669578718895168534326250603453777594175500187360389116729240$$
@@ -119,6 +127,8 @@ $$y = 32670510020758816978083085130507043184471273380659243275938904335757337482
 The product of your private key **sk** with this base point **P** gives you your **elliptic public key**, _PK_. 
 
 All public keys are computed based on the same generator point.
+
+![proving private key](/img/digital-signatures/proving-private-key.jpg)
 
 An extra byte is added to the front of your elliptic public key to give you your _full public key_. The extra byte depends on the specific blockchain you are generating an address for.
 
@@ -169,6 +179,8 @@ Most wallets today are **HD wallets** - _hierarchical deterministic wallets_.
 They use a single seed or **master private key** which can be derived from your mnemonic phrase, to generate a number of _child private keys_. 
 
 This is done by adding a counter to the seed and incrementing it by one for every new private key generated.
+
+![hd multicurrency wallet](/img/wallet-addresses/hd-multicurrency-wallet.jpg)
 
 _These private keys can be used for different blockchains because the underlying concept is always the same:_
 
