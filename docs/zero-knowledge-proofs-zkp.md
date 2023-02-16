@@ -1,25 +1,27 @@
 ﻿---
 
-sidebar_label: Zero Knowledge Proofs - ZKP
-title: What are Zero Knowledge Proofs? - ZKPs
+sidebar_position: 61
+sidebar_label: Zero-Knowledge Proofs - ZKP
+title: What are Zero-Knowledge Proofs? - ZKPs
 slug: /zero-knowledge-proofs-zkp/
-description: A Zero Knowledge Proof algorithm must contain the following 3 properties - Completeness, Soundness, and Zero-Knowledge
+description: A Zero-Knowledge Proof algorithm must contain the following 3 properties - Completeness, Soundness, and Zero-Knowledge
+image: /img/zero-knowledge-proofs-zkp/zero-knowledge-proofs-zkp-meta.jpg
 
 ---
 
-# What are Zero Knowledge Proofs?
+# What are Zero-Knowledge Proofs?
 
-_Zero knowledge proofs_ are ushering in a new era of dapps and blockchains that offer greater scalability and privacy through advanced cryptography. 
+_Zero-knowledge proofs_ are ushering in a new era of dapps and blockchains that offer greater scalability and privacy through advanced cryptography. 
 
-_In this article_, we go into detail about what Zero knowledge proofs are and how this technology is bringing mainstream adoption to Web3.
+_In this article_, we go into detail about what Zero-knowledge proofs are and how this technology is bringing mainstream adoption to [Web3](https://www.horizen.io/academy/web3/).
 
-## What are Zero Knowledge Proofs?
+## What are Zero-Knowledge Proofs?
 
-A **zero-knowledge proof** is a form of cryptography that enables one party in a transaction, the prover, to prove that they have knowledge of information that confirms a statement to be true to another party, the verifier, without revealing what that information is.
+A **Zero-Knowledge Proof** is a form of cryptography that enables one party in a transaction, the prover, to prove that they have knowledge of information that confirms a statement to be true to another party, the verifier, without revealing what that information is.
 
 _For example_, if a person wishes to proof that they are over the age of 18, rather than issuing a credential that contains all kinds of personal information as a form of identification, with ZKPs, the prover can construct a ‘proof of correct computation’ that confirms any aspect of their identity that they wish to verify. For instance, that they are over the age of 18 or that they have a driver's license).
 
-The specific form of ZKP applied for this use case is called **zk-SNARKs**, Zero-Knowledge Succinct Non-Interactive Argument of Knowledge.
+The specific form of ZKP applied for this use case is called **zk-SNARKs**, [Zero-Knowledge Succinct Non-Interactive Argument of Knowledge](https://www.horizen.io/academy/zk-snarks-vs-zk-starks/).
 
 ## What are zk-SNARKs?
 
@@ -27,23 +29,27 @@ With _zk-SNARKs_, ‘non-interactive’ simply means that the code for construct
 
 _In another example_, let’s say a client, the prover, needs to prove to a broker, the verifier, that they have a certain amount of money in their bank account without revealing their finances.
 
+![zero knowledge proofs zkps](/img/zero-knowledge-proofs-zkp/zero-knowledge-proofs-zkps.jpeg)
+
 Using zk-SNARKs, the broker can simply verify that a computation was run on the blockchain in which the client solves a series of challenges issued by a simulator, which correctly confirms the statement to be true (e.g. bank value > $100,000).
 
 zk-SNARKs have been adopted by a variety of blockchain networks to improve privacy and scalability. 
 
 Most notable of these blockchains is _Horizen_, a zero-knowledge enabled network of blockchains.
 
-## What Are the Properties of Zero Knowledge Proofs?
+## What Are the Properties of Zero-Knowledge Proofs?
 
-**A zero knowledge proof algorithm must contain the following 3 properties:**
+**A zero-knowledge proof algorithm must contain the following 3 properties:**
 
 - **Completeness** - If a statement is correct, and the prover and verifier both follow the correct protocol, then the verifier should accept the proof as true.
 - **Soundness** - If the statement is false, then the verifier will not be convinced by the proof even if they follow the protocol.
-- **Zero-Knowledge** - If the protocol is followed by the prover and the statement is deemed to be correct, then the verifier should be convinced of the prover’s statement being true, even though they have no knowledge of any other information besides the provided proof.
+- **Zero-Knowledge** - If the [protocol](https://www.horizen.io/academy/blockchain-protocols/) is followed by the prover and the statement is deemed to be correct, then the verifier should be convinced of the prover’s statement being true, even though they have no knowledge of any other information besides the provided proof.
+
+![zkp competeness soundness zero knowledge](/img/zero-knowledge-proofs-zkp/zkp-competeness-soundness-zero-knowledge.jpeg)
 
 ## Use Cases of Zero-knowledge Proofs
 
-The potential for zero knowledge proofs are virtually unlimited. Here are some examples of how ZKPs can be applied to solve problems and create new opportunities in tech and the traditional economy
+The potential for zero-knowledge proofs are virtually unlimited. Here are some examples of how ZKPs can be applied to solve problems and create new opportunities in tech and the traditional economy
 
 ### Healthcare
 
@@ -59,13 +65,13 @@ ZKPs can help users provide proof that they are qualified to use certain financi
 
 Real world assets represent the next frontier for mainstream crypto adoption.
 
-In the past 3 years, Defi protocols like _Aave_ and _Uniswap_ have laid the groundwork for individuals and entities to trade and lend their digital assets using smart contracts that are secure, trustless and highly efficient.
+In the past 3 years, Defi protocols like _Aave_ and _Uniswap_ have laid the groundwork for individuals and entities to trade and [lend their digital assets](https://www.horizen.io/academy/crypto-lending/) using [smart contracts](https://www.horizen.io/academy/smart-contracts/) that are secure, trustless and highly efficient.
 
 We’ve also seen the advent of NFT marketplaces like _OpenSea_ enable seamless trading of non fungible digital assets primarily representing artwork.
 
-_While some see these innovation as little more than tools for speculation, there exists a massive amount of untapped potential for larger market players such as corporate entities, foundations and even government agencies to tokenize assets in the real world in order to plug them into these Defi protocols for the purpose of lending, licensing, trading and transferring ownership in a more efficient and secure manner._
+_While some see these innovation as little more than tools for speculation, there exists a massive amount of untapped potential for larger market players such as corporate entities, foundations and even government agencies to [tokenize](https://www.horizen.io/academy/what-is-a-token/) assets in the real world in order to plug them into these Defi protocols for the purpose of lending, licensing, trading and transferring ownership in a more efficient and secure manner._
 
-One of the key missing components in this next phase of adoption is privacy. Mainly, how do we enable highly regulated institutions to tokenize assets that may contain sensitive or proprietary information on a public blockchain without exposure to legal or commercial risks?
+One of the key missing components in this next phase of adoption is privacy. Mainly, how do we enable highly regulated institutions to [tokenize assets ](https://www.horizen.io/academy/why-create-a-token/)that may contain sensitive or proprietary information on a public blockchain without exposure to legal or commercial risks?
 
 Privacy preserving technologies like zk-SNARKs can solve this problem by creating a mechanism that enables the authenticity of an asset to be proven without revealing any compromising details about the asset.
 
@@ -81,7 +87,7 @@ The process of constructing a proof involves correctly solving a series of chall
 
 Think of this like the rules to a game in which the outcome is to be verified. The parameters are shared with the verifier so that they too can understand the rules and know that the prover played the game according to those rules.
 
-One way to think about the challenges posed by the hash function simulator is to compare it to the security questions that your bank asks you in order to verify your identity before opening a support case or authorizing a large transaction.
+One way to think about the challenges posed by the [hash function](https://www.horizen.io/academy/hash-functions/) simulator is to compare it to the security questions that your bank asks you in order to verify your identity before opening a support case or authorizing a large transaction.
 
 The more questions about your previous transaction history, old home addresses or phone numbers that you answer correctly, the more likely it is that you are in fact the rightful owner of the account.
 
@@ -115,7 +121,7 @@ ZKP-based ID verification methods could enable Defi platforms or other public bl
 
 _Using zk-SNARKs_, a user interacting with a DEX could prove certain facts about themselves, that they are over a certain age and have over a certain amount of money in their bank account, without revealing any details about their identity or even the source of the identifiable information.
 
-A large institutional trading firm or bank may not always want to reveal themselves as the trusted third parties for their clients (i.e provers) who are looking to conduct KYC verification on-chain, as it may lead to certain wallet addresses being targeted by hackers or frontrun by trading bots.
+A large institutional trading firm or bank may not always want to reveal themselves as the trusted third parties for their clients (i.e provers) who are looking to conduct KYC verification on-chain, as it may lead to certain [wallet addresses](https://www.horizen.io/academy/wallet-addresses/) being targeted by hackers or frontrun by trading bots.
 
 Trusted third parties could exist anonymously on the blockchain and provide the private information and parameters necessary for constructing a proof.
 
@@ -133,7 +139,7 @@ ZKPs would allow employers to prove that an employee's salary is lower or higher
 
 ### Marketing and Surveys
 
-Zero knowledge proofs could be used to allow customers to opt into online services and authenticate themselves without revealing who they are. This could open the doors to privacy enabled loyalty programs.
+Zero-knowledge proofs could be used to allow customers to opt into online services and authenticate themselves without revealing who they are. This could open the doors to privacy enabled loyalty programs.
 
 ZKPs can also enable anonymous surveys that allow research organizations to source people who fit a specific criteria but without needing to record their data.
 
@@ -145,9 +151,9 @@ ZKPs allow you to prove that a person or entity is qualified to vote for somethi
 
 What _zk-SNARKs do_ is compress the amount of data that a node needs to process in order to validate that transactions are correct before being confirmed into the next block.
 
-On _Horizen_, zk-SNARKs allow a prover, the sidechain, to prove that a transaction is valid to a verifier, the mainchain, without the mainchain nodes knowing the details of the transaction, for example, addresses or values transferred.
+On _Horizen_, zk-SNARKs allow a prover, the sidechain, to prove that a transaction is valid to a verifier, the mainchain, without the [mainchain nodes](https://www.horizen.io/academy/nodes/) knowing the details of the transaction, for example, addresses or values transferred.
 
-The sidechain does this by first validating transactions in its blockchain as normal, then, constructing a proof which is essentially a certificate that proves that the transactions within the sidechain have been correctly validated based on a standard process that is recognized by the mainchain.
+The [sidechain](https://www.horizen.io/academy/sidechains/) does this by first validating transactions in its blockchain as normal, then, constructing a proof which is essentially a certificate that proves that the transactions within the sidechain have been correctly validated based on a standard process that is recognized by the mainchain.
 
 This certificate is used to accurately represent the state of the sidechain or chains, for example account balances and total values in each sidechain, while containing far less data compared to the tens of thousands of transactions it represents altogether.
 
@@ -157,19 +163,19 @@ If the algorithm confirms that the certificate/proof is correct, the mainchain n
 
 _In other words_, instead of the mainchain nodes validating every single sidechain transaction, the mainchain can simply verify **proof of computation** for tens, to hundreds of thousands of sidechain transactions within a single block.
 
-Compared to the 1,500 transactions per block limit on Bitcoin or 200 transactions per block limit on Ethereum, it is clear that zk-SNARKs can _significantly_ scale the number of transactions processed by a blockchain without compromising security or decentralization - win win.
+Compared to the 1,500 transactions per block limit on [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) or 200 transactions per block limit on Ethereum, it is clear that zk-SNARKs can _significantly_ scale the number of transactions processed by a blockchain without compromising security or decentralization - win win.
 
 ## Different Approaches To Privacy-Enabled Scalability
 
 There are other blockchains that have caught on to the idea that ZKPs can be a tool for achieving scalability through privacy.
 
-These networks have adopted a popular version of zk-proofs called _ZK-Rollups_.
+These networks have adopted a popular version of [zk-proofs called _ZK-Rollups_](https://www.horizen.io/academy/zk-rollups/).
 
-**ZK-Rollups** are an innovation originally launched on Ethereum that enables L2 transactions to be transmitted and verified by the Ethereum network _without_ the Ethereum nodes knowing the details of each transaction.
+**ZK-Rollups** are an innovation originally launched on Ethereum that enables L2 transactions to be transmitted and verified by the [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) network _without_ the Ethereum nodes knowing the details of each transaction.
 
 It is designed to offer greater scalability to the Ethereum network by only requiring the Ethereum nodes to verify the proof of computation rather than the transaction data itself.
 
-While L2s like _Loopering_ leverage ZK-rollups to achieve scalability on the Ethereum network, layer 2 networks are limited in their ability to operate with the same flexibility as an independent, layer 1 blockchain.
+While L2s like _Loopering_ leverage ZK-rollups to achieve scalability on the Ethereum network, [layer 2 networks](https://www.horizen.io/academy/layer-2/) are limited in their ability to operate with the same flexibility as an independent, layer 1 blockchain.
 
 <table class="table">
     <tr>
@@ -222,8 +228,8 @@ While L2s like _Loopering_ leverage ZK-rollups to achieve scalability on the Eth
 
 Horizen is also able to implement ZK-Rollups to make sidechains operate like a layer 2 would on Ethereum. _However_, Horizen believes the current implementation provides developers with greater flexibility and security because of the ability to operate their own independent, consensus agnostic sidechains.
 
-## In Conclusion - Zero Knowledge Proofs
+## In Conclusion - Zero-Knowledge Proofs
 
-As a zero knowledge enabled network of blockchains, Horizon’s decentralized ecosystem is designed from the ground up to power the proliferation of all kinds of unique use cases for preserving private data while authenticating information. 
+As a zero-knowledge enabled network of blockchains, Horizon’s decentralized ecosystem is designed from the ground up to power the proliferation of all kinds of unique use cases for preserving private data while authenticating information. 
 
-We believe zero knowledge proofs are the next frontier for blockchain innovation, which is why Horizen is leading the charge in leveraging this technology to help push web3 further towards mainstream adoption.
+We believe zero-knowledge proofs are the next frontier for blockchain innovation, which is why Horizen is leading the charge in leveraging this technology to help push web3 further towards mainstream adoption.

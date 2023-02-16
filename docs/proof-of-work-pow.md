@@ -1,9 +1,11 @@
 ﻿---
 
-sidebar_label: Proof of Work - POW
+sidebar_position: 45
+sidebar_label: Proof of Work POW
 title: What is Proof of Work? - POW
 slug: /proof-of-work-pow/
 description: Proof of Work makes it infeasible to change records on the blockchain because an attacker would have to redo all the work that went into building the blocks.
+image: /img/proof-of-work-pow/proof-of-work-pow-meta.jpeg
 
 ---
 
@@ -26,7 +28,7 @@ While the [blockchain as a data structure](https://www.horizen.io/academy/blockc
 
 **Proof of Work** on the other hand, makes it infeasible to change any records, because an attacker would have to redo all the work that went into building the block(s).
 
-The consensus mechanism in most blockchains comprises two components - Proof of Work and the _longest chain rule_. 
+The [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) in most blockchains comprises two components - Proof of Work and the _longest chain rule_. 
 
 PoW mostly provides _Sybil resistance_ combined with an incentive system that makes honest behavior the most profitable strategy. The longest chain rule resolves disputes in case two valid blocks are found at the same time.
 
@@ -51,13 +53,15 @@ Proof of Work is straight forward:
 
 ### Step 1 - Collecting Transactions
 
-A miner starts creating a block by including the _coinbase transaction_ as the first transaction. The **coinbase transaction** is a special type of transaction that does not have any inputs, but has an output sending coins to an address controlled by the miner. 
+A miner starts creating a block by including the _coinbase transaction_ as the first transaction. The **coinbase transaction** is a special type of transaction that does not have any inputs, but has an output sending coins to an [address](https://www.horizen.io/academy/wallet-addresses/) controlled by the miner. 
 
 This output is worth the current _block subsidy_ (6.25 ZEN at the time of writing) together with the _transaction fees_ of all included transactions. The sum of the block subsidy and the transaction fees make up the **block reward**.
 
+![block reward](/img/crypto-mining/block-reward.jpg)
+
 By allowing miners to include the coinbase transaction, they are incentivized to perform the computationally expensive task of producing new blocks. 
 
-When a block is produced, new coins are created to pay the miner, which means the protocol can pay for its own maintenance. Each existing _ZEN_ or _BTC_ started out in a coinbase transaction.
+When a block is produced, new coins are created to pay the miner, which means the [protocol](https://www.horizen.io/academy/blockchain-protocols/) can pay for its own maintenance. Each existing _ZEN_ or _BTC_ started out in a coinbase transaction.
 
 Next, miners collect new and unconfirmed transactions in their block. A transaction is called unconfirmed when it is not included in the blockchain yet. 
 
@@ -69,11 +73,15 @@ Miners are incentivized to maximize their revenue, and as a result, will usually
 
 Now, a miner builds a _merkle tree_ of all transactions included in the block and includes the _merkle root_ in the block header. She adds all the other necessary data, such as the hash of the previous block, and some other metadata.
 
+![merkle tree](/img/proof-of-work-pow/merkle-tree.jpg)
+
 Once the candidate block is completed, the miner inserts some value in the _nonce_ data field. The **nonce** - _number used once_ - is a variable whose only purpose is to modify the block hash. 
 
 When a first nonce is inserted, the miner performs the first hash operation. She compares the resulting block hash with the current _target_ and if it is greater than the target, she increments the nonce and performs the same steps again.
 
 All miners do this simultaneously and are in a competition to find a nonce that produces a hash equal to or below the target.
+
+![hashcash proof of work](/img/crypto-mining/hashcash-proof-of-work.jpg)
 
 Once such a block, or better nonce, is found, the miner will broadcast the block to the network. Nodes and other miners will then check whether the block contains conflicting transactions and if the hash meets the current target. 
 
@@ -85,7 +93,7 @@ The terms _target_ and _difficulty_ are often used interchangeably. Technically,
 
 The **target** is a value that the block hash has to be equal to or below in order to be considered valid. 
 
-The **difficulty** is a relative measure of how difficult it is to find a hash below a given target. The highest possible target in Bitcoin is defined as:
+The **difficulty** is a relative measure of how difficult it is to find a hash below a given target. The highest possible target in [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) is defined as:
 
 0x00000000FFFF0000000000000000000000000000000000000000000000000000.
 
@@ -101,7 +109,7 @@ Proof of Work is the bridge connecting the digital and the physical world. It ti
 
 Prior to PoW, consensus was only achievable with a known set of participants or a reliable communications network. Making the consensus process public left the system vulnerable to _Sybil attacks_. With Proof of Work, creating many Sybil identities does not provide an attacker with an advantage unless he backs them with meaningful computational resources.
 
-While a Proof of Work system typically uses a one-way function like a hash function, a proof of work algorithm can be more than just a hash function.
+While a Proof of Work system typically uses a one-way function like a [hash function](https://www.horizen.io/academy/hash-functions/), a proof of work algorithm can be more than just a hash function.
 The most used type of Proof of Work is the _Hashcash_ style PoW depicted in the graphic above. 
 
 _Hashcash_ was introduced in 1997 by Adam Back as a measure against spam. Recipients would require the sender to perform a Proof of Work in order to accept the mail. While this computational overhead does not affect regular users sending a few mails per day, "professional" spam would be much harder to produce. 
@@ -119,7 +127,7 @@ Horizen uses both, each for a different purpose.
 
 Just like Bitcoin and most other blockchains, mining is done via a _solution-verification protocol_. Miners find a solution to a problem. All nodes can verify the solution at any point in time. 
 
-Even a node that has been offline for months can verify whether or not the blocks it receives during synchronization from an untrusted node are valid. It is non-interactive.
+Even a node that has been offline for months can verify whether or not the blocks it receives during synchronization from an [untrusted ](https://www.horizen.io/academy/nodes/) are valid. It is non-interactive.
 
 Nodes on the Horizen network are incentivized by getting a share of the block subsidy. Because we want to incentivize a robust network of capable nodes, the protocol has certain performance requirements for nodes. The requirements are checked by sending challenges to the nodes. 
 
@@ -136,7 +144,7 @@ Some criteria for a good Proof of Work system in a decentralized blockchain with
 		- For **54,063,013** this becomes a much more difficult task but verification can be done with any rudimentary calculator.
 - **Optimization Free** - An optimization free algorithm means that you _cannot_ improve the efficiency of performing that task through software or algorithms. 
 	- Battle proven one-way functions lend themselves well for optimization free algorithms. There is no way around a trial-and-error approach. The _Generalized Birthday Problem_ that we will explain in a bit is a well studied approach that cannot be optimized.
-- **Amortization free** - This means that a miners economies of scale cannot render all other mining pools irrelevant. 
+- **Amortization free** - This means that a [miners economies of scale](https://www.horizen.io/academy/economies-of-mining/) cannot render all other mining pools irrelevant. 
 	- In the best case scenario it wouldn't matter if a miner runs one miner or a million. This is obviously not entirely practical. _Cooling_, _electricity_, and _facilities_ to set up mining equipment will always enable large miners to operate at a better margin than smaller operations. The PoW algorithm itself should not allow this advantage though.
 - **Independently Tunable Parameters**: Certain parameters of the "puzzle" miners are attempting to solve should be easy to adapt. One of those parameters is the target or difficulty we discussed above. 
 	- By being able to tune this parameter depending on miner activity, the protocol can attempt to keep the block time constant.
@@ -168,13 +176,15 @@ Special hardware, so called Application Specific Integrated Circuits (ASICs), ca
 
 Because ASICs are domain specific and expensive, most users don't have access to them.
 
+![flexibility efficiency trade off](/img/crypto-mining/flexibility-efficiency-trade-off.jpg)
+
 #### Memory-bound Algorithms
 
 It was long thought that memory-bound puzzles were less prone to hardware optimizations. The _Equihash algorithm_ for instance was thought to be ASIC-resistant for a long time, but things turned out differently.
 
 > The memory-bound approach suffers from an obvious flaw: if you could find a way to store all that data in memory once, using a lot of expensive DRAM, but then share this data across a large group of inexpensive processors, you would effectively share the cost across a large number of processors and thus undermine the supposed difficulty of the problem. And this is exactly what has happened recently." - Jeffrey Emanuel
 
-The author is referring to the emergence of ASIC miners for the Equihash mining algorithm. Most PoW schemes are CPU-bound. Some algorithms previously referred to as ASIC resistant, are _memory-hard_, but rarely memory-bound. 
+The author is referring to the emergence of ASIC miners for the Equihash [mining algorithm]. Most PoW schemes are CPU-bound. Some algorithms previously referred to as ASIC resistant, are _memory-hard_, but rarely memory-bound. 
 
 This means they require a lot of memory to be performed, but once that amount of memory is available, speed improvements are realized through increasing the processor performance rather than adding more memory. 
 
@@ -198,7 +208,11 @@ There are two different metrics to rate the difficulty of a computational task:
 
 **Time complexity** refers to how many additional computations result from an increase in the input to a function. With infeasible time complexity, slight increases in input size will result in an exponential increase in time for the computation to finish.
 
+![time complexity](/img/proof-of-work-pow/time-complexity.jpg)
+
 **Space complexity** refers to how much additional memory is needed when the input to a function increases. With infeasible space complexity, the memory requirements quickly exceed all hardware limits.
+
+![space complexity](/img/proof-of-work-pow/space-complexity.jpg)
 
 An algorithm designed for a Proof of Work has to make tradeoffs between the two. When we talked about CPU-bound algorithms, we meant those with a high level of time complexity. On the other hand, memory-bound algorithms have a high level of space complexity.
 
@@ -212,6 +226,7 @@ Without a difficulty adjustment this would result in shorter block times. Loweri
 
 There are much more complex PoW algorithms though. One of the more widely used ones is **Equihash**, which is based on the _Generalized Birthday Problem_ and used by the Horizen blockchain.
 
+![birthday problem](/img/proof-of-work-pow/birthday-problem.jpg)
 
 The **birthday problem** describes an interesting property regarding a group of people and their birthdays. In a group of **367** people, the probability of two of those people sharing a birthday is **1**, because there is one more person than there are days in a leap year. 
 
@@ -219,11 +234,15 @@ However, with just **23** people in the group, the chance of two of them sharing
 
 ### The Generalized Birthday Problem
 
+![generalized birthday problem](/img/proof-of-work-pow/generalized-birthday-problem.jpg)
+
 The **generalized birthday problem** refers to the difficulty of calculating those probabilities in a more general context. 
 
 We define a time period of **d** days, and ask how many people **n** do we need to have a **50%** likelihood of a birthday coincidence.
 
 ### The Multi-Dimensional Generalized Birthday Problem
+
+![generalized birthday problem and more](/img/proof-of-work-pow/generalized-birthday-problem-and-more.jpg)
 
 Next, we can increase the number of dimensions for the problem.
 
@@ -273,7 +292,7 @@ PoW also has some vulnerabilities- no system is perfect. It is hard to achieve B
 
 Building a working system with more than one third of the network acting Byzantine took many years. However, combining Proof of Work and the _longest chain rule_ can tolerate malicious hash contributions of up to **49%**.
 
-If an attacker controls the majority of hash rate, he can reliably perform a **51% attack**. This means he can create blocks faster than the honest partition of the network. 
+If an attacker controls the majority of hash rate, he can reliably perform a [51% attack](https://www.horizen.io/academy/51-attacks/). This means he can create blocks faster than the honest partition of the network. 
 
 According to the longest chain rule, the honest and rational actors of the network will accept the malicious chain as valid, once it is broadcast. This allows the malicious actor to perform double spends.
 The attacker spends coins in a transaction that is included in the honest chain. He then rewrites this part of the transaction history with his own blocks, which don't include his spending transaction. 
@@ -292,7 +311,7 @@ $$
 DF(n) = \frac{n}{2} (n+1)
 $$
 
-For a **4** block delay, an additional **10** confirmations are required for the rest of the network to accept the fork. For a short delay of one block time, the delay function gives a penalty of one block - which is equivalent to the longest chain rule. In this case only one additional confirmation is needed to break the tie between two blocks of the same height.
+For a **4** block delay, an additional **10** confirmations are required for the rest of the network to accept the [fork](https://www.horizen.io/academy/blockchain-forks/). For a short delay of one block time, the delay function gives a penalty of one block - which is equivalent to the longest chain rule. In this case only one additional confirmation is needed to break the tie between two blocks of the same height.
 
 For long delays, say **20** blocks, the penalty would incur an additional **252** blocks of confirmation before the malicious chain were to be considered valid. Waiting for **20** confirmations would mean a reasonable confirmation time of **50** minutes. 
 
@@ -301,7 +320,7 @@ This makes _51% attacks_ and the resulting double spends much harder. In practic
 ### DDos Attacks
 
 Another potential threat is **(Distributed) Denial of Service or** _(D)DoS_ attacks, where a malicious actor tries to slow down or halt the network by sending a large number of messages in order to limit the network's capacity. In blockchain, the attacker would replace messages with transactions to flood the network. 
-While (D)DoS attacks can certainly harm the system, they can't affect the integrity of the ledger. It doesn't make much sense for a rational actor to spend resources on a DoS attack, since the attacker has to pay transaction fees as well, if the only effect is a temporary slow down of the network.
+While [(D)DoS attacks](https://www.horizen.io/academy/blockchain-attacks/) can certainly harm the system, they can't affect the integrity of the ledger. It doesn't make much sense for a rational actor to spend resources on a DoS attack, since the attacker has to pay transaction fees as well, if the only effect is a temporary slow down of the network.
 
 ### Sybil Attacks
 

@@ -1,17 +1,21 @@
 ﻿---
 
+sidebar_position: 1
 sidebar_label: 51% Attacks
 title: What is a 51% Attack?
 slug: /51-attacks/
 description: 51% attacks are seen as a greater threat for newer blockchain networks that are still small in size and are therefore vulnerable to being taken over.
+image: /img/51-attack/51-percent-attack-meta.jpg
 
 ---
 
 # What is a 51% Attack?
 
-A **51% attack** is an attempt by a bad actor to control over 50% of a _proof of work_ blockchains hash rate (computer power) or to acquire over 50% of staked tokens on a _proof of stake blockchain_.
+A **51% attack** is an attempt by a bad actor to control over 50% of a [_proof of work_ blockchains](https://www.horizen.io/academy/proof-of-work-pow/) hash rate (computer power) or to acquire over 50% of [staked tokens](https://www.horizen.io/academy/what-is-a-token/) on a [_proof of stake blockchain_](https://www.horizen.io/academy/pos-vs-pow/).
 
-Controlling 51% of a network allows an attacker to potentially reverse a transaction or commit a double spend, which would allow them to spend the same coins in their wallet multiple times.
+Controlling 51% of a network allows an attacker to potentially reverse a transaction or commit a double spend, which would allow them to spend the same coins in their [wallet](https://www.horizen.io/academy/crypto-wallets/) multiple times.
+
+![51 attack](/img/51-attack/51-attack.jpg)
 
 ![51 attack](/img/51-attack/51-attack.jpg)
 
@@ -19,13 +23,15 @@ Controlling 51% of a network allows an attacker to potentially reverse a transac
 
 ## 51% Attacks on Proof of Work Blockchains
 
-For [proof of work](https://www.horizen.io/academy/proof-of-work-pow/) chains, the _biggest_ factor that determines whether one can successfully pull off a 51% attack is their ability to amass enough mining rigs to produce more hashing power than 50% of the network.
+For [proof of work](https://www.horizen.io/academy/proof-of-work-pow/) chains, the _biggest_ factor that determines whether one can successfully pull off a 51% attack is their ability to amass enough [mining rigs](https://www.horizen.io/academy/mining-in-blockchain/) to produce more hashing power than 50% of the network.
 
-So, _could Bitcoin suffer a 51% attack?_
+![51 attack visual](/img/51-attack/51-attack-visual.jpeg)
+
+So, _could [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) suffer a 51% attack?_
 
 This is not only incredibly expensive, current estimates put the cost of a 51% on the Bitcoin blockchain at [$13.5 billion](https://learn.eqonex.com/news/what-51-attack-and-how-much-would-it-cost#:~:text=Therefore%2C%20the%20total%20cost%20is,1.66%25%20of%20the%20market%20cap.), this amount alone would not guarantee that a bad actor could successfully control the network.
 
-_For one thing_, accumulating enough mining rigs to attempt a 51% attack on the Bitcoin network would take a considerable amount of time and attract enough attention that the attack would likely be perceived well in advance.
+_For one thing_, accumulating enough [mining rigs] to attempt a 51% attack on the Bitcoin network would take a considerable amount of time and attract enough attention that the attack would likely be perceived well in advance.
 
 This means that miners could vote to fork the chain unto a new network with different consensus or hardware requirements before the attacker could amass the necessary hashrate to make their attempt.
 
@@ -47,11 +53,11 @@ Like the conspicuous accumulation of mining rigs in the PoW scenarios, the accum
 
 A 51% attack would certainly not be a good outcome for investors. However, this doesn't necessarily equate to a direct hack where the intention of the attacker is to steal funds.
 
-**For example**, one could imagine a powerful group or entity wanting to perform a 51% attack on a network in order to enforce protocol changes that was not considered popular by the majority of miners but had some support from a vocal minority.
+**For example**, one could imagine a powerful group or entity wanting to perform a 51% attack on a network in order to enforce [protocol changes](https://www.horizen.io/academy/blockchain-protocols/) that was not considered popular by the majority of miners but had some support from a vocal minority.
 
 While such situations would normally result in a _[fork](https://www.horizen.io/academy/blockchain-forks/)_, it’s not out of the realm of possibility that the minority would choose to force control of the existing network instead of spinning off a new network and losing the benefits of accrued network effects.
 
-This would be more in line with a _hostile takeover,_ in which case the network's cryptocurrency (much like the stock of a company experiencing a hostile takeover) would likely become very volatile due to the uncertainty of the network's future.
+This would be more in line with a _hostile takeover,_ in which case the network's [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) (much like the stock of a company experiencing a hostile takeover) would likely become very volatile due to the uncertainty of the network's future.
 
 A 51% attack, successful or not, does not mean that the attacker can gain access to the funds in your wallet. This would require an attacker gaining access to your seed phrase/private keys, which is not something that they can get from holding a majority of the blockchains hash power.
 
@@ -63,13 +69,13 @@ _To further emphasize this point,_ the Bitcoin blockchain produces a new block e
 
 In the event that the attack was successful, the outcome might be a forking of the chain by miners who do not wish to stay on the network that has just been attacked.
 
-Hard forks that result in a new blockchain being created typically means that the users on the previous chain will receive an airdrop of the new chain's native cryptocurrency, similar to what happened when Bitcoin Cash forked from Bitcoin.
+Hard forks that result in a new blockchain being created typically means that the users on the previous chain will receive an airdrop of the new chain's native [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/), similar to what happened when Bitcoin Cash forked from Bitcoin.
 
 As an investor, this could turn out to be a positive outcome if there is enough conviction by the communities of both chains to continue developing their respective networks and creating value for the broader ecosystem.
 
 ## How Does Horizen Prevent 51% Attacks?
 
-Horizen has designed a more secure version of the proof-of-work consensus mechanism, leveraging what we call a ‘[penalty system for delayed block submission](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against 51% attacks.
+Horizen has designed a more secure version of the proof-of-work [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/), leveraging what we call a ‘[penalty system for delayed block submission](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against 51% attacks.
 
 Under the original _Nakamoto Consensus_ algorithm, it is possible to privately mine new blocks in a parallel forked chain at a faster rate than the public chain and for an indefinite period of time.
 
@@ -81,4 +87,4 @@ This penalty comes in the form of a ‘block acceptance delay’ in relation to 
 
 This modification _significantly_ increases the costs required to perform this kind of 51% attack.
 
-**Ultimately**, creating a more secure version of PoW allows the Horizen mainchain to serve as a much more definite certifier of truth when it comes to the validity of transactions on the mainchain as well as the state of all sidechains in the Horizon ecosystem.
+**Ultimately**, creating a more secure version of PoW allows the Horizen mainchain to serve as a much more definite certifier of truth when it comes to the validity of transactions on the mainchain as well as the state of all [sidechains](https://www.horizen.io/academy/sidechains/) in the Horizon ecosystem.

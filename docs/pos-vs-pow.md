@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 43
 sidebar_label: POS vs POW
 title: Proof of Stake vs Proof of Work
 slug: /pos-vs-pow/
 description: In this article, we define and compare two of the most popular consensus mechanisms in blockchain - Proof of Work and Proof of Stake.
+image: /img/pos-vs-pow/proof-of-stake-vs-proof-of-work-meta.jpeg
 
 ---
 
@@ -21,7 +23,7 @@ The **consensus mechanism** of a blockchain allows the network to agree on a sin
 
 When a network participant creates a transaction, the transaction is broadcast to the entire network. Each node records the transaction and adds it to their version of the ledger.
 
-The different versions kept by different nodes look slightly different. 
+The different versions kept by [different nodes](https://www.horizen.io/academy/nodes/) look slightly different. 
 
 If you are in the *US* and broadcast a transaction, the nodes that are closest to you will receive it earlier than a node based in *Asia*. 
 
@@ -33,7 +35,9 @@ Eventually, all network participants need to agree on a given order and this is 
 
 The generalization _Demiro Massessi_ has formulated applies to both:
 
-> “*The main difference between consensus mechanisms is the way in which they delegate and reward the verification of transactions. (…) In one way or another, blockchain consensus algorithms boil down to some kind of vote where the number of votes that a user has is tied to the amount of a limited resource that is under the user’s control.*” - *Demiro Massessi*
+> “*The main difference between [consensus mechanisms](https://www.horizen.io/academy/consensus-mechanisms/) is the way in which they delegate and reward the verification of transactions. (…) In one way or another, blockchain consensus algorithms boil down to some kind of vote where the number of votes that a user has is tied to the amount of a limited resource that is under the user’s control.*” - *Demiro Massessi*
+
+![consensus in blockchain](/img/pos-vs-pow/consensus-in-blockchain.jpg)
 
 ![consensus in blockchain](/img/pos-vs-pow/consensus-in-blockchain.jpg)
 
@@ -72,7 +76,7 @@ You cannot calculate a solution, you need to find it through a trial-and-error a
 
 All nodes and miners verify the validity of a new block as soon as it is discovered and broadcast. If it is valid, they add it to their local copy of the blockchain and delete all transactions that are now already recorded on the blockchain from their mempool.
 
-The *mempool* only ever contains valid but unconfirmed transactions. Then they start working on the next block and the process is repeated. This is how the network agrees on a single version of the history of all transactions in a Proof of Work blockchain.
+The *mempool* only ever contains valid but unconfirmed transactions. Then they start working on the next block and the process is repeated. This is how the network agrees on a single version of the history of all transactions in a [Proof of Work blockchain](https://www.horizen.io/academy/proof-of-work-pow/).
 
 ### The Longest Chain Rule
 
@@ -88,17 +92,17 @@ The block that is built on top of will become accepted as the single truth by al
 
 The other block is disregarded and called an *orphan block*. This procedure of breaking a tie between two concurring blocks is called the ***Longest Chain Rule*** or *Nakamoto Consensus*.
 
-If **80%** of miners receive block * first and the other **20%** block B, then the chances of block A getting extended are **80%**, assuming all miners have the same computational power. In a way, the miners vote with their computational power on one version of the history. 
+If **80%** of miners receive block first and the other **20%** block B, then the chances of block A getting extended are **80%**, assuming all miners have the same computational power. In a way, the miners vote with their computational power on one version of the history. 
 
 This aligns perfectly with our quote from the beginning of the article.
 
 ![longest chain rule](/img/consensus-mechanisms/longest-chain-rule.jpg)
 
-Proof of Work is one of the most secure consensus mechanisms but it is only secure if there is a sufficient amount of hash rate on the network. The Bitcoin protocol has proven how secure Proof of Work consensus can be for *over 10 years*.
+Proof of Work is one of the most secure consensus mechanisms but it is only secure if there is a sufficient amount of hash rate on the network. The [Bitcoin protocol](https://www.horizen.io/academy/blockchain-protocols/) has proven how secure Proof of Work consensus can be for *over 10 years*.
 
 **Game theory** is the study of mathematical models of strategic interactions between decision-makers. 
 
-Miners are rational decision-makers in a PoW blockchain. The incentives to act according to the rules of the mining protocol are embedded in the protocol itself, and outweigh the potential gains of behaving maliciously. 
+Miners are rational decision-makers in a PoW blockchain. The incentives to act according to the rules of the [mining protocol] are embedded in the protocol itself, and outweigh the potential gains of behaving maliciously. 
 
 This is what makes a mature PoW blockchain so robust.
 
@@ -125,11 +129,13 @@ In most Proof of Stake blockchains, there is no block reward. The validator’s 
 
 Skeptics question the overall security of the Proof of Stake consensus model because it doesn’t consume real-world resources to be a validator. 
 
-There is no cost associated with building a new block on top of both branches when there is a temporary fork. This is referred to as the **Nothing at Stake** attack.
+There is no cost associated with building a new block on top of both branches when there is a temporary [fork](https://www.horizen.io/academy/blockchain-forks/). This is referred to as the **Nothing at Stake** attack.
 
 In PoW, there is a real-world cost, electricity, to every block that gets mined. 
 
-It remains to be seen if PoS blockchains can provide the same security guarantees over an extended period of time that Bitcoin with its PoW blockchain has shown for over a decade now.
+It remains to be seen if PoS blockchains can provide the same security guarantees over an extended period of time that [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) with its PoW blockchain has shown for over a decade now.
+
+![proof of work vs proof of stake](/img/pos-vs-pow/proof-of-work-vs-proof-of-stake.jpg)
 
 ![proof of work vs proof of stake](/img/pos-vs-pow/proof-of-work-vs-proof-of-stake.jpg)
 

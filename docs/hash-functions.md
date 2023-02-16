@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 27
 sidebar_label: Hash Functions
 title: What are Hash Functions?
 slug: /hash-functions/
 description: In this article, you learn why hash functions are an important part in every blockchain because they are used to verify the integrity of data.
+image: /img/hash-functions/hash-functions-meta.jpeg
 
 ---
 
@@ -83,7 +85,7 @@ It would take all the supercomputers on earth combined thousands of years to cre
 
 The only way to find one is through a **brute-force approach**, where you try different inputs until you get a collision by chance. This works because the _output space_ of a 256 hash function is incredibly huge.
 
-Cryptographic hash functions are _pseudo-random. **Pseudo-rando** means one cannot predict the change in the output from a change of the input. 
+Cryptographic hash functions are pseudo-random. **Pseudo-rando** means one cannot predict the change in the output from a change of the input. 
 
 Furthermore, a good hash function should map inputs as evenly as possible over its output range.
 
@@ -142,7 +144,7 @@ Larger inputs are split and the compression function is applied to the fragments
 
 In cryptocurrencies **SHA-256** (_Secure Hash Algorithm 256_) and **RIPEMD 160** (_RACE Integrity Primitives Evaluation Message Digest 160_), the **BLAKE** family and **Keccak**, which is the basis for the _SHA-3_ family, are the most common hash functions.
 
-In Bitcoin and related protocols, such as Horizen, [addresses are obtained](https://www.horizen.io/academy/payment-channels/) through performing a combination of _SHA-256_ and _RIPEMD 160_ protocols on a given public key. One can only speculate why Satoshi made that choice, but most likely they did so to mitigate the risk of one function becoming vulnerable (e.g. one-wayness is broken).
+In [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) and related protocols, such as Horizen, [addresses are obtained](https://www.horizen.io/academy/payment-channels/) through performing a combination of _SHA-256_ and _RIPEMD 160_ protocols on a given public key. One can only speculate why [Satoshi](https://www.horizen.io/academy/satoshi-nakamoto/) made that choice, but most likely they did so to mitigate the risk of one function becoming vulnerable (e.g. one-wayness is broken).
 
 ## Where are Hash Functions Used?
 
@@ -167,7 +169,7 @@ Another use case for hash functions is creating short, data saving identifiers f
 
 **Block hashes** or _transaction hashes_, usually called **Transaction IDs** or _TXIDs_, can be exchanged for actual blocks or transactions. 
 
-For example, when a node is requesting updates from its peers, by only transmitting the TXID first, one saves bandwidth, but only if the requesting node does not have the block in its blockchain already.If the requesting node does have the block in its blockchain, the actual data of that block will be transferred.
+For example, when a node is requesting updates from its peers, by only transmitting the TXID first, one saves bandwidth, but only if the requesting node does not have the block in its blockchain already. If the requesting node does have the block in its blockchain, the actual data of that block will be transferred.
 
 ### Merkle Trees
 
@@ -191,7 +193,7 @@ Only the rightful owner can choose to reveal the preimage and have another party
 
 ## Hardware for Large-Scale Hashing
 
-An entire industry has formed around performing hash functions as efficiently as possible - **the mining industry**. 
+An entire industry has formed around performing hash functions as efficiently as possible - [**the mining industry**](https://www.horizen.io/academy/mining-in-blockchain/). 
 
 Not only did the operations _actually_ mining increase in size, so did their hardware suppliers. 
 
@@ -211,7 +213,7 @@ _Processors display trade-offs between versatility and efficiency:_
 
 Hash functions have been battle-tested for many years by now. During those years, certain _attack vectors_ have been discovered, but they can be mitigated quite easily. We want to give a glimpse into those attack vectors and their mitigation strategies.
 
-**Note** that these attacks do not affect the security of blockchains, but only the hash functions in isolation and some outdated applications of them.
+**Note** that these [attacks]](https://www.horizen.io/academy/blockchain-attacks/) do not affect the security of blockchains, but only the hash functions in isolation and some outdated applications of them.
 
 ### Length Extension Attack
 

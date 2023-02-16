@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 51
 sidebar_label: Smart Contracts
 title: What are Smart Contracts?
 slug: /smart-contracts/
 description: Smart contracts can not only be used to govern the transfer of digital assets such as cryptocurrencies, they could govern many other types of value transfer.
+image: /img/smart-contracts/smart-contracts-meta.jpeg
 
 ---
 
@@ -23,13 +25,13 @@ Smart contracts are most often discussed in the context of decentralized applica
 
 You can find an extensive overview of what is on the market today on [State of the dApps](https://www.stateofthedapps.com/).
 
-Most crypto tokens are issued on the Ethereum blockchain using the [_Ethereum Request for Comment_ (ERC-20) standard](https://eips.ethereum.org/EIPS/eip-20). 
+Most crypto tokens are issued on the [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) blockchain using the [_Ethereum Request for Comment_ (ERC-20) standard](https://eips.ethereum.org/EIPS/eip-20). 
 
-A **token** is issued within a smart contract that defines the total supply and the conditions for token transfers, among other things. 
+A [**token**](https://www.horizen.io/academy/what-is-a-token/) is issued within a smart contract that defines the total supply and the conditions for token transfers, among other things. 
 
-The **ERC-20 token standard** is a smart contract template that allows for easy issuance and integration with different wallets and exchanges.
+The **ERC-20 token standard** is a smart contract template that allows for easy issuance and integration with [different wallets](https://www.horizen.io/academy/crypto-wallets/) and exchanges.
 
-Other use cases of smart contracts that are oftentimes omitted, are [payment and state channels](https://www.horizen.io/academy/payment-channels/), as well as [HTLCs](https://en.bitcoin.it/wiki/Hash_Time_Locked_Contracts) - _Hashed Timelock Contracts_ - which enables atomic swaps. 
+Other use cases of smart contracts that are oftentimes omitted, are [payment and state channels](https://www.horizen.io/academy/payment-channels/), as well as [HTLCs](https://en.bitcoin.it/wiki/Hash_Time_Locked_Contracts) - _Hashed Timelock Contracts_ - which enables [atomic swaps](https://www.horizen.io/academy/atomic-swaps/). 
 
 In most general terms, they allow for interaction happening off-chain to be just as trustless, as if they were to happen on-chain. The most popular payment channel network is arguably the [Lightning Network](https://lightning.network/) on Bitcoin.
 
@@ -40,6 +42,8 @@ The term **smart contract** can have two meanings:
 There is a similar distinction between programs and processes in operating systems.
 
 > "_One can think of a smart contract instance as a trusted third party to which users can send coins, and that can distribute coins between the parties, according to conditions written in its static code._" - _Dziembowski, Faust, Hostáková_, [_State Channel Paper_](https://eprint.iacr.org/2018/320.pdf)
+
+![smart contract](/img/smart-contracts/smart-contract.jpg) 
 
 ## Smart Contract Use Cases
 
@@ -126,6 +130,8 @@ Most traditional applications and websites use **API’s** - _application progra
 
 Imagine a future with smart contract libraries that hold a large number of template contracts that can be used for various purposes. We are already seeing such developments with smart contract platforms like _Ethereum_.
 
+![web vs dapp](/img/smart-contracts/web-vs-dapp.jpg)
+
 The smart contracts can be used to detect incoming payments from users, issue payments to its users, to serve as an escrow, or to trigger an action based on some form of submitted data. We are still in the early stages of decentralized applications. There have been and will be many growing pains such as bugs that cause loss of funds and inefficient usage of on-chain transactions.
 
 While well developed and audited smart contract libraries will make the development of smart contracts easier and more secure, scaling methods like state channels will allow the communication of smart contracts off-chain. 
@@ -140,7 +146,7 @@ Other platforms include _Lisk, NEM_ and _Hyperledger_, a modified version of Eth
 
 Few people know that Bitcoin-based blockchains also allow for the deployment of smart contracts. 
 
-Bitcoin has a built-in scripting language called **Script**. It is a rudimentary language compared to Solidity, which is used to write smart contracts on Ethereum. 
+[Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) has a built-in scripting language called **Script**. It is a rudimentary language compared to Solidity, which is used to write smart contracts on Ethereum. 
 
 Solidity is a **Turing-complete** programming language that enables more complex contracts compared to Bitcoins Script. The cost of being more complex comes at being harder to write, analyze and secure. Security in the context of smart contracts means considering every possible way in which a contract could execute and to account for each of these scenarios. 
 
@@ -178,7 +184,7 @@ The **account model** is used by most smart contract platforms because it makes 
 
 Each has its own balance, storage, and code-space for calling other accounts or addresses.
 
-On top of the protocol-layer efficiency gain achieved by the account model, _layer 2_ technologies like state channels are a promising approach to make smart contract platforms scale.
+On top of the protocol-layer efficiency gain achieved by the account model, [_layer 2_ technologies](https://www.horizen.io/academy/layer-2/) like state channels are a promising approach to make smart contract platforms scale.
 
 They are one of several techniques for moving state modifications off-chain, relocating the required operations to a secondary environment where they can be performed at a lower cost. Only the opening and closing of a state channel between two parties requires an on-chain transaction. 
 
@@ -193,7 +199,9 @@ A **sidechain** is a blockchain in itself with the ability to communicate with t
 
 A dApp can be launched on a _sidechain_, possibly even running a different [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) than the _mainchain_. 
 
-Depending on the specific construction, incentives might have to be provided in order for nodes to run sidechains, in a PoS sidechain model, or for miners to perform merged mining in a PoW sidechain model.
+Depending on the specific construction, incentives might have to be provided in order for [nodes](https://www.horizen.io/academy/nodes/) to run sidechains, in a [PoS sidechain model](https://www.horizen.io/academy/pos-vs-pow/), or for miners to perform merged mining in a PoW sidechain model.
+
+![blockchain scaling challenges](/img/smart-contracts/blockchain-scaling-challenges.jpg)
 
 There are many approaches to enable scalable smart contract platforms, oftentimes also combining different methods. But besides creating systems with sufficient throughput to enable large scale adoption of smart contracts and dApps, there is another problem to solve: the _oracle problem_.
 
@@ -213,9 +221,11 @@ _The other major challenge to overcome is called **the oracle problem**:_
 - An **oracle** is an entity submitting data to a smart contract.
 -  The **trust problem** that comes with this role is referred to as the oracle problem.
 
-Imagine a smart contract running a betting platform in a supposedly trustless environment. The oracle needs to submit the result of a game in order to have the smart contract distribute funds to the winners. 
+Imagine a smart contract running a betting platform in a supposedly trustless environment. The [oracle](https://www.horizen.io/academy/blockchain-oracles/) needs to submit the result of a game in order to have the smart contract distribute funds to the winners. 
 
 Because the oracle determines what a smart contract sees, it also controls what it does.
+
+![oracle smart contract](/img/smart-contracts/oracle-smart-contract.jpg)
 
 _Centralized oracles_ are not considered a solution to the oracle problem. No matter what the actual implementation looks like, the incentives to untruthfully submit data might outweigh the benefits of acting honestly in some cases. 
 
@@ -227,11 +237,13 @@ No matter if centralized or decentralized, an oracle will always come at a cost.
 
 ### Prediction Markets
 
-A decentralized approach to solving the oracle problem is using *prediction markets*. A prediction market generally works by first creating a market for a specific event. 
+A decentralized approach to solving the oracle problem is using *prediction markets*. A [prediction market](https://www.horizen.io/academy/decentralized-prediction-markets/) generally works by first creating a market for a specific event. 
 
 **Let’s assume an event with a binary outcome:** Does team **X** or team **Y** win the Super Bowl. 
 
 A participant buys in for **$1** and gets **two futures contracts**, _one for each outcome_. The futures contract whose outcome materialized pays **$1**, the other one **$0**.
+
+![prediction market](/img/smart-contracts/prediction-market.jpg)
 
 With an equally likely outcome, a participant wouldn’t know which contract to keep and which to sell. Both should trade at around **$0.50**.
 
@@ -243,7 +255,7 @@ Projects such as [Augur](https://www.augur.net/) and [Gnosis](https://gnosis.io/
 
 And since prediction markets have the potential to influence the outcome of an event, it remains to be seen if they can become a solution.Before solving the problem of creating legally binding smart contracts, and the oracle problem, the use of smart contracts will be limited. 
 
-The creation of tokens is definitely a use case, independent of the aforementioned current shortcomings. Another example of a potential use case would be in-game payments triggered by certain achievements that are objectively verifiable by code.
+The [creation of tokens](https://www.horizen.io/academy/why-create-a-token/) is definitely a use case, independent of the aforementioned current shortcomings. Another example of a potential use case would be in-game payments triggered by certain achievements that are objectively verifiable by code.
 
 ## Summary - Smart Contracts
 
@@ -251,7 +263,7 @@ Before we can see widespread adoption of smart contracts we have to overcome som
 
 Smart Contracts can ensure objective execution on the basis of mutually agreed-upon terms enforced by code. They have the potential to reduce middlemen and thereby reduce cost and save time. They will most likely foster a closer connection between software developers and the judicial system.
 
-The creation of tokens and the deployment of state and payment channel networks are the most common use cases for smart contracts. Before we can see widespread adoption, we have to overcome some hurdles. 
+The creation of tokens and the deployment of state and [payment channel networks](https://www.horizen.io/academy/payment-channels/) are the most common use cases for smart contracts. Before we can see widespread adoption, we have to overcome some hurdles. 
 
 Scaling issues have to be addressed because smart contracts running entirely on-chain put a lot of stress on their underlying blockchain. Second layer technologies such as state channels or parallelization approaches like sidechains could solve this.
 
