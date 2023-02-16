@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 55
 sidebar_label: UTXO vs Account Model
 title: The UTXO vs Account Model
 slug: /utxo-vs-account-model/
 description: Most blockchains use the UTXO model for accounting. The second method to track user balances, as applied in Ethereum, is the account model.
+image: /img/utxo-vs-account-model/utxo-vs-account-model-meta.jpeg
 
 ---
 
@@ -17,7 +19,7 @@ Most blockchains use the **UTXO model** for accounting.
 
 A **UTXO**, or _Unspent Transaction Output_, represents the amount of digital currency remaining after a transaction has been executed. 
 
-The second method to track user balances, as applied in Ethereum, is the **account model**. 
+The second method to track user balances, as applied in [Ethereum](https://www.horizen.io/academy/ethereum-glossary/), is the **account model**. 
 
 ### The Blockchain as a State Machine
 
@@ -40,11 +42,13 @@ The first significant difference between the two balance models is how the state
 
 In the **UTXO model**, the movement of assets is recorded as a _directed acyclic graph_ (DAG) between addresses, whereas the **account model** maintains a database of network states.
 
+![utxo dag account network states](/img/utxo-vs-account-model/utxo-dag-account-network-states.jpg)
+
 A **graph** is defined as a set of _nodes_ or _vertices_ connected by _edges_. 
 
 In a **directed graph**, each edge has a direction, usually indicated through arrows. 
 
-**Directed acyclic graphs** don’t allow circular relationships between nodes. The graphic above shows a directed acyclic graph of the UTXO model on the left. 
+**Directed acyclic graphs** don’t allow circular relationships [between node](https://www.horizen.io/academy/nodes/). The graphic above shows a directed acyclic graph of the UTXO model on the left. 
 
 Each _state_ represents a block in the blockchain. Each _transaction output_ comprises a _node_ in the [DAG](https://www.horizen.io/academy/directed-acyclic-graph-dag/), and each _transaction_ is represented by one or more _edges_ originating from a transaction output. 
 
@@ -66,7 +70,7 @@ In the UTXO model, account balances are calculated on the client-side by adding 
 
 ## The UTXO Model
 
-The _UTXO Model_ does not incorporate accounts or wallets at the protocol level. The model is based entirely on _individual transactions_, grouped in blocks. 
+The _UTXO Model_ does not incorporate accounts or [wallets](https://www.horizen.io/academy/crypto-wallets/) at the protocol level. The model is based entirely on _individual transactions_, grouped in blocks. 
 
 We can compare this to people holding certain amounts of cash.
 
@@ -89,6 +93,8 @@ The other difference is that cash exists in defined, _discrete_ denominations. T
 
 Transaction outputs in the UTXO model can have arbitrary values, for example, **11.79327** ZEN.
 
+![wallet balance utxo](/img/utxo-vs-account-model/wallet-balance-utxo.jpg)
+
 Since there is no concept of accounts or wallets on the _protocol level_, the "burden" of maintaining a user's balance is shifted to the _client-side_. Wallets maintain a record of all addresses controlled by a user and monitor the blockchain for all associated transactions. 
 
 The sum of all unspent transaction outputs it can control determines the current balance.
@@ -104,6 +110,8 @@ The _shorter_ the period for nodes to update the state, the higher the chance of
 ### UTXO State Transition Example
 
 In the example below, we look at a UTXO state transition with only a single hypothetical transaction for simplicity.
+
+![state transition utxo](/img/utxo-vs-account-model/state-transition-utxo.jpg)
 
 Assume **Alice** wants to transfer **8** ZEN to **Bob**, and she controls a single UTXO worth **ten** ZEN. The transaction she creates consumes her previously unspent transaction output **\\(UTXO_1\\)** as an input. 
 
@@ -136,21 +144,25 @@ The blockchain _does not_ create an “account” for you to maintain a balance.
 
 Your wallet does this automatically whenever you open it. What happens in the background is that your wallet scans the ledger for all transactions to your address(es) and adds them up.
 
+![wallet balance utxo](/img/utxo-vs-account-model/wallet-balance-utxo.jpg)
+
 Each transaction on the blockchain has one or more inputs and one or more outputs. 
 
 **Let’s have a look at an actual example throughout a series of four transactions:**
 
-Usually, a _block explorer_ will show you the most recent transactions first. 
+Usually, a [block explorer](https://www.horizen.io/academy/blockchain-explorers/) will show you the most recent transactions first. 
 
 For this example, we will go through the transactions as they happened - in chronological order. This simple example only involves two different addresses. 
 
 We shortened the addresses for better readability. 
 
-The address we are concerned with here is the gray one: **znRwe…** 
+The [address](https://www.horizen.io/academy/wallet-addresses/) we are concerned with here is the gray one: **znRwe…** 
 
 Let’s say this is **Bob** and the other one in blue, is **Alice**.
 
 #### Bob Receives His First Transaction
+
+![utxo transaction 1](/img/utxo-vs-account-model/utxo-transaction-1.jpeg)
 
 In the first [transaction, or **TX**,](https://explorer.zensystem.io/tx/bbbd1fb01998eec8c3ca99236f9b6a2c92e12533ab3e15b7544dcd3228988c34) above, Bob’s address **znRwe...** is funded when he receives **10.2** ZEN. 
 
@@ -164,11 +176,15 @@ Alice didn’t have a UTXO that was exactly **10.2** ZEN so she used one that wa
 
 #### Bob Sends His First Transaction
 
+![utxo transaction 2](/img/utxo-vs-account-model/utxo-transaction-2.jpeg)
+
 In the [second transaction](https://explorer.zensystem.io/tx/62be1b18d6048194fc45209dc727fa932ab4a426072372f6d8cf537fe1f221ee), Bob spends his UTXO of **10.2** ZEN and creates a transaction with two new UTXOs: one of **5** ZEN to a different address and one of **5.1999** ZEN back to his own address - the _change output_. 
 
 The difference between inputs and outputs - **0.0001** ZEN - is consumed as the _transaction fee_. He now owns **5.1999** ZEN on his **znRwe…** address.
 
 #### Another UTXO
+
+![utxo transaction 3](/img/utxo-vs-account-model/utxo-transaction-3.jpeg)
 
 In a [third transaction](https://explorer.zensystem.io/tx/315a5e96d92cb19e7529a78e05bcfc3ffb3b5f1fdeaf2b22c582663464219c27), Bob receives another **2** ZEN, increasing his balance to **7.1999** ZEN. 
 
@@ -177,6 +193,8 @@ He now has two UTXO's at his disposal for further transactions: one of **5.1999*
 If he were to open his wallet at that point, it would show him a balance of **7.1999** ZEN by looking at all transactions on the blockchain, filtering out the ones that involve his address and then adding up all unspent outputs.
 
 #### Spending Two UTXOs at Once
+
+![utxo transaction 4](/img/utxo-vs-account-model/utxo-transaction-4.jpeg)
 
 In the [last transaction](https://explorer.zensystem.io/tx/14f8bc13c9d125558830e4c1cdc5c8bea6d01d224ced153c234471f107d63aa1) of this example, Bob wants to spend **6** ZEN. Neither of the two UTXO's he has at that point is sufficient for that purpose. 
 
@@ -227,6 +245,8 @@ In a straightforward model, a transaction presents an event that triggers a stat
 
 Transactions are also batched into blocks in the account model, and with each new block, the system transitions to a new state. Just like we did before, we consider a simple example where a single transaction transitions the system to a new state below.
 
+![state transitions account model](/img/utxo-vs-account-model/state-transitions-account-model.jpg)
+
 The setting is the same as before: **Alice** wants to transfer **8** ZEN to **Bob**. 
 
 Her wallet will create a transaction that defines the spending account, the receiving account, and the amount to transfer. This transaction is then signed with Alice's private key. In this case, she is spending from her address, the receiver is Bob, and the amount to transfer is **8** ZEN.
@@ -237,7 +257,7 @@ The PubKey and Signature Script do not exist in account-based blockchains.The ve
 
 These three values comprise the _signature_. **Solidity**, the programming language used in Ethereum, provides a method, [ecrecover](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethsign), that returns an address given these parameters. If the returned address matches the sender's address, the signature, and in return, the transaction is valid.
 
-Where in the UTXO model part of the verification process is checking if a transaction output in _unspent_, nodes in the account model check if the sender's balance is larger than or equal to the transferred amount. This is true for the native asset of the chain, for example Ether, as well as all other tokens on the network.
+Where in the UTXO model part of the verification process is checking if a transaction output in _unspent_, nodes in the account model check if the sender's balance is larger than or equal to the transferred amount. This is true for the native asset of the chain, for example Ether, as well as all other [tokens](https://www.horizen.io/academy/what-is-a-token/) on the network.
 
 A transaction in the account-based model is an instruction for how to transition two or more accounts to the next state. The actual transition is executed by the nodes. Because the final state is not specified in the transaction, the resulting transaction size is a lot smaller than in the UTXO model.
 
@@ -260,6 +280,8 @@ This method comes with specific implications regarding second layer scalability 
 There are several approaches we can use to compare the scalability of the UTXO and the account model. 
 - One way is to focus on the overall storage requirements of each system. 
 - Another way is to consider which model is better suited for the deployment of second-layer technologies on top of the main blockchain.
+
+![scalability utxo account](/img/utxo-vs-account-model/scalability-utxo-account.jpg)
 
 One second layer technology, [state and payment channels](https://www.horizen.io/academy/payment-channels/), moves the exchange of data from the blockchain to a dedicated trustless network of bidirectional communication channels.
 
@@ -295,7 +317,7 @@ Partitioning a blockchain into shards or sidechains is also easier while using t
 
 In the account model, every node has to localize the sender's and receiver's account across different shards and edit both. Of course, there is more to sharding than these rather straightforward modifications, and using one balance model over the other comes with second and third-order effects. 
 
-Generally, the UTXO model allows data structure partitioning more simply.
+Generally, the UTXO model allows [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) partitioning more simply.
 
 ### Privacy
 

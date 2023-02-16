@@ -1,15 +1,17 @@
 ﻿---
 
+sidebar_position: 35
 sidebar_label: Mnemonic Phrases
 title: What are Mnemonic Phrases?
 slug: /mnemonic-phrases/
 description: A Mnemonic Phrase is a backup of your private key that is used by most wallets, it is a list of random words given to you when creating a wallet.
+image: /img/mnemonic-phrases/mnemonic-phrases-meta.jpeg
 
 ---
 
 # What are Mnemonic Phrases?
 
-The basis for generating keys and addresses is _randomness_. Ownership on the blockchain is highly secure, as long as the private key cannot be reproduced by an adversary. 
+The basis for [generating keys and addresses](https://www.horizen.io/academy/wallet-addresses/) is _randomness_. Ownership on the blockchain is highly secure, as long as the private key cannot be reproduced by an adversary. 
 
 The private key is the basis of the public key and address(es). As such, it requires a _high level_ of security, and needs to be generated from a high level of _entropy_.
 
@@ -29,7 +31,7 @@ _DRBGs_ should be standardized and validated. One example for a vetted algorithm
 
 ## What is a Mnemonic Phrase?
 
-Your **mnemonic phrase** is a _backup_ of your private key that is used by most wallets, it is a list of _random_ words given to you when creating a wallet. 
+Your **mnemonic phrase** is a _backup_ of your private key that is used by most wallets, it is a list of _random_ words given to you when [creating a wallet](https://www.horizen.io/academy/crypto-wallets/). 
 
 If you break or lose a device with a wallet - no matter if mobile, desktop or hardware wallet - your mnemonic phrase is usually your last line of defense against a loss of funds.
 
@@ -49,6 +51,8 @@ In total, there are **2048** words a mnemonic phrase may comprise, each of them 
 Similar words or different versions of the same word are not included, for example:
 - build/built 
 - woman/women
+
+![generating a mnemonic phrase](/img/crypto-wallets/generating-a-mnemonic-phrase.jpg)
 
 ### Generating a Mnemonic
 
@@ -81,6 +85,8 @@ Being able to securely produce _several child_ keys from a _single_ parent key c
 
 This single mnemonic derives a key pair for each chain.
 
+![mnemonic phrase to seed](/img/mnemonic-phrases/mnemonic-phrase-to-seed.jpg)
+
 ### Hierarchical Deterministic Wallets
 
 _Hierarchical Deterministic Wallets_ were introduced with [**BIP-0032**](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki). The general idea is to take a _master_ private key and use it to generate _multiple_ secure child keys.
@@ -99,13 +105,15 @@ The _HMAC-SHA256_ function is used at several steps in the key derivation proces
 
 - We _generated_ a random bit sequence and used it as an input to a deterministic random bit generator that produced a **seed**.
 - From this _seed,_ we _generated_ a **mnemonic phrase**, which in turn was converted into a _512-bit binary seed_.
-- We _split_ our seed into the zero-level private key **\\(sk_0\\)** and the zero-level chain code **\\(cc_0\\)**. A zero-level public key **\\(PK_0\\)** is generated from **\\(sk_0\\)** using elliptic curve cryptography
+- We _split_ our seed into the zero-level private key **\\(sk_0\\)** and the zero-level chain code **\\(cc_0\\)**. A zero-level public key **\\(PK_0\\)** is generated from **\\(sk_0\\)** using [elliptic curve cryptography](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/)
 
 ## Hardened vs. Non-Hardened Secret Key Derivation
 
 When looking at the key derivation in HD wallets, we can generally differentiate between _hardened secret key derivation_ (**HSKD**) and _non-hardened secret key derivation_ (**NSKD**). 
 
 The difference lies in the inputs used to generate first-level keys.
+
+![hardened vs non hardened key derivation](/img/mnemonic-phrases/hardened-vs-non-hardened-key-derivation.jpg)
 
 Additionally, we need to introduce the variable **i** at this point. It is a **32-bit** integer that is used to derive different keys with index **i** from a single zero-level key. 
 
@@ -131,11 +139,13 @@ $$
 
 ### Hardened Secret Key Derivation - HSKD
 
-The core function that the key derivation is build around is the **hash-based message authentication code** (_HMAC_). It is a specific type of message authentication code involving a _cryptographic hash function_ and a _secret cryptographic key._ 
+The core function that the key derivation is build around is the **hash-based message authentication code** (_HMAC_). It is a specific type of message authentication code involving a [_cryptographic hash function_](https://www.horizen.io/academy/hash-functions/) and a _secret cryptographic key._ 
 
 It always uses some hash function, which is then appended to name the exact function. In this specific case, the **SHA512** hash function is used and the message authentication code is called **HMAC-SHA512**. 
 
 _HMAC_ consumes several inputs. For our purposes we group them into two: the _key_ and the _data_.
+
+![hardened secret key derivation](/img/mnemonic-phrases/hardened-secret-key-derivation.jpg)
 
 For the _HSKD_ method, the concatenation of **\\(sk_0\\)** and our variable integer **i** is used as the data and the zero-level chain code **\\(c_0\\)** as the key.
 
@@ -151,7 +161,9 @@ By incrementing **i** we can generate **\\(2^{31}\\)** or **2147483648** differe
 
 We can also derive a first level private key using a combination of our zero-level public key **\\(PK_0\\)**, zero-level secret key **\\(sk_0\\)** and our zero-level chain code **\\(cc_0\\)**. 
 
-This method is called **Non-Hardened Secret Key Derivation** (NSKD_).
+This method is called **Non-Hardened Secret Key Derivation** (NSKD).
+
+![non hardened secret key derivation](/img/mnemonic-phrases/non-hardened-secret-key-derivation.jpg)
 
 Again, we will use the **HMAC-SHA256** function, but this time we use the concatenation of **\\(PK_0\\)** and **i** as out _data_ and once again **\\(cc_0\\)** as our _key_. 
 
@@ -170,6 +182,8 @@ The zero-level private key is also the key that will allow the merchant to spend
 ### Non-Hardened Public Key Derivation - NPKD
 
 Using the _Non-Hardened Public Key Derivation_ method, our zero level private key \\(sk_0\\) isn't needed at all. The first steps in the _NPKD_ method are analogous to the _NSKD_ method.
+
+![non hardened public key derivation](/img/mnemonic-phrases/non-hardened-public-key-derivation.jpg)
 
 The concatenation of **\\(PK_0\\)** and **i** is used as _data_ and **\\(cc_0\\)** as our _key_. Again, the resulting **512-bit** output is split into two parts of **256** bits.
 

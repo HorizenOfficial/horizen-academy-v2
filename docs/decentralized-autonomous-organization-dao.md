@@ -1,9 +1,11 @@
 ﻿---
 
-sidebar_label: Decentralized Autonomous Organization - DAO
+sidebar_position: 17
+sidebar_label: Decentralized Autonomous Organizations - DAO
 title: What is a DAO? - Decentralized Autonomous Organizations
 slug: /decentralized-autonomous-organization-dao/
 description: A DAO, or Decentralized Autonomous Organization, is software that acts as an organization with a number of predefined rules and procedures.
+image: /img/decentralized-autonomous-organization-dao/decentralized-autonomous-organization-dao-meta.jpeg
 
 ---
 
@@ -25,9 +27,11 @@ Horizen determines how to spend their budget on a monthly basis. The budget allo
 
 The main goal of our DAO is to decentralize the decision making regarding how we spend the funds of our non-profit organization. _Any member_ of the community can submit a proposal of what they would like to contribute to the DAO and how much funds would be needed for the proposal.
 
-The _community_ can review the proposal, which can range from translating the website to another language, creating a video for marketing purposes, building an app on top of Horizen, developing a new feature for a wallet, or covering the cost of attending a conference. Every month there will be a voting period. 
+The _community_ can review the proposal, which can range from translating the website to another language, creating a video for marketing purposes, building an app on top of Horizen, developing a new feature for a [wallet](https://www.horizen.io/academy/crypto-wallets/), or covering the cost of attending a conference. Every month there will be a voting period. 
 
 The community can cast votes on whether a proposal should be funded or not within this period. After the tally phase, the approved proposals will automatically receive the allocated funds, and the community members that have submitted the proposal can begin working.
+
+![horizen dao](/img/decentralized-autonomous-organization-dao/horizen-dao.jpg)
 
 _For this decentralized decision making_, there needs to be a voting system in place. This _voting system_ needs to be reliable, we decided to implement it on a dedicated _sidechain_ which will run in parallel with our main blockchain.
 
@@ -37,7 +41,7 @@ If you are a _developer_, that expertise will make you more likely to cast a vot
 
 A _marketing_ expert will want to decide which conferences to attend, but might not have a strong opinion about what code-based projects to implement.
 
-IOHK’s _Roman Oliynykov_ published a paper in cooperation with _Bingsheng Zhang_ and _Hamed Balogun_ from Lancaster University describing a treasury system that could be deployed on various cryptocurrencies _regardless_ of the consensus mechanism used. 
+IOHK’s _Roman Oliynykov_ published a paper in cooperation with _Bingsheng Zhang_ and _Hamed Balogun_ from Lancaster University describing a treasury system that could be deployed on various cryptocurrencies _regardless_ of the [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) used. 
 
 A prototype has been implemented in Scala over the _Scorex 2.0_ framework. 
 
@@ -45,7 +49,7 @@ A prototype has been implemented in Scala over the _Scorex 2.0_ framework.
 
 ## Exploring the Future Horizen Treasury System
 
-_Building a cryptocurrency requires many things. It requires:_
+_Building a [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) requires many things. It requires:_
 
 - **Developers** willing to commit their time to the project.
 - **Marketing**. Not only to make your coin attractive to potential users but also to attract developers willing to commit their time to the project.
@@ -61,7 +65,7 @@ _They require some sort of funding._ This funding should be sustainable long ter
 - An **ICO**
 - Hair-cut/tax/founders **reward** (part of the miners reward)
 
-Other people included transaction fees in this list before, but the total amount of TX fees outside the major projects like Bitcoin and Ethereum is not nearly sufficient for continuous development.
+Other people included transaction fees in this list before, but the total amount of TX fees outside the major projects like [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) and [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) is not nearly sufficient for continuous development.
 
 Donations are not a reliable long term solution. An ICO does not provide sustainable funding over years and has become a legally challenging option. The third option has been identified to be the most promising means of funding.
 
@@ -71,7 +75,7 @@ The funding issue will turn into a problem that generations to come have to deal
 
 ### Decentralization is Key
 
-_Decentralization_ does not just avoid single points of failure, it also helps to improve _privacy_. A powerful central party will always be able to gather more information on a given user than a peer in a truly distributed system would. 
+_Decentralization_ does not just avoid single points of failure, it also helps to improve _privacy_. A powerful central party will always be able to gather more information on a given user than a peer in a truly [distributed system](https://www.horizen.io/academy/consensus-in-distributed-systems/) would. 
 
 Another area, besides the network architecture, that should be as decentralized as possible is the _funding_ of development and maintenance and the decision making regarding what the funds at hand are used for. 
 
@@ -123,6 +127,8 @@ _As a delegate_, you can entrust your vote to whomever you like, and you can wit
 
 This holds experts accountable. In liquid democracy, there are no election terms
 
+![comparing democracies](/img/blockchain-governance/comparing-democracies.jpg)
+
 ### The Different Entities
 
 Getting closer to describing the voting process itself, it is necessary to introduce the entities partaking.
@@ -132,7 +138,7 @@ Getting closer to describing the voting process itself, it is necessary to intro
 - **Voters** (V) - Each _voter_ locks a certain amount of their stake to participate. Their vote is weighted according to their locked up stake.
 - **Experts** (E) - An **expert** is a special type of voter who has expertise in some field. Anybody can register as an expert.
 
-To _register_ as one of the entities mentioned above, a user will need to submit a special type of transaction that includes all the necessary information, such as the _amount_ of locked up stake and the _address_ to send the rewards for voting.
+To _register_ as one of the entities mentioned above, a user will need to submit a special type of transaction that includes all the necessary information, such as the _amount_ of locked up stake and the [_address_](https://www.horizen.io/academy/wallet-addresses/) to send the rewards for voting.
 
 **Anybody can submit a proposal for funding and become a project owner.**
 
@@ -146,11 +152,13 @@ During the **pre-voting** epoch all the project owners have time to submit their
 
 _During the pre-voting epoch_, the community members also have time to register as a voter or an expert by submitting a special kind of transaction.
 
+![treasury epochs](/img/decentralized-autonomous-organization-dao/treasury-epochs.jpg)
+
 During the **voting epoch**, the voting committee is selected, a voting key is set up, and the ballot is held. For the committee selection, a set of voting committees will be randomly selected from the registered voters who are willing to be considered for the committee selection. The probability of being selected is proportional to their locked stake.
 
 The key setup stage is where a _public voting key_ for the treasury epoch is generated and used as an address that all the casted votes are sent to. The votes are cast _privately_ and only the end result will be _public_.
 
-It should be possible for a voter to express their opinion privately, that’s why there are voting cabinets in analog polls. The protocol ensures that the end result does indeed represent the sum of all votes.
+It should be possible for a voter to express their opinion privately, that’s why there are voting cabinets in analog polls. The [protocol](https://www.horizen.io/academy/blockchain-protocols/) ensures that the end result does indeed represent the sum of all votes.
 
 Voting in private is achieved by all voters and experts encrypting their vote with the public voting key. Only the voting committee members can decrypt the casted votes in the tally stage. _“Once all the committees have opened the tally, any party can read the tally”._
 
@@ -158,19 +166,27 @@ The _voters_ and _experts_ cast their votes during the ballot casting stage. Eac
 
 Since there are three possible votes — *Yes, No, Abstain* — there are three possible vectors that can be submitted.
 
+![vote yes no abstain](/img/decentralized-autonomous-organization-dao/vote-yes-no-abstain.jpg)
+
 **The concept works like this:** 
 
 In the example _below_ there are **4** votes, **2** voted Yes on the proposal, 1 No and **1** Abstain.
 
+![voting results dao](/img/decentralized-autonomous-organization-dao/voting-results-dao.jpg)
+
 If you are familiar with the concept of vector addition, it is easy to tell the sum of those four vectors. **One** of the _Yes_ votes is canceled out by the **No** vote. 
 
 The _remaining_ **Yes** vote added together with the **Abstain** vote yields the diagonal vector shown below. For the tally, only the x-axis is considered. The final result of this proposal revealed in the _tally stage_ would be a _Yes_.
+
+![diagonal voting vector](/img/decentralized-autonomous-organization-dao/diagonal-voting-vector.jpg)
 
 More specifically, a _score_ for each proposal will be calculated by taking the number of **Yes** votes minus the number of **No** votes. 
 
 The resulting difference has to account for at least **10%** of all the votes submitted to be considered for funding. If **100** votes are cast, not including **Abstain** votes, there have to be at least **55** **Yes** votes to reach that threshold. 
 
 **The highest scoring proposals will be funded until the treasury is depleted for the month.**
+
+![proposal score](/img/decentralized-autonomous-organization-dao/proposal-score.jpg)
 
 The **post-voting** epoch consists of the _tally_ stage and _execution_ stage. Note that each vector is submitted in an encrypted fashion and only in the tally stage the committee jointly reveals all the casted votes. The score for each proposal will be calculated and the proposals ranked according to their score.
 
@@ -186,7 +202,7 @@ We aim to reduce rational ignorance by incentivizing voters to participate in th
 
 **The time and effort it takes to acquire all the information needed to make the best possible decision in an election exceeds the benefit of being able to cast a single vote.** This issue results in voter apathy.
 
-To tackle the issue of voter apathy, people that participate in the governance process get rewarded for their efforts. This creates an incentive to be informed and partake in the process. 
+To tackle the issue of voter apathy, people that participate in the [governance process](https://www.horizen.io/academy/blockchain-governance/) get rewarded for their efforts. This creates an incentive to be informed and partake in the process. 
 
 Voters will get rewarded proportionally to their stake and experts will get rewarded proportionally to the number of delegations they have, or in other words the trust that was placed in them and their decision making.
 
@@ -214,6 +230,6 @@ Our treasury system serves the purpose of distributing treasury funds to differe
 
 Users will be able to vote on the different proposals either directly or by choosing a delegate to cast a vote on their behalf. This hybrid of direct and representative democracy is called liquid democracy.
 
-The _voter registration_, the _voting process_, and _project funding_ will be built on a sidechain, a separate blockchain that is interoperable with our existing main blockchain. 
+The _voter registration_, the _voting process_, and _project funding_ will be built on a sidechain, a separate blockchain that is [interoperable](https://www.horizen.io/academy/blockchain-interoperability/) with our existing main blockchain. 
 
 To combat voter _apathy_, we plan to incentivize participation in the decision-making process with financial rewards. A user-friendly interface will be built to make participation easy and intuitive.

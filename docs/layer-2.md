@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 30
 sidebar_label: Layer 2
 title: What is a Layer 2 Blockchain?
 slug: /layer-2/
 description: A Layer 2 is a scaling solution that sits on top of a layer 1 blockchain like Bitcoin. L2s increase the speed and reduce the cost of transacting on a blockchain.
+image: /img/layer-2/layer-2-meta.jpg
 
 ---
 
@@ -11,11 +13,11 @@ description: A Layer 2 is a scaling solution that sits on top of a layer 1 block
 
 **The scalability trilemma** is a persistent problem that has plagued blockchain developers ever since the Bitcoin blockchain was launched in 2009.
 
-Amongst the many solutions that have been tested over the years, bigger block sizes, alternative consensus mechanisms, more sophisticated mining hardware, etc, _layer two networks_ have stood out as the most elegant solution for enabling blockchains to scale _without_ compromising on decentralization.
+Amongst the many solutions that have been tested over the years, bigger block sizes, alternative consensus mechanisms, more [sophisticated mining hardware](https://www.horizen.io/academy/mining-in-blockchain/), etc, _layer two networks_ have stood out as the most elegant solution for enabling blockchains to scale _without_ compromising on decentralization.
 
 ### Key Takeaways - Layer 2
 
-- A **Layer 2** is a _scaling solution_ that sits on top of a layer 1 blockchain like Bitcoin or Ethereum. Layer 2’s (or L2s) increase the speed and reduce the cost of transacting on a blockchain.
+- A **Layer 2** is a _scaling solution_ that sits on top of a layer 1 blockchain like [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) or [Ethereum](https://www.horizen.io/academy/ethereum-glossary/). Layer 2’s (or L2s) increase the speed and reduce the cost of transacting on a blockchain.
 - Layer 2’s exist to address the **scalability challenges** of L1 networks, particularly the issue of high gas fees during times of network congestion.
 - Layer 2 scaling solutions can take **different forms**, including payment channels, state channels, side chains and rollups.
 - Some potential **drawbacks** of L2 networks is that the withdrawal times from an L2 to the Ethereum mainnet can sometimes take several hours to 7 days to complete. 
@@ -25,9 +27,9 @@ Amongst the many solutions that have been tested over the years, bigger block si
 
 A **Layer 2** is a scaling solution that sits on top of a layer 1 blockchain like Bitcoin or Ethereum. Layer 2’s (or L2s) increase the speed and reduce the cost of transacting on a blockchain by setting up separate networks or channels where transactions can be executed between a limited set of nodes or participants, thereby _reducing_ the time it takes to achieve consensus.
 
-_Transactions_ from layer 2 networks are _batched_ together every so often and transmitted back to their base layer 1 network, where they are validated by the layer 1 node as a single transaction. 
+_Transactions_ from layer 2 networks are _batched_ together every so often and transmitted back to their base layer 1 network, where they are validated by the [layer 1 node](https://www.horizen.io/academy/nodes/) as a single transaction. 
 
-This modular design enables the _layer 1_ network to prioritize **decentralization** and **security**, while the _layer 2_ can focus on **speed** and **scalability**.
+This [modular design](https://www.horizen.io/academy/modular-vs-monolithic-blockchains/) enables the _layer 1_ network to prioritize **decentralization** and **security**, while the _layer 2_ can focus on **speed** and **scalability**.
 
 ### Off-chain Scaling
 
@@ -53,13 +55,13 @@ They allow users to transfer their ETH to these networks in order to transact on
 
 ## What are the Differences Between Layer 2 and Layer 0?
 
-A **layer 0** is a type of _protocol_ that enables developers to launch multiple layer 1 blockchains that are connected to the L0 mainchain, but operate independently.
+A [**layer 0**](https://www.horizen.io/academy/layer-0/) is a [type of _protocol_](https://www.horizen.io/academy/blockchain-protocols/) that enables developers to launch multiple layer 1 blockchains that are connected to the [L0 mainchain](https://www.horizen.io/academy/layer-0/), but operate independently.
 
 Each layer 1 blockchain on a layer 0 can potentially operate its own set of L2 networks in order to scale its underlying infrastructure.
 
 _Layer 0 protocols_ are designed to give developers greater flexibility in how they design dapps by allowing them to also control the underlying infrastructure of their dapps, via their own blockchain. 
 
-Layer 0 networks are also optimized for cross-chain interoperability, as it becomes easier for the various L1s connected to a single mainchain to speak with one another.
+Layer 0 networks are also optimized for [cross-chain interoperability](https://www.horizen.io/academy/blockchain-interoperability/), as it becomes easier for the various L1s connected to a single mainchain to speak with one another.
 
 _By contrast_, **layer 2 networks** exist primarily to scale a _single_ layer 1 network. Increased protocol flexibility and cross-chain interoperability are _not_ the core focus of an L2.
 
@@ -73,7 +75,7 @@ A **payment channel** is a two way channel that runs between 2 participants and 
 
 We can think of this like an escrow account.
 
-Locking the funds in a smart contract initiates the channel to open, allowing both parties to send tokens to each other as long as the total amount spent by either participant remains under the amount that is locked in their smart contract.
+Locking the funds in a smart contract initiates the channel to open, allowing both parties to [send tokens](https://www.horizen.io/academy/what-is-a-token/) to each other as long as the total amount spent by either participant remains under the amount that is locked in their smart contract.
 
 Each time tokens are transferred from one person to another, the current state of each person's account is also shared. We can think about this like the transferring of IOU’s between 2 banks that each hold a certain amount of capital in their accounts that has been verified by both banks. 
 
@@ -81,21 +83,23 @@ Within the payment channel, the IOUs will be accepted as money because both part
 
 _To close out the channel_, a user can submit the latest state update (i.e the final balance of both users accounts) to the L1, which validates this entry as a single transaction on the blockchain.
 
-[payment]
+![payment channels](/img/layer-2/payment-channels.jpg)
 
 _Payments_ made with an L2 channel are _much_ faster because they don’t require broad network consensus to verify.
 
 They are also much cheaper because users only need to pay a fee to the L1 when locking their funds in a smart contract to open the channel, and when submitting the final balances to the L1 in order to close the channel.
 
-Payment channels can also be set up using a **multisig-wallet**. 
+Payment channels can also be set up using a [**multisig-wallet**](https://www.horizen.io/academy/multisig/). 
 
-With the *multisig approach*, each user holds a portion of the private keys to a wallet that stores their locked funds and mediates transactions within the payment channel. This ensures that both parties must provide a digital signature to authorize funds to be spent from that wallet.
+With the *multisig approach*, each user holds a portion of the private keys to a wallet that stores their locked funds and mediates transactions within the payment channel. This ensures that both parties must provide a [digital signature](https://www.horizen.io/academy/digital-signatures/) to authorize funds to be spent from that [wallet](https://www.horizen.io/academy/crypto-wallets/).
 
 _Payment channels_ can be set up for one-off transactions or kept open for extended periods of time to allow participants to transact with each other off-chain, and periodically post the current state of the channel to the L1 when a user wants to withdraw some of their funds.
 
 ### Lightning Network
 
 Lightning Network is the most popular example of an L2 payment channel for the Bitcoin blockchain.
+
+![lightning network](/img/layer-2/lightning-network.jpg)
 
 ### State Channels
 
@@ -105,7 +109,9 @@ An example of an operation that could be conducted in a state channel is a game 
 
 *Like a payments channel*, fees are only incurred to open and close the channel, and any transactions that occur between users within the channel are essentially instantaneous and free.
 
-This state channel mechanism makes it possible for play-to-earn games and other dapps that are not strictly financial to be launched on an L2.
+![state channels](/img/layer-2/state-channels.jpg)
+
+This state channel mechanism makes it possible for [play-to-earn games](https://www.horizen.io/academy/play-to-earn-games/) and other dapps that are not strictly financial to be launched on an L2.
 
 ### Sidechains
 
@@ -113,15 +119,15 @@ Unlike payment or state channels, **Sidechains** are independent blockchains wit
 
 A developer might adopt a sidechain over a payment or state channel if they need even more flexibility and control over their underlying infrastructure.
 
-This could be for the purpose of launching a token or dapp while still taking advantage of the low cost and faster speeds enabled by not deploying smart contracts directly on the L1.
+This could be for the purpose of [launching a token](https://www.horizen.io/academy/why-create-a-token/) or dapp while still taking advantage of the low cost and faster speeds enabled by not [deploying smart contracts directly](https://www.horizen.io/academy/smart-contracts/) on the L1.
 
-_Sidechains operate using their own [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/), which means developers can optimize their network for **scalability**, **security** or **decentralization**, and can even choose to make their networks **private** and _permissioned_ or **public** and _permissionless_._
+Sidechains operate using their own [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/), which means developers can optimize their network for **scalability**, **security** or **decentralization**, and can even choose to make their networks **private** and _permissioned_ or **public** and _permissionless_.
 
 While side chains are not required to submit state data to the mainchain, many still choose to do so in order to leverage the larger, more decentralized chain's security.
 
 ### Rollups
 
-The two main methods of transferring value between L2s and the Ethereum mainnet are _Optimistic Rollups_ and _ZK Rollups_. 
+The two main methods of transferring value between L2s and the Ethereum mainnet are _Optimistic Rollups_ and _zk-Rollups_. 
 
 Both offer different approaches for the Ethereum mainnet (consensus layer) to confirm the true state of operations on the execution layers (i.e., account balances and total values in each L2) without the need to validate every single transaction.
 
@@ -133,13 +139,13 @@ The party responsible for submitting batches of transactions to the Ethereum net
 
 #### Zero-Knowledge (ZK) Rollups
 
-A **Zero-Knowledge Proof**, or _ZKP_, is a form of cryptography that enables one party in a transaction (the prover) to prove that they have knowledge of a specific piece of information to another party (the verifier) without revealing what that information is.
+A [**Zero-Knowledge Proof**, or _ZKP](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/)_, is a form of cryptography that enables one party in a transaction (the prover) to prove that they have knowledge of a specific piece of information to another party (the verifier) without revealing what that information is.
 
 This technology has _many_ advantages not only in protecting users’ sensitive data, but also in simplifying how nodes communicate to enable blockchain networks to confirm transactions with greater efficiency and become more scalable.
 
-Zero-Knowledge or **ZK Rollups** enable thousands of layer 2 transactions to be bundled into one transaction, and then be transmitted and validated by the Ethereum network without the Ethereum nodes knowing the details of each transaction. 
+[Zero-Knowledge Rollups](https://www.horizen.io/academy/zk-rollups/) or **zk-Rollups** enable thousands of layer 2 transactions to be bundled into one transaction, and then be transmitted and validated by the Ethereum network without the Ethereum nodes knowing the details of each transaction. 
 
-ZK Rollups leverage **ZK-SNARKs** to offer greater scalability to the Ethereum network by only requiring the Ethereum nodes to verify the proof of computation of batches of transactions rather than verifying each transaction on the Ethereum mainnet or L1.
+Zk-Rollups leverage [**ZK-SNARKs**](https://www.horizen.io/academy/zk-snarks-vs-zk-starks/) to offer greater scalability to the Ethereum network by only requiring the Ethereum nodes to verify the proof of computation of batches of transactions rather than verifying each transaction on the Ethereum mainnet or L1.
 
 #### Ethereum L2 ZK-Rollups
 
@@ -151,7 +157,7 @@ L2s are considered off-chain scaling solutions for Dapps. They are not independe
 
 ## Drawbacks to Layer 2 Scaling
 
-Withdrawals from layer 2 networks to the Ethereum mainnet can sometimes take several hours to 7 days to complete. Optimistic Roll Ups experience the longest withdrawal times because it takes a while for verifiers to determine if there is any fraud in the transactions submitted to the network.
+Withdrawals from layer 2 networks to the Ethereum mainnet can sometimes take several hours to 7 days to complete. Optimistic rollups experience the longest withdrawal times because it takes a while for verifiers to determine if there is any fraud in the transactions submitted to the network.
 
 Layer 2s also _compromise_ quite heavily on _decentralization_ and _security_, however this is mostly mitigated by the fact that there are security guarantees provided by the Ethereum L1. 
 
@@ -161,7 +167,7 @@ Nevertheless, sidechains like _Polygon_ carry greater security risks because the
 
 Because sidechains are independent, the security guarantees provided by the Ethereum L1 are not automatically applied to the protocol in the same way that it is for a payment or state channel.
 
-This means that if a sidechain does not choose to periodically submit state data to the Ethereum mainnet, it could incur _permanent loss_ of user funds if it were ever 51% attacked, as there would be no alternative network carrying validated proof of its most recent state prior to the attack.
+This means that if a sidechain does not choose to periodically submit state data to the Ethereum mainnet, it could incur _permanent loss_ of user funds if it were ever [51% attacked](https://www.horizen.io/academy/51-attacks/), as there would be no alternative network carrying validated proof of its most recent state prior to the attack.
 
 Despite the risks of increased centralization, layer 2s offer a more cost effective and faster alternative for developers and end users to interact with the blockchain, thereby enabling layer 1s like Bitcoin and Ethereum to increase user adoption without compromising on decentralization at the base protocol layer.
 
@@ -175,11 +181,11 @@ Layer 2 is a scaling solution that sits on top of a layer 1 like Bitcoin or Ethe
 
 L2 networks rely on the underlying L1 for security, meaning that all transactions that occur on the L2 network must eventually settle on the larger, more decentralized L1.
 
-### What are Roll Ups?
+### What are Rollups?
 
 A rollup is a technique used to transfer value between L2 networks and the Ethereum mainnet. With rollups, transactions from layer 2 networks are periodically batched together and transmitted back to the base layer 1 network, where they are validated by the layer 1 node as a single transaction.
 
-**Optimistic** and **ZK** Rollups are 2 variations of the rollup technique that each take a different approach to securely and accurately submitting state data from the L2 to the L1 without the need for the L1 to validate every single L2 transaction.
+**Optimistic** and **zk**-Rollups are 2 variations of the rollup technique that each take a different approach to securely and accurately submitting state data from the L2 to the L1 without the need for the L1 to validate every single L2 transaction.
 
 ### What are the Most Popular Layer 2 Networks?
 

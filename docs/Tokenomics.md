@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 52
 sidebar_label: Tokenomics
 title: What are Tokenomics?
 slug: /tokenomics/
 description: Tokenomics, or token-economics, is defined as the economic incentive model created within a blockchain through the use of tokens or cryptocurrencies
+image: /img/tokenomics/tokenomics-meta.jpg
 
 ---
 
@@ -11,7 +13,7 @@ description: Tokenomics, or token-economics, is defined as the economic incentiv
 
 **Tokenomics**, or _token-economics_, is defined as the economic incentive models, including distribution and rewards, created within a blockchain through the use of tokens or cryptocurrencies.
 
-Typically, the purpose of a **token** within a dApp or a blockchain network is to incentivize a set of actions that lead to desired outcomes. 
+Typically, the purpose of a [**token**](https://www.horizen.io/academy/what-is-a-token/) within a dApp or a blockchain network is to incentivize a set of actions that lead to desired outcomes. 
 
 *These outcomes can include:*
 
@@ -22,12 +24,12 @@ Typically, the purpose of a **token** within a dApp or a blockchain network is t
 
 *The basic assumption is that users are more likely to engage in certain activities if they can be rewarded with tokens that hold some kind of monetary value.*
 
-These users might already be engaging in these activities for free or might have never considered these activities prior to the token incentive model existing. With the exception of staking to validate transactions, you generally want to incentivize actions that your target users are already doing for free, or are at least familiar with. 
+These users might already be engaging in these activities for free or might have never considered these activities prior to the [token incentive](https://www.horizen.io/academy/why-create-a-token/) model existing. With the exception of staking to validate transactions, you generally want to incentivize actions that your target users are already doing for free, or are at least familiar with. 
 
 _Actions to incentivize could include:_
 
 - Playing a game
-- Borrowing from a lending protocol
+- Borrowing from a lending [protocol](https://www.horizen.io/academy/blockchain-protocols/)
 - Providing liquidity
 - Promoting something on social media
 
@@ -35,16 +37,16 @@ The more familiar the task, the more likely you will attract users who actually 
 
 ## Tokenomic Models
 
-While tokenomic models may differ between blockchains, there is a common set of models that have been adopted by blockchains like Bitcoin, Ethereum, Cardano and others.
+While tokenomic models may differ between blockchains, there is a common set of models that have been adopted by blockchains like Bitcoin, [Ethereum](https://www.horizen.io/academy/ethereum-glossary/), Cardano and others.
 
 ### The Deflationary Model
 
-In a _deflationary model_, tokens have a maximum supply that is never increased, or make use of a ‘burn mechanism’ in order to decrease supply overtime by purchasing their own tokens and sending it to a one way wallet address.
+In a _deflationary model_, tokens have a maximum supply that is never increased, or make use of a ‘burn mechanism’ in order to decrease supply overtime by purchasing their own tokens and sending it to a [one way wallet address](https://www.horizen.io/academy/wallet-addresses/).
 
 You can think about this like share buybacks. 
 
 Examples of cryptocurrencies that are deflationary include:
-- Bitcoin
+- [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/)
 - ZEN
 - BNB 
 
@@ -52,7 +54,7 @@ BNB is a token that is deflationary and also uses a buy *and* burn mechanism to 
 
 **A deflationary model is the preferred model for founders that:** 
 
-- Want to create a token that can be adopted as a store of value or a form of pristine collateral for borrowing and lending.
+- Want to create a token that can be adopted as a store of value or a form of pristine collateral for [borrowing and lending](https://www.horizen.io/academy/crypto-lending/).
 
 While limiting or reducing the supply of a token may increase its value in the short term, it often has the effect of reducing people's willingness to spend it, as they assume the token will continue to appreciate in value and therefore do not wish to trade it for a potentially depreciating asset.
 
@@ -101,6 +103,8 @@ As people sell the token, the opposite occurs; the contract sets the price incre
 
 The benefit of bonding curves is that they allow developers to establish more control and orderliness over how their token is valued in the market. As opposed to relying strictly on supply and demand, which can lead to higher levels of volatility that is detrimental to creating a relatively stable and usable digital currency.
 
+![token supply vs token price](/img/tokenomics/token-supply-vs-token-price.jpg)
+
 ## Types of Actions to Incentivize
 
 Before designing your tokenomics model, it’s important to first outline the type of actions you are trying to incentivize, as this will enable you to design a model that best fits your goals.
@@ -115,11 +119,11 @@ Each of these reasons comes with their own set of unique actions that we can inc
 
 For example, if you are creating a token to spur adoption of a product or network, your tokenomics should be designed in such a way that links usage of the token intrinsically with usage of the product. Then, reward users of the token with some combination of more tokens or other benefits tied to increase use of the product/network .
 
-The best example of this is staking rewards that are earned by those who validate transactions on a proof of stake blockchain.
+The best example of this is staking rewards that are earned by those who validate transactions on a [proof of stake blockchain](https://www.horizen.io/academy/pos-vs-pow/).
 
 Here, the ‘product’ is the network, and one of the ways to use the network is to become a validator, which both requires tokens and rewards tokens. Setting transaction fees that are denominated in your token is another way to link token usage with product usage. 
 
-If your product is a web3 game, you can require users to purchase certain in-game NFTs that are priced on the token in order to play the game.
+If your product is a [web3 game](https://www.horizen.io/academy/web3/), you can require users to purchase certain in-game NFTs that are priced on the token in order to play the game.
 
 You can then reward users who win levels in the game or unlock certain achievements with newly minted tokens. This ensures that a dedicated subset of token holders will be using the token for the purpose of playing the game rather than just as a speculative asset.
 
@@ -141,7 +145,7 @@ Distributing tokens to team members must be done slowly and based on a set sched
 
 If too many tokens are granted to team members prior to the project achieving important milestones, the incentive to achieve those milestones could be minimized. It would also raise concerns amongst holders of the token that the team is not serious about building the project for the long term.
 
-It’s also important that whatever distribution schedule you create is made transparent to the public and that the actual act of sending tokens to team members is done via smart contracts. 
+It’s also important that whatever distribution schedule you create is made transparent to the public and that the actual act of sending tokens to team members is done via [smart contracts](https://www.horizen.io/academy/smart-contracts/). 
 
 This will allow holders of your tokens to have more trust in your team.
 
@@ -255,6 +259,6 @@ However, as your product grows in adoption, the total value of tokens rewarded f
 2. Understand the various tokenomic models available to you
 3. Differentiate between a store of value and transactable currency use case
 4. Distribute tokens to founders and team members slowly and based on milestones in order to keep them incentivized to continue working    on the project
-5. Devise way to maximize token distribution through liquidity provisioning as well as strategic partnerships with exchanges,       wallets and vendors
+5. Devise way to maximize token distribution through liquidity provisioning as well as strategic partnerships with exchanges, [wallets](https://www.horizen.io/academy/crypto-wallets/) and vendors
 6. Design for long term sustainability over short-term growth
 

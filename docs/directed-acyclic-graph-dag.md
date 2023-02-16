@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 21
 sidebar_label: Directed Acyclic Graph - DAG
 title: What is a DAG? - Directed Acyclic Graphs
 slug: /directed-acyclic-graph-dag/
 description: The term DAG stands for Directed Acyclic Graph. A DAG is a mathematical concept, technically, a blockchain is the most simple form of a DAG.
+image: /img/directed-acyclic-graph-dag/directed-acyclic-graph-dag-meta.jpeg
 
 ---
 
@@ -25,7 +27,7 @@ International Bank of Settlements **>** National Central Bank **>** Retail Bank 
 
 ## The Scalability Challenge
 
-**The main factors affecting a blockchains protocol scalability regarding transaction throughput are:**
+**The main factors affecting a [blockchains protocol scalability](https://www.horizen.io/academy/blockchain-protocols/) regarding transaction throughput are:**
 
 - The **size** of a _single transaction_ (byte)
 - The **block size** (byte -> transactions per block)
@@ -34,7 +36,7 @@ International Bank of Settlements **>** National Central Bank **>** Retail Bank 
 
 To increase the throughput of a linear blockchain on the protocol level one can either decrease the size of transactions themselves or the interval in which blocks are created. Another option would be to increase the block size.
 
-This can be shown with Bitcoin as an example. Whereas _Bitcoin_ activated _SegWit_ to decrease the size of individual transactions, the closely related _Litecoin_ protocol on the other hand, reduced the block interval from 10 to 2.5 min. Bitcoin Cash went the other way and decided to _increase_ the block size.
+This can be shown with [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) as an example. Whereas _Bitcoin_ activated _SegWit_ to decrease the size of individual transactions, the closely related _Litecoin_ protocol on the other hand, reduced the block interval from 10 to 2.5 min. Bitcoin Cash went the other way and decided to _increase_ the block size.
 
 **The problem is the following:** 
 
@@ -42,7 +44,7 @@ Transaction size can only be decreased by so much, as transactions are quite com
 
 Even if you could shrink a transaction to a tenth of its size, this would only increase throughput from 7 to 70 transactions per second for Bitcoin. Not exactly Visa level. 
 
-Raising the block size limit comes at the expense of mining centralization, as fewer people can compete in the competitive mining industry when hardware and network requirements increase.
+Raising the block size limit comes at the expense of mining centralization, as fewer people can compete in the competitive [mining industry] when hardware and network requirements increase.
 
 **Decreasing** the block interval leads to more orphaned blocks and is limited by network synchronization time across the globe. 
 
@@ -50,11 +52,13 @@ An **increase** in block size also increases the orphan rate because propagation
 
 A high rate of orphaned blocks reduces the overall security of the protocol, because _honest_ hash power is “wasted” and does not contribute to the security of the ledger.
 
+![scalability challenges in blockchain networks](/img/payment-channels/scalability-challenges-in-blockchain-networks.jpg)
+
 **There are generally three approaches to scalability:**
 
 - **Second-layer technologies** like [payment or state channels](https://www.horizen.io/academy/payment-channels/) which are used in the _Lightning Network_ that take transactions off-chain with the option to settle on-chain at any time.
-- **Sidechain** approaches, which can best be described as a parallelization of blockchains. Assets can be transferred from one chain to another via a _two-way peg_ (_2WP_) and the transactional load is shared between the mainchain and its sidechains.
-- **Directed acyclic graphs** (_DAGs_) have a different [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) than blockchains. Many blocks can be produced in parallel which requires modifications to the consensus mechanism.
+- **Sidechain** approaches, which can best be described as a parallelization of blockchains. Assets can be transferred from one chain to another via a _two-way peg_ (_2WP_) and the transactional load is shared between the mainchain and its [sidechains](https://www.horizen.io/academy/sidechains/).
+- **Directed acyclic graphs** (_DAGs_) have a different [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) than blockchains. Many blocks can be produced in parallel which requires modifications to the [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/).
 
 ## What is a DAG?
 
@@ -66,17 +70,19 @@ In a **directed graph**, each connection, or edge, has a direction, as indicated
 
 **A directed acyclic graph** does not allow cyclic relationships between nodes, like the one you can see in the diamond-shaped part of the directed graph in the middle. In technical terms, one would say the Graph G = (V, E) is defined as the set of vertices V and edges E.
 
+![graph types dag](/img/directed-acyclic-graph-dag/graph-types-dag.jpg)
+
 Technically, _a blockchain is the most simple form of a DAG_. 
 
-**It is a linear structure of nodes, the blocks, and edges, the references, that have a direction and no cyclic relationships.** 
+**It is a [linear structure of nodes](https://www.horizen.io/academy/nodes/), the blocks, and edges, the references, that have a direction and no cyclic relationships.** 
 
 The innovation introduced with _Bitcoin_ and blockchain technology was achieving _consensus_ and _Sybil-resistance_ in a decentralized environment. 
 
 This innovation can be applied to different, more sophisticated data structures as well.
 
-> “Both Blockchains and DAGs are digital ledgers. Both may be distributed. Both may be decentralized. Both may have token-economic incentive-mechanisms. They are both subject to immutability attributes as defined by their networks/communities. And finally each network is comprised by its constituents, including users, devs, miners, and other stakeholders” - _Bunny Hernandez_
+> “Both Blockchains and DAGs are digital ledgers. Both may be distributed. Both may be decentralized. Both may have [token-economic incentive-mechanisms](https://www.horizen.io/academy/tokenomics/). They are both subject to immutability attributes as defined by their networks/communities. And finally each network is comprised by its constituents, including users, devs, miners, and other stakeholders” - _Bunny Hernandez_
 
-**There are two different ways to set up a DAG to be used for a cryptocurrency**. 
+**There are two different ways to set up a DAG to be used for a [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/)**. 
 
 The nodes can comprise of individual transactions, or they can be blocks containing a number of transactions. The first notable DAG protocol was _IOTA’s Tangle_. 
 
@@ -96,11 +102,15 @@ The main difference when compared to a block in a blockchain, is that a block in
 
 Miners don’t have to choose a single block to reference, but instead include references to all previously unconfirmed blocks, the _leaves_ of the DAG.
 
+![dag leaves](/img/directed-acyclic-graph-dag/dag-leaves.jpg)
+
 Assuming that both types of blocks contain the same number of transactions, just by looking at the graphic below, it is intuitive that the DAG will process _more_ transactions in a given period of time than the blockchain does. 
 
 **There is more storage capacity in the Block-DAG compared to the blockchain.**
 
 The DAG introduces _two-dimensionality_ to the otherwise _linear_ or _one-dimensional_ data structure of the blockchain and is a promising approach to make decentralized networks scale. We only change the data structure compared to a blockchain but keep the same consensus mechanism, _Proof-of-Work_, to have the network agree on a single transaction history.
+
+![dag vs blockchain](/img/directed-acyclic-graph-dag/dag-vs-blockchain.jpg)
 
 ## Consensus vs. Sybil Resistance
 
@@ -110,13 +120,13 @@ You've come across the term Proof-of-Work (PoW), and most likely _Proof-of-Stake
 
 PoW and its relatives are actually **Sybil-resistance mechanisms**. 
 
-In a _Sybil Attack_, a malicious party creates a large number of centrally controlled online identities and tries to achieve certain, mostly malicious, goals by exerting influence through these _fake identities_. 
+In a [Sybil Attack](https://www.horizen.io/academy/blockchain-attacks/), a malicious party creates a large number of centrally controlled online identities and tries to achieve certain, mostly malicious, goals by exerting influence through these _fake identities_. 
 
 **Online voting is the most intuitive example of a situation where many fake identities can be used to game the results.**
 
 Sybil-resistance mechanisms prevent this by tying the voting power of an entity to a scarce resource that is harder to obtain than fake user-accounts or IP-addresses.
 
-In **Proof of Work**, the scarce resource voting power is tied to is computational power. _Your voting power is the share of computing power you control, relative to the total computing power of the network._ 
+In [**Proof of Work**](https://www.horizen.io/academy/proof-of-work-pow/), the scarce resource voting power is tied to is computational power. _Your voting power is the share of computing power you control, relative to the total computing power of the network._ 
 
 In **Proof of Stake**, _your voting power is tied to the share of native currency you own, relative to the circulating supply on the network, or more precisely, to the actual staked supply on the network_.
 
@@ -124,7 +134,7 @@ While these mechanisms prevent malicious actors from exerting undue influence on
 
 This is what the actual consensus mechanism does. In most cases this is the _longest chain rule_ or _heaviest chain rule_, also called **Nakamoto Consensus**.
 
-The term _heaviest chain rule_ is more precise, as the rule is defined by the amount of aggregated work that went into building a branch, rather than the number of blocks. Theoretically, there could be a fork with two branches, where the shorter branch has more aggregate work to it. 
+The term _heaviest chain rule_ is more precise, as the rule is defined by the amount of aggregated work that went into building a branch, rather than the number of blocks. Theoretically, there could be a [fork](https://www.horizen.io/academy/blockchain-forks/) with two branches, where the shorter branch has more aggregate work to it. 
 
 _In this case_, the shorter branch would be considered valid. In practice, this does not make much of a difference because there is little variety in the PoW attached to blocks on major blockchains. This little excursion should prove valuable to following along on a history of Block DAG protocols.
 
@@ -138,6 +148,8 @@ One of the first steps towards Block-DAG protocols was the _Greedy Heaviest Obse
 
 Instead, the subtree with the greatest _combined_ Proof-of-Work or difficulty is considered the valid branch by protocol design.
 
+![ghost protocol](/img/directed-acyclic-graph-dag/ghost-protocol.jpg)
+
 A more intuitive description might be finding the subtree of greatest cardinality. _Here we make the same assumption as before when distinguishing between the longest and heaviest-chain rule._ 
 
 The structure on the image above is moving into DAG territory, rather than just being a blockchain with orphaned blocks, though there is no such clear distinction. 
@@ -148,11 +160,15 @@ The two differ in trees being able to branch off in the direction of the edges, 
 
 **Trees are a subcategory of DAGs, _in that every tree is a DAG, but not every DAG is a tree._**
 
+![trees vs dag](/img/directed-acyclic-graph-dag/trees-vs-dag.jpg)
+
 Earlier, we said decreasing the block time and increasing the block size leads to a higher orphan rate and reduced security. 
 
 In GHOST, this effect is eliminated by introducing a different mechanism to elect valid forks. An attacker would also need to control more relative hash power to perform _double spends_ (>51%) than he would need to with the longest chain rule (51%) as the consensus mechanism.
 
 > _“Each of these mechanisms share similar quantitative notions of a block's aggregate proof of work/hash power but differ qualitatively: aggregate chain work vs aggregate subtree work.”_ - Drew Stone
+
+![recursive elections dag](/img/directed-acyclic-graph-dag/recursive-elections-dag.jpg)
 
 ### SPECTRE
 
@@ -188,7 +204,7 @@ It is a situation where a majority vote can order **A < B**, **B < C**, and yet 
 
 Because linear block ordering cannot be guaranteed, the protocol doesn’t satisfy the _liveness_ property. 
 
-_Liveness_ and _safety_ are properties distributed systems must display in order to securely support a cryptocurrency.
+_Liveness_ and _safety_ are properties [distributed systems](https://www.horizen.io/academy/consensus-in-distributed-systems/) must display in order to securely support a cryptocurrency.
 
 - **Liveness** means that all non-faulty nodes eventually compute a new state, or block. In simple terms it means, the system doesn’t halt and reacts to events.
 - **Safety** means that all non-faulty nodes transition to the same state after a given external event. This means all nodes will be in sync eventually.
@@ -215,7 +231,7 @@ A difference in the reward structure of our DAG compared to a blockchain is that
 
 This incentivizes the miners to reference all unreferenced blocks. Newly created blocks that are not referenced by any other block yet are called leaves of the DAG.
 
-Mining in the Horizen Block-DAG will be similar to traditional mining, but we expect more blocks to be mined in total with an overall lower difficulty which should lead to greater mining decentralization as fewer miners will need to join mining pools.
+Mining in the Horizen Block-DAG will be similar to traditional mining, but we expect more blocks to be mined in total with an overall lower difficulty which should lead to greater [mining decentralization](https://www.horizen.io/academy/mining-in-blockchain/) as fewer miners will need to join mining pools.
 
 ## Summary - DAG
 

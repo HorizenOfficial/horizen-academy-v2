@@ -1,21 +1,23 @@
 ﻿---
 
+sidebar_position: 22
 sidebar_label: Elliptic Curve Cryptography
 title: What is Elliptic Curve Cryptography? - ECC
 slug: /elliptic-curve-cryptography-ecc/
 description: Elliptic curve cryptography is based on discrete mathematics. In discrete math, elements can only take on certain discrete values.
+image: /img/elliptic-curve-cryptography-ecc/elliptic-curve-cryptography-meta.jpeg
 
 ---
 
 # What is Elliptic Curve Cryptography?
 
-To explore *Elliptic Curve Cryptography*, we must discuss _public-key cryptography_ (_PKC_) schemes.
+To explore *Elliptic Curve Cryptography*, we must first discuss _public-key cryptography_ (_PKC_) schemes.
 
-All PKC schemes have in common that they are based on key pairs - a _public_ and a _private key_. This is also referred to as _asymmetric cryptography_.
+All [PKC schemes](https://www.horizen.io/academy/public-key-cryptography-pkc/) have in common that they are based on key pairs - a _public_ and a _private key_. This is also referred to as _asymmetric cryptography_.
 
 While a public key can be distributed openly to any potential sender of an encrypted message, only the owner of the corresponding private key can decrypt those messages. The public key is generated from the private key using a mathematical one-way function.
 
-_PKC schemes_ can also be used to create digital signatures.
+_PKC schemes_ can also be used to create [digital signatures](https://www.horizen.io/academy/digital-signatures/).
 
 _Digital signatures_ are created using a message to be signed and a private key as an input. A verifier can validate the signature using the corresponding public key without gaining knowledge about the private key used to sign the message.
 
@@ -23,7 +25,7 @@ _Digital signatures_ are created using a message to be signed and a private key 
 
 _Public-key cryptography_ is mostly used for the confidential exchange of information like encrypted emails using _Pretty Good Privacy_ (_PGP_) or similar encryption methods. Other use cases are sender authentication using _digital signatures_ and verifying ownership in cryptocurrencies.
 
-One can also construct _hybrid cryptosystems_ composed of _symmetric_and _asymmetric_ cryptographic schemes. 
+One can also construct _hybrid cryptosystems_ composed of _symmetric_ and _asymmetric_ cryptographic schemes. 
 
 _Asymmetric cryptography_ is computationally more expensive than symmetric schemes. 
 
@@ -44,6 +46,8 @@ _Boolean algebra_ is an example of discrete math where:
 - The possible values are *zero* and *one* 
 - These values are usually interpreted as *true* and *false*
 
+![secp256k1](/img/public-key-cryptography-pkc/secp256k1.jpg)![secp256k1](/img/public-key-cryptography-pkc/secp256k1.jpg)
+
 Math on the elliptic curve uses familiar mathematical operations such as addition and subtraction, but the effect of these operations is defined by the curve. 
 
 Instead of having a set of rational or whole numbers as possible values, the allowed discrete values are defined by the curve. Any point on the curve is a possible value. 
@@ -59,6 +63,8 @@ The _double_ describing the two-dimensional vector in the graphic below can be o
 On the elliptic curve, any point can be viewed as an arrow pointing in a certain direction and having a defined magnitude or length (also called a vector). 
 
 A **scalar** is a single value, like an integer that only has a magnitude but no direction.
+
+![scalars vs vectors](/img/digital-signatures/scalars-vs-vectors.jpg)
 
 Multiplication and division are also defined on the curve. The multiplication of a point on the curve with a _scalar_ is easy to perform, the division of a point is computationally difficult. 
 
@@ -80,13 +86,15 @@ Your private key is a large random number, which when multiplied with a _base po
 
 **The key takeaway** is that your private key is a large random number or _scalar_, which multiplied with the _base point_ yields your public key, another point on the curve that can also be referred to as a _vector_.
 
+![proving private key](/img/digital-signatures/proving-private-key.jpg)
+
 The elliptic curve is generally described by **\\(y^2 = x^3 +ax + b\\)** where **\\(4a^3 + 27b^2 \neq 0\\)**. 
 
 There are two possible solutions for each **x**-value, which is very useful when compressing a point on the curve, like the base point or your public key. One can omit the **y**-coordinate and include an extra bit indicating if the **y**-value is _positive_ or _negative_ without losing any information.
 
 $$y = \pm \sqrt{x^3 + ax + b}$$
 
-In _Bitcoin_ and _Horizen_, the curve used is called **secp256k1** and described by **\\(y^2 = x^3 + 7\\)**. 
+In [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) and _Horizen_, the curve used is called **secp256k1** and described by **\\(y^2 = x^3 + 7\\)**. 
 
 _The base points coordinates are:_
 
@@ -202,11 +210,15 @@ $$
 
 For the **secp256k1** curve used in Bitcoin and Horizen, **p** is the largest prime that is less than **\\(2^{256}\\)**.
 
+![finite field](/img/elliptic-curve-cryptography-ecc/finite-field.jpg)
+
 The graph above shows the finite field where each point represents a valid, discrete value of a point on the curve. Notice how the symmetry with regards to the **x**-axis is preserved.
 
 In order to graphically add two points together, one again connects them with a straight line. This line may "wrap around" the field several times before it intersects with another point or discrete value: the result of the addition **R**. 
 
 Please note that in reality, the finite field is multidimensional. The two-dimensional finite field shown here only serves as an easy to follow example.
+
+![finite field example](/img/elliptic-curve-cryptography-ecc/finite-field-example.gif)
 
 ## RSA - Rivest, Shamir, Adleman
 
@@ -224,6 +236,8 @@ In _elliptic curve cryptography_, the security assumption is based on the hardne
 
 RSA and its modular-arithmetic-based friends are still important today and are often used alongside ECC. Rough implementations of the mathematics behind RSA can be built and explained rather easily.
 
+![rsa key system](/img/elliptic-curve-cryptography-ecc/rsa-key-system.jpg)
+
 Above is a rudimentary example of encrypting a _message_ (**2**) with a public key that comprises a tuple of two values: the _encryptor_ **E** and the _modulus_ **N**. 
 
 The _cipher_ (**4**) is later decrypted using the corresponding private key comprising the tuple _decryptor_ **D** and the same _modulus_ **N**. The interesting part is the relation between the three value **E**, **D** and **N**. 
@@ -240,4 +254,4 @@ _ECC_ is based on _discrete math_ where only certain values are allowed. The sec
 
 _RSA_ and many of the early PKC schemes are built using _modular arithmetic_ and the security is based on the hardness of _integer factorization_. 
 
-When you are transferring cryptocurrencies you generally use addresses and not your public key.
+When you are transferring cryptocurrencies you generally use [addresses](https://www.horizen.io/academy/wallet-addresses/) and not your public key.

@@ -1,15 +1,17 @@
 ﻿---
 
+sidebar_position: 26
 sidebar_label: Governance
 title: Governance on the Blockchain
 slug: /blockchain-governance/
 description: There is scrutiny of the process for generating new blocks, but less focus on the process for changing a protocol's code. Governance is the keyword here.
+image: /img/blockchain-governance/blockchain-governance-meta.jpeg
 
 ---
 
 # What is Blockchain Governance?
 
-One of a blockchain protocol's most highly valued properties is its level of decentralization. There is usually intense scrutiny of the process for generating new blocks, but less focus on the process for changing a protocol's code. 
+One of a [blockchain protocol's](https://www.horizen.io/academy/blockchain-protocols/) most highly valued properties is its level of decentralization. There is usually intense scrutiny of the process for generating new blocks, but less focus on the process for changing a protocol's code. 
 
 _Blockchain governance is the key here._
 
@@ -25,7 +27,7 @@ The **Minimum Nakamoto Coefficient** is determined by assigning a decentralizati
  - Developers
  - Exchanges
  - Nodes
- - And wallet distribution
+ - And [wallet distribution](https://www.horizen.io/academy/crypto-wallets/)
 
 ... and _aggregating_ those scores into an overall score.
 
@@ -50,7 +52,7 @@ In this article, we want to give an overview of decision making mechanisms used 
 
 In a perfect world, every stakeholder has a say when it comes to how the deciders of a project are chosen. Ideally there would be some sort of fair vote - whatever "fair" means in this context.
 
-Realistically there cannot always be a process to choose the deciders. Most projects in blockchain start with a few like-minded people with an idea of what their ideal _cryptocurrency_, _dApp_ or _blockchain_ platform should look like. 
+Realistically there cannot always be a process to choose the deciders. Most projects in blockchain start with a few like-minded people with an idea of what their ideal [_cryptocurrency_](https://www.horizen.io/academy/cryptocurrency/), _dApp_ or _blockchain_ platform should look like. 
 
 Oftentimes they find themselves already involved in a similar project.
 
@@ -87,7 +89,7 @@ There is a wide range of decisions with varying degrees of consequences. Some de
 
 ### Choosing a Consensus Mechanism
 
-An important design decision is the choice of the [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/), and in case of [Proof of Work](https://www.horizen.io/academy/proof-of-work-pow/) blockchains, the mining algorithm. 
+An important design decision is the choice of the [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/), and in case of [Proof of Work](https://www.horizen.io/academy/proof-of-work-pow/) blockchains, the [mining algorithm](https://www.horizen.io/academy/mining-in-blockchain/). 
 
 These types of decisions affect the economies of the project, as well as the ecosystem around the protocol. When mining is involved, existing miners with specialized hardware can be approached. Conversely, projects can try to avoid **ASICs** and choose an algorithm better suited for general purpose hardware.
 
@@ -151,7 +153,7 @@ Another principle used to increase the security of the political process is the 
 
 Bitcoin doesn't have a formal specification because no central authority defines what the system should do. Formal specifications are used to describe a system, to analyze its behavior, and to aid in its design by verifying key properties of interest.
 
-If one had to find the closest thing to a formal specification for Bitcoin, it would be the code of the Bitcoin Core repository.
+If one had to find the closest thing to a formal specification for [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/), it would be the code of the Bitcoin Core repository.
 
 #### Voting in Bitcoin
 
@@ -169,7 +171,7 @@ An updated process was implemented using version bits described in [BIP-0009](ht
 
 This allows up to **29** soft forks to be proposed concurrently.
 
-If we were to apply Schneider's logic to this process, this would mean that "political" suggestions from developers are decided upon by the "fiscal power" of miners. Once a decision is made, the nodes on the network enforce the new rules in their role as the administrators. 
+If we were to apply Schneider's logic to this process, this would mean that "political" suggestions from developers are decided upon by the "fiscal power" of miners. Once a decision is made, the [nodes](https://www.horizen.io/academy/nodes/) on the network enforce the new rules in their role as the administrators. 
 
 Ascribing miners the role of wielding the fiscal power feels like an inaccurate comparison in this specific context.
 
@@ -179,17 +181,17 @@ An innovative and experimental governance approach enabled through blockchain te
 
 ### DAO - Decentralized Autonomous Organization
 
-The Decentralized Autonomous Organization (DAO) is an entity governed by rules written into the code. It acts predictably according to a predefined "constitution" and is controlled by its shareholders. 
+The [Decentralized Autonomous Organization](https://www.horizen.io/academy/decentralized-autonomous-organization-dao/) (DAO) is an entity governed by rules written into the code. It acts predictably according to a predefined "constitution" and is controlled by its shareholders. 
 
 Shareholders have the power to change the rules of the DAO, but only if making changes to them was foreseen and enabled at the DAO's inception. Rules might just as well be hardcoded, without the option to adapt them later on.
 
-Interactions with a DAO are tracked with timestamps and [digital signatures](https://www.horizen.io/academy/digital-signatures/) recorded on-chain. The general concept was introduced as a [_decentralized autonomous corporation_](https://letstalkbitcoin.com/is-bitcoin-overpaying-for-false-security) (DAC) in an article by Dan Larimer in 2013. Vitalik Buterin went one step further and proposed that human management could be made obsolete if the smart contracts governing the DAO were written in a _turing complete_ language.
+Interactions with a DAO are tracked with timestamps and [digital signatures](https://www.horizen.io/academy/digital-signatures/) recorded on-chain. The general concept was introduced as a [_decentralized autonomous corporation_](https://letstalkbitcoin.com/is-bitcoin-overpaying-for-false-security) (DAC) in an article by Dan Larimer in 2013. Vitalik Buterin went one step further and proposed that human management could be made obsolete if the [smart contracts](https://www.horizen.io/academy/smart-contracts/) governing the DAO were written in a _turing complete_ language.
 
 Building a DAO is no simple endeavor. The code governing a DAO is public and anyone can review it. This also means anyone can analyze the code to find potential vulnerabilities. Fixing the code after launch is difficult, as any decision related to rule changes is subject to building consensus.
 
 The most notable attempt at creating a decentralized autonomous organization was **The DAO** on the Ethereum blockchain. It was launched with **$150** million of assets under control in 2016 as a venture capital fund and immediately got hacked. 
 
-About **$50** million in crypto assets were stolen by the hackers. The hack was reverted by reorganizing the Ethereum blockchain, which led to a chain split. The **Ethereum Classic** chain is the Ethereum chain where the hack was not reverted, while investors on the Ethereum chain were refunded their assets.
+About **$50** million in crypto assets were stolen by the hackers. The hack was reverted by reorganizing the [Ethereum blockchain](https://www.horizen.io/academy/ethereum-glossary/), which led to a chain split. The **Ethereum Classic** chain is the Ethereum chain where the hack was not reverted, while investors on the Ethereum chain were refunded their assets.
 
 ## Decision Making Processes
 
@@ -241,7 +243,7 @@ After a certain date, the Bitcoin UASF client would have rejected blocks by mine
 
 This could have led to a contentious network fork. 
 
-Miners considered the threat to the network's utility, and hence value, serious enough to follow the majority of nodes and activate SegWit. An important learning at that time was that the miners influence on the network can be overruled by its users when users form a strong consensus.
+Miners considered the threat to the network's utility, and hence value, serious enough to follow the [majority of nodes](https://www.horizen.io/academy/nodes/) and activate SegWit. An important learning at that time was that the miners influence on the network can be overruled by its users when users form a strong consensus.
 
 #### MASFs
 
@@ -251,7 +253,7 @@ The initial mechanism for _MASFs_ had miners increment a blocks _version_ number
 
 This initial mechanism was updated to use [_version bits_](https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki) instead of the version number. By interpreting the individual bits of the nVersion data field in the block header as a bit vector, a single block header can signal acceptance or rejection for up to **29** forks at once. 
 
-When a sufficiently large share of hash power has signaled readiness for a fork, full nodes will enforce those rule changes accordingly.
+When a sufficiently large share of hash power has signaled readiness for a [fork](https://www.horizen.io/academy/blockchain-forks/), full nodes will enforce those rule changes accordingly.
 
 ### Hard Forks
 
@@ -322,7 +324,7 @@ These issues include the transparency of representatives’ votes, accountabilit
 
 ![comparing democracies](/img/blockchain-governance/comparing-democracies.jpg)
 
-**Liquid democracy** can be understood as a dynamic hybrid of direct and representative democracies**. It combines many of the upsides of each while doing away with most of their weaknesses. With liquid democracy, you have the option of delegating your vote to an "expert" who represents your views.
+**Liquid democracy** can be understood as a dynamic hybrid of **direct and representative democracies**. It combines many of the upsides of each while doing away with most of their weaknesses. With liquid democracy, you have the option of delegating your vote to an "expert" who represents your views.
 
 A key differentiator of liquid democracy is that you can delegate your vote to whomever you like and withdraw your delegation at any time - making the whole process _liquid_. This reduces the barrier to entry for people willing to get involved in the governance process and keeps delegates accountable because they can lose delegations at any time. 
 

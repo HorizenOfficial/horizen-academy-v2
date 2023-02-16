@@ -1,9 +1,11 @@
 ﻿---
 
+sidebar_position: 20
 sidebar_label: Digital Signatures
 title: What is a Digital Signature?
 slug: /digital-signatures/
 description: Digital signatures allow you to prove your knowledge of a private key corresponding to a particular address without revealing any information about it.
+image: /img/digital-signatures/digital-signatures-meta.jpeg
 
 ---
 
@@ -11,7 +13,9 @@ description: Digital signatures allow you to prove your knowledge of a private k
 
 **Public-Key Cryptography** is used to verify ownership on a blockchain.
 
-**Digital signatures** allow you to prove your knowledge of a private key corresponding to a particular address without revealing any information about it.
+**Digital signatures** allow you to prove your knowledge of a private key corresponding to a [particular address](https://www.horizen.io/academy/wallet-addresses/) without revealing any information about it.
+
+![digital signatures](/img/digital-signatures/digital-signatures.jpg)
 
 *To create a digital signature you need two components:* 
 1. A **message**, in most cases a transaction
@@ -40,6 +44,8 @@ Either way, you need three values.
 - *Scalars* are written with small letters, like the private key: **sk**
 - *Vectors* are written with capital letters, like the public key: **PK**
 
+![scalars vs vectors](/img/digital-signatures/scalars-vs-vectors.jpg)
+
 *It's important to note that the hash of a vector is a scalar.* The [hash function](https://www.horizen.io/academy/hash-functions/) consumes the _tuple_ of values as an input, and produces a scalar as an output.
 
 We use the **\\(\bullet\\)** operator when we are referring to multiplication on the elliptic curve. We use the **\\(\cdot\\)** operator when we are referring to regular multiplication of scalars. 
@@ -51,6 +57,8 @@ We added this little discourse because it should help you to keep track of what 
 - Your secret or _private key_ **sk** is a large random number
 - If you multiply the base point **P** used for the elliptic curve, **secp256k1**, with a private key, you get a *public key* _PK_
 - You want to prove knowledge of **sk** to the network without revealing it
+
+![proving private key](/img/digital-signatures/proving-private-key.jpg)
 
 ## How to Create a Digital Signature?
 
@@ -121,7 +129,7 @@ _Two conditions must be met in order for this to be the case:_
 
 ### Being Able to Provide a Valid Signature With the Private Key
 
-_Let's assume you know **_sk_**._
+_Let's assume you know **sk**._
 
 1. First, you choose random value for **r** and a message **m** to sign. 
 2. Next, you compute **\\(R = r \bullet P\\)**. 
@@ -192,7 +200,7 @@ Without knowledge of **r** you cannot compute **sk** from **s**.
 
 ## Verifying a Digital Signature
 
-All full nodes and mining nodes verify every transaction before forwarding it or including it in a block. 
+All [full nodes and mining nodes](https://www.horizen.io/academy/nodes/) verify every transaction before forwarding it or including it in a block. 
 
 They verify a transaction, or message **m**, based on the originating public key **PK** and the signature, which is composed of **s** and **R**. 
 
@@ -211,7 +219,7 @@ Each input spent needs to be signed.
 A transaction typically informs the network about a transfer of money or data. The message **m** is to be signed, with **s** and **R** comprising the signature of that message.
 
 Because **s** depends on the message **m**, the verification process is only successful if two conditions are met: 
-1. The _sender_ of the message knows the private key **sk** used to generate the UTXO's address 
+1. The _sender_ of the message knows the private key **sk** used to generate the [UTXO](https://www.horizen.io/academy/utxo-vs-account-model/)'s address 
 2. And the signature (**R**, **s**) was created for that specific transaction **m**.
 
 *With cryptocurrencies, the message **m** is the unsigned part of a transaction.*
@@ -224,11 +232,11 @@ Each transaction output has a _locking script_. It is called _scriptPubKey_ and 
 
 ## Summary - Digital Signatures
 
-To summarize, public key cryptography (PKC) is used to verify ownership. It's basic building blocks are private keys, public keys, and a digital signatures. 
+To summarize, [public key cryptography (PKC)](https://www.horizen.io/academy/public-key-cryptography-pkc/) is used to verify ownership. It's basic building blocks are private keys, public keys, and a digital signatures. 
 
 This methodology is also used in encryption schemes such as TLS, PGP or SSH.
 
-While there are many different PKC schemes, blockchains use elliptic curve cryptography (ECC). 
+While there are many different PKC schemes, blockchains use [elliptic curve cryptography (ECC)](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/). 
 
 Cryptography mostly relies on one-way functions. The first one-way function we introduced was the hash function. ECC and its underlying _discrete log problem_ pose a second one-way function.
 

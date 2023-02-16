@@ -1,9 +1,11 @@
 ﻿---
 
-sidebar_label: Automated Market Maker - AMM
-title: What is an AMAM? Automated Market Maker
+sidebar_position: 5
+sidebar_label: Automated Market Makers - AMM
+title: What is an AMM? Automated Market Maker
 slug: /automated-market-maker-amm/
 description: In DeFi, the traditional market maker is replaced by an Automated Market Maker, which is a set of rules written into code and executed via smart contracts.
+image: /img/automated-market-maker-amms/automated-market-maker-amm-meta.jpeg
 
 ---
 
@@ -84,9 +86,9 @@ This example extends to the stock market, where market makers operate as _centra
 
 ## How Does Market Making Work in DeFi?
 
-In DeFi, the traditional market maker, which is often a centralized entity, is replaced by an **Automated Market Maker** which is a set of rules written into code and executed via _smart contracts_. 
+In DeFi, the traditional market maker, which is often a centralized entity, is replaced by an **Automated Market Maker** which is a set of rules written into code and executed via [_smart contracts_](https://www.horizen.io/academy/smart-contracts/). 
 
-With _AMMs_, the price of the token is managed by a **pricing formula** that adjusts based on the amount of tokens that currently sits in a _liquidity pool_ as compared to the other coin that is its _trading pair_. 
+With _AMMs_, the [price of the token](https://www.horizen.io/academy/what-is-a-token/) is managed by a **pricing formula** that adjusts based on the amount of tokens that currently sits in a _liquidity pool_ as compared to the other coin that is its _trading pair_. 
 
 ### What are Liquidity Pools?
 
@@ -162,5 +164,5 @@ What ultimately makes AMMs better than centralized market making firms is that t
 
 - Accessible to anyone who wishes to participate in market making functions by becoming a liquidity provider
 
-- Secured by decentralized protocols to ensure that billions of dollars a day in trades can be executed successfully _and_ at fair market prices
+- Secured by [decentralized protocols](https://www.horizen.io/academy/blockchain-protocols/) to ensure that billions of dollars a day in trades can be executed successfully _and_ at fair market prices
 
