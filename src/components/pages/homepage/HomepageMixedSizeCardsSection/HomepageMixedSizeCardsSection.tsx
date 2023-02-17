@@ -26,16 +26,16 @@ const CardWContent: React.FC<CardWContentProps> = ({ title, body, link }) => {
 const cards: CardWContentProps[] = [
     {
         title: "The World of Web3",
-        link: "/docs/web3/",
+        link: "web3",
     },
     {
         title: "What is a Token?",
-        link: "/docs/what-is-a-token/",
+        link: "what-is-a-token",
     },
     {
         title: "How Does Blockchain Work?",
         body: "Covering the Basics",
-        link: "/docs/how-does-blockchain-work/",
+        link: "how-does-blockchain-work",
     },
 ]
 

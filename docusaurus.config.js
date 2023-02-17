@@ -40,6 +40,7 @@ const config = {
                         "https://github.com/HorizenOfficial/horizen-academy-v2/",
                     showLastUpdateAuthor: true,
                     showLastUpdateTime: true,
+                    routeBasePath: "/",
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
@@ -67,7 +68,7 @@ const config = {
                         position: "left",
                     },
                     {
-                        href: "/docs/ethereum-virtual-machine-evm/",
+                        to: "ethereum-virtual-machine-evm",
                         position: "left",
                         label: "Articles",
                     },
@@ -78,23 +79,23 @@ const config = {
                         items: [
                             {
                                 label: "Why Create a Token?",
-                                href: "/docs/why-create-a-token/",
+                                to: "why-create-a-token",
                             },
                             {
                                 label: "Oracles in Blockchain",
-                                href: "/docs/blockchain-oracles/",
+                                to: "blockchain-oracles",
                             },
                             {
                                 label: "Mining Economics",
-                                href: "/docs/economies-of-mining/",
+                                to: "economies-of-mining",
                             },
                             {
                                 label: "What is EVM?",
-                                href: "/docs/ethereum-virtual-machine-evm/",
+                                to: "ethereum-virtual-machine-evm",
                             },
                             {
                                 label: "Blockchain Explorers",
-                                href: "/docs/blockchain-explorers/",
+                                to: "blockchain-explorers",
                             },
                         ],
                     },
