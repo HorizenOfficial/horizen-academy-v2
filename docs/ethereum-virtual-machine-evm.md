@@ -9,7 +9,7 @@ image: /img/ethereum-virtual-machine-evm/ethereum-virtual-machine-meta.jpg
 
 ---
 
-# What is EVM? - Ethereum Virtual Machine
+# What is EVM? Ethereum Virtual Machine
 
 Amongst the many important qualities that make a successful blockchain network, **EVM compatibility** stands out as one of the most crucial for achieving _user adoption_ and _expanding the developer community_.
 

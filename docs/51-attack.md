@@ -17,8 +17,6 @@ Controlling 51% of a network allows an attacker to potentially reverse a transac
 
 ![51 attack](/img/51-attack/51-attack.jpg)
 
-![51 attack](/img/51-attack/51-attack.jpg)
-
 51% attacks are seen as a greater threat for newer blockchain networks that are still small in size and are therefore vulnerable to being taken over.
 
 ## 51% Attacks on Proof of Work Blockchains

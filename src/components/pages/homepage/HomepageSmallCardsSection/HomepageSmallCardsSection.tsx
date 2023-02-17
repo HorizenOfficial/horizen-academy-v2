@@ -72,7 +72,7 @@ const HomepageSmallCardsSection = () => {
     return (
         <section className={commonStyles.section}>
             <div className="container">
-                <h2 className={commonStyles.section__title}>Popular Topics</h2>
+                <h2 className={commonStyles.section__title}>Recently Published</h2>
                 <div className={styles["card-list"]}>
                     {cards.map((card) => (
                         <CardWContent

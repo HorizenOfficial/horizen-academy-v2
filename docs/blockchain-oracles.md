@@ -168,12 +168,6 @@ Enterprise shipping companies adopting blockchain technology can use oracles to 
 
 Carbon credit schemes can be set up on the blockchain that rely on oracle networks to submit data from external sources that track emissions in order to determine how to reward credits based on sustainability targets.
 
-## Conclusion - Oracles
-
-_Oracles_ can best be described as the connective tissue that holds the blockchain space together. They bear the important responsibility of transmitting the world's data into smart contracts in order to inform them about the current state of reality as it exists outside of the siloed blockchains that they operate within.
-
-In performing this critical function,_oracle networks_ serve as the primary information highway for the crypto markets and the driving force behind the movement of _billions of dollars of capital_ that exists across thousands of Dapps, [tokens](https://www.horizen.io/academy/what-is-a-token/) and DAOs within the blockchain ecosystem.
-
 ## Frequently Asked Questions - Blockchain Oracles
 
 ### What is the Job of an Oracle?
@@ -189,3 +183,9 @@ On popular Oracles networks like Chainlink, the transmission of external off-cha
 ### What Applications Use Oracles?
 
 Oracles are utilized for several blockchain applications, including decentralized exchanges, lending protocols, insurance protocols, some NFT marketplaces, games and enterprise blockchain applications such as supply chain tracking.
+
+## Conclusion - Oracles
+
+_Oracles_ can best be described as the connective tissue that holds the blockchain space together. They bear the important responsibility of transmitting the world's data into smart contracts in order to inform them about the current state of reality as it exists outside of the siloed blockchains that they operate within.
+
+In performing this critical function,_oracle networks_ serve as the primary information highway for the crypto markets and the driving force behind the movement of _billions of dollars of capital_ that exists across thousands of Dapps, [tokens](https://www.horizen.io/academy/what-is-a-token/) and DAOs within the blockchain ecosystem.

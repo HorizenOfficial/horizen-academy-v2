@@ -185,8 +185,6 @@ The **blockchain** organizes data by splitting it into subsets or containers, re
 
 This serves as a link to the preceding block and establishes the order throughout the chain of blocks.
 
-![how blocks link](/img/blockchain-data-structure/how-blocks-link.jpg)
-
 Each block contains several elements. _The elements of a block_ are generally separated into the _block header_ and its _transactions_. While the transactions in a block account for most of the data, the block header contains essential metadata about each block, such as a timestamp and _block height_.
 
 The key difference between a blockchain and a linked list is that each reference in a blockchain is cryptographically secured, and therefore _tamper-evident_. In contrast, the pointers in a linked list can be changed at any time without affecting the integrity of the data. 
@@ -210,8 +208,6 @@ To tamper with its data, you would have to recreate one valid block including a 
 It is important to note that it is not the data structure that makes data on the blockchain immutable. The information alone is tamper-evident only. Changes are easy to detect. There is no _immutability_ if there are no strong consensus rules in place, and a sufficiently large number of nodes on the network. 
 
 The incentives need to be structured so the majority of participants will follow the protocol and reject invalid blocks.
-
-![malicious block example](/img/blockchain-data-structure/malicious-block-example.jpg)
 
 The references between blocks don’t just depend on the order of blocks, but also on the data contained within each block. It is not possible to add or delete data from a block in the blockchain. This property is the foundation of the trust people put in the data stored in a blockchain.
 
@@ -318,7 +314,7 @@ Transactions, being the basic building block of a blockchain, are an example of 
 	- Each transaction input includes a signature that authorizes spending, and each newly created output includes information about what a signature needs to look like in order to authorize its spending.
 - **Lastly**, the overall structure of the blockchain needs to be understood.
 
-## Summary
+## Summary - Blockchain as a Data Structure
 
 The _blockchain_ in itself is a data structure that stores transactions. It is similar to a linked list in that the data is split into containers - the _blocks_. Each block is connected with its predecessor with a cryptographically secured reference. This makes the _data structure_ tamper-evident, changes to old blocks are easy to detect and dismissed.
 

@@ -36,8 +36,6 @@ _Change addresses_ were introduced so people you are transacting with don't have
 
 In the example above of a regular [bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) transaction, you can see one input and two outputs to the transaction. The first output went to a different address and is the amount the user wanted to spend. The remainder of the [UTXO](https://www.horizen.io/academy/utxo-vs-account-model/) went back to the same address the funds originated from.
 
-![change address](/img/private-transactions/change-address.jpeg)
-
 A wallet that supports change addresses will generate a new address, every time you are receiving funds, no matter if they are change or regular transactions. 
 
 The example above shows a transaction with the exact same amounts as before, but this time the change went back to a newly created change address. This feature improves privacy by making it harder to trace the transaction history of a given user.

@@ -21,7 +21,7 @@ We will often use the term _decentralizing_ and _centralizing_ to express in whi
 
 ## What is Mining?
 
-<strong>Mining</strong> is a part of coming to a consensus on a blockchain that uses the Proof-of-Work method to agree on the order of transactions.
+**Mining** is a part of coming to a consensus on a blockchain that uses the Proof-of-Work method to agree on the order of transactions.
 
 A miner records every transaction that happens on the blockchain. Two different miners might have different versions of the transaction history.
 

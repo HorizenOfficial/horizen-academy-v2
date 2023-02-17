@@ -250,7 +250,7 @@ It is a simple, yet effective solution.
 
 The randomness is derived from the smallest block hash on the mainchain in a given period of time. For this to work, the set of eligible certifiers will be fixed, before the randomness generation period starts. A significant share of hashing power would be needed to corrupt this mechanism. 
 
-Under the assumption of an honest majority in hashing power on the mainchain, this should be infeasible and economically unprofitable. A formal analysis of such an [attack]](https://www.horizen.io/academy/blockchain-attacks/) will be conducted separately.
+Under the assumption of an honest majority in hashing power on the mainchain, this should be infeasible and economically unprofitable. A formal analysis of such an [attack](https://www.horizen.io/academy/blockchain-attacks/) will be conducted separately.
 
 Another modification to the original Ouroboros implementation regards the references to the mainchain included in the sidechain blocks. We will talk about this in the context of the _Cross-Chain Transfer Protocol_ when introducing the concept of full referencing.
 
