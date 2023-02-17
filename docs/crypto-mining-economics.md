@@ -34,8 +34,6 @@ An **ASIC Miner** is a type of integrated circuit computer hardware that is desi
 <table class="table">
     <tr>
         <th>
-        </th>
-        <th>
             Crypto Miner
         </th>
         <th>
@@ -47,18 +45,12 @@ An **ASIC Miner** is a type of integrated circuit computer hardware that is desi
     </tr>
     <tr>
         <td>
-              IMAGE
-        </td>
-        <td>
             <b>Antminer S19</b>
         </td>
         <td>95.0 TH/s</td>
         <td>$6k-8.5k</td>
     </tr>
     <tr>
-        <td>
-              IMAGE
-        </td>
         <td>
             <b>Antminer S19 Pro</b>
         </td>
@@ -67,9 +59,6 @@ An **ASIC Miner** is a type of integrated circuit computer hardware that is desi
     </tr>
     <tr>
         <td>
-            IMAGE
-        </td>
-        <td>
             <b>WhatsMiner M30S+</b>
         </td>
         <td>100.0 TH/s</td>
@@ -77,18 +66,12 @@ An **ASIC Miner** is a type of integrated circuit computer hardware that is desi
     </tr>
     <tr>
         <td>
-              IMAGE
-        </td>
-        <td>
             <b>WhatsMiner M30S++</b>
         </td>
         <td>112.0 TH/s</td>
         <td>$2,850</td>
     </tr>
     <tr>
-         <td>
-              IMAGE
-        </td>
 <td>
 <b>AvalonMiner 1246</b>
 </td>
