@@ -27,7 +27,7 @@ He said that he was working on the code for almost two years and that he had to 
 
 On **January 3rd, 2009** the _Genesis Block_ of Bitcoin was mined and the first 50 bitcoin came into existence. To timestamp the genesis block, and to prove that there was no pre-mine, he included the headline of the London paper _The Times_ in a data field of the genesis block:
 
-<h3 class="text-center font-italic">"The Times 03/Jan/2009 Chancellor on Brink of Second Bailout for Banks."</h3>
+### "The Times 03/Jan/2009 Chancellor on Brink of Second Bailout for Banks."
 
 Choosing to include this headline suggests that one of the main motivations to build Bitcoin was to create an alternative to the _fractional reserve banking system_ that probably destabilizes the economy and arguably disenfranchises the general public.
 

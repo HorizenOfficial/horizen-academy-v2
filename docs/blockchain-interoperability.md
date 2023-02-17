@@ -61,8 +61,6 @@ The [protocol](https://www.horizen.io/academy/blockchain-protocols/) works by co
 
 ![oracles and relayers](/img/blockchain-interoperability/oracles-and-relayers.jpg)
 
-![oracles and relayers](/img/blockchain-interoperability/oracles-and-relayers.jpg)
-
 > Given two entities that do not collude, if (1) one entity can produce a block header for the block containing tA on chain A, (2) the other entity can independently produce the proof for tA on that block (transaction proof), and (3) the header and transaction proof in fact agree, then the communication protocol can deliver m to the client on chain B with the guarantee that tA is stably committed on chain A.
 
 > -[LayerZero](https://layerzero.network/pdf/LayerZero_Whitepaper_Release.pdf): Trustless Omnichain Interoperability Protocol - Ryan Zarick Bryan Pellegrino Caleb Banister May, 2021

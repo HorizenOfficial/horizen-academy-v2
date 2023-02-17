@@ -33,7 +33,7 @@ Today, the [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) network h
 
 ## What are the Different Types of Nodes?
 
-_There are 4 types of nodes on the Bitcoin network; Full nodes Light nodes, archive nodes and mining nodes_
+_There are 4 types of nodes on the Bitcoin network: Full nodes, light nodes, archive nodes and mining nodes_
 
 * **Full Nodes**
 
@@ -94,6 +94,8 @@ Ethereum nodes, or _clients_, record and transmit copies of transaction data, in
 * The performance of the EVM is only limited by the amount of gas that is provided by the client to process each transaction. 
 
     * **Gas** refers to the fee, priced in Eth or Gwei, or pricing value required to successfully conduct a transaction or execute a contract on the Ethereum blockchain platform.
+
+    ![what is evm](/img/ethereum-glossary/what-is-evm.jpeg)
  
 ## How do Nodes Work on Bitcoin?
 

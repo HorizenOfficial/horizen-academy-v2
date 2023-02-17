@@ -39,8 +39,6 @@ The generalization _Demiro Massessi_ has formulated applies to both:
 
 ![consensus in blockchain](/img/pos-vs-pow/consensus-in-blockchain.jpg)
 
-![consensus in blockchain](/img/pos-vs-pow/consensus-in-blockchain.jpg)
-
 ## Proof of Work - PoW
 
 **Miners** are the entities who work to achieve consensus within the network in a _Proof of Work  blockchain_. 
@@ -134,8 +132,6 @@ There is no cost associated with building a new block on top of both branches wh
 In PoW, there is a real-world cost, electricity, to every block that gets mined. 
 
 It remains to be seen if PoS blockchains can provide the same security guarantees over an extended period of time that [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) with its PoW blockchain has shown for over a decade now.
-
-![proof of work vs proof of stake](/img/pos-vs-pow/proof-of-work-vs-proof-of-stake.jpg)
 
 ![proof of work vs proof of stake](/img/pos-vs-pow/proof-of-work-vs-proof-of-stake.jpg)
 

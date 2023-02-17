@@ -186,8 +186,6 @@ If we want to look at the very first [cryptocurrency](https://www.horizen.io/aca
 
 ![bitcoin transaction block explorer](/img/blockchain-explorers/bitcoin-transaction-block-explorer.jpeg)
 
-![bitcoin transaction block explorer](/img/blockchain-explorers/bitcoin-transaction-block-explorer.jpeg)
-
 It is the _first_ block on the Bitcoin blockchain that contains _more_ than one transaction. We can find the coinbase transaction on the very top. 
 
 Below is the first transaction as you would expect it. One person sending coins to another one.
@@ -214,7 +212,7 @@ It can be tough to find specific transactions using current blockchain explorers
 
 Making block explorers more intuitive and easier to use would go a long way toward increasing adoption. As the technology continues to evolve, we can expect to see even more advancements in this area.
 
-## Summary
+## Summary - Blockchain Explorers
 
 The block explorer does for the blockchain what a web browser does for the internet - it lets you _access the data_. The things you are likely to look up in a block explorer are your _addresses_ and your _transactions_. 
 

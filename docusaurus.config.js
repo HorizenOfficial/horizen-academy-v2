@@ -63,7 +63,7 @@ const config = {
                         position: "left",
                     },
                     {
-                        href: "/docs/ethereum-virtual-machine-evm/",
+                        to: "/docs/how-does-blockchain-work",
                         position: "left",
                         label: "Articles",
                     },
@@ -73,24 +73,24 @@ const config = {
                         position: "left",
                         items: [
                             {
-                                label: "Why Create a Token?",
-                                href: "/docs/why-create-a-token/",
+                                label: "Play-to-Earn Games",
+                                href: "/docs/play-to-earn-games/",
                             },
                             {
-                                label: "Oracles in Blockchain",
-                                href: "/docs/blockchain-oracles/",
+                                label: "Zero-Knowledge Proofs",
+                                href: "/docs/zero-knowledge-proofs-zkp/",
                             },
                             {
-                                label: "Mining Economics",
-                                href: "/docs/economies-of-mining/",
+                                label: "Consensus Mechanisms",
+                                href: "/docs/consensus-mechanisms/",
                             },
                             {
-                                label: "What is EVM?",
+                                label: "Tokenomics 101",
+                                href: "/docs/tokenomics/",
+                            },
+                            {
+                                label: "Ethereum Virtual Machine",
                                 href: "/docs/ethereum-virtual-machine-evm/",
-                            },
-                            {
-                                label: "Blockchain Explorers",
-                                href: "/docs/blockchain-explorers/",
                             },
                         ],
                     },
@@ -101,7 +101,7 @@ const config = {
                     },
                     {
                         href: "https://horizen.io/",
-                        label: "Main Horizen Website",
+                        label: "Horizen Website",
                         position: "right",
                     },
                 ],

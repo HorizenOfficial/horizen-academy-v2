@@ -9,7 +9,7 @@ image: /img/automated-market-maker-amms/automated-market-maker-amm-meta.jpeg
 
 ---
 
-# What is an AMAM? Automated Market Maker
+# What is an AMM? Automated Market Maker
 
 Automated Market Makers or **_AMMs_** are one of the defining innovations in decentralized finance. 
 

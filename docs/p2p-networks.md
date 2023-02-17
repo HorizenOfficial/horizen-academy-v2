@@ -10,7 +10,7 @@ image: /img/p2p-networks/p2p-networks-meta.jpeg
 
 ---
 
-# What is a P2P Network? - Peer-to-Peer Networks
+# What is a P2P Network? Peer-to-Peer Networks
 
 There are many ways to classify a blockchain. One of them is to determine if the blockchain is _public_ or _permissioned_. Permissioned blockchains are meant for defined groups of people, such as a consortium of companies that want to share a consistent database.
 
