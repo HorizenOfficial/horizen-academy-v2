@@ -139,7 +139,7 @@ The party responsible for submitting batches of transactions to the Ethereum net
 
 #### Zero-Knowledge (ZK) Rollups
 
-A [**Zero-Knowledge Proof**, or _ZKP](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/)_, is a form of cryptography that enables one party in a transaction (the prover) to prove that they have knowledge of a specific piece of information to another party (the verifier) without revealing what that information is.
+A [**Zero-Knowledge Proof**, or _ZKP_](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/), is a form of cryptography that enables one party in a transaction (the prover) to prove that they have knowledge of a specific piece of information to another party (the verifier) without revealing what that information is.
 
 This technology has _many_ advantages not only in protecting users’ sensitive data, but also in simplifying how nodes communicate to enable blockchain networks to confirm transactions with greater efficiency and become more scalable.
 

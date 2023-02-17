@@ -9,7 +9,7 @@ image: /img/zero-knowledge-proofs-zkp/zero-knowledge-proofs-zkp-meta.jpg
 
 ---
 
-# What are Zero-Knowledge Proofs?
+# What are Zero-Knowledge Proofs? 
 
 _Zero-knowledge proofs_ are ushering in a new era of dapps and blockchains that offer greater scalability and privacy through advanced cryptography. 
 

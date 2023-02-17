@@ -9,7 +9,7 @@ image: /img/blockchain-protocols/blockchain-protocols-meta.jpeg
 
 ---
 
-# What is a Protocol in Crypto?
+# What is a Protocol in Blockchain?
 
 **Money** is one of the _oldest_ “technologies” of humankind - a technology to communicate value. 
 

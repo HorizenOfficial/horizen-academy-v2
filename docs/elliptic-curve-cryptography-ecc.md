@@ -46,7 +46,7 @@ _Boolean algebra_ is an example of discrete math where:
 - The possible values are *zero* and *one* 
 - These values are usually interpreted as *true* and *false*
 
-![secp256k1](/img/public-key-cryptography-pkc/secp256k1.jpg)![secp256k1](/img/public-key-cryptography-pkc/secp256k1.jpg)
+![secp256k1](/img/public-key-cryptography-pkc/secp256k1.jpg)
 
 Math on the elliptic curve uses familiar mathematical operations such as addition and subtraction, but the effect of these operations is defined by the curve. 
 

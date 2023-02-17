@@ -67,7 +67,7 @@ const config = {
                         position: "left",
                     },
                     {
-                        to: "ethereum-virtual-machine-evm",
+                        to: "how-does-blockchain-work",
                         position: "left",
                         label: "Articles",
                     },
@@ -77,24 +77,24 @@ const config = {
                         position: "left",
                         items: [
                             {
-                                label: "Why Create a Token?",
-                                to: "why-create-a-token",
+                                label: "Play-to-Earn Games",
+                                href: "play-to-earn-games",
                             },
                             {
-                                label: "Oracles in Blockchain",
-                                to: "blockchain-oracles",
+                                label: "Zero-Knowledge Proofs",
+                                href: "zero-knowledge-proofs-zkp",
                             },
                             {
-                                label: "Mining Economics",
-                                to: "economies-of-mining",
+                                label: "Consensus Mechanisms",
+                                href: "consensus-mechanisms",
                             },
                             {
-                                label: "What is EVM?",
-                                to: "ethereum-virtual-machine-evm",
+                                label: "Tokenomics 101",
+                                href: "tokenomics",
                             },
                             {
-                                label: "Blockchain Explorers",
-                                to: "blockchain-explorers",
+                                label: "Ethereum Virtual Machine",
+                                href: "ethereum-virtual-machine-evm",
                             },
                         ],
                     },
@@ -105,7 +105,7 @@ const config = {
                     },
                     {
                         href: "https://horizen.io/",
-                        label: "Main Horizen Website",
+                        label: "Horizen Website",
                         position: "right",
                     },
                 ],

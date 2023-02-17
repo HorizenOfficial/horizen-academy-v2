@@ -183,7 +183,7 @@ Though both of these alternatives are mostly outdated, they can still provide yo
    </td>
    <td>$190
    </td>
-   <td>Bitcoin, Bitcoin Cash, Bitcoin Gold, DASH, Dogecoin, Namecoin, [Ethereum](https://www.horizen.io/academy/ethereum-glossary/), Litecoin, etc.
+   <td>Bitcoin, Bitcoin Cash, Bitcoin Gold, DASH, Dogecoin, Namecoin, Ethereum, Litecoin, etc.
    </td>
    <td>Yes
    </td>

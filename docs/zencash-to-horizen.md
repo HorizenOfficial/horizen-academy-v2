@@ -148,8 +148,3 @@ The name **Horizen** aligned perfectly with the mission and goals of our project
 Since ZEN remained a part of us we were also able to maintain our cryptocurrency's ticker symbol, ZEN.
 
 This brings us to the present. We have had our ups and downs in these last five years. We have not only survived, we have grown stronger, antifragile, and we dedicate ourselves to growing every day.
-<div class="row">
-    <div class="col-md-4 mt-3"><a class="btn btn-info btn-block pt-2 pb-2" href="https://www.horizen.io/news/" target="_blank">LATEST NEWS</a></div>
-    <div class="col-md-4 mt-3"><a class="btn btn-info btn-block pt-2 pb-2" href="https://www.horizen.io/roadmap/" target="_blank">HORIZEN ROADMAP</a></div>
-    <div class="col-md-4 mt-3"><a class="btn btn-info btn-block pt-2 pb-2" href="https://www.horizen.io/team/" target="_blank">HORIZEN TEAM TODAY</a></div>
-</div>

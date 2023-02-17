@@ -94,6 +94,36 @@ Walking the fine line between having too many nodes, too much data per block or 
 
 Each approach has its unique pros and cons which we have highlighted below: 
 
+### Proof of Work
+
+In a Proof of Work consensus mechanism, miners contribute computing power to solve complex mathematical puzzles in order to produce a new block and earn a mining reward.
+
+### Proof of Stake
+
+Proof of Stake requires validators to [stake their tokens](https://www.horizen.io/academy/what-is-a-token/) into a [smart contract](https://www.horizen.io/academy/smart-contracts/) in order to validate transactions.
+A randomized process is used to determine which validators will get to produce the next block.
+
+### Proof of History
+
+With PoH, nodes create a real time snapshot of events and transactions as they occur using a recursive verifiable delay function. Snapshots are linked together to form a chronological chain of events and transactions on the blockchain.
+
+Each node has a cryptographic clock that is built in to help the network agree on the ordering of events and time of transactions.
+
+### Delegated Proof of Stake
+
+In Delegated Proof of Stake, users stake their tokens and vote in delegates who are in charge of creating new blocks under the same PoS model.
+
+### Proof of Authority
+
+The Proof of Authority mechanism uses reputation as the basis for achieving consensus. Instead of staking coins, validators stake their reputations. This method is primarily used by private blockchains where identities are already verified.
+
+### Practical Byzantine Fault Tolerance
+
+With pBFT, blocks are validated by special “ordering” or “leader” nodes which are regarded as final and true. This mechanism is designed for private consortium blockchains where members are partially trusted.
+
+### Directed Acyclic Graph
+
+DAG’s are a type of [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) used on distributed ledger technologies. DAG’s enable the use of a gossip protocol, which allows nodes to achieve consensus by broadcasting information to other nodes in a random manner until broad consensus is achieved about the state of the ledger.
 
 <table>
   <tr>
@@ -112,28 +142,6 @@ Each approach has its unique pros and cons which we have highlighted below:
    <td><strong>Practical Byzantine Fault Tolerance - </strong>pBFT
    </td>
    <td><strong>Directed Acyclic Graph - </strong>DAG
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Summary</strong>
-   </td>
-   <td>In a Proof of Work consensus mechanism, miners contribute computing power to solve complex mathematical puzzles in order to produce a new block and earn a [mining reward](https://www.horizen.io/academy/mining-in-blockchain/). 
-   </td>
-   <td>Proof of Stake requires validators to [stake their tokens](https://www.horizen.io/academy/what-is-a-token/) into a [smart contract](https://www.horizen.io/academy/smart-contracts/) in order to validate transactions. 
-<p></p>
-A randomized process is used to determine which validators will get to produce the next block.
-   </td>
-   <td>With PoH, nodes create a real time snapshot of events and transactions as they occur using a recursive verifiable delay function. Snapshots are linked together to form a chronological chain of events and transactions on the blockchain. 
-<p></p>
-Each node has a cryptographic clock that is built in to help the network agree on the ordering of events and time of transactions.
-   </td>
-   <td>In Delegated Proof of Stake, users stake their tokens and vote in delegates who are in charge of creating new blocks under the same PoS model.  
-   </td>
-   <td>The Proof of Authority mechanism uses reputation as the basis for achieving consensus. Instead of staking coins, validators stake their reputations. This method is primarily used by private blockchains where identities are already verified. 
-   </td>
-   <td>With pBFT, blocks are validated by special “ordering” or “leader” nodes which are regarded as final and true. This mechanism is designed for private consortium blockchains where members are partially trusted.
-   </td>
-   <td>DAG’s are a type of [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) used on distributed ledger technologies. DAG’s enable the use of a gossip protocol, which allows nodes to achieve consensus by broadcasting information to other nodes in a  random manner until broad consensus is achieved about the state of the ledger. 
    </td>
   </tr>
   <tr>

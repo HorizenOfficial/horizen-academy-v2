@@ -31,9 +31,9 @@ const CardWContent: React.FC<CardWContentProps> = ({
 
 const cards: CardWContentProps[] = [
     {
-        title: "Zero Knowelege Proofs",
+        title: "Zero-Knowledge Proofs",
         link: "zero-knowledge-proofs-zkp",
-        image: "/assets/pages/homepage/article-logo-zkp.svg",
+        image: "/assets/pages/homepage/article-logo-zendoo.svg",
         imageAlt: "Zero Knowelege Proofs icon",
     },
     {
@@ -43,9 +43,9 @@ const cards: CardWContentProps[] = [
         imageAlt: "Ethereum Virtual Machine icon",
     },
     {
-        title: "All Things Tokenomics",
+        title: "Tokenomics 101",
         link: "tokenomics",
-        image: "/assets/pages/homepage/article-logo-token.svg",
+        image: "/assets/pages/homepage/article-logo-dao.svg",
         imageAlt: "All Things Tokenomics icon",
     },
 ]

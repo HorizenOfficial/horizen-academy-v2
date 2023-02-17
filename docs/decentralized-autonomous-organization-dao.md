@@ -90,8 +90,8 @@ Every member of the community will be able to submit proposals to fund projects.
 This could be anything from the development of a new feature for a wallet, a developer getting paid for his work, a community member traveling to a conference to raise awareness of the project or even sponsoring an event.
 
 _Two different categories of voting schemes are viable in this context:_
-- **preferential voting** or _ranked voting_ 
-- and **approval voting**.
+- **Preferential voting** or _ranked voting_ 
+- and **Approval voting**
 
 The **preferential voting system** allows voters to rank the given options. The highest ranked options will receive funding. Ranking can be very time consuming and difficult and require voters to compare apples to oranges when casting their vote. 
 
@@ -224,7 +224,7 @@ They will define their domain of expertise and the entirety of the provided info
 
 This should be just as easy as delegating your vote to an expert in the first place.
 
-## Summary - DAO
+## Summary - DAOs
 
 Our treasury system serves the purpose of distributing treasury funds to different projects within Horizen and to legitimize the decision making process in a decentralized way. Every stakeholder will be able to submit proposals. 
 

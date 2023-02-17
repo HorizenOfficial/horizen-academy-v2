@@ -162,7 +162,7 @@ Today, there are a handful of notable L0 networks that are ushering in a new era
         <td><strong>Horizen</strong> is a zero-knowledge-enabled network of blockchains.
             <p>
                 <strong>Zendoo</strong>, Horizen’s sidechain system, allows developers to custom build their own public
-                or private blockchain and customize consensus type, speed, privacy, and [tokenomics](https://www.horizen.io/academy/tokenomics/) of their blockchain.
+                or private blockchain and customize consensus type, speed, privacy, and tokenomics of their blockchain.
             </p>
             <p>
                 Blockchains built on Horizen are privacy-preserving and can produce massive throughput without

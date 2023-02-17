@@ -57,8 +57,6 @@ Most wallets out there are [light nodes](https://www.horizen.io/academy/nodes/),
 
 ![node types](/img/components-of-a-blockchain/node-types.jpg)
 
-![node types](/img/components-of-a-blockchain/node-types.jpg)
-
 ## Miners
 
 Miners are nodes as well. They support the network by forwarding information and maintaining a copy of the blockchain, just like all the other nodes. Additionally, the miners are responsible for creating new blocks.
@@ -188,8 +186,6 @@ This type of *discrete math* works and is a well suited tool to build a concept 
 Money or data sent to a public key can only be accessed by someone who has knowledge of the corresponding private key, *the owner*. The derivation of a public key from a private key cannot be reversed, which is the single most important attribute of PKC.
 
 You rarely use a public key when transferring [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/). You primarily use the address that was generated from a public key. This step relies on the one-wayness of hash functions that we introduced before.
-
-![address derivation](/img/wallet-addresses/address-derivation.jpg)
 
 ![address derivation](/img/wallet-addresses/address-derivation.jpg)
 

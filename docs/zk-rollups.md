@@ -35,6 +35,8 @@ The end result is that the most current ‘state’ of the L2, an accounting of 
 
 Zk-rollups represent the first major step in Ethereum’s transition from a monolithic to a [modular blockchain architecture](https://www.horizen.io/academy/modular-vs-monolithic-blockchains/). In a modular architecture, blockchains separate critical functions such as execution, consensus and data availability into different specialized networks. This allows the broader network to function more effectively and mitigate some of the challenges caused by the famous scalability trilemma. 
 
+![ethereum modulation](/img/modular-vs-monolithic-blockchains/ethereum-modulation.jpg)
+
 L2s like LoopRing, Polygon and Immutable X operate on top of the Ethereum network and inherit the security of the Ethereum mainchain through the use of zk-Rollups. 
 
 All transactions on these L2 must ultimately be validated on the Ethereum mainnet, which makes them more secure and censorship resistant than they would be if only stored on the L2. 

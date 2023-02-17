@@ -44,7 +44,7 @@ This unique method of recording transactions provides the following benefits for
 
 - **It is Immutable:** Transactions that are collectively added to the book are permanent. No single member can change a transaction recorded on everyone else’s copy of their book.
 - **It is Transparent**: A blockchain is like a virtual roundtable for sharing data, which means all members can see the entries recorded in the blockchain ledger.
-- **It is Decentralized**: Members do not need to rely on any one person or entity to determine which transactions are correct, but are instead relying on the consensus of multiple members.<br />If one or two “books” were to be lost or destroyed, the correct record of transactions would still be intact because there are many other versions of the same book. This also makes the process more **secure**.
+- **It is Decentralized**: Members do not need to rely on any one person or entity to determine which transactions are correct, but are instead relying on the consensus of multiple members. If one or two “books” were to be lost or destroyed, the correct record of transactions would still be intact because there are many other versions of the same book. This also makes the process more **secure**.
 
 All of these benefits, _immutability, transparency, decentralization and security_, help to reduce the costs that individuals and entities incur to trust each other, freeing up time and resources to run operations more efficiently.
 

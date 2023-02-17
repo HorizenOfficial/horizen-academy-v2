@@ -35,7 +35,8 @@ Previously, we talked about other common data structures, such as _hash tables_.
 - **Deterministic** - A given input always needs to produce the same output
 
 ## Hash Functions Explained Simply
-<strong>hash function</strong> is something that we use to create a fingerprint of a file. You can use a hash function to create a fingerprint for every type of file you can imagine.
+
+A **hash function** is something that we use to create a fingerprint of a file. You can use a hash function to create a fingerprint for every type of file you can imagine.
 
 _Let's say I want to send you a text file and don't want you to change it:_
 
@@ -213,7 +214,7 @@ _Processors display trade-offs between versatility and efficiency:_
 
 Hash functions have been battle-tested for many years by now. During those years, certain _attack vectors_ have been discovered, but they can be mitigated quite easily. We want to give a glimpse into those attack vectors and their mitigation strategies.
 
-**Note** that these [attacks]](https://www.horizen.io/academy/blockchain-attacks/) do not affect the security of blockchains, but only the hash functions in isolation and some outdated applications of them.
+**Note** that these [attacks](https://www.horizen.io/academy/blockchain-attacks/) do not affect the security of blockchains, but only the hash functions in isolation and some outdated applications of them.
 
 ### Length Extension Attack
 

@@ -9,7 +9,7 @@ image: /img/directed-acyclic-graph-dag/directed-acyclic-graph-dag-meta.jpeg
 
 ---
 
-# What is a DAG? - Directed Acyclic Graphs
+# What is a DAG? Directed Acyclic Graphs
 
 One of the main engineering challenges in the blockchain space is _scalability_. 
 
@@ -233,7 +233,7 @@ This incentivizes the miners to reference all unreferenced blocks. Newly created
 
 Mining in the Horizen Block-DAG will be similar to traditional mining, but we expect more blocks to be mined in total with an overall lower difficulty which should lead to greater [mining decentralization](https://www.horizen.io/academy/mining-in-blockchain/) as fewer miners will need to join mining pools.
 
-## Summary - DAG
+## Summary - DAGs
 
 _DAGs_ might be suited to become the successors of _linear blockchains_. They mostly differ in that a block in a DAG can reference more than one block at a time. This introduces a sort of _two-dimensionality_ to the data structure.
 
