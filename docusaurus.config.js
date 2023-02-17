@@ -6,13 +6,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "My Site",
-    tagline: "Dinosaurs are cool",
+    title: "Horizen Academy",
     url: "https://horizen.io",
     baseUrl: "/academy/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
-    favicon: "img/favicon.ico",
+    favicon: "img/favicon.png",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
