@@ -6,10 +6,13 @@ title: What is a Decentralized Prediction Market?
 slug: /decentralized-prediction-markets/
 description: A prediction market is simply a market where participants can get financially rewarded for correctly predicting the outcome of a future event.
 image: /img/decentralized-prediction-markets/decentralized-prediction-markets-meta.jpg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
-# What are Decentralized Prediction Market?
+# What are Decentralized Prediction Markets?
 
 _Decentralized prediction markets_ are an underrated sector of the DeFi space that has the potential to play a larger role in the way markets forecast events in the broader economy based on real time information.
 
@@ -67,7 +70,7 @@ If any of the outcomes occur that are not:
 
 ..then those who bet on these outcomes will lose their staked deposit. 
 
-Once a prediction is created, participants can place bets by [staking tokens](https://www.horizen.io/academy/what-is-a-token/) as collateral in a _smart contract_. The **smart contract** is designed to hold the funds of all betters and keep track of what outcomes they were betting on. 
+Once a prediction is created, participants can place bets by [staking tokens](what-is-a-token.md) as collateral in a _smart contract_. The **smart contract** is designed to hold the funds of all betters and keep track of what outcomes they were betting on. 
 
 When the outcome of an event is officially decided, the smart contract will automatically payout the tokens in the pool to whomever correctly predicted the outcome. 
 
@@ -102,7 +105,7 @@ As an example, let’s say someone wants to create a prediction market for the L
 
 Essentially, the risk/reward for participating in this prediction market would be similar to placing a bet using a **traditional sports book**. 
 
-The biggest difference is that the odds are determined purely by the market and expressed through a [smart contract algorithm](https://www.horizen.io/academy/smart-contracts/) that no one controls. This is in contrast to a centralized bookmaker, who will often take the other side of a bet but also determine the odds for that bet.
+The biggest difference is that the odds are determined purely by the market and expressed through a [smart contract algorithm](smart-contracts.md) that no one controls. This is in contrast to a centralized bookmaker, who will often take the other side of a bet but also determine the odds for that bet.
 
 This _guarantees_ that the bookmaker will always have an advantage because they can skew the odds in such a way as to make the payout _much less_ than what one would normally earn for placing a bet of similar risk in the open market. 
 
@@ -120,7 +123,7 @@ Examples of popular decentralized prediction market platforms where you can bet 
 
 ### The Role of a Bookmaker
 
-The reason for this is because the bookmaker sets odds and facilitates the execution of bets, including providing liquidity as a default buyer or seller if necessary. *This is similar to the role of a [market maker](https://www.horizen.io/academy/automated-market-maker-amm/) on a stock exchange.* 
+The reason for this is because the bookmaker sets odds and facilitates the execution of bets, including providing liquidity as a default buyer or seller if necessary. *This is similar to the role of a [market maker](automated-market-maker-amms.md) on a stock exchange.* 
 
 The bookmaker's job is to ensure that there is always someone willing to take the other side of a bet for _any_ kind of prediction. However this poses a risk to the bookmaker, as they can lose a lot of money very quickly if they don’t properly price the odds of each bet in a way that ensures they can payout the winners while winning enough themselves to earn a profit and remain solvent. 
 
@@ -134,7 +137,7 @@ However, the downsides, as we will discuss later,  include much smaller markets 
 
 ### The Role of Oracle Networks
 
-The outcomes produced on decentralized prediction markets are determined by [oracle networks](https://www.horizen.io/academy/blockchain-oracles/) that receive and transmit data from the real world into smart contracts. 
+The outcomes produced on decentralized prediction markets are determined by [oracle networks](blockchain-oracles.md) that receive and transmit data from the real world into smart contracts. 
 
 *This data can include anything from:*
 
@@ -152,7 +155,7 @@ As we mentioned earlier, one of the drawbacks of decentralized crypto prediction
 
 The result is that most of the liquidity tends to consolidate around a handful of _very popular predictions_, such as:
 
-* What will the price of [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) be in 2024?
+* What will the price of [Bitcoin](bitcoin-glossary.md) be in 2024?
 * Who will win the 2024 US presidential election?
 
 While more specific or niche predictions will typically have a limited number of people willing to take one side or the other. Under such conditions, it is difficult to bet large amounts of capital and the winnings tend to be much smaller. 
@@ -161,13 +164,13 @@ While more specific or niche predictions will typically have a limited number of
 
 The more diverse the predictions, the more players you need who have adequate knowledge about each topic to place large bets. Another reason for poor liquidity is the fragmentation of blockchain networks and lack of well established interoperability solutions, like *bridges*.
 
-Prediction markets on _Avalanche, Polygon, [Ethereum mainnet](https://www.horizen.io/academy/ethereum-glossary/), Solana and Cosmos_ do not communicate with each other. 
+Prediction markets on _Avalanche, Polygon, [Ethereum mainnet](ethereum-glossary.md), Solana and Cosmos_ do not communicate with each other. 
 
 As a result, it is not uncommon to see the same prediction running on multiple networks with a different set of players and different odds calculations
 
 This problem can be solved by developing solutions to enable cross chain prediction markets to form, thereby concentrating liquidity and providing a better betting experience for well capitalized players.
 
-Horizen’s recent implementation of the [Ethereum Virtual Machine](https://eon.horizen.io/) or EVM can significantly advance interoperability of prediction markets on the Ethereum network as well as other [EVM-compatible](https://www.horizen.io/academy/ethereum-virtual-machine-evm/) chains such as Avalanche, Fantom and Polygon. 
+Horizen’s recent implementation of the [Ethereum Virtual Machine](https://eon.horizen.io/) or EVM can significantly advance interoperability of prediction markets on the Ethereum network as well as other [EVM-compatible](ethereum-virtual-machine-evm.md) chains such as Avalanche, Fantom and Polygon. 
 
 ### Smart Contract Security Risks
 
@@ -186,7 +189,7 @@ From a regulators perspective, decentralization prediction markets could potenti
 - KYC - Know Your Customer
 - AML - Anti-Money Laundering
 
-[Zero-knowledge proof technology](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/), a core offering of the Horizen network, can be utilized here to allow participants to confirm basic information about their counterparties. 
+[Zero-knowledge proof technology](zero-knowledge-proofs-zkp.md), a core offering of the Horizen network, can be utilized here to allow participants to confirm basic information about their counterparties. 
 
 This includes whether they are compliant tax paying citizens or entities form non-sanctioned nations, or whether their funds have touched any blacklisted addresses, without knowing the personal details of each player - _protecting sensitive information_.  
 
@@ -215,7 +218,7 @@ While there is so much promise for this technology, there remain several hurdles
 * Regulatory risks
     * Which can be addressed by adopting privacy-enabled KYC/AML solutions using zero-knowledge proofs. 
 
-With newer [web3](https://www.horizen.io/academy/web3/) technologies, including:
+With newer [web3](web3.md) technologies, including:
 
 - Zero-knowledge enabled Ethereum virtual machines - or ZK-EVMs
 

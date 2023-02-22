@@ -6,20 +6,23 @@ title: What are zk-Rollups in Blockchain?
 slug: /zk-rollups/
 description: ZK-Rollups enable layer 2 transactions to be transmitted and verified by the Ethereum mainnet without nodes knowing the details of each transaction. 
 image: /img/zk-rollups/zk-rollups-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
 For the longest time, privacy technologies in the blockchain space have been adopted primarily as a way to obfuscate transactions from being visible on a public ledger. Networks like ZCash pioneered the use of zk-SNARKs to shield public transactions using highly advanced cryptography. 
 
-As the industry evolved and the primary focus amongst developers became how to scale blockchains to process more transactions in less time and at lower cost, [**zero-knowledge proofs**](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/) re-emerged as a technology that could be applied to enable faster yet more centralized networks to securely backup their ‘state’ on a more robust and censorship resistant chain, all while maintaining privacy of the underlying transaction records.    
+As the industry evolved and the primary focus amongst developers became how to scale blockchains to process more transactions in less time and at lower cost, [**zero-knowledge proofs**](zero-knowledge-proofs-zkp.md) re-emerged as a technology that could be applied to enable faster yet more centralized networks to securely backup their ‘state’ on a more robust and censorship resistant chain, all while maintaining privacy of the underlying transaction records.    
 
 This unique combination of blockchain privacy and scalability became known as ZK-rollups.
 
 ## What are zk-Rollups?
 
-**ZK-Rollups** are an innovation initially launched on Ethereum that enables layer 2 transactions to be transmitted and verified by the [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) mainnet without the Ethereum nodes knowing the details of each transaction. 
+**ZK-Rollups** are an innovation initially launched on Ethereum that enables layer 2 transactions to be transmitted and verified by the [Ethereum](ethereum-glossary.md) mainnet without the Ethereum nodes knowing the details of each transaction. 
 
-It is designed to offer greater scalability to the Ethereum network by only requiring the [Ethereum nodes](https://www.horizen.io/academy/nodes/) to verify the proof of computation rather than the transaction data itself.  
+It is designed to offer greater scalability to the Ethereum network by only requiring the [Ethereum nodes](blockchain-nodes.md) to verify the proof of computation rather than the transaction data itself.  
 
 Zk-rollups were invented based on the understanding that certain activities such as on-chain derivatives or gaming required higher transaction speeds and lower costs that the Ethereum layer 1 could not support. It therefore made sense to migrate these activities over to a second ‘off-chain’ layer that was optimized for transaction speeds, using the Ethereum mainnet for final settlement and storage of transaction data. 
 
@@ -29,11 +32,11 @@ Periodically, transaction data from L2s are batched into a **cryptographic ‘pr
 
 This proof is then submitted to the mainchain, where it is validated by the L1 nodes as a single transaction similar to how they would validate any other transaction. 
 
-The end result is that the most current ‘state’ of the L2, an accounting of user balances and total values in each [wallet](https://www.horizen.io/academy/crypto-wallets/), is permanently recorded on the mainnet, ensuring that the records can be recovered in the event that the L2’s security is compromised.  
+The end result is that the most current ‘state’ of the L2, an accounting of user balances and total values in each [wallet](crypto-wallets.md), is permanently recorded on the mainnet, ensuring that the records can be recovered in the event that the L2’s security is compromised.  
 
-[*Layer 2s*](https://www.horizen.io/academy/layer-2/) are considered off-chain scaling solutions for Dapps. They are not independent blockchains and therefore are less secure, relying on the Ethereum network for final transaction settlement.
+[*Layer 2s*](layer-2.md) are considered off-chain scaling solutions for Dapps. They are not independent blockchains and therefore are less secure, relying on the Ethereum network for final transaction settlement.
 
-Zk-rollups represent the first major step in Ethereum’s transition from a monolithic to a [modular blockchain architecture](https://www.horizen.io/academy/modular-vs-monolithic-blockchains/). In a modular architecture, blockchains separate critical functions such as execution, consensus and data availability into different specialized networks. This allows the broader network to function more effectively and mitigate some of the challenges caused by the famous scalability trilemma. 
+Zk-rollups represent the first major step in Ethereum’s transition from a monolithic to a [modular blockchain architecture](modular-vs-monolithic-blockchains.md). In a modular architecture, blockchains separate critical functions such as execution, consensus and data availability into different specialized networks. This allows the broader network to function more effectively and mitigate some of the challenges caused by the famous scalability trilemma. 
 
 ![ethereum modulation](/img/modular-vs-monolithic-blockchains/ethereum-modulation.jpg)
 
@@ -43,15 +46,15 @@ All transactions on these L2 must ultimately be validated on the Ethereum mainne
 
 ## Differences Between Layer 2s and Sidechains
 
-**Layer 2s** are considered off-chain scaling solutions for blockchains and Dapps, typically set up as payment channels to exchange funds between a small group of participants using a [smart contract](https://www.horizen.io/academy/smart-contracts/).
+**Layer 2s** are considered off-chain scaling solutions for blockchains and Dapps, typically set up as payment channels to exchange funds between a small group of participants using a [smart contract](smart-contracts.md).
 
-L2’s can exist as simple [payment channels](https://www.horizen.io/academy/payment-channels/), like Lightning Network, or as an entirely separate node networks, like Polygon. What makes an L2 distinct is that it relies on a mainchain network like Ethereum or [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) for final transaction settlement and security.
+L2’s can exist as simple [payment channels](payment-channels.md), like Lightning Network, or as an entirely separate node networks, like Polygon. What makes an L2 distinct is that it relies on a mainchain network like Ethereum or [Bitcoin](bitcoin-glossary.md) for final transaction settlement and security.
 
-By contrast, **Sidechains** are independent blockchains that can operate their own [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) and can validate and settle transactions independently without the need for a mainchain.
+By contrast, **Sidechains** are independent blockchains that can operate their own [consensus mechanism](consensus-mechanisms.md) and can validate and settle transactions independently without the need for a mainchain.
 
 This however does not mean that transactions on a sidechain cannot also be validated by its mainchain, it is just not a requirement for the security of the network to be maintained.
 
-By enabling [sidechains](https://www.horizen.io/academy/sidechains/) and L2s to communicate and transfer value between each other and between the mainchain, a process known as [interoperability](https://www.horizen.io/academy/blockchain-interoperability/), a network of blockchains could perform and operate as 1 single blockchain, having solved the scalability trilemma through specialization as opposed to making tradeoffs.
+By enabling [sidechains](sidechains.md) and L2s to communicate and transfer value between each other and between the mainchain, a process known as [interoperability](blockchain-interoperability.md), a network of blockchains could perform and operate as 1 single blockchain, having solved the scalability trilemma through specialization as opposed to making tradeoffs.
 
 Additionally, with a modular architecture, increased specialization means that sidechains can be optimized for specific traits like _speed_, _security_, _privacy_, and _decentralization_, instead of all of those traits being forced into one single blockchain with less effective results.
 
@@ -63,7 +66,7 @@ Horizen leverages zk-SNARKs in a similar way to how Ethereum mainnet leverages Z
 
 ### Polygon ZK-Rollups
 
-Polygon is one of the largest and most popular scaling solutions on Ethereum. It is technically a sovereign blockchain with its own validator set and [native token](https://www.horizen.io/academy/what-is-a-token/) - MATIC. 
+Polygon is one of the largest and most popular scaling solutions on Ethereum. It is technically a sovereign blockchain with its own validator set and [native token](what-is-a-token.md) - MATIC. 
 
 However, it also functions partly like a layer 2, adopting zk-rollup solutions aimed at scaling transactions and re-enforcing the security of the Polygon networks by submitting proofs back to the Ethereum mainnet.
 
@@ -80,7 +83,7 @@ PoE is optimized for decentralization, allowing anyone to take part as either a 
 
 #### Polygon Miden
 
-Polygon Miden is the first zk scaling solution on the Polygon network to adopt [zk-STARKs as opposed to zk-SNARKS](https://www.horizen.io/academy/zk-snarks-vs-zk-starks/). The core difference between the two ZK solutions is that STARKS do not require the use of a ‘trusted setup’ to produce new proofs while SNARKS do.
+Polygon Miden is the first zk scaling solution on the Polygon network to adopt [zk-STARKs as opposed to zk-SNARKS](zk-snarks-vs-zk-starks.md). The core difference between the two ZK solutions is that STARKS do not require the use of a ‘trusted setup’ to produce new proofs while SNARKS do.
  
 A trusted setup is an event that enables a set of private keys to be created that allows counterparties in a transaction to construct the ‘proof’ that must be verified in order for the transaction to be confirmed as valid.
 
@@ -90,11 +93,11 @@ As an alternative, zk-STARKs use random samples of publicly verifiable informati
 
 With this approach, zk-STARKs claim to offer greater scalability in terms of improving speed and reducing the computational size of transaction data. 
 
-Miden is an [EVM compatible](https://www.horizen.io/academy/ethereum-virtual-machine-evm/) STARK rollup, which means it is compatible with solidity programs and can therefore be easily adopted by Ethreum developers who wish to scale their dApps using the STARK approach. 
+Miden is an [EVM compatible](ethereum-virtual-machine-evm.md) STARK rollup, which means it is compatible with solidity programs and can therefore be easily adopted by Ethreum developers who wish to scale their dApps using the STARK approach. 
 
 #### Polygon Nightfall 
 
-Polygon Nightfall is a rollup solution designed for enterprises to produce [private transactions](https://www.horizen.io/academy/private-transactions/) that are also fast and scalable. 
+Polygon Nightfall is a rollup solution designed for enterprises to produce [private transactions](private-transactions.md) that are also fast and scalable. 
 
 While many enterprises recognize the value of blockchain technology to enable frictionless transactions between vendors and reduce compliance and auditing costs, the fact that all data submitted to the blockchain is public means that enterprises would be forced to disclose sensitive and proprietary information. This has been a major deterrent for companies to adopt public blockchains like Ethereum. 
 

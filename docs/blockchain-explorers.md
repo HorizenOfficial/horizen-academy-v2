@@ -6,6 +6,9 @@ title: What is a Blockchain Explorer?
 slug: /blockchain-explorers/
 description: In this article, you will learn how a block explorer lets you browse the data on a blockchain and the kind of data you will find.
 image: img/blockchain-explorers/blockchain-explorers-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -32,7 +35,7 @@ The answer lies in something called a "**crawler**," which is a program that sco
 
 Blockchain explorers work in a similar way, they’re programs that scan the blockchain for new and unique transactions. Just as Google shows you results based on your search query, blockchain explorers display transaction data based on specific criteria. 
 
-For example, if you're looking for all the transactions involving a certain [address](https://www.horizen.io/academy/wallet-addresses/), you can use a block explorer to find them.
+For example, if you're looking for all the transactions involving a certain [address](wallet-addresses.md), you can use a block explorer to find them.
 
 Blockchain explorers don't, however, typically index all of the data on the blockchain. 
 
@@ -42,7 +45,7 @@ There are many different types of block explorers available today, each with its
 
 ### Interfacing With A Full Node
 
-[_Nodes_](https://www.horizen.io/academy/nodes/) are the backbone of any decentralized network, including blockchain networks. 
+[_Nodes_](blockchain-nodes.md) are the backbone of any decentralized network, including blockchain networks. 
 
 A **node** is simply a computer that's running the software required to participate in the network. 
 
@@ -65,13 +68,13 @@ Additionally, you'll have more control over which transactions are displayed and
 
 ## Why Different Blockchains Need Different Blockchain Explorers
 
-Every blockchain is its own replicated, append-only database with its own specific features, functionalities, and [data structures](https://www.horizen.io/academy/blockchain-as-a-data-structure/). Because of this, every blockchain needs its own dedicated explorer. Not every explorer can index and search data from every blockchain.
+Every blockchain is its own replicated, append-only database with its own specific features, functionalities, and [data structures](blockchain-data-structure.md). Because of this, every blockchain needs its own dedicated explorer. Not every explorer can index and search data from every blockchain.
 
 **For example, the Bitcoin blockchain is different from the Ethereum blockchain.** 
 
-The data structures are different, which means that a [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) explorer wouldn't be able to index and search data from the [Ethereum blockchain](https://www.horizen.io/academy/ethereum-glossary/), and vice versa.
+The data structures are different, which means that a [Bitcoin](bitcoin-glossary.md) explorer wouldn't be able to index and search data from the [Ethereum blockchain](ethereum-glossary.md), and vice versa.
 
-Additionally, each blockchain has its own rules for how data is stored and organized. These rules are known as the [**consensus protocol**](https://www.horizen.io/academy/blockchain-protocols/). 
+Additionally, each blockchain has its own rules for how data is stored and organized. These rules are known as the [**consensus protocol**](blockchain-protocols.md). 
 
 Explorers must be designed specifically for each consensus protocol in order to work correctly.
 
@@ -144,7 +147,7 @@ The genesis block contains only _one_ transaction.
 
 This is the minimum amount you will see since every block has a so-called **coinbase transaction**, the transaction that is used to issue new bitcoins to the miner that solved the block to reward them for their efforts.
 
-The reward for [mining Bitcoin](https://www.horizen.io/academy/mining-in-blockchain/), in the beginning, was **50** BTC. The block reward reduces by half every _four years_, or more precisely, every 210,000 blocks. This has happened three times so far. 
+The reward for [mining Bitcoin](crypto-mining.md), in the beginning, was **50** BTC. The block reward reduces by half every _four years_, or more precisely, every 210,000 blocks. This has happened three times so far. 
 
 A miner today receives **6.25** BTC per block.
 
@@ -158,7 +161,7 @@ Today’s mining pools and their reward addresses are mostly known.
 
 This is how the block explorer “_knows_” who mined the block: it compares the address that received the newly generated coins (**1A1zP1…**) in the coinbase transaction with a number of known addresses from mining pools. 
 
-In this case, we do know who the miner was, although the block explorer doesn’t tell us: [_Satoshi Nakamoto_](https://www.horizen.io/academy/satoshi-nakamoto/) himself/herself/themself/themselves.
+In this case, we do know who the miner was, although the block explorer doesn’t tell us: [_Satoshi Nakamoto_](satoshi-nakamoto.md) himself/herself/themself/themselves.
 
 The **difficulty** describes the threshold the block hash has to be smaller than or equal to in order to be considered valid. _It can be interpreted as the number of leading zeros the block hash must have._ 
 
@@ -180,9 +183,9 @@ He received the very first **50** bitcoin as a block reward for this.
 
 What you will most likely use a block explorer for is checking a _transaction status_. You can find a given transaction _either_ by searching for one of the addresses involved, the _sending_ or _receiving_ address, or by the _transaction ID_ (TXID). 
 
-Most [wallets](https://www.horizen.io/academy/crypto-wallets/) will show you the transaction ID for all of your transactions.
+Most [wallets](crypto-wallets.md) will show you the transaction ID for all of your transactions.
 
-If we want to look at the very first [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) transaction ever done, we need to go to Block #170, where Satoshi Nakamoto sent Hal Finney **10** BTC.
+If we want to look at the very first [cryptocurrency](cryptocurrency.md) transaction ever done, we need to go to Block #170, where Satoshi Nakamoto sent Hal Finney **10** BTC.
 
 ![bitcoin transaction block explorer](/img/blockchain-explorers/bitcoin-transaction-block-explorer.jpeg)
 
@@ -192,7 +195,7 @@ Below is the first transaction as you would expect it. One person sending coins 
 
 ## Enhancing Blockchain Explorers
 
-Blockchain explorers are an essential tool for anyone who wants to understand [how the blockchain works](https://www.horizen.io/academy/how-does-blockchain-work/) or to track specific transactions. 
+Blockchain explorers are an essential tool for anyone who wants to understand [how the blockchain works](how-do-blockchains-work.md) or to track specific transactions. 
 
 **However, there's still room for improvement when it comes to these programs:**
 

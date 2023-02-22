@@ -6,6 +6,9 @@ title: Protecting Your Digital Privacy
 slug: /digital-privacy/
 description: In this article, we show you how your online privacy is compromised digitally, as well as strategies and tools to protect your privacy.
 image: /img/digital-privacy/digital-privacy-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -33,7 +36,7 @@ Have you seen laptops with webcam covers? There is a real reason people concerne
 
 Mobile phones of today are tiny powerful computers - they have tons of storage and processing power available at their disposal and because of portability, ease and frequency of use, there are tons of productivity applications available for smartphones, not seen on a personal computer. 
 
-Mail, messaging, chat apps, [wallets](https://www.horizen.io/academy/crypto-wallets/), banking software, personal notes, photos and videos are just a tiny example of what we use or store on our phones. The increased attack surface of smartphones attracts a lot of malevolent interest to them. 
+Mail, messaging, chat apps, [wallets](crypto-wallets.md), banking software, personal notes, photos and videos are just a tiny example of what we use or store on our phones. The increased attack surface of smartphones attracts a lot of malevolent interest to them. 
 
 **Let us touch on some ways of privacy compromise in detail.**
 
@@ -155,7 +158,7 @@ There have been many incidents of password databases being hacked and this metho
 
 A better method is to use a password manager that generates long and difficult to guess passwords and saves them for you. Now you only have to remember one super strong password to protect your password manager application and you are good to go.
 
-## 2FA - Two-Factor Authentification
+## 2FA - Two-Factor Authentication
 
 **Two-factor Authentication** or in short, _2FA_, is a way to let users access a service using a combination of two authentication methods. 
 

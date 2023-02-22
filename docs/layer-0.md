@@ -6,16 +6,19 @@ title: What is a Layer 0 Blockchain?
 slug: /layer-0/
 description: Layer 0 networks solve three critical problems for web3 development and adoption - scalability, flexibility and interoperability. Learn more in this article
 image: /img/layer-0/layer-0-meta.jpg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
 # What is a Layer 0 Blockchain?
 
-Over the past 3 years, the [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) ecosystem has seen an explosive growth in new and innovative projects offering novel ways to deliver _banking services_, _exchange digital art_, _trade financial products_ and more. 
+Over the past 3 years, the [cryptocurrency](cryptocurrency.md) ecosystem has seen an explosive growth in new and innovative projects offering novel ways to deliver _banking services_, _exchange digital art_, _trade financial products_ and more. 
 
 Underpinning this boundless innovation in crypto-based products has been the constant improvement of blockchain infrastructure to support **secure**, **scalable** and **decentralized** applications. 
 
-The most notable examples of this can be seen on blockchains like [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) and Solana.
+The most notable examples of this can be seen on blockchains like [Ethereum](ethereum-glossary.md) and Solana.
 
 These blockchains are categorized as **‘Layer 1s’** because they serve as the infrastructure for developers to build and launch _decentralized applications_ or **Dapps** that are tethered to the underlying consensus rules of their host blockchain.
 
@@ -29,7 +32,7 @@ _Layer 1 networks_ are built with a **monolithic architecture**. This means that
 
 In addition, the lack of control over the underlying infrastructure that dapp developers build on top of has also been a cause of much frustration. Rising gas fees on the Ethereum network make all ethereum dapps too expensive to use, while unexpected downtime on the Solana network similarly makes all dapps on Solana also go offline.
 
-Dapp developers must also make compromises in how they design their dapps in order to remain compatible with these L1 networks, and lack the ability to explore different [consensus mechanisms](https://www.horizen.io/academy/consensus-mechanisms/) or to experiment freely with token incentive models because consensus is a primary function of the L1 infrastructure layer. 
+Dapp developers must also make compromises in how they design their dapps in order to remain compatible with these L1 networks, and lack the ability to explore different [consensus mechanisms](consensus-mechanisms.md) or to experiment freely with token incentive models because consensus is a primary function of the L1 infrastructure layer. 
 
 The overdependence on L1’s and difficult tradeoffs imposed by the **scalability trilemma** can only be remedied by creating a new base infrastructure that empowers developers to launch their own independent blockchains that can be optimized for different aspects of the scalability trilemma.
 
@@ -37,13 +40,13 @@ This base infrastructure is called **layer 0**, and it is the _single most impor
 
 ## What is a Layer 0 Blockchain?
 
-A **layer 0** is a type of [protocol](https://www.horizen.io/academy/blockchain-protocols/) that enables developers to launch multiple layer 1 blockchains that can be designed to each serve a specific purpose and cater to 1 or 2 dimensions of the scalability trilemma as opposed to all 3.
+A **layer 0** is a type of [protocol](blockchain-protocols.md) that enables developers to launch multiple layer 1 blockchains that can be designed to each serve a specific purpose and cater to 1 or 2 dimensions of the scalability trilemma as opposed to all 3.
 
 These L1 networks can also be made to communicate with each other such that the end user can have the experience of using one blockchain while they are in fact using multiple.
 
 **Layer 0** (_L0_) networks are equipped with software development tool kits or SDKs that allow developers to launch their own blockchains, known as Layer 1s or L1s or sidechains, that are connected to the L0 mainchain but operate independently.
 
-We can think of this like an infrastructure for launching new blockchains like the [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) network or the _Ethereum_ network. 
+We can think of this like an infrastructure for launching new blockchains like the [Bitcoin](bitcoin-glossary.md) network or the _Ethereum_ network. 
 
 **Examples of L0s** include: *Horizen, Cosmos and Polkadot.*
 
@@ -51,11 +54,11 @@ Each L0 comes with its own unique implementation and approach for developers to 
 
 ### Why are Layer 0s Necessary?
 
-**Layer 0 networks solve 3 critical problems for [web3 development](https://www.horizen.io/academy/web3/) and adoption:** Scalability, flexibility and interoperability.
+**Layer 0 networks solve 3 critical problems for [web3 development](web3.md) and adoption:** Scalability, flexibility and interoperability.
 
 ### The Scalability Trilemma
 
-**As mentioned before**, the scalability trilemma is a series of trade-offs between decentralization, speed/scalability, and security that one must make when designing a blockchain and constructing rules for its [on-chain ](https://www.horizen.io/academy/blockchain-governance/).
+**As mentioned before**, the scalability trilemma is a series of trade-offs between decentralization, speed/scalability, and security that one must make when designing a blockchain and constructing rules for its [on-chain ](blockchain-governance.md).
 
 ![scalability trilemma](/img/layer-0/scalability-trilemma.jpg)
 
@@ -66,7 +69,7 @@ It is very difficult, if not impossible, to achieve perfect decentralization wit
 
 This is especially true on a monolithic blockchain where all the critical functions like transaction execution, consensus and data availability (the ability to verify that all the data from new blocks has been published) are managed by a single network, increasing the likelihood of congestion and making it much more difficult to scale.
 
-A workaround to the scalability trilemma is to delegate the primary responsibility for these 3 functions to _different_ independent blockchains. This design ensures that the execution chain can be optimized for handling high TPS dapps like a DEX or [play-to-earn game](https://www.horizen.io/academy/play-to-earn-games/) without worrying about decentralization. 
+A workaround to the scalability trilemma is to delegate the primary responsibility for these 3 functions to _different_ independent blockchains. This design ensures that the execution chain can be optimized for handling high TPS dapps like a DEX or [play-to-earn game](play-to-earn-games.md) without worrying about decentralization. 
 
 A second chain can then be optimized for decentralization and serve as a final consensus layer for the execution chain to enable withdrawals to and anchor its data.
 
@@ -82,7 +85,7 @@ What makes an independent blockchain truly independent is having its own set of 
 
 **As a developer, the ability to develop your own blockchain from scratch means that you can:**
 
-- [Design your **token issuance model**](https://www.horizen.io/academy/why-create-a-token/) - inflationary or deflationary
+- [Design your **token issuance model**](why-create-a-token.md) - inflationary or deflationary
 - Optimize your chain for **speed**, **decentralization** or **security**
 - Make your network **private** and _permissioned_ or **public** and _permissionless_
 - Curate the type of **dapps** that you want built on your network and _foster_ your own developer ecosystem.
@@ -93,9 +96,9 @@ What’s more, thanks to the SDKs of L0 protocols, the time and complexity of la
 
 **Interoperability** is the ability for computer systems with different programs to interpret and exchange information with each other with minimal friction. 
 
-The perfect analogy for understanding the importance of [interoperability in the blockchain space](https://www.horizen.io/academy/blockchain-interoperability/) is to think about blockchains as large cities that need to be connected via bridges in order for economic activity to flow in and out.
+The perfect analogy for understanding the importance of [interoperability in the blockchain space](blockchain-interoperability.md) is to think about blockchains as large cities that need to be connected via bridges in order for economic activity to flow in and out.
 
-_Layer 0 networks_ use various different iterations of a **cross-chain transfer protocol** to enable [tokens](https://www.horizen.io/academy/what-is-a-token/) and other forms of data to be transferred:
+_Layer 0 networks_ use various different iterations of a **cross-chain transfer protocol** to enable [tokens](what-is-a-token.md) and other forms of data to be transferred:
 
 - **From** the Layer 0 mainchain to Layer 1’s
 - Layer 1s **to** layer 0’s
@@ -111,7 +114,7 @@ _Cosmos_, a layer 0 network, uses a mechanism called the _Inter-Blockchain Commu
 
 - **The Main Chain:** Which typically serves as the primary blockchain where transaction data from the various L1 chains are backed up.
 
-- [**Sidechains**](https://www.horizen.io/academy/sidechains/): Independent layer 1 blockchains that have their own set of [validator nodes](https://www.horizen.io/academy/nodes/) and can run their own consensus mechanism. These chains do not rely on the mainchain for security, but will often share the security of the mainchain since it is typically the largest and most decentralized.
+- [**Sidechains**](sidechains.md): Independent layer 1 blockchains that have their own set of [validator nodes](blockchain-nodes.md) and can run their own consensus mechanism. These chains do not rely on the mainchain for security, but will often share the security of the mainchain since it is typically the largest and most decentralized.
 
   - Sharing security can occur in different ways. For example, a user may be required to stake the L0’s token in order to become a validator on an L1, which means they can lose both their L0 stake and their L1 stake if they attempt to submit fraudulent transactions.
 
@@ -230,9 +233,9 @@ Today, there are a handful of notable L0 networks that are ushering in a new era
 
 As a zero-knowledge enabled network of blockchains, Horizen is leveraging the latest privacy technologies to enhance the utility and scalability of blockchain networks.
 
-Horizen’s sidechain system **[Zendoo](https://www.horizen.io/zendoo/)** employs a form of [zero knowledge proofs](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/) called **zk-SNARKs**, which uses special cryptography to enable users to make transactions from a sidechain to the mainchain without the details of the transaction being known to the nodes that validate them.
+Horizen’s sidechain system **[Zendoo](https://www.horizen.io/zendoo/)** employs a form of [zero knowledge proofs](zero-knowledge-proofs-zkp.md) called **zk-SNARKs**, which uses special cryptography to enable users to make transactions from a sidechain to the mainchain without the details of the transaction being known to the nodes that validate them.
 
-Additionally, Horizen uses [zk-SNARKs](https://www.horizen.io/academy/zk-snarks-vs-zk-starks/) to make transactions between sidechains verifiable by the Horizen mainchain _without_ the details of these transactions being known to the nodes that validate them. Instead of validating sidechain transactions through proof-of-work, all the mainchain needs to do is verify ‘**proof of computation**’ for virtually any number of sidechain transactions that have occurred on the network. 
+Additionally, Horizen uses [zk-SNARKs](zk-snarks-vs-zk-starks.md) to make transactions between sidechains verifiable by the Horizen mainchain _without_ the details of these transactions being known to the nodes that validate them. Instead of validating sidechain transactions through proof-of-work, all the mainchain needs to do is verify ‘**proof of computation**’ for virtually any number of sidechain transactions that have occurred on the network. 
 
 This reduces the computational load of the mainchain and further helps to enhance Horizen’s scalability capabilities
 
@@ -266,8 +269,8 @@ Being consensus agnostic ensures that the Horizen’s network can come as close 
 
 ### Underlying Security Model Built for Robustness
 
-The Horizen team has built a more secure version of the proof-of-work consensus mechanism for their mainchain network, leveraging what we call a ‘[penalty system for delayed block submission](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against [51% attacks](https://www.horizen.io/academy/51-attacks/). 
+The Horizen team has built a more secure version of the proof-of-work consensus mechanism for their mainchain network, leveraging what we call a ‘[penalty system for delayed block submission](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against [51% attacks](51-attack.md). 
 
 No matter the level of decentralization of a sidechain, once the sidechain transaction data is verified by the mainchain, it becomes _anchored_ to the same security model as its modified proof-of-work consensus mechanism.
 
-**In conclusion**, Horizen is an early entrant into the _layer zero_ space yet is offering some very clear differentiating features, such as its focus on privacy, consensus agnostic sidechains and [enhanced proof of work security model](https://www.horizen.io/academy/proof-of-work-pow/) for its mainchain.
+**In conclusion**, Horizen is an early entrant into the _layer zero_ space yet is offering some very clear differentiating features, such as its focus on privacy, consensus agnostic sidechains and [enhanced proof of work security model](proof-of-work-pow.md) for its mainchain.

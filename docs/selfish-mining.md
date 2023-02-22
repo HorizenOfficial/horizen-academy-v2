@@ -6,12 +6,15 @@ title: What is Selfish Mining?
 slug: /selfish-mining/
 description: The general idea of selfish mining is to selectively publish blocks to increase revenue in the long term.
 image: /img/selfish-mining/selfish-mining-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
 # What is Selfish Mining?
 
-It is assumed that most miners are rational, meaning they don't mind following the [protocol](https://www.horizen.io/academy/blockchain-protocols/) as long as it is the most profitable strategy. 
+It is assumed that most miners are rational, meaning they don't mind following the [protocol](blockchain-protocols.md) as long as it is the most profitable strategy. 
 
 Some strategies evolved that are used to gain a competitive advantage - most notably **selfish mining**, also referred to as the _block withholding strategy_.
 
@@ -65,7 +68,7 @@ In case the honest miners find block **1** before block **3'** is found, the sel
 
 All nodes will receive block **1** when it's broadcast, but discard it shortly after when they receive blocks **1'** and **2'** from the selfish miner. This will lead to the system returning to state **0**.
 
-Strategically, the miner will broadcast the pair of blocks with a slight delay. This will give him an advantage as he has some extra time to find block **3'** before the other [nodes](https://www.horizen.io/academy/nodes/) even learn about **2'** and enter the competition.
+Strategically, the miner will broadcast the pair of blocks with a slight delay. This will give him an advantage as he has some extra time to find block **3'** before the other [nodes](blockchain-nodes.md) even learn about **2'** and enter the competition.
 
 The delay can't be too big though, as it gives the other miners a chance to find block **2** which leads to a situation similar to state **0'**, only that there is a _fork_ with two blocks on each branch instead of one.
 
@@ -79,7 +82,7 @@ _Eyal_ and _Sirer_ demonstrated in their paper [_Majority is not Enough: Bitcoin
 
 In case he controls more than a third of the network, **(x > 0.33)** he is more efficient, no matter what **z** is. He could now coerce other miners to enter a coalition and participate in the unfair advantage of the block withholding strategy.
 
-Eventually, this coalition could reach a majority of the hashrate, enough to successfully mount a [51% attack](https://www.horizen.io/academy/51-attacks/) and perform double spends. [Vitalik Buterin](https://bitcoinmagazine.com/technical/selfish-mining-a-25-attack-against-the-bitcoin-network-1383578440) summarized this paper for the [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) Magazine.
+Eventually, this coalition could reach a majority of the hashrate, enough to successfully mount a [51% attack](51-attack.md) and perform double spends. [Vitalik Buterin](https://bitcoinmagazine.com/technical/selfish-mining-a-25-attack-against-the-bitcoin-network-1383578440) summarized this paper for the [Bitcoin](bitcoin-glossary.md) Magazine.
 
 The paper was published in **2013**, and selfish mining has been theorized about as early as **2010**, so you might ask why this scenario has not played out as described. Besides the block reward, there are higher level economic considerations.
 
@@ -93,7 +96,7 @@ To make this attack feasible, one would also have to involve other miners or poo
 
 _Nonetheless_, short block withholding periods are likely used by some pools, especially when blocks are found very quickly relative to the targeted block production rate. It gives the miner a slight advantage by increasing the chances of finding two consecutive blocks in a row.
 
-This section should give you an idea of how intricate the [mining process](https://www.horizen.io/academy/mining-in-blockchain/) can be. 
+This section should give you an idea of how intricate the [mining process](crypto-mining.md) can be. 
 
 Finding a _nonce_ that produces a block hash less than or equal to the target seems pretty straight forward compared to the economic and strategic considerations going into the mining process.
 

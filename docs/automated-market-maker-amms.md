@@ -6,6 +6,9 @@ title: What is an AMM? Automated Market Maker
 slug: /automated-market-maker-amm/
 description: In DeFi, the traditional market maker is replaced by an Automated Market Maker, which is a set of rules written into code and executed via smart contracts.
 image: /img/automated-market-maker-amms/automated-market-maker-amm-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -86,9 +89,9 @@ This example extends to the stock market, where market makers operate as _centra
 
 ## How Does Market Making Work in DeFi?
 
-In DeFi, the traditional market maker, which is often a centralized entity, is replaced by an **Automated Market Maker** which is a set of rules written into code and executed via [_smart contracts_](https://www.horizen.io/academy/smart-contracts/). 
+In DeFi, the traditional market maker, which is often a centralized entity, is replaced by an **Automated Market Maker** which is a set of rules written into code and executed via [_smart contracts_](smart-contracts.md). 
 
-With _AMMs_, the [price of the token](https://www.horizen.io/academy/what-is-a-token/) is managed by a **pricing formula** that adjusts based on the amount of tokens that currently sits in a _liquidity pool_ as compared to the other coin that is its _trading pair_. 
+With _AMMs_, the [price of the token](what-is-a-token.md) is managed by a **pricing formula** that adjusts based on the amount of tokens that currently sits in a _liquidity pool_ as compared to the other coin that is its _trading pair_. 
 
 ### What are Liquidity Pools?
 
@@ -104,7 +107,7 @@ If the pool starts to contain a greater number of DAI than ETH, it means there i
 
 The pricing formula will recognize this imbalance and may raise the price of ETH or reduce the price of DAI in accordance with the level of imbalance between the pairs. 
 
-Liquidity pools also leverage _decentralized data feeds_ or **[Oracles](https://www.horizen.io/academy/blockchain-oracles/)** to relay the current price of ETH from other exchanges to their smart contract. This information serves as a reference point to the AMM and informs its pricing formula of where the price of either ETH or DAI _should_ be.
+Liquidity pools also leverage _decentralized data feeds_ or **[Oracles](blockchain-oracles.md)** to relay the current price of ETH from other exchanges to their smart contract. This information serves as a reference point to the AMM and informs its pricing formula of where the price of either ETH or DAI _should_ be.
 
 At the same time, traders seeking to make a profit from _arbitrage_ opportunities will identify dislocations in the price of either asset and seek to exploit it. 
 
@@ -164,5 +167,5 @@ What ultimately makes AMMs better than centralized market making firms is that t
 
 - Accessible to anyone who wishes to participate in market making functions by becoming a liquidity provider
 
-- Secured by [decentralized protocols](https://www.horizen.io/academy/blockchain-protocols/) to ensure that billions of dollars a day in trades can be executed successfully _and_ at fair market prices
+- Secured by [decentralized protocols](blockchain-protocols.md) to ensure that billions of dollars a day in trades can be executed successfully _and_ at fair market prices
 

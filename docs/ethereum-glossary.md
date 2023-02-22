@@ -6,15 +6,18 @@ title: What is Ethereum? - An Ethereum Glossary
 slug: /ethereum-glossary/
 description: Ethereum is a blockchain network that enables developers to launch their own tokens and build decentralized applications (DApps) using smart contracts.
 image: /img/ethereum-glossary/ethereum-glossary-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
 # What is Ethereum? - An Ethereum Glossary
 
-_Ethereum_ is a blockchain network that enables developers to [launch their own tokens](https://www.horizen.io/academy/what-is-a-token/) and build decentralized applications (DApps) using smart contracts. 
+_Ethereum_ is a blockchain network that enables developers to [launch their own tokens](what-is-a-token.md) and build decentralized applications (DApps) using smart contracts. 
 
 ### What are Dapps?
-_Decentralized applications_ (or Dapps) are applications that are built on top of [blockchain protocols](https://www.horizen.io/academy/blockchain-protocols/) and leverage [smart contract technology](https://www.horizen.io/academy/smart-contracts/). 
+_Decentralized applications_ (or Dapps) are applications that are built on top of [blockchain protocols](blockchain-protocols.md) and leverage [smart contract technology](smart-contracts.md). 
 
 Dapps take many of the operating models of web2 platforms and traditional banking services and apply blockchain technology to make them operate in a format that is peer to peer, trustless and more transparent.
 
@@ -26,22 +29,22 @@ Ether, or _ETH_, is the currency of the Ethereum blockchain. It is used to pay m
 
 One of the core features of the Ethereum network is the _Smart Contract_, which is a type of computer program that executes a set of functions based on predefined rules or conditions set by the developer.
 
-With [smart contracts](https://www.horizen.io/academy/smart-contracts/), users can conduct all kinds of agreements that involve anywhere from two individuals to several thousands of people without the need of an intermediary. 
+With [smart contracts](smart-contracts.md), users can conduct all kinds of agreements that involve anywhere from two individuals to several thousands of people without the need of an intermediary. 
 
 ### Smart Contract Example
 
-A smart contract can be used to manage [loan transactions](https://www.horizen.io/academy/crypto-lending/) between 2 anonymous parties: 
+A smart contract can be used to manage [loan transactions](crypto-lending.md) between 2 anonymous parties: 
 
 - Person **A** locks **1 ETH** in a smart contract as collateral to borrow **$4,000** from Person **B**
 - The terms of the smart contract dictate that Person **A** must repay the loan in **6** months at **10%** interest
-- If Person **A** repays the loan plus interest on time to Person **B**, the funds from the smart contract will automatically be released back to Person **A**’s [digital wallet](https://www.horizen.io/academy/crypto-wallets/)
+- If Person **A** repays the loan plus interest on time to Person **B**, the funds from the smart contract will automatically be released back to Person **A**’s [digital wallet](crypto-wallets.md)
 - If Person **A** fails to repay the loan on time, the funds from the smart contract will automatically be released to Person **B**’s digital wallet. 
 
 *Other functions that a smart contract can be used for include:* 
 
 - Launching tokens that are pegged to the price of other assets
 - Managing liquidity pools to enable users to trade tokens peer to peer, 
-- And encoding the rules for [play to earn games](https://www.horizen.io/academy/play-to-earn-games/) 
+- And encoding the rules for [play to earn games](play-to-earn-games.md) 
 
 In all of these examples, the rules for each program that have been coded into the Blockchain, and are therefore transparent and immutable.
 
@@ -53,9 +56,9 @@ Ethereum **nodes** record and transmit copies of transaction data, including sma
 
 The **Ethereum Virtual Machine** is a computation engine that is in charge of executing smart contract transactions and computing the state for every new block added to the Ethereum blockchain. 
 
-We can think of the [EVM](https://www.horizen.io/academy/ethereum-virtual-machine-evm/) as a piece of software that sits on top of the hardware/node infrastructure of the blockchain and performs critical functions such as running and compiling code used for dApps and smart contracts. 
+We can think of the [EVM](ethereum-virtual-machine-evm.md) as a piece of software that sits on top of the hardware/node infrastructure of the blockchain and performs critical functions such as running and compiling code used for dApps and smart contracts. 
 
-The EVM is a **turing complete software**, meaning that the software is agile enough to run any code defined by the developer. The virtual machine enables smart contract code to be executed by a [global P2P network of computers](https://www.horizen.io/academy/peer-to-peer-networks-p2p/). 
+The EVM is a **turing complete software**, meaning that the software is agile enough to run any code defined by the developer. The virtual machine enables smart contract code to be executed by a [global P2P network of computers](p2p-networks.md). 
 
 Contracts written in a smart contract–specific programming language, like Solidity, are compiled into ‘bytecode’ to be read by the EVM. All nodes then execute this contract using their EVMs, which in turn updates the ledger.
 
@@ -84,9 +87,9 @@ The performance of the EVM is only limited by the amount of _gas_ that is provid
 - Decentralized applications that run on top of Ethereum 
 - Dapps leverage smart contracts to execute transactions without the need of a central authority. They are the consumer facing part of the network that consumers and other external stakeholders will interact with when using your blockchain. 
 #### Oracles
-- A 3rd party data feed that transmits data from external sources into the smart contract in order to help it execute (e.g an [oracle](https://www.horizen.io/academy/blockchain-oracles/) might transmit price data from a [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) exchange to help determine what price a smart contract will need to liquidate the ethereum collateral it holds if the value falls below the amount of US dollars lent out).
+- A 3rd party data feed that transmits data from external sources into the smart contract in order to help it execute (e.g an [oracle](blockchain-oracles.md) might transmit price data from a [cryptocurrency](cryptocurrency.md) exchange to help determine what price a smart contract will need to liquidate the ethereum collateral it holds if the value falls below the amount of US dollars lent out).
 #### Layer 2
-- A scaling solution that sits on top of a layer 1 blockchain like Bitcoin or Ethereum. Layer 2’s (or [L2s](https://www.horizen.io/academy/layer-2/)) increase the speed and reduce the cost of transacting on a blockchain by setting up separate networks or channels where transactions can be executed between a limited set of participants. 
+- A scaling solution that sits on top of a layer 1 blockchain like Bitcoin or Ethereum. Layer 2’s (or [L2s](layer-2.md)) increase the speed and reduce the cost of transacting on a blockchain by setting up separate networks or channels where transactions can be executed between a limited set of participants. 
 
 ## How Are Transaction Fees Calculated on Ethereum?
 
@@ -117,7 +120,7 @@ High gas fees could become a significant deterrent for users adopting your Dapp,
 
 Layer 2 solutions like[ Polygon](https://www.gemini.com/cryptopedia/polygon-crypto-matic-network-dapps-erc20-token#section-polygon-crypto-network-basics) currently exist on Ethereum to mitigate some of these scalability challenges, while alternative blockchains like Solana claim to process[ 50,000 TPS](https://solana.com/).
 
-In addition, while Ethereum offers more flexibility and scalability than traditional single-purpose blockchains like [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/), it has had many issues scaling to support the massive influx of new users on Defi protocols like Uniswap or NFT marketplaces like OpenSea.
+In addition, while Ethereum offers more flexibility and scalability than traditional single-purpose blockchains like [Bitcoin](bitcoin-glossary.md), it has had many issues scaling to support the massive influx of new users on Defi protocols like Uniswap or NFT marketplaces like OpenSea.
 
 #### Why are Gas Fees So High?
 
@@ -125,7 +128,7 @@ As more users transact on the Ethereum blockchain, the network begins to experie
 
 The higher the fees are to transact, the less affordable it is for the average user to interact with the Dapps on Ethereum. 
 
-Furthermore, because Dapps are built on Ethereum, developers rely on the underlying [proof of stake consensus protocol](https://www.horizen.io/academy/pos-vs-pow/) of the Ethereum network for their Dapps security and scalability. This means that if a single popular Dapp experiences congestion due to high traffic, then so do all Dapps. 
+Furthermore, because Dapps are built on Ethereum, developers rely on the underlying [proof of stake consensus protocol](pos-vs-pow.md) of the Ethereum network for their Dapps security and scalability. This means that if a single popular Dapp experiences congestion due to high traffic, then so do all Dapps. 
 
 That means if the Ethereum blockchain’s security is ever compromised, all Dapps will also be impacted. 
 
@@ -133,9 +136,9 @@ That means if the Ethereum blockchain’s security is ever compromised, all Dapp
 
 Ethereum 2.0, or ETH2, is the next phase of Ethereum's network development that kicked off with the “[Merge](https://ethereum.org/en/upgrades/merge/)” that occurred on September 15th 2022 . 
 
-**ETH2** upgraded the current Ethereum network from a proof of work [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) to proof of stake. 
+**ETH2** upgraded the current Ethereum network from a proof of work [consensus mechanism](consensus-mechanisms.md) to proof of stake. 
 
-The upgrade was referred to as a _merge_ because the entire consensus layer of the Ethereum mainnet is being merged with a new [PoS chain](https://www.horizen.io/academy/pos-vs-pow/) called the **Beacon Chain**. 
+The upgrade was referred to as a _merge_ because the entire consensus layer of the Ethereum mainnet is being merged with a new [PoS chain](pos-vs-pow.md) called the **Beacon Chain**. 
 
 Future plans on Etherum’s roadmap include introducing upgrades like _rollups_ and _sharding_ to help scale the network by providing multiple parallel networks to conduct transaction execution and data storage. 
 
@@ -147,14 +150,14 @@ The update Ethereum 2.0 is expected to be completed by 2024.
 
 ## The Horizen Alternative 
 
-Recognizing the scalability challenge of layer 1 blockchains like Etheruem, the Horizen network has chosen to build a network of independent blockchains, known as [**sidechains**](https://www.horizen.io/academy/sidechains/), that allow for more scalability and flexibility instead of relying on all activities to occur on one single blockchain. 
+Recognizing the scalability challenge of layer 1 blockchains like Etheruem, the Horizen network has chosen to build a network of independent blockchains, known as [**sidechains**](sidechains.md), that allow for more scalability and flexibility instead of relying on all activities to occur on one single blockchain. 
 
 By building on Horizen, developers have the freedom to fully customize their blockchains, including:
 
 - Consensus type
 - Speed
 - Privacy level
-- and [Tokenomics](https://www.horizen.io/academy/tokenomics/)
+- and [Tokenomics](tokenomics.md)
 
 Blockchains built on Horizen can produce up to 1,000 transactions per second and over 10 million transactions across 10,000 connected blockchains without compromising decentralization. 
 
