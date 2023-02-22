@@ -32,37 +32,37 @@ const CardWContent: React.FC<CardWContentProps> = ({
 const cards: CardWContentProps[] = [
     {
         title: "What is an AMM?",
-        link: "/docs/automated-market-maker-amm",
+        link: "automated-market-maker-amm",
         image: "/assets/pages/homepage/small-article-icon-1.svg",
         imageAlt: "popular article icon",
     },
     {
         title: "Play-to-Earn Games",
-        link: "/docs/play-to-earn-games",
+        link: "play-to-earn-games",
         image: "/assets/pages/homepage/small-article-icon-2.svg",
         imageAlt: "popular article icon",
     },
     {
         title: "Crypto Lending",
-        link: "/docs/crypto-lending",
+        link: "crypto-lending",
         image: "/assets/pages/homepage/small-article-icon-3.svg",
         imageAlt: "popular article icon",
     },
     {
         title: "Bitcoin: A Glossary",
-        link: "/docs/bitcoin-glossary",
+        link: "bitcoin-glossary",
         image: "/assets/pages/homepage/small-article-icon-4.svg",
         imageAlt: "popular article icon",
     },
     {
         title: "Modular vs Monolithic Blockchains",
-        link: "/docs/modular-vs-monolithic-blockchains",
+        link: "modular-vs-monolithic-blockchains",
         image: "/assets/pages/homepage/small-article-icon-5.svg",
         imageAlt: "popular article icon",
     },
     {
         title: "Decentralized Prediction Markets",
-        link: "/docs/decentralized-prediction-markets",
+        link: "decentralized-prediction-markets",
         image: "/assets/pages/homepage/small-article-icon-6.svg",
         imageAlt: "popular article icon",
     },

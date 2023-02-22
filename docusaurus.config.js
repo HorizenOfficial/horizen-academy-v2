@@ -6,13 +6,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "My Site",
-    tagline: "Dinosaurs are cool",
-    url: "https://your-docusaurus-test-site.com",
-    baseUrl: "/",
+    title: "Horizen Academy",
+    url: "https://horizen.io",
+    baseUrl: "/academy/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
-    favicon: "img/favicon.ico",
+    favicon: "img/favicon.png",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
@@ -40,9 +39,14 @@ const config = {
                         "https://github.com/HorizenOfficial/horizen-academy-v2/",
                     showLastUpdateAuthor: true,
                     showLastUpdateTime: true,
+                    routeBasePath: "/",
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
+                },
+                sitemap: {
+                    changefreq: "daily",
+                    priority: 1,
                 },
             }),
         ],
@@ -63,7 +67,7 @@ const config = {
                         position: "left",
                     },
                     {
-                        to: "/docs/how-does-blockchain-work/",
+                        to: "/how-does-blockchain-work/",
                         position: "left",
                         label: "Articles",
                     },
@@ -74,23 +78,23 @@ const config = {
                         items: [
                             {
                                 label: "Play-to-Earn Games",
-                                href: "/docs/play-to-earn-games/",
+                                href: "play-to-earn-games",
                             },
                             {
                                 label: "Zero-Knowledge Proofs",
-                                href: "/docs/zero-knowledge-proofs-zkp/",
+                                href: "zero-knowledge-proofs-zkp",
                             },
                             {
                                 label: "Consensus Mechanisms",
-                                href: "/docs/consensus-mechanisms/",
+                                href: "consensus-mechanisms",
                             },
                             {
                                 label: "Tokenomics 101",
-                                href: "/docs/tokenomics",
+                                href: "/tokenomics",
                             },
                             {
                                 label: "Ethereum Virtual Machine",
-                                href: "/docs/ethereum-virtual-machine-evm/",
+                                href: "ethereum-virtual-machine-evm",
                             },
                         ],
                     },
