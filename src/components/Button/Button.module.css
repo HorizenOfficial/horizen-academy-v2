@@ -1,0 +1,74 @@
+:root {
+    --btn-text-c: white;
+    --btn-text-disabled-c: var(--c-grey-dark);
+    --btn-bg-c: transparent;
+    --btn-border-c: var(--c-blue);
+    --btn-hover-border-c: var(--c-green);
+    --btn-disabled-border-c: var(--c-grey-dark);
+}
+
+.btn {
+    position: relative;
+    display: block;
+    width: fit-content;
+    color: var(--btn-text-c);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 16px;
+    letter-spacing: 4.8px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.btn:hover {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    color: var(--btn-text-disabled-c);
+}
+
+.btn::before,
+.btn::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    border: 2px solid var(--btn-border-c);
+}
+
+.btn::before {
+    top: 0;
+    left: 0;
+    border-right: 0;
+}
+
+.btn::after {
+    top: 0;
+    right: 0;
+    border-left: 0;
+}
+
+.btn:hover::after,
+.btn:hover::before {
+    border-color: var(--btn-hover-border-c);
+}
+
+.btn:disabled::before,
+.btn:disabled::after {
+    border-color: var(--btn-disabled-border-c);
+}
+
+.btn--caps {
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 20px;
+        padding: 8px 24px;
+    }
+}

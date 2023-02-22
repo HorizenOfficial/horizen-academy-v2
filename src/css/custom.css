@@ -1,0 +1,49 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@import url("./fonts.css");
+
+@import url("./docusaurus-components");
+
+html {
+    /* undoing what tailwind broke */
+    font: var(--ifm-font-size-base) / var(--ifm-line-height-base)
+        var(--ifm-font-family-base);
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* You can override the default Infima variables here. */
+:root {
+    --c-blue: #0e9de5;
+    --c-blue-dark: #051331;
+    --c-blue-darker: #0c162a;
+    --c-blue-darkest: #0c0c1c;
+    --c-green: #26db8d;
+    --c-grey: #c8cfd4;
+    --c-grey-dark: #7a7e8c;
+    --c-red: #b91c1c;
+    --ifm-font-family-base: "proxima-nova", sans-serif;
+    --ifm-global-radius: 0rem;
+}
+
+[data-theme="dark"]:root {
+    --ifm-background-color: var(--c-blue-darkest);
+    --ifm-background-surface-color: var(--c-blue-darker);
+    --ifm-hover-overlay: unset;
+    --ifm-color-primary: var(--c-blue);
+    --ifm-color-primary-dark: rgb(255, 0, 0);
+    --ifm-color-primary-darker: rgb(255, 0, 0);
+    --ifm-color-primary-darkest: rgb(255, 0, 0);
+    --ifm-color-primary-light: rgb(255, 0, 0);
+    --ifm-color-primary-lighter: rgb(255, 0, 0);
+    --ifm-color-primary-lightest: rgb(255, 0, 0);
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
