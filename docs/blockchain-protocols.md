@@ -6,6 +6,9 @@ title: What is a Protocol in Crypto?
 slug: /blockchain-protocols/
 description: We compare blockchains as protocols to transfer money with the internet as a protocol to transfer information at an advanced level.
 image: /img/blockchain-protocols/blockchain-protocols-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -56,7 +59,7 @@ _A blockchain can be separated into two layers:_
 
 ### The Internet - A Protocol to Transfer Information
 
-When numerous people want to cooperate, a set of standards is always needed to specify exactly how each person should collaborate. The need for a set of standards is the same whether they want to exchange information via the internet or [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) via the blockchain.
+When numerous people want to cooperate, a set of standards is always needed to specify exactly how each person should collaborate. The need for a set of standards is the same whether they want to exchange information via the internet or [cryptocurrency](cryptocurrency.md) via the blockchain.
 
 The _internet protocol_ - **TCP/IP** - defines standards for how data is split up and transferred from a server to your computer, for example, when you access this website. 
 
@@ -90,7 +93,7 @@ The protocol requires you to add a small transaction fee - similar to a stamp - 
 
 [Wallets](crypto-wallets.md) make it easy to receive and send transactions. 
 
-They also create your signature for you, without you even noticing, so don’t worry if this sounds complex at first. [Addresses on a blockchain](https://www.horizen.io/academy/wallet-addresses/) are, of course, a little different to addresses that you are used to - they look like this:
+They also create your signature for you, without you even noticing, so don’t worry if this sounds complex at first. [Addresses on a blockchain](wallet-addresses.md) are, of course, a little different to addresses that you are used to - they look like this:
 
 **znWPHuCGsgnJ5nsdu9AJdDcxDPWdrESoMNT**
 
@@ -123,7 +126,7 @@ You can distinguish between several broad types of networking protocols. _Some e
 - **Network communication protocols** like _TCP/IP_ (Transmission Control Protocol - Internet Protocol)
 - **Network security protocols** like _HTTPS_ and _SSL_ (Hypertext Transfer Protocol Secure/Secure Sockets Layer) 
 - **Network management protocols** such as _SNMP_ and _ICMP_ (Simple Network Management Protocol/Internet Control Message Protocol)
-- **Value transfer protocols** such as Horizen or [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/)
+- **Value transfer protocols** such as Horizen or [Bitcoin](bitcoin-glossary.md)
 
 ![network protocols](/img/blockchain-protocols/network-protocols.jpg)
 
@@ -133,7 +136,7 @@ The **TCP/IP** protocol specifies how to break data down into packets, address t
 
 **SSL**, or _Secure Sockets Layer_, is a standard protocol used to establish encrypted links between a web server and a client, like your computer, in online communication and is used for the secure transfer of data.
 
-The _Simple Network Management Protocol_ (**SNMP**) is a set of protocols supported by network devices such as routers, servers or printers and takes care of them [interoperating](https://www.horizen.io/academy/blockchain-interoperability/) seamlessly, sometimes. Protocols like Bitcoin or Horizen enable the digital transfer of value from peer to peer.
+The _Simple Network Management Protocol_ (**SNMP**) is a set of protocols supported by network devices such as routers, servers or printers and takes care of them [interoperating](blockchain-interoperability.md) seamlessly, sometimes. Protocols like Bitcoin or Horizen enable the digital transfer of value from peer to peer.
 
 Throughout the history of the internet, people have defined standards for the exchange of various types of data. It’s important to note that it was not always the best protocol that gained mass adoption. People are unlikely to switch to a different protocol once they begin using it and building upon it. 
 
@@ -164,7 +167,7 @@ _All of these conventions are defined by the protocol._
 
 When a common language for the software to exchange information is established, we need rules on how new data is added to the blockchain. Adding data comes at a cost. This cost must be high enough to prevent large amounts of useless data being added, but at the same time it must not be prohibitively expensive.
 
-Each node keeps a copy of the blockchain and verifies every transaction it receives. All miners and [full nodes](https://www.horizen.io/academy/nodes/) maintain the so-called **mempool**, which contains new and unconfirmed transactions. 
+Each node keeps a copy of the blockchain and verifies every transaction it receives. All miners and [full nodes](blockchain-nodes.md) maintain the so-called **mempool**, which contains new and unconfirmed transactions. 
 
 Once a transaction becomes verified it is then saved in the _mempool_, short for memory pool, with all the other transactions that are not yet included in a block.
 
@@ -184,9 +187,9 @@ A transaction needs to include:
 - The _amount to transfer_
 - And a _digital signature_. 
 
-The [digital signature](https://www.horizen.io/academy/digital-signatures/) is a way to authorize the spending of your funds. The private key of a user creates this digital signature.
+The [digital signature](digital-signatures.md) is a way to authorize the spending of your funds. The private key of a user creates this digital signature.
 
-The [**consensus mechanism**](https://www.horizen.io/academy/consensus-mechanisms/) determines how the process of adding new blocks to the chain works and how the network agrees on a single version of history. 
+The [**consensus mechanism**](consensus-mechanisms.md) determines how the process of adding new blocks to the chain works and how the network agrees on a single version of history. 
 
 The **longest chain rule** or _Nakamoto Consensus_ determines which block is valid in case two miners find two valid blocks shortly after another, creating a tie situation.
 
@@ -220,9 +223,9 @@ To suggest changes, most large blockchain projects have an _improvement proposal
 
 Anybody is able to look at the code on GitHub and suggest improvements, usually by presenting the according code. Within the developer community, the suggested improvements will be discussed, refined and if the majority considers them to be beneficial and not negatively affecting the security they might be implemented.
 
-Deciding upon changes is referred to as the [**governance** of a protocol](https://www.horizen.io/academy/blockchain-governance/). Oftentimes, this is only a loosely formulated set of guidelines, but it can be more structured.
+Deciding upon changes is referred to as the [**governance** of a protocol](blockchain-governance.md). Oftentimes, this is only a loosely formulated set of guidelines, but it can be more structured.
 
-Implementing changes can happen via soft [forks or hard forks](https://www.horizen.io/academy/blockchain-forks/), where soft forks are downward compatible updates and hard forks are downward incompatible. 
+Implementing changes can happen via soft [forks or hard forks](blockchain-forks.md), where soft forks are downward compatible updates and hard forks are downward incompatible. 
 
 If changes to the protocol can be implemented with soft forks, there are two ways of how this transition can be handled.
 
@@ -246,7 +249,7 @@ In _game theory_, games in which cooperative behavior can only be enforced throu
 
 This is one of the great innovations introduced with Bitcoin; a self-enforcing agreement on a global scale between unknown entities that don’t trust each other. This is only possible because of an incentive system that makes honest behavior more profitable than fraudulent behavior.
 
-It can be difficult to see why we consider all this to be a groundbreaking innovation when we look at the [different parts of a blockchain](https://www.horizen.io/academy/components-of-blockchain/). It is true that most concepts that comprise Bitcoin have been around for years. Game theory is arguably the most important part of a public blockchain protocol.
+It can be difficult to see why we consider all this to be a groundbreaking innovation when we look at the [different parts of a blockchain](components-of-a-blockchain.md). It is true that most concepts that comprise Bitcoin have been around for years. Game theory is arguably the most important part of a public blockchain protocol.
 
 The design of the incentive-structure is the reason why Bitcoin was the first cryptocurrency that survived - few know that there have been many attempts to build a similar system before. They were either highly centralized or didn’t provide the right incentives for their participants.
 
@@ -264,7 +267,7 @@ As _Satoshi Nakamoto_ formulated it in his [Bitcoin Whitepaper](https://bitcoin.
 
 > "_If a greedy attacker is able to assemble more CPU power than all the honest nodes, he would have to choose between using it to defraud people by stealing back his payments, or using it to generate new coins. He ought to find it more profitable to play by the rules, such rules that favor him with more new coins than everyone else combined, than to undermine the system and the validity of his own wealth._"
 
-The attacker now has to balance the cost of an [attack on the blockchain](https://www.horizen.io/academy/blockchain-attacks/): the likelihood of the attack being successful and its potential upside versus the benefit of spending the same amount of electricity on [honest mining](https://www.horizen.io/academy/mining-in-blockchain/) and collecting the block rewards.
+The attacker now has to balance the cost of an [attack on the blockchain](blockchain-attacks.md): the likelihood of the attack being successful and its potential upside versus the benefit of spending the same amount of electricity on [honest mining](crypto-mining.md) and collecting the block rewards.
 
 The key takeaway is the following: the protocol of a blockchain is self-enforcing, as long as the incentives are set correctly. This is what lets rational agents decline invalid blocks and transactions and secure the network with their computing power.
 

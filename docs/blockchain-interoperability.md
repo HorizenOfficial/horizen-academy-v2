@@ -6,6 +6,9 @@ title: What is Blockchain Interoperability?
 slug: /blockchain-interoperability/
 description: Interoperability is the process of enabling different computer systems to exchange information with each other using a common framework.
 image: /img/blockchain-interoperability/blockchain-interoperability-meta.jpg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -33,7 +36,7 @@ The main vehicle for achieving interoperability is through the development of **
 
 A typical bridge token transfer involves a set of validators that sit between 2 blockchains - *Chain A and B*.
 
-The user who wishes to send tokens from **Chain A to B** must first lock their tokens in a [smart contract](https://www.horizen.io/academy/smart-contracts/), which initiates **Chain B** to mint a wrapped version of the tokens on its chain once it confirms that the tokens have been taken out of circulation from **Chain A**.
+The user who wishes to send tokens from **Chain A to B** must first lock their tokens in a [smart contract](smart-contracts.md), which initiates **Chain B** to mint a wrapped version of the tokens on its chain once it confirms that the tokens have been taken out of circulation from **Chain A**.
 
 As long as the validators on **Chain B** confirm that the initial tokens are locked in the smart contract, the wrapped version will be recognized on **Chain B** as having real value on par with its native equivalent.
 
@@ -41,9 +44,9 @@ This means the wrapped tokens can be accepted as payment or used as a form of co
 
 When the holder of the wrapped tokens wishes to retrieve the native version (i.e bridge their funds back the other way) they simply send the wrapped version to a burn address on **Chain B**.
 
-Validators on **Chain A** must then confirm that the wrapped token was burned before releasing the [native token](https://www.horizen.io/academy/what-is-a-token/) to the [wallet address](https://www.horizen.io/academy/wallet-addresses/) provided on **Chain A**.
+Validators on **Chain A** must then confirm that the wrapped token was burned before releasing the [native token](what-is-a-token.md) to the [wallet address](wallet-addresses.md) provided on **Chain A**.
 
-Each chain must rely on its own [consensus mechanisms](https://www.horizen.io/academy/consensus-mechanisms/) and update the state of the network to reflect the locking, minting and burning of new tokens, while simultaneously being aware of the current state of the bridging chain to ensure that wrapped tokens are not minted that have no underlying native token backing it.
+Each chain must rely on its own [consensus mechanisms](consensus-mechanisms.md) and update the state of the network to reflect the locking, minting and burning of new tokens, while simultaneously being aware of the current state of the bridging chain to ensure that wrapped tokens are not minted that have no underlying native token backing it.
 
 Because of how different the consensus mechanisms are between chains, an independent 3rd party is sometimes required to translate events that are occurring on one chain to another in order for them to be in sync.
 
@@ -55,9 +58,9 @@ These 3rd party technologies are called *Relayers* and *Oracles*.
 
 **Oracles** receive data inputs from the external world of a blockchain and transmit that data into smart contracts to enable them to make decisions in real time based on accurate information.
 
-_LayerZero_, a popular blockchain bridging protocol, leverages relayers and [oracles](https://www.horizen.io/academy/blockchain-oracles/) to make it more efficient and secure for blockchains to transmit messages between each other.
+_LayerZero_, a popular blockchain bridging protocol, leverages relayers and [oracles](blockchain-oracles.md) to make it more efficient and secure for blockchains to transmit messages between each other.
 
-The [protocol](https://www.horizen.io/academy/blockchain-protocols/) works by connecting two independent entities, a relayer and an oracle, to corroborate the validity of a transaction from Chain A so that Chain B can more easily confirm its validity.
+The [protocol](blockchain-protocols.md) works by connecting two independent entities, a relayer and an oracle, to corroborate the validity of a transaction from Chain A so that Chain B can more easily confirm its validity.
 
 ![oracles and relayers](/img/blockchain-interoperability/oracles-and-relayers.jpg)
 
@@ -116,12 +119,12 @@ The 2 common forms of bridge design are **trusted bridges** and **trustless brid
 
 Expanding further, we also see different designs within the trustless and trusted bridge paradigm for enabling blockchain interoperability. The most popular designs include:
 
-- [Atomic Swaps](https://www.horizen.io/academy/atomic-swaps/) use smart contracts to enable the exchange of one [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) for another in a [p2p](https://www.horizen.io/academy/peer-to-peer-networks-p2p/) manner. Swaps can occur between different blockchain, or between a blockchains and its off-chain channel, for example, between an L1 and a centralized L2.
+- [Atomic Swaps](atomic-swaps.md) use smart contracts to enable the exchange of one [cryptocurrency](cryptocurrency.md) for another in a [p2p](p2p-networks.md) manner. Swaps can occur between different blockchain, or between a blockchains and its off-chain channel, for example, between an L1 and a centralized L2.
 - **Relays** are a common feature used by interoperability protocols like LayerZero to enable one chain (the relay chain) or a centralized 3rd party node to verify information about a block (i.e the block header) and events that occur on the receiving/sending chain.
 
 ## Interoperability in DeFi
 
-Much of the early success of blockchains like Solana, Binance Smart Chain, Avalanche and other [EVM compatible chains](https://www.horizen.io/academy/ethereum-virtual-machine-evm/) can be attributed to the emphasis on building simple and efficient bridging solutions to enable interoperability with the [Ethereum network](https://www.horizen.io/academy/ethereum-glossary/).
+Much of the early success of blockchains like Solana, Binance Smart Chain, Avalanche and other [EVM compatible chains](ethereum-virtual-machine-evm.md) can be attributed to the emphasis on building simple and efficient bridging solutions to enable interoperability with the [Ethereum network](ethereum-glossary.md).
 
 Binance Bridge, Solana Wormhole, and even the Terra Bridge at one point were all pivotal in enabling the massive flow of funds from Etheruem to other networks.
 
@@ -142,7 +145,7 @@ The benefits that private permissioned networks receive by tapping into public n
 - **Private to Private Network Interoperability**
   - Enabling cross-chain verification of encrypted patient data between hospital networks in different legal jurisdictions.
 - **Private to Public Network Interoperability:**
-  - Sharing proof of company solvency using [zero-knowledge proofs](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/) to protect private data.
+  - Sharing proof of company solvency using [zero-knowledge proofs](zero-knowledge-proofs-zkp.md) to protect private data.
 
 ## Interoperability in GameFi and the Metaverse
 

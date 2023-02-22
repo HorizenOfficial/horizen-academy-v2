@@ -6,6 +6,9 @@ title: What is a Crypto Token?
 slug: /what-is-a-token/
 description: A Token is a digital unit of account that can be used to represent any kind of physical or digital asset on a blockchain.
 imgage: /img/what-is-a-token/what-is-a-token-meta.jpg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -20,7 +23,7 @@ A **token** is a digital unit of account that can be used to represent any kind 
 
 Tokens play a central role in allowing people to denote, store and exchange different types of assets on top of a decentralized network.
 
-**Tokenization**, the process of [creating tokens](https://www.horizen.io/academy/why-create-a-token/) on the blockchain or converting digital or physical assets into tokens, is at the core of what powers the most successful decentralized applications and blockchain networks in our industry.
+**Tokenization**, the process of [creating tokens](why-create-a-token.md) on the blockchain or converting digital or physical assets into tokens, is at the core of what powers the most successful decentralized applications and blockchain networks in our industry.
 
 Tokens are a _highly_ powerful tool that can serve as: 
 - A store of value
@@ -39,7 +42,7 @@ A _currency_ or **medium of exchange** is the most commonly understood use case 
 
 Most tokens are created to serve as the primary currency within a blockchain network or decentralized application, or dapp. Users are typically required to pay for whatever good or service they are receiving from the dapp using its token. 
 
-For example, an NFT marketplace might choose to price all NFTs in their token and require users to have their token in their [wallet](https://www.horizen.io/academy/crypto-wallets/) to pay for an NFT.
+For example, an NFT marketplace might choose to price all NFTs in their token and require users to have their token in their [wallet](crypto-wallets.md) to pay for an NFT.
 
 Using a token as a currency has many advantages for the user and the creator.
 
@@ -77,19 +80,19 @@ Token reward instruments can also be presented in the form of a *voucher* that i
 
 **There are many other interesting use cases that can be applied to tokens**:
 
-- **Voting** on proposals set by a decentralized autonomous organization or [DAO](https://www.horizen.io/academy/decentralized-autonomous-organization-dao/)
-- Using tokens as [**collateral** to receive loans](https://www.horizen.io/academy/crypto-lending/) or perform tasks that would otherwise require trust
+- **Voting** on proposals set by a decentralized autonomous organization or [DAO](decentralized-autonomous-organization-dao.md)
+- Using tokens as [**collateral** to receive loans](crypto-lending.md) or perform tasks that would otherwise require trust
 - Through the use of **non-fungible tokens**, you can even create a unique digital identity or certify the scarcity of a digital item by showing proof of its limited supply.
 
 ## What is the Difference Between a Cryptocurrency and a Token?
 
-The difference between a token and [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) is subtle but important for understanding the possibilities and limitations of their utility.
+The difference between a token and [cryptocurrency](cryptocurrency.md) is subtle but important for understanding the possibilities and limitations of their utility.
 
 **Cryptocurrencies** are the _native currencies_ of a blockchain that are paid to miners or validators as rewards for correctly validating transactions and also securing the network.
 
 _Examples of cryptocurrencies include:_
 
-- [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/)
+- [Bitcoin](bitcoin-glossary.md)
 - Ether
 - ZEN
 
@@ -105,7 +108,7 @@ _Examples of tokens include_:
 
 ![cryptocurrency vs token](/img/what-is-a-token/cryptocurrency-vs-token.jpeg)
 
-Tokens are created using a [smart contract](https://www.horizen.io/academy/smart-contracts/), which is a computer program that automatically executes a set of functions based on predefined rules or conditions set by the developer.
+Tokens are created using a [smart contract](smart-contracts.md), which is a computer program that automatically executes a set of functions based on predefined rules or conditions set by the developer.
 
 These rules include the tokens:
 
@@ -129,7 +132,7 @@ I can develop a market for people to connect from anywhere in the world to trade
 
 _All of these problems are solvable through the use of blockchain technology._
 
-As a reminder, a **blockchain** is a decentralized ledger (or record book) that is shared across a [distributed network of computers](https://www.horizen.io/academy/nodes/) (or “nodes”).
+As a reminder, a **blockchain** is a decentralized ledger (or record book) that is shared across a [distributed network of computers](blockchain-nodes.md) (or “nodes”).
 
 All **nodes** store the same copy of the ledger, and rely on majority consensus to determine when to update the ledger to reflect changes in the form of network updates or newly confirmed transactions.
 
@@ -141,7 +144,7 @@ This allows anyone to attest to the rules around the tokens supply, ownership an
 
 ### Fungible - ERC-20
 
-  _Ethereum Request for Comments_ or _ERC-20_ is a token standard on the [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) network that enables users to issue fungible tokens. 
+  _Ethereum Request for Comments_ or _ERC-20_ is a token standard on the [Ethereum](ethereum-glossary.md) network that enables users to issue fungible tokens. 
 
 Fungible tokens, like dollars or euros, carry the same value for each unit and can be exchanged one for one.
 
@@ -182,6 +185,6 @@ This is why we have created [TokenMint](https://tokenmint.global/), a tool that 
 **On TokenMint, you can:**
 
 - Instantly launch a fungible token without any technical expertise required
-- [Customize your tokenomics](https://www.horizen.io/academy/tokenomics/)
+- [Customize your tokenomics](tokenomics.md)
 - Store your token on our Cobalt Wallet extension
 - View the transaction history of tokens on our Tokenmint explorer

@@ -6,6 +6,9 @@ title: What are Atomic Swaps?
 slug: /atomic-swaps/
 description: Atomic Swaps are a technology that allows you to trade Peer-to-Peer without a third party. Learn about atomic swaps at an advanced level.
 image: /img/atomic-swaps/atomic-swaps-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -15,9 +18,9 @@ If you want to exchange one cryptocurrency for another one, you will most likely
 
 _First_, you have to check whether the exchange offers the trading pair that you are interested in. _Then_ you transfer your funds to their address, which requires you to trust the exchange as a third party. 
 
-Most exchanges offer _BTC_ and _ETH_ pairs. To swap two lesser-known cryptocurrencies or [tokens](https://www.horizen.io/academy/what-is-a-token/), you will oftentimes have to buy bitcoin first which you will then convert into the desired [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/).
+Most exchanges offer _BTC_ and _ETH_ pairs. To swap two lesser-known cryptocurrencies or [tokens](what-is-a-token.md), you will oftentimes have to buy bitcoin first which you will then convert into the desired [cryptocurrency](cryptocurrency.md).
 
-A special transaction type that we would like to talk about in this article is the _Atomic Swap_. It is a type of transaction that touches on the topics of scalability and [interoperability](https://www.horizen.io/academy/blockchain-interoperability/) at the same time.
+A special transaction type that we would like to talk about in this article is the _Atomic Swap_. It is a type of transaction that touches on the topics of scalability and [interoperability](blockchain-interoperability.md) at the same time.
 
 **Atomic Swaps** are a technology that allows you to trade Peer-to-Peer without a third party. They also do away with the trust required for you to arrange a swap with an unknown user. 
 
@@ -37,7 +40,7 @@ The "Hashed" part of _HTLC_ means that a hash serves as a lock for the contract,
 
 **Two conditions must be met to perform an Atomic Swap between two crypto assets:** 
 
-- Both assets and their underlying blockchain need to support the same hashing algorithm, like _SHA-256_ in the case of [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) 
+- Both assets and their underlying blockchain need to support the same hashing algorithm, like _SHA-256_ in the case of [Bitcoin](bitcoin-glossary.md) 
 - And both blockchains need to support some kind of programmability that allows an *HTLC* to be deployed.
 
 ## The Process of Atomic Swaps
@@ -81,7 +84,7 @@ Now, both contracts are set up on their respective blockchain. Alice has to take
 
 Alice will now use the secret she chose earlier to unlock the _hashlock_ of Bob's contract on the _Horizen blockchain_ and the _ZEN_ will be released to her. _This is a public operation, auditable on the blockchain_. 
 
-Bob can, therefore, see the secret now, and uses it to unlock the bitcoin locked up in Alice's contract. By providing the secret the HTLC will automatically release the funds to Bob's previously specified [Bitcoin address](https://www.horizen.io/academy/wallet-addresses/).
+Bob can, therefore, see the secret now, and uses it to unlock the bitcoin locked up in Alice's contract. By providing the secret the HTLC will automatically release the funds to Bob's previously specified [Bitcoin address](wallet-addresses.md).
 
 Without having to trust each other Alice and Bob have now successfully exchanged their coins, _without having to involve a middleman_. At no point could one of the two steal the other's money. 
 
@@ -97,7 +100,7 @@ There are few wallets that enable users to do Atomic Swaps, yet. So far there ha
 - The **first off-chain Atomic Swap** occurred _November 2017_ between _Litecoin_ and _Bitcoin_ on the _Lightning Network_
 - Most recently on the 7th of _December 2018_, TenX showcased an **ERC20 to Bitcoin Lightning Atomic Swap** using their open-source software _COMIT_
 
-The technology is very promising, but to achieve adoption [wallets](https://www.horizen.io/academy/crypto-wallets/) will have to build a user-friendly interface to use Atomic Swaps. This will take a while, but the technology is very promising and could very well enable a new class of use cases for cryptocurrencies.
+The technology is very promising, but to achieve adoption [wallets](crypto-wallets.md) will have to build a user-friendly interface to use Atomic Swaps. This will take a while, but the technology is very promising and could very well enable a new class of use cases for cryptocurrencies.
 
 ## Summary - Atomic Swaps
 

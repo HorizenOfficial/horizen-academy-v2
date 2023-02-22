@@ -6,12 +6,15 @@ title: Who is Satoshi Nakamoto?
 slug: /satoshi-nakamoto/
 description: There have been many attempts to identify the man/woman/group behind the pseudonym Satoshi Nakamoto, the creator of Bitcoin, none of them successful.
 image: /img/satoshi-nakamoto/satoshi-nakamoto-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
 # Who is Satoshi Nakamoto?
 
-**Bitcoin** just celebrated its 13th birthday, but the _creator_ of the first [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) blockchain still remains _anonymous_. 
+**Bitcoin** just celebrated its 13th birthday, but the _creator_ of the first [cryptocurrency](cryptocurrency.md) blockchain still remains _anonymous_. 
 
 There have been many attempts to identify the _man/woman/group_ behind the pseudonym, **Satoshi Nakamoto**, none of them successful.
 
@@ -19,7 +22,7 @@ We don't want to speculate on the identity of Satoshi, but rather provide you wi
 
 ## The Beginning of Bitcoin
 
-The story of [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) really starts on October 31st, 2008, when Satoshi Nakamoto published the **Bitcoin Whitepaper**, ["Bitcoin: A Peer-to-Peer Electronic Cash System"](https://bitcoin.org/bitcoin.pdf) to the _Cryptography Mailing List_. 
+The story of [Bitcoin](bitcoin-glossary.md) really starts on October 31st, 2008, when Satoshi Nakamoto published the **Bitcoin Whitepaper**, ["Bitcoin: A Peer-to-Peer Electronic Cash System"](https://bitcoin.org/bitcoin.pdf) to the _Cryptography Mailing List_. 
 
 He said that he was working on the code for almost two years and that he had to finish writing the code before he could convince himself that he could make the software work.
 
@@ -37,7 +40,7 @@ Via the cryptography mailing list and the P2P-foundation, many _cypherpunks_ joi
 
 Some of them like _Adam Back_, _Wei Dai_ and _Nick Szabo_ had been working on _electronic cash systems_ themselves before, and at the time were probably the only people able to comment on the matter competently.
 
-One of the early [cypherpunks](https://www.horizen.io/academy/cypherpunks/), **Hal Finney**, conducted the _first_ bitcoin transaction on January 12th, recorded in block 170 of the Bitcoin blockchain when he received 10 BTC from Satoshi Nakamoto.
+One of the early [cypherpunks](cypherpunk-movement.md), **Hal Finney**, conducted the _first_ bitcoin transaction on January 12th, recorded in block 170 of the Bitcoin blockchain when he received 10 BTC from Satoshi Nakamoto.
 
 It took several months, October 5th, 2009, for the first exchange rate of bitcoin to the US Dollar to be established. _New Liberty Standard_ published an exchange rate that day that established the value of $1 being worth _1,309.03_ BTC! 
 

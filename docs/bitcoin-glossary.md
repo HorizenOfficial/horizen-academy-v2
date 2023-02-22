@@ -6,6 +6,9 @@ title: What is Bitcoin? - A Bitcoin Glossary
 slug: /bitcoin-glossary/
 description: Bitcoin is the first form of money to rely solely on a transparent and globally distributed network of nodes abiding by a unified set of protocols
 image: /img/bitcoin-glossary/bitcoin-glossary-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -23,7 +26,7 @@ A decentralized ledger, or record book, that is shared across a distributed netw
 
 ### Bitcoin
 
-A decentralized, peer-to-peer digital currency that runs on a global network of [distributed nodes](https://www.horizen.io/academy/nodes/) bound by a [consensus mechanism called proof of work](https://www.horizen.io/academy/proof-of-work-pow/).
+A decentralized, peer-to-peer digital currency that runs on a global network of [distributed nodes](blockchain-nodes.md) bound by a [consensus mechanism called proof of work](proof-of-work-pow.md).
 
 ### Nodes
 
@@ -108,13 +111,13 @@ A database where transactions that are unconfirmed or pending are kept until a n
 
 ### Proof of Work
 
-A [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) used on the Bitcoin network that requires miners to solve mathematical puzzles using computing power in order to earn the right to add transactions to the next block in the chain and receive newly issued bitcoin from the network known as the block reward.
+A [consensus mechanism](consensus-mechanisms.md) used on the Bitcoin network that requires miners to solve mathematical puzzles using computing power in order to earn the right to add transactions to the next block in the chain and receive newly issued bitcoin from the network known as the block reward.
 
 ### Double Spend
 
 A flaw in digital currencies that allow a user to spend the same coins they have in their wallet multiple times. This flaw has historically made it difficult to successfully launch a digitally native currency because there was no mechanism to permanently enforce updates to the database when a coin was spent.
 
-Blockchains solve this problem by introducing the proof of work and later [proof of stake consensus mechanism](https://www.horizen.io/academy/pos-vs-pow/). These consensus mechanisms eliminate the double spend by first requiring nodes to contribute computing power or stake a certain amount of tokens before they can validate transactions.
+Blockchains solve this problem by introducing the proof of work and later [proof of stake consensus mechanism](pos-vs-pow.md). These consensus mechanisms eliminate the double spend by first requiring nodes to contribute computing power or stake a certain amount of tokens before they can validate transactions.
 
 Transactions must also go through multiple block confirmations before the receiver is able to spend the funds, ensuring that any possible errors can be spotted before the transaction is permanently embedded into the network.
 
@@ -128,7 +131,7 @@ A mathematical function that takes a data input of arbitrary length and size and
 
 The Bitcoin blockchain uses a special type of Hash function called SHA-256.
 
-SHA-256 plays a key role in the recording of transactions and the [mining process](https://www.horizen.io/academy/mining-in-blockchain/) on the Bitcoin blockchain.
+SHA-256 plays a key role in the recording of transactions and the [mining process](crypto-mining.md) on the Bitcoin blockchain.
 
 Every Bitcoin block contains the hash of the previous block within its block-header. This previous block hash links the blocks together to create an immutable chain.
 
@@ -144,7 +147,7 @@ A seed phrase is made up of 12 words that represent a private key.
 
 ### Public Key - Wallet Address
 
-A series of letters and numbers that the [owner of a wallet](https://www.horizen.io/academy/crypto-wallets/) can share with anyone to receive crypto, like an email address.
+A series of letters and numbers that the [owner of a wallet](crypto-wallets.md) can share with anyone to receive crypto, like an email address.
 
 A public key corresponds to a private key which is used to authorize the owner of the public key to spend the funds on their wallet.
 
@@ -162,9 +165,9 @@ In **2008**, a pseudo-anonymous individual or group named _[Satoshi Nakamoto](sa
 
 Bitcoin was the first use case of blockchain technology, as well as the first form of money to rely solely on a transparent and globally distributed network of nodes abiding by a unified set of protocols, rather than the policies of a government or central bank.
 
-- Bitcoin is a [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) that is used to [transfer](https://www.horizen.io/academy/blockchain-protocols/) and store value digitally.
-- Bitcoin sits on top of the Bitcoin blockchain, which is a public blockchain network that tracks the ownership of Bitcoin held in digital [wallets](https://www.horizen.io/academy/crypto-wallets/) and also validates all Bitcoin transactions that occur on the network.
-- In order for transactions on the Bitcoin blockchain to be validated, [consensus](https://www.horizen.io/academy/consensus-mechanisms/) must be achieved between the nodes that operate the network.
+- Bitcoin is a [cryptocurrency](cryptocurrency.md) that is used to [transfer](blockchain-protocols.md) and store value digitally.
+- Bitcoin sits on top of the Bitcoin blockchain, which is a public blockchain network that tracks the ownership of Bitcoin held in digital [wallets](crypto-wallets.md) and also validates all Bitcoin transactions that occur on the network.
+- In order for transactions on the Bitcoin blockchain to be validated, [consensus](consensus-mechanisms.md) must be achieved between the nodes that operate the network.
 - A consensus mechanism is the backbone of a blockchain. It is the process by which nodes come to an agreement on the state of the ledger.
 - The Bitcoin blockchain is operated by [miners](crypto-mining.md), who are individuals or entities that run nodes that are responsible for either validating transactions that occur on the network, or storing a history of transactions that occur on the network.
 - Miners coordinate with each other to achieve consensus on whether a transaction that occurred on the network was correct, that it went to the right person and the correct amount was exchanged.
@@ -198,7 +201,7 @@ The first step of a bitcoin transaction is when a sender wishes to send a certai
 
 What essentially happens at the beginning is that a specific set of data is created that communicates John’s intent to send Mary 1 BTC from a source (the input) to a destination (the output).
 
-This data includes all of the information required to process a transaction, including the [destination address](https://www.horizen.io/academy/wallet-addresses/) and the amount of bitcoin to be sent.
+This data includes all of the information required to process a transaction, including the [destination address](wallet-addresses.md) and the amount of bitcoin to be sent.
 
 No private keys or other types of confidential information are included in this information used to process the transaction.
 
@@ -244,7 +247,7 @@ Satoshis or ‘sats’.
 
 ### Is Bitcoin Money?
 
-Bitcoin is the first form of money to rely solely on a transparent and globally distributed network of nodes abiding by a [unified set of protocols](https://www.horizen.io/academy/blockchain-protocols/). Due to the immutable nature of blockchains, bitcoin is also considered to be the first form of money to have a tamper proof system of memory.
+Bitcoin is the first form of money to rely solely on a transparent and globally distributed network of nodes abiding by a [unified set of protocols](blockchain-protocols.md). Due to the immutable nature of blockchains, bitcoin is also considered to be the first form of money to have a tamper proof system of memory.
 
 ### Is Bitcoin Cryptocurrency?
 
@@ -274,7 +277,7 @@ Bitcoin is traded on the open market like any other financial asset. Bitcoin's v
 
 ### Where Can I Buy Bitcoin?
 
-Bitcoin can be purchased on centralized exchanges like Binance, Coinbase and FTX. You can also buy bitcoin on the [Ethereum network](https://www.horizen.io/academy/ethereum-glossary/) in the form of Wrapped Bitcoin or WBTC. Bitcoin can also be bought using over the counter (OTC) transactions through certain financial institutions, or simply in person, peer to peer.
+Bitcoin can be purchased on centralized exchanges like Binance, Coinbase and FTX. You can also buy bitcoin on the [Ethereum network](ethereum-glossary.md) in the form of Wrapped Bitcoin or WBTC. Bitcoin can also be bought using over the counter (OTC) transactions through certain financial institutions, or simply in person, peer to peer.
 
 ### What is the Purpose of Bitcoin?
 
@@ -288,7 +291,7 @@ Bitcoin, like the internet, is not owned by anyone. It is an asset that exists o
 
 Bitcoin cash is a fork of the Bitcoin blockchain that emerged in 2017 as a result of a split in the Bitcoin community over whether Bitcoin should increase its block size limit in order to scale the number of transactions that can be stored in each new block.
 
-Bitcoin cash chose to increase their block size and [forked](https://www.horizen.io/academy/blockchain-forks/) the chain to create a new network with this change implemented.
+Bitcoin cash chose to increase their block size and [forked](blockchain-forks.md) the chain to create a new network with this change implemented.
 
 ### What Can You Buy with Bitcoin?
 
@@ -312,4 +315,4 @@ Bitcoin Satoshi’s Vision, or SV, is another fork of Bitcoin, this time forking
 
 ### What is Wrapped Bitcoin?
 
-Wrapped Bitcoin or WBTC is an [ERC20 ](https://www.horizen.io/academy/what-is-a-token/) on the Ethereum blockchain that represents bitcoin that has been wrapped in a [smart contract](https://www.horizen.io/academy/smart-contracts/). WBTC exists to enable hodlers of bitcoin to use their BTC on the Ethereum network for [lending](https://www.horizen.io/academy/crypto-lending/), borrowing, yield farming, etc.
+Wrapped Bitcoin or WBTC is an [ERC20 ](what-is-a-token.md) on the Ethereum blockchain that represents bitcoin that has been wrapped in a [smart contract](smart-contracts.md). WBTC exists to enable hodlers of bitcoin to use their BTC on the Ethereum network for [lending](crypto-lending.md), borrowing, yield farming, etc.

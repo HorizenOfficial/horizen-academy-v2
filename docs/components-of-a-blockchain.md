@@ -6,12 +6,15 @@ title: The Components of Blockchain
 slug: /components-of-blockchain/
 description: In this article, we give you an advanced overview of the different elements that make a blockchain work.
 image: /img/components-of-a-blockchain/components-of-a-blockchain-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
 # The Components of a Blockchain
 
-A [protocol](https://www.horizen.io/academy/blockchain-protocols/) is a set of rules. These rules govern a blockchain and restrict what you can and cannot do. They also define standards for how participants communicate. 
+A [protocol](blockchain-protocols.md) is a set of rules. These rules govern a blockchain and restrict what you can and cannot do. They also define standards for how participants communicate. 
 
 There are rules on what order information must be provided if you want to send a transaction. Luckily you don’t have to know those rules - your [wallet](crypto-wallets.md) will take care of this. 
 
@@ -23,7 +26,7 @@ A protocol is just a set of rules, let’s take a look at the individuals that p
 
 ## The Blockchain
 
-A [blockchain works](https://www.horizen.io/academy/how-does-blockchain-work/) like a large book on the internet. This book keeps track of how much money everybody has. A single block in the blockchain is like a single page in a book. 
+A [blockchain works](how-do-blockchains-work.md) like a large book on the internet. This book keeps track of how much money everybody has. A single block in the blockchain is like a single page in a book. 
 
 You can fit only so many words on one page before the page is full and you have to use the next one.
 
@@ -53,7 +56,7 @@ Similarly, in the distributed network of a blockchain, the full nodes are up and
 
 In this case, you are going to connect to a full node first before you can interact with the blockchain. You can run a full node if you want to contribute to the stability and security of your network, but to use cryptocurrencies, you don’t have to. 
 
-Most wallets out there are [light nodes](https://www.horizen.io/academy/nodes/), which means they store your keys but don’t maintain a copy of the blockchain. With our flagship wallet [Sphere by Horizen](https://www.horizen.io/spherebyhorizen/), you can choose to run it as a full or light node.
+Most wallets out there are [light nodes](blockchain-nodes.md), which means they store your keys but don’t maintain a copy of the blockchain. With our flagship wallet [Sphere by Horizen](https://www.horizen.io/spherebyhorizen/), you can choose to run it as a full or light node.
 
 ![node types](/img/components-of-a-blockchain/node-types.jpg)
 
@@ -63,7 +66,7 @@ Miners are nodes as well. They support the network by forwarding information and
 
 The purpose of miners for the network is the following: *Each new block can be understood as a collective decision on the history of the last few minutes.* 
 
-The network comes to a consensus on the order of transactions for that time period. For Horizen, this time period is 2.5 min on average, for [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/), it is 10 minutes.
+The network comes to a consensus on the order of transactions for that time period. For Horizen, this time period is 2.5 min on average, for [Bitcoin](bitcoin-glossary.md), it is 10 minutes.
 
 Each miner has a slightly different block than the other miners. The difference is because it takes some time for a new transaction to spread across the entire network, and different miners might receive those transactions in a different order.
 
@@ -103,13 +106,13 @@ _It is another example of a rule in a blockchain protocol:_
 
 -   *The miner that solves a block is allowed to include a transaction in his block, sending himself some newly created coins.*
     
-When [Satoshi Nakamoto](https://www.horizen.io/academy/satoshi-nakamoto/) released the Bitcoin whitepaper, he presented an innovation comprising several well-known components in a new composition. Let’s look at how a blockchain works and what its individual parts do.
+When [Satoshi Nakamoto](satoshi-nakamoto.md) released the Bitcoin whitepaper, he presented an innovation comprising several well-known components in a new composition. Let’s look at how a blockchain works and what its individual parts do.
 
 ## Hash Functions
 
-The verification of data is an important aspect when building a [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) on a decentralized network. Participants need a way to reliably distinguish between valid data and malicious information.
+The verification of data is an important aspect when building a [data structure](blockchain-data-structure.md) on a decentralized network. Participants need a way to reliably distinguish between valid data and malicious information.
 
-[Hash functions](https://www.horizen.io/academy/hash-functions/) are mathematical one-way functions used to verify data in blockchains and a major building block of the technology. They are applied in several important steps from creating an [address](https://www.horizen.io/academy/wallet-addresses/) to proving ownership, and even verifying the integrity of the blockchain itself. 
+[Hash functions](hash-functions.md) are mathematical one-way functions used to verify data in blockchains and a major building block of the technology. They are applied in several important steps from creating an [address](wallet-addresses.md) to proving ownership, and even verifying the integrity of the blockchain itself. 
 
 The first notable property of all hash functions is that they consume inputs of variable length and produce an output of fixed length called the ***hash value***, *hash digest* or simply, *hash*.
 
@@ -165,7 +168,7 @@ This information is then encrypted with your private key, a step we call *signin
 
 ![digital signature example](/img/components-of-a-blockchain/digital-signature-example.jpg)
 
-A [digital signature](https://www.horizen.io/academy/digital-signatures/) works similarly to how you authorize real-life transactions using your “analog” signature. Even with modern supercomputers, it is infeasible to forge such a digital signature. 
+A [digital signature](digital-signatures.md) works similarly to how you authorize real-life transactions using your “analog” signature. Even with modern supercomputers, it is infeasible to forge such a digital signature. 
 
 The type of public-key cryptography used in blockchains is one of the safest means of encryption available today.
 
@@ -185,7 +188,7 @@ This type of *discrete math* works and is a well suited tool to build a concept 
 
 Money or data sent to a public key can only be accessed by someone who has knowledge of the corresponding private key, *the owner*. The derivation of a public key from a private key cannot be reversed, which is the single most important attribute of PKC.
 
-You rarely use a public key when transferring [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/). You primarily use the address that was generated from a public key. This step relies on the one-wayness of hash functions that we introduced before.
+You rarely use a public key when transferring [cryptocurrency](cryptocurrency.md). You primarily use the address that was generated from a public key. This step relies on the one-wayness of hash functions that we introduced before.
 
 ![address derivation](/img/wallet-addresses/address-derivation.jpg)
 
@@ -237,13 +240,13 @@ There are challenges to creating consensus in distributed systems. The consensus
 
 ### Mining
 
-There are many consensus mechanisms. The “original” Sybil-Resistance Mechanism introduced with Bitcoin is the [Proof of Work (PoW) mechanism](https://www.horizen.io/academy/proof-of-work-pow/), and is also used in Horizen and most other public blockchains.
+There are many consensus mechanisms. The “original” Sybil-Resistance Mechanism introduced with Bitcoin is the [Proof of Work (PoW) mechanism](proof-of-work-pow.md), and is also used in Horizen and most other public blockchains.
 
-PoW creates a bridge between the physical and the real world and maintains the block creation process. There are different [mining algorithms](https://www.horizen.io/academy/mining-in-blockchain/) used in PoW and they have several things in common.  
+PoW creates a bridge between the physical and the real world and maintains the block creation process. There are different [mining algorithms](crypto-mining.md) used in PoW and they have several things in common.  
   
 Performing the Proof-of-Work in blockchains is called mining. Miners extend the blockchain with new blocks in predefined time intervals. Miners secure the ledger and give it its immutability attribute by attaching a Proof-of-Work to each block.
 
-Mining is more than just performing Proof-of-Work, it comes with [economic implications](https://www.horizen.io/academy/economies-of-mining/), from choosing which blockchain to mine, what hardware to use, and even what strategies to apply.
+Mining is more than just performing Proof-of-Work, it comes with [economic implications](crypto-mining-economics.md), from choosing which blockchain to mine, what hardware to use, and even what strategies to apply.
 
 ### Blockchain Governance
 

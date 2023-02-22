@@ -6,6 +6,9 @@ title: What is Elliptic Curve Cryptography? - ECC
 slug: /elliptic-curve-cryptography-ecc/
 description: Elliptic curve cryptography is based on discrete mathematics. In discrete math, elements can only take on certain discrete values.
 image: /img/elliptic-curve-cryptography-ecc/elliptic-curve-cryptography-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -13,11 +16,11 @@ image: /img/elliptic-curve-cryptography-ecc/elliptic-curve-cryptography-meta.jpe
 
 To explore *Elliptic Curve Cryptography*, we must first discuss _public-key cryptography_ (_PKC_) schemes.
 
-All [PKC schemes](https://www.horizen.io/academy/public-key-cryptography-pkc/) have in common that they are based on key pairs - a _public_ and a _private key_. This is also referred to as _asymmetric cryptography_.
+All [PKC schemes](public-key-cryptography-pkc.md) have in common that they are based on key pairs - a _public_ and a _private key_. This is also referred to as _asymmetric cryptography_.
 
 While a public key can be distributed openly to any potential sender of an encrypted message, only the owner of the corresponding private key can decrypt those messages. The public key is generated from the private key using a mathematical one-way function.
 
-_PKC schemes_ can also be used to create [digital signatures](https://www.horizen.io/academy/digital-signatures/).
+_PKC schemes_ can also be used to create [digital signatures](digital-signatures.md).
 
 _Digital signatures_ are created using a message to be signed and a private key as an input. A verifier can validate the signature using the corresponding public key without gaining knowledge about the private key used to sign the message.
 
@@ -94,7 +97,7 @@ There are two possible solutions for each **x**-value, which is very useful when
 
 $$y = \pm \sqrt{x^3 + ax + b}$$
 
-In [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) and _Horizen_, the curve used is called **secp256k1** and described by **\\(y^2 = x^3 + 7\\)**. 
+In [Bitcoin](bitcoin-glossary.md) and _Horizen_, the curve used is called **secp256k1** and described by **\\(y^2 = x^3 + 7\\)**. 
 
 _The base points coordinates are:_
 
@@ -254,4 +257,4 @@ _ECC_ is based on _discrete math_ where only certain values are allowed. The sec
 
 _RSA_ and many of the early PKC schemes are built using _modular arithmetic_ and the security is based on the hardness of _integer factorization_. 
 
-When you are transferring cryptocurrencies you generally use [addresses](https://www.horizen.io/academy/wallet-addresses/) and not your public key.
+When you are transferring cryptocurrencies you generally use [addresses](wallet-addresses.md) and not your public key.

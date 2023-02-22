@@ -6,6 +6,9 @@ title: What is Crypto Mining?
 slug: /mining-in-blockchain/
 description: In this article, you learn about how cryptocurrency miners secure the blockchain with their computational power at an advanced level.
 image: /img/crypto-mining/crypto-mining-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -15,7 +18,7 @@ Not every blockchain has _miners_. Only in _Proof of Work_ is there _mining_, an
 
 They work to secure the blockchain against _attacks_ and _protect the history_ recorded against changes.
 
-Mining is more than just performing _Proof of Work_, it comes with highly interesting [economic implications](https://www.horizen.io/academy/economies-of-mining/), from choosing which blockchain to mine, to what hardware to use and what strategies to apply.
+Mining is more than just performing _Proof of Work_, it comes with highly interesting [economic implications](crypto-mining-economics.md), from choosing which blockchain to mine, to what hardware to use and what strategies to apply.
 
 We will often use the term _decentralizing_ and _centralizing_ to express in which direction a given development shifts the overall level of coordination. There is no absolute _decentralization_ or _centralization_ and a system is moving on a scale between the two. 
 
@@ -61,7 +64,7 @@ The _difficult_ is a different way to express the current target. The difficulty
 
 $$Difficulty = \frac{max. target}{target}$$
 
-On the [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) network, which has seen the biggest growth in hash power since its inception the current difficulty (at the time of writing) is about \\(1.3 \cdot 10^{13}\\), meaning it is _13 trillion_ times harder to find a block _today_, than it was when the [protocol](https://www.horizen.io/academy/blockchain-protocols/) was _launched_.
+On the [Bitcoin](bitcoin-glossary.md) network, which has seen the biggest growth in hash power since its inception the current difficulty (at the time of writing) is about \\(1.3 \cdot 10^{13}\\), meaning it is _13 trillion_ times harder to find a block _today_, than it was when the [protocol](blockchain-protocols.md) was _launched_.
 
 ## What is the Role of a Miner?
 
@@ -69,7 +72,7 @@ _The main job of a miner is to collect all transactions that are broadcast to th
 
 The miner verifies if the transactions are valid according to the protocol and then places them in a data container - the _block_. The first transaction in a block is special, the **coinbase transaction** - sound familiar?
 
-In the _coinbase transaction_, the miner rewards his own [address](https://www.horizen.io/academy/wallet-addresses/) with the block reward, _12.5 BTC_ or _12.5 ZEN_ at the moment. 
+In the _coinbase transaction_, the miner rewards his own [address](wallet-addresses.md) with the block reward, _12.5 BTC_ or _12.5 ZEN_ at the moment. 
 
 Actually _7.5 ZEN_ on Horizen, as _10%_ of block rewards go to _Secure Node_ and _Super Node_ operators respectively, _20%_ to the _Horizen Treasury_. 
 
@@ -173,7 +176,7 @@ You also know that changing one little piece of information in a block will alte
 
 If an _attacker_ wanted to tamper with any record on the blockchain, they would have to find a valid _nonce_ for the block they edited, as well as all the following blocks. The attacker would have to do all this by themselves, and at a faster rate than the network is performing the mining process. 
 
-The _longest chain rule_ determines which branch of the blockchain is the valid one in case a [fork](https://www.horizen.io/academy/blockchain-forks/) occurs. As long as the attacker does not control a majority of the hash rate, he won’t be able to change the blockchain.
+The _longest chain rule_ determines which branch of the blockchain is the valid one in case a [fork](blockchain-forks.md) occurs. As long as the attacker does not control a majority of the hash rate, he won’t be able to change the blockchain.
 
 ## The Purpose of Miners
 
@@ -181,11 +184,11 @@ _Now you might ask_ why it is necessary to make block production computationally
 
 ### Sybil-Resistance
 
-In a [Sybil Attack](https://www.horizen.io/academy/blockchain-attacks/), an attacker creates a large number of malicious nodes in an effort to achieve some goal. In the blockchain context, this goal can be including malicious transactions in a block, _censoring_ transactions from a given network participant or performing a _double spend_ after a block reorganization.
+In a [Sybil Attack](blockchain-attacks.md), an attacker creates a large number of malicious nodes in an effort to achieve some goal. In the blockchain context, this goal can be including malicious transactions in a block, _censoring_ transactions from a given network participant or performing a _double spend_ after a block reorganization.
 
 Spinning up a node comes at a very low cost, so there is not much to prevent an attacker from creating a large number of them. The [consensus mechanism](consensus-mechanisms.md) represents an abstract form of voting on different versions of the transaction history.
 
-If voting was tied to an _IP_ address, an attacker could manipulate the vote easily by creating [_Sybil_ nodes](https://www.horizen.io/academy/nodes/). By tying the voting power to external costs, electricity and hardware, interfering with the voting process on blocks becomes much harder.
+If voting was tied to an _IP_ address, an attacker could manipulate the vote easily by creating [_Sybil_ nodes](blockchain-nodes.md). By tying the voting power to external costs, electricity and hardware, interfering with the voting process on blocks becomes much harder.
 
 ### Providing Immutability
 
@@ -256,7 +259,7 @@ In the early days of cryptocurrency mining, people used the hardware they had at
 
 _People with a gaming setup_ were now at a _serious_ advantage compared to CPU miners.
 
-Mining started to become more lucrative and hence more competitive. People started configuring _FPGAs_ to suit the requirements of efficient mining. The last major evolutionary step in mining happened in 2013 when the first _ASIC_ designed for [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) mining was released.
+Mining started to become more lucrative and hence more competitive. People started configuring _FPGAs_ to suit the requirements of efficient mining. The last major evolutionary step in mining happened in 2013 when the first _ASIC_ designed for [cryptocurrency](cryptocurrency.md) mining was released.
 
 ![flexibility efficiency trade off](/img/crypto-mining/flexibility-efficiency-trade-off.jpg)
 
@@ -315,7 +318,7 @@ When you look at the economics from a miners perspective you first need to think
 The costs can be divided into two categories, _capital expenditures_ (**CAPEX**) and _operational expenditures_ (**OPEX**):
 
 - **CAPEX** are the cost of _acquiring_ non-monetary capital like mining gear, racks, and property (if bought).
-- **OPEX** are ongoing _expenditures_ like wages, electricity cost for the [rigs](https://www.horizen.io/academy/economies-of-mining/) as well as cooling and property (if rented).
+- **OPEX** are ongoing _expenditures_ like wages, electricity cost for the [rigs](crypto-mining-economics.md) as well as cooling and property (if rented).
 
 Setting up a mining operation will usually come with both capital and operational expenditures but depending on the circumstances it can be set up to tend towards being CAPEX or OPEX-heavy.
 
@@ -353,7 +356,7 @@ _As we mentioned earlier_, mining is a rather intransparent business, and crypto
 - A **rational miner** will act to maximize profit, either by adhering to the protocol or deriving from it, depending on the incentives provided.
 - A **malicious miner** will derive from the protocol to achieve their objective.
 
-It can be assumed that the majority of miners are rational participants, meaning they follow the protocol as long as it is the most profitable strategy. Though some strategies have evolved that are used to gain an unfair competitive advantage - most notably [selfish mining](https://www.horizen.io/academy/selfish-mining/).
+It can be assumed that the majority of miners are rational participants, meaning they follow the protocol as long as it is the most profitable strategy. Though some strategies have evolved that are used to gain an unfair competitive advantage - most notably [selfish mining](selfish-mining.md).
 
 ## Energy Consumption in Mining
 

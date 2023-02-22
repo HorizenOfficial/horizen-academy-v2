@@ -6,6 +6,9 @@ title: What is Web3? - Web 3.0
 slug: /web3/
 description: Web3 refers to a category of technologies that leverage internet protocols built on top of open source, distributed and decentralized systems.
 image: /img/web3/web3-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -65,11 +68,11 @@ _A **Blockchain** is a decentralized ledger (or record book) that is shared acro
 
 All nodes share the same copy of the ledger, and rely on majority consensus to determine when to update the ledger to reflect new changes in the form of newly confirmed transactions or network updates.
 
-The most important use case for a blockchain is the ability to create and verify digitally scarce assets. Through consensus based systems, thousands of distributed nodes operating independently can coordinate to verify the exact quantity of a digital asset such as a [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) or _NFT_. 
+The most important use case for a blockchain is the ability to create and verify digitally scarce assets. Through consensus based systems, thousands of distributed nodes operating independently can coordinate to verify the exact quantity of a digital asset such as a [cryptocurrency](cryptocurrency.md) or _NFT_. 
 
-[Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/), the first use case of blockchain technology and the signature product of the Web3 era, is a decentralized, peer-to-peer digital currency that runs on a set of programmable rules (i.e protocols) which dictate its total supply and the rate of issuance of new bitcoin. 
+[Bitcoin](bitcoin-glossary.md), the first use case of blockchain technology and the signature product of the Web3 era, is a decentralized, peer-to-peer digital currency that runs on a set of programmable rules (i.e protocols) which dictate its total supply and the rate of issuance of new bitcoin. 
 
-These rules are upheld by a global network of [distributed nodes](https://www.horizen.io/academy/nodes/) under a [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) called [proof of work](https://www.horizen.io/academy/proof-of-work-pow/). 
+These rules are upheld by a global network of [distributed nodes](blockchain-nodes.md) under a [consensus mechanism](consensus-mechanisms.md) called [proof of work](proof-of-work-pow.md). 
 
 ### Sovereign Grade & Platform Grade Censorship Resistance
 
@@ -77,17 +80,17 @@ All Web3 networks aspire to achieve a sufficient level of sovereign grade or pla
 
 **Sovereign-grade censorship resistance** refers to the ability for a network to withstand a nation state attack. This is the highest form of a resistance that a network can achieve and it requires the network to be highly decentralized. 
 
-The Bitcoin network was designed to achieve sovereign-grade censorship resistance, meaning it could withstand an [attack](https://www.horizen.io/academy/blockchain-attacks/) from a nation state that wished to destroy or control the network or manipulate its 21 million fixed supply. 
+The Bitcoin network was designed to achieve sovereign-grade censorship resistance, meaning it could withstand an [attack](blockchain-attacks.md) from a nation state that wished to destroy or control the network or manipulate its 21 million fixed supply. 
 
 Platform-grade censorship resistance refers to the ability for developers and creators to launch applications or publish information that cannot be censored by any platform. 
 
 This is a direct response to the wave of censorship that we have seen on big tech platforms such as _Facebook_ and _Twitter_ in recent years. Networks like _Ethreum_ are designed to achieve platform-grade censorship resistance.
 
-**Ethereum** is a decentralized network for developers to launch decentralized applications or DApps on the blockchain using [smart contract technology](https://www.horizen.io/academy/smart-contracts/). 
+**Ethereum** is a decentralized network for developers to launch decentralized applications or DApps on the blockchain using [smart contract technology](smart-contracts.md). 
 
-**Today, Bitcoin and [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) are the market leaders of the Web3 revolution.**
+**Today, Bitcoin and [Ethereum](ethereum-glossary.md) are the market leaders of the Web3 revolution.**
 
-In the past few years, we have seen an explosion of new [decentralized protocols](https://www.horizen.io/academy/blockchain-protocols/) and applications that aim to solve unique problems in _financial services_, _supply chain_, _healthcare_, _entertainment_ and other industries where disintermediating the middleman and establishing peer-to-peer networks can provide more efficient and equitable outcomes for participants in the system.   
+In the past few years, we have seen an explosion of new [decentralized protocols](blockchain-protocols.md) and applications that aim to solve unique problems in _financial services_, _supply chain_, _healthcare_, _entertainment_ and other industries where disintermediating the middleman and establishing peer-to-peer networks can provide more efficient and equitable outcomes for participants in the system.   
 
 ## Will Web3 replace Web2?
 
@@ -97,19 +100,19 @@ Others have a more nuanced take, believing that web3 will never fully replace we
 
 This model seems to be the favored path for the majority of traditional companies and increasingly some web3 native startups. 
 
-_In the past year,_ community leaders of [_decentralized autonomous organizations_](https://www.horizen.io/academy/decentralized-autonomous-organization-dao/) (or DAOs) have become increasingly more vocal about the challenges that come with aligning incentives and managing feedback from hundreds of stakeholders, many of whom lack the necessary qualifications to add real value to the DAOs they contribute to. 
+_In the past year,_ community leaders of [_decentralized autonomous organizations_](decentralized-autonomous-organization-dao.md) (or DAOs) have become increasingly more vocal about the challenges that come with aligning incentives and managing feedback from hundreds of stakeholders, many of whom lack the necessary qualifications to add real value to the DAOs they contribute to. 
 
 These are some of the natural growing pains of operating in a purely decentralized environment. 
 
 The more stakeholders are empowered to voice their opinions, the slower organizations tend to move as they must overcome the consistent clashing of ideas between individuals and groups vying for influence. 
 
-_In such an environment,_ DAO leaders are taking note of the benefits that come with creating well defined systems of hierarchy that enable DAOs to be efficient in how they execute without stifling debate which is essential to [blockchain-based governance](https://www.horizen.io/academy/blockchain-governance/). 
+_In such an environment,_ DAO leaders are taking note of the benefits that come with creating well defined systems of hierarchy that enable DAOs to be efficient in how they execute without stifling debate which is essential to [blockchain-based governance](blockchain-governance.md). 
 
 In other words, web3 systems seem to provide maximum benefit when it comes to empowering the collective to institute new processes and frameworks for decision making at the base layer (i.e how should decisions be made, what are the high level goals for the community or organization), while the actual execution of those decisions are best left to more centralized and top-down organizational structures that are optimized for efficiency. 
 
 This hybrid of decentralized and centralized decision making has already begun to be adopted at the technical layer as a way to scale blockchains.
 
-With [layer 2 networks](https://www.horizen.io/academy/layer-2/), separate networks or channels are set up to enable transactions to be executed between a limited set of nodes, thereby reducing the time it takes to achieve consensus. 
+With [layer 2 networks](layer-2.md), separate networks or channels are set up to enable transactions to be executed between a limited set of nodes, thereby reducing the time it takes to achieve consensus. 
 
 These transactions are periodically batched together and transmitted back to the layer 1 network (i.e the base layer), where they are validated by the L1 nodes using a more decentralized and robust consensus mechanism to ensure accuracy and maintain alignment with base layer consensus.  
 

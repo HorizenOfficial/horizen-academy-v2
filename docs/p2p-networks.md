@@ -7,6 +7,9 @@ slug: /peer-to-peer-networks-p2p/
 description: In this article, you learn about the peer-to-peer network, also known as the physical infrastructure that blockchains run on.
 image: /img/p2p-networks/p2p-networks-meta.jpeg
 
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -16,9 +19,9 @@ There are many ways to classify a blockchain. One of them is to determine if the
 
 Public blockchains are commodities, digital goods that anyone with an internet connection can access. Nobody owns these commodities, so there is no central infrastructure provider. Instead, the infrastructure is provided by many independent peers, spread all over the globe. 
 
-The distributed **Peer-to-Peer** (_P2P_) network of a decentralized blockchain is highly resilient because the [network’s nodes](https://www.horizen.io/academy/nodes/) run independently from one another.
+The distributed **Peer-to-Peer** (_P2P_) network of a decentralized blockchain is highly resilient because the [network’s nodes](blockchain-nodes.md) run independently from one another.
 
-We’ll focus on the [protocol of a blockchain](https://www.horizen.io/academy/blockchain-protocols/) at the _network layer_. At the network layer, peers are identified by their IP addresses.
+We’ll focus on the [protocol of a blockchain](blockchain-protocols.md) at the _network layer_. At the network layer, peers are identified by their IP addresses.
 
 It handles the communication between nodes via inter-node _TCP_ connections - read: *the internet.* 
 
@@ -42,7 +45,7 @@ In a P2P network, you are usually connected to several peers and if one goes off
 
 The Internet that we are experiencing today is highly centralized. Most data that we as the users of the internet produce, end up in the hands of a few large corporations. But there are a number of truly distributed systems out there living on the internet.
 
-One example of a truly [distributed system](https://www.horizen.io/academy/consensus-in-distributed-systems/) on the internet is _BitTorrent_. 
+One example of a truly [distributed system](consensus-in-distributed-systems.md) on the internet is _BitTorrent_. 
 
 Like any other technology, Peer-to-Peer networks have enabled legitimate use-cases, such as the reliable exchange of open-source software as well as illegitimate use-cases, such as pirating music and movies. 
 
@@ -60,7 +63,7 @@ But there are some downsides compared to centralized systems. The high level of 
 
 Taking a look at data storage is the most obvious example here. 
 
-Many nodes, in the case of the _Horizen_ network, more than _35,000_, store a copy of the blockchain. This is not very storage efficient but makes the blockchain highly resilient against [attacks](https://www.horizen.io/academy/blockchain-attacks/) and gives it its immutability.
+Many nodes, in the case of the _Horizen_ network, more than _35,000_, store a copy of the blockchain. This is not very storage efficient but makes the blockchain highly resilient against [attacks](blockchain-attacks.md) and gives it its immutability.
 
 In computer science, the _CAP theorem_ describes the cost of a robust and scalable distributed network as the time it takes for the network to reach consistency. It takes some time for an event, like a transaction, to be broadcast to every node on the network.
 
@@ -107,7 +110,7 @@ Because every node stores a copy of the blockchain, _peer discovery_ is more imp
 When you put yourself into the position of someone wanting to launch a distributed system, like a blockchain, running it on a P2P network is the obvious choice for at least two reasons:
 
 - **First,** it doesn’t require many resources to bootstrap. The P2P network can be spun up with only a handful of nodes at near zero cost. Once the network gains traction, new nodes can be added seamlessly.
-- **Second,** it provides a high level of resilience. The more people join the network, the more resilient it becomes. One of the stated goals of [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) is to be able to withstand state-level actors trying to attack the network. In the very beginning, when there were only a few nodes, this was not the case.
+- **Second,** it provides a high level of resilience. The more people join the network, the more resilient it becomes. One of the stated goals of [Bitcoin](bitcoin-glossary.md) is to be able to withstand state-level actors trying to attack the network. In the very beginning, when there were only a few nodes, this was not the case.
 
 However, at the same time, the incentives for potential attackers to target the network were small. As more people joined the network, the network’s value increased, and so did the incentives to target the network. 
 
@@ -127,7 +130,7 @@ To illustrate distributed networks we use graphs.
 
 This term sounds very simple at first but there is a bit more to it. The field of graph theory is a mathematical discipline studying the different types of graphs. We touch on graph theory in an article on [Directed Acyclic Graphs](directed-acyclic-graph-dag.md) or DAGs. 
 
-There, we talked about graphs in the context of [data structures](https://www.horizen.io/academy/blockchain-as-a-data-structure/) - namely how blocks can be interconnected at the application layer. Here the graph describes the connectivity between nodes at the network layer.
+There, we talked about graphs in the context of [data structures](blockchain-data-structure.md) - namely how blocks can be interconnected at the application layer. Here the graph describes the connectivity between nodes at the network layer.
 
 ![distributed network graph](/img/p2p-networks/distributed-network-graph.jpg)
 
@@ -157,7 +160,7 @@ When we talked about [distributed consensus](consensus-mechanisms.md) we introdu
 - In the **Partially Synchronous Model,** messages arrive with a bounded delay, but the bound is not known.
 - In the **Asynchronous Model**, the message delay is unknown and unbound. This makes the asynchronous model the “hardest assumption” on which to build a reliable system.
 
-Not only does the [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) have to account for node failures and network failures, but so does the P2P network itself. 
+Not only does the [consensus mechanism](consensus-mechanisms.md) have to account for node failures and network failures, but so does the P2P network itself. 
 
 What does a node do in case its peer goes offline? And how does it find a set of nodes to connect to in the first place?
 
@@ -315,7 +318,7 @@ The **spy-based** adversary corrupts a fraction of nodes and observes the timest
 
 Most blockchains provide little to no incentive for running nodes on the network. In the early days of Bitcoin, most nodes also mined BTC and therefore collected the block reward.
 
-Another good reason to run a node is to safely accept payments. Most [wallets](https://www.horizen.io/academy/crypto-wallets/) are actually light nodes. They connect to a full node in order to “speak” with the blockchain. 
+Another good reason to run a node is to safely accept payments. Most [wallets](crypto-wallets.md) are actually light nodes. They connect to a full node in order to “speak” with the blockchain. 
 
 This means they have to trust the full node operator to feed them truthful information. By running a full node yourself, you don’t have to trust anybody - you can verify for yourself. 
 
@@ -335,7 +338,7 @@ On a permissioned blockchain that a consortium of companies is running, e.g. to 
 
 We believe that Web 3.0 will benefit largely from the emergence of distributed networks and that we will see a transition from centralized services to decentralized ones.
 
-Those computational requirements are verified using an interactive challenge-response protocol - a type of [Proof of Work](https://www.horizen.io/academy/proof-of-work-pow/) if you will. Nodes receive computational challenges on a regular basis and by monitoring the time it takes them to respond to these challenges, one can derive an estimate on their capabilities. 
+Those computational requirements are verified using an interactive challenge-response protocol - a type of [Proof of Work](proof-of-work-pow.md) if you will. Nodes receive computational challenges on a regular basis and by monitoring the time it takes them to respond to these challenges, one can derive an estimate on their capabilities. 
 
 Nodes need to meet a certain target with their response time, otherwise they are not considered eligible for node reward payments.
 

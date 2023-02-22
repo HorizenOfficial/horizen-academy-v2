@@ -6,6 +6,9 @@ title: What is a Node in Blockchain?
 slug: /blockchain-nodes/
 description: Nodes are operated by miners or validators, individuals or entities that earn block rewards for helping validate transactions.
 image: /img/blockchain-nodes/crypto-nodes-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -13,7 +16,7 @@ image: /img/blockchain-nodes/crypto-nodes-meta.jpeg
 
 A **node** is a computer that operates the software of a blockchain. 
 
-The main function of a node is to store and validate blockchain transaction data in order to maintain a record of the blockchains history and/or to earn newly issued [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) from the network, also known as [mining](https://www.horizen.io/academy/mining-in-blockchain/) or block rewards.
+The main function of a node is to store and validate blockchain transaction data in order to maintain a record of the blockchains history and/or to earn newly issued [cryptocurrency](cryptocurrency.md) from the network, also known as [mining](crypto-mining.md) or block rewards.
 
 Nodes are operated by miners or validators, these are individuals or entities that earn rewards in the form of cryptocurrencies for helping validate transactions. To validate a transaction simply means to confirm that the amounts sent and the final account values of each counterparty are correct. 
 
@@ -29,7 +32,7 @@ Nodes are the fundamental backbone of a blockchain network. They enable blockcha
 
 The _more_ nodes there are that store the blockchains history and validate transactions, the more secure the network. This is because a larger set of nodes, particularly when distributed across different locations around the world, are ultimately less prone to censorship because there is no single point of failure. 
 
-Today, the [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) network has over [11,000](https://bitnodes.io) nodes that each hold a copy of the network's latest transactions and transaction history. The [Ethereum network](https://www.horizen.io/academy/ethereum-glossary/) currently has over [10,000](https://etherscan.io/nodetracker) nodes.
+Today, the [Bitcoin](bitcoin-glossary.md) network has over [11,000](https://bitnodes.io) nodes that each hold a copy of the network's latest transactions and transaction history. The [Ethereum network](ethereum-glossary.md) currently has over [10,000](https://etherscan.io/nodetracker) nodes.
 
 ## What are the Different Types of Nodes?
 
@@ -55,7 +58,7 @@ _There are 4 types of nodes on the Bitcoin network: Full nodes, light nodes, arc
 
     * Miner nodes are responsible for creating new blocks by solving the computational problems required to validate transactions and win the block rewards.
 
-    * It is called a miner node on a [proof of work blockchain](https://www.horizen.io/academy/proof-of-work-pow/), and a validator node on a [proof of stake or other consensus blockchain](https://www.horizen.io/academy/pos-vs-pow/).
+    * It is called a miner node on a [proof of work blockchain](proof-of-work-pow.md), and a validator node on a [proof of stake or other consensus blockchain](pos-vs-pow.md).
 
     * Miner nodes must run a full node, meaning they must hold a copy of the entire blockchain ledger in order to mine blocks and earn rewards.
 
@@ -87,9 +90,9 @@ Ethereum nodes, or _clients_, record and transmit copies of transaction data, in
 
 * EVM is a **Turing complete** software, meaning that the software is agile enough to run any code defined by the developer. 
 
-* The virtual machine enables smart contract code to be executed by a global [P2P network](https://www.horizen.io/academy/peer-to-peer-networks-p2p/) of computers. 
+* The virtual machine enables smart contract code to be executed by a global [P2P network](p2p-networks.md) of computers. 
 
-    * Contracts written in a [smart contract–specific programming language](https://www.horizen.io/academy/smart-contracts/) like solidity are compiled into ‘bytecode’ to be read by the [EVM](https://www.horizen.io/academy/ethereum-virtual-machine-evm/). All nodes then execute this contract using their EVMs, which in turn updates the ledger.
+    * Contracts written in a [smart contract–specific programming language](smart-contracts.md) like solidity are compiled into ‘bytecode’ to be read by the [EVM](ethereum-virtual-machine-evm.md). All nodes then execute this contract using their EVMs, which in turn updates the ledger.
 
 * The performance of the EVM is only limited by the amount of gas that is provided by the client to process each transaction. 
 
@@ -107,7 +110,7 @@ When a new bitcoin transaction is signed by the sender, it must be broadcast thr
 
 * Each node will share the signed transaction to other nodes until all nodes on the network have received and verified the signed transaction.
 
-* On the Bitcoin network, all nodes must independently verify each signed transaction before the transaction goes on to be validated by a mining node and added to the next block. This process allows the network to be resistant to denial-of-service ([DDoS](https://www.horizen.io/academy/blockchain-attacks/)) attacks.
+* On the Bitcoin network, all nodes must independently verify each signed transaction before the transaction goes on to be validated by a mining node and added to the next block. This process allows the network to be resistant to denial-of-service ([DDoS](blockchain-attacks.md)) attacks.
 
 * Once the signed transaction has been propagated throughout the network and verified by all nodes, the mining node that has correctly guessed the nonce value for the block header will be granted the right to validate the transaction and add it to the next block of transactions in the chain.
 
@@ -141,7 +144,7 @@ Ethereum’s client software supports major operating systems such as Linux, Mac
 * _Fast SSD with 1+TB_
 * _25+ MBit/s bandwidth_
 
-These are the recommended disk space requirements for running different Ethereum clients. A **client** is an implementation of Ethereum that verifies data against the [protocol's rules](https://www.horizen.io/academy/blockchain-protocols/) and secures the network.
+These are the recommended disk space requirements for running different Ethereum clients. A **client** is an implementation of Ethereum that verifies data against the [protocol's rules](blockchain-protocols.md) and secures the network.
 
 Etherum.org recommends using any of the following [providers](https://ethereum.org/en/developers/docs/nodes-and-clients/run-a-node/) to help setup your client:
 

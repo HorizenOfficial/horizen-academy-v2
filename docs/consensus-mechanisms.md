@@ -6,19 +6,22 @@ title: What are Consensus Mechanisms?
 slug: /consensus-mechanisms/
 description: A Consensus Mechanism is the set of protocols used by nodes on a blockchain or DLS to come to an agreement on the current state of the network.
 image: /img/consensus-mechanisms/consensus-mechanisms-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
 # What are Consensus Mechanisms?
 
-A **Consensus Mechanism** is the [set of protocols](https://www.horizen.io/academy/blockchain-protocols/) used by [nodes on a blockchain](https://www.horizen.io/academy/nodes/) or distributed ledger system to come to an agreement on the current state of the network: *the most up to date account of [wallet balances](https://www.horizen.io/academy/crypto-wallets/) and token transfers on the ledger.* 
+A **Consensus Mechanism** is the [set of protocols](blockchain-protocols.md) used by [nodes on a blockchain](blockchain-nodes.md) or distributed ledger system to come to an agreement on the current state of the network: *the most up to date account of [wallet balances](crypto-wallets.md) and token transfers on the ledger.* 
 
 _Today, the most popular consensus mechanisms include:_
 
 - **Proof of Work** - PoW
     - Adopted by Bitcoin and Horizen
 - **Proof of Stake** - PoS
-    - Adopted by [Ethereum](https://www.horizen.io/academy/ethereum-glossary/), Cardano and Tezos
+    - Adopted by [Ethereum](ethereum-glossary.md), Cardano and Tezos
 - **Delegated Proof of Stake** - DPoS
     - Adopted by EOS
 - **Proof of Authority** - PoA
@@ -62,7 +65,7 @@ Taking this analogy a step further, we can implement certain rules in the teleph
     - Alternatively, each person could be required to solve a mathematical problem that would take roughly 5 minutes before they could pass on the message to the next person. 
 4. Lastly, everytime a message is successfully passed across to everyone, one person will be chosen at random to receive $5. 
 
-*These rules roughly describe the process in which a new block is added to the chain under a proof of work or [proof of stake consensus mechanism](https://www.horizen.io/academy/pos-vs-pow/):* 
+*These rules roughly describe the process in which a new block is added to the chain under a proof of work or [proof of stake consensus mechanism](pos-vs-pow.md):* 
 
 1. A transaction is validated and then shared amongst other nodes
 2. Each node performs some arbitrary computation or stakes something of value to deter dishonest behavior when validating and sharing the transaction
@@ -86,7 +89,7 @@ On a proof of work blockchain, when the size of the block increases, the amount 
 
 Fewer miners leads to consolidation of hashing power by the strongest and most resourceful miners, which subsequently leads to centralisation of the network. The same thing applies to proof of stake blockchains, where an increase in data storage requirements will make it more costly for the average validators to validate transactions or store a full record of the chain using a basic laptop. 
 
-The debate around block sizes hit its peak in 2017 during a period known as the ‘Block Size War’ where the [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) community became so fractured over the issue of whether to increase the size of blocks that it led to a hard [fork](https://www.horizen.io/academy/blockchain-forks/) and the creation of _Bitcoin Cash_. 
+The debate around block sizes hit its peak in 2017 during a period known as the ‘Block Size War’ where the [Bitcoin](bitcoin-glossary.md) community became so fractured over the issue of whether to increase the size of blocks that it led to a hard [fork](blockchain-forks.md) and the creation of _Bitcoin Cash_. 
 
 ## Comparing Consensus Mechanisms 
 
@@ -100,7 +103,7 @@ In a Proof of Work consensus mechanism, miners contribute computing power to sol
 
 ### Proof of Stake
 
-Proof of Stake requires validators to [stake their tokens](https://www.horizen.io/academy/what-is-a-token/) into a [smart contract](https://www.horizen.io/academy/smart-contracts/) in order to validate transactions.
+Proof of Stake requires validators to [stake their tokens](what-is-a-token.md) into a [smart contract](smart-contracts.md) in order to validate transactions.
 A randomized process is used to determine which validators will get to produce the next block.
 
 ### Proof of History
@@ -123,7 +126,7 @@ With pBFT, blocks are validated by special “ordering” or “leader” nodes 
 
 ### Directed Acyclic Graph
 
-DAG’s are a type of [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) used on distributed ledger technologies. DAG’s enable the use of a gossip protocol, which allows nodes to achieve consensus by broadcasting information to other nodes in a random manner until broad consensus is achieved about the state of the ledger.
+DAG’s are a type of [data structure](blockchain-data-structure.md) used on distributed ledger technologies. DAG’s enable the use of a gossip protocol, which allows nodes to achieve consensus by broadcasting information to other nodes in a random manner until broad consensus is achieved about the state of the ledger.
 
 <table>
   <tr>
@@ -231,7 +234,7 @@ _The primary goal_- creating a scalability-driven path to mainstream adoption.
 
 ## Horizen’s Approach to Consensus
 
-Horizen’s core product [**Zendoo**](https://www.horizen.io/academy/zendoo/) makes it easy to be consensus agnostic. It provides a sidechain SDK that enables businesses and developers to create [custom sidechains](https://www.horizen.io/academy/sidechains/) on top of the Horizen mainchain. This in turn means that they can leverage the most secure form of PoW used by the mainchain.
+Horizen’s core product [**Zendoo**](zendoo.md) makes it easy to be consensus agnostic. It provides a sidechain SDK that enables businesses and developers to create [custom sidechains](sidechains.md) on top of the Horizen mainchain. This in turn means that they can leverage the most secure form of PoW used by the mainchain.
 
 Each custom blockchain can have its own unique consensus mechanism. Additionally, custom blockchains can communicate and exchange value with other blockchains in the Horizen ecosystem using its novel **Cross-Chain Transfer Protocol**, or CCTP. 
 
@@ -239,9 +242,9 @@ Each custom blockchain can have its own unique consensus mechanism. Additionally
 
 What this means is that a developer who is looking to build both an exchange and an identity storage and authentication solution, does not need to compromise security to achieve high transaction throughput, nor speed to achieve decentralization. 
 
-Instead, they can choose to set up a PoS blockchain for one solution that is [interoperable with another blockchain](https://www.horizen.io/academy/blockchain-interoperability/) that uses PoW for storing and authenticating identities. In fact, you can technically build on top of as many sidechains with different consensus mechanisms as you want. This gives you a greater capacity to scale without the common challenges of network congestion that occur on single blockchain applications. 
+Instead, they can choose to set up a PoS blockchain for one solution that is [interoperable with another blockchain](blockchain-interoperability.md) that uses PoW for storing and authenticating identities. In fact, you can technically build on top of as many sidechains with different consensus mechanisms as you want. This gives you a greater capacity to scale without the common challenges of network congestion that occur on single blockchain applications. 
 
-Additionally, you can choose between a public permissionless sidechain and a private permissioned sidechain, with the ability to exchange value between chains. Therefore, you can leverage the security of a public blockchain while retaining the privacy of data transmitted to the public chain through the use of [zero-knowledge proof cryptography](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/). These features are what enable developers to build applications that aren't just blockchain agnostic, but also ‘consensus agnostic’. 
+Additionally, you can choose between a public permissionless sidechain and a private permissioned sidechain, with the ability to exchange value between chains. Therefore, you can leverage the security of a public blockchain while retaining the privacy of data transmitted to the public chain through the use of [zero-knowledge proof cryptography](zero-knowledge-proofs-zkp.md). These features are what enable developers to build applications that aren't just blockchain agnostic, but also ‘consensus agnostic’. 
 
 Developing applications that are blockchain agnostic, meaning your application is not limited to one blockchain but operates on multiple chains at once, has been standard practice in the industry for years.
 
@@ -249,7 +252,7 @@ However, if blockchain agnosticism means only being able to launch your applicat
 
 Horizen sees that what differentiates one blockchain from another is mainly the consensus mechanism. Additionally, the true path to blockchain scalability resides in consensus agnosticism. So it becomes clear that most blockchains are ill-equipped to handle a world where developers want to pick and choose between different methods of consensus without incurring massive switching costs. 
 
-It is currently very difficult to migrate from a [PoS blockchain to a PoW](https://www.horizen.io/academy/pos-vs-pow/) one, or to a distributed ledger built using a DAG-based protocol and achieve that without an infrastructure that is built to offer such flexibility and modularity.
+It is currently very difficult to migrate from a [PoS blockchain to a PoW](pos-vs-pow.md) one, or to a distributed ledger built using a DAG-based protocol and achieve that without an infrastructure that is built to offer such flexibility and modularity.
 
 The Horizen network is built to cater to all forms of consensus mechanisms. We believe in empowering developers and entrepreneurs to push the boundaries of what is possible for blockchains and distributed ledger technologies through the creation of hybrid consensus solutions.
 

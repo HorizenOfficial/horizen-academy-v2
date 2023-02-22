@@ -6,12 +6,15 @@ title: What are Mnemonic Phrases?
 slug: /mnemonic-phrases/
 description: A Mnemonic Phrase is a backup of your private key that is used by most wallets, it is a list of random words given to you when creating a wallet.
 image: /img/mnemonic-phrases/mnemonic-phrases-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
 # What are Mnemonic Phrases?
 
-The basis for [generating keys and addresses](https://www.horizen.io/academy/wallet-addresses/) is _randomness_. Ownership on the blockchain is highly secure, as long as the private key cannot be reproduced by an adversary. 
+The basis for [generating keys and addresses](wallet-addresses.md) is _randomness_. Ownership on the blockchain is highly secure, as long as the private key cannot be reproduced by an adversary. 
 
 The private key is the basis of the public key and address(es). As such, it requires a _high level_ of security, and needs to be generated from a high level of _entropy_.
 
@@ -31,7 +34,7 @@ _DRBGs_ should be standardized and validated. One example for a vetted algorithm
 
 ## What is a Mnemonic Phrase?
 
-Your **mnemonic phrase** is a _backup_ of your private key that is used by most wallets, it is a list of _random_ words given to you when [creating a wallet](https://www.horizen.io/academy/crypto-wallets/). 
+Your **mnemonic phrase** is a _backup_ of your private key that is used by most wallets, it is a list of _random_ words given to you when [creating a wallet](crypto-wallets.md). 
 
 If you break or lose a device with a wallet - no matter if mobile, desktop or hardware wallet - your mnemonic phrase is usually your last line of defense against a loss of funds.
 
@@ -105,7 +108,7 @@ The _HMAC-SHA256_ function is used at several steps in the key derivation proces
 
 - We _generated_ a random bit sequence and used it as an input to a deterministic random bit generator that produced a **seed**.
 - From this _seed,_ we _generated_ a **mnemonic phrase**, which in turn was converted into a _512-bit binary seed_.
-- We _split_ our seed into the zero-level private key **\\(sk_0\\)** and the zero-level chain code **\\(cc_0\\)**. A zero-level public key **\\(PK_0\\)** is generated from **\\(sk_0\\)** using [elliptic curve cryptography](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/)
+- We _split_ our seed into the zero-level private key **\\(sk_0\\)** and the zero-level chain code **\\(cc_0\\)**. A zero-level public key **\\(PK_0\\)** is generated from **\\(sk_0\\)** using [elliptic curve cryptography](elliptic-curve-cryptography-ecc.md)
 
 ## Hardened vs. Non-Hardened Secret Key Derivation
 
@@ -139,7 +142,7 @@ $$
 
 ### Hardened Secret Key Derivation - HSKD
 
-The core function that the key derivation is build around is the **hash-based message authentication code** (_HMAC_). It is a specific type of message authentication code involving a [_cryptographic hash function_](https://www.horizen.io/academy/hash-functions/) and a _secret cryptographic key._ 
+The core function that the key derivation is build around is the **hash-based message authentication code** (_HMAC_). It is a specific type of message authentication code involving a [_cryptographic hash function_](hash-functions.md) and a _secret cryptographic key._ 
 
 It always uses some hash function, which is then appended to name the exact function. In this specific case, the **SHA512** hash function is used and the message authentication code is called **HMAC-SHA512**. 
 

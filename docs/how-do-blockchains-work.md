@@ -6,6 +6,9 @@ title: How Does a Blockchain Work?
 slug: /how-does-blockchain-work/
 description: In this article, we will cover what a blockchain is at a high level followed by a more granular look at blockchain architecture and how a blockchain works.
 image: /img/how-do-blockchains-work/how-do-blockchain-work-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -13,7 +16,7 @@ image: /img/how-do-blockchains-work/how-do-blockchain-work-meta.jpeg
 
 The next generation of social innovation is being defined by open, permissionless, and peer-to-peer interactions between autonomous individuals.
 
-Underpinning this innovation is the emergence of the [Web3 technological movement](https://www.horizen.io/academy/web3/), which encapsulates both blockchain technology and cryptocurrencies.
+Underpinning this innovation is the emergence of the [Web3 technological movement](web3.md), which encapsulates both blockchain technology and cryptocurrencies.
 
 In this article, we will cover what a blockchain is at a high level followed by a more granular look at blockchain architecture and how a blockchain works.
 
@@ -66,7 +69,7 @@ While more precise than single-entry accounting, double-entry accounting carries
 
 ### Triple-Entry Bookkeeping
 
-With blockchains, the concept of _triple-entry accounting_ is introduced, whereby debits and credit are recorded on a transparent ledger just like a double-entry system, yet the process of balancing the books is done through the blockchains [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) instead of through a centralized entity.
+With blockchains, the concept of _triple-entry accounting_ is introduced, whereby debits and credit are recorded on a transparent ledger just like a double-entry system, yet the process of balancing the books is done through the blockchains [consensus mechanism](consensus-mechanisms.md) instead of through a centralized entity.
 
 The block confirmations submitted by validators on the network are considered to be the third-entry in the triple-entry bookkeeping process.
 
@@ -88,7 +91,7 @@ When a new block is added, it is linked to the previous block through a cryptogr
 
 _Nodes_ are operated by ‘miners’ who are individuals or entities that have a monetary incentive to help validate transactions, meaning to confirm that the amounts sent and the final account values of each counterparty are correct, and maintain the security of the network through programmable consensus.
 
-**Programmable consensus** is the mechanism that is used to enable thousands of independent nodes on a blockchain network to agree on what transactions are reflected on the ledger. This consensus mechanism can take multiple forms, the most common of which are [proof of work and proof of stake](https://www.horizen.io/academy/pos-vs-pow/).
+**Programmable consensus** is the mechanism that is used to enable thousands of independent nodes on a blockchain network to agree on what transactions are reflected on the ledger. This consensus mechanism can take multiple forms, the most common of which are [proof of work and proof of stake](pos-vs-pow.md).
 
 ![distributed ledger technology](/img/how-do-blockchains-work/distributed-ledger-technology.jpeg)
 
@@ -110,7 +113,7 @@ A **Hash** is a sequence of numbers and letters that represents a snapshot of an
 
 A **[Hash Function](hash-functions.md)** is a mathematical function that takes a data input of arbitrary length and size and produces an output of a fixed length and size. Any changes made to the input produces an entirely new output.
 
-The [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) blockchain uses a special type of hash function called **SHA-256**. SHA-256 plays a key role in the recording of transactions and the [mining process](https://www.horizen.io/academy/mining-in-blockchain/) on the Bitcoin blockchain.
+The [Bitcoin](bitcoin-glossary.md) blockchain uses a special type of hash function called **SHA-256**. SHA-256 plays a key role in the recording of transactions and the [mining process](crypto-mining.md) on the Bitcoin blockchain.
 
 Every bitcoin block contains the hash of the previous block within its block-header. This previous block hash links the blocks together to create an immutable chain.
 
@@ -143,7 +146,7 @@ The protocol layer encapsulates both the _hardware_ and _data_ layers of the blo
 
 #### Hardware/Infrastructure layer
 
-The hardware/infrastructure layer is where data from the blockchain network is stored on nodes. [Nodes are computers](https://www.horizen.io/academy/nodes/) that can download a copy of the blockchain ledger and participate in verifying data signatures and validating new block transactions through the process of mining.
+The hardware/infrastructure layer is where data from the blockchain network is stored on nodes. [Nodes are computers](blockchain-nodes.md) that can download a copy of the blockchain ledger and participate in verifying data signatures and validating new block transactions through the process of mining.
 
 While the nodes that make up a blockchain network are decentralized, each individual node is merely a computer that relies on physical or cloud server providers like AWS, Azure or IBM to operate.
 
@@ -155,7 +158,7 @@ The data layer is where the data about the digital signatures and hashes that ma
 
 _The data layer consists of the 3 main components_: blocks, merkle trees and digital signatures.
 
-**_Blocks_** are [data structures](https://www.horizen.io/academy/blockchain-as-a-data-structure/) that are used to bundle sets of transactions and distribute them to all nodes on the network.
+**_Blocks_** are [data structures](blockchain-data-structure.md) that are used to bundle sets of transactions and distribute them to all nodes on the network.
 
 A **_Merkle tree_** is a binary tree of hashes. A hash is cryptographic recording of the previous block’s details such as the timestamp and transaction values. The hash is used to chain a new block to the previous block.
 
@@ -167,7 +170,7 @@ Transactions are digitally signed on the blockchain to ensure the security and i
 
 The network layer, or P2P layer, is where nodes communicate and synchronize with each other to maintain a valid current state of the blockchain network. Before a transaction is committed to the ledger, it is first broadcast across the network of nodes, which coordinate to reach consensus before on whether it should be accepted into the ledger.
 
-Within the network layer, transactions flow in a sequence of steps that highlight the interaction between nodes in a P2P network. A **[P2P network](p2p-networks.md)** is a computer network where computers (nodes) are distributed and share the network’s workload to reach the end goal.
+Within the network layer, transactions flow in a sequence of steps that highlight the interaction between nodes in a P2P network. A **[P2P network](p2p-networks.md/)** is a computer network where computers (nodes) are distributed and share the network’s workload to reach the end goal.
 
 ### Consensus Layer
 
@@ -232,22 +235,22 @@ There are other consensus protocols, including Delegated proof of stake (DPoS), 
 
 ### Application layer
 
-The application layer is the customer facing layer of your blockchain solution. It is where end users interact with decentralized applications, or Dapps, and other user interfaces that are connected to the [underlying blockchain protocol](https://www.horizen.io/academy/blockchain-protocols/) through APIs.
+The application layer is the customer facing layer of your blockchain solution. It is where end users interact with decentralized applications, or Dapps, and other user interfaces that are connected to the [underlying blockchain protocol](blockchain-protocols.md) through APIs.
 
-The application layer has a sublayer which is called the **execution layer**, where [smart contracts](https://www.horizen.io/academy/smart-contracts/) and the underlying rules that power Dapps reside.
+The application layer has a sublayer which is called the **execution layer**, where [smart contracts](smart-contracts.md) and the underlying rules that power Dapps reside.
 
 ## Tips for Building a Blockchain Solution
 
 Decentralization is a gauge that can be adjusted based on the needs of the developer in crafting their blockchain solution.
 
-When evaluating how much decentralization is enough for your blockchain, developers often refer to the blockchain scalability trilemma, which is a series of trade-offs between decentralization, speed/scalability and security that one must make when designing a blockchain and constructing rules for its on-chain [governance](https://www.horizen.io/academy/blockchain-governance/).
+When evaluating how much decentralization is enough for your blockchain, developers often refer to the blockchain scalability trilemma, which is a series of trade-offs between decentralization, speed/scalability and security that one must make when designing a blockchain and constructing rules for its on-chain [governance](blockchain-governance.md).
 
 ![scalability trilemma](/img/layer-0/scalability-trilemma.jpg)
 
 - _**Centralization** = Increased Speed, Decreased Transparency & Security_
 - _**Decentralization** = Decreased Speed, Increased Transparency & Security_
 
-Use cases such as p2p payments, DEX trading, [play to earn games](https://www.horizen.io/academy/play-to-earn-games/), NFT marketplaces and social networking all require high transaction speeds at low cost. This often comes with the tradeoff of decentralization, as you are opting for the type of network that has fewer nodes and can therefore arrive at consensus on the state of the network in less time.
+Use cases such as p2p payments, DEX trading, [play to earn games](play-to-earn-games.md), NFT marketplaces and social networking all require high transaction speeds at low cost. This often comes with the tradeoff of decentralization, as you are opting for the type of network that has fewer nodes and can therefore arrive at consensus on the state of the network in less time.
 
 Fewer nodes comes with the drawback of greater security risks because it may only take a handful of nodes turning offline for the entire network to go down. It also increases the risk of censorship, as it is much easier for a transaction to be censored if the network is controlled by a handful of entities.
 

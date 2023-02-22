@@ -6,6 +6,9 @@ title: The UTXO vs Account Model
 slug: /utxo-vs-account-model/
 description: Most blockchains use the UTXO model for accounting. The second method to track user balances, as applied in Ethereum, is the account model.
 image: /img/utxo-vs-account-model/utxo-vs-account-model-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -19,7 +22,7 @@ Most blockchains use the **UTXO model** for accounting.
 
 A **UTXO**, or _Unspent Transaction Output_, represents the amount of digital currency remaining after a transaction has been executed. 
 
-The second method to track user balances, as applied in [Ethereum](https://www.horizen.io/academy/ethereum-glossary/), is the **account model**. 
+The second method to track user balances, as applied in [Ethereum](ethereum-glossary.md), is the **account model**. 
 
 ### The Blockchain as a State Machine
 
@@ -48,7 +51,7 @@ A **graph** is defined as a set of _nodes_ or _vertices_ connected by _edges_.
 
 In a **directed graph**, each edge has a direction, usually indicated through arrows. 
 
-**Directed acyclic graphs** don’t allow circular relationships [between node](https://www.horizen.io/academy/nodes/). The graphic above shows a directed acyclic graph of the UTXO model on the left. 
+**Directed acyclic graphs** don’t allow circular relationships [between node](blockchain-nodes.md). The graphic above shows a directed acyclic graph of the UTXO model on the left. 
 
 Each _state_ represents a block in the blockchain. Each _transaction output_ comprises a _node_ in the [DAG](directed-acyclic-graph-dag.md), and each _transaction_ is represented by one or more _edges_ originating from a transaction output. 
 
@@ -70,7 +73,7 @@ In the UTXO model, account balances are calculated on the client-side by adding 
 
 ## The UTXO Model
 
-The _UTXO Model_ does not incorporate accounts or [wallets](https://www.horizen.io/academy/crypto-wallets/) at the protocol level. The model is based entirely on _individual transactions_, grouped in blocks. 
+The _UTXO Model_ does not incorporate accounts or [wallets](crypto-wallets.md) at the protocol level. The model is based entirely on _individual transactions_, grouped in blocks. 
 
 We can compare this to people holding certain amounts of cash.
 
@@ -150,13 +153,13 @@ Each transaction on the blockchain has one or more inputs and one or more output
 
 **Let’s have a look at an actual example throughout a series of four transactions:**
 
-Usually, a [block explorer](https://www.horizen.io/academy/blockchain-explorers/) will show you the most recent transactions first. 
+Usually, a [block explorer](blockchain-explorers.md) will show you the most recent transactions first. 
 
 For this example, we will go through the transactions as they happened - in chronological order. This simple example only involves two different addresses. 
 
 We shortened the addresses for better readability. 
 
-The [address](https://www.horizen.io/academy/wallet-addresses/) we are concerned with here is the gray one: **znRwe…** 
+The [address](wallet-addresses.md) we are concerned with here is the gray one: **znRwe…** 
 
 Let’s say this is **Bob** and the other one in blue, is **Alice**.
 
@@ -257,7 +260,7 @@ The PubKey and Signature Script do not exist in account-based blockchains.The ve
 
 These three values comprise the _signature_. **Solidity**, the programming language used in Ethereum, provides a method, [ecrecover](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethsign), that returns an address given these parameters. If the returned address matches the sender's address, the signature, and in return, the transaction is valid.
 
-Where in the UTXO model part of the verification process is checking if a transaction output in _unspent_, nodes in the account model check if the sender's balance is larger than or equal to the transferred amount. This is true for the native asset of the chain, for example Ether, as well as all other [tokens](https://www.horizen.io/academy/what-is-a-token/) on the network.
+Where in the UTXO model part of the verification process is checking if a transaction output in _unspent_, nodes in the account model check if the sender's balance is larger than or equal to the transferred amount. This is true for the native asset of the chain, for example Ether, as well as all other [tokens](what-is-a-token.md) on the network.
 
 A transaction in the account-based model is an instruction for how to transition two or more accounts to the next state. The actual transition is executed by the nodes. Because the final state is not specified in the transaction, the resulting transaction size is a lot smaller than in the UTXO model.
 
@@ -283,7 +286,7 @@ There are several approaches we can use to compare the scalability of the UTXO a
 
 ![scalability utxo account](/img/utxo-vs-account-model/scalability-utxo-account.jpg)
 
-One second layer technology, [state and payment channels](https://www.horizen.io/academy/payment-channels/), moves the exchange of data from the blockchain to a dedicated trustless network of bidirectional communication channels.
+One second layer technology, [state and payment channels](payment-channels.md), moves the exchange of data from the blockchain to a dedicated trustless network of bidirectional communication channels.
 
 The other approach that could arguably be referred to as a second layer technology is sharding. _Sharding_ is a term originating from the traditional database world. 
 
@@ -317,7 +320,7 @@ Partitioning a blockchain into shards or sidechains is also easier while using t
 
 In the account model, every node has to localize the sender's and receiver's account across different shards and edit both. Of course, there is more to sharding than these rather straightforward modifications, and using one balance model over the other comes with second and third-order effects. 
 
-Generally, the UTXO model allows [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) partitioning more simply.
+Generally, the UTXO model allows [data structure](blockchain-data-structure.md) partitioning more simply.
 
 ### Privacy
 

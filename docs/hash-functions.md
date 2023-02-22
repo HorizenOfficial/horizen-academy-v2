@@ -6,6 +6,9 @@ title: What are Hash Functions?
 slug: /hash-functions/
 description: In this article, you learn why hash functions are an important part in every blockchain because they are used to verify the integrity of data.
 image: /img/hash-functions/hash-functions-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -145,7 +148,7 @@ Larger inputs are split and the compression function is applied to the fragments
 
 In cryptocurrencies **SHA-256** (_Secure Hash Algorithm 256_) and **RIPEMD 160** (_RACE Integrity Primitives Evaluation Message Digest 160_), the **BLAKE** family and **Keccak**, which is the basis for the _SHA-3_ family, are the most common hash functions.
 
-In [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) and related protocols, such as Horizen, [addresses are obtained](https://www.horizen.io/academy/payment-channels/) through performing a combination of _SHA-256_ and _RIPEMD 160_ protocols on a given public key. One can only speculate why [Satoshi](https://www.horizen.io/academy/satoshi-nakamoto/) made that choice, but most likely they did so to mitigate the risk of one function becoming vulnerable (e.g. one-wayness is broken).
+In [Bitcoin](bitcoin-glossary.md) and related protocols, such as Horizen, [addresses are obtained](payment-channels.md) through performing a combination of _SHA-256_ and _RIPEMD 160_ protocols on a given public key. One can only speculate why [Satoshi](satoshi-nakamoto.md) made that choice, but most likely they did so to mitigate the risk of one function becoming vulnerable (e.g. one-wayness is broken).
 
 ## Where are Hash Functions Used?
 
@@ -194,7 +197,7 @@ Only the rightful owner can choose to reveal the preimage and have another party
 
 ## Hardware for Large-Scale Hashing
 
-An entire industry has formed around performing hash functions as efficiently as possible - [**the mining industry**](https://www.horizen.io/academy/mining-in-blockchain/). 
+An entire industry has formed around performing hash functions as efficiently as possible - [**the mining industry**](crypto-mining.md). 
 
 Not only did the operations _actually_ mining increase in size, so did their hardware suppliers. 
 
@@ -214,7 +217,7 @@ _Processors display trade-offs between versatility and efficiency:_
 
 Hash functions have been battle-tested for many years by now. During those years, certain _attack vectors_ have been discovered, but they can be mitigated quite easily. We want to give a glimpse into those attack vectors and their mitigation strategies.
 
-**Note** that these [attacks](https://www.horizen.io/academy/blockchain-attacks/) do not affect the security of blockchains, but only the hash functions in isolation and some outdated applications of them.
+**Note** that these [attacks](blockchain-attacks.md) do not affect the security of blockchains, but only the hash functions in isolation and some outdated applications of them.
 
 ### Length Extension Attack
 

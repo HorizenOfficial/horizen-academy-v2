@@ -6,6 +6,9 @@ title: What is Cryptocurrency?
 slug: /cryptocurrency/
 description: A cryptocurrency is digital money. There are many cryptocurrencies, just like there are many currencies like the dollar, the euro, and the peso.
 image: /img/cryptocurrency/cryptocurrency-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 

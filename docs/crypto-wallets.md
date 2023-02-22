@@ -6,6 +6,9 @@ title: What is a Crypto Wallet?
 slug: /crypto-wallets/
 description: A wallet is an app for generating, managing, and storing cryptographic keys - public and private keys. You can check your balance, receive, and send funds.
 image: /img/crypto-wallets/crypto-wallets-meta.jpg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 # What is a Crypto Wallet?
@@ -25,12 +28,12 @@ _All_ exchanges provide you with wallets to store your coins in after you buy th
 
 A wallet: 
 - Generates a random _private key_, **sk**
-- Derives your _public key_, **pk**, using [elliptic curve cryptography](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/) 
-- Derives your [address(es)](https://www.horizen.io/academy/wallet-addresses/) from your public key
+- Derives your _public key_, **pk**, using [elliptic curve cryptography](elliptic-curve-cryptography-ecc.md) 
+- Derives your [address(es)](wallet-addresses.md) from your public key
 - Stores your private key(s) 
 - And takes care of [signing transactions](digital-signatures.md)
 
-In this article, we want to give you an overview of what types of wallets there are and help you find the right wallet for you. We show you how your [_mnemonic phrase_](https://www.horizen.io/academy/mnemonic-phrases/) is generated, and how it relates to your actual private key. 
+In this article, we want to give you an overview of what types of wallets there are and help you find the right wallet for you. We show you how your [_mnemonic phrase_](mnemonic-phrases.md) is generated, and how it relates to your actual private key. 
 
 Depending on the wallet implementation, the process for generating your address from a private key looks slightly _different_.
 
@@ -124,11 +127,11 @@ Your wallet automatically includes the change in the transaction. The newly gene
 
 ![wallet transaction 4 broadcast](/img/crypto-wallets/wallet-transaction-4-broadcast.jpg)
 
-Lastly, your wallet broadcasts the transaction to the network, where _all_ [nodes](https://www.horizen.io/academy/nodes/) and miners will verify if the signature you used to unlock your money is valid. If it is, miners will include your transaction in the next block. 
+Lastly, your wallet broadcasts the transaction to the network, where _all_ [nodes](blockchain-nodes.md) and miners will verify if the signature you used to unlock your money is valid. If it is, miners will include your transaction in the next block. 
 
 The output of **10** ZEN you used is from now on publicly visible as _spent_. The newly created outputs of **2** and **8** ZEN are included in a new block and locked - or _unspent_.
 
-Then you come across the term [**UTXO** - _Unspent Transaction Output_](https://www.horizen.io/academy/utxo-vs-account-model/) - this is what it refers to.
+Then you come across the term [**UTXO** - _Unspent Transaction Output_](utxo-vs-account-model.md) - this is what it refers to.
 
 ![wallet transaction 5 confirmed](/img/crypto-wallets/wallet-transaction-5-confirmed.jpg)
 
@@ -142,7 +145,7 @@ _There is nobody that can help you recover your keys if you lose them._
 
 If anybody were able to recover your keys for you, they would also be able to _steal_ your funds. This would eliminate the trustless aspect of blockchains. 
 
-You may have heard stories about people searching for old hard drives because they have “lost their Bitcoins”. _More accurately_, they lost the keys to _access_ their [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/).
+You may have heard stories about people searching for old hard drives because they have “lost their Bitcoins”. _More accurately_, they lost the keys to _access_ their [Bitcoin](bitcoin-glossary.md).
 
 But there is a sort of recovery mechanism with many wallets called a _mnemonic phrase_, or backup phrase. A **mnemonic phrase** usually consists of **12** or **24** words. With these words, you can recover your keys. You receive your mnemonic phrase when you install and set up your wallet.
 
@@ -189,7 +192,7 @@ You _will_ need to keep some funds on an exchange if you plan to trade often.
 
 ### Non-Hosted Web Wallets
 
-Besides hosted web wallets, there is also a range of _non-hosted web wallets_. One of the most popular non-hosted web wallet is likely _MyEtherWallet_, which can store _Ether_ (ETH) and _all_ _ERC-20_ tokens, [tokens](https://www.horizen.io/academy/what-is-a-token/) that are "living" on the [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) blockchain. 
+Besides hosted web wallets, there is also a range of _non-hosted web wallets_. One of the most popular non-hosted web wallet is likely _MyEtherWallet_, which can store _Ether_ (ETH) and _all_ _ERC-20_ tokens, [tokens](what-is-a-token.md) that are "living" on the [Ethereum](ethereum-glossary.md) blockchain. 
 
 These wallets provide an interface to check your funds or create transactions in your web browser, _but_ you have to provide the keys with each login.
 

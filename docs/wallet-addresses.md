@@ -6,12 +6,15 @@ title: What is a Wallet Address?
 slug: /wallet-addresses/
 description: A public key is derived from the newly generated private key through elliptic curve multiplication, while addresses are derived from public keys.
 image: /img/wallet-addresses/wallet-addresses-and-keys-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
 # What is a Wallet Address?
 
-When you install and set up a wallet on your phone or computer, the first thing you will do is actually [fund your wallet](https://www.horizen.io/academy/crypto-wallets/) by transferring some crypto to your address. 
+When you install and set up a wallet on your phone or computer, the first thing you will do is actually [fund your wallet](crypto-wallets.md) by transferring some crypto to your address. 
 
 Lets take a look at where wallet addresses come from and how they relate to  _private keys_.
 
@@ -26,21 +29,21 @@ _Wallet addresses are derived from public keys in two main steps:_
 1. By **hashing** the public key
 2. By **Base58Check** encoding it
 
-_The security of any [public key cryptography (PKC) scheme](https://www.horizen.io/academy/public-key-cryptography-pkc/) relies on one property:_
+_The security of any [public key cryptography (PKC) scheme](public-key-cryptography-pkc.md) relies on one property:_
 
 - It should be easy to derive a public key from a private key, but it must be infeasible to reverse that operation and derive a private key from a given public key.
 
-With [elliptic curve cryptography (ECC)](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/), this property is based on the _discrete log problem_, which refers to division on the elliptic curve being computationally difficult while multiplication is easy. Deriving a public key from an address is also computationally difficult, as you would have to find the _preimage_ of a [hash function](https://www.horizen.io/academy/hash-functions/), which means deriving an _input_ from an _output_.
+With [elliptic curve cryptography (ECC)](elliptic-curve-cryptography-ecc.md), this property is based on the _discrete log problem_, which refers to division on the elliptic curve being computationally difficult while multiplication is easy. Deriving a public key from an address is also computationally difficult, as you would have to find the _preimage_ of a [hash function](hash-functions.md), which means deriving an _input_ from an _output_.
 
 Not being able to derive a public key from an address is an important aspect when considering privacy. Using a new address for every incoming transaction makes tracking transactions much harder for an adversary. 
 
 If you were able to derive a public key from an address, you could find all addresses of a user, assuming they were derived from the same public key. This would render [change addresses](https://en.bitcoin.it/wiki/Change) useless.
 
-Now let's get into the actual process of creating a [crypto wallet address](https://www.horizen.io/academy/crypto-wallets/) from scratch.
+Now let's get into the actual process of creating a [crypto wallet address](crypto-wallets.md) from scratch.
 
 ## Generating the Private Key
 
-The purpose of a private key is to prove ownership of a [UTXO-set](https://www.horizen.io/academy/utxo-vs-account-model/) by creating [digital signatures](https://www.horizen.io/academy/digital-signatures/) to authorize spending.
+The purpose of a private key is to prove ownership of a [UTXO-set](utxo-vs-account-model.md) by creating [digital signatures](digital-signatures.md) to authorize spending.
 
 Private keys are sometimes also called _secret keys_ or _spending keys_. 
 

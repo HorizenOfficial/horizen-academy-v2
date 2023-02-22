@@ -6,13 +6,16 @@ title: zk-SNARKs vs zk-STARKs
 slug: /zk-snarks-vs-zk-starks/
 description: SNARKs & STARKs are 2 distinct methods for verifying proof of computation for transactions on a blockchain without revealing the data within the computation.
 image: /img/zk-snarks-vs-zk-starks/zk-snarks-vs-zk-starks-meta.jpg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 zk-SNARKs vs zk-STARKs
 
-Privacy preserving technologies in the [Web3 space](https://www.horizen.io/academy/web3/) have experienced a major resurgence in popularity over the past year.
+Privacy preserving technologies in the [Web3 space](web3.md) have experienced a major resurgence in popularity over the past year.
 
-As mainstream users and institutions begin to adopt public blockchain networks, the need to better conceal sensitive information on-chain, combined with the challenges of scaling these networks while maintaining decentralization has led many protocol developers to turn to cutting-edge solutions like [_zero-knowledge proofs_](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/).
+As mainstream users and institutions begin to adopt public blockchain networks, the need to better conceal sensitive information on-chain, combined with the challenges of scaling these networks while maintaining decentralization has led many protocol developers to turn to cutting-edge solutions like [_zero-knowledge proofs_](zero-knowledge-proofs-zkp.md).
 
 A **zero-knowledge proof** or _ZKP_ is a form of cryptography that enables one party in a transaction, the prover to prove that they have knowledge of a specific piece of information to another party, the verifier without revealing what that information is.
 
@@ -26,7 +29,7 @@ _In this article_ we will explore what differentiates these 2 methods for privac
 
 Before we dive into zk-SNARKs vs zk-STARKs, we will first lay out an example of how the ZKP technology works in practice on the _Horizen_ network.
 
-Horizen uses ZKPs to allow a prover, a [sidechain](https://www.horizen.io/academy/sidechains/), to prove that a transaction is valid to a verifier, our mainchain, without the [mainchain nodes](https://www.horizen.io/academy/nodes/) knowing the details of the transaction (i.e. [addresses](https://www.horizen.io/academy/wallet-addresses/) or values transferred).
+Horizen uses ZKPs to allow a prover, a [sidechain](sidechains.md), to prove that a transaction is valid to a verifier, our mainchain, without the [mainchain nodes](blockchain-nodes.md) knowing the details of the transaction (i.e. [addresses](wallet-addresses.md) or values transferred).
 
 The sidechain does this by first validating transactions in its blockchain as normal, then constructing a **‘proof’**, which is essentially a certificate that proves that the transactions within the sidechain have been correctly validated based on a standard process that is recognized by the mainchain.
 
@@ -63,9 +66,9 @@ As we mentioned earlier in our Horizen example, the process of constructing a pr
 
 A key criticism of the trusted setup model is that it relies on trusted 3rd parties to create private keys that are used to construct the proof, which makes the process centralized.
 
-If the private keys are not destroyed and a bad actor gains access to them, they could construct false proofs that would appear valid to the nodes on the Horizen mainchain, enabling them to potentially [create new tokens](https://www.horizen.io/academy/why-create-a-token/) out of thin air by simply claiming through a false proof that they received them in a sidechain transaction.
+If the private keys are not destroyed and a bad actor gains access to them, they could construct false proofs that would appear valid to the nodes on the Horizen mainchain, enabling them to potentially [create new tokens](why-create-a-token.md) out of thin air by simply claiming through a false proof that they received them in a sidechain transaction.
 
-_Nevertheless_, zk-SNARKs offer some key advantages, including wider development adoption and support, smaller proof sizes and cheaper gas costs on the [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) network.
+_Nevertheless_, zk-SNARKs offer some key advantages, including wider development adoption and support, smaller proof sizes and cheaper gas costs on the [Ethereum](ethereum-glossary.md) network.
 
 ## zk-STARKs
 
@@ -75,7 +78,7 @@ _Instead_, **zk-STARKs** use random samples of publicly verifiable information a
 
 With this approach, zk-STARKs claim to offer greater scalability in terms of improving speed and reducing the computational size of transaction data.
 
-It also uses a collision-resistant [hash function](https://www.horizen.io/academy/hash-functions/), which supposedly makes it resistant to attacks by a quantum computer.
+It also uses a collision-resistant [hash function](hash-functions.md), which supposedly makes it resistant to attacks by a quantum computer.
 
 _The drawback_ with zk-STARKs is that the proof sizes are larger than zk-SNARKs owing to the larger set of data that needs to be processed when sampling publicly verifiable information.
 
@@ -89,9 +92,9 @@ Both zk-SNARKs and zk-STARKs have achieved major success in terms of fundraising
 
 _zk-SNARKs are more widely adopted since they are a lot older than STARKs._
 
-**Zcash** was the first blockchain to utilize zk-SNARKs for [private transactions](https://www.horizen.io/academy/private-transactions/) in 2016. More recently, zk-SNARKs have become a core component of Ethereum’s [layer 2 scaling solution](https://www.horizen.io/academy/layer-2/) through _zk-Rollups_.
+**Zcash** was the first blockchain to utilize zk-SNARKs for [private transactions](private-transactions.md) in 2016. More recently, zk-SNARKs have become a core component of Ethereum’s [layer 2 scaling solution](layer-2.md) through _zk-Rollups_.
 
-[**zk-Rollups**](https://www.horizen.io/academy/zk-rollups/) enable layer 2 transactions to be transmitted and verified on the Ethereum mainnet without the mainnet nodes knowing the details of each transaction. It is designed to offer greater scalability to the Ethereum network by only requiring the nodes to verify the proof of computation rather than the transaction data itself.
+[**zk-Rollups**](zk-rollups.md) enable layer 2 transactions to be transmitted and verified on the Ethereum mainnet without the mainnet nodes knowing the details of each transaction. It is designed to offer greater scalability to the Ethereum network by only requiring the nodes to verify the proof of computation rather than the transaction data itself.
 
 zk-Rollups have been adopted by layer 2 scaling solutions like Loopering, Polygon and zk-Sync.
 
@@ -103,7 +106,7 @@ To date, Starware has raised over [$50 million](https://www.bloomberg.com/news/a
 
 ### zk-STARKs and dYdX
 
-_One of the most popular applications_ to adopt zk-STARKs was _dYdX_, an on-chain derivatives exchange that processed trading orders via a more traditional off-chain order book as opposed to [smart contract-based](https://www.horizen.io/academy/smart-contracts/) liquidity pools.
+_One of the most popular applications_ to adopt zk-STARKs was _dYdX_, an on-chain derivatives exchange that processed trading orders via a more traditional off-chain order book as opposed to [smart contract-based](smart-contracts.md) liquidity pools.
 
 zk-STARKs enabled DYDX users to save gas fees by executing trade orders through a STARK powered zk-Rollup. This allowed trades to be processed more quickly while still maintaining a high level of security as all transaction data would ultimately settle on the Ethereum layer 1.
 

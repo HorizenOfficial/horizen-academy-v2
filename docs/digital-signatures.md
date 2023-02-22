@@ -6,6 +6,9 @@ title: What is a Digital Signature?
 slug: /digital-signatures/
 description: Digital signatures allow you to prove your knowledge of a private key corresponding to a particular address without revealing any information about it.
 image: /img/digital-signatures/digital-signatures-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -13,7 +16,7 @@ image: /img/digital-signatures/digital-signatures-meta.jpeg
 
 **Public-Key Cryptography** is used to verify ownership on a blockchain.
 
-**Digital signatures** allow you to prove your knowledge of a private key corresponding to a [particular address](https://www.horizen.io/academy/wallet-addresses/) without revealing any information about it.
+**Digital signatures** allow you to prove your knowledge of a private key corresponding to a [particular address](wallet-addresses.md) without revealing any information about it.
 
 ![digital signatures](/img/digital-signatures/digital-signatures.jpg)
 
@@ -46,7 +49,7 @@ Either way, you need three values.
 
 ![scalars vs vectors](/img/digital-signatures/scalars-vs-vectors.jpg)
 
-*It's important to note that the hash of a vector is a scalar.* The [hash function](https://www.horizen.io/academy/hash-functions/) consumes the _tuple_ of values as an input, and produces a scalar as an output.
+*It's important to note that the hash of a vector is a scalar.* The [hash function](hash-functions.md) consumes the _tuple_ of values as an input, and produces a scalar as an output.
 
 We use the **\\(\bullet\\)** operator when we are referring to multiplication on the elliptic curve. We use the **\\(\cdot\\)** operator when we are referring to regular multiplication of scalars. 
 
@@ -200,7 +203,7 @@ Without knowledge of **r** you cannot compute **sk** from **s**.
 
 ## Verifying a Digital Signature
 
-All [full nodes and mining nodes](https://www.horizen.io/academy/nodes/) verify every transaction before forwarding it or including it in a block. 
+All [full nodes and mining nodes](blockchain-nodes.md) verify every transaction before forwarding it or including it in a block. 
 
 They verify a transaction, or message **m**, based on the originating public key **PK** and the signature, which is composed of **s** and **R**. 
 
@@ -219,7 +222,7 @@ Each input spent needs to be signed.
 A transaction typically informs the network about a transfer of money or data. The message **m** is to be signed, with **s** and **R** comprising the signature of that message.
 
 Because **s** depends on the message **m**, the verification process is only successful if two conditions are met: 
-1. The _sender_ of the message knows the private key **sk** used to generate the [UTXO](https://www.horizen.io/academy/utxo-vs-account-model/)'s address 
+1. The _sender_ of the message knows the private key **sk** used to generate the [UTXO](utxo-vs-account-model.md)'s address 
 2. And the signature (**R**, **s**) was created for that specific transaction **m**.
 
 *With cryptocurrencies, the message **m** is the unsigned part of a transaction.*
@@ -232,11 +235,11 @@ Each transaction output has a _locking script_. It is called _scriptPubKey_ and 
 
 ## Summary - Digital Signatures
 
-To summarize, [public key cryptography (PKC)](https://www.horizen.io/academy/public-key-cryptography-pkc/) is used to verify ownership. It's basic building blocks are private keys, public keys, and a digital signatures. 
+To summarize, [public key cryptography (PKC)](public-key-cryptography-pkc.md) is used to verify ownership. It's basic building blocks are private keys, public keys, and a digital signatures. 
 
 This methodology is also used in encryption schemes such as TLS, PGP or SSH.
 
-While there are many different PKC schemes, blockchains use [elliptic curve cryptography (ECC)](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/). 
+While there are many different PKC schemes, blockchains use [elliptic curve cryptography (ECC)](elliptic-curve-cryptography-ecc.md). 
 
 Cryptography mostly relies on one-way functions. The first one-way function we introduced was the hash function. ECC and its underlying _discrete log problem_ pose a second one-way function.
 

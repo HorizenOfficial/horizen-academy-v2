@@ -6,6 +6,9 @@ title: What is MultiSig? - Multi-Signature
 slug: /multisig/
 description: In order to spend a UTXO, a valid cryptographic signature is required. Multi-signature transactions, or MultiSig, rely on more than one signature.
 image: /img/multisig/multisig-meta.jpg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -13,7 +16,7 @@ image: /img/multisig/multisig-meta.jpg
 
 ## MultiSig Functionality
 
-In order to spend an [Unspent Transaction Output](https://www.horizen.io/academy/utxo-vs-account-model/), a valid cryptographic signature is required. It can only be provided if the private key corresponding to the [address](https://www.horizen.io/academy/wallet-addresses/) the UTXO was sent to is known. 
+In order to spend an [Unspent Transaction Output](utxo-vs-account-model.md), a valid cryptographic signature is required. It can only be provided if the private key corresponding to the [address](wallet-addresses.md) the UTXO was sent to is known. 
 
 Most transactions have a single digital signature attached and hence we could call them **single signature transactions**.
 
@@ -84,7 +87,7 @@ Imagine Alice bought ZEN on an exchange and wants to store them using a MultiSig
 3. Third, she _hashes_ the **redeem script**. The hash of the redeem script is encoded into a **P2SH** address.
 4. Lastly, she _withdraws_ her _money_ from the exchange to her **P2SH** address.
 
-There are several [wallet implementations](https://www.horizen.io/academy/crypto-wallets/) that offer multi signature support. This means, the wallet takes care of generating the keys and generating the redeem script. 
+There are several [wallet implementations](crypto-wallets.md) that offer multi signature support. This means, the wallet takes care of generating the keys and generating the redeem script. 
 
 It also stores the _unhashed_ redeem script. This is necessary because one needs to provide the redeem script to be able to spend the funds. 
 
@@ -104,7 +107,7 @@ In a second step, they will verify if the provided digital signature(s) satisfy 
 
 1. First, Alice will use the UTXO from the funding transaction and use it as an input to her spending transaction.
 2. Second, she places the full redeem script in the signature script part of the output.
-3. Third, she creates the required amount of [digital signatures](https://www.horizen.io/academy/digital-signatures/) using her private keys. 
+3. Third, she creates the required amount of [digital signatures](digital-signatures.md) using her private keys. 
 	- If we follow the example from above, she is using a **1-of-2** signature scheme and a single signatures created with either key **A** or **B** will suffice.
 4. Lastly, the transaction is broadcast to the network.
 
@@ -120,7 +123,7 @@ The first is called **Merkelized Abstract Syntax Trees** (_MAST_).
 
 Here, the spending conditions are arranged in a _merkle tree_ structure and the _merkle root_ is included instead of the redeem script hash. 
 
-By providing the fulfilled scrip conditions, _redeemScripts_, and the _merkle path_, a [node](https://www.horizen.io/academy/nodes/) can verify if a transaction is valid but _does not learn_ anything about the other unfulfilled spending conditions.
+By providing the fulfilled scrip conditions, _redeemScripts_, and the _merkle path_, a [node](blockchain-nodes.md) can verify if a transaction is valid but _does not learn_ anything about the other unfulfilled spending conditions.
 
 ### Shnorr
 

@@ -67,7 +67,7 @@ const config = {
                         position: "left",
                     },
                     {
-                        to: "how-does-blockchain-work",
+                        to: "/how-does-blockchain-work/",
                         position: "left",
                         label: "Articles",
                     },
@@ -90,7 +90,7 @@ const config = {
                             },
                             {
                                 label: "Tokenomics 101",
-                                href: "tokenomics",
+                                href: "/tokenomics",
                             },
                             {
                                 label: "Ethereum Virtual Machine",
@@ -99,13 +99,13 @@ const config = {
                         ],
                     },
                     {
-                        href: "https://twitter.com/HorizenAcademy",
-                        label: "Community",
+                        href: "https://horizen.io/",
+                        label: "Main Horizen Website",
                         position: "right",
                     },
                     {
-                        href: "https://horizen.io/",
-                        label: "Horizen Website",
+                        href: "https://twitter.com/HorizenAcademy",
+                        label: "Community",
                         position: "right",
                     },
                 ],

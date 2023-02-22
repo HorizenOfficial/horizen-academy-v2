@@ -6,6 +6,9 @@ title: Blockchain as a Data Structure
 slug: /blockchain-as-a-data-structure/
 description: This article explains blockchain at an advanced level from a computer scientist's perspective looking at it as a data structure.
 image: /img/blockchain-data-structure/blockchain-data-structure-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -14,12 +17,12 @@ image: /img/blockchain-data-structure/blockchain-data-structure-meta.jpeg
 If you have read up on Bitcoin, blockchain, and cryptocurrencies before, you may know there is a distinction between:
 
 - **Blockchain** technology in general
-- A [**protocol**](https://www.horizen.io/academy/blockchain-protocols/), or the rules of a specific blockchain
+- A [**protocol**](blockchain-protocols.md), or the rules of a specific blockchain
 - The **currency** that is running on top of this blockchain - if there is one
 
 You can look at blockchain in many different ways, on the one hand, it is a way to store data and, on the other hand, a _language or protocol_ to transfer value.
 
-Looking at blockchain through the lens of cryptocurrencies has been the dominant narrative until recently. [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) is the first thing most people will associate with blockchain technology, but storing [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) transactions is only one use case out of many.
+Looking at blockchain through the lens of cryptocurrencies has been the dominant narrative until recently. [Bitcoin](bitcoin-glossary.md) is the first thing most people will associate with blockchain technology, but storing [cryptocurrency](cryptocurrency.md) transactions is only one use case out of many.
 
 Let’s take a closer look at the first use case for blockchain technology - _digital money_. To have a monetary system without central control, you must have a special and sophisticated way to handle all the data produced with each transfer. 
 
@@ -63,7 +66,7 @@ Many peers keep a copy of the data, and no single peer has the power to change o
 
 There is no centralized entity, like a bank or clearinghouse, responsible for accepting and processing new transactions.
 
-**Cryptocurrencies** _are permissionless because every individual abiding by the rules of the protocol can [create a wallet](https://www.horizen.io/academy/crypto-wallets/) and send a transaction without needing to sign up to use the service_.
+**Cryptocurrencies** _are permissionless because every individual abiding by the rules of the protocol can [create a wallet](crypto-wallets.md) and send a transaction without needing to sign up to use the service_.
 
 The transaction is then broadcast to the network, and every participant (or node or peer) keeps a copy of it. A node can be operated by a person, a store accepting crypto, or a bank; it makes no difference who you are. 
 
@@ -130,7 +133,7 @@ If this node does not contain the data you were looking for either, you continue
 
 ![linked list](/img/blockchain-data-structure/linked-list-2.jpg)
 
-Programs that use a linked list to store data don’t have to know how many data elements you want to store beforehand, but the linked list does need to know what each element consists of. As previously stated, data elements of a linked list are called [nodes](https://www.horizen.io/academy/nodes/). Each node can contain several objects of different types.
+Programs that use a linked list to store data don’t have to know how many data elements you want to store beforehand, but the linked list does need to know what each element consists of. As previously stated, data elements of a linked list are called [nodes](blockchain-nodes.md). Each node can contain several objects of different types.
 
 For example. If you were to store information about cars in a linked list, you could define a node as the set of information about the brand, model, year produced, and license plate.
 
@@ -215,9 +218,9 @@ _The data structure of a blockchain is naturally_ tamper-evident. Any change of 
 
 While it is not possible to change or delete data, it is easy to add data in a new block to the chain. For example, you could add a new transaction on a cryptocurrency blockchain. 
 
-The transaction is easy to verify because all the preceding transactions recorded on the network are immutable - this makes the verification of transactions simple. When [Address](https://www.horizen.io/academy/wallet-addresses/) **Y** wants to spend amount **X**, it must have a balance of at least amount **X**.
+The transaction is easy to verify because all the preceding transactions recorded on the network are immutable - this makes the verification of transactions simple. When [Address](wallet-addresses.md) **Y** wants to spend amount **X**, it must have a balance of at least amount **X**.
 
-The relationship between the data structure, the protocol and the [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/), and their inner workings, are what make the blockchain a powerful tool for building trustless digital money.
+The relationship between the data structure, the protocol and the [consensus mechanism](consensus-mechanisms.md), and their inner workings, are what make the blockchain a powerful tool for building trustless digital money.
 
 ## The Properties of Blockchains
 
@@ -244,7 +247,7 @@ This set of rules, or **_protocol_**, can achieve the following traits:
 - **Consistency:** Newly added data cannot conflict with data already in the database.
 - **Tamper Evidence:** Append only data structure that makes it immediately apparent if data has been changed. Coupled with a strong consensus mechanism that incentivizes rejection of invalid blocks this results in immutability.
 - **Ownable:** Data can be attributed to a sole owner. The data is publicly verifiable, but only the owner can make changes to it. In the context of cryptocurrencies, this means everybody can see the transactions, but only the owner can spend a UTXO.
-- **Distributed:** The database is consistent without a central party acting as a gatekeeper. This results from the protocol incentivizing correct behavior. Consensus and fault-tolerance are the holy grail of [distributed systems](https://www.horizen.io/academy/consensus-in-distributed-systems/) that Bitcoin achieved for the first time in history.
+- **Distributed:** The database is consistent without a central party acting as a gatekeeper. This results from the protocol incentivizing correct behavior. Consensus and fault-tolerance are the holy grail of [distributed systems](consensus-in-distributed-systems.md) that Bitcoin achieved for the first time in history.
 
 You get immutability of data only if there is a strong consensus mechanism in place that makes the network participants decline invalid blocks. Otherwise, a blockchain is only tamper-evident.
 

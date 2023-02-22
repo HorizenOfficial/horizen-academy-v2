@@ -6,18 +6,21 @@ title: The Economics of Mining
 slug: /economies-of-mining/
 description: In this article, you learn about how cryptocurrency miners secure the blockchain with their computational power at an advanced level.
 image: img/crypto-mining-economics/crypto-mining-economics-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
 # The Economics of Mining
 
-[Cryptocurrency mining](https://www.horizen.io/academy/mining-in-blockchain/) has long been viewed as a highly rewarding activity for early adopters of blockchain technology to get involved in a particular blockchain ecosystem. 
+[Cryptocurrency mining](crypto-mining.md) has long been viewed as a highly rewarding activity for early adopters of blockchain technology to get involved in a particular blockchain ecosystem. 
 
 **By mining cryptocurrencies**, you get to actively participate in securing the network through your _hashing power_, _validating transactions_ and _adding new blocks to the chain_, all of which are essential for enabling a proof of work (PoW) blockchain to function.  
 
 **There are many factors to consider when deciding to mine a cryptocurrency.**
 
-The first is the _consensus mechanism_. The act of ‘mining’ is most commonly associated with proof of work blockchains like [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/), Litecoin, Bitcoin Cash or Horizen. 
+The first is the _consensus mechanism_. The act of ‘mining’ is most commonly associated with proof of work blockchains like [Bitcoin](bitcoin-glossary.md), Litecoin, Bitcoin Cash or Horizen. 
 
 Under a [proof of work](proof-of-work-pow.md) consensus mechanism, like on the Bitcoin network, miners compete to solve mathematical puzzles using computing power in order to earn the right to add transactions to the next block in the chain and receive newly issued bitcoin from the network, known as the block reward.  
 
@@ -234,21 +237,21 @@ As price falls below the cost of production and miner profitability is at its lo
 
 ## Proof of Work vs Proof of Stake?
 
-When it comes to [proof of stake systems](https://www.horizen.io/academy/pos-vs-pow/), the economics of validating transactions and earning rewards are very different. 
+When it comes to [proof of stake systems](pos-vs-pow.md), the economics of validating transactions and earning rewards are very different. 
 
-**Proof of Stake** (PoS) requires validators to stake a minimum number of the network's [native tokens](https://www.horizen.io/academy/what-is-a-token/) into a smart contract in order to validate transactions.
+**Proof of Stake** (PoS) requires validators to stake a minimum number of the network's [native tokens](what-is-a-token.md) into a smart contract in order to validate transactions.
 
 A randomized process is used to determine which validators will get to produce the next block. This means that PoS does not require the use of mining rigs to solve complex math problems in order to earn block rewards. 
 
 _Instead_, the process is more deterministic and works in such a way that every validator ends up generating roughly the same APY on their staked coins. The exception being in cases where a validator loses a portion or all of their staking due to ‘slashing’, which is an event that occurs when a validator attempts to submit a fraudulent transaction or fails to keep their computer operating with near 100% uptime. 
 
-While the [PoS consensus mechanism](https://www.horizen.io/academy/pos-vs-pow/) does not require mining hardware or facilities to house them, the process of storing all or even parts of the blockchains data overtime can become quite costly. 
+While the PoS consensus mechanism does not require mining hardware or facilities to house them, the process of storing all or even parts of the blockchains data overtime can become quite costly. 
 
 ‘State bloat’ is a common problem that popular blockchains tend to incur over time. 
 
 Essentially, as more transactions are recorded on a blockchain, more blocks are required to store those transactions. Overtime, the massive amounts of data that is accrued from defi, gaming, NFT and other types of transactions puts stress on the network, making it more costly to set up a node because of the size of the data that needs to be downloaded.
 
-This is particularly true for [full nodes](https://www.horizen.io/academy/nodes/), which are responsible for storing an archive of the entire history of the blockchain dating back to its inception. While it is difficult to place specific numbers on these costs, what’s clear is that the longer a blockchain exists, the greater the state bloat and the more expensive it becomes for validators to run nodes. 
+This is particularly true for [full nodes](blockchain-nodes.md), which are responsible for storing an archive of the entire history of the blockchain dating back to its inception. While it is difficult to place specific numbers on these costs, what’s clear is that the longer a blockchain exists, the greater the state bloat and the more expensive it becomes for validators to run nodes. 
 
 One of the ways in which the state bloat problem is being resolved is through creating a more [modular blockchain](modular-vs-monolithic-blockchains.md) design in which side chains can be sprung up for the purpose of storing parts of the main chains history so that nodes on the mainchain can reduce the amount of data their nodes need to store. 
 
@@ -258,17 +261,17 @@ Through a process called ‘anchoring’, a cryptographic hash of the data can b
 
 Mining cryptocurrencies has historically been one of the most common ways for retail users to get involved in the operations of a blockchain network. 
 
-It helps you understand how the proof of work [consensus mechanisms](https://www.horizen.io/academy/consensus-mechanisms/) are designed, and gives you the ability to get paid by performing a valuable service; to store the blockchain history and validate transactions. 
+It helps you understand how the proof of work [consensus mechanisms](consensus-mechanisms.md) are designed, and gives you the ability to get paid by performing a valuable service; to store the blockchain history and validate transactions. 
 
 The rising prices of cryptocurrencies have made certain coins like Bitcoin more expensive to mine profitably. However, this doesn’t mean that all PoW coins are inaccessible for the average retail investors to mine. 
 
 Alternatives like _Litcoin_, _Horizon_ or even _Dogecoin_ offer the ability to mine new coins at a much lower hashrate than bitcoin, which means the amount of energy one needs their mining rigs to expend in order to consistently earn block rewards is lower and therefore so is the cost. 
 
-In the past 2 years, [PoS](https://www.horizen.io/academy/pos-vs-pow/) has become a more common consensus mechanism for blockchains to adopt due to environmental and scalability concerns. The fact that one only needs to acquire a certain amount of tokens and operate a basic computer in order to validate transactions also makes PoS more appealing to retail users.
+In the past 2 years, PoS has become a more common consensus mechanism for blockchains to adopt due to environmental and scalability concerns. The fact that one only needs to acquire a certain amount of tokens and operate a basic computer in order to validate transactions also makes PoS more appealing to retail users.
 
 _Ultimately_, both consensus mechanisms have their pros and cons in terms of their impact on blockchain _security_, _scalability_ and _decentralization_. 
 
 However, where they are similar is in their use of economic incentives to bring people together in order to validate transactions and provide greater security to the network.
 
-WIthout the secure foundation enabled by the economics of mining or validating, blockchains would not be able to operate at a scale that allows millions of people to send payments, [deploy smart contracts](https://www.horizen.io/academy/smart-contracts/), trade NFTs and perform other activities every day. 
+WIthout the secure foundation enabled by the economics of mining or validating, blockchains would not be able to operate at a scale that allows millions of people to send payments, [deploy smart contracts](smart-contracts.md), trade NFTs and perform other activities every day. 
 
