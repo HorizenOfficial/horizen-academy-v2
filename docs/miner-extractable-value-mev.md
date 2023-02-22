@@ -6,6 +6,9 @@ title: What is MEV? - Miner Extractable Value
 slug: /miner-extractable-value-mev/
 description: MEV is the process of reordering, inserting or censoring transactions within a block in order to extract additional value.
 image: /img/miner-extractable-value-mev/miner-extractable-value-mev-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -31,7 +34,7 @@ MEV is created because validators ultimately have a final say on which transacti
 
 To date, over [$650 million](https://cointelegraph.com/news/new-oracle-system-to-help-dapps-retrieve-millions-lost-to-mev) of MEV has been captured by block producers. 
 
-Another group called _‘Searchers’_ can also take advantage of MEV without [running a node](https://www.horizen.io/academy/nodes/). This is done by running bots that scan the chain for transactions of high value that have yet to be picked up by validators and submitted to the latest block. 
+Another group called _‘Searchers’_ can also take advantage of MEV without [running a node](blockchain-nodes.md). This is done by running bots that scan the chain for transactions of high value that have yet to be picked up by validators and submitted to the latest block. 
 
 ### Front Running
 
@@ -73,7 +76,7 @@ MEV can have a significant impact on the costs that users incur to trade tokens 
 
 MEV is enabled by the relationship between well funded traders and validators seeking maximum profits. 
 
-If there are significant profits to be made, this relationship can come at the cost of regular users who are simply trying to acquire their favorite NFT, buy [tokens](https://www.horizen.io/academy/what-is-a-token/) for use within a blockchain game or deposit funds into a [lending protocol](https://www.horizen.io/academy/crypto-lending/).
+If there are significant profits to be made, this relationship can come at the cost of regular users who are simply trying to acquire their favorite NFT, buy [tokens](what-is-a-token.md) for use within a blockchain game or deposit funds into a [lending protocol](crypto-lending.md).
 
 ### Invisible Tax on Users
 
@@ -93,7 +96,7 @@ The benefits that accrued through this practice can be significant, albeit uneve
 
 ## Solutions to the MEV Problem
 
-To solve this problem, Flashbots, an [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) research organization, is developing an ‘_MEV Boost_.’
+To solve this problem, Flashbots, an [Ethereum](ethereum-glossary.md) research organization, is developing an ‘_MEV Boost_.’
 
 **MEV Boost** solves the problems of MEV in the following ways:
 

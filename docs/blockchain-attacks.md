@@ -6,6 +6,9 @@ title: Attacks on the Blockchain
 slug: /blockchain-attacks/
 description: In this article, you will learn the most common attack scenarios on public blockchains and how their risk can be mitigated.
 image: /img/blockchain-attacks/blockchain-attacks-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -13,7 +16,7 @@ image: /img/blockchain-attacks/blockchain-attacks-meta.jpeg
 
 _Blockchains are generally considered to be very secure_, but the level of security they provide is proportional to the amount of _hash power_ that supports the network. 
 
-**The more miners there are and the more powerful their [mining hardware](https://www.horizen.io/academy/mining-in-blockchain/) is, the harder it is to perform an attack on the network**. 
+**The more miners there are and the more powerful their [mining hardware](crypto-mining.md) is, the harder it is to perform an attack on the network**. 
 
 In this article, we review some of the most common attack scenarios on public blockchains, how they occur, and how they're addressed.
 
@@ -51,13 +54,13 @@ _Each General now has a ledger_ of events that is synchronized with the other Ge
 
 Getting back to our general's problem, now they have a way of knowing if all of them are going to attack, or if they should retread collectively.
 
-Now that we have talked about the general problem a [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) aims to solve, let's look at some simple and intuitive attack scenarios and how we address them.
+Now that we have talked about the general problem a [consensus mechanism](consensus-mechanisms.md) aims to solve, let's look at some simple and intuitive attack scenarios and how we address them.
 
 ## 51% Attack
 
 **The best-known type of attack on public PoW blockchains is the 51% attack.** 
 
-The goal of a [51% attack](https://www.horizen.io/academy/51-attacks/) is to perform a **double spend**, which means spending the same [UTXO](https://www.horizen.io/academy/utxo-vs-account-model/) twice. To perform a 51% attack on a blockchain, you need to control a majority of the hash rate, hence the name.
+The goal of a [51% attack](51-attack.md) is to perform a **double spend**, which means spending the same [UTXO](utxo-vs-account-model.md) twice. To perform a 51% attack on a blockchain, you need to control a majority of the hash rate, hence the name.
 
 A malicious miner wanting to perform a double spend will first create a regular transaction spending their coins for either a good or for a different currency on an exchange. At the same time, they will begin mining a private chain. 
 
@@ -70,7 +73,7 @@ A malicious miner wanting to perform a double spend will first create a regular 
 
 If they control a majority of the computing power, their chain will grow faster than the honest chain. 
 
-The **Longest Chain Rule** in PoW blockchains governs what happens in case of such a [fork](https://www.horizen.io/academy/blockchain-forks/). The branch that has more blocks to it and accordingly represents the chain created with a larger amount of computing power is considered the valid chain.
+The **Longest Chain Rule** in PoW blockchains governs what happens in case of such a [fork](blockchain-forks.md). The branch that has more blocks to it and accordingly represents the chain created with a larger amount of computing power is considered the valid chain.
 
 Once the attacker has received the good or other currency bought with their coins, they will broadcast the private branch to the entire network. All honest miners will drop the honest branch and start mining on top of the malicious chain. 
 
@@ -80,13 +83,13 @@ The network treats the attacker's transaction as if it never happened because th
 
 _This has happened to many smaller blockchains in the past._
 
-In fact, Horizen suffered from a 51% attack in early _June 2018_. We immediately started to work on a solution to mitigate the risk of a 51% attack on smaller blockchains that are not secured by as much computing power as for example the [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) blockchain.
+In fact, Horizen suffered from a 51% attack in early _June 2018_. We immediately started to work on a solution to mitigate the risk of a 51% attack on smaller blockchains that are not secured by as much computing power as for example the [Bitcoin](bitcoin-glossary.md) blockchain.
 
 We came up with a solution that penalizes [delayed block submissions](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf). There is no legitimate reason for a miner to broadcast several blocks to the network at once. 
 
 Our protection mechanism makes these attacks very costly. 
 
-So costly that it does not make any [economic sense](https://www.horizen.io/academy/economies-of-mining/) to perform such an attack on our network. Many other blockchains are now looking to implement a simamnilar protection mechanism with their protocol.
+So costly that it does not make any [economic sense](crypto-mining-economics.md) to perform such an attack on our network. Many other blockchains are now looking to implement a simamnilar protection mechanism with their protocol.
 
 ## Sybil Attack
 
@@ -96,7 +99,7 @@ This type of attack is important to consider especially when you think about onl
 
 Another possible use for Sybil attacks is to censor certain participants. 
 
-A number of [_Sybil nodes_](https://www.horizen.io/academy/nodes/) can surround your node and prevent it from connecting to other, honest nodes on the network. This way one could try to prevent you from either sending or receiving information to the network. 
+A number of [_Sybil nodes_](blockchain-nodes.md) can surround your node and prevent it from connecting to other, honest nodes on the network. This way one could try to prevent you from either sending or receiving information to the network. 
 
 This "use case" of a Sybil attack is also called **Eclipse Attack**.
 
@@ -140,10 +143,10 @@ Blockchains have solved the _Byzantine General's Problem_ of achieving consensus
 
 In a _51% Attack_, a miner controlling the majority of computing power on the network tries to spend coins twice, by writing a private version of the blockchain first, before broadcasting all blocks at once to the honest miners.
 
-In a _Sybil Attack_, a malicious actor controls many fake identities and tries to either meddle with online elections or to manipulate the communication in a [P2P network](https://www.horizen.io/academy/peer-to-peer-networks-p2p/).
+In a _Sybil Attack_, a malicious actor controls many fake identities and tries to either meddle with online elections or to manipulate the communication in a [P2P network](p2p-networks.md).
 
 In a _DDOS Attack_, a perpetrator wants to slow down or halt the network by spamming it with a large number of transactions.
 
 The attack scenarios presented in this article, _except for the 51% attack_, are not endemic to blockchains and have been around since the beginning of distributed peer networks. There are many measures in place to mitigate the risk of the different attack scenarios out there. 
 
-Blockchain technology is highly secure, but as with anything else in the digital realm, there are no [invincible protocols](https://www.horizen.io/academy/blockchain-protocols/).
+Blockchain technology is highly secure, but as with anything else in the digital realm, there are no [invincible protocols](blockchain-protocols.md).

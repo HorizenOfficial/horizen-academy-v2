@@ -6,6 +6,9 @@ title: What is a Sidechain?
 slug: /sidechains/
 description: Sidechains benefit from the decentralization and security of the underlying main blockchain, and maintain the flexibility to solve highly specific use cases.
 image: /img/sidechains/sidechains-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -15,9 +18,9 @@ Blockchain technology offers some unique properties, such as achieving consensus
 
 The _first_ challenge of building applications on the blockchain is _security_. A blockchain’s security increases as the number of network participants grows. As a result, spinning up a small application-specific blockchain with just a few stakeholders does not provide the same security level as utilizing an established one with thousands of nodes.
 
-A blockchain’s security model, in turn, depends on utilizing a [token](https://www.horizen.io/academy/what-is-a-token/) with real value, tradeable on established markets. This holds in the case of [_Proof of Work_](https://www.horizen.io/academy/proof-of-work-pow/) blockchains in which _miners_ get rewarded for their computational power with a token, as well as in [Proof of Stake blockchains](https://www.horizen.io/academy/pos-vs-pow/) where a validator’s security deposit needs to have economic weight. 
+A blockchain’s security model, in turn, depends on utilizing a [token](what-is-a-token.md) with real value, tradeable on established markets. This holds in the case of [_Proof of Work_](proof-of-work-pow.md) blockchains in which _miners_ get rewarded for their computational power with a token, as well as in [Proof of Stake blockchains](pos-vs-pow.md) where a validator’s security deposit needs to have economic weight. 
 
-A native token with real-world value, thus incentivizes users to provide additional security to the network by [mining](https://www.horizen.io/academy/mining-in-blockchain/) or staking and allows applications to transfer value easily.
+A native token with real-world value, thus incentivizes users to provide additional security to the network by [mining](crypto-mining.md) or staking and allows applications to transfer value easily.
 
 _Building directly on top of a public blockchain comes with other challenges_:
 
@@ -42,9 +45,9 @@ Sidechains cannot derive 100% of their security from the mainchain; they still r
 
 But incentive mechanisms can be constructed that lead to existing mainchain nodes also supporting sidechains built on top of it.
 
-When you enable sidechains, you allow a number of different blockchains to run in parallel. _A sidechain is a blockchain in and of itself with the added feature of being [interoperable](https://www.horizen.io/academy/blockchain-interoperability/) with the main blockchain_. 
+When you enable sidechains, you allow a number of different blockchains to run in parallel. _A sidechain is a blockchain in and of itself with the added feature of being [interoperable](blockchain-interoperability.md) with the main blockchain_. 
 
-Transactions are the most common interaction with a blockchain facilitating a [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/), such as our current Horizen blockchain. The Engineering team at Horizen, led by Alberto Garoffolo, has proposed a sidechain construction based on _proof-of-stake_ principles.
+Transactions are the most common interaction with a blockchain facilitating a [cryptocurrency](cryptocurrency.md), such as our current Horizen blockchain. The Engineering team at Horizen, led by Alberto Garoffolo, has proposed a sidechain construction based on _proof-of-stake_ principles.
 
 The most important part of building our sidechain construction is the **cross-chain transfer protocol**: 
 
@@ -64,20 +67,20 @@ In other words, a sidechain is a blockchain that can communicate and interoperat
 
 ### Benefits of Sidechains
 
-Most blockchains facilitating cryptocurrencies use the proof-of-work consensus algorithm and have incorporated the core functionalities of the Bitcoin protocol. Therefore, they inherited a lot of the constraints from the code created by [_Satoshi Nakamoto_](https://www.horizen.io/academy/satoshi-nakamoto/).
+Most blockchains facilitating cryptocurrencies use the proof-of-work consensus algorithm and have incorporated the core functionalities of the Bitcoin protocol. Therefore, they inherited a lot of the constraints from the code created by [_Satoshi Nakamoto_](satoshi-nakamoto.md).
 
 **This includes:** 
 - Limited throughput
 - High latency
 - And a limited ability to scale
 
-*Sidechains* present an option to help overcome some of these technological shortcomings, but besides opening doors to only potential technical leaps, they also touch on the topic of [governance](https://www.horizen.io/academy/blockchain-governance/).
+*Sidechains* present an option to help overcome some of these technological shortcomings, but besides opening doors to only potential technical leaps, they also touch on the topic of [governance](blockchain-governance.md).
 
 As debates across the recent years have shown, making changes to the codebase in decentralized projects tends to be a cumbersome process. _This is arguably a feature, not a bug._ 
 
-Stability, not in regards to token price but code, is crucial, especially for projects such as [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/), and the overall security of the protocol benefits greatly from the careful consideration of every change applied to the system.
+Stability, not in regards to token price but code, is crucial, especially for projects such as [Bitcoin](bitcoin-glossary.md), and the overall security of the protocol benefits greatly from the careful consideration of every change applied to the system.
 
-Sidechains offer a mechanism to implement features on top of a first layer protocol without compromising the security or stability of said protocol. After an initial [_fork_](https://www.horizen.io/academy/blockchain-forks/) that includes the capability to deploy sidechains and introduces a way to transfer assets from the mainchain to the sidechain and vice versa, a number of parallel chains can be built, each serving a different purpose, without having to build consensus for each individual feature.
+Sidechains offer a mechanism to implement features on top of a first layer protocol without compromising the security or stability of said protocol. After an initial [_fork_](blockchain-forks.md) that includes the capability to deploy sidechains and introduces a way to transfer assets from the mainchain to the sidechain and vice versa, a number of parallel chains can be built, each serving a different purpose, without having to build consensus for each individual feature.
 
 _It is important to note_ that the initial change to the codebase enabling the deployment of sidechains and cross chain transfers has to be done carefully and possible solutions should be evaluated with great caution. If a project manages to deploy those features, then developers can start playing around and build on top of projects where changes to the protocol traditionally required consensus building for months, or even years. 
 
@@ -97,7 +100,7 @@ As we said earlier, many teams are looking into the technology of sidechains for
 
 You could make a case of distinguishing between _sidechains_ and _drivechains_ as discussed [by Rootstock](https://docs.rsk.co/Drivechains_Sidechains_and_Hybrid_2-way_peg_Designs_R9.pdf). The general idea is the same, and satisfies the broad definition of a _pegged sidechain_ that _Back et al._ provided about eight years ago.
 
-Critics of the sidechain concept like to point out that most sidechain implementations currently rely on a set of _validators_ to facilitate [cross-chain transactions](https://www.horizen.io/academy/cross-chain-transactions/). Sidechain constructions are oftentimes called _trust-minimized_ instead of _trustless_. 
+Critics of the sidechain concept like to point out that most sidechain implementations currently rely on a set of _validators_ to facilitate [cross-chain transactions](cross-chain-transactions.md). Sidechain constructions are oftentimes called _trust-minimized_ instead of _trustless_. 
 
 The risk comes down to the ability of the trusted validators to censor transactions from main to sidechain, and vice versa. Our protocol addresses this issue in an elegant way.
 
@@ -121,7 +124,7 @@ Deploying a domain-specific sidechain would allow quick feature iterations by ci
 
 Horizen is evaluating which sidechains to develop first. Options include sidechains supporting sophisticated, Turing complete smart contracts, near instant payment settlements, or a sidechain handling the Zen Blockchain Foundation treasury funds.
 
-While Horizen’s mainchain does not support [custom tokens](https://www.horizen.io/academy/why-create-a-token/), a sidechain could provide this functionality. Any developer is free to build and deploy sidechains on Horizen’s mainchain without permission and without the risk of breaking things.
+While Horizen’s mainchain does not support [custom tokens](why-create-a-token.md), a sidechain could provide this functionality. Any developer is free to build and deploy sidechains on Horizen’s mainchain without permission and without the risk of breaking things.
 
 Sidechains are an _essential_ technological step to expanding the capabilities of distributed ledgers and making them suitable for a broader range of use cases.
 
@@ -157,11 +160,11 @@ A **symmetric sidechain** would require the mainchain to update with each new si
 
 ### Proof of Authority Sidechains
 
-A notable sidechain construction based on the Ethereum blockchain is built by the _POA Network_ team. The authors _Barinov_, _Baranov_, and _Khahulin_ [propose](https://hackmd.io/@F67-rdJCQ0yHlzTN8AoRfw/HkV8Vw7_-?type=view) "_an open, permissioned network based on [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) protocol with Proof of Authority consensus by independent validators._”
+A notable sidechain construction based on the Ethereum blockchain is built by the _POA Network_ team. The authors _Barinov_, _Baranov_, and _Khahulin_ [propose](https://hackmd.io/@F67-rdJCQ0yHlzTN8AoRfw/HkV8Vw7_-?type=view) "_an open, permissioned network based on [Ethereum](ethereum-glossary.md) protocol with Proof of Authority consensus by independent validators._”
 
 **The design is asymmetric:** Sidechains monitor the mainchain but not vice versa. 
 
-They hypothesized that deploying sidechains on top of a [smart contract enabled blockchain](https://www.horizen.io/academy/smart-contracts/) is simpler than deploying on a Bitcoin-based system. They purported that forward and backward transfers could be handled via smart contract logic instead of via the core protocol.
+They hypothesized that deploying sidechains on top of a [smart contract enabled blockchain](smart-contracts.md) is simpler than deploying on a Bitcoin-based system. They purported that forward and backward transfers could be handled via smart contract logic instead of via the core protocol.
 
 Nonetheless, each sidechain in the POA Network depends on a group of individuals, verifying backward transfers and broadcasting them to the Ethereum mainchain.
 
@@ -184,7 +187,7 @@ _A first iteration_ of [Horizen’s sidechain construction](https://www.horizen.
 
 The Horizen blockchain project has set itself ambitious goals. 
 
-We plan on including features such as a treasury system for the [DAO](https://www.horizen.io/academy/decentralized-autonomous-organization-dao/), in cooperation with IOHK. Work continues on a decentralized solution for tracking Secure and Super Nodes, and handling their rewards, as well as developing a [Block-DAG](https://www.horizen.io/academy/directed-acyclic-graph-dag/) protocol to increase transaction throughput.
+We plan on including features such as a treasury system for the [DAO](decentralized-autonomous-organization-dao.md), in cooperation with IOHK. Work continues on a decentralized solution for tracking Secure and Super Nodes, and handling their rewards, as well as developing a [Block-DAG](directed-acyclic-graph-dag.md) protocol to increase transaction throughput.
 
 _You can probably see the benefits of developing a sidechain first as some of these functionalities would require significant modifications of the core client if implemented directly into the existing codebase_. 
 
@@ -192,7 +195,7 @@ Building new features and making changes to the protocol, even if they are small
 
 The idea is to implement a robust sidechain model, one that simplifies adding new features, and use that process to expand the Horizen ecosystem afterward. Sidechain implementations will be completely decoupled from the mainchain and can run entirely different consensus algorithms.
 
-This way, it would be possible to run the sidechains facilitating the treasury and node-tracking system with a [Proof-of-Stake](https://www.horizen.io/academy/consensus-mechanisms/) like consensus protocol, while maintaining the mainchain with a more “traditional” [Proof-of-Work](https://www.horizen.io/academy/proof-of-work-pow/) consensus mechanism.
+This way, it would be possible to run the sidechains facilitating the treasury and node-tracking system with a [Proof-of-Stake](consensus-mechanisms.md) like consensus protocol, while maintaining the mainchain with a more “traditional” [Proof-of-Work](proof-of-work-pow.md) consensus mechanism.
 
 ### How Does It Work Now?
 
@@ -238,7 +241,7 @@ _It is a Proof-of-Stake based consensus protocol that makes use of the concept o
 
 The security of software is usually evaluated under certain assumptions. Consensus protocols are no different.
 
-POW consensus is based on the assumption of an honest majority in hashing power. The core assumption the Ouroboros [POS protocol](https://www.horizen.io/academy/pos-vs-pow/) security is based on is a random _Slot Leader Selection Procedure_. 
+POW consensus is based on the assumption of an honest majority in hashing power. The core assumption the Ouroboros [POS protocol](pos-vs-pow.md) security is based on is a random _Slot Leader Selection Procedure_. 
 
 No party should be able to predict who will be the assigned slot leader during a given time period.
 
@@ -250,13 +253,13 @@ It is a simple, yet effective solution.
 
 The randomness is derived from the smallest block hash on the mainchain in a given period of time. For this to work, the set of eligible certifiers will be fixed, before the randomness generation period starts. A significant share of hashing power would be needed to corrupt this mechanism. 
 
-Under the assumption of an honest majority in hashing power on the mainchain, this should be infeasible and economically unprofitable. A formal analysis of such an [attack](https://www.horizen.io/academy/blockchain-attacks/) will be conducted separately.
+Under the assumption of an honest majority in hashing power on the mainchain, this should be infeasible and economically unprofitable. A formal analysis of such an [attack](blockchain-attacks.md) will be conducted separately.
 
 Another modification to the original Ouroboros implementation regards the references to the mainchain included in the sidechain blocks. We will talk about this in the context of the _Cross-Chain Transfer Protocol_ when introducing the concept of full referencing.
 
 #### Liveness and Persistence
 
-Garay, Kiayias & Leonardos say that the standard procedure of proving [blockchain consensus protocol](https://www.horizen.io/academy/blockchain-protocols/) security requires demonstrating the ability of the protocol to satisfy two fundamental properties of a distributed ledger: _liveness_ and _persistence_.
+Garay, Kiayias & Leonardos say that the standard procedure of proving [blockchain consensus protocol](blockchain-protocols.md) security requires demonstrating the ability of the protocol to satisfy two fundamental properties of a distributed ledger: _liveness_ and _persistence_.
 
 > *“Persistence states that once a transaction goes more than k blocks “deep” into the blockchain of one honest player, then it will be included in every honest player’s blockchain with overwhelming probability, and it will be assigned a permanent position in the ledger.”* — Garay, Kiayias & Leonardos, 2014
 
@@ -272,7 +275,7 @@ Properties like liveness and persistence are proven under a set of assumptions s
 
 The motivation behind developing the _SCP_ and _CCT_ separately was to enable a variety of possible SCP’s.
 
-Although the following description of the Cross-Chain Transfer Protocol takes up on a few concepts of the adapted Ouroboros protocol described above, it can be combined with a number of other [consensus mechanisms](https://www.horizen.io/academy/consensus-mechanisms/). 
+Although the following description of the Cross-Chain Transfer Protocol takes up on a few concepts of the adapted Ouroboros protocol described above, it can be combined with a number of other [consensus mechanisms](consensus-mechanisms.md). 
 
 Horizen is currently looking into a Block-DAG (_Directed Acyclic Graph_) structure. The interoperability between another POW sidechain or a Block-DAG mainchain and the CCT protocol will be subject to additional research.
 
@@ -309,7 +312,7 @@ _Sidechain nodes_ can easily verify the transfers by including the _block header
 
 **You could think of the two ledgers, sidechain and mainchain, as two separate books**. 
 
-Since the sidechain bookkeepers constantly monitor the main(chain) book, they can easily add [cross chain transactions](https://www.horizen.io/academy/cross-chain-transactions/) to their book. By including the transactions together with their Merkle paths and the corresponding block header, every entity on the sidechain will be able to verify the transaction is valid for themselves without having to check in with the mainchain.
+Since the sidechain bookkeepers constantly monitor the main(chain) book, they can easily add [cross chain transactions](cross-chain-transactions.md) to their book. By including the transactions together with their Merkle paths and the corresponding block header, every entity on the sidechain will be able to verify the transaction is valid for themselves without having to check in with the mainchain.
 
 ![sidechain transactions](/img/sidechains/sidechain-transactions.jpg)
 
@@ -394,7 +397,7 @@ Sidechains can be an elegant way to overcome current limitations regarding _scal
 
 The ability to deploy sidechains will dramatically enhance the possibilities of building on top of existing public blockchains. Sidechains allow the deployment of new experimental features without having to achieve consensus among all network participants. They also keep the codebase manageable and allow developers to spin up new ledger systems with instant access to a token of established value.
 
-One of the first use cases of a sidechain for the Horizen project will likely be the Treasury, moving the organization a step closer to becoming a [decentralized autonomous organization](https://www.horizen.io/academy/decentralized-autonomous-organization-dao/) (_DAO_). The main contribution of our team is providing a new backward transfer protocol that does not rely on a centralized group of validators. 
+One of the first use cases of a sidechain for the Horizen project will likely be the Treasury, moving the organization a step closer to becoming a [decentralized autonomous organization](decentralized-autonomous-organization-dao.md) (_DAO_). The main contribution of our team is providing a new backward transfer protocol that does not rely on a centralized group of validators. 
 
 Every stakeholder is eligible to become a certifier if he likes to, introducing decentralization to the process of cross-chain verification.
 

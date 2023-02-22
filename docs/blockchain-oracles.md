@@ -6,12 +6,15 @@ title: What are Blockchain Oracles?
 slug: /blockchain-oracles/
 description: An Oracle is a decentralized protocol that transmits data from external sources into smart contracts to help them execute according to predefined conditions.
 image: /img/blockchain-oracles/blockchain-oracles-meta.jpg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
 # What are Blockchain Oracles?
 
-_The primary objective of a blockchain_ is to ensure that transactions that occur within the network are correctly validated and recorded based on a [set of protocols](https://www.horizen.io/academy/blockchain-protocols/) executed by the network's [nodes](https://www.horizen.io/academy/nodes/).
+_The primary objective of a blockchain_ is to ensure that transactions that occur within the network are correctly validated and recorded based on a [set of protocols](blockchain-protocols.md) executed by the network's [nodes](blockchain-nodes.md).
 
 This sophisticated system has enabled millions of users to _securely_ and _transparently_ record _billions of dollars_ in transactions _without_ the need of a centralized intermediary.
 
@@ -21,17 +24,17 @@ While there are many obvious benefits to this technology, _one major flaw in the
 
 This means that a blockchain on its own is essentially just an isolated network, similar to a computer with no internet connection.
 
-Blockchain [consensus mechanisms](https://www.horizen.io/academy/consensus-mechanisms/) are predicated on the assumption that any external data that is inputted into the blockchain must be correct, otherwise, any transactions that are validated and recorded based on false data will remain _permanently_ embedded into the blockchain as truth.
+Blockchain [consensus mechanisms](consensus-mechanisms.md) are predicated on the assumption that any external data that is inputted into the blockchain must be correct, otherwise, any transactions that are validated and recorded based on false data will remain _permanently_ embedded into the blockchain as truth.
 
 In order for blockchains to exist as more than siloed systems and to be adopted for real world use cases, there needs to be a _trustless_, _tamper proof_ solution for feeding correct data from the external environment into the blockchain through smart contracts. 
 
-Thereby, enabling it to execute lending agreements, call outcomes in [prediction markets](https://www.horizen.io/academy/decentralized-prediction-markets/) and track the price of synthetic assets based on timely and accurate information.
+Thereby, enabling it to execute lending agreements, call outcomes in [prediction markets](decentralized-prediction-markets.md) and track the price of synthetic assets based on timely and accurate information.
 
 This solution is called an _Oracle_, and it is a critical piece of technology that powers the entire blockchain ecosystem, particularly **decentralized finance** or _DeFi_.
 
 ## Key Takeaways - Blockchain Oracles
 
-- An **Oracle** is a decentralized protocol that transmits data from external sources into [_smart contracts_](https://www.horizen.io/academy/smart-contracts/) in order to help them execute according to their predefined conditions.
+- An **Oracle** is a decentralized protocol that transmits data from external sources into [_smart contracts_](smart-contracts.md) in order to help them execute according to their predefined conditions.
 - Oracles exist to **solve the problem** of blockchain being unable to pull in data from or push data out to any external system. This means that a blockchain on its own is essentially just an isolated network, similar to a computer with no internet connection.
 - Oracle networks can be applied to a variety of **use cases**, including defi, NFTs, gaming, insurance and enterprise blockchains.
 
@@ -39,11 +42,11 @@ This solution is called an _Oracle_, and it is a critical piece of technology th
 
 Before defining what oracles are, it is essential that we explain what _smart contracts_ are and how they work.
 
-**A [smart contract](https://www.horizen.io/academy/smart-contracts/)** is a computer program that automatically executes a set of functions based on predefined rules or conditions set by the developer.
+**A [smart contract](smart-contracts.md)** is a computer program that automatically executes a set of functions based on predefined rules or conditions set by the developer.
 
 _With smart contracts_, users can conduct all kinds of agreements that involve anywhere from _two individuals to several thousands of people without_ the need of an intermediary.
 
-**For example**, smart contracts can be used to manage loan transactions between 2 anonymous parties, where one issues _collateral_ in exchange for a [_loan_](https://www.horizen.io/academy/crypto-lending/).
+**For example**, smart contracts can be used to manage loan transactions between 2 anonymous parties, where one issues _collateral_ in exchange for a [_loan_](crypto-lending.md).
 
 Depending on whether or when the loan is repaid, or if the value of the collateral remains at a certain level that does not put the lender at risk, the collateral will either be liquidated and sent to the lender or returned to the borrower.
 
@@ -78,7 +81,7 @@ A **Blockchain Oracle** is a piece of _middleware_ implemented within a computer
 - **Listen**: Monitoring the blockchain for incoming requests from users or smart contracts for off-chain data
 - **Extract**: Retrieving data from one of multiple systems that are external to the blockchain, such as off-chain APIs hosted on 3rd party servers
 - **Format**: Converting data from an external API into a readable blockchain format (i.e an input) or make it compatible with an external API (i.e an output)
-- **Validate**: Using [digital signatures](https://www.horizen.io/academy/digital-signatures/) or [zero-knowledge proofs](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/) to create a cryptographic proof that confirms the performance of a data oracle
+- **Validate**: Using [digital signatures](digital-signatures.md) or [zero-knowledge proofs](zero-knowledge-proofs-zkp.md) to create a cryptographic proof that confirms the performance of a data oracle
 - **Compute**: Performing secure computations off-chain in order to calculate variables such as the median result from multiple oracle data submissions.
 - **Broadcast**: In a similar way to how nodes sign and broadcast transactions on a blockchain so that all other nodes can verify them, oracle nodes sign and broadcast data along with corresponding proofs to the blockchain so that they can be consumed by smart contracts
 - **Output**: In certain cases, oracles will send data from a smart contract to an external system in order for that system to take actions that correspond to actions taken within the blockchain network. 
@@ -112,7 +115,7 @@ The oracle node will also need to stake a certain amount of LINK token as collat
 
 **Service agreements** are supported by a _reputation system_, which allow requesting smart contracts to review the reputation of an oracle node by checking the history of data that a node has sent to the network based on the digital signatures they must include in every transmission.
 
-The benefit of a decentralized oracle system is that it introduces [_token incentives_](https://www.horizen.io/academy/tokenomics/) as well as market competition through service agreements that nodes must bid for and can only continue to earn by maintaining a good reputation overtime.
+The benefit of a decentralized oracle system is that it introduces [_token incentives_](tokenomics.md) as well as market competition through service agreements that nodes must bid for and can only continue to earn by maintaining a good reputation overtime.
 
 To reduce the risk of centralized data sources, decentralized oracles will often aggregate multiple data sources and compute averages amongst them in order to provide the most accurate information possible.
 
@@ -144,7 +147,7 @@ _As one of the largest oracle networks_, ChainLink has served as the primary gro
 
 _NFTs_ and _GameFi_ are 2 of the largest sectors outside of Defi that oracles are currently penetrating.
 
-**Many NFT projects and [play-to-earn games](https://www.horizen.io/academy/play-to-earn-games/) leverage the same mechanics that users are exposed to in the Defi sector, including:**
+**Many NFT projects and [play-to-earn games](play-to-earn-games.md) leverage the same mechanics that users are exposed to in the Defi sector, including:**
 
 - **Collateralizing** NFTs to take out loans
 - **Fractionalizing** NFTs in order to produce fungible units that can be traded on a decentralized exchange or DEX
@@ -188,4 +191,4 @@ Oracles are utilized for several blockchain applications, including decentralize
 
 _Oracles_ can best be described as the connective tissue that holds the blockchain space together. They bear the important responsibility of transmitting the world's data into smart contracts in order to inform them about the current state of reality as it exists outside of the siloed blockchains that they operate within.
 
-In performing this critical function,_oracle networks_ serve as the primary information highway for the crypto markets and the driving force behind the movement of _billions of dollars of capital_ that exists across thousands of Dapps, [tokens](https://www.horizen.io/academy/what-is-a-token/) and DAOs within the blockchain ecosystem.
+In performing this critical function,_oracle networks_ serve as the primary information highway for the crypto markets and the driving force behind the movement of _billions of dollars of capital_ that exists across thousands of Dapps, [tokens](what-is-a-token.md) and DAOs within the blockchain ecosystem.

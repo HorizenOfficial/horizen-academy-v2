@@ -6,6 +6,9 @@ title: What are Payment Channels?
 slug: /payment-channels/
 description: We cover a highly promising approach to make blockchains security promise accessible to a more substantial user-base - payment and state channels
 image: /img/payment-channels/payment-channels-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -19,9 +22,9 @@ Now there are different ways to scale blockchains and increase their throughput,
 
  ![scalability challenges in blockchain networks](/img/payment-channels/scalability-challenges-in-blockchain-networks.jpg)
 
-We introduced [sidechains](https://www.horizen.io/academy/sidechains/) as a scaling approach that spreads the workload otherwise performed by a single set of mainchain nodes to several sets of nodes, each responsible for their sidechain.
+We introduced [sidechains](sidechains.md) as a scaling approach that spreads the workload otherwise performed by a single set of mainchain nodes to several sets of nodes, each responsible for their sidechain.
 
-We also talked about [Directed Acyclic Graphs (DAGs)](https://www.horizen.io/academy/directed-acyclic-graph-dag/) that hold the potential to dynamically adjust the on-chain, or "_on-DAG_", throughput by introducing a new type of [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) supporting _two-dimensionality_ in an otherwise mostly _one-dimensional_ blockchain world.
+We also talked about [Directed Acyclic Graphs (DAGs)](directed-acyclic-graph-dag.md) that hold the potential to dynamically adjust the on-chain, or "_on-DAG_", throughput by introducing a new type of [data structure](blockchain-data-structure.md) supporting _two-dimensionality_ in an otherwise mostly _one-dimensional_ blockchain world.
 
 We will cover another highly promising approach to make blockchains security promise accessible to a more substantial user-base - _payment channels_. 
 
@@ -38,14 +41,14 @@ Payment channels are no trivial topic, and many different projects are working o
 
 The primitives used to build a payment channel are:
 
-- **Regular transactions** in the [UTXO model](https://www.horizen.io/academy/utxo-vs-account-model/)
-- **P2SH addresses**, and more specifically [_MultiSig addresses_](https://www.horizen.io/academy/multisig/)
-- [**Cryptographic hash functions**](https://www.horizen.io/academy/hash-functions/)
+- **Regular transactions** in the [UTXO model](utxo-vs-account-model.md)
+- **P2SH addresses**, and more specifically [_MultiSig addresses_](multisig.md)
+- [**Cryptographic hash functions**](hash-functions.md)
 - **Timelocks**
 
 One premise is the construction being trustless by design: You must not have to rely on your counterparty to transact securely. 
 
-Whereas the underlying blockchain derives its security from the computational power of its miners in [Proof of Work](https://www.horizen.io/academy/proof-of-work-pow/) blockchains, _payment channels_ derive security from economic disincentives. 
+Whereas the underlying blockchain derives its security from the computational power of its miners in [Proof of Work](proof-of-work-pow.md) blockchains, _payment channels_ derive security from economic disincentives. 
 
 Namely, when one party tries to cheat, the other party will be granted all the money within the bilateral channel. This mechanism allows participants to consider updates to the channel as "final," although only computed locally.
 
@@ -53,7 +56,7 @@ Namely, when one party tries to cheat, the other party will be granted all the m
 
 Simply speaking, a payment channel is a _2-of-2 MultiSig account_, or more generally speaking, a _Pay to Script Hash_ (P2SH) address. 
 
-This can be understood as a simple [smart contract](https://www.horizen.io/academy/smart-contracts/) controlling funds, the **channel balance**, and defining the conditions under which these funds can be spent. 
+This can be understood as a simple [smart contract](smart-contracts.md) controlling funds, the **channel balance**, and defining the conditions under which these funds can be spent. 
 
 A **2-of-2 MultiSig account** is based on two private keys, both of which need to sign a transaction for it to be valid.
 
@@ -82,13 +85,13 @@ The general idea of a payment channel is the following:
 
 ### Payment Channel Networks
 
-Payment channel networks are built from multiple separate channels that can be coupled when needed. There are several payment channel networks built on top of different [blockchain protocols](https://www.horizen.io/academy/blockchain-protocols/), some even making protocols interoperable:
+Payment channel networks are built from multiple separate channels that can be coupled when needed. There are several payment channel networks built on top of different [blockchain protocols](blockchain-protocols.md), some even making protocols interoperable:
 
 - The best-known payment channel protocol built on Ethereum is [Raiden](https://raiden.network/101.html). It supports the transfer of ether, as well as _ERC20_ tokens off-chain.
 
 - [Bolt](https://eprint.iacr.org/2016/701.pdf) is a network proposed by Matthew Green and Ian Miers in 2016. _Bolt_ stands for _Blind Off-chain Lightweight Transactions_. It is currently being considered for the _Zcash_ protocol by the Zcash Foundation, but could also be deployed on top of other blockchain protocols. 
-	- Bolt achieves high privacy guarantees by leveraging _blind signatures_ and [_zero-knowledge proofs_](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/). To make privacy guarantees even stronger, the channel opening can be done through _shielded transactions_.
-	-  The authors not only plan to deploy Bolt on Zcash, but also retrofit it to offer a private payment channel option on [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) and Litecoin.
+	- Bolt achieves high privacy guarantees by leveraging _blind signatures_ and [_zero-knowledge proofs_](zero-knowledge-proofs-zkp.md). To make privacy guarantees even stronger, the channel opening can be done through _shielded transactions_.
+	-  The authors not only plan to deploy Bolt on Zcash, but also retrofit it to offer a private payment channel option on [Bitcoin](bitcoin-glossary.md) and Litecoin.
 
 - The [Lightning Network](https://lightning.network/lightning-network-paper.pdf) is a payment channel network built on top of the Bitcoin protocol, but also deployed on Litecoin. It is the _second layer network_ that has seen the most activity in terms of development and [transacted volume](https://1ml.com/). 
 	- We use the lightning network as an example to lead you through the creation of a payment channel, updating its balance, and finally closing it.
@@ -177,7 +180,7 @@ A few days after both parties agreed on the updated commitment **TX**, **Alice**
 
 All commitment **TXs** are valid Bitcoin transactions. Although they are meant to stay on the Lightning Network, they can be broadcast on-chain. 
 
-[Blockchain nodes](https://www.horizen.io/academy/nodes/) are agnostic of payment channels and have no way to verify whether a broadcast transaction represents the most recent channel state or an old one.
+[Blockchain nodes](blockchain-nodes.md) are agnostic of payment channels and have no way to verify whether a broadcast transaction represents the most recent channel state or an old one.
 
 In the Lightning Network, strong incentives were put in place for payment channels participants to act honestly. If Alice were to broadcast an old state, Bob would be credited with the entire balance of the channel and vice versa.
 
@@ -247,7 +250,7 @@ It's time to apply the second mechanism ensuring honest behavior: _one-time priv
 
 ### Using One-Time Keys to Prevent Theft
 
-Note: For the sake of simplicity we consider [private keys](https://www.horizen.io/academy/wallet-addresses/) and [digital signatures](https://www.horizen.io/academy/digital-signatures/) as "equivalent" in this article. 
+Note: For the sake of simplicity we consider [private keys](wallet-addresses.md) and [digital signatures](digital-signatures.md) as "equivalent" in this article. 
 
 **Digital signatures** are generated using a private key and a message. 
 
@@ -368,7 +371,7 @@ To connect three nodes, you need three edges; for five nodes, you need ten edges
 
 **In other words**: Individual connections don't scale well.
 
-As the name suggests, HTLCs rely on cryptographic [hash functions](https://www.horizen.io/academy/hash-functions/) and for the most part on two of their fundamental properties: 
+As the name suggests, HTLCs rely on cryptographic [hash functions](hash-functions.md) and for the most part on two of their fundamental properties: 
 - Being _preimage resistant one-way functions_ 
 - And mapping inputs to an ample output space making them _collision-resistant_. 
 
@@ -414,11 +417,11 @@ Now, there is more that you can do with blockchain besides "simple" payments. Sm
 
 But does it really make sense to have each move of your virtual chess game processed and verified by thousands of nodes all around the world? Scalability is an issue in blockchain-land.
 
-With regards to throughput, it suffices to look at the events around the launch of [CryptoKitties](https://www.cryptokitties.co/) on the [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) network in November 2017.
+With regards to throughput, it suffices to look at the events around the launch of [CryptoKitties](https://www.cryptokitties.co/) on the [Ethereum](ethereum-glossary.md) network in November 2017.
 
 It was the first dApp that gained significant traction. At some point, the dApp accounted for around **10%** of total traffic on the Ethereum blockchain, causing transaction confirmation to take much longer than usual and increasing transaction fees significantly.
 
-Many dApps don't just rely on the transfer of a [token](https://www.horizen.io/academy/what-is-a-token/), but also the transmission of data. This data, _sent to a smart contract_, updates the contracts state to represent the most recent contract interactions. The idea behind more generalized state channel constructions is moving these data transfers off-chain into state channel networks where they can be performed at a lower financial and computational cost. 
+Many dApps don't just rely on the transfer of a [token](what-is-a-token.md), but also the transmission of data. This data, _sent to a smart contract_, updates the contracts state to represent the most recent contract interactions. The idea behind more generalized state channel constructions is moving these data transfers off-chain into state channel networks where they can be performed at a lower financial and computational cost. 
 
 Just like with payment channels, only the channel opening and closing happen on-chain, while participants can transact money and data almost indefinitely while the channel is established. State channels are designed in a way that makes channel updates broadcast-able on the underlying blockchain, just like commitment transactions in payment channels represent valid on-chain transactions when broadcast. 
 

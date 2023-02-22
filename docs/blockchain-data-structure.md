@@ -6,6 +6,9 @@ title: Blockchain as a Data Structure
 slug: /blockchain-as-a-data-structure/
 description: This article explains blockchain at an advanced level from a computer scientist's perspective looking at it as a data structure.
 image: /img/blockchain-data-structure/blockchain-data-structure-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -14,18 +17,18 @@ image: /img/blockchain-data-structure/blockchain-data-structure-meta.jpeg
 If you have read up on Bitcoin, blockchain, and cryptocurrencies before, you may know there is a distinction between:
 
 - **Blockchain** technology in general
-- A [**protocol**](https://www.horizen.io/academy/blockchain-protocols/), or the rules of a specific blockchain
+- A [**protocol**](blockchain-protocols.md), or the rules of a specific blockchain
 - The **currency** that is running on top of this blockchain - if there is one
 
 You can look at blockchain in many different ways, on the one hand, it is a way to store data and, on the other hand, a _language or protocol_ to transfer value.
 
-Looking at blockchain through the lens of cryptocurrencies has been the dominant narrative until recently. [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) is the first thing most people will associate with blockchain technology, but storing [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/) transactions is only one use case out of many.
+Looking at blockchain through the lens of cryptocurrencies has been the dominant narrative until recently. [Bitcoin](bitcoin-glossary.md) is the first thing most people will associate with blockchain technology, but storing [cryptocurrency](cryptocurrency.md) transactions is only one use case out of many.
 
 Let’s take a closer look at the first use case for blockchain technology - _digital money_. To have a monetary system without central control, you must have a special and sophisticated way to handle all the data produced with each transfer. 
 
 Imagine if every person could access and modify the databases kept by banks. It would be a disaster.
 
-In order to make decentralized money a reality, a method of accounting had to be developed - the [**UTXO model**](https://www.horizen.io/academy/utxo-vs-account-model/), also referred to as _triple-entry accounting_. You can compute every account balance at any time by storing all transactions in a _digital ledger_.
+In order to make decentralized money a reality, a method of accounting had to be developed - the [**UTXO model**](utxo-vs-account-model.md), also referred to as _triple-entry accounting_. You can compute every account balance at any time by storing all transactions in a _digital ledger_.
 
 A digital ledger used for digital money requires a set of properties that were not achievable before blockchain came along.
 
@@ -63,7 +66,7 @@ Many peers keep a copy of the data, and no single peer has the power to change o
 
 There is no centralized entity, like a bank or clearinghouse, responsible for accepting and processing new transactions.
 
-**Cryptocurrencies** _are permissionless because every individual abiding by the rules of the protocol can [create a wallet](https://www.horizen.io/academy/crypto-wallets/) and send a transaction without needing to sign up to use the service_.
+**Cryptocurrencies** _are permissionless because every individual abiding by the rules of the protocol can [create a wallet](crypto-wallets.md) and send a transaction without needing to sign up to use the service_.
 
 The transaction is then broadcast to the network, and every participant (or node or peer) keeps a copy of it. A node can be operated by a person, a store accepting crypto, or a bank; it makes no difference who you are. 
 
@@ -130,7 +133,7 @@ If this node does not contain the data you were looking for either, you continue
 
 ![linked list](/img/blockchain-data-structure/linked-list-2.jpg)
 
-Programs that use a linked list to store data don’t have to know how many data elements you want to store beforehand, but the linked list does need to know what each element consists of. As previously stated, data elements of a linked list are called [nodes](https://www.horizen.io/academy/nodes/). Each node can contain several objects of different types.
+Programs that use a linked list to store data don’t have to know how many data elements you want to store beforehand, but the linked list does need to know what each element consists of. As previously stated, data elements of a linked list are called [nodes](blockchain-nodes.md). Each node can contain several objects of different types.
 
 For example. If you were to store information about cars in a linked list, you could define a node as the set of information about the brand, model, year produced, and license plate.
 
@@ -152,7 +155,7 @@ Using a linked list gives you more flexibility in terms of expanding the list la
 
 ### Hash Table
 
-The last data structure we want to look at before moving on to the blockchain is the _hash table_. The data elements you are storing in a hash table are called _keys_. To store a _key_, it is first hashed using a [hash function](https://www.horizen.io/academy/hash-functions/). 
+The last data structure we want to look at before moving on to the blockchain is the _hash table_. The data elements you are storing in a hash table are called _keys_. To store a _key_, it is first hashed using a [hash function](hash-functions.md). 
 
 All you need to know at this point is that a hash function uses an _argument_ of variable length as input and produces an output of fixed length. In the example below, the output is a three-digit number.
 
@@ -215,9 +218,9 @@ _The data structure of a blockchain is naturally_ tamper-evident. Any change of 
 
 While it is not possible to change or delete data, it is easy to add data in a new block to the chain. For example, you could add a new transaction on a cryptocurrency blockchain. 
 
-The transaction is easy to verify because all the preceding transactions recorded on the network are immutable - this makes the verification of transactions simple. When [Address](https://www.horizen.io/academy/wallet-addresses/) **Y** wants to spend amount **X**, it must have a balance of at least amount **X**.
+The transaction is easy to verify because all the preceding transactions recorded on the network are immutable - this makes the verification of transactions simple. When [Address](wallet-addresses.md) **Y** wants to spend amount **X**, it must have a balance of at least amount **X**.
 
-The relationship between the data structure, the protocol and the [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/), and their inner workings, are what make the blockchain a powerful tool for building trustless digital money.
+The relationship between the data structure, the protocol and the [consensus mechanism](consensus-mechanisms.md), and their inner workings, are what make the blockchain a powerful tool for building trustless digital money.
 
 ## The Properties of Blockchains
 
@@ -244,7 +247,7 @@ This set of rules, or **_protocol_**, can achieve the following traits:
 - **Consistency:** Newly added data cannot conflict with data already in the database.
 - **Tamper Evidence:** Append only data structure that makes it immediately apparent if data has been changed. Coupled with a strong consensus mechanism that incentivizes rejection of invalid blocks this results in immutability.
 - **Ownable:** Data can be attributed to a sole owner. The data is publicly verifiable, but only the owner can make changes to it. In the context of cryptocurrencies, this means everybody can see the transactions, but only the owner can spend a UTXO.
-- **Distributed:** The database is consistent without a central party acting as a gatekeeper. This results from the protocol incentivizing correct behavior. Consensus and fault-tolerance are the holy grail of [distributed systems](https://www.horizen.io/academy/consensus-in-distributed-systems/) that Bitcoin achieved for the first time in history.
+- **Distributed:** The database is consistent without a central party acting as a gatekeeper. This results from the protocol incentivizing correct behavior. Consensus and fault-tolerance are the holy grail of [distributed systems](consensus-in-distributed-systems.md) that Bitcoin achieved for the first time in history.
 
 You get immutability of data only if there is a strong consensus mechanism in place that makes the network participants decline invalid blocks. Otherwise, a blockchain is only tamper-evident.
 
@@ -265,7 +268,7 @@ The _block header_ contains the most important information about a block.
 - The **Merkle Root Hash** - _hashMerkleRoot_ - represents a summary of all transactions included in the block.
 - The **Time** is the _Unix epoch time_ when the miner started hashing the header for the mining process.
 - The **Bits** or _nBits_ are an encoded version of the current difficulty of finding a new block.
-- The **Nonce** - or _number used once_ - is the variable that miners change to modify the block headers hash for its value to meet the difficulty. This process is covered in detail in our article on [mining](https://www.horizen.io/academy/mining-in-blockchain/).
+- The **Nonce** - or _number used once_ - is the variable that miners change to modify the block headers hash for its value to meet the difficulty. This process is covered in detail in our article on [mining](crypto-mining.md).
 
 Merkle Trees play an important role in ensuring the integrity of data in the blockchain. They are also used in other systems such as **IPFS**, the _InterPlanetary File System_ and several implementations of **NoSQL** databases. Let’s take a look at how they work and what they do before we continue with what a transaction looks like from a data perspective.
 
@@ -302,7 +305,7 @@ A transaction is a message to the network informing it about a transfer of money
 - **tx\_ in count:** Is the number of Inputs used - so the number of UTXOs consumed.
 - **tx\_ in:** Each input used is characterized by four data points: the outpoint it spends, the size of the _signature_ required to spend that outpoint, the signature itself, and the _sequence number_. The sequence number can be used to modify the _spending conditions_ of an outpoint, but we are getting ahead of ourselves.
 - **tx\_ out count:** Is the number of outputs created in the transaction.
-- **tx\_ out:** Transaction outputs. Each output is characterized by three data points: the amount spent, the size of the spending condition, and the spending condition itself that can be satisfied with a [digital signature](https://www.horizen.io/academy/digital-privacy/) based on the new owners private key.
+- **tx\_ out:** Transaction outputs. Each output is characterized by three data points: the amount spent, the size of the spending condition, and the spending condition itself that can be satisfied with a [digital signature](digital-privacy.md) based on the new owners private key.
 - **lock\_ time:** Is the Unix epoch time or block number after which the outputs are spendable. This is optional.
 
 Each transaction is broadcast in a serialized byte format called raw format. It is then hashed twice **(_SHA256(SHA256())_)** to create its transaction ID - **TXID** - which, as you already know, is used to create the Merkle tree.
@@ -310,7 +313,7 @@ Each transaction is broadcast in a serialized byte format called raw format. It 
 Transactions, being the basic building block of a blockchain, are an example of this:
 
 - **First**, an understanding of the UTXO accounting model is necessary.
-- **Second**, to understand the ownable part of the data on a blockchain one needs to understand the basic principles of [public-key cryptography](https://www.horizen.io/academy/public-key-cryptography-pkc/): _private keys, public keys, addresses, and digital signatures_. 
+- **Second**, to understand the ownable part of the data on a blockchain one needs to understand the basic principles of [public-key cryptography](public-key-cryptography-pkc.md): _private keys, public keys, addresses, and digital signatures_. 
 	- Each transaction input includes a signature that authorizes spending, and each newly created output includes information about what a signature needs to look like in order to authorize its spending.
 - **Lastly**, the overall structure of the blockchain needs to be understood.
 

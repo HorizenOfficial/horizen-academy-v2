@@ -6,6 +6,9 @@ title: What is Public-Key Cryptography? - PKC
 slug: /public-key-cryptography-pkc/
 description: Public-Key Cryptography makes it possible to represent identity on the blockchain. It is the second cornerstone of blockchain technology besides hash functions
 image: /img/public-key-cryptography-pkc/public-key-cryptography-pkc-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -13,7 +16,7 @@ image: /img/public-key-cryptography-pkc/public-key-cryptography-pkc-meta.jpeg
 
 Since the goal of the original blockchain design was to enable a new and fair form of money, it would be great to be able to actually own money in this system, wouldn’t it? There must be a concept of identity to have ownership on the blockchain - you cannot have ownership if there is no representation of the owner.
 
-_Public-Key Cryptography_ makes it possible to represent identity on the blockchain. It is the second cornerstone of blockchain technology besides [hash functions](https://www.horizen.io/academy/hash-functions/). 
+_Public-Key Cryptography_ makes it possible to represent identity on the blockchain. It is the second cornerstone of blockchain technology besides [hash functions](hash-functions.md). 
 
 While hash functions are used to verify the authenticity and integrity of data, **public-key cryptography** is used to verify ownership on the blockchain.
 
@@ -27,17 +30,17 @@ _Let’s take a step back and start from the beginning._
 
 - Private keys
 - Public keys
-- [Addresses](https://www.horizen.io/academy/wallet-addresses/)
+- [Addresses](wallet-addresses.md)
 - and Digital Signatures
 
 When you own some cryptocurrency, the blockchain contains a record that there are some coins associated with your **public key**. 
 
 - You must provide a **digital signature** to authorize the spending of those coins. 
-- You can only provide this [digital signature](https://www.horizen.io/academy/digital-signatures/) if you are in the possession of the **private key** that corresponds to the public key.
+- You can only provide this [digital signature](digital-signatures.md) if you are in the possession of the **private key** that corresponds to the public key.
 
 **public-key cryptography**, also known as asymmetric cryptography, to verify ownership. Every user creates two keys when he joins the network, a public, and a private key.
 
-The **public key** is like an address, in that you give it to anyone who wants to send you money. If a friend wants to send you some [cryptocurrency](https://www.horizen.io/academy/cryptocurrency/), you will give them your public key.
+The **public key** is like an address, in that you give it to anyone who wants to send you money. If a friend wants to send you some [cryptocurrency](cryptocurrency.md), you will give them your public key.
 
 The **private key** is like a password, in that it can access your money and spend it, similar to how someone with your email password can't log into your account and send emails in your name.
 
@@ -47,9 +50,9 @@ The **private key** is like a password, in that it can access your money and spe
 
 To understand how your keys and addresses work together, we must introduce **Elliptic Curve Cryptography** (_ECC_) first. 
 
-There are different ways to build a public-key cryptography scheme. [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) and most other cryptocurrencies use [Elliptic Curve Cryptography](https://www.horizen.io/academy/elliptic-curve-cryptography-ecc/) (ECC).
+There are different ways to build a public-key cryptography scheme. [Bitcoin](bitcoin-glossary.md) and most other cryptocurrencies use [Elliptic Curve Cryptography](elliptic-curve-cryptography-ecc.md) (ECC).
 
-_Bitcoin, [Ethereum](https://www.horizen.io/academy/ethereum-glossary/) and _many other currencies_ use a curve called **secp256k1** and it looks like the one above. The equation for this curve is **y^2 = x^3 + 7**. 
+_Bitcoin, [Ethereum](ethereum-glossary.md) and _many other currencies_ use a curve called **secp256k1** and it looks like the one above. The equation for this curve is **y^2 = x^3 + 7**. 
 
 What make elliptic curves useful is that you can do math with them, and the math you do on the curves has some special properties.
 
@@ -137,7 +140,7 @@ There are different ways to convert a string of bits into data that humans can d
 
 **Base58Check** is a way to convert bits into alphanumeric characters, but it excludes the four characters **_0, O, I, and l_**. Base58Check removes these characters from your address to reduce errors when copying addresses manually and proofreading them.
 
-You can generate as many addresses as you like from a single private key, and [wallets](https://www.horizen.io/academy/crypto-wallets/) do this for you automatically. It is a feature to enhance [your privacy](https://www.horizen.io/academy/digital-privacy/), as it makes it harder for a third party to link all your payments together.
+You can generate as many addresses as you like from a single private key, and [wallets](crypto-wallets.md) do this for you automatically. It is a feature to enhance [your privacy](digital-privacy.md), as it makes it harder for a third party to link all your payments together.
 
 ### Digital Signature
 

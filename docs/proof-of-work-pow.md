@@ -6,6 +6,9 @@ title: What is Proof of Work? - POW
 slug: /proof-of-work-pow/
 description: Proof of Work makes it infeasible to change records on the blockchain because an attacker would have to redo all the work that went into building the blocks.
 image: /img/proof-of-work-pow/proof-of-work-pow-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -24,11 +27,11 @@ It's a _proof of work_.
 
 Blockchain proof of work serves a similar purpose. It demonstrates the difficulty of building a blockchain by adding zeros to every block hash. 
 
-While the [blockchain as a data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/) is inherently _tamper-evident_, only PoW makes it _immutable_. A blockchain allows spectators to easily detect changes to records, but it doesn't prevent changes from occurring. 
+While the [blockchain as a data structure](blockchain-data-structure.md) is inherently _tamper-evident_, only PoW makes it _immutable_. A blockchain allows spectators to easily detect changes to records, but it doesn't prevent changes from occurring. 
 
 **Proof of Work** on the other hand, makes it infeasible to change any records, because an attacker would have to redo all the work that went into building the block(s).
 
-The [consensus mechanism](https://www.horizen.io/academy/consensus-mechanisms/) in most blockchains comprises two components - Proof of Work and the _longest chain rule_. 
+The [consensus mechanism](consensus-mechanisms.md) in most blockchains comprises two components - Proof of Work and the _longest chain rule_. 
 
 PoW mostly provides _Sybil resistance_ combined with an incentive system that makes honest behavior the most profitable strategy. The longest chain rule resolves disputes in case two valid blocks are found at the same time.
 
@@ -53,7 +56,7 @@ Proof of Work is straight forward:
 
 ### Step 1 - Collecting Transactions
 
-A miner starts creating a block by including the _coinbase transaction_ as the first transaction. The **coinbase transaction** is a special type of transaction that does not have any inputs, but has an output sending coins to an [address](https://www.horizen.io/academy/wallet-addresses/) controlled by the miner. 
+A miner starts creating a block by including the _coinbase transaction_ as the first transaction. The **coinbase transaction** is a special type of transaction that does not have any inputs, but has an output sending coins to an [address](wallet-addresses.md) controlled by the miner. 
 
 This output is worth the current _block subsidy_ (6.25 ZEN at the time of writing) together with the _transaction fees_ of all included transactions. The sum of the block subsidy and the transaction fees make up the **block reward**.
 
@@ -61,7 +64,7 @@ This output is worth the current _block subsidy_ (6.25 ZEN at the time of writin
 
 By allowing miners to include the coinbase transaction, they are incentivized to perform the computationally expensive task of producing new blocks. 
 
-When a block is produced, new coins are created to pay the miner, which means the [protocol](https://www.horizen.io/academy/blockchain-protocols/) can pay for its own maintenance. Each existing _ZEN_ or _BTC_ started out in a coinbase transaction.
+When a block is produced, new coins are created to pay the miner, which means the [protocol](blockchain-protocols.md) can pay for its own maintenance. Each existing _ZEN_ or _BTC_ started out in a coinbase transaction.
 
 Next, miners collect new and unconfirmed transactions in their block. A transaction is called unconfirmed when it is not included in the blockchain yet. 
 
@@ -93,7 +96,7 @@ The terms _target_ and _difficulty_ are often used interchangeably. Technically,
 
 The **target** is a value that the block hash has to be equal to or below in order to be considered valid. 
 
-The **difficulty** is a relative measure of how difficult it is to find a hash below a given target. The highest possible target in [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/) is defined as:
+The **difficulty** is a relative measure of how difficult it is to find a hash below a given target. The highest possible target in [Bitcoin](bitcoin-glossary.md) is defined as:
 
 0x00000000FFFF0000000000000000000000000000000000000000000000000000.
 
@@ -109,7 +112,7 @@ Proof of Work is the bridge connecting the digital and the physical world. It ti
 
 Prior to PoW, consensus was only achievable with a known set of participants or a reliable communications network. Making the consensus process public left the system vulnerable to _Sybil attacks_. With Proof of Work, creating many Sybil identities does not provide an attacker with an advantage unless he backs them with meaningful computational resources.
 
-While a Proof of Work system typically uses a one-way function like a [hash function](https://www.horizen.io/academy/hash-functions/), a proof of work algorithm can be more than just a hash function.
+While a Proof of Work system typically uses a one-way function like a [hash function](hash-functions.md), a proof of work algorithm can be more than just a hash function.
 The most used type of Proof of Work is the _Hashcash_ style PoW depicted in the graphic above. 
 
 _Hashcash_ was introduced in 1997 by Adam Back as a measure against spam. Recipients would require the sender to perform a Proof of Work in order to accept the mail. While this computational overhead does not affect regular users sending a few mails per day, "professional" spam would be much harder to produce. 
@@ -127,7 +130,7 @@ Horizen uses both, each for a different purpose.
 
 Just like Bitcoin and most other blockchains, mining is done via a _solution-verification protocol_. Miners find a solution to a problem. All nodes can verify the solution at any point in time. 
 
-Even a node that has been offline for months can verify whether or not the blocks it receives during synchronization from an [untrusted ](https://www.horizen.io/academy/nodes/) are valid. It is non-interactive.
+Even a node that has been offline for months can verify whether or not the blocks it receives during synchronization from an [untrusted ](blockchain-nodes.md) are valid. It is non-interactive.
 
 Nodes on the Horizen network are incentivized by getting a share of the block subsidy. Because we want to incentivize a robust network of capable nodes, the protocol has certain performance requirements for nodes. The requirements are checked by sending challenges to the nodes. 
 
@@ -144,7 +147,7 @@ Some criteria for a good Proof of Work system in a decentralized blockchain with
 		- For **54,063,013** this becomes a much more difficult task but verification can be done with any rudimentary calculator.
 - **Optimization Free** - An optimization free algorithm means that you _cannot_ improve the efficiency of performing that task through software or algorithms. 
 	- Battle proven one-way functions lend themselves well for optimization free algorithms. There is no way around a trial-and-error approach. The _Generalized Birthday Problem_ that we will explain in a bit is a well studied approach that cannot be optimized.
-- **Amortization free** - This means that a [miners economies of scale](https://www.horizen.io/academy/economies-of-mining/) cannot render all other mining pools irrelevant. 
+- **Amortization free** - This means that a [miners economies of scale](crypto-mining-economics.md) cannot render all other mining pools irrelevant. 
 	- In the best case scenario it wouldn't matter if a miner runs one miner or a million. This is obviously not entirely practical. _Cooling_, _electricity_, and _facilities_ to set up mining equipment will always enable large miners to operate at a better margin than smaller operations. The PoW algorithm itself should not allow this advantage though.
 - **Independently Tunable Parameters**: Certain parameters of the "puzzle" miners are attempting to solve should be easy to adapt. One of those parameters is the target or difficulty we discussed above. 
 	- By being able to tune this parameter depending on miner activity, the protocol can attempt to keep the block time constant.
@@ -192,7 +195,7 @@ As we mentioned above, this design didn't keep them ASIC resistant for long. It 
 
 ### An Edge-Case - The Tangle
 
-An interesting side note is that bandwidth is a consideration in the IOTA [Tangle](https://blog.iota.org/the-tangle-an-illustrated-introduction-4d5eae6fe8d4/), designed for use in IOT devices performing many micro transactions. The Tangle is a [Directed Acyclic Graph (DAG)](https://www.horizen.io/academy/directed-acyclic-graph-dag/) consisting of individual transactions. 
+An interesting side note is that bandwidth is a consideration in the IOTA [Tangle](https://blog.iota.org/the-tangle-an-illustrated-introduction-4d5eae6fe8d4/), designed for use in IOT devices performing many micro transactions. The Tangle is a [Directed Acyclic Graph (DAG)](directed-acyclic-graph-dag.md) consisting of individual transactions. 
 
 Each transaction has a small proof of work attached. The protocol's security is based on the assumption that honest participants will make up the majority of transactions and also make up the majority of computational power.
 
@@ -292,7 +295,7 @@ PoW also has some vulnerabilities- no system is perfect. It is hard to achieve B
 
 Building a working system with more than one third of the network acting Byzantine took many years. However, combining Proof of Work and the _longest chain rule_ can tolerate malicious hash contributions of up to **49%**.
 
-If an attacker controls the majority of hash rate, he can reliably perform a [51% attack](https://www.horizen.io/academy/51-attacks/). This means he can create blocks faster than the honest partition of the network. 
+If an attacker controls the majority of hash rate, he can reliably perform a [51% attack](51-attack.md). This means he can create blocks faster than the honest partition of the network. 
 
 According to the longest chain rule, the honest and rational actors of the network will accept the malicious chain as valid, once it is broadcast. This allows the malicious actor to perform double spends.
 The attacker spends coins in a transaction that is included in the honest chain. He then rewrites this part of the transaction history with his own blocks, which don't include his spending transaction. 
@@ -311,7 +314,7 @@ $$
 DF(n) = \frac{n}{2} (n+1)
 $$
 
-For a **4** block delay, an additional **10** confirmations are required for the rest of the network to accept the [fork](https://www.horizen.io/academy/blockchain-forks/). For a short delay of one block time, the delay function gives a penalty of one block - which is equivalent to the longest chain rule. In this case only one additional confirmation is needed to break the tie between two blocks of the same height.
+For a **4** block delay, an additional **10** confirmations are required for the rest of the network to accept the [fork](blockchain-forks.md). For a short delay of one block time, the delay function gives a penalty of one block - which is equivalent to the longest chain rule. In this case only one additional confirmation is needed to break the tie between two blocks of the same height.
 
 For long delays, say **20** blocks, the penalty would incur an additional **252** blocks of confirmation before the malicious chain were to be considered valid. Waiting for **20** confirmations would mean a reasonable confirmation time of **50** minutes. 
 
@@ -320,7 +323,7 @@ This makes _51% attacks_ and the resulting double spends much harder. In practic
 ### DDos Attacks
 
 Another potential threat is **(Distributed) Denial of Service or** _(D)DoS_ attacks, where a malicious actor tries to slow down or halt the network by sending a large number of messages in order to limit the network's capacity. In blockchain, the attacker would replace messages with transactions to flood the network. 
-While [(D)DoS attacks](https://www.horizen.io/academy/blockchain-attacks/) can certainly harm the system, they can't affect the integrity of the ledger. It doesn't make much sense for a rational actor to spend resources on a DoS attack, since the attacker has to pay transaction fees as well, if the only effect is a temporary slow down of the network.
+While [(D)DoS attacks](blockchain-attacks.md) can certainly harm the system, they can't affect the integrity of the ledger. It doesn't make much sense for a rational actor to spend resources on a DoS attack, since the attacker has to pay transaction fees as well, if the only effect is a temporary slow down of the network.
 
 ### Sybil Attacks
 

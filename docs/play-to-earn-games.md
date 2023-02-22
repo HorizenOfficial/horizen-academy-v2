@@ -6,6 +6,9 @@ title: What are Play-to-Earn Games? - Blockchain Games
 slug: /play-to-earn-games/
 description: Play-to-Earn is a type of game where players can earn tokens or NFTs when they win or accumulate tokens in the process of gameplay.
 image: /img/play-to-earn-games/play-to-earn-games-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -21,7 +24,7 @@ The synergy between blockchain technology and gaming can be seen in how both ind
 
 ## The Play-to-Earn Model
 
-Blockchain gaming is one of the most exciting innovations occurring in the [web3](https://www.horizen.io/academy/web3/) space. 
+Blockchain gaming is one of the most exciting innovations occurring in the [web3](web3.md) space. 
 
 Blockchains enhance **incentive mechanisms** in games by placing them on a decentralized ledger where users can participate and earn token rewards under a more _open_, _transparent_ and _permissionless_ system. 
 
@@ -29,7 +32,7 @@ This model of gaming is called _Play-to-Earn_, or **P2E**, and it has captivated
 
 ## How do Play-to-Earn Games Work?
 
-**Play-to-Earn** is a type of game where players can _earn_ tokens or NFTs when they win or accumulate [tokens](https://www.horizen.io/academy/what-is-a-token/) in the process of gameplay. 
+**Play-to-Earn** is a type of game where players can _earn_ tokens or NFTs when they win or accumulate [tokens](what-is-a-token.md) in the process of gameplay. 
 
 In traditional games, the assets that gamers accumulate are owned by a centralized company and can arbitrarily be inflated or removed at any time. 
 
@@ -42,11 +45,11 @@ This gives players full control of their in-game assets, allowing anyone to veri
 
 _This means that the in-game assets can be:_
 
-- Stored in a players [_wallet_](https://www.horizen.io/academy/crypto-wallets/)
+- Stored in a players [_wallet_](crypto-wallets.md)
 - Transferred to anyone on the blockchain _network_
 - Traded for different assets or cryptocurrencies using a _DEX_ 
 
-In-game assets could also be made [**interoperable**](https://www.horizen.io/academy/blockchain-interoperability/), meaning they can be transferred between different gaming environments if the blockchain games operate on the same blockchain network or a blockchain that is [EVM-compatible](https://www.horizen.io/academy/ethereum-virtual-machine-evm/). 
+In-game assets could also be made [**interoperable**](blockchain-interoperability.md), meaning they can be transferred between different gaming environments if the blockchain games operate on the same blockchain network or a blockchain that is [EVM-compatible](ethereum-virtual-machine-evm.md). 
 
 This can provide significant benefits to avid gamers who are already familiar with using tokens as currency within digital economies, but have never truly been able to claim ownership of the assets and achievements they accumulate in a game. 
 
@@ -68,7 +71,7 @@ While many teams in crypto assumed that video game fans would be attracted to ga
 
 Players rarely stick around to continue playing the game once the token rewards _subside_ or the price of the token _falls_. 
 
-Furthermore, as a result of misaligned incentives, many crypto game developers spend more time creating [complex token incentive models](https://www.horizen.io/academy/why-create-a-token/) than focusing on building games that are actually fun and engaging, leading to the creation of mediocre, poorly performing games that do not appeal to mainstream audiences. 
+Furthermore, as a result of misaligned incentives, many crypto game developers spend more time creating [complex token incentive models](why-create-a-token.md) than focusing on building games that are actually fun and engaging, leading to the creation of mediocre, poorly performing games that do not appeal to mainstream audiences. 
 
 _The solution to this is simple:_ 
 

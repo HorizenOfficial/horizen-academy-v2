@@ -6,6 +6,9 @@ title: What are Cross Chain Transactions?
 slug: /cross-chain-transactions/
 description: In this article, we take a close look at transactions that move assets between different blockchains, specifically a mainchain and its sidechains
 image: /img/cross-chain-transactions/cross-chain-transactions-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -13,9 +16,9 @@ image: /img/cross-chain-transactions/cross-chain-transactions-meta.jpeg
 
 In this article, we take a close look at transactions that move assets _between_ different blockchains, specifically a _mainchain_ and its _sidechains_. 
 
-**Sidechains** are [blockchains interoperable](https://www.horizen.io/academy/blockchain-interoperability/) with an existing _mainchain_. 
+**Sidechains** are [blockchains interoperable](blockchain-interoperability.md) with an existing _mainchain_. 
 
-A special transaction is needed to transfer assets from one chain to another. These are called [**cross-chain transactions**](https://www.horizen.io/academy/cross-chain-transactions/).
+A special transaction is needed to transfer assets from one chain to another. These are called [**cross-chain transactions**](cross-chain-transactions.md).
 
 The way we structured this article follows the process of a developer building a sidechain:
 - **First**, the _sidechain_ needs to be deployed 
@@ -27,7 +30,7 @@ We will explain how all these actions can be performed and what options a develo
 
 ## The Zendoo Sidechain Construction
 
-The [Zendoo sidechain construction](https://www.horizen.io/academy/zendoo/) allows the deployment of an arbitrary number of sidechains on top of existing Bitcoin-based blockchains with a single one-off change to the [mainchain protocol](https://www.horizen.io/academy/blockchain-protocols/). 
+The [Zendoo sidechain construction](zendoo.md) allows the deployment of an arbitrary number of sidechains on top of existing Bitcoin-based blockchains with a single one-off change to the [mainchain protocol](blockchain-protocols.md). 
 
 Zendoo is based on an _asymmetric peg_ between the mainchain and its sidechains. The sidechains monitor events on the mainchain, but the main blockchain is agnostic to its sidechains.
 
@@ -39,7 +42,7 @@ Here, the receiving chain (mainchain) cannot verify incoming backward transfers 
 
 The backward transfers and the proof are grouped into a **Withdrawal Certificate**, a special container that structures communication with the mainchain.
 
-The _cryptographic proofs_ allow the mainchain to verify state transitions of the [sidechain](https://www.horizen.io/academy/sidechains/) without monitoring it directly. Some modifications to the mainchain needed to enable this sidechain design are the following:
+The _cryptographic proofs_ allow the mainchain to verify state transitions of the [sidechain](sidechains.md) without monitoring it directly. Some modifications to the mainchain needed to enable this sidechain design are the following:
 
 ### Sidechain Transactions Commitment
 
@@ -72,7 +75,7 @@ When users want to transfer coins from the mainchain to a sidechain, they create
 
 Depending on the consensus rules of the given sidechain, the `receiverMetadata` entails different types of data. This part of the output is not verified by the mainchain, as it is agnostic to the sidechain consensus protocol.
 
-When we consider a blockchain running the [UTXO model](https://www.horizen.io/academy/utxo-vs-account-model/), for instance, Horizen or [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/), a "forward output" can be one of many outputs in a regular transaction. Not all outputs need to be "forward outputs", e.g., change outputs are required.
+When we consider a blockchain running the [UTXO model](utxo-vs-account-model.md), for instance, Horizen or [Bitcoin](bitcoin-glossary.md), a "forward output" can be one of many outputs in a regular transaction. Not all outputs need to be "forward outputs", e.g., change outputs are required.
 
 ```CPP
 type Transaction
@@ -130,15 +133,15 @@ Lastly, forward transfers, which cannot be processed, are collected to be includ
 
 There are several ways to realize sidechain-internal transactions in Zendoo. As long as a sidechain adheres to the cross-chain transfer protocol, internal transactions can be implemented; however, the use case deems appropriate. 
 
-One of the first considerations that needs to go into a decision of the transactional model, is if the sidechain will run the [UTXO or account model](https://www.horizen.io/academy/wallet-addresses/). One reason to diverge from the UTXO model used in Horizen's mainchain and the Latus sidechain construction would be the easier implementation of complex [smart contract](https://www.horizen.io/academy/smart-contracts/) functionalities in the account model.
+One of the first considerations that needs to go into a decision of the transactional model, is if the sidechain will run the [UTXO or account model](wallet-addresses.md). One reason to diverge from the UTXO model used in Horizen's mainchain and the Latus sidechain construction would be the easier implementation of complex [smart contract](smart-contracts.md) functionalities in the account model.
 
-Recall how the Zendoo protocol doesn't require a sidechain to be a blockchain at all. User account balances could be maintained in a more traditional [data structure](https://www.horizen.io/academy/blockchain-as-a-data-structure/), or even a highly progressive one like a [directed acyclic graph (DAG)](https://www.horizen.io/academy/directed-acyclic-graph-dag/). 
+Recall how the Zendoo protocol doesn't require a sidechain to be a blockchain at all. User account balances could be maintained in a more traditional [data structure](blockchain-data-structure.md), or even a highly progressive one like a [directed acyclic graph (DAG)](directed-acyclic-graph-dag.md). 
 
 The option space for implementing sidechain internal transactions is very large.
 
 ### Sidechain Internal Transactions in Latus
 
-Latus uses the UTXO accounting model. Transactions on Latus sidechains work just like regular UTXO on-chain transactions. At least one input is consumed with each transaction, spending of which is authorized through a [digital signature](https://www.horizen.io/academy/digital-signatures/). 
+Latus uses the UTXO accounting model. Transactions on Latus sidechains work just like regular UTXO on-chain transactions. At least one input is consumed with each transaction, spending of which is authorized through a [digital signature](digital-signatures.md). 
 
 The total amount of the outputs created must be less than or equal to the number of inputs consumed.
 
@@ -162,7 +165,7 @@ Grouping backward transfers comes with two advantages compared to broadcasting t
 
 First, it reduces the amount of inter-chain communication. If you consider a system with a single sidechain, this advantage could be considered negligible - in a system with tens and potentially hundreds of sidechains not so much. 
 
-Second, it might reduce the computational burden on the sidechain. Remember how each withdrawal certificate has a [SNARK](https://www.horizen.io/academy/zk-snarks-vs-zk-starks/) proof attached that authorizes the transaction and proves correct state transitions within the sidechain. _Generating this proof comes at a computational cost_, which, depending on the proving system adopted by the sidechain, may be reduced by broadcasting sidechain updates to the mainchain less frequently.
+Second, it might reduce the computational burden on the sidechain. Remember how each withdrawal certificate has a [SNARK](zk-snarks-vs-zk-starks.md) proof attached that authorizes the transaction and proves correct state transitions within the sidechain. _Generating this proof comes at a computational cost_, which, depending on the proving system adopted by the sidechain, may be reduced by broadcasting sidechain updates to the mainchain less frequently.
 
 Note that the mainchain consensus protocol does not impose any rules on how exactly a withdrawal certificate should be generated, or by whom it should be submitted.
 

@@ -6,6 +6,9 @@ title: From ZenCash to Horizen
 slug: /zencash-to-horizen/
 description: This article describes our journey from ZenCash to Horizen. The initial Horizen team was not selected, it emerged from committed, passionate volunteers.
 image: /img/zencash-to-horizen/zencash-to-horizen-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -19,11 +22,11 @@ _It started almost by accident_. **Rob Viglione**, the _co-founder_ of **Horizen
 
 ZClassic had a really informal team, but Rob was passionate about this project. He gradually increased his commitment and activity in the community and took on a leadership role as the project developed.
 
-Rob met **Rolf Versluis** while working collaboratively on ZClassic. They both loved the ZClassic project, but they had a vision for what the future of _privacy_, [_governance_](https://www.horizen.io/academy/blockchain-governance/), and _economics_ could look like. They learned of one another's shared visions through working together on the project. 
+Rob met **Rolf Versluis** while working collaboratively on ZClassic. They both loved the ZClassic project, but they had a vision for what the future of _privacy_, [_governance_](blockchain-governance.md), and _economics_ could look like. They learned of one another's shared visions through working together on the project. 
 
 So they decided to meet one day. Rob invited Rolf, who lived in Georgia, to give a lecture to his university students and to sit down to discuss the prospects of their collaboration.
 
-ZClassic was a community project. While Rob and Rolf had good ideas, they did not have the mandate to expand the scope of the ZClassic project fundamentally. So, Rob and Rolf decided to [fork](https://www.horizen.io/academy/blockchain-forks/) ZClassic into their own project due to these limitations.
+ZClassic was a community project. While Rob and Rolf had good ideas, they did not have the mandate to expand the scope of the ZClassic project fundamentally. So, Rob and Rolf decided to [fork](blockchain-forks.md) ZClassic into their own project due to these limitations.
 
 They chose ZClassic because they were both believers in everyone's right to privacy. Rob's love of _zero knowledge cryptography_ and their combined passion for privacy promised to be an enormous leap towards true privacy in the cryptocurrency world.
 
@@ -81,13 +84,13 @@ So the co-founders of ZenCash added an economic model into the project's protoco
 
 ### Incentives for Nodes and Other Stakeholders
 
-As the economic model was implemented into the [protocol](https://www.horizen.io/academy/blockchain-protocols/), the team was able to begin offering incentives. They determined that part of the newly generated coins would go to the **Secure Node** operators who operated _full nodes_ on the ZEN blockchain. 
+As the economic model was implemented into the [protocol](blockchain-protocols.md), the team was able to begin offering incentives. They determined that part of the newly generated coins would go to the **Secure Node** operators who operated _full nodes_ on the ZEN blockchain. 
 
 These operators used powerful hardware, a _dedicated IP address_, and a _TLS certificate_ to encrypt communications.
 
 The incentive for doing this was _3.5%_ of the block reward in the beginning but increased to _10%_ with the introduction of **Super Nodes**. 
 
-Our decision to incentivize [node operators](https://www.horizen.io/academy/nodes/) has resulted in Horizen having the largest full node network in the industry. 
+Our decision to incentivize [node operators](blockchain-nodes.md) has resulted in Horizen having the largest full node network in the industry. 
 
 The project has over:
  - **38,000 Secure Nodes** 
@@ -95,7 +98,7 @@ The project has over:
 
 We are moving in the right direction as a project, but we are not done. We have dedicated ourselves to continuously identifying stakeholders who deserve incentive. For example, the contributors to the ZenDAO system will receive an incentive for participating in the _voting process_.
 
-Super Nodes will host Horizen's upcoming sidechains, making them the first fully [decentralized sidechains](https://www.horizen.io/academy/sidechains/) in the industry.
+Super Nodes will host Horizen's upcoming sidechains, making them the first fully [decentralized sidechains](sidechains.md) in the industry.
 
 ### Cooperation with IOHK, Code Particle, InfoPulse
 
@@ -115,7 +118,7 @@ Pier Stabilini (A lead engineer for Code Particle) works closely with our team a
 
 ### The 51% Attack and a Solution to It
 
-_Although the 51% attack was a great shock for the Horizen team_ and community, it did not come out of the blue. The whole industry was aware of a blog that stated the cost of [51% attacks](https://www.horizen.io/academy/51-attacks/) against many projects. 
+_Although the 51% attack was a great shock for the Horizen team_ and community, it did not come out of the blue. The whole industry was aware of a blog that stated the cost of [51% attacks](51-attack.md) against many projects. 
 
 The Horizen team began disaster planning and brainstorming shortly after learning the cost to attack was low. We set up a _tripwire system_ as part of the plan that would alert us if it detected a significant net-hash increase, and we put our tech team on a standby monitoring the network.
 
@@ -135,7 +138,7 @@ You can read our [Solution to 51% Attacks](https://www.horizen.io/assets/files/A
 
 As our project grew bigger and more popular we were getting confused with ZCash more often. 
 
-It started making more sense for us to rebrand. Our project focused on product offerings like a _treasury voting system_ and _sidechains_ with [smart contracting capability](https://www.horizen.io/academy/smart-contracts/). We were more than our currency. 
+It started making more sense for us to rebrand. Our project focused on product offerings like a _treasury voting system_ and _sidechains_ with [smart contracting capability](smart-contracts.md). We were more than our currency. 
 
 The word "cash" in our name didn't describe what our project had started to become.
 

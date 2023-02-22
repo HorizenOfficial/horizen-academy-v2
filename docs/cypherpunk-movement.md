@@ -6,6 +6,9 @@ title: The Cypherpunk Movement
 slug: /cypherpunks/
 description: In this article, we discuss a group of computer scientists known as The Cypherpunks. The Cypherpunk movement started in the 1970s.
 image: /img/cypherpunk-movement/cypherpunk-movement-meta.jpeg
+last_update:
+  date: 2/21/2023
+  author: Horizen Contributor
 
 ---
 
@@ -27,7 +30,7 @@ _Dr. David Chaum_ started writing on topics such as _anonymous digital cash_ and
 
 It wasn't until 1992 that a group of _cryptographers_ in the _San Francisco Bay_ area started meeting up on a regular basis to discuss their work and related ideas. They built a basis for years of cryptographic research to come. 
 
-Besides their regular meetings, they also started the _Cypherpunk mailing list_ in which they discussed many ideas including those which led to the birth of [Bitcoin](https://www.horizen.io/academy/bitcoin-glossary/). 
+Besides their regular meetings, they also started the _Cypherpunk mailing list_ in which they discussed many ideas including those which led to the birth of [Bitcoin](bitcoin-glossary.md). 
 
 In early 1993 _Eric Hughes_, one of the first cypherpunks, wrote ["A Cypherpunk's Manifesto"](https://www.activism.net/cypherpunk/manifesto.html) laying out the ideals and vision of the movement.
 
@@ -45,17 +48,17 @@ _"Privacy in an open society also requires cryptography. If I say something, I w
 
 _"We must defend our own privacy if we expect to have any. We must come together and create systems which allow anonymous transactions to take place. People have been defending their own privacy for centuries with whispers, darkness, envelopes, closed doors, secret handshakes, and couriers. The technologies of the past did not allow for strong privacy, but electronic technologies do."_
 
-_"We the Cypherpunks are dedicated to building anonymous systems. We are defending our privacy with cryptography, with anonymous mail forwarding systems, with [digital signatures](https://www.horizen.io/academy/digital-signatures/), and with electronic money."_
+_"We the Cypherpunks are dedicated to building anonymous systems. We are defending our privacy with cryptography, with anonymous mail forwarding systems, with [digital signatures](digital-signatures.md), and with electronic money."_
 
 ## Electronic Cash
 
 Although you might have just heard about this movement for the first time, you have most definitely benefited from the efforts of some of their members in building _Tor_, _BitTorrent_, _SSL_, and _PGP encryption_. 
 
-It should not surprise you that many concepts and ideas that originated from this group led to the emergence of [cryptocurrencies](https://www.horizen.io/academy/cryptocurrency/).
+It should not surprise you that many concepts and ideas that originated from this group led to the emergence of [cryptocurrencies](cryptocurrency.md).
 
 In 1997, _Dr. Adam Back_ created _HashCash_, which he proposed as a measure against _spam_. 
 
-A little later, in 1998, _Wei Dai_ published his idea for b-money and conceived the ideas of **[Proof-of-Work](https://www.horizen.io/academy/proof-of-work-pow/)** and **Proof-of-Stake** to achieve consensus across a distributed network. 
+A little later, in 1998, _Wei Dai_ published his idea for b-money and conceived the ideas of **[Proof-of-Work](proof-of-work-pow.md)** and **Proof-of-Stake** to achieve consensus across a distributed network. 
 
 In 2005, _Nick Szabo_ published a proposal for _Bit Gold_. 
 
@@ -63,7 +66,7 @@ There was no cap on the maximum supply, but he introduced the idea to value each
 
 Although this is not how cryptocurrencies are valued, the price of production, comprised of hardware and electricity cost, plays a role in the pricing of these digital assets.
 
-In 2008, [**Satoshi Nakamoto**](https://www.horizen.io/academy/satoshi-nakamoto/) released the _Bitcoin white paper_, citing and building upon _HashCash_ and _b-money_. Citations from his early communications and parts of his white paper, such as the following on privacy, suggest _Nakamoto_ was close to the cypherpunk movement.
+In 2008, [**Satoshi Nakamoto**](satoshi-nakamoto.md) released the _Bitcoin white paper_, citing and building upon _HashCash_ and _b-money_. Citations from his early communications and parts of his white paper, such as the following on privacy, suggest _Nakamoto_ was close to the cypherpunk movement.
 
 >_"The traditional banking model achieves a level of privacy by limiting access to information to the parties involved and the trusted third party. The necessity to announce all transactions publicly precludes this method, but privacy can still be maintained by breaking the flow of information in another place: by keeping public keys anonymous._ 
 
