@@ -172,7 +172,7 @@ Again, we will use the **HMAC-SHA256** function, but this time we use the concat
 
 Again, the resulting **512-bit** output is split into two parts of **256** bits each. While the _second_ part becomes our first level chain code **\\(cc_1\\)** as it did in the _HSKD_ method, the first **256** bits are handled differently.
 
-It doesn't yield our first level private key directly, but instead an [_addition modulo N_](https://www.oxfordreference.com/view/10.1093/oi/authority.20110803100203745) with the initial private key **\\(sk_0\\)** is performed in order to obtain the first level private key. 
+It doesn't yield our first level private key directly, but instead an [_addition modulo N_](https://www.oxfordreference.com/display/10.1093/oi/authority.20110803100203745;jsessionid=439EAAEED9BD2AF347440E879FD8528A) with the initial private key **\\(sk_0\\)** is performed in order to obtain the first level private key. 
 
 _Lastly_, _ECC_ is used to generate our first level **NSKD** public key **\\(PK_1\\)**.
 
@@ -184,7 +184,7 @@ The zero-level private key is also the key that will allow the merchant to spend
 
 ### Non-Hardened Public Key Derivation - NPKD
 
-Using the _Non-Hardened Public Key Derivation_ method, our zero level private key \\(sk_0\\) isn't needed at all. The first steps in the _NPKD_ method are analogous to the _NSKD_ method.
+Using the _Non-Hardened Public Key Derivation_ method, our zero level private key **\\(sk_0\\)** isn't needed at all. The first steps in the _NPKD_ method are analogous to the _NSKD_ method.
 
 ![non hardened public key derivation](/img/mnemonic-phrases/non-hardened-public-key-derivation.jpg)
 

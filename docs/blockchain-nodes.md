@@ -148,7 +148,7 @@ These are the recommended disk space requirements for running different Ethereum
 
 Etherum.org recommends using any of the following [providers](https://ethereum.org/en/developers/docs/nodes-and-clients/run-a-node/) to help setup your client:
 
-* [DappNode](https://docs.dappnode.io/get-started/installation/custom-hardware/installation/overview/) 
+* [DappNode](https://docs.dappnode.io/) 
 * [eth-docker](https://eth-docker.net/)
 * [Stereum](https://stereum.net/ethereum-node-setup/) 
 * [NiceNode](https://www.nicenode.xyz/) 

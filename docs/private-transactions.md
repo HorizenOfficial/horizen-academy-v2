@@ -130,7 +130,7 @@ In your wallet, you can either generate **t-Addresses** (_transparent Addresses_
 
 - If you transact between **two** z-Addresses, no information about the transaction gets publicly recorded - neither the sender, receiver nor the amount. 
 
-If you want to try this feature, you can download our flagship app [Sphere by Horizen](https://www.horizen.io/wallets/spherebyhorizen/). Make sure to activate **full mode** in the settings otherwise, you won't be able to generate _z-Addresses_.
+If you want to try this feature, you can download our flagship app [Sphere by Horizen](https://www.horizen.io/spherebyhorizen/). Make sure to activate **full mode** in the settings otherwise, you won't be able to generate _z-Addresses_.
 
 ## Summary - Private Transactions on the Blockchain
 

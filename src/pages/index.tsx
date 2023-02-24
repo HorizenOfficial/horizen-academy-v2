@@ -12,16 +12,16 @@ const Home = () => {
     return (
         <Layout
             title=""
-            description="The Horizen Academy is a free educational platform on blockchain technology, cryptocurrency, and privacy. Our platform ensures everyone can learn about these topics regardless of their comfort level and experience and is always free to use."
+            description="Welcome to Horizen's educational hub on blockchain technology where you'll find guides on topics of decentralized ledger technology, cryptocurrency and Web3."
         >
             <Head>
                 <meta
                     name="image"
-                    content="https://horizen.io/academy/img/academy-landing/horizen-academy-meta.jpg"
+                    content="https://www.horizen.io/academy/img/academy-landing/horizen-academy-meta.jpg"
                 />
                 <meta
                     name="og:image"
-                    content="https://horizen.io/academy/img/academy-landing/horizen-academy-meta.jpg"
+                    content="https://www.horizen.io/academy/img/academy-landing/horizen-academy-meta.jpg"
                 />
             </Head>
             <HomepageHero />

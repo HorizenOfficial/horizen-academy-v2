@@ -93,6 +93,8 @@ In DeFi, the traditional market maker, which is often a centralized entity, is r
 
 With _AMMs_, the [price of the token](what-is-a-token.md) is managed by a **pricing formula** that adjusts based on the amount of tokens that currently sits in a _liquidity pool_ as compared to the other coin that is its _trading pair_. 
 
+![how do amms work](/img/automated-market-maker-amms/how-do-amms-work.jpeg)
+
 ### What are Liquidity Pools?
 
 **Liquidity pools** are pools of capital managed by smart contracts. The pools often contain two tokens that are used as trading pairs.
@@ -102,6 +104,8 @@ _For example_: ETH and DAI, or UNI and ETH
 In the ETH/DAI example, a liquidity pool containing $100million in total reserve value should have approximately $50m worth of DAI and $50m worth of ETH in order for the pool to be balanced at the correct ratio. 
 
 The **AMM pricing formula** is **[x * y = k](https://docs.uniswap.org/contracts/v2/reference/smart-contracts/common-errors)**, where **X** and **Y** represent the reserve balances of the two tokens in the pool, and **K** represents the total of the reserves.
+
+![automated marker maker graph 1](/img/automated-market-maker-amms/automated-market-maker-graph-1.jpeg)
 
 If the pool starts to contain a greater number of DAI than ETH, it means there is high demand for ETH relative to DAI, which is causing traders to want to buy more ETH and swap it with DAI. 
 
@@ -116,6 +120,8 @@ At the same time, traders seeking to make a profit from _arbitrage_ opportunitie
 For example, a decline in the price of DAI to $0.98 due to increased supply in the pool will encourage traders to take DAI out of the pool and put ETH in with the knowledge that the price of DAI should return back to its normal place at $1, giving them a 2% profit on the DAI they bought at a discount. 
 
 The act of multiple profit seeking traders pursuing arbitrage opportunities ultimately helps bring the value of both ETH and DAI in the pool back to equilibrium. 
+
+![automated marker maker graph 2](/img/automated-market-maker-amms/automated-market-maker-graph-2.jpeg)
 
 ## What is the Role of Liquidity Providers in the AMM Model? 
 

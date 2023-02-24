@@ -28,6 +28,8 @@ One of the core [features of blockchain technology](components-of-a-blockchain.m
 
 With _smart contracts_, users can conduct all kinds of agreements that involve anywhere from two individuals to several thousands of people without the need of an intermediary. 
 
+![crypto lending platform](/img/crypto-lending/crypto-lending-platform.jpeg)
+
 ### Smart Contracts for Crypto Loans
 
 A smart contract can be used to manage loan transactions between 2 anonymous or publicly identified parties where: 
@@ -147,6 +149,8 @@ These are prime examples of how the murky relationship between CeFi companies an
 Purely decentralized lending protocols offer transparency through the use of smart contracts and network consensus, while purely centralized lenders offer transparency by adhering to the financial regulations of their host country. 
 
 Entities that have attempted to act as a hybrid of CeFi and DeFi have tended to fail at both due to their inability to adhere to nation state laws or laws written in computer code. 
+
+![defi lending platform](/img/crypto-lending/defi-lending-platform.jpeg)
 
 It is for this reason that CeFi lenders have posed the greatest risk to the viability of crypto-based lending models and are therefore in significant need of reform. 
 

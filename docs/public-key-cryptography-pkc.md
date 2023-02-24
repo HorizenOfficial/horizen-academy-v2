@@ -52,7 +52,7 @@ To understand how your keys and addresses work together, we must introduce **Ell
 
 There are different ways to build a public-key cryptography scheme. [Bitcoin](bitcoin-glossary.md) and most other cryptocurrencies use [Elliptic Curve Cryptography](elliptic-curve-cryptography-ecc.md) (ECC).
 
-_Bitcoin, [Ethereum](ethereum-glossary.md) and _many other currencies_ use a curve called **secp256k1** and it looks like the one above. The equation for this curve is **y^2 = x^3 + 7**. 
+_Bitcoin, [Ethereum](ethereum-glossary.md) and many other currencies_ use a curve called **secp256k1** and it looks like the one above. The equation for this curve is **y^2 = x^3 + 7**. 
 
 What make elliptic curves useful is that you can do math with them, and the math you do on the curves has some special properties.
 

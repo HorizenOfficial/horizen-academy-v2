@@ -250,7 +250,7 @@ It assumed a synchronized clock between all nodes, an assumption that is not rea
 
 ### pBFT - Practical Byzantine Fault-Tolerance
 
-In 1999, yet another consensus algorithm was published - [*practical Byzantine Fault-Tolerance*](http://pmg.csail.mit.edu/papers/osdi99.pdf) (pBFT) by _Castro and Liskov_. 
+In 1999, yet another consensus algorithm was published - [*practical Byzantine Fault-Tolerance*](https://pmg.csail.mit.edu/papers/osdi99.pdf) (pBFT) by _Castro and Liskov_. 
 
 **It got pretty close to achieving the final goal:** 
 

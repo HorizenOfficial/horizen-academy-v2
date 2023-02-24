@@ -254,7 +254,7 @@ If a participant has high confidence in out outcome, let’s say team **X** wins
 
 Futures contract **X** rises in price, while **Y** gets cheaper, for example, _$0.70 vs. $0.30_. The price of the futures contracts can be interpreted as the likelihood of the respective event happening, in this case, a **70%** chance of team **X** winning.
 
-Projects such as [Augur](https://www.augur.net/) and [Gnosis](https://gnosis.io/) are working on decentralized solutions to the oracle problem via prediction markets. Before these prediction markets gain serious adoption, they will remain easy to game. 
+Projects such as [Augur](https://www.augur.net/) and [Gnosis](https://www.gnosis.io/) are working on decentralized solutions to the oracle problem via prediction markets. Before these prediction markets gain serious adoption, they will remain easy to game. 
 
 And since prediction markets have the potential to influence the outcome of an event, it remains to be seen if they can become a solution.Before solving the problem of creating legally binding smart contracts, and the oracle problem, the use of smart contracts will be limited. 
 
