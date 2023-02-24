@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: "Horizen Academy",
-    url: "https://horizen.io",
+    url: "https://www.horizen.io/",
     baseUrl: "/academy/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
@@ -78,28 +78,28 @@ const config = {
                         items: [
                             {
                                 label: "Play-to-Earn Games",
-                                href: "play-to-earn-games",
+                                href: "/play-to-earn-games/",
                             },
                             {
                                 label: "Zero-Knowledge Proofs",
-                                href: "zero-knowledge-proofs-zkp",
+                                href: "/zero-knowledge-proofs-zkp/",
                             },
                             {
                                 label: "Consensus Mechanisms",
-                                href: "consensus-mechanisms",
+                                href: "/consensus-mechanisms/",
                             },
                             {
                                 label: "Tokenomics 101",
-                                href: "/tokenomics",
+                                href: "/tokenomics/",
                             },
                             {
                                 label: "Ethereum Virtual Machine",
-                                href: "ethereum-virtual-machine-evm",
+                                href: "/ethereum-virtual-machine-evm/",
                             },
                         ],
                     },
                     {
-                        href: "https://horizen.io/",
+                        href: "https://www.horizen.io/",
                         label: "Main Horizen Website",
                         position: "right",
                     },

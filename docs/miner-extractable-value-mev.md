@@ -36,6 +36,8 @@ To date, over [$650 million](https://cointelegraph.com/news/new-oracle-system-to
 
 Another group called _‘Searchers’_ can also take advantage of MEV without [running a node](blockchain-nodes.md). This is done by running bots that scan the chain for transactions of high value that have yet to be picked up by validators and submitted to the latest block. 
 
+![miner extractable value](/img/miner-extractable-value-mev/miner-extractable-value.jpeg)
+
 ### Front Running
 
 Once a researcher identifies these high value transactions, they can ‘front-run’ them by submitting the same buy or sell order but with a higher fee in order to get them submitted first. In trading and financial markets, **front running** is the process of getting in front of a queue of transactions in order to get your transaction executed at a more preferential execution price.

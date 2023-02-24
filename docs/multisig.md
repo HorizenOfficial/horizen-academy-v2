@@ -83,7 +83,7 @@ Imagine Alice bought ZEN on an exchange and wants to store them using a MultiSig
 
 1. First, she _generates_ a set of **private keys**. The number of keys generated depends on the MultiSig scheme she wants to use. 
 	- Let’s assume she wants to setup a simple _1-of-2 scheme_, she generates two keys, either one of which is sufficient to authorize a transaction.
-2. Next, she _creates_ the **redeem script_**. It contains the information about the scheme used, _1-of-2_ in Alice’s case, and the two public keys corresponding to the two private keys generated in the _first_ step.
+2. Next, she _creates_ the **redeem script**. It contains the information about the scheme used, _1-of-2_ in Alice’s case, and the two public keys corresponding to the two private keys generated in the _first_ step.
 3. Third, she _hashes_ the **redeem script**. The hash of the redeem script is encoded into a **P2SH** address.
 4. Lastly, she _withdraws_ her _money_ from the exchange to her **P2SH** address.
 

@@ -226,7 +226,7 @@ It's the same as with cash: you don't carry around all your money in a wallet. Y
 
 With **desktop** and **mobile wallets**, there is a choice between _single_ and _multi-currency_ wallets. Those should be rather self-explanatory terms. The _former_ allows you to store _one_ coin, while the _latter_ supports _multiple_ currencies. 
 
-Some of the more popular examples of _desktop_ wallets include _Coinomi_ and [_Sphere by Horizen_](https://www.horizen.io/wallets/spherebyhorizen/). For _mobile_, there are _Mycelium_ or _Paytomat_, just to name a few.
+Some of the more popular examples of _desktop_ wallets include _Coinomi_ and [_Sphere by Horizen_](https://www.horizen.io/spherebyhorizen/). For _mobile_, there are _Mycelium_ or _Paytomat_, just to name a few.
 
 If you get your first coins on an exchange, I would recommend you transfer your funds out of the exchange from the hosted web wallet, onto a _desktop_, _paper_, or _hardware wallet_. 
 

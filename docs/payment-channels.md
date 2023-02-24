@@ -397,7 +397,7 @@ She, in turn, has **x-y** days to claim her cash from **Alice**. This decreasing
 
 ## Implications for the Fee Market
 
-The Lightning Network or, in more general terms, _second layer payment networks are also interesting from an economic perspective. 
+The Lightning Network or, in more general terms, _second layer payment networks_ are also interesting from an economic perspective. 
 
 The transaction fees for on-chain transactions are calculated based on the amount of data a transaction takes up in the blockchain. Blocks are limited in size. Hence, miners select the transactions they want to include based on a _money per data_ basis. 
 
@@ -429,7 +429,7 @@ State channels can also be combined to form networks, similar to the Lightning n
 
 Some notable examples of state channel projects include _Counterfactual_ and [_Perun_](https://perun.network/).
 
-- **Counterfactual** provides, besides a library for off-chain applications and a set of smart contracts, a [generalized state channel protocol](https://l4.ventures/papers/statechannels.pdf). The protocol aims to become a generalized framework that application developers can use to leverage the benefits of state channels without developing them from scratch. The protocol allows installing new functionalities into existing state channels without requiring on-chain transactions.
+- **Counterfactual** provides, besides a library for off-chain applications and a set of smart contracts, a generalized state channel protocol. The protocol aims to become a generalized framework that application developers can use to leverage the benefits of state channels without developing them from scratch. The protocol allows installing new functionalities into existing state channels without requiring on-chain transactions.
 
 - **Perun** channels introduce the concept of **virtual payment channels** over intermediaries. These channels are non-interactive in that they don't rely on intermediaries' responsiveness. The general idea is to construct virtual channels based on existing channels, which, in the end, work similarly to a bilateral channel.
 

@@ -226,7 +226,7 @@ _Government surveillance programs do not threaten privacy unless they discover i
 
 **We think this argument is very flawed because:**
 
-- Privacy is not about hiding, it is about protecting**: Would you give passwords to your email and other accounts to anyone? Would you allow everyone to read your social media messages? Would you love to have someone always around who eavesdrops on each and every conversation of yours, see your medical records and know about your appointments with your doctor? Or let's go very trivial - why do you ever have curtains on the shady side of your house or even wear pants?
+- **Privacy is not about hiding, it is about protecting**: Would you give passwords to your email and other accounts to anyone? Would you allow everyone to read your social media messages? Would you love to have someone always around who eavesdrops on each and every conversation of yours, see your medical records and know about your appointments with your doctor? Or let's go very trivial - why do you ever have curtains on the shady side of your house or even wear pants?
 
 - **Privacy is a fundamental human right**: The right to free speech and the right to assemble are the basic fundamental human rights even if you do not have anything to say or protest now. So is privacy. Think about voting, medical information, and banking information. It is obvious that you wish them to be kept private.
 
@@ -408,7 +408,7 @@ Since you want to protect your privacy, be careful about how much personal infor
 
 Paying with cryptocurrencies or cash cards avoids sharing your banking details or credit card information with the email provider
 
-- **[ProtonMail](https://protonmail.com/)**
+- **[ProtonMail](https://proton.me/mail)**
 - **[Disroot.org](https://disroot.org/)**
 - **[Mailfence](https://mailfence.com/)**
 
