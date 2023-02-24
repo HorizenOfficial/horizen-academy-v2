@@ -36,6 +36,8 @@ Decentralized prediction markets incorporate blockchain and smart contract techn
 
 **Decentralized prediction markets** function using a combination of smart contracts and data oracles. 
 
+![decentralized prediction markets](/img/decentralized-prediction-markets/decentralized-prediction-markets.jpeg)
+
 To start, a prediction must be placed that has a set of binary outcomes. 
 
 _For example:_
@@ -125,7 +127,11 @@ Examples of popular decentralized prediction market platforms where you can bet 
 
 The reason for this is because the bookmaker sets odds and facilitates the execution of bets, including providing liquidity as a default buyer or seller if necessary. *This is similar to the role of a [market maker](automated-market-maker-amms.md) on a stock exchange.* 
 
+![bookmaker](/img/decentralized-prediction-markets/bookmaker.jpeg)
+
 The bookmaker's job is to ensure that there is always someone willing to take the other side of a bet for _any_ kind of prediction. However this poses a risk to the bookmaker, as they can lose a lot of money very quickly if they don’t properly price the odds of each bet in a way that ensures they can payout the winners while winning enough themselves to earn a profit and remain solvent. 
+
+![bookmaker 2](/img/decentralized-prediction-markets/bookmaker-2.jpeg)
 
 By making a +100 odds bet -110, the bookmaker ensures that they only have to pay ~5% less for every lost bet, $19 instead of $20, which means they can retain more of their earnings for every winning bet on the same game.
 

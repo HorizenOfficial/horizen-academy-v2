@@ -300,7 +300,7 @@ Horizen implemented a withdrawal safeguard to prevent this. The mainchain keeps 
 
 ### Sidechain Deployment
 
-A new sidechain in *endoo needs to register with the mainchain using a special type of transaction called a _bootstrapping transaction_. Any user can build a new sidechain and submit a bootstrapping transaction wherein several essential parameters are defined.
+A new sidechain in Zendoo needs to register with the mainchain using a special type of transaction called a _bootstrapping transaction_. Any user can build a new sidechain and submit a bootstrapping transaction wherein several essential parameters are defined.
 
 - **First**, a unique identifier, the `ledgerId` for the sidechain is defined in the bootstrapping transaction.
 - **Next**, it is defined from which mainchain block onward the sidechain will become active.

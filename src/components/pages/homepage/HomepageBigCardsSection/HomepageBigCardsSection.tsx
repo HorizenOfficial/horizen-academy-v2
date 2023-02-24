@@ -33,19 +33,19 @@ const cards: CardWContentProps[] = [
     {
         title: "Zero-Knowledge Proofs",
         link: "/zero-knowledge-proofs-zkp/",
-        image: "/assets/pages/homepage/article-logo-zendoo.svg",
+        image: "/assets/pages/homepage/article-logo-zkp.svg",
         imageAlt: "Zero Knowelege Proofs icon",
     },
     {
         title: "Ethereum Virtual Machine",
         link: "/ethereum-virtual-machine-evm/",
-        image: "/assets/pages/homepage/article-logo-token.svg",
+        image: "/assets/pages/homepage/article-logo-evm.svg",
         imageAlt: "Ethereum Virtual Machine icon",
     },
     {
         title: "Tokenomics 101",
         link: "/tokenomics/",
-        image: "/assets/pages/homepage/article-logo-dao.svg",
+        image: "/assets/pages/homepage/article-logo-token.svg",
         imageAlt: "All Things Tokenomics icon",
     },
 ]

@@ -53,7 +53,7 @@ const HomepageHero = () => {
                 <p className={styles.hero__body}>
                     Welcome to Horizen's educational hub on blockchain
                     technology where you'll find expertly written guides on
-                    topics of decetralized ledger technology, cryptocurrency and
+                    topics of decentralized ledger technology, cryptocurrency and
                     the exciting world of Web3.
                     <br />
                     <br />

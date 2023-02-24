@@ -122,7 +122,7 @@ Though both of these alternatives are mostly outdated, they can still provide yo
    </td>
   </tr>
   <tr>
-   <td><a href="https://shop.trezor.io/?offer_id=10&aff_id=5441&aff_sub=best-crypto-cold-wallets">Trezor Model T</a>
+   <td><a href="https://trezor.io/?transaction_id=102a7416be1101a67c41229f9a3733&offer_id=133&affiliate_id=5441">Trezor Model T</a>
    </td>
    <td>$195
    </td>
@@ -132,7 +132,7 @@ Though both of these alternatives are mostly outdated, they can still provide yo
    </td>
   </tr>
   <tr>
-   <td><a href="https://shop.ledger.com/products/ledger-nano-s?r=232db0172372&tracker=best-crypto-cold-wallets">Ledger Nano S</a>
+   <td><a href="https://shop.ledger.com/products/ledger-nano-s-plus?r=232db0172372&tracker=best-crypto-cold-wallets">Ledger Nano S</a>
    </td>
    <td>$59
    </td>
@@ -162,7 +162,7 @@ Though both of these alternatives are mostly outdated, they can still provide yo
    </td>
   </tr>
   <tr>
-   <td><a href="https://store.safepal.io/safepal-s1-hardware-wallet.html?ref=krishnarungta55g&tm_subid1=best-crypto-cold-wallets">Safepal S1</a>
+   <td><a href="https://store.safepal.com/safepal-s1-hardware-wallet.html?ref=krishnarungta55g&tm_subid1=best-crypto-cold-wallets">Safepal S1</a>
    </td>
    <td>$49.99
    </td>
@@ -182,7 +182,7 @@ Though both of these alternatives are mostly outdated, they can still provide yo
    </td>
   </tr>
   <tr>
-   <td><a href="https://shapeshift.com/keepkey">Keepkey</a>
+   <td><a href="https://www.keepkey.com/">Keepkey</a>
    </td>
    <td>$190
    </td>

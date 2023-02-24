@@ -4,7 +4,7 @@ sidebar_position: 25
 sidebar_label: Forks
 title: What is a Fork in Crypto?
 slug: /blockchain-forks/
-description: When an upgrade is made to a blockchains underlying protocol, it is called a Fork. Learn more about forks in the Horizen Academy
+description: When an upgrade is made to a blockchains underlying protocol, it is called a Fork. Learn more about forks in Horizen Academy
 image: /img/blockchain-forks/blockchain-forks-meta.jpg
 last_update:
   date: 2/21/2023

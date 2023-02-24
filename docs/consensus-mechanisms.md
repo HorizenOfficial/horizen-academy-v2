@@ -196,7 +196,7 @@ DAG’s are a type of [data structure](blockchain-data-structure.md) used on dis
 <p></p>
 <a href="https://www.btcc.com/blog/what-is-polkadot-dot/">1,000</a> tps (Polkadot)
    </td>
-   <td><a href="https://medium.com/coinmonks/vechain-why-vet-smashing-it-what-next-118aa69fdd03">10,000</a> tps
+   <td>10,000 tps
    </td>
    <td><a href="https://www.researchgate.net/publication/334168202_FastFabric_Scaling_Hyperledger_Fabric_to_20000_Transactions_per_Second">3,000</a> tps
    </td>
@@ -210,7 +210,7 @@ DAG’s are a type of [data structure](blockchain-data-structure.md) used on dis
 <p></p>
 <a href="https://bitnodes.io">10,203</a> Bitcoin nodes.
    </td>
-   <td><a href="https://wallet.matic.network/staking/">100</a> Polygon Validtors 
+   <td>100 Polygon Validtors 
    </td>
    <td><a href="https://solana.com">930</a> Solana Validators 
    </td>

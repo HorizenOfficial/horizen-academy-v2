@@ -54,6 +54,8 @@ The core premise of Web3 is to build a brand new internet from the bottom-up tha
 
 Whereas Web2 was a ‘_read, write_’ iteration of the internet, Web3 aims to become ‘_read, write, own_’, meaning you are not only a participant in the network, but also an owner of what you produce and consume online. 
 
+![history of the internet](/img/web3/history-of-the-internet.jpeg)
+
 ## Web3: Read, Write, Own
 
 Web3 refers to a category of technologies that leverage internet protocols built on top of open source, distributed and decentralized systems. 
