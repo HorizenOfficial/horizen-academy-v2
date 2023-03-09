@@ -6,9 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "Horizen Academy",
-    url: "https://www.horizen.io/",
-    baseUrl: "/academy/",
+    title: process.env.TITLE,
+    url: process.env.URL,
+    baseUrl: process.env.BASE_URL,
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.png",
