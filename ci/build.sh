@@ -1,6 +1,6 @@
 # !/bin/bash
 
-if [ "$CF_PAGES_BRANCH" == "master" ]; then
+if [ "$CF_PAGES_BRANCH" == "main" ]; then
 
   npm run build:prod
 
