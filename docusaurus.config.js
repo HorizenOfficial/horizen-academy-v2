@@ -35,10 +35,6 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl:
-                        "https://github.com/HorizenOfficial/horizen-academy-v2/",
                     showLastUpdateAuthor: true,
                     showLastUpdateTime: true,
                     routeBasePath: "/",
@@ -132,6 +128,11 @@ const config = {
                 defaultMode: "dark",
                 disableSwitch: true,
             },
+            algolia: {
+                appId: "VDTY9KV01M",
+                apiKey: "20e498146346aaa477e9b1e3a23e7477",
+                indexName: "horizen",
+            }
         }),
 
     plugins: ["./matomo"],
