@@ -146,6 +146,13 @@ Ethereum’s client software supports major operating systems such as Linux, Mac
 
 These are the recommended disk space requirements for running different Ethereum clients. A **client** is an implementation of Ethereum that verifies data against the [protocol's rules](blockchain-protocols.md) and secures the network.
 
+|   Client   | Disk Size _Snap Sync_ | Disk Size _Full Archive_ |
+|:----------:|:---------------------:|:------------------------:|
+| Geth       | 500BG+                | 12TB+                    |
+| Nethermind | 500GB+                | 12TB+                    |
+| Besu       | 800GB+                | 12TB+                    |
+| Erigon     | N/A                   | 2.5TB+                   |
+
 Etherum.org recommends using any of the following [providers](https://ethereum.org/en/developers/docs/nodes-and-clients/run-a-node/) to help setup your client:
 
 * [DappNode](https://docs.dappnode.io/) 
@@ -158,6 +165,32 @@ Although your node does not need to be online all of the time, it is recommended
 ## How to Run a Bitcoin Node?
 
 Bitcoin Core is the most popular client for running a Bitcoin full node. To begin running a node, you must download the Bitcoin Core software, which comes with the following requirements: 
+
+**System**
+- Desktop
+- Laptop
+- Some ARM chipsets > 1 GHz
+
+**Operating System**
+- Windows 7/8.x/10
+- Mac OS X
+- Linux
+
+**Disk Space**
+- 350 GB
+
+**Download**
+- 500 MB/Day
+	- 15 GB/Month
+
+**Upload**
+- 5 GB/Day
+	- 1450 GB/Month
+
+**Memory (RAM)**
+- 1GB
+
+*Additionally, a one-time 340 GB download the first time you start Bitcoin Core*
 
 To set up a node, you must first synchronize your node to the network using the [Initial Block Download](https://developer.bitcoin.org/devguide/p2p_network.html#initial-block-download) or IBD. Similar to Ethereum, downloading the Bitcoin Core software uses a lot of storage space. You can find some tips for [reducing storage space](https://bitcoin.org/en/full-node#reduce-storage) on Bitcoin's website.
 

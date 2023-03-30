@@ -114,5 +114,11 @@ The most notable project to deploy on StarkNet was dYdX, an on-chain DEX for tra
 Loopring leverages ZK-rollups on Ethereum to build a fast and low cost DEX and payments protocol. 
 
 ### Immutable X
+
 Immutable X is an Ethereum based ZK-rollup protocol that is optimized for trading NFTs at lower cost and greater speeds. It offers a NFT marketplaces as well as the ability to trade in-game digital assets that are in the format of an ERC-721 or ERC-1155
 
+### Horizen zk-SNARKs
+
+Horizen leverages zk-SNARKs in a similar way to how Ethereum mainnet leverages ZK-rollups. 
+
+The main difference is that Horizen offers a set of software development tool kits for launching independent blockchains called sidechains that have the option to submit transcripts to the Horizen main chain using zk-SNARKs. 
