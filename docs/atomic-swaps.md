@@ -102,6 +102,10 @@ There are few wallets that enable users to do Atomic Swaps, yet. So far there ha
 
 The technology is very promising, but to achieve adoption [wallets](crypto-wallets.md) will have to build a user-friendly interface to use Atomic Swaps. This will take a while, but the technology is very promising and could very well enable a new class of use cases for cryptocurrencies.
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 ## Summary - Atomic Swaps
 
 Atomic Swaps present an alternative to the centralized exchanges used today. _At no point is there a third party involved that has access to a user's funds._
