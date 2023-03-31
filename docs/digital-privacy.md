@@ -214,6 +214,11 @@ If you don’t trust a _Google_ application to take care of your 2FA, there are 
 
 If you want to take it one step further, you can use a hardware device such as the **YubiKey** or even the **Ledger Hardware Wallet** that can store your cryptocurrencies, as well as providing you with 2FA capabilities through [FIDO U2F](https://support.ledger.com/hc/en-us/articles/115005198545-FIDO-U2F).
 
+
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 Most methods offer a way to restore your 2FA codes, in case you accidentally delete the app, your phone breaks or you lose your hardware authenticator. 
 
 Make sure to familiarize yourself with the backup procedure for the method of your choice before you start using it, so you are not caught off guard in such a situation and lose access to your accounts.

@@ -55,6 +55,10 @@ With wallets, there is usually a trade-off between _security_ and _convenience_:
 - Having **some** funds in your mobile wallet on your smartphone makes them easy to spend, but not very secure. 
 - Keeping **larger** amounts of money on a hardware wallet is very secure, but not as convenient when you want to spend it.
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 ### Cryptocurrency Wallets Act as a Keychain
 
 Although the term wallet might be more intuitive, the _function_ of a wallet is closer to that of a **keychain** rather than an actual wallet.
@@ -193,6 +197,10 @@ You _will_ need to keep some funds on an exchange if you plan to trade often.
 ### Non-Hosted Web Wallets
 
 Besides hosted web wallets, there is also a range of _non-hosted web wallets_. One of the most popular non-hosted web wallet is likely _MyEtherWallet_, which can store _Ether_ (ETH) and _all_ _ERC-20_ tokens, [tokens](what-is-a-token.md) that are "living" on the [Ethereum](ethereum-glossary.md) blockchain. 
+
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
 
 These wallets provide an interface to check your funds or create transactions in your web browser, _but_ you have to provide the keys with each login.
 

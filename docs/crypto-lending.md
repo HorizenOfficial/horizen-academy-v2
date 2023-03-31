@@ -39,6 +39,10 @@ A smart contract can be used to manage loan transactions between 2 anonymous or 
 * If Party **A** repays the loan plus interest on time to Party **B**, the funds from the smart contract will automatically be released back to Party **A**’s digital wallet
 * If Party **A** fails to repay the loan on time, the funds from the smart contract will automatically be released to Person **B**’s digital wallet 
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 Most crypto lending arrangements are **secured** or **collateralized loans**, meaning the borrower is offering an asset of greater value to the lender as insurance in case of default. 
 
 Typically, the collateral must be valued at 1.5 to 2 times the loan amount at the time of the transaction. It is expected that the value of the collateral may increase or decline while the loan remains outstanding. 
@@ -156,7 +160,11 @@ It is for this reason that CeFi lenders have posed the greatest risk to the viab
 
 ## How to Get a Cryptocurrency Loan?
 
-The most popular decentralized applications for lending and borrowing crypto today are **Aaave** and **Compound**. These Defi protocols offer smart contract lending solutions on [Ethereum](ethereum-glossary.md). 
+The most popular decentralized applications for lending and borrowing crypto today are **Aaave** and **Compound**. These Defi protocols offer smart contract lending solutions on [Ethereum](ethereum-glossary.md).
+
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
 
 To use these dapps, simply:
 

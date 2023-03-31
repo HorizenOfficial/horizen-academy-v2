@@ -20,6 +20,10 @@ The biggest contributing factor to the rise of NFTs has been the emergence of op
 
 Terms like _minting_, _PFP_, and _floor price_ became the norm as celebrities, stock traders, and newly wealthy crypto holders spent lavishly to acquire their piece of Web3 pop culture. 
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 In this article we cover what NFT marketplaces are, how they work, and how they have evolved since the prior bull market. 
 
 ## What is an NFT Marketplace?
@@ -59,6 +63,10 @@ Before an NFT can be sold, it first needs to be minted.
 **Minting** is the process of issuing a new NFT on the [blockchain](how-do-blockchains-work.md). This NFT can be attached to an audio recording, a digital photo or painting, a video, or some other type of media file or asset. 
 
 When an NFT is minted, it is assigned a unique token ID and stored in the wallet of the person who minted it.
+
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
 
 _The NFT is forever associated with the persons minting address, even though the ownership of the NFT can change._
 

@@ -143,6 +143,10 @@ Oracles have served as the cornerstone for _stablecoin markets, lending protocol
 
 _As one of the largest oracle networks_, ChainLink has served as the primary growth engine behind the Defi ecosystem, which currently has over [$200B](https://www.coindesk.com/business/2022/02/17/bofa-says-chainlink-likely-driver-for-defis-tvl-growth-to-203b/) in total value locked (TVL).
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 ### Dynamic NFTs and Gaming
 
 _NFTs_ and _GameFi_ are 2 of the largest sectors outside of Defi that oracles are currently penetrating.

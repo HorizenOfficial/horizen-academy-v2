@@ -20,6 +20,10 @@ Each cryptocurrency runs on its own blockchain, because every currency needs its
 
 Imagine I had _one dollar_ and _one euro_, and I _spend_ my dollar. 
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 The dollar blockchain records this transaction, identifies the new owner, and that I don't have that dollar anymore.
 
  _On the other hand_, this transaction does not affect the blockchain for all the euros.

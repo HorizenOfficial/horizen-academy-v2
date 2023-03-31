@@ -34,6 +34,10 @@ This proof is then submitted to the mainchain, where it is validated by the L1 n
 
 The end result is that the most current ‘state’ of the L2, an accounting of user balances and total values in each [wallet](crypto-wallets.md), is permanently recorded on the mainnet, ensuring that the records can be recovered in the event that the L2’s security is compromised.  
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 [*Layer 2s*](layer-2.md) are considered off-chain scaling solutions for Dapps. They are not independent blockchains and therefore are less secure, relying on the Ethereum network for final transaction settlement.
 
 Zk-rollups represent the first major step in Ethereum’s transition from a monolithic to a [modular blockchain architecture](modular-vs-monolithic-blockchains.md). In a modular architecture, blockchains separate critical functions such as execution, consensus and data availability into different specialized networks. This allows the broader network to function more effectively and mitigate some of the challenges caused by the famous scalability trilemma. 
@@ -94,6 +98,10 @@ As an alternative, zk-STARKs use random samples of publicly verifiable informati
 With this approach, zk-STARKs claim to offer greater scalability in terms of improving speed and reducing the computational size of transaction data. 
 
 Miden is an [EVM compatible](ethereum-virtual-machine-evm.md) STARK rollup, which means it is compatible with solidity programs and can therefore be easily adopted by Ethreum developers who wish to scale their dApps using the STARK approach. 
+
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
 
 #### Polygon Nightfall 
 

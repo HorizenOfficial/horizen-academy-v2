@@ -124,6 +124,10 @@ A developer might adopt a sidechain over a payment or state channel if they need
 
 This could be for the purpose of [launching a token](why-create-a-token.md) or dapp while still taking advantage of the low cost and faster speeds enabled by not [deploying smart contracts directly](smart-contracts.md) on the L1.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 Sidechains operate using their own [consensus mechanism](consensus-mechanisms.md), which means developers can optimize their network for **scalability**, **security** or **decentralization**, and can even choose to make their networks **private** and _permissioned_ or **public** and _permissionless_.
 
 While side chains are not required to submit state data to the mainchain, many still choose to do so in order to leverage the larger, more decentralized chain's security.

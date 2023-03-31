@@ -22,6 +22,10 @@ While these institutions are able to facilitate large trades efficiently and at 
 
 Instead, DEXs allow traders to buy and sell tokens peer-to-peer using _smart contracts_.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 ## Initial Challenges with Decentralized Exchanges
 
 During 2017 and 2018 when DEXs were first being launched, they incurred major difficulties sourcing liquidity in order for buyers and sellers to get their orders filled. **Liquidity** refers to how quickly an individual or firm can buy or sell an asset without significantly influencing its market price. 

@@ -60,6 +60,10 @@ In 1997, _Dr. Adam Back_ created _HashCash_, which he proposed as a measure agai
 
 A little later, in 1998, _Wei Dai_ published his idea for b-money and conceived the ideas of **[Proof-of-Work](proof-of-work-pow.md)** and **Proof-of-Stake** to achieve consensus across a distributed network. 
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 In 2005, _Nick Szabo_ published a proposal for _Bit Gold_. 
 
 There was no cap on the maximum supply, but he introduced the idea to value each unit of Bit Gold by the amount of computational work that went into producing it. 

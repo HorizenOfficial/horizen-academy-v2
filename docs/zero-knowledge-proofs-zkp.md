@@ -158,6 +158,10 @@ On _Horizen_, zk-SNARKs allow a prover, the sidechain, to prove that a transacti
 
 The [sidechain](sidechains.md) does this by first validating transactions in its blockchain as normal, then, constructing a proof which is essentially a certificate that proves that the transactions within the sidechain have been correctly validated based on a standard process that is recognized by the mainchain.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 This certificate is used to accurately represent the state of the sidechain or chains, for example account balances and total values in each sidechain, while containing far less data compared to the tens of thousands of transactions it represents altogether.
 
 The nodes on the mainchain then use a special algorithm to validate this certificate just like they would for any other transaction.

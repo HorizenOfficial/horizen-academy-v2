@@ -41,6 +41,10 @@ If you were able to derive a public key from an address, you could find all addr
 
 Now let's get into the actual process of creating a [crypto wallet address](crypto-wallets.md) from scratch.
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 ## Generating the Private Key
 
 The purpose of a private key is to prove ownership of a [UTXO-set](utxo-vs-account-model.md) by creating [digital signatures](digital-signatures.md) to authorize spending.

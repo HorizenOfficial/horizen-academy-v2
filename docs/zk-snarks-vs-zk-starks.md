@@ -25,6 +25,10 @@ Under the ZKP umbrella, there are 2 distinct approaches that have emerged as maj
 
 _In this article_ we will explore what differentiates these 2 methods for privacy-preserving transactions, and which approach Horizen has adopted to build its zero-knowledge-enabled network of blockchains.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 ## How Horizen Implements Zero-Knowledge Proofs
 
 Before we dive into zk-SNARKs vs zk-STARKs, we will first lay out an example of how the ZKP technology works in practice on the _Horizen_ network.

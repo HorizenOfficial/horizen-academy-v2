@@ -51,6 +51,10 @@ _This means that the in-game assets can be:_
 
 In-game assets could also be made [**interoperable**](blockchain-interoperability.md), meaning they can be transferred between different gaming environments if the blockchain games operate on the same blockchain network or a blockchain that is [EVM-compatible](ethereum-virtual-machine-evm.md). 
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 This can provide significant benefits to avid gamers who are already familiar with using tokens as currency within digital economies, but have never truly been able to claim ownership of the assets and achievements they accumulate in a game. 
 
 ### The Gaming Industry

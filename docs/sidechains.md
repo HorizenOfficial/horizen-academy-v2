@@ -176,6 +176,10 @@ Several teams are working on other sidechain constructions. As mentioned before,
 
 The most significant number of sidechain protocols are built on the Ethereum network. Besides the _POA network,_ [Plasma](http://plasma.io/plasma-deprecated.pdf) is another noteworthy example. It was presented by Joseph Poon and Vitalik Buterin in 2017 and is based on smart contracts deployed on the Ethereum main net.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 **The sidechain constructions mentioned above assume one of two things:**
 
 - The _design_ is **symmetric**, requiring the mainchain to monitor all sidechains to verify backward transfers 

@@ -93,6 +93,10 @@ The protocol requires you to add a small transaction fee - similar to a stamp - 
 
 [Wallets](crypto-wallets.md) make it easy to receive and send transactions. 
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 They also create your signature for you, without you even noticing, so don’t worry if this sounds complex at first. [Addresses on a blockchain](wallet-addresses.md) are, of course, a little different to addresses that you are used to - they look like this:
 
 **znWPHuCGsgnJ5nsdu9AJdDcxDPWdrESoMNT**

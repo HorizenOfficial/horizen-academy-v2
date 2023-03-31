@@ -151,6 +151,10 @@ A series of letters and numbers that the [owner of a wallet](crypto-wallets.md) 
 
 A public key corresponds to a private key which is used to authorize the owner of the public key to spend the funds on their wallet.
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 ### Elliptical Curve Digital Signature Algorithm - ECDSA
 
 An encryption algorithm that is used to confirm that a transaction was signed using the private key that is linked to the same public key that the receiver shared with a sender in a transaction.
