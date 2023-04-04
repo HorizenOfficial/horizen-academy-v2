@@ -24,6 +24,8 @@ Other responsibilities of miners and validators include storing a history of the
 
 All blockchains are powered by a **network of nodes** that each store their own copy of the ledger. We can think of a node as a copy of a book that is managed by members of a network sitting at a round table. Each member is responsible for updating their book with the latest record of transactions.
 
+![network of nodes](/img/blockchain-nodes/network-of-nodes.jpeg)
+
 Each node stores a copy of the ledger and updates it in sync with everyone else’s node once the latest transactions have been verified.
 
 ## Why Do We Need Nodes in Blockchain?
@@ -73,6 +75,8 @@ The typical blockchain technology stack consists of 5 layers:
 - The **Network** Layer
 - The **Consensus** Layer 
 - The **Application** Layer
+
+![blockchain technology stack](/img/blockchain-nodes/blockchain-technology-stack.jpeg)
 
 The **Protocol Layer** encapsulates both the hardware and data layers of the blockchain.
 

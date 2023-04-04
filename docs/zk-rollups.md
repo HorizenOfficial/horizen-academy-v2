@@ -80,10 +80,14 @@ Polygon Zero offers an improvement on the typical process of generating new cryp
 
 Polygon Zero adopts ‘recursive proofs’, which generates multiple proofs at the same time for every transaction in the batch. The system then aggregates these proofs into one single proof that is submitted to the Ethereum mainnet. This method of producing a proof that is an aggregate of multiple proofs is thought to be less resource intensive and ultimately faster.  
 
+![polygon zero](/img/zk-rollups/polygon-zero.jpg)
+
 #### Polygon Hermez
 Polygon Hermez is the result of Polygon's acquisition of Hermez, a zk-rollup scaling solution for Etheruem in 2021. Hermez’s approach is to adopt a new consensus algorithm called proof of efficiency (PoE). 
 
 PoE is optimized for decentralization, allowing anyone to take part as either a Sequencer or Aggregator. Sequencers accept transactions and include them in the next batch, while Aggregators are responsible for generating the ZK proofs that are submitted to the Ethereum mainnet. 
+
+![prook of efficiency poe](/img/zk-rollups/proof-of-efficiency.jpg)
 
 #### Polygon Miden
 
@@ -96,6 +100,8 @@ A key criticism of the trusted setup model is that it relies on trusted 3rd part
 As an alternative, zk-STARKs use random samples of publicly verifiable information as a way to construct proofs without relying on trusted parties.
 
 With this approach, zk-STARKs claim to offer greater scalability in terms of improving speed and reducing the computational size of transaction data. 
+
+![polygon miden](/img/zk-rollups/polygon-miden.jpg)
 
 Miden is an [EVM compatible](ethereum-virtual-machine-evm.md) STARK rollup, which means it is compatible with solidity programs and can therefore be easily adopted by Ethreum developers who wish to scale their dApps using the STARK approach. 
 
