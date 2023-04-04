@@ -4,6 +4,8 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ### Setup your environment
 
+Create an `.env` file at the root, using `.env.template` as a template.
+
 Create a file named `.env.local` inside the `env/` folder. You can use the `.env.local.example` file as a guide.
 
 

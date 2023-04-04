@@ -129,10 +129,10 @@ const config = {
                 disableSwitch: true,
             },
             algolia: {
-                appId: "VDTY9KV01M",
-                apiKey: "20e498146346aaa477e9b1e3a23e7477",
-                indexName: "horizen",
-            }
+                appId: process.env.ALGOLIA_APP_ID,
+                apiKey: process.env.ALGOLIA_API_KEY,
+                indexName: process.env.ALGOLIA_INDEX_NAME,
+            },
         }),
 
     plugins: ["./matomo"],
