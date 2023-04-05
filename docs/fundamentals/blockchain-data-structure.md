@@ -304,7 +304,7 @@ A transaction is a message to the network informing it about a transfer of money
 - **tx\_ in count:** Is the number of Inputs used - so the number of UTXOs consumed.
 - **tx\_ in:** Each input used is characterized by four data points: the outpoint it spends, the size of the _signature_ required to spend that outpoint, the signature itself, and the _sequence number_. The sequence number can be used to modify the _spending conditions_ of an outpoint, but we are getting ahead of ourselves.
 - **tx\_ out count:** Is the number of outputs created in the transaction.
-- **tx\_ out:** Transaction outputs. Each output is characterized by three data points: the amount spent, the size of the spending condition, and the spending condition itself that can be satisfied with a [digital signature](security/digital-privacy.md) based on the new owners private key.
+- **tx\_ out:** Transaction outputs. Each output is characterized by three data points: the amount spent, the size of the spending condition, and the spending condition itself that can be satisfied with a [digital signature](privacy/digital-privacy.md) based on the new owners private key.
 - **lock\_ time:** Is the Unix epoch time or block number after which the outputs are spendable. This is optional.
 
 Each transaction is broadcast in a serialized byte format called raw format. It is then hashed twice **(_SHA256(SHA256())_)** to create its transaction ID - **TXID** - which, as you already know, is used to create the Merkle tree.
