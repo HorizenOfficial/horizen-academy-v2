@@ -144,7 +144,7 @@ In order for a hash function to consume variable-length inputs, shorter inputs a
 
 Larger inputs are split and the compression function is applied to the fragments in sequence.
 
-#### The Most Common  Hash Functions in Cryptocurrency
+#### The Most Common Hash Functions in Cryptocurrency
 
 In cryptocurrencies **SHA-256** (_Secure Hash Algorithm 256_) and **RIPEMD 160** (_RACE Integrity Primitives Evaluation Message Digest 160_), the **BLAKE** family and **Keccak**, which is the basis for the _SHA-3_ family, are the most common hash functions.
 

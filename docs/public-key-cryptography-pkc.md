@@ -142,6 +142,10 @@ There are different ways to convert a string of bits into data that humans can d
 
 You can generate as many addresses as you like from a single private key, and [wallets](crypto-wallets.md) do this for you automatically. It is a feature to enhance [your privacy](digital-privacy.md), as it makes it harder for a third party to link all your payments together.
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 ### Digital Signature
 
 You might hear that your keys are used to encrypt and decrypt messages. 

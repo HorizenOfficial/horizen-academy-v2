@@ -241,6 +241,10 @@ When it comes to [proof of stake systems](pos-vs-pow.md), the economics of valid
 
 **Proof of Stake** (PoS) requires validators to stake a minimum number of the network's [native tokens](what-is-a-token.md) into a smart contract in order to validate transactions.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 A randomized process is used to determine which validators will get to produce the next block. This means that PoS does not require the use of mining rigs to solve complex math problems in order to earn block rewards. 
 
 _Instead_, the process is more deterministic and works in such a way that every validator ends up generating roughly the same APY on their staked coins. The exception being in cases where a validator loses a portion or all of their staking due to ‘slashing’, which is an event that occurs when a validator attempts to submit a fraudulent transaction or fails to keep their computer operating with near 100% uptime. 

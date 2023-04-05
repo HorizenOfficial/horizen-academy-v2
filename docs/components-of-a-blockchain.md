@@ -34,6 +34,10 @@ You can fit only so many words on one page before the page is full and you have 
 
 The blockchain documents every transfer of money. This ensures that no one can spend the same set of his or her money twice. If you have one ZEN and send it to a friend or an online shop, the recipient is now in control of that ZEN and you cannot use it anymore.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 Blockchains solved a major problem in the digital world. When I send you a picture in an email, I actually just send you a copy of that picture, and afterward, we both have a copy. I could send the same picture to another person later on.
 
 Blockchains allow digital things to exist in only one location at a time. This is one of the main reasons blockchains are innovative. Digital money would not work if I could send you a copy of my money and spend it a second time later on.
@@ -173,6 +177,10 @@ A [digital signature](digital-signatures.md) works similarly to how you authoriz
 The type of public-key cryptography used in blockchains is one of the safest means of encryption available today.
 
 All of this would be cumbersome to do manually and require quite some skill. Luckily there are wallets that help you do all the above. Wallets generate and manage your keys and take care of all the necessary encryption and decryption. 
+
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
 
 What is important is to understand that your private key authorizes the spending of your funds. 
 

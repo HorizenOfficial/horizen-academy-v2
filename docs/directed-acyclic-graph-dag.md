@@ -63,6 +63,10 @@ A high rate of orphaned blocks reduces the overall security of the protocol, bec
 - **Sidechain** approaches, which can best be described as a parallelization of blockchains. Assets can be transferred from one chain to another via a _two-way peg_ (_2WP_) and the transactional load is shared between the mainchain and its [sidechains](sidechains.md).
 - **Directed acyclic graphs** (_DAGs_) have a different [data structure](blockchain-data-structure.md) than blockchains. Many blocks can be produced in parallel which requires modifications to the [consensus mechanism](consensus-mechanisms.md).
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 ## What is a DAG?
 
 The term _DAG_ stands for **Directed Acyclic Graph**. Strictly speaking, a _DAG_ is a mathematical concept and nothing particularly innovative in and of itself.

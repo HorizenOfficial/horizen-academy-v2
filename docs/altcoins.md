@@ -20,6 +20,10 @@ The term **altcoin** stems from a combination of '_alternative_' and '_coin_' in
 
 _Horizen's_ native currency _ZEN_ is an altcoin by that definition. 
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 _Bitcoin_ is open-source software and anybody is free to use the code for whatever purpose he likes. _Not surprisingly, the vast majority of altcoins are derived or [forked](blockchain-forks.md) from Bitcoin_.
 
 _The first notable altcoin_, Namecoin, was based on the Bitcoin code. It kept the original maximum supply of _21 million_ in place and also didn't change the _Proof-of-Work algorithm_. It primarily diverged from [Bitcoin](bitcoin-glossary.md) in introducing user domains.

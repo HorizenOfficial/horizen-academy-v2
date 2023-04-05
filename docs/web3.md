@@ -92,6 +92,10 @@ This is a direct response to the wave of censorship that we have seen on big tec
 
 **Today, Bitcoin and [Ethereum](ethereum-glossary.md) are the market leaders of the Web3 revolution.**
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 In the past few years, we have seen an explosion of new [decentralized protocols](blockchain-protocols.md) and applications that aim to solve unique problems in _financial services_, _supply chain_, _healthcare_, _entertainment_ and other industries where disintermediating the middleman and establishing peer-to-peer networks can provide more efficient and equitable outcomes for participants in the system.   
 
 ## Will Web3 replace Web2?

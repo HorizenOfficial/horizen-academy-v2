@@ -182,6 +182,10 @@ At [Horizen](https://www.horizen.io/), we strongly believe that tokens will cont
 
 This is why we have created [TokenMint](https://tokenmint.global/), a tool that allows anyone to quickly launch their own token without the need of technical knowledge or blockchain experience.
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 **On TokenMint, you can:**
 
 - Instantly launch a fungible token without any technical expertise required

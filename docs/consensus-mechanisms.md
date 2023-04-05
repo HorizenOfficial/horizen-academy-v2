@@ -35,6 +35,10 @@ _Today, the most popular consensus mechanisms include:_
 
 Consensus mechanisms play a critical role in determining how _efficiently_ a blockchain can update its state and process transactions while remaining _decentralized_. 
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 ## The Scalability Trilemma
 
 This challenge is commonly referred to as the **Scalability Trilemma**, a term coined by Ethereum founder Vitalik Buterin which described the tradeoff that developers make between scalability, decentralization and security when designing a blockchain. It is referred to as a _trilemma_ because in theory a blockchain cannot achieve scalability without compromising decentralization or security. 

@@ -24,6 +24,10 @@ Now there are different ways to scale blockchains and increase their throughput,
 
 We introduced [sidechains](sidechains.md) as a scaling approach that spreads the workload otherwise performed by a single set of mainchain nodes to several sets of nodes, each responsible for their sidechain.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 We also talked about [Directed Acyclic Graphs (DAGs)](directed-acyclic-graph-dag.md) that hold the potential to dynamically adjust the on-chain, or "_on-DAG_", throughput by introducing a new type of [data structure](blockchain-data-structure.md) supporting _two-dimensionality_ in an otherwise mostly _one-dimensional_ blockchain world.
 
 We will cover another highly promising approach to make blockchains security promise accessible to a more substantial user-base - _payment channels_. 

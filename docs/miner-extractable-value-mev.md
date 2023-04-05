@@ -100,6 +100,10 @@ The benefits that accrued through this practice can be significant, albeit uneve
 
 To solve this problem, Flashbots, an [Ethereum](ethereum-glossary.md) research organization, is developing an ‘_MEV Boost_.’
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 **MEV Boost** solves the problems of MEV in the following ways:
 
 * Quantifying the scale and volume of MEV extraction

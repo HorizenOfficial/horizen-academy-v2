@@ -179,6 +179,8 @@ Through interoperability features, these L1 networks can also be made to communi
 - **Mainchain** = Primary Network - a special subnet that validates the entire Avalanche network
 - **Interoperability Mechanism** = Cross-Chain Bridges
 
+![avalanche modular architecture](/img/modular-vs-monolithic-blockchains/avalanche-modular-architecture.jpg)
+
 **Avalanche** is a more recent entrant into the modular architecture space.
 
 Rather than a simple mainchain and sidechain structure, the Avalanche network is broken up into four components that are each optimized for a specific purpose:
@@ -188,7 +190,9 @@ Rather than a simple mainchain and sidechain structure, the Avalanche network is
 3. **Platform Chain** (P-Chain) - Designed for managing subnets and coordinating validator nodes and the staking mechanism
 4. **Contract Chain** (C-Chain) - Designed for [creating smart contracts](smart-contracts.md) using an instance of the Ethereum virtual machine (EVM) - enables developers to deploy Ethereum Dapps to the Avalanche ecosystem
 
-![avalanche modular architecture](/img/modular-vs-monolithic-blockchains/avalanche-modular-architecture.jpg)
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
 
 ### Polkadot
 

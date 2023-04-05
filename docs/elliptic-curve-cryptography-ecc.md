@@ -258,3 +258,7 @@ _ECC_ is based on _discrete math_ where only certain values are allowed. The sec
 _RSA_ and many of the early PKC schemes are built using _modular arithmetic_ and the security is based on the hardness of _integer factorization_. 
 
 When you are transferring cryptocurrencies you generally use [addresses](wallet-addresses.md) and not your public key.
+
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::

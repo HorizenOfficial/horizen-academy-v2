@@ -24,6 +24,8 @@ Other responsibilities of miners and validators include storing a history of the
 
 All blockchains are powered by a **network of nodes** that each store their own copy of the ledger. We can think of a node as a copy of a book that is managed by members of a network sitting at a round table. Each member is responsible for updating their book with the latest record of transactions.
 
+![network of nodes](/img/blockchain-nodes/network-of-nodes.jpeg)
+
 Each node stores a copy of the ledger and updates it in sync with everyone else’s node once the latest transactions have been verified.
 
 ## Why Do We Need Nodes in Blockchain?
@@ -74,6 +76,8 @@ The typical blockchain technology stack consists of 5 layers:
 - The **Consensus** Layer 
 - The **Application** Layer
 
+![blockchain technology stack](/img/blockchain-nodes/blockchain-technology-stack.jpeg)
+
 The **Protocol Layer** encapsulates both the hardware and data layers of the blockchain.
 
 * The **Hardware/Infrastructure layer** is where data from the blockchain network is stored on nodes.
@@ -89,6 +93,10 @@ The **Protocol Layer** encapsulates both the hardware and data layers of the blo
 Ethereum nodes, or _clients_, record and transmit copies of transaction data, including smart contract data, on the Ethereum blockchain, which is then read by the Ethereum Virtual Machine (EVM) to update the ledger. 
 
 * EVM is a **Turing complete** software, meaning that the software is agile enough to run any code defined by the developer. 
+
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
 
 * The virtual machine enables smart contract code to be executed by a global [P2P network](p2p-networks.md) of computers. 
 
@@ -146,6 +154,13 @@ Ethereum’s client software supports major operating systems such as Linux, Mac
 
 These are the recommended disk space requirements for running different Ethereum clients. A **client** is an implementation of Ethereum that verifies data against the [protocol's rules](blockchain-protocols.md) and secures the network.
 
+|   Client   | Disk Size _Snap Sync_ | Disk Size _Full Archive_ |
+|:----------:|:---------------------:|:------------------------:|
+| Geth       | 500BG+                | 12TB+                    |
+| Nethermind | 500GB+                | 12TB+                    |
+| Besu       | 800GB+                | 12TB+                    |
+| Erigon     | N/A                   | 2.5TB+                   |
+
 Etherum.org recommends using any of the following [providers](https://ethereum.org/en/developers/docs/nodes-and-clients/run-a-node/) to help setup your client:
 
 * [DappNode](https://docs.dappnode.io/) 
@@ -158,6 +173,32 @@ Although your node does not need to be online all of the time, it is recommended
 ## How to Run a Bitcoin Node?
 
 Bitcoin Core is the most popular client for running a Bitcoin full node. To begin running a node, you must download the Bitcoin Core software, which comes with the following requirements: 
+
+**System**
+- Desktop
+- Laptop
+- Some ARM chipsets > 1 GHz
+
+**Operating System**
+- Windows 7/8.x/10
+- Mac OS X
+- Linux
+
+**Disk Space**
+- 350 GB
+
+**Download**
+- 500 MB/Day
+	- 15 GB/Month
+
+**Upload**
+- 5 GB/Day
+	- 1450 GB/Month
+
+**Memory (RAM)**
+- 1GB
+
+*Additionally, a one-time 340 GB download the first time you start Bitcoin Core*
 
 To set up a node, you must first synchronize your node to the network using the [Initial Block Download](https://developer.bitcoin.org/devguide/p2p_network.html#initial-block-download) or IBD. Similar to Ethereum, downloading the Bitcoin Core software uses a lot of storage space. You can find some tips for [reducing storage space](https://bitcoin.org/en/full-node#reduce-storage) on Bitcoin's website.
 

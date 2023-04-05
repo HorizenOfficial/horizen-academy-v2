@@ -34,6 +34,10 @@ This proof is then submitted to the mainchain, where it is validated by the L1 n
 
 The end result is that the most current ‘state’ of the L2, an accounting of user balances and total values in each [wallet](crypto-wallets.md), is permanently recorded on the mainnet, ensuring that the records can be recovered in the event that the L2’s security is compromised.  
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 [*Layer 2s*](layer-2.md) are considered off-chain scaling solutions for Dapps. They are not independent blockchains and therefore are less secure, relying on the Ethereum network for final transaction settlement.
 
 Zk-rollups represent the first major step in Ethereum’s transition from a monolithic to a [modular blockchain architecture](modular-vs-monolithic-blockchains.md). In a modular architecture, blockchains separate critical functions such as execution, consensus and data availability into different specialized networks. This allows the broader network to function more effectively and mitigate some of the challenges caused by the famous scalability trilemma. 
@@ -76,10 +80,14 @@ Polygon Zero offers an improvement on the typical process of generating new cryp
 
 Polygon Zero adopts ‘recursive proofs’, which generates multiple proofs at the same time for every transaction in the batch. The system then aggregates these proofs into one single proof that is submitted to the Ethereum mainnet. This method of producing a proof that is an aggregate of multiple proofs is thought to be less resource intensive and ultimately faster.  
 
+![polygon zero](/img/zk-rollups/polygon-zero.jpg)
+
 #### Polygon Hermez
 Polygon Hermez is the result of Polygon's acquisition of Hermez, a zk-rollup scaling solution for Etheruem in 2021. Hermez’s approach is to adopt a new consensus algorithm called proof of efficiency (PoE). 
 
 PoE is optimized for decentralization, allowing anyone to take part as either a Sequencer or Aggregator. Sequencers accept transactions and include them in the next batch, while Aggregators are responsible for generating the ZK proofs that are submitted to the Ethereum mainnet. 
+
+![prook of efficiency poe](/img/zk-rollups/proof-of-efficiency.jpg)
 
 #### Polygon Miden
 
@@ -93,7 +101,13 @@ As an alternative, zk-STARKs use random samples of publicly verifiable informati
 
 With this approach, zk-STARKs claim to offer greater scalability in terms of improving speed and reducing the computational size of transaction data. 
 
+![polygon miden](/img/zk-rollups/polygon-miden.jpg)
+
 Miden is an [EVM compatible](ethereum-virtual-machine-evm.md) STARK rollup, which means it is compatible with solidity programs and can therefore be easily adopted by Ethreum developers who wish to scale their dApps using the STARK approach. 
+
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
 
 #### Polygon Nightfall 
 
@@ -114,5 +128,11 @@ The most notable project to deploy on StarkNet was dYdX, an on-chain DEX for tra
 Loopring leverages ZK-rollups on Ethereum to build a fast and low cost DEX and payments protocol. 
 
 ### Immutable X
+
 Immutable X is an Ethereum based ZK-rollup protocol that is optimized for trading NFTs at lower cost and greater speeds. It offers a NFT marketplaces as well as the ability to trade in-game digital assets that are in the format of an ERC-721 or ERC-1155
 
+### Horizen zk-SNARKs
+
+Horizen leverages zk-SNARKs in a similar way to how Ethereum mainnet leverages ZK-rollups. 
+
+The main difference is that Horizen offers a set of software development tool kits for launching independent blockchains called sidechains that have the option to submit transcripts to the Horizen main chain using zk-SNARKs. 

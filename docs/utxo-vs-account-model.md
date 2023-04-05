@@ -145,6 +145,10 @@ When you think about how your bank does the accounting for your bank account it 
 
 The blockchain _does not_ create an “account” for you to maintain a balance. There is _no_ final balance stored on the ledger. The blockchain only stores individual transactions and to check your balance, there is an additional step involved. 
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 Your wallet does this automatically whenever you open it. What happens in the background is that your wallet scans the ledger for all transactions to your address(es) and adds them up.
 
 ![wallet balance utxo](/img/utxo-vs-account-model/wallet-balance-utxo.jpg)
@@ -212,6 +216,10 @@ You can see that by now both TX outputs are spent, indicated by the **(S)** next
 ## The Account Model
 
 The _account-based transaction model_ represents assets as balances within accounts, similar to bank accounts. _Ethereum_ uses this transaction model. 
+
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
 
 _There are two different types of accounts:_
 

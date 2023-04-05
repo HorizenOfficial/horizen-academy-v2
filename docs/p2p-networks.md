@@ -6,7 +6,6 @@ title: What is a P2P Network? - Peer-to-Peer Networks
 slug: /peer-to-peer-networks-p2p/
 description: In this article, you learn about the peer-to-peer network, also known as the physical infrastructure that blockchains run on.
 image: /img/p2p-networks/p2p-networks-meta.jpeg
-
 last_update:
   date: 2/21/2023
   author: Horizen Contributor
@@ -345,6 +344,10 @@ Nodes need to meet a certain target with their response time, otherwise they are
 Secure and Super Nodes are not just a means to create some sort of _masternodes_, they will be crucial for our [Sidechain model](https://www.horizen.io/zendoo/). Node operators will be able to choose whether they want to support sidechains, and if so, which ones. 
 
 We expect to see some interesting economic models with dApps built on our sidechains. dApps should incentivize node operators to support their sidechain, just like they would usually pay for the infrastructure their service is built on.
+
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
 
 ## Summary - P2P Networks
 

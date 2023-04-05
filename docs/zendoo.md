@@ -24,6 +24,10 @@ In more general terms, the Zendoo protocol allows a [Bitcoin](bitcoin-glossary.m
 
 **Zendoo** allows backward transfers to be verified by the mainchain without relying on external validators or certifiers. The mainchain does not monitor sidechains (asymmetric peg) and doesn’t know anything about their internal structure. Zendoo accomplishes this by generating recursive proofs for each sidechain state transition.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 ## Main Components in Zendoo
 
 _Most sidechain constructions consist of three elements:_

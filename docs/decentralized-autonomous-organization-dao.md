@@ -213,6 +213,10 @@ Voters will get rewarded proportionally to their stake and experts will get rewa
 
 We plan to integrate the treasury system on a sidechain. [Sidechains](sidechains.md) are one of the major protocol upgrades that Horizen is working on. It will enable different dApps to each run on their own sidechain with decoupled security guarantees. 
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 _Even if something goes wrong on a sidechain, the mainchain will stay unaffected._
 
 The user interface and user experience of such a system are very important factors. The best treasury system does not help if it is hard to partake in. 

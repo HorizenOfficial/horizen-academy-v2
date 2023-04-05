@@ -158,6 +158,10 @@ For distributing tokens to end users, the goal should be to make it as easy as p
 
 You should focus on maximizing token distribution by providing liquidity on decentralized exchanges and by forming strategic partnerships with wallets, centralized exchanges and even vendors who may be willing to accept your token as a currency.
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 ## Token Supply Dynamics
 
 Token supply plays an important role in terms of its price, its perception by market participants and its utility by users.

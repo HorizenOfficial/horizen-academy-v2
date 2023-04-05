@@ -151,6 +151,10 @@ Backward transfers in Zendoo require a more complex mechanism.
 
 **Backward transfers** are typically initiated on the sidechain as special transactions batched in withdrawal certificates and propagated to the mainchain by sidechain nodes.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 Backward transfers in Zendoo are challenging due to the asymmetric design. On the other hand, the protocol allows great flexibility in sidechain design. There are few limitations on how backward transfers and withdrawal certificates are generated outside of those imposed through the CCTP.
 
 Before we look into actual backward transfers, we need to talk about two concepts that are introduced with the CCTP, and that affect all backward transfers.

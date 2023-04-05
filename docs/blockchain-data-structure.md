@@ -68,6 +68,10 @@ There is no centralized entity, like a bank or clearinghouse, responsible for ac
 
 **Cryptocurrencies** _are permissionless because every individual abiding by the rules of the protocol can [create a wallet](crypto-wallets.md) and send a transaction without needing to sign up to use the service_.
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 The transaction is then broadcast to the network, and every participant (or node or peer) keeps a copy of it. A node can be operated by a person, a store accepting crypto, or a bank; it makes no difference who you are. 
 
 The amount of copies makes a blockchain slower than a database but makes it more secure.

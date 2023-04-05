@@ -40,6 +40,10 @@ A smart contract can be used to manage [loan transactions](crypto-lending.md) be
 - If Person **A** repays the loan plus interest on time to Person **B**, the funds from the smart contract will automatically be released back to Person **A**’s [digital wallet](crypto-wallets.md)
 - If Person **A** fails to repay the loan on time, the funds from the smart contract will automatically be released to Person **B**’s digital wallet. 
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 *Other functions that a smart contract can be used for include:* 
 
 - Launching tokens that are pegged to the price of other assets
@@ -61,6 +65,10 @@ We can think of the [EVM](ethereum-virtual-machine-evm.md) as a piece of softwar
 The EVM is a **turing complete software**, meaning that the software is agile enough to run any code defined by the developer. The virtual machine enables smart contract code to be executed by a [global P2P network of computers](p2p-networks.md). 
 
 Contracts written in a smart contract–specific programming language, like Solidity, are compiled into ‘bytecode’ to be read by the EVM. All nodes then execute this contract using their EVMs, which in turn updates the ledger.
+
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
 
 The performance of the EVM is only limited by the amount of _gas_ that is provided by the client to process each transaction:
 
