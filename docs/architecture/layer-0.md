@@ -74,10 +74,6 @@ A second chain can then be optimized for decentralization and serve as a final c
 
 When it comes to scalability, layer 0 networks can help blockchain scale by increasing transaction throughput. While transaction speed is typically measured in terms of **TPS** (_transactions per second_), transaction throughput looks at the total number of transactions that a network can handle at one time.
 
-**For example**, the Horizen network is a layer 0 protocol in which a single blockchain launched using its **Blaze SDK** can produce up to _1,000_ transactions per second.
-
- However, the protocol can manage up to _10,000_ blockchains running at the same time in parallel, which means it has a transaction throughput of up to _1 million_.
-
 ### Flexibility
 
 What makes an independent blockchain truly independent is having its own set of **validator nodes** to confirm transactions and produce blocks based on their own _consensus mechanism_.
