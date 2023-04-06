@@ -185,6 +185,10 @@ An innovative and experimental governance approach enabled through blockchain te
 
 The [Decentralized Autonomous Organization](governance/decentralized-autonomous-organization-dao.md) (DAO) is an entity governed by rules written into the code. It acts predictably according to a predefined "constitution" and is controlled by its shareholders. 
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 Shareholders have the power to change the rules of the DAO, but only if making changes to them was foreseen and enabled at the DAO's inception. Rules might just as well be hardcoded, without the option to adapt them later on.
 
 Interactions with a DAO are tracked with timestamps and [digital signatures](cryptography/digital-signatures.md) recorded on-chain. The general concept was introduced as a [_decentralized autonomous corporation_](https://letstalkbitcoin.com/is-bitcoin-overpaying-for-false-security) (DAC) in an article by Dan Larimer in 2013. Vitalik Buterin went one step further and proposed that human management could be made obsolete if the [smart contracts](defi/smart-contracts.md) governing the DAO were written in a _turing complete_ language.

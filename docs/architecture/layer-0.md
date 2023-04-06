@@ -21,6 +21,10 @@ The most notable examples of this can be seen on blockchains like [Ethereum](cry
 
 These blockchains are categorized as **‘Layer 1s’** because they serve as the infrastructure for developers to build and launch _decentralized applications_ or **Dapps** that are tethered to the underlying consensus rules of their host blockchain.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 The adoption of these layer 1 networks and value of their native cryptocurrencies have skyrocketed as a result of users interacting with hundreds of popular Defi, NFT or gaming Dapps that exist on their infrastructure.
 
 ## The Problem with Layer 1s

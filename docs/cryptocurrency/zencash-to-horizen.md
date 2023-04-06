@@ -65,6 +65,10 @@ Community developers were important during 2017. They added important tools, lik
 - _Swing Wallet_ by **Vaklinov**. 
 - They were also able to identify and fix issues with the _mining pool software_ thanks to **Hellcatz**.
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 January 2018 marks an important date for ZenCash, now **Horizen**. The leadership team formalized for the first time during the _IOHK_ conference in _Lisbon, Portugal_. 
 
 Rob, Rosario, **Rowan** (Director of Business Development), **Gustavo** (User Experience Director) and **Alberto** (Director of R&D) gathered in the Airbnb they rented as a temporary office. 

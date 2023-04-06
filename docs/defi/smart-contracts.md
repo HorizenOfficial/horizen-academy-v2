@@ -33,6 +33,10 @@ A [**token**](tokenomics/what-is-a-token.md) is issued within a smart contract t
 
 The **ERC-20 token standard** is a smart contract template that allows for easy issuance and integration with [different wallets](wallets/crypto-wallets.md) and exchanges.
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 Other use cases of smart contracts that are oftentimes omitted, are [payment and state channels](scalability/payment-channels.md), as well as [HTLCs](https://en.bitcoin.it/wiki/Hash_Time_Locked_Contracts) - _Hashed Timelock Contracts_ - which enables [atomic swaps](interoperability/atomic-swaps.md). 
 
 In most general terms, they allow for interaction happening off-chain to be just as trustless, as if they were to happen on-chain. The most popular payment channel network is arguably the [Lightning Network](https://lightning.network/) on Bitcoin.

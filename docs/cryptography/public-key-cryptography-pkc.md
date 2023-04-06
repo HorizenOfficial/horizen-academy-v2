@@ -139,6 +139,10 @@ There are different ways to convert a string of bits into data that humans can d
 
 **Base58Check** is a way to convert bits into alphanumeric characters, but it excludes the four characters **_0, O, I, and l_**. Base58Check removes these characters from your address to reduce errors when copying addresses manually and proofreading them.
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 You can generate as many addresses as you like from a single private key, and [wallets](wallets/crypto-wallets.md) do this for you automatically. It is a feature to enhance [your privacy](privacy/digital-privacy.md), as it makes it harder for a third party to link all your payments together.
 
 ### Digital Signature

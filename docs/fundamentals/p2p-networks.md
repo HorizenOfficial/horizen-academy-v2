@@ -345,6 +345,10 @@ Secure and Super Nodes are not just a means to create some sort of _masternodes_
 
 We expect to see some interesting economic models with dApps built on our sidechains. dApps should incentivize node operators to support their sidechain, just like they would usually pay for the infrastructure their service is built on.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 ## Summary - P2P Networks
 
 Peer-to-Peer networks offer great robustness or fault tolerance at the expense of efficiency. Every node is performing the same task on the network and acts as a client and a server at the same time. If one of your peers goes offline you just connect to another one. 

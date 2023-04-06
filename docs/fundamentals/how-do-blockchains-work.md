@@ -274,3 +274,7 @@ The ability for the components of one system to be reused in another.
 For example, the Ethereum Virtual Machine (EVM) makes it so that every smart contract can be made to interact with any other that is built using the EVM, regardless of what blockchain it is, as long as it is EVM compatible. 
 
 For example Avalanche, Fantom, Binance Smart Chain, etc.
+
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
