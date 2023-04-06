@@ -132,6 +132,10 @@ const config = {
                 appId: process.env.ALGOLIA_APP_ID,
                 apiKey: process.env.ALGOLIA_API_KEY,
                 indexName: process.env.ALGOLIA_INDEX_NAME,
+                replaceSearchResultPathname: {
+                    from: "/academy/",
+                    to: process.env.BASE_URL,
+                },
             },
         }),
 
