@@ -89,6 +89,10 @@ Ethereum nodes, or _clients_, record and transmit copies of transaction data, in
 
 * EVM is a **Turing complete** software, meaning that the software is agile enough to run any code defined by the developer. 
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 * The virtual machine enables smart contract code to be executed by a global [P2P network](fundamentals/p2p-networks.md) of computers. 
 
     * Contracts written in a [smart contract–specific programming language](defi/smart-contracts.md) like solidity are compiled into ‘bytecode’ to be read by the [EVM](interoperability/ethereum-virtual-machine-evm.md). All nodes then execute this contract using their EVMs, which in turn updates the ledger.

@@ -110,6 +110,10 @@ This is what makes a mature PoW blockchain so robust.
 
 In a **Proof of Stake** blockchain, there are also entities collecting transactions and creating new blocks. The process, as well as the terminology in this setting, is a little different though.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 Whereas miners are mining blocks in PoW, **validators** are forging blocks in PoS. 
 
 The chance of validating a new block is proportional to the stake a _validator_ has. The stake refers to the number of coins a validator is willing to lock up for the time they want to be a validator.

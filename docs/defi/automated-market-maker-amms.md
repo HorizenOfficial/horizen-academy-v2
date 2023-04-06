@@ -90,6 +90,10 @@ This example extends to the stock market, where market makers operate as _centra
 
 In DeFi, the traditional market maker, which is often a centralized entity, is replaced by an **Automated Market Maker** which is a set of rules written into code and executed via [_smart contracts_](defi/smart-contracts.md). 
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 With _AMMs_, the [price of the token](tokenomics/what-is-a-token.md) is managed by a **pricing formula** that adjusts based on the amount of tokens that currently sits in a _liquidity pool_ as compared to the other coin that is its _trading pair_. 
 
 ![how do amms work](/img/automated-market-maker-amms/how-do-amms-work.jpeg)

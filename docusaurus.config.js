@@ -77,7 +77,7 @@ const config = {
                         position: "left",
                     },
                     {
-                        to: "/how-does-blockchain-work/",
+                        to: "/ethereum-virtual-machine-evm/",
                         position: "left",
                         label: "Articles",
                     },

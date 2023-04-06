@@ -181,6 +181,10 @@ One of the core tenants of a decentralized exchange is its emphasis on pseudonym
 
 To use a DEX, one simply needs to sign in using a self-custodial wallet like Metamask. No time consuming or costly KYC verification process needed. 
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 #### Security
 
 Decentralized exchanges are run by a network of [distributed nodes](architecture/blockchain-nodes.md), meaning they have no single point of failure and are far less likely to be exploited at the consensus/base layer. This is not to say that smart contracts at the application layer are not prone to being hacked, as we have seen multiple examples of this in the past 2 years. 

@@ -125,6 +125,10 @@ Expanding further, we also see different designs within the trustless and truste
 
 Much of the early success of blockchains like Solana, Binance Smart Chain, Avalanche and other [EVM compatible chains](interoperability/ethereum-virtual-machine-evm.md) can be attributed to the emphasis on building simple and efficient bridging solutions to enable interoperability with the [Ethereum network](cryptocurrency/ethereum-glossary.md).
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 Binance Bridge, Solana Wormhole, and even the Terra Bridge at one point were all pivotal in enabling the massive flow of funds from Etheruem to other networks.
 
 Especially during times of high network congestion that led to skyrocketing gas fees on the ETH network.

@@ -73,6 +73,10 @@ If any of the outcomes occur that are not:
 
 Once a prediction is created, participants can place bets by [staking tokens](tokenomics/what-is-a-token.md) as collateral in a _smart contract_. The **smart contract** is designed to hold the funds of all betters and keep track of what outcomes they were betting on. 
 
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
+
 When the outcome of an event is officially decided, the smart contract will automatically payout the tokens in the pool to whomever correctly predicted the outcome. 
 
 The odds for each bet and the potential payout are calculated based on how many people are betting on one outcome versus the other. Similar to how **liquidity pools** work, betters will deposit funds into a pool and receive tokens that represent their share of the betting pool.
@@ -176,6 +180,10 @@ As a result, it is not uncommon to see the same prediction running on multiple n
 This problem can be solved by developing solutions to enable cross chain prediction markets to form, thereby concentrating liquidity and providing a better betting experience for well capitalized players.
 
 Horizen’s recent implementation of the [Ethereum Virtual Machine](https://eon.horizen.io/) or EVM can significantly advance interoperability of prediction markets on the Ethereum network as well as other [EVM-compatible](interoperability/ethereum-virtual-machine-evm.md) chains such as Avalanche, Fantom and Polygon. 
+
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
 
 ### Smart Contract Security Risks
 

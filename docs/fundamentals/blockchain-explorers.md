@@ -73,6 +73,10 @@ Every blockchain is its own replicated, append-only database with its own specif
 
 The data structures are different, which means that a [Bitcoin](cryptocurrency/bitcoin-glossary.md) explorer wouldn't be able to index and search data from the [Ethereum blockchain](cryptocurrency/ethereum-glossary.md), and vice versa.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 Additionally, each blockchain has its own rules for how data is stored and organized. These rules are known as the [**consensus protocol**](architecture/blockchain-protocols.md). 
 
 Explorers must be designed specifically for each consensus protocol in order to work correctly.
@@ -183,6 +187,10 @@ He received the very first **50** bitcoin as a block reward for this.
 What you will most likely use a block explorer for is checking a _transaction status_. You can find a given transaction _either_ by searching for one of the addresses involved, the _sending_ or _receiving_ address, or by the _transaction ID_ (TXID). 
 
 Most [wallets](wallets/crypto-wallets.md) will show you the transaction ID for all of your transactions.
+
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
 
 If we want to look at the very first [cryptocurrency](cryptocurrency/cryptocurrency.md) transaction ever done, we need to go to Block #170, where Satoshi Nakamoto sent Hal Finney **10** BTC.
 

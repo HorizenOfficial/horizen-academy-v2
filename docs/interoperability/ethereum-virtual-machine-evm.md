@@ -19,6 +19,10 @@ We’ll cover what the **Ethereum Virtual Machine** or _EVM_ is and why it is a 
 
 Simply put, the **EVM** is a computation engine that is in charge of _deploying_ and _executing_ smart contracts _and_ computing the state for every new block added to the _Ethereum blockchain_.
 
+:::info EVM on Horizen
+[**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+:::
+
 ### Key Takeaways - EVM
 
 - The **Ethereum Virtual Machine**, or EVM, is a computation engine that is in charge of deploying and [executing smart contracts](defi/smart-contracts.md) and computing the state for every new block added to the Ethereum blockchain.
@@ -76,6 +80,10 @@ In the enterprise technology industry, virtual machines are typically used in on
 ## How does the Ethereum Virtual Machine Work?
 
 [Ethereum nodes](architecture/blockchain-nodes.md) record and transmit copies of transaction and smart contract data on the Ethereum blockchain, which is then processed by the EVM to update the ledger.
+
+:::info Cobalt Web Wallet
+[**Cobalt**](https://www.horizen.io/wallets/cobalt/) is a secure and easy-to-use web extension wallet for the Horizen cross-chain ecosystem. Trustworthy, reliable and built to easily manage your assets.
+:::
 
 By being positioned between the nodes and the smart contracts, the EVM can compile different kinds of smart contract code into a standard format known as ‘**bytecode**’, which makes it readable by the Ethereum network and therefore enables those transactions to be recorded by the Ethereum nodes.
 
