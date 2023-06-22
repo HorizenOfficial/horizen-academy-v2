@@ -327,7 +327,7 @@ Still, few people transact regularly enough to run a time intensive full node.
 
 Horizen also incentivizes node operators financially because running a node comes at a cost. It takes time to set up, you need to set up or rent a server, and the node operator has to update the software occasionally.
 
-On the Horizen network, _miners_ receive **60%** of the total block reward, **12.5 ZEN**. The other **40%** is used to fund the _infrastructure_ (_Secure Nodes_ **10%** and _Super Nodes_ **10%**) and the non-profit _Zen Blockchain Foundation_ ** 20%** for the _development_ of the protocol.
+On the Horizen network, _miners_ receive **60%** of the total block reward, **12.5 ZEN**. The other **40%** is used to fund the _infrastructure_ (_Secure Nodes_ **10%** and _Super Nodes_ **10%**) and the non-profit _Zen Blockchain Foundation_ **20%** for the _development_ of the protocol.
 
 Because Horizen wants not just many, but also capable and robust nodes, a node has to fulfill a set of minimum requirements. Each node needs a valid _TLS_ certificate, needs to be up and running for at least _92% of time_, and meet certain memory and computational power requirements. 
 
