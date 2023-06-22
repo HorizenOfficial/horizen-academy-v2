@@ -133,7 +133,7 @@ There, we talked about graphs in the context of [data structures](fundamentals/b
 
 ![distributed network graph](/img/p2p-networks/distributed-network-graph.jpg)
 
-A graph \\(G = (V, E))\\ is defined as a set of vertices $V$ and edges $E$. Each edge connects two vertices and has a time delay $d$ for a message to travel along its path. The graph of a distributed network changes constantly. 
+A graph _(G = (V, E))_ is defined as a set of vertices $V$ and edges $E$. Each edge connects two vertices and has a time delay $d$ for a message to travel along its path. The graph of a distributed network changes constantly. 
 
 This happens when nodes go offline and their peers reconnect to different nodes, or when new nodes join the P2P network. The rate of change can vary, and this has implications on privacy.
 
