@@ -32,7 +32,6 @@ In summary, the three major roadblocks to building on public blockchains are sec
 
 ![zendoo sidechain protocol](/img/cross-chain-transactions/zendoo-sidechain-protocol.jpg)
 
-_Meet sidechains_. 
 
 ## Sidechains - Interoperable Blockchains
 
