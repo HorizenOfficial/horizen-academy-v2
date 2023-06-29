@@ -37,7 +37,7 @@ When you own some cryptocurrency, the blockchain contains a record that there ar
 - You must provide a **digital signature** to authorize the spending of those coins. 
 - You can only provide this [digital signature](cryptography/digital-signatures.md) if you are in the possession of the **private key** that corresponds to the public key.
 
-**public-key cryptography**, also known as asymmetric cryptography, to verify ownership. Every user creates two keys when he joins the network, a public, and a private key.
+**Public-key cryptography**, also known as asymmetric cryptography, to verify ownership. Every user creates two keys when he joins the network, a public, and a private key.
 
 The **public key** is like an address, in that you give it to anyone who wants to send you money. If a friend wants to send you some [cryptocurrency](cryptocurrency/cryptocurrency.md), you will give them your public key.
 
