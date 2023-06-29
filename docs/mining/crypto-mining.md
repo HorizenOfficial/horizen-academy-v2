@@ -145,7 +145,7 @@ This means that all miners combined try _208,680,000_ different values for the n
 
 Miners can’t cheat this process of trial and error because of the properties of cryptographic hash functions.
 
-![cryptographic hash functions](/img/crypto-mining/cryptographic-hash-functions.jpg)v
+![cryptographic hash functions](/img/crypto-mining/cryptographic-hash-functions.jpg)
 
 There is no way to calculate a valid nonce from the desired output because the hash function is a _one-way function_. 
 
