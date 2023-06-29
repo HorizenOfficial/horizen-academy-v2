@@ -73,13 +73,13 @@ Miners are incentivized to maximize their revenue, and as a result, will usually
 
 ### Step 2 - Finding a Nonce
 
-Now, a miner builds a _merkle tree_ of all transactions included in the block and includes the _merkle root_ in the block header. She adds all the other necessary data, such as the hash of the previous block, and some other metadata.
+Now, a miner builds a _merkle tree_ of all transactions included in the block and includes the _merkle root_ in the block header. They add all the other necessary data, such as the hash of the previous block, and some other metadata.
 
 ![merkle tree](/img/proof-of-work-pow/merkle-tree.jpg)
 
 Once the candidate block is completed, the miner inserts some value in the _nonce_ data field. The **nonce** - _number used once_ - is a variable whose only purpose is to modify the block hash. 
 
-When a first nonce is inserted, the miner performs the first hash operation. She compares the resulting block hash with the current _target_ and if it is greater than the target, she increments the nonce and performs the same steps again.
+When a first nonce is inserted, the miner performs the first hash operation. They compare the resulting block hash with the current _target_ and if it is greater than the target, they increment the nonce and performs the same steps again.
 
 All miners do this simultaneously and are in a competition to find a nonce that produces a hash equal to or below the target.
 
@@ -186,7 +186,7 @@ It was long thought that memory-bound puzzles were less prone to hardware optimi
 
 > The memory-bound approach suffers from an obvious flaw: if you could find a way to store all that data in memory once, using a lot of expensive DRAM, but then share this data across a large group of inexpensive processors, you would effectively share the cost across a large number of processors and thus undermine the supposed difficulty of the problem. And this is exactly what has happened recently." - Jeffrey Emanuel
 
-The author is referring to the emergence of ASIC miners for the Equihash [mining algorithm]. Most PoW schemes are CPU-bound. Some algorithms previously referred to as ASIC resistant, are _memory-hard_, but rarely memory-bound. 
+The author is referring to the emergence of ASIC miners for the Equihash [mining algorithm](mining/crypto-mining.md). Most PoW schemes are CPU-bound. Some algorithms previously referred to as ASIC resistant, are _memory-hard_, but rarely memory-bound. 
 
 This means they require a lot of memory to be performed, but once that amount of memory is available, speed improvements are realized through increasing the processor performance rather than adding more memory. 
 
@@ -290,7 +290,7 @@ On a high level, miners are rewarded with a ledger entry for spending real world
 
 ### 51% Attack
 
-PoW also has some vulnerabilities- no system is perfect. It is hard to achieve Byzantine Fault-Tolerance in the first place, let alone tolerating a large share of byzantine actors. Simply speaking, _Byzantine_ behavior mostly refers to malicious behavior. 
+PoW also has some vulnerabilities - no system is perfect. It is hard to achieve Byzantine Fault-Tolerance in the first place, let alone tolerating a large share of byzantine actors. Simply speaking, _Byzantine_ behavior mostly refers to malicious behavior. 
 
 Building a working system with more than one third of the network acting Byzantine took many years. However, combining Proof of Work and the _longest chain rule_ can tolerate malicious hash contributions of up to **49%**.
 
