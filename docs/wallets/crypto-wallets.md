@@ -120,7 +120,7 @@ Next, your wallet creates the _outputs_. It asks you for an _address_ to send mo
 
 You want to send **2** ZEN to address **XYZ** to pay for your lunch, so your wallet creates the first output accordingly.
 
-The second output is generated automatically - its called the _change output_.Outputs are similar to cash denominations. If you need to pay **$2** **USD** but only have a **$10** bill, you expect to get **$8** in change. 
+The second output is generated automatically - its called the _change output_. Outputs are similar to cash denominations. If you need to pay **$2** **USD** but only have a **$10** bill, you expect to get **$8** in change. 
 
 Your wallet automatically includes the change in the transaction. The newly generated outputs are locked by default.
 
