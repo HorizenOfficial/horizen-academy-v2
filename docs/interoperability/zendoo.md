@@ -29,7 +29,7 @@ _Most sidechain constructions consist of three elements:_
 
 - The **Mainchain Consensus Protocol** - MCP
 - The **Cross-Chain Transfer Protocol** - CCTP
-- **The Sidechain Consensus Protocol** - SCP
+- The **Sidechain Consensus Protocol** - SCP
 
 Depending on the sidechain structure, these components can be either highly dependent on one another or highly decoupled. The Zendoo protocol allows various degrees of freedom concerning the SCP. The Cross-Chain Transfer Protocol serves as a bridge between MCP and all sidechains.
 
@@ -89,13 +89,13 @@ A **proof** comprises a set of values that the verifier uses to compute a _binar
 
 Verifying state transitions in a system is one great use case for a proof system. A blockchain is a state machine in the sense that every block records new transactions onto the ledger, changing the state of the system. Nodes verify each block before they add it to their version of the ledger. 
 
-They check if transactions have valid [digital signatures](cryptography/digital-signatures.md) attached, if only previously unspent transaction outputs] are spent, and if the Proof of Work attached to the block meets the current difficulty. 
+They check if transactions have valid [digital signatures](cryptography/digital-signatures.md) attached, if only previously unspent transaction outputs are spent, and if the Proof of Work attached to the block meets the current difficulty. 
 
 With a proof system, a miner could generate a proof that the state transition (new block) was performed according to the protocol. All [other nodes](architecture/blockchain-nodes.md) would simply have to verify if the proof is correct and could save themselves from verifying each part of the block individually.
 
 [**Zero-Knowledge proofs**](privacy/zero-knowledge-proofs-zkp.md) such as [**zk-SNARKs**](privacy/zk-snarks-vs-zk-starks.md) are best known for their application in privacy-preserving cryptocurrencies. Horizen, Zcash and other protocols utilize _zkSNARKs_ to enable the [private transfer of money](privacy/private-transactions.md). When proofs are used to transfer money privately, a user creates a transaction according to the blockchain’s protocol.
 
-Instead of broadcasting this transaction in plaintext to the network, the user generates a proof that the transaction is valid and broadcasts this proof. The proof entails all necessary information about the transaction: the previously unspent inputs and the digital signature(s) satisfying the spending conditions of the inputs.
+Instead of broadcasting this transaction in plain text to the network, the user generates a proof that the transaction is valid and broadcasts this proof. The proof entails all necessary information about the transaction: the previously unspent inputs and the digital signature(s) satisfying the spending conditions of the inputs.
 
 Once broadcast, nodes will verify the proof instead of the plaintext transaction. For this to work, an essential property of the proof system comes down to _soundness_ and _completeness_.
 
