@@ -263,7 +263,7 @@ Her wallet will create a transaction that defines the spending account, the rece
 
 When the system transitions to a new state (**n+1**) with the next block, Alice's account balance will globally be reduced to **2** ZEN, whereas Bob's balance will be increased to **9** ZEN.
 
-The PubKey and Signature Script do not exist in account-based blockchains.The verification of signatures in account-based blockchain, Ethereum for example, is based on three parameters, **r**, **s**, and **V** provided by the sender. 
+The PubKey and Signature Script do not exist in account-based blockchains. The verification of signatures in account-based blockchain, Ethereum for example, is based on three parameters, **r**, **s**, and **V** provided by the sender. 
 
 These three values comprise the _signature_. **Solidity**, the programming language used in Ethereum, provides a method, [ecrecover](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethsign), that returns an address given these parameters. If the returned address matches the sender's address, the signature, and in return, the transaction is valid.
 
