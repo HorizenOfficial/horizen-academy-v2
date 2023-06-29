@@ -56,7 +56,7 @@ The miner who solves the puzzle first broadcasts her block to the network and ge
 
 The chance of solving a block is directly proportional to the computational power a miner has. 
 
-If a miner had **10%** of the computing power of the network, she would solve every tenth block on average.
+If a miner had **10%** of the computing power of the network, they would solve every tenth block on average.
 
 Computational power is the limited resource in a PoW-based blockchain. It takes real-world resources, namely *mining hardware and electricity*, to mine a cryptocurrency. 
 
