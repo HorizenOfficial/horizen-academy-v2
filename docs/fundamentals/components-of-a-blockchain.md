@@ -99,7 +99,7 @@ Bitcoin actually introduced the first protocol in human history that could come 
 
 Miners are rewarded when they solve the puzzle first. This creates an incentive for individuals to purchase and run the hardware needed to solve the cryptographic puzzle. 
 
-The first miner to solve a block receives a reward in the currency that she is mining. She is allowed to send herself a transaction with a few coins that didn’t exist before. 
+The first miner to solve a block receives a reward in the currency that they are mining. They are allowed to send themselves a transaction with a few coins that didn’t exist before. 
 
 _It is another example of a rule in a blockchain protocol:_
 
