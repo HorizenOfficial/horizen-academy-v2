@@ -90,7 +90,7 @@ The nodes can comprise of individual transactions, or they can be blocks contain
 
 In _Tangle_, each node is made up of a transaction. Each transaction references two prior transactions and has a small Proof-of-Work attached to it.
 
-**Horizen** is considering the use of a **Block-DAG** protocol in cooperation with _IOHK_.
+**Horizen** is evaluating the use of a **Block-DAG** protocol.
 
 Each node in the DAG is a block, and a block in the Block-DAG is similar to a block in a blockchain. A Block in a DAG also has a _block header_ and contains a _number of transactions_, just as a block in the blockchain does. 
 
