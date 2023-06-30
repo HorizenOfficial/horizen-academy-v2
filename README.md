@@ -9,6 +9,7 @@ This repository hosts the source code for the Horizen Academy website. You can v
 -   [Getting Started](#getting-started)
     -   [Prerequisites](#prerequisites)
     -   [Installation](#installation)
+    -   [Setup your environment](#setup-your-environment)
 -   [Development](#development)
 -   [Build](#build)
 -   [Deployment](#deployment)
