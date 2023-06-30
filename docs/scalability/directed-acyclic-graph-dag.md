@@ -46,7 +46,7 @@ Transaction size can only be decreased by so much, as transactions are quite com
 
 Even if you could shrink a transaction to a tenth of its size, this would only increase throughput from 7 to 70 transactions per second for Bitcoin. Not exactly Visa level. 
 
-Raising the block size limit comes at the expense of mining centralization, as fewer people can compete in the competitive [mining industry] when hardware and network requirements increase.
+Raising the block size limit comes at the expense of mining centralization, as fewer people can compete in the competitive [mining industry](mining/crypto-mining.md) when hardware and network requirements increase.
 
 **Decreasing** the block interval leads to more orphaned blocks and is limited by network synchronization time across the globe. 
 
