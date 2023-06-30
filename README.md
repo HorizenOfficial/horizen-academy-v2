@@ -70,7 +70,7 @@ To run the project locally, use the following command:
 npm run start
 ```
 
-This will start the development server at <http://localhost:8000>
+This will start the development server at <http://localhost:3000/academy/>
 
 ## Build
 
