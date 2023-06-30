@@ -3,7 +3,7 @@
 sidebar_label: Decentralized Autonomous Organizations - DAO
 title: What is a DAO? - Decentralized Autonomous Organizations
 slug: /decentralized-autonomous-organization-dao/
-description: A DAO, or Decentralized Autonomous Organization, is software that acts as an organization with a number of predefined rules and procedures.
+description: A DAO, or Decentralized Autonomous Organization, is a software that acts as an organization with a number of predefined rules and procedures.
 image: /img/decentralized-autonomous-organization-dao/decentralized-autonomous-organization-dao-meta.jpeg
 last_update:
   date: 2/21/2023
@@ -13,7 +13,7 @@ last_update:
 
 # What is a Dao?
 
-A _DAO_, or **Decentralized Autonomous Organization**, is software that acts as an organization with a number of predefined rules and procedures.
+A _DAO_, or **Decentralized Autonomous Organization**, is a software that acts as an organization with a number of predefined rules and procedures.
 
 The rules and procedures that govern the organization are written in _code_ when the DAO is created by the founders. This code primarily lives on a _blockchain_ where it is not possible for an individual to tamper with the rules. 
 
