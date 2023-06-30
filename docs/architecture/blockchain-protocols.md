@@ -278,7 +278,7 @@ The key takeaway is the following: the protocol of a blockchain is self-enforcin
 
 Bitcoin was the first technology that solved the double-spend problem. Before it was not possible to verify if a digital object existed only once. 
 
-When you transfer a unit of cryptocurrency, you hand over the ownership of a digital object and the receiver can be sure she is the new, sole owner of that digital object. The property of being double-spend-resistant is also called digital scarcity.
+When you transfer a unit of cryptocurrency, you hand over the ownership of a digital object and the receiver can be sure they are the new, sole owner of that digital object. The property of being double-spend-resistant is also called digital scarcity.
 
 ## Introducing Triple Entry Bookkeeping
 
