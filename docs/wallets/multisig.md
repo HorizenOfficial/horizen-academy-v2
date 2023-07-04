@@ -50,7 +50,7 @@ You could store your money in a **2-of-3 address** and keep the three keys on yo
 
 If one of those devices breaks, you can still access your funds and an attacker would need to compromise two devices to steal money. _Hence_, this setup eliminates single points of failure.
 
-For larger amounts, **3-of-5 MultiSig** schemes can be used. Casa offers solutions for 3-of-5 MultiSig schemes where they store one key for you. 
+For larger amounts, **3-of-5 MultiSig** schemes can be used. [Casa](https://keys.casa/learn-more/) offers solutions for 3-of-5 MultiSig schemes where they store one key for you. 
 
 As long as you have access _to two of your keys_, you will always be able to recover your funds.
 
