@@ -102,7 +102,7 @@ Proof of Work is one of the most secure consensus mechanisms but it is only secu
 
 **Game theory** is the study of mathematical models of strategic interactions between decision-makers. 
 
-Miners are rational decision-makers in a PoW blockchain. The incentives to act according to the rules of the [mining protocol](mining/crypto-mining) are embedded in the protocol itself, and outweigh the potential gains of behaving maliciously. 
+Miners are rational decision-makers in a PoW blockchain. The incentives to act according to the rules of the [mining protocol](crypto-mining.md) are embedded in the protocol itself, and outweigh the potential gains of behaving maliciously. 
 
 This is what makes a mature PoW blockchain so robust.
 
