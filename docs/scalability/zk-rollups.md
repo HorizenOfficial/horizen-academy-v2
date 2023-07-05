@@ -76,7 +76,7 @@ Polygon Zero offers an improvement on the typical process of generating new cryp
 Polygon Zero adopts ‘recursive proofs’, which generates multiple proofs at the same time for every transaction in the batch. The system then aggregates these proofs into one single proof that is submitted to the Ethereum mainnet. This method of producing a proof that is an aggregate of multiple proofs is thought to be less resource intensive and ultimately faster.  
 
 #### Polygon Hermez
-Polygon Hermez is the result of Polygon's acquisition of Hermez, a zk-rollup scaling solution for Etheruem in 2021. Hermez’s approach is to adopt a new consensus algorithm called proof of efficiency (PoE). 
+Polygon Hermez is the result of Polygon's acquisition of Hermez, a zk-rollup scaling solution for Ethereum in 2021. Hermez’s approach is to adopt a new consensus algorithm called proof of efficiency (PoE). 
 
 PoE is optimized for decentralization, allowing anyone to take part as either a Sequencer or Aggregator. Sequencers accept transactions and include them in the next batch, while Aggregators are responsible for generating the ZK proofs that are submitted to the Ethereum mainnet. 
 
@@ -113,5 +113,5 @@ The most notable project to deploy on StarkNet was dYdX, an on-chain DEX for tra
 Loopring leverages ZK-rollups on Ethereum to build a fast and low cost DEX and payments protocol. 
 
 ### Immutable X
-Immutable X is an Ethereum based ZK-rollup protocol that is optimized for trading NFTs at lower cost and greater speeds. It offers a NFT marketplaces as well as the ability to trade in-game digital assets that are in the format of an ERC-721 or ERC-1155
+Immutable X is an Ethereum based ZK-rollup protocol that is optimized for trading NFTs at lower cost and greater speeds. It offers a NFT marketplace as well as the ability to trade in-game digital assets that are in the format of an ERC-721 or ERC-1155
 
