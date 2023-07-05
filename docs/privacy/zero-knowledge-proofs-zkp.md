@@ -71,7 +71,7 @@ In the past 3 years, Defi protocols like _Aave_ and _Uniswap_ have laid the grou
 
 We’ve also seen the advent of NFT marketplaces like _OpenSea_ enable seamless trading of non fungible digital assets primarily representing artwork.
 
-_While some see these innovation as little more than tools for speculation, there exists a massive amount of untapped potential for larger market players such as corporate entities, foundations and even government agencies to [tokenize](tokenomics/what-is-a-token.md) assets in the real world in order to plug them into these Defi protocols for the purpose of lending, licensing, trading and transferring ownership in a more efficient and secure manner._
+_While some see these innovations as little more than tools for speculation, there exists a massive amount of untapped potential for larger market players such as corporate entities, foundations and even government agencies to [tokenize](tokenomics/what-is-a-token.md) assets in the real world in order to plug them into these Defi protocols for the purpose of lending, licensing, trading and transferring ownership in a more efficient and secure manner._
 
 One of the key missing components in this next phase of adoption is privacy. Mainly, how do we enable highly regulated institutions to [tokenize assets ](tokenomics/why-create-a-token.md)that may contain sensitive or proprietary information on a public blockchain without exposure to legal or commercial risks?
 
@@ -193,7 +193,7 @@ While L2s like _Loopering_ leverage ZK-rollups to achieve scalability on the Eth
             ZK-Rollups allow faster settlement of L2 transactions on the Ethereum L1 using only proof of computation.
         </td>
         <td>
-            Layer 1 sidechcain transactions can be settled directly on the sidechain because it is an independent
+            Layer 1 sidechain transactions can be settled directly on the sidechain because it is an independent
             blockchain.
             <p>
                 Withdrawals from the sidechain to the Horizen mainchain are conducted on an as-needed basis.
