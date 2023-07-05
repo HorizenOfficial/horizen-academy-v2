@@ -13,7 +13,7 @@ last_update:
 
 # Who is Satoshi Nakamoto?
 
-**Bitcoin** just celebrated its 13th birthday, but the _creator_ of the first [cryptocurrency](cryptocurrency/cryptocurrency.md) blockchain still remains _anonymous_. 
+**Bitcoin** just celebrated its 14th birthday, but the _creator_ of the first [cryptocurrency](cryptocurrency/cryptocurrency.md) blockchain still remains _anonymous_. 
 
 There have been many attempts to identify the _man/woman/group_ behind the pseudonym, **Satoshi Nakamoto**, none of them successful.
 
