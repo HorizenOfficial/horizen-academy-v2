@@ -187,11 +187,11 @@ _Money does not become instantly adopted as money until there are multiple point
 
 - Vendors accepting it
 - Users transacting with it
-- large trading volumes and liquidity
+- Large trading volumes and liquidity
 - Institutional adoption
 - And many others
 
-These points all take time to develop and should not be expected to occur within the first few months of a tokens launch. It’s been 13 years and Bitcoin is only just beginning to be broadly accepted as money by the mainstream.
+These points all take time to develop and should not be expected to occur within the first few months of a token's launch. It’s been 13 years and Bitcoin is only just beginning to be broadly accepted as money by the mainstream.
 
 Fortunately, as the crypto markets slowly begin to mature, the time it takes for a new token to go from concept to accepted currency should decline as more market participants become comfortable with the idea of using tokens as a form of money.
 
