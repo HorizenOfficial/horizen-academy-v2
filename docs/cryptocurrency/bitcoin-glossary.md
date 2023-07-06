@@ -78,6 +78,9 @@ A person or entity that runs a Bitcoin node and validates transactions in order 
 
 The amount of bitcoin rewarded to miners per block. The current mining reward is 6.25 bitcoin per block. The reward cuts in half every 4 years in an event called the ‘halving’.
 
+The first halving occurred on November 28, 2012, followed by the second halving on July 9, 2016. 
+The last one took place on May 11, 2020 and the next one is expected in April 2024.
+
 ### Transaction Fee - Miner Fee
 
 A fee paid to miners in order to incentivize them to add a transition to the next block.
@@ -142,7 +145,7 @@ The measure of how much computing power is collectively being contributed by min
 
 A series of letters and numbers that authorizes the owner of wallet to access and spend their cryptocurrencies.
 
-A seed phrase is made up of 12 words that represent a private key.
+A seed phrase is made up of 12, 18 or 24 words that represent a private key.
 
 ### Public Key - Wallet Address
 
@@ -264,7 +267,7 @@ The Bitcoin blockchain also requires at least 6 block confirmations, the number 
 
 ### How is Bitcoin Stored?
 
-Bitcoin is stored in digital or hardware wallets, which are secured by public/private-key cryptography. With public/private-key cryptography, a wallets public key, which is used like an email address to receive funds, corresponds to a private key which is used to authorize the owner of the public key to spend the funds in their wallet.
+Bitcoin is stored in digital or hardware wallets, which are secured by public/private-key cryptography. With public/private-key cryptography, a wallet's public key, which is used like an email address to receive funds, corresponds to a private key which is used to authorize the owner of the public key to spend the funds in their wallet.
 
 ### At What Price Did Bitcoin Start?
 
