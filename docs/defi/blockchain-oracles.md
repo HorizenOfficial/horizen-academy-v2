@@ -51,7 +51,7 @@ Depending on whether or when the loan is repaid, or if the value of the collater
 
 > **_An Oracle is a decentralized protocol that transmits data from external sources into smart contracts in order to help them execute according to their predefined conditions._**
 
-_In the lending example above_, let's say **Person A** wishes to _borrow_ **$6,000** from the _lender_, **Person B**. In order to receive the loan, **Person A** must put **3 ETH** (equal to **$9,000** at current prices) in a smart contract as collateral.
+_In the lending example above_, let's say **Alice** wishes to _borrow_ **$6,000** from the _lender_, **Bob**. In order to receive the loan, **Alice** must put **3 ETH** (equal to **$9,000** at current prices) in a smart contract as collateral.
 
 The terms of the loan states that it must be repaid with interest in **60 days** and that if the price of ETH _falls_ below **$2,000** then the contract will be terminated and the collateral will automatically be liquidated and sent to the lender.
 
@@ -131,6 +131,8 @@ In addition, like any centralized system, a centralized oracle is also less secu
 ![centralized oracle risk](/img/blockchain-oracles/centralized-oracle-risk.jpg)
 
 For these reasons, decentralized oracles offer a much more reliable and secure method for submitting off-chain data to on-chain smart contracts.
+
+![decentralized oracle](/img/blockchain-oracles/ZBF-academy-Decentralized-oracle-graphic.jpg)
 
 ## Blockchain Oracle Use Cases
 
