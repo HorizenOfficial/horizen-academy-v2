@@ -29,7 +29,7 @@ In the world of blockchains, systems are created and managed by transparent and 
 
 Unlike real world economic or political systems that are reinforced by national laws and physical borders, the digital, code-based and open source nature of blockchain protocols makes them far more malleable and easy for anyone to opt in and out of.
 
-When an upgrade is made to a blockchains underlying protocol, it is called a **Fork**.
+When an upgrade is made to the underlying protocol of a blockchain, it is called a **Fork**.
 
 Depending on the severity of the changes made in the upgrade, miners (those that operate nodes, validate transactions and add new blocks to the chain) can choose or not choose to also upgrade their [nodes software](architecture/blockchain-nodes.md) to implement those changes.
 
