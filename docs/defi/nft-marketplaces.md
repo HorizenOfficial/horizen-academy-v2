@@ -31,7 +31,7 @@ Before we explain what an NFT marketplace is, it’s important to understand wha
 
 NFTs, or Non-fungible Tokens, are a form of digital asset first created under the ERC-721 token standard that allows each token issued to have a unique identifier code. NFTs are non-fungible because they cannot be divided or traded fractionally. 
 
-Users can verify the uniqueness of their NFT on the blockchain and can also confirm that theirs is the only one in existence. This is different from the ERC-20 token standard, which is used for creating tokens that are indistinguishable from each other, fungible, and can be exchanged in fractions of a token. 
+Users can verify the uniqueness of their NFT on the blockchain, and can also confirm that their NFT is the only one in existence. This is different from the ERC-20 token standard, which is used for creating tokens that are indistinguishable from each other, fungible, and can be exchanged in fractions of a token. 
 
 **ERC-721s** enabled artists to produce digital paintings, collectibles, and music albums as NFTs, giving fans the chance to claim ownership of these unique works while verifying their scarcity and authenticity. 
 
