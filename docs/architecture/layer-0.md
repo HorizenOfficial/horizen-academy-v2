@@ -153,12 +153,9 @@ Today, there are a handful of notable L0 networks that are ushering in a new era
             </p>
         </td>
         <td><strong>Polkadot</strong> is a blockchain protocol that unites an entire network of purpose-built
-            blockchains known as ‘parachains’.
-            <p>
-                <strong>Parachains</strong> are connected together and secured by
-            </p>
-            <p>
-                the Polkadot Relay Chain. They can also connect with external networks via bridges.
+            blockchains known as ‘parachains’.           
+                <strong>Parachains</strong> are connected together and secured by the Polkadot Relay Chain. 
+              They can also connect with external networks via bridges.
             </p>
         </td>
         <td><strong>Horizen</strong> is a zero-knowledge-enabled network of blockchains.
