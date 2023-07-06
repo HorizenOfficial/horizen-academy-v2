@@ -29,9 +29,9 @@ For [proof of work](consensus/proof-of-work-pow.md) chains, the _biggest_ factor
 
 So, _could [Bitcoin](cryptocurrency/bitcoin-glossary.md) suffer a 51% attack?_
 
-This is not only incredibly expensive, current estimates put the cost of a 51% on the Bitcoin blockchain at [$13.5 billion](https://learn.eqonex.com/news/what-51-attack-and-how-much-would-it-cost#:~:text=Therefore%2C%20the%20total%20cost%20is,1.66%25%20of%20the%20market%20cap.), this amount alone would not guarantee that a bad actor could successfully control the network.
+This is not only incredibly expensive, current estimates put the cost of a 51% on the Bitcoin blockchain at $13.5 billion, this amount alone would not guarantee that a bad actor could successfully control the network.
 
-_For one thing_, accumulating enough [mining rigs] to attempt a 51% attack on the Bitcoin network would take a considerable amount of time and attract enough attention that the attack would likely be perceived well in advance.
+_For one thing_, accumulating enough [mining rigs](mining/crypto-mining.md) to attempt a 51% attack on the Bitcoin network would take a considerable amount of time and attract enough attention that the attack would likely be perceived well in advance.
 
 This means that miners could vote to fork the chain unto a new network with different consensus or hardware requirements before the attacker could amass the necessary hashrate to make their attempt.
 
@@ -59,7 +59,7 @@ While such situations would normally result in a _[fork](governance/blockchain-f
 
 This would be more in line with a _hostile takeover,_ in which case the network's [cryptocurrency](cryptocurrency/cryptocurrency.md) (much like the stock of a company experiencing a hostile takeover) would likely become very volatile due to the uncertainty of the network's future.
 
-A 51% attack, successful or not, does not mean that the attacker can gain access to the funds in your wallet. This would require an attacker gaining access to your seed phrase/private keys, which is not something that they can get from holding a majority of the blockchains hash power.
+A 51% attack, successful or not, does not mean that the attacker can gain access to the funds in your wallet. This would require an attacker gaining access to your seed phrase/private keys, which is not something that they can get from holding a majority of the blockchain hash power.
 
 **In addition**, a 51% attack does not mean that all of the prior states of the chain that recognized your wallet as holding those funds would disappear. Blockchains are designed to retain the full and complete history of prior states dating back to the first, or _genesis_, block.
 
