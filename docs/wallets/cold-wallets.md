@@ -47,7 +47,7 @@ _While hot wallets make it easier for users to store and use their crypto assets
 
 **When using a hot wallet**, a hack can potentially occur anytime you sign a transaction and approve a smart contract to spend tokens from your wallet. If the contract is malicious, you could accidentally grant it permission to drain all of your funds.
 
-_Also_, the process of signing into your hot wallet requires you to type a password or seed phrase into a browser window, which is a potential attack vector that could be exploited by hackers using fake website URLs to mislead you into entering your personal information
+_Also_, the process of signing into your hot wallet requires you to type a password or seed phrase into a browser window, which is a potential attack vector that could be exploited by hackers using fake website URLs to mislead you into entering your personal information.
 
 Keeping your wallet connected to the internet means that the wallet service provider may not be able to keep the service running if the internet temporarily shuts down, or an infrastructure service provider like AWS were to experience downtime, which could impact your ability to access your funds.
 
