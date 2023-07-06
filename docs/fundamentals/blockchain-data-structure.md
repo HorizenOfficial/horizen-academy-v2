@@ -136,7 +136,7 @@ If this node does not contain the data you were looking for either, you continue
 
 ![linked list](/img/blockchain-data-structure/linked-list-2.jpg)
 
-Programs that use a linked list to store data don’t have to know how many data elements you want to store beforehand, but the linked list does need to know what each element consists of. As previously stated, data elements of a linked list are called [nodes](architecture/blockchain-nodes.md). Each node can contain several objects of different types.
+Programs that use a linked list to store data don’t have to know how many data elements you want to store beforehand, but the linked list does need to know what each element consists of. As previously stated, data elements of a linked list are called nodes. Each node can contain several objects of different types.
 
 For example. If you were to store information about cars in a linked list, you could define a node as the set of information about the brand, model, year produced, and license plate.
 

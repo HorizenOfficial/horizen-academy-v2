@@ -17,7 +17,7 @@ In this article, we take a close look at transactions that move assets _between_
 
 **Sidechains** are [blockchains interoperable](interoperability/blockchain-interoperability.md) with an existing _mainchain_. 
 
-A special transaction is needed to transfer assets from one chain to another. These are called [**cross-chain transactions**](interoperability/cross-chain-transactions.md).
+A special transaction is needed to transfer assets from one chain to another. These are called **cross-chain transactions**.
 
 The way we structured this article follows the process of a developer building a sidechain:
 - **First**, the _sidechain_ needs to be deployed 
@@ -47,7 +47,7 @@ The _cryptographic proofs_ allow the mainchain to verify state transitions of th
 
 A new data field called **Sidechain Transactions Commitment** (_SCTxsCommitment_) is added to the mainchain block header. 
 
-It is the _root_ of a Merkle tree whose leaves are made up of sidechain relevant transactions contained in that specific block. Including this data in the block header allows [sidechain nodes] to easily synchronize and verify incoming transactions without needing to know the entire mainchain block.
+It is the _root_ of a Merkle tree whose leaves are made up of sidechain relevant transactions contained in that specific block. Including this data in the block header allows sidechain nodes to easily synchronize and verify incoming transactions without needing to know the entire mainchain block.
 
 ### Sidechain Deployment
 

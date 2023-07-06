@@ -56,7 +56,7 @@ The miner who solves the puzzle first broadcasts her block to the network and ge
 
 The chance of solving a block is directly proportional to the computational power a miner has. 
 
-If a miner had **10%** of the computing power of the network, she would solve every tenth block on average.
+If a miner had **10%** of the computing power of the network, they would solve every tenth block on average.
 
 Computational power is the limited resource in a PoW-based blockchain. It takes real-world resources, namely *mining hardware and electricity*, to mine a cryptocurrency. 
 
@@ -102,7 +102,7 @@ Proof of Work is one of the most secure consensus mechanisms but it is only secu
 
 **Game theory** is the study of mathematical models of strategic interactions between decision-makers. 
 
-Miners are rational decision-makers in a PoW blockchain. The incentives to act according to the rules of the [mining protocol] are embedded in the protocol itself, and outweigh the potential gains of behaving maliciously. 
+Miners are rational decision-makers in a PoW blockchain. The incentives to act according to the rules of the [mining protocol](mining/crypto-mining.md) are embedded in the protocol itself, and outweigh the potential gains of behaving maliciously. 
 
 This is what makes a mature PoW blockchain so robust.
 
@@ -123,7 +123,7 @@ To become a validator, a user needs to send funds in a special type of transacti
 If the validator were to include fraudulent transactions in his block, he would lose his stake and the right to forge blocks in the future.
 
 - The scarce resource in a PoS environment is the *native currency of the blockchain*. 
-- The *more* money you stake on a PoS blockchain, the *higher* your chances of validating a new block. 
+- The *more* money you stake on a PoS blockchain, the *higher* your chances of validating a new block are. 
 
 In most Proof of Stake blockchains, there is no block reward. The validator’s incentive to achieve consensus is solely based on collecting the transaction fees attached to each transaction.
 

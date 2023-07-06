@@ -193,7 +193,7 @@ When designing a token, you have the option to choose what the maximum supply wi
 
 *Not every token has to have a maximum supply.*
 
- You can set your token to have an infinite supply that increases at a steady rate of 1 or 2% per year.This inflation based design will make your token function more like traditional fiat currencies do today.
+ You can set your token to have an infinite supply that increases at a steady rate of 1 or 2% per year. This inflation based design will make your token function more like traditional fiat currencies do today.
 
 One benefit of launching a token on a blockchain versus using central bank controlled fiat currencies is that you can set an inflation rate that is transparent for everyone to see and does not ever change. This gives users more trust in your token because they don’t have to worry about the creator changing the inflation rate down the road, which would affect their perception of the token's value and utility.
 

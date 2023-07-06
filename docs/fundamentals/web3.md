@@ -85,7 +85,7 @@ The Bitcoin network was designed to achieve sovereign-grade censorship resistanc
 
 Platform-grade censorship resistance refers to the ability for developers and creators to launch applications or publish information that cannot be censored by any platform. 
 
-This is a direct response to the wave of censorship that we have seen on big tech platforms such as _Facebook_ and _Twitter_ in recent years. Networks like _Ethreum_ are designed to achieve platform-grade censorship resistance.
+This is a direct response to the wave of censorship that we have seen on big tech platforms such as _Facebook_ and _Twitter_ in recent years. Networks like _Ethereum_ are designed to achieve platform-grade censorship resistance.
 
 **Ethereum** is a decentralized network for developers to launch decentralized applications or DApps on the blockchain using [smart contract technology](defi/smart-contracts.md). 
 

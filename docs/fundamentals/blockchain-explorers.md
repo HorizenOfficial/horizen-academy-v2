@@ -158,7 +158,7 @@ Other than the transaction that rewarded the miner, _Satoshi Nakamoto_ himself i
 
 Today there is a transaction fee attached to most transactions, but this wasn’t always the case, especially when the network was still in its infancy. We have talked about the height before, so we will get to the timestamp now. 
 
-**The first bitcoin was mined on the 3rd of January 2009**, the birthday of the very first cryptocurrency.The “_Relayed By_” field shows who mined the block. 
+**The first bitcoin was mined on the 3rd of January 2009**, the birthday of the very first cryptocurrency. The “_Relayed By_” field shows who mined the block. 
 
 Today’s mining pools and their reward addresses are mostly known. 
 
@@ -228,4 +228,4 @@ The block explorer does for the blockchain what a web browser does for the inter
 
 Additionally, you can open entire _blocks_ and see _all_ transactions contained.
 
-When you send a transaction to a _merchant_ or _exchange_ and don’t get a notification right away about them receiving your funds, it can feel a bit scary. By using the block explorer to look up your transaction, you can verify that it is on its way, and everything worked out.`
+When you send a transaction to a _merchant_ or _exchange_ and don’t get a notification right away about them receiving your funds, it can feel a bit scary. By using the block explorer to look up your transaction, you can verify that it is on its way, and everything worked out.

@@ -282,8 +282,6 @@ Some popular ones include:
 
 _Browsers_ - the software that we use the most frequently to access content on the Internet are the scariest ones. Most browsers send data without our consent and allow websites to store cookie files with unique identifiable information. 
 
-How many times have you experienced _Deja Vu_ after looking up a product and later finding ads for a product you were looking at only to find that product all over social networks and contextual ads everywhere?
-
 **Choosing a privacy-preserving browser and altering the settings accordingly is an essential part of our private journey through the Internet.**
 
 Today there are browsers available that either offer good privacy features out-of-box or can be adjusted accordingly:

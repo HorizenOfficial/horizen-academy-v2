@@ -46,7 +46,7 @@ _Let's say I want to send you a text file and don't want you to change it:_
 
 - When you send the text file back to me, I could use the hash function again to create a second fingerprint. 
 - If both fingerprints match, you have not changed anything about the file. 
--If the fingerprints don't match, I know that you changed the text in some way.
+- If the fingerprints don't match, I know that you changed the text in some way.
 
 In a blockchain, we use hash functions to create a fingerprint of the transaction history. 
 

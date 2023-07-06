@@ -27,13 +27,13 @@ We will often use the term _decentralizing_ and _centralizing_ to express in whi
 
 A miner records every transaction that happens on the blockchain. Two different miners might have different versions of the transaction history.
 
-Every miner writes everything she recorded on the _blockchain_ in a _block_. Since there are many miners on a blockchain, there are many different versions for the same block. They differ in the exact order of transactions.
+Every miner writes everything they recorded on the _blockchain_ in a _block_. Since there are many miners on a blockchain, there are many different versions for the same block. They differ in the exact order of transactions.
 
 All the miners have to solve a difficult computation that requires a lot of processing power.
 
-_The miner who solves the problem first_ gets to add her block to the blockchain. 
+_The miner who solves the problem first_ gets to add their block to the blockchain. 
 
-The winning miner’s opinion will become the truth accepted by everybody else on the network, based on her solving the computation first.
+The winning miner’s opinion will become the truth accepted by everybody else on the network, based on them solving the computation first.
 
 ## How Does Mining Work?
 
@@ -71,9 +71,9 @@ _The main job of a miner is to collect all transactions that are broadcast to th
 
 The miner verifies if the transactions are valid according to the protocol and then places them in a data container - the _block_. The first transaction in a block is special, the **coinbase transaction** - sound familiar?
 
-In the _coinbase transaction_, the miner rewards his own [address](wallets/wallet-addresses.md) with the block reward, _12.5 BTC_ or _12.5 ZEN_ at the moment. 
+In the _coinbase transaction_, the miner rewards his own [address](wallets/wallet-addresses.md) with the block reward, _6.25 BTC_ or _6.25 ZEN_ at the moment. 
 
-Actually _7.5 ZEN_ on Horizen, as _10%_ of block rewards go to _Secure Node_ and _Super Node_ operators respectively, _20%_ to the _Horizen Treasury_. 
+Actually _3.75 ZEN_ on Horizen, as _10%_ of block rewards go to _Secure Node_ and _Super Node_ operators respectively, _20%_ to the _Horizen Treasury_. 
 
 _These coins did not exist before._
 
@@ -145,7 +145,7 @@ This means that all miners combined try _208,680,000_ different values for the n
 
 Miners can’t cheat this process of trial and error because of the properties of cryptographic hash functions.
 
-![cryptographic hash functions](/img/crypto-mining/cryptographic-hash-functions.jpg)v
+![cryptographic hash functions](/img/crypto-mining/cryptographic-hash-functions.jpg)
 
 There is no way to calculate a valid nonce from the desired output because the hash function is a _one-way function_. 
 

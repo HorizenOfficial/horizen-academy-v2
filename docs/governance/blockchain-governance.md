@@ -308,7 +308,7 @@ We invite you to check out the [ZenIP repository](https://github.com/HorizenOffi
 
 Horizen is dedicated to building a DAO as one of the first [sidechain](scalability/sidechains.md) applications. It will enable decentralized, community based governance, especially with regards to resource allocation. 
 
-Part of the Horizen block subsidy goes to the _Zen Blockchain Foundation_ treasury, which uses it to fund fund the development of the _protocol_, _sidechain implementation_, _marketing_ and _business development_.
+Part of the Horizen block subsidy goes to the _Zen Blockchain Foundation_ treasury, which uses it to fund the development of the _protocol_, _sidechain implementation_, _marketing_ and _business development_.
 
 The basic model of the treasury system is described in [a paper](https://www.lancaster.ac.uk/staff/zhangb2/treasury.pdf) written by our research and development partner, Input Output Hong Kong (IOHK) in collaboration with Lancaster University.
 
