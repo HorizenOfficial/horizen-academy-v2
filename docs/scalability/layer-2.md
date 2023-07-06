@@ -21,7 +21,7 @@ Amongst the many solutions that have been tested over the years, bigger block si
 
 - A **Layer 2** is a _scaling solution_ that sits on top of a layer 1 blockchain like [Bitcoin](cryptocurrency/bitcoin-glossary.md) or [Ethereum](cryptocurrency/ethereum-glossary.md). Layer 2’s (or L2s) increase the speed and reduce the cost of transacting on a blockchain.
 - Layer 2’s exist to address the **scalability challenges** of L1 networks, particularly the issue of high gas fees during times of network congestion.
-- Layer 2 scaling solutions can take **different forms**, including payment channels, state channels, side chains and rollups.
+- Layer 2 scaling solutions can take **different forms**, including payment channels, state channels, sidechains and rollups.
 - Some potential **drawbacks** of L2 networks is that the withdrawal times from an L2 to the Ethereum mainnet can sometimes take several hours to 7 days to complete. 
 	- Also, Layer 2s compromise on decentralization and security in order to achieve speed, which can make it more risky to store funds on them.
 
@@ -125,7 +125,7 @@ This could be for the purpose of [launching a token](tokenomics/why-create-a-tok
 
 Sidechains operate using their own [consensus mechanism](consensus/consensus-mechanisms.md), which means developers can optimize their network for **scalability**, **security** or **decentralization**, and can even choose to make their networks **private** and _permissioned_ or **public** and _permissionless_.
 
-While side chains are not required to submit state data to the mainchain, many still choose to do so in order to leverage the larger, more decentralized chain's security.
+While sidechains are not required to submit state data to the mainchain, many still choose to do so in order to leverage the larger, more decentralized chain's security.
 
 ### Rollups
 
