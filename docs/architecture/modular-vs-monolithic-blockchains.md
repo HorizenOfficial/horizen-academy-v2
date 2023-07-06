@@ -48,7 +48,7 @@ Once you limit the number of nodes required to validate transactions on a blockc
 
 The problem with these attempts to tackle the scalability trilemma is that they are done through a monolithic approach rather than a modular one.
 
-In this piece, we break down what this means and how blockchains like Cosmos, Horizen, and Ethereum 2,0 are pushing the industry forward by implementing modular blockchain architectures.
+In this piece, we break down what this means and how blockchains like Cosmos, Horizen, and Ethereum 2.0 are pushing the industry forward by implementing modular blockchain architectures.
 
 ## Blockchain Architectures
 
@@ -234,7 +234,7 @@ To perform these functions, the mainchains need to serve as the definitive point
 
 To achieve this, a mainchain needs to be highly secure, which is why Horizen is the only modular network that has chosen to stick with PoW and has actually designed a more secure version of the PoW consensus mechanism; leveraging a ‘[penalty system for delayed block submission](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against [51% attacks](security/51-attack.md).
 
-The Horizen mainchain also consists of over 35,000 nodes, making it the largest node network in the Web3 space.
+The Horizen mainchain also consists of over 35,000 [nodes](https://www.horizen.io/zennodes/), making it the largest node network in the Web3 space.
 
 Additionally, to attract more developers to build sidechains and L2s on a modular blockchain network, the mainchain must also be _privacy-preserving_.
 
@@ -338,7 +338,7 @@ This coexistence is also essential for institutions to adopt [Web3 platforms](fu
 
 When it comes to data storage, critical features like Sharding will not be available on Ethereum 2.0 until 2023.
 
-Meanwhile, on Horizen, it is currently possible to drastically increase data storage capacity (i.e., (transaction throughput) by operating up to 10,000 parallel sidechains simultaneously using Horizen’s recently launched [sidechain protocol - Zendoo](interoperability/zendoo.md).
+Meanwhile, on Horizen, it is currently possible to drastically increase data storage capacity (i.e., transaction throughput) by operating up to 10,000 parallel sidechains simultaneously using Horizen’s recently launched [sidechain protocol - Zendoo](interoperability/zendoo.md).
 
 Ultimately, the best modular design offers a highly scalable and flexible infrastructure to allow Dapps to achieve commercial viability while simultaneously offering trustless and censorship resistance validation and storage of high-value digital assets.
 
