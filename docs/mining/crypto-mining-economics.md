@@ -92,7 +92,7 @@ According to [Miner Daily](https://minerdaily.com/2021/how-much-does-it-cost-to-
 
 _The mining cost_ is based on the costs of electricity (priced at 3.5¢-5¢ per kWh) spent by ASIC machines to mine 1 bitcoin. 
 
-It takes 148,450 TH/s (or tera hashes per second) to mine 1 BTC per day. This means that It currently requires an average of 1,484 Antminer S19 machines contributing 100TH/s in hash power to mine 1 BTC per day.
+It takes 148,450 TH/s (or tera hashes per second) to mine 1 BTC per day. This means that it currently requires an average of 1,484 Antminer S19 machines contributing 100TH/s in hash power to mine 1 BTC per day.
 
 **For better understanding of the units used to measure hashing power**, here is a chart displaying the different measures of [data volumes](https://www.eecis.udel.edu/~amer/Table-Kilo-Mega-Giga---YottaBytes.html) and how they compare to each other:
 
@@ -220,7 +220,7 @@ Bitcoins value as a secure payment network is tied to its hashrate and the price
 
 The more hashing (computing) power is added to the network, the greater its security and its overall resistance to attack. 
 
-As the price of bitcoin rises, so does the hashrate, as more people are incentivized to miner bitcoin because the value of the blockchain rewards in USD terms is greater. 
+As the price of bitcoin rises, so does the hashrate, as more people are incentivized to mine bitcoin because the value of the blockchain rewards in USD terms is greater. 
 
 This increase in demand to mine bitcoin naturally leads to an increase in the difficulty adjustment such that it continues to take roughly the same amount of time, 10 minutes, to mine a new block. 
 
@@ -252,7 +252,7 @@ Essentially, as more transactions are recorded on a blockchain, more blocks are 
 
 This is particularly true for [full nodes](architecture/blockchain-nodes.md), which are responsible for storing an archive of the entire history of the blockchain dating back to its inception. While it is difficult to place specific numbers on these costs, what’s clear is that the longer a blockchain exists, the greater the state bloat and the more expensive it becomes for validators to run nodes. 
 
-One of the ways in which the state bloat problem is being resolved is through creating a more [modular blockchain](architecture/modular-vs-monolithic-blockchains.md) design in which side chains can be sprung up for the purpose of storing parts of the main chains history so that nodes on the mainchain can reduce the amount of data their nodes need to store. 
+One of the ways in which the state bloat problem is being resolved is through creating a more [modular blockchain](architecture/modular-vs-monolithic-blockchains.md) design in which sidechains can be sprung up for the purpose of storing parts of the mainchains history so that nodes on the mainchain can reduce the amount of data their nodes need to store. 
 
 Through a process called ‘anchoring’, a cryptographic hash of the data can be stored on another chain and validated by the nodes on that chain. You can think of this like a zip file that is stored in a separate computer server in order to free up space on your current computer. 
 
@@ -264,7 +264,7 @@ It helps you understand how the proof of work [consensus mechanisms](consensus/c
 
 The rising prices of cryptocurrencies have made certain coins like Bitcoin more expensive to mine profitably. However, this doesn’t mean that all PoW coins are inaccessible for the average retail investors to mine. 
 
-Alternatives like _Litcoin_, _Horizon_ or even _Dogecoin_ offer the ability to mine new coins at a much lower hashrate than bitcoin, which means the amount of energy one needs their mining rigs to expend in order to consistently earn block rewards is lower and therefore so is the cost. 
+Alternatives like _Litcoin_, _Horizen_ or even _Dogecoin_ offer the ability to mine new coins at a much lower hashrate than bitcoin, which means the amount of energy one needs their mining rigs to expend in order to consistently earn block rewards is lower and therefore so is the cost. 
 
 In the past 2 years, PoS has become a more common consensus mechanism for blockchains to adopt due to environmental and scalability concerns. The fact that one only needs to acquire a certain amount of tokens and operate a basic computer in order to validate transactions also makes PoS more appealing to retail users.
 
