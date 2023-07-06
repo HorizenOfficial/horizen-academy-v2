@@ -41,7 +41,7 @@ Hot Wallets and Cold Wallets.
 
 These wallets allow you to instantly deploy assets unto dapps by using your private key to authorize your funds to be spent by the dapps smart contract.
 
-Metmask, Coinbase wallet and Trust wallet are all examples of hot wallets that are always connected to the internet.
+Metamask, Coinbase wallet and Trust wallet are all examples of hot wallets that are always connected to the internet.
 
 _While hot wallets make it easier for users to store and use their crypto assets on different dapps for trading, buying NFTs and more, the downside is that you are at greater risk of losing your funds due to an online hack or a bug in the wallet or smart contract you interact with._
 
@@ -175,7 +175,7 @@ Though both of these alternatives are mostly outdated, they can still provide yo
    </td>
    <td>$169
    </td>
-   <td>BTC, ETH, Tether, XRP, Bitcoin Cash, Polkot, LTC, Kucoin, etc.
+   <td>BTC, ETH, Tether, XRP, Bitcoin Cash, DOT, LTC, Kucoin, etc.
    </td>
    <td>Yes
    </td>
