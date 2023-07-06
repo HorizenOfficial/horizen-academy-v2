@@ -105,7 +105,7 @@ _Layer 0 networks_ use various different iterations of a **cross-chain transfer 
 
 _Cosmos_, a layer 0 network, uses a mechanism called the _Inter-Blockchain Communication_ protocol (IBC), where layer 1 blockchains called ‘Zones’ can communicate and transfer value between each other using the mainchain ‘HUB’ as a central checkpoint and intermediary.
 
-**Horizen** uses its _Cross-Chain Transfer Protocol_ (**CCTP**) to enable side chains to communicate and transfer tokens to the mainchain and between other sidechains.
+**Horizen** uses its _Cross-Chain Transfer Protocol_ (**CCTP**) to enable sidechains to communicate and transfer tokens to the mainchain and between other sidechains.
 
 ## How Does a Layer 0 Work?
 
