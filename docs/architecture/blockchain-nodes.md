@@ -101,7 +101,6 @@ Ethereum nodes, or _clients_, record and transmit copies of transaction data, in
 
     * **Gas** refers to the fee, priced in Eth or Gwei, or pricing value required to successfully conduct a transaction or execute a contract on the Ethereum blockchain platform.
 
-    ![what is evm](/img/ethereum-glossary/what-is-evm.jpeg)
  
 ## How do Nodes Work on Bitcoin?
 
