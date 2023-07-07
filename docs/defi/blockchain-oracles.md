@@ -132,6 +132,8 @@ In addition, like any centralized system, a centralized oracle is also less secu
 
 For these reasons, decentralized oracles offer a much more reliable and secure method for submitting off-chain data to on-chain smart contracts.
 
+A decentralized oracle network consists of oracle nodes that stake tokens as collateral in order to retrieve data from the outside world. This data is verified amongst the nodes to ensure consensus regarding its accuracy. Once consensus is reached, the data is transmitted to smart contracts on the blockchain to carry out their assigned tasks based on the data received.
+
 ![decentralized oracle](/img/blockchain-oracles/ZBF-academy-Decentralized-oracle-graphic.jpg)
 
 ## Blockchain Oracle Use Cases
