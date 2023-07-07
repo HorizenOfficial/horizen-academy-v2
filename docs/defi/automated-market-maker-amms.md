@@ -100,6 +100,8 @@ With _AMMs_, the [price of the token](tokenomics/what-is-a-token.md) is managed 
 
 Liquidity providers earn a fee for every transaction that occurs in the pool in exchange for supplying the pool with an equal amount of each token pair. Users pay a transaction fee every time they deposit one token into the pool and take out an equivalent value in the other token (for example, 1 ETH for 2,000 DAI)
 
+Liquidity providers earn a fee for every transaction that occurs in the pool in exchange for supplying the pool with an equal amount of each token pair. Users pay a transaction fee every time they deposit one token into the pool and take out an equivalent value in the other token (for example, 1 ETH for 2,000 DAI)
+
 ### What are Liquidity Pools?
 
 **Liquidity pools** are pools of capital managed by smart contracts. The pools often contain two tokens that are used as trading pairs.
