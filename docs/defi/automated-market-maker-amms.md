@@ -96,7 +96,7 @@ In DeFi, the traditional market maker, which is often a centralized entity, is r
 
 With _AMMs_, the [price of the token](tokenomics/what-is-a-token.md) is managed by a **pricing formula** that adjusts based on the amount of tokens that currently sits in a _liquidity pool_ as compared to the other coin that is its _trading pair_. 
 
-![how do amms work](/img/automated-market-maker-amms/how-do-amms-work.jpeg)
+![how do amms work](/img/ZBF_article_graphics_2_how-amms-work.jpg)
 
 Liquidity providers earn a fee for every transaction that occurs in the pool in exchange for supplying the pool with an equal amount of each token pair. Users pay a transaction fee every time they deposit one token into the pool and take out an equivalent value in the other token (for example, 1 ETH for 2,000 DAI)
 
