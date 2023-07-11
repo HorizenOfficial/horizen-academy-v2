@@ -105,7 +105,7 @@ _Examples of tokens include_:
 
 **MANA** - A token used to pay for virtual land on the metaverse project Decentraland.
 
-![cryptocurrency vs token](/img/what-is-a-token/cryptocurrency-vs-token.jpeg)
+![cryptocurrency vs token](/img/what-is-a-token/ZBF_article_graphics_coins-vs-tokens.jpg)
 
 Tokens are created using a [smart contract](defi/smart-contracts.md), which is a computer program that automatically executes a set of functions based on predefined rules or conditions set by the developer.
 
