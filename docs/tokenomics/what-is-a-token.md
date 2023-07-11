@@ -187,3 +187,6 @@ This is why we have created [TokenMint](https://tokenmint.global/), a tool that 
 - [Customize your tokenomics](tokenomics/tokenomics.md)
 - Store your token on our Cobalt Wallet extension
 - View the transaction history of tokens on our Tokenmint explorer
+
+  Broadening the scope of blockchain and token innovation, Horizen has introduced **Horizen EON**, a fully [EVM-compatible](interoperability/ethereum-virtual-machine-evm.md) smart contracting platform. This platform is designed to supercharge the utility of tokens in areas such as artwork, gaming, DeFi and Enterprise commerce, fostering a thriving community of developers and users.
+  To learn more, visit: [**Horizen EON**](https://eon.horizen.io/) and [**EON Litepaper**](https://f001.backblazeb2.com/file/web-assets/eon-litepaper-april-2023.pdf).
