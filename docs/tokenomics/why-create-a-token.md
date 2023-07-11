@@ -205,3 +205,10 @@ This is why we have created [**TokenMint**](https://tokenmint.global/) - a tool 
 - [Customize your tokenomics](tokenomics/tokenomics.md) including supply, distribution, and more
 - Store your token on our [Cobalt Wallet](https://blog.horizen.io/cobalt-wallet-user-guide-2/) extension
 - View the transaction history of tokens on our [TokenMint Block Explorer](https://explorer.tokenmint.global/)
+
+  We also created [**Horizen EON**](https://eon.horizen.io/), the [EVM-compatible](interoperability/ethereum-virtual-machine-evm.md) sidechain.
+
+  Developers should consider creating a token on Horizen EON due to its unique features and benefits. As a fully EVM-compatible smart contracting platform, EON allows developers to efficiently build and deploy decentralized applications (dapps), leveraging the robustness of the Ethereum ecosystem. This compatibility with Ethereum means developers can use the same tools they are familiar with, reducing the learning curve and development time.
+  Furthermore, Horizen EON is designed with scalability in mind, addressing one of the major challenges in blockchain development. It also offers a permissionless, interoperable, and customizable sidechain network, providing developers with the flexibility to design their blockchain applications according to their specific needs.
+  Additionally, Horizen EON is part of a fast-growing ecosystem, providing developers with a large and active community for support and collaboration.
+  Lastly, the tokenization process on Horizen EON is made easy, allowing developers to incentivize user adoption and participation in their dapps.
