@@ -105,7 +105,7 @@ _Examples of tokens include_:
 
 **MANA** - A token used to pay for virtual land on the metaverse project Decentraland.
 
-![cryptocurrency vs token](/img/what-is-a-token/cryptocurrency-vs-token.jpeg)
+![cryptocurrency vs token](/img/what-is-a-token/ZBF_article_graphics_coins-vs-tokens.jpg)
 
 Tokens are created using a [smart contract](defi/smart-contracts.md), which is a computer program that automatically executes a set of functions based on predefined rules or conditions set by the developer.
 
@@ -187,3 +187,6 @@ This is why we have created [TokenMint](https://tokenmint.global/), a tool that 
 - [Customize your tokenomics](tokenomics/tokenomics.md)
 - Store your token on our Cobalt Wallet extension
 - View the transaction history of tokens on our Tokenmint explorer
+
+  Broadening the scope of blockchain and token innovation, Horizen has introduced **Horizen EON**, a fully [EVM-compatible](interoperability/ethereum-virtual-machine-evm.md) smart contracting platform. This platform is designed to supercharge the utility of tokens in areas such as artwork, gaming, DeFi and enterprise commerce, fostering a thriving community of developers and users.
+  To learn more, visit: [**Horizen EON**](https://eon.horizen.io/) and [**EON Litepaper**](https://f001.backblazeb2.com/file/web-assets/eon-litepaper-april-2023.pdf).
