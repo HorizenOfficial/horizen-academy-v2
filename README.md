@@ -88,8 +88,6 @@ We currently deploy this project to multiple environments, so we need to specify
 
 -   `build:prod` is used by Cloudflare Pages to build the site for the [prod environment](https://main.horizen-academy-v2.pages.dev/). Each time we deploy to the `main` branch, Cloudflare Pages will build the site using this command.
 
--   Horizen.io hosts this project as a submodule, and as part of its pipeline, it executes the `build:dev-horizen` and `build:prod-horizen` commands for the development and production environments of the Horizen.io project, respectively.
-
 ## Deployment
 
 Simply commit your changes and push them. Cloudflare Pages will automatically build and deploy your site.
