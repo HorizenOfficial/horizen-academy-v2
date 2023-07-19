@@ -60,6 +60,8 @@ npm install
 
 ### Setup your environment
 
+Create an `.env` file at the root, using `.env.template` as a template.
+
 Create a file named `.env.local` inside the `env/` folder. You can use the `.env.local.example` file as a guide.
 
 ## Development
