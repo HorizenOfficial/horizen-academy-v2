@@ -154,7 +154,8 @@ Today, there are a handful of notable L0 networks that are ushering in a new era
         </td>
         <td><strong>Polkadot</strong> is a blockchain protocol that unites an entire network of purpose-built
             blockchains known as ‘parachains’.           
-                <strong>Parachains</strong> are connected together and secured by the Polkadot Relay Chain. 
+
+               <p><strong>Parachains</strong> are connected together and secured by the Polkadot Relay Chain. 
               They can also connect with external networks via bridges.
             </p>
         </td>
