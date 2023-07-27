@@ -68,7 +68,7 @@ While more precise than single-entry accounting, double-entry accounting carries
 
 ### Triple-Entry Bookkeeping
 
-With blockchains, the concept of _triple-entry accounting_ is introduced, whereby debits and credit are recorded on a transparent ledger just like a double-entry system, yet the process of balancing the books is done through the blockchains [consensus mechanism](consensus/consensus-mechanisms.md) instead of through a centralized entity.
+With blockchains, the concept of _triple-entry accounting_ is introduced, whereby debits and credit are recorded on a transparent ledger just like a double-entry system, yet the process of balancing the books is done through the blockchain's [consensus mechanism](consensus/consensus-mechanisms.md) instead of through a centralized entity.
 
 The block confirmations submitted by validators on the network are considered to be the third-entry in the triple-entry bookkeeping process.
 
@@ -173,7 +173,7 @@ Within the network layer, transactions flow in a sequence of steps that highligh
 
 ### Consensus Layer
 
-The consensus layer is where a blockchains consensus mechanism exists. It is the most critical layer of a blockchain as it is where the rules and incentives are decided for nodes to validate transactions and update the state of the ledger.
+The consensus layer is where a blockchain consensus mechanism exists. It is the most critical layer of a blockchain as it is where the rules and incentives are decided for nodes to validate transactions and update the state of the ledger.
 
 **There are multiple consensus mechanisms, the most common of which are illustrated below:**
 
@@ -273,7 +273,7 @@ The ability for the components of one system to be reused in another.
 
 For example, the Ethereum Virtual Machine (EVM) makes it so that every smart contract can be made to interact with any other that is built using the EVM, regardless of what blockchain it is, as long as it is EVM compatible. 
 
-For example Avalanche, Fantom, Binance Smart Chain, etc.
+Avalanche, Fantom, Binance Smart Chain, and Horizen EON are examples of EVMs.
 
 :::info EVM on Horizen
 [**Horizen EON**](https://eon.horizen.io/) is our first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.

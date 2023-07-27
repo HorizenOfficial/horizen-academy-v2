@@ -15,7 +15,7 @@ last_update:
 
 A **node** is a computer that operates the software of a blockchain. 
 
-The main function of a node is to store and validate blockchain transaction data in order to maintain a record of the blockchains history and/or to earn newly issued [cryptocurrency](cryptocurrency/cryptocurrency.md) from the network, also known as [mining](mining/crypto-mining.md) or block rewards.
+The main function of a node is to store and validate blockchain transaction data in order to maintain a record of the blockchain's history and/or to earn newly issued [cryptocurrency](cryptocurrency/cryptocurrency.md) from the network, also known as [mining](mining/crypto-mining.md) or block rewards.
 
 Nodes are operated by miners or validators, these are individuals or entities that earn rewards in the form of cryptocurrencies for helping validate transactions. To validate a transaction simply means to confirm that the amounts sent and the final account values of each counterparty are correct. 
 
@@ -29,7 +29,7 @@ Each node stores a copy of the ledger and updates it in sync with everyone elseâ
 
 Nodes are the fundamental backbone of a blockchain network. They enable blockchains to maintain a secure, transparent and tamper proof record of transactions dating back to the beginning of the blockchainâ€™s history, 
 
-The _more_ nodes there are that store the blockchains history and validate transactions, the more secure the network. This is because a larger set of nodes, particularly when distributed across different locations around the world, are ultimately less prone to censorship because there is no single point of failure. 
+The _more_ nodes there are that store the blockchain's history and validate transactions, the more secure the network. This is because a larger set of nodes, particularly when distributed across different locations around the world, are ultimately less prone to censorship because there is no single point of failure. 
 
 Today, the [Bitcoin](cryptocurrency/bitcoin-glossary.md) network has over [11,000](https://bitnodes.io) nodes that each hold a copy of the network's latest transactions and transaction history. The [Ethereum network](cryptocurrency/ethereum-glossary.md) currently has over [10,000](https://etherscan.io/nodetracker) nodes.
 
@@ -101,7 +101,6 @@ Ethereum nodes, or _clients_, record and transmit copies of transaction data, in
 
     * **Gas** refers to the fee, priced in Eth or Gwei, or pricing value required to successfully conduct a transaction or execute a contract on the Ethereum blockchain platform.
 
-    ![what is evm](/img/ethereum-glossary/what-is-evm.jpeg)
  
 ## How do Nodes Work on Bitcoin?
 
@@ -123,7 +122,7 @@ When a new bitcoin transaction is signed by the sender, it must be broadcast thr
 
 ## How to Run an Ethereum Node?
 
-Running a node on Ethereum allows you to store the blockchains transaction history and participate more directly in network consensus and security.
+Running a node on Ethereum allows you to store the blockchain's transaction history and participate more directly in network's consensus and security.
 
 An Ethereum node can be run using any personal computer by downloading the software that contains a copy of the Ethereum blockchain and verifies transactions. 
 

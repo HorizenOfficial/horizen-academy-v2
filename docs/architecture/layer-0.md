@@ -105,7 +105,7 @@ _Layer 0 networks_ use various different iterations of a **cross-chain transfer 
 
 _Cosmos_, a layer 0 network, uses a mechanism called the _Inter-Blockchain Communication_ protocol (IBC), where layer 1 blockchains called ‘Zones’ can communicate and transfer value between each other using the mainchain ‘HUB’ as a central checkpoint and intermediary.
 
-**Horizen** uses its _Cross-Chain Transfer Protocol_ (**CCTP**) to enable side chains to communicate and transfer tokens to the mainchain and between other sidechains.
+**Horizen** uses its _Cross-Chain Transfer Protocol_ (**CCTP**) to enable sidechains to communicate and transfer tokens to the mainchain and between other sidechains.
 
 ## How Does a Layer 0 Work?
 
@@ -152,13 +152,12 @@ Today, there are a handful of notable L0 networks that are ushering in a new era
                 protocol (IBC).
             </p>
         </td>
-        <td><strong>Polkadot</strong> is a blockchain protocol that unites an entire network of purpose-built
-            blockchains known as ‘parachains’.
+        <td>
+            <strong>Polkadot</strong> is a blockchain protocol that unites an entire network of purpose-built
+            blockchains known as ‘parachains’.           
             <p>
-                <strong>Parachains</strong> are connected together and secured by
-            </p>
-            <p>
-                the Polkadot Relay Chain. They can also connect with external networks via bridges.
+                <strong>Parachains</strong> are connected together and secured by the Polkadot Relay Chain. 
+                They can also connect with external networks via bridges.
             </p>
         </td>
         <td><strong>Horizen</strong> is a zero-knowledge-enabled network of blockchains.

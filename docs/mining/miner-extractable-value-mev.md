@@ -41,6 +41,8 @@ Another group called _‘Searchers’_ can also take advantage of MEV without [r
 
 Once a researcher identifies these high value transactions, they can ‘front-run’ them by submitting the same buy or sell order but with a higher fee in order to get them submitted first. In trading and financial markets, **front running** is the process of getting in front of a queue of transactions in order to get your transaction executed at a more preferential execution price.
 
+![miner extractable value](/img/miner-extractable-value-mev/ZBF_graphic_frontrunning.jpg)
+
 #### Front Running Example
 
 Let’s say a searcher spots a pending buy order for $1 million of ETH at a price of $1,500.

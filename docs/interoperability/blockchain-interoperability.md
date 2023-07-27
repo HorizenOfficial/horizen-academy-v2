@@ -118,7 +118,7 @@ The 2 common forms of bridge design are **trusted bridges** and **trustless brid
 
 Expanding further, we also see different designs within the trustless and trusted bridge paradigm for enabling blockchain interoperability. The most popular designs include:
 
-- [Atomic Swaps](interoperability/atomic-swaps.md) use smart contracts to enable the exchange of one [cryptocurrency](cryptocurrency/cryptocurrency.md) for another in a [p2p](fundamentals/p2p-networks.md) manner. Swaps can occur between different blockchain, or between a blockchains and its off-chain channel, for example, between an L1 and a centralized L2.
+- [Atomic Swaps](interoperability/atomic-swaps.md) use smart contracts to enable the exchange of one [cryptocurrency](cryptocurrency/cryptocurrency.md) for another in a [p2p](fundamentals/p2p-networks.md) manner. Swaps can occur between different blockchain, or between a blockchain and its off-chain channel, for example, between an L1 and a centralized L2.
 - **Relays** are a common feature used by interoperability protocols like LayerZero to enable one chain (the relay chain) or a centralized 3rd party node to verify information about a block (i.e the block header) and events that occur on the receiving/sending chain.
 
 ## Interoperability in DeFi

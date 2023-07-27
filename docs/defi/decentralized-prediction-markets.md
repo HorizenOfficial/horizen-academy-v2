@@ -173,7 +173,7 @@ While more specific or niche predictions will typically have a limited number of
 
 The more diverse the predictions, the more players you need who have adequate knowledge about each topic to place large bets. Another reason for poor liquidity is the fragmentation of blockchain networks and lack of well established interoperability solutions, like *bridges*.
 
-Prediction markets on _Avalanche, Polygon, [Ethereum mainnet](cryptocurrency/ethereum-glossary.md), Solana and Cosmos_ do not communicate with each other. 
+Prediction markets on _Avalanche, Polygon, [Ethereum](cryptocurrency/ethereum-glossary.md), Solana and Cosmos_ do not communicate with each other. 
 
 As a result, it is not uncommon to see the same prediction running on multiple networks with a different set of players and different odds calculations
 
