@@ -50,7 +50,7 @@ Miner nodes are responsible for creating new blocks by solving the computational
 
 Miner nodes must run a full node, meaning they must hold a copy of the entire blockchain ledger in order to mine blocks and earn rewards.
 
-![visual bitcoin transaction diagram](/img/bitcoin-glossary/visual-bitcoin-transaction-diagram.jpeg)
+![visual bitcoin transaction diagram](/img/bitcoin-glossary/ZBF_article_graphics_transaction-request.jpg)
 
 ### Consensus Mechanism - Consensus Protocol
 

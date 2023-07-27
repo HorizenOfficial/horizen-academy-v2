@@ -33,7 +33,7 @@ Simply put, the **EVM** is a computation engine that is in charge of _deploying_
 
 To better understand what this all means, it is important to first understand **Ethereum**, **Dapps**, **Smart Contracts** and **Gas**.
 
-![what is evm](/img/ethereum-glossary/what-is-evm.jpeg)
+![what is evm](/img/ethereum-glossary/ZBF_Academy_article_what-is-EVM.jpg)
 
 ### What is Ethereum?
 

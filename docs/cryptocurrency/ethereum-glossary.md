@@ -75,7 +75,7 @@ The performance of the EVM is only limited by the amount of _gas_ that is provid
 
 - **Gas fees** priced in Eth or Gwei are paid to miners on the Ethereum blockchain in order to validate a transaction.
 
-![what is evm](/img/ethereum-glossary/what-is-evm.jpeg)
+![what is evm](/img/ethereum-glossary/ZBF_Academy_article_what-is-EVM.jpg)
 
 ## Core Components of the Ethereum Network
 
