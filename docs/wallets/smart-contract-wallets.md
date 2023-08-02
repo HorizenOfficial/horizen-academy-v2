@@ -21,7 +21,7 @@ These cutting-edge wallets leverage account abstraction to integrate essential f
 
 To understand smart contract wallets, we need to first explain what are **Externally Owned Accounts (EOAs)**
 
-Externally Owned Accounts (EOAs) are accounts on the [**Ethereum blockchain**](cryptocurrency/ethereum-glossary.md) that are owned and controlled by an end user, as opposed to a [**smart contract**](defi/smart-contracts.md). EOAs are typically created using a [**software wallet** or a **hardware wallet**](wallets/crypto-walets.md), and can be used to send and receive tokens and interact with smart contracts.
+Externally Owned Accounts (EOAs) are accounts on the [**Ethereum blockchain**](cryptocurrency/ethereum-glossary.md) that are owned and controlled by an end user, as opposed to a [**smart contract**](defi/smart-contracts.md). EOAs are typically created using a [**software wallet** or a **hardware wallet**](wallets/crypto-wallets.md), and can be used to send and receive tokens and interact with smart contracts.
 In contrast, smart contract wallets are **accounts on the Ethereum blockchain that are controlled by a smart contract**. These wallets are typically implemented using a smart contract that manages the funds and provides functionality such as sending and receiving transactions, managing [private keys](cryptography/public-key-cryptography-pkc.md), and executing other functions based on certain conditions.
 
 In essence, a ‘user intent layer’ exists in the blockchain that allows the end user to express a set of commands that they wish to perform, which can then be executed sequentially by a smart contract that controls the users private keys and signs each transaction on behalf of the user. 
