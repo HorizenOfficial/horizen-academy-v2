@@ -1,6 +1,6 @@
 ﻿---
 
-sidebar_label: Wallets
+sidebar_label: Smart Contract Wallets
 title: Smart Contract Wallets
 slug: /smart-contract-wallets/
 description: In this article, you will learn what smart contract wallets are and how they function.
