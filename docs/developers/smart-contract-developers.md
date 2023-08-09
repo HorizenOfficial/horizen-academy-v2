@@ -7,7 +7,7 @@ description: In this article, you will learn what smart contracts are, which lan
 image: img/smart-contract-developers/Horizen_Academy-meta-image-smart-contract-developers.jpg
 last_update:
   date: 7/11/2023
-  author: Horizen Contributor
+  author: Horizen Contributor 
 
 ---
 
