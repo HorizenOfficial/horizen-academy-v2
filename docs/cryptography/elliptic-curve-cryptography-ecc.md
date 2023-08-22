@@ -60,7 +60,7 @@ Each number is in the set of points that make up the curve. A point on the curve
 
 **Vectors** represent quantities that have both, a _direction_ and a _magnitude_. 
 
-The _double_ describing the two-dimensional vector in the graphic below can be one of two things: either a pair of **x** and **y**-coordinates, or an angle **\\(\alpha\\)**, enclosed between the arrow and x-axis, and the length of the arrow.
+The _double_ describing the two-dimensional vector in the graphic below can be one of two things: either a pair of **x** and **y**-coordinates, or an angle $alpha\$, enclosed between the arrow and x-axis, and the length of the arrow.
 
 On the elliptic curve, any point can be viewed as an arrow pointing in a certain direction and having a defined magnitude or length (also called a vector). 
 
@@ -90,13 +90,13 @@ Your private key is a large random number, which when multiplied with a _base po
 
 ![proving private key](/img/digital-signatures/proving-private-key.jpg)
 
-The elliptic curve is generally described by **\\(y^2 = x^3 +ax + b\\)** where **\\(4a^3 + 27b^2 \neq 0\\)**. 
+The elliptic curve is generally described by $y^2 = x^3 +ax + b\$ where $4a^3 + 27b^2 \neq 0\$. 
 
 There are two possible solutions for each **x**-value, which is very useful when compressing a point on the curve, like the base point or your public key. One can omit the **y**-coordinate and include an extra bit indicating if the **y**-value is _positive_ or _negative_ without losing any information.
 
 $$y = \pm \sqrt{x^3 + ax + b}$$
 
-In [Bitcoin](cryptocurrency/bitcoin-glossary.md) and _Horizen_, the curve used is called **secp256k1** and described by **\\(y^2 = x^3 + 7\\)**. 
+In [Bitcoin](cryptocurrency/bitcoin-glossary.md) and _Horizen_, the curve used is called **secp256k1** and described by $y^2 = x^3 + 7\$. 
 
 _The base points coordinates are:_
 
@@ -108,9 +108,9 @@ $$y = 32670510020758816978083085130507043184471273380659243275938904335757337482
 
 ### Multiplying Large Numbers on the Curve
 
-How hard does your computer have to work in order to perform multiplication on the curve with large numbers like your private key **sk** and the base point **P**?
+How hard does your computer have to work in order to perform multiplication on the curve with large numbers like your private key $sk$ and the base point $P$?
 
- Let's use a simple example first and look at how many steps it takes to get the product **\\(10 \cdot P\\)**.
+ Let's use a simple example first and look at how many steps it takes to get the product $10 \cdot P\$.
 
 The first thing that might come to mind is performing 9 point additions:
 
@@ -120,7 +120,7 @@ Because the distributive property...
 
 $$n \cdot P + m \cdot P = (n + m) \cdot P$$
 
-...holds for math on the elliptic curve, one can reduce the number of steps to calculate **\\(10 \cdot P\\)** to _four_:
+...holds for math on the elliptic curve, one can reduce the number of steps to calculate $10 \cdot P\$ to _four_:
 
 $$
 P + P = 2 \cdot P
@@ -138,9 +138,9 @@ $$
 (8 \cdot P) + (2 \cdot P)= (8 + 2) \cdot P = 10 \cdot P
 $$
 
-To compute **\\(x \cdot P\\)**, where **x** is a random **256**-bit integer, read: your private key, it never takes more than **510** point operations. 
+To compute $x \cdot P\$, where **x** is a random **256**-bit integer, read: your private key, it never takes more than **510** point operations. 
 
-That is although **x** can be huge! It can range between **0** and **\\(1.1579 \cdot 10^{77}\\)** which can be written out as:
+That is although **x** can be huge! It can range between **0** and $1.1579 \cdot 10^{77}\$ which can be written out as:
 
 $$
 115792089237316195423570985008687907853269984665640564039457584007913129639936
@@ -170,7 +170,7 @@ $$
 2^7 \cdot P + 2^6 \cdot P + 2^4 \cdot P + 2^3 \cdot P + 2^2 \cdot P + 2^1 \cdot P = 222 \cdot P
 $$
 
-The individual points don't need to be calculated because we have already completed this step. The maximum size of our expansion includes **256** elements **\\((2^{255} \cdot P + ... + 2^0 \cdot P\\)**. 
+The individual points don't need to be calculated because we have already completed this step. The maximum size of our expansion includes **256** elements $2^{255} \cdot P + ... + 2^0 \cdot P\$. 
 
 Adding them together means performing **255** point additions. So how much work has our computer done so far? 
 
@@ -186,11 +186,11 @@ Because of the discrete log problem the computation we just performed is not rev
 
 _Let's give all of this some context again_.
 
-Your private key is a random **256**-bit integer. This means it will be somewhere between **0** and **\\(2^{256}-1\\)**.
+Your private key is a random **256**-bit integer. This means it will be somewhere between **0** and $2^{256}-1\$.
 
- In order to determine a private key from a public key you would have to perform **\\(2^{128}\\)** point addition operations on average, because guessing or applying _brute force_ is the most efficient way known.
+ In order to determine a private key from a public key you would have to perform $2^{128}\$ point addition operations on average because guessing or applying _brute force_ is the most efficient way known.
 
-If your computer could perform a trillion,**\\(10^{12}\\)** additions per second and you had been running your computer since the beginning of the universe, you would only have computed **\\(2^{98}\\)** point additions by now which equals just about **0.00000009**% of the total work to derive a single private key from a public key - on average.
+If your computer could perform a trillion,$10^{12}\$ additions per second and you had been running your computer since the beginning of the universe, you would only have computed $2^{98}\$ point additions by now which equals just about **0.00000009**% of the total work to derive a single private key from a public key - on average.
 
  _Elliptic curve cryptography is a good basis for a public-key cryptography scheme._ It is infeasible to derive a public key from a private key.
 
@@ -210,7 +210,7 @@ $$
 
 ...where **p** is a large prime. 
 
-For the **secp256k1** curve used in Bitcoin and Horizen, **p** is the largest prime that is less than **\\(2^{256}\\)**.
+For the **secp256k1** curve used in Bitcoin and Horizen, **p** is the largest prime that is less than $2^{256}\$.
 
 ![finite field](/img/elliptic-curve-cryptography-ecc/finite-field.jpg)
 
