@@ -63,7 +63,7 @@ The _difficulty_ is a different way to express the current target. The difficult
 
 $$Difficulty = \frac{max. target}{target}$$
 
-On the [Bitcoin](cryptocurrency/bitcoin-glossary.md) network, which has seen the biggest growth in hash power since its inception the current difficulty (at the time of writing) is about 1.3 \cdot 10^{13}\ meaning it is _13 trillion_ times harder to find a block _today_, than it was when the [protocol](architecture/blockchain-protocols.md) was _launched_.
+On the [Bitcoin](cryptocurrency/bitcoin-glossary.md) network, which has seen the biggest growth in hash power since its inception the current difficulty (at the time of writing) is about $$1.3 \cdot 10^{13}\$$ meaning it is _13 trillion_ times harder to find a block _today_, than it was when the [protocol](architecture/blockchain-protocols.md) was _launched_.
 
 ## What is the Role of a Miner?
 
