@@ -140,13 +140,7 @@ The solution to the problem _5!_ then depends on a smaller instance of the same 
 
 ![recursive factorial](/img/zendoo/recursive-factorial.jpg)
 
-In the example above, the recursive function starts with the first recursive case:
-
-$$
-5! = 5 \cdot 4!\
-$$
-
-then starts another instance of the function that computes 4! - and so on. This continues until the base case is reached. 
+In the example above, the recursive function starts with the first recursive case $5! = 5 \cdot 4!\$ then starts another instance of the function that computes 4! - and so on. This continues until the base case is reached. 
 
 The base case is the factorial of the number 2, which equals **2**.
 
@@ -164,115 +158,37 @@ long factorial(int n)
 }
 ```
 
-**Note**: In the graphic before we called: 
-
-$$
-2 \cdot 1\
-$$
-
-the base case for simplicity's sake.
+**Note**: In the graphic before we called: $2 \cdot 1\$ the base case for simplicity's sake.
 
 We want to achieve proof of state transitions in the context of our sidechains. If the state transition is proven, the resulting state and hence all backward transfers are automatically proven. _But how does recursion apply to this?_
 
 #### State Transition Proofs
 
-The blockchain's state transition logic is a function that takes the current state 
-
-$$
-s\*i\
-$$
-
-and the most recent set of transactions 
-
-$$
-t_i\
-$$
-
-as an input, and returns the next state 
-
-$$
-s\*{i+1}\
-$$
-
-as an output. The factorial of five is expressed as the number five times the result of the function for computing the factorial of four. The current state can also be computed based on the current transition and the result of the function for computing the last state. Let us look at a tangible example.
+The blockchain's state transition logic is a function that takes the current state $s\*i\$ and the most recent set of transactions $t_i\$ as an input, and returns the next state $s\*{i+1}\$ as an output. The factorial of five is expressed as the number five times the result of the function for computing the factorial of four. The current state can also be computed based on the current transition and the result of the function for computing the last state. Let us look at a tangible example.
 
 ![states and state transitions](/img/sidechains/states-and-state-transitions.jpg)
 
-Let's assume a sidechain starts in state 
+Let's assume a sidechain starts in state $s_1\$ with its genesis block. 
 
-$$
-s_1\
-$$
-
-with its genesis block. 
-
-The first transition 
-
-$$
-t_1\
-$$
-
-consists of all transactions included in the first "real" block applied to the first state. The transition function, let's call it `update`, takes these two parameters, the initial state (Genesis Block) and the first transition (read: transactions), and computes the next state 
-
-$$
-s_2\
-$$
-
-given the inputs constitute valid arguments to the `update` function.
+The first transition $t_1\$ consists of all transactions included in the first "real" block applied to the first state. The transition function, let's call it `update`, takes these two parameters, the initial state (Genesis Block) and the first transition (read: transactions), and computes the next state $s_2\$ given the inputs constitute valid arguments to the `update` function.
 
 $$
 s_2 = update(t_1, s_1)
 $$
 
-The same logic applies for the second state transition. Based on state 
-
-$$
-s_2\
-$$
-
-and the second transition 
-
-$$
-t_2\
-$$
-
-the `update` function computes the third state 
+The same logic applies for the second state transition. Based on state $s_2\$ and the second transition $t_2\$ the `update` function computes the third state 
 
 $$
 s_3 = update(t_2, s_2)
 $$
 
-Now, the current state of the sidechain can always be computed from the initial state 
-
-$$
-s_1\
-$$
-
-and all transitions 
-
-$$
-t_i\
-$$
-
-the system underwent. It allows one to subsequently compute every state the system went through. In our example, the third state 
-
-$$
-s_3\
-$$
-
-can be computed as:
+Now, the current state of the sidechain can always be computed from the initial state $s_1\$ and all transitions $t_i\$ the system underwent. It allows one to subsequently compute every state the system went through. In our example, the third state $s_3\$ can be computed as:
 
 $$
 s_3 = update(t_2, update(t_1, s_1)).
 $$
 
-We simply replaced 
-
-$$
-s_2\
-$$
-
-from the second formula in this section with the right term of the first equation.
+We simply replaced $s_2\$ from the second formula in this section with the right term of the first equation.
 
 #### Recursive State Transition Proofs
 
@@ -280,13 +196,7 @@ The construction shown above follows the same pattern we discussed when calculat
 
 ![recursive state](/img/zendoo/recursive-state.jpg)
 
-The base case here is the first state transition resulting in state 
-
-$$
-s_2\
-$$
-
-. Once this base case is reached, the different instances of the `update` function return their result to the next highest instance of the same function until finally, the current state is returned and all instances of the function are closed.
+The base case here is the first state transition resulting in state $s_2\$. Once this base case is reached, the different instances of the `update` function return their result to the next highest instance of the same function until finally, the current state is returned and all instances of the function are closed.
 
 **A general mathematical expression for this is**
 
@@ -296,25 +206,7 @@ $$
 
 This construction is of great value for verifiable sidechains. Not only can states be computed recursively, but so can proofs for each state and state transition. What is needed for the Zendoo protocol is a proof of the statement:
 
-There was a series of state transitions 
-
-$$
-t\*1, ..., t_n)\
-$$
-
-and by applying these state transitions to the initial state 
-
-$$
-s_1\
-$$
-
-one after another the state 
-
-$$
-s{n+1}
-$$
-
-is reached.
+There was a series of state transitions $t\*1, ..., t_n)\$, and by applying these state transitions to the initial state $s_1\$ one after another the state $s{n+1}$ is reached.
 
 We now understand how to compute states recursively. _But why do we want to compute a proof for each of those transitions?_ Remember that the mainchain does not monitor the different sidechains and verify the state transitions.
 
@@ -336,73 +228,18 @@ With _SNARKs_ we can produce proofs of constant size for almost any type of comp
 
 ![proof generation and verification](/img/zendoo/proof-generation-and-verification.jpg)
 
-When a SNARK system is setup, a proving key 
-
-$$
-pk\
-$$
-
-and a verification key 
-
-$$
-vk\
-$$
-
-are generated for the system **C**. The verification key is registered on the mainchain at the time of sidechain deployment.
+When a SNARK system is setup, a proving key $pk$ and a verification key $vk$ are generated for the system **C**. The verification key is registered on the mainchain at the time of sidechain deployment.
 
 $$
 (pk, vk) \leftarrow Setup(C)
 $$
 
-To prove a computation was performed correctly (or, in more general terms, a statement) a proof 
+To prove a computation was performed correctly (or, in more general terms, a statement) a proof $pi$ is generated. Generating a proof for the correct state transition $t$ from state $s_1$ to the final state $s_n$ happens based on **four** inputs:
 
-$$
-pi\
-$$
-
-is generated. Generating a proof for the correct state transition 
-
-$$
-t\
-$$
-
-from state 
-
-$$
-s_1\
-$$
-
-to the final state 
-
-$$
-s_n\
-$$
-
-happens based on **four** inputs:
-
-- the proving key 
-
-$$
-pk\
-$$
-
-- the initial state
-
-$$
-s_1\
-$$
-
-- the transition
-
-$$
-t\
-$$
-
-- and the resulting state
-
-$$
-s_n\
-$$
+- the proving key $pk$
+- the initial state $s_1$
+- the transition $t$
+- and the resulting state $s_n$
 
 $$
 \pi \leftarrow Prove(pk, (s_1, s_n), t)
@@ -412,38 +249,13 @@ Just like we computed states recursively, we can compute proofs recursively.
 
 **The logic is exactly the same:** Starting from a base case (the first state transition) proofs are sequentially merged until a single proof for the state in question remains.
 
-This proof is now broadcast on the mainchain where it is verified. Verifying a proof of state 
+This proof is now broadcast on the mainchain where it is verified. Verifying a proof of state $s_n$ happens based on **four** inputs:
 
-$$
-s_n\
-$$
-
-happens based on **four** inputs:
-
-- the verification key
-
-$$
-vk\
-$$
-
-- the initial state
-
-$$
-s_1\
-$$
-
-- the final state
-
-$$
-s_n\
-$$
-
-- and the proof
-
-$$ 
-pi\
-$$
-
+- the verification key $vk$
+- the initial state $s_1$
+- the final state $s_n$
+- and the proof $pi$
+  
 $$
 true/false \leftarrow Verify(vk, (s_1, s_n), \pi)
 $$
@@ -494,25 +306,7 @@ A new sidechain in Zendoo needs to register with the mainchain using a special t
 - **First**, a unique identifier, the `ledgerId` for the sidechain is defined in the bootstrapping transaction.
 - **Next**, it is defined from which mainchain block onward the sidechain will become active.
 
-A number of cryptographic keys are proclaimed for each sidechain, namely the verification keys needed to verify proofs generated on the sidechain. There is a verification key 
-
-$$
-vk\*{WCert}\
-$$
-
-for withdrawal certificate proofs, a verification key 
-
-$$
-vk\*{BTR}\
-$$
-
-for Backward Transfer Request proofs and a verification key 
-
-$$
-vk\_{CSW}\
-$$
-
-for Ceased Sidechain Withdrawal proofs.
+A number of cryptographic keys are proclaimed for each sidechain, namely the verification keys needed to verify proofs generated on the sidechain. There is a verification key $vk\*{WCert}\$ for withdrawal certificate proofs, a verification key $vk\*{BTR}\$ for Backward Transfer Request proofs and a verification key $vk\_{CSW}\$ for Ceased Sidechain Withdrawal proofs.
 
 Lastly, it is defined how the proof data will be provided from the sidechain to the mainchain (number and types of included data elements).
 
