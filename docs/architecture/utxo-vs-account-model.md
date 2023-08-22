@@ -6,7 +6,7 @@ slug: /utxo-vs-account-model/
 description: Most blockchains use the UTXO model for accounting. The second method to track user balances, as applied in Ethereum, is the account model.
 image: /img/utxo-vs-account-model/utxo-vs-account-model-meta.jpeg
 last_update:
-  date: 2/21/2023
+  date: 8/22/2023
   author: Horizen Contributor
 
 ---
