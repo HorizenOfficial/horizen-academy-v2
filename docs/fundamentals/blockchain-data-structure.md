@@ -290,7 +290,7 @@ Constructing a Merkle tree goes like this:
 
 ![merkle tree](/img/proof-of-work-pow/merkle-tree.jpg)
 
-The **Merkle path** is simply the set of hash values needed to reconstruct the entire tree. The Merkle path for transaction **K** consists of the hash of transaction **L $H_L\$** it is first concatenated with and the combined hashes $H_{IJ}\$, $H_{MNOP}\$ and lastly, $H_{ABCDEFGH}\$.
+The **Merkle path** is simply the set of hash values needed to reconstruct the entire tree. The Merkle path for transaction **K** consists of the hash of transaction **L $H_L$** it is first concatenated with and the combined hashes $H_{IJ}$, $H_{MNOP}$ and lastly, $H_{ABCDEFGH}$.
 
  Those four hashes, together with the original transaction, allow a verifier to check the tree's integrity.
 

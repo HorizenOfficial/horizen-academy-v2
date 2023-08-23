@@ -229,7 +229,7 @@ The result is less than a third of all nodes *n*: $frac{(n-1)}{3}\$
 
 1. If ***x*** is the number of *Byzantine nodes*, the system must work in case they are unresponsive, so with ***(n-x)*** nodes.
 2. Now it is possible that the unresponsive nodes suffered from crash-faults and all ***x*** Byzantine nodes are still live. In this case ***(2x)*** nodes are either not responsive or Byzantine.
-3. Because a majority of honest nodes is required to achieve consensus, we need a total of ***n = 3x + 1*** nodes, which in turn means a maximum of $x = \frac{(n-1)}{3}\$ nodes can be Byzantine for the system to keep working.
+3. Because a majority of honest nodes is required to achieve consensus, we need a total of ***n = 3x + 1*** nodes, which in turn means a maximum of $x = \frac{(n-1)}{3}$ nodes can be Byzantine for the system to keep working.
 
 What we have learned from looking at the Byzantine Generals Problem is that the threshold for the maximum share of Byzantine participants on the network is rather low, clocking in at one third of the total node count.
 
@@ -257,7 +257,7 @@ In 1999, yet another consensus algorithm was published - [*practical Byzantine F
 
 ![pbft](/img/consensus-in-distributed-systems/pbft.jpg)
 
-pBFT can guarantee safety under all circumstances (assuming a maximum of $x = \frac{(n-1)}{3}\$ Byzantine nodes), but it relies on the synchronous model to achieve liveness. 
+pBFT can guarantee safety under all circumstances (assuming a maximum of $x = \frac{(n-1)}{3}$ Byzantine nodes), but it relies on the synchronous model to achieve liveness. 
 
 Put differently, in an unreliable communications network the system might halt. 
 

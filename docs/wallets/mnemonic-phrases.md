@@ -107,7 +107,7 @@ The _HMAC-SHA256_ function is used at several steps in the key derivation proces
 
 - We _generated_ a random bit sequence and used it as an input to a deterministic random bit generator that produced a **seed**.
 - From this _seed,_ we _generated_ a **mnemonic phrase**, which in turn was converted into a _512-bit binary seed_.
-- We _split_ our seed into the zero-level private key **$sk_0\$** and the zero-level chain code $cc_0\$. A zero-level public key **$PK_0\$** is generated from **$sk_0\$** using [elliptic curve cryptography](cryptography/elliptic-curve-cryptography-ecc.md)
+- We _split_ our seed into the zero-level private key **$sk_0$** and the zero-level chain code $cc_0\$. A zero-level public key **$PK_0$** is generated from **$sk_0$** using [elliptic curve cryptography](cryptography/elliptic-curve-cryptography-ecc.md)
 
 ## Hardened vs. Non-Hardened Secret Key Derivation
 
@@ -121,19 +121,19 @@ Additionally, we need to introduce the variable **i** at this point. It is a **3
 
 By convention, the total range of possible values of **i** is split between _HSKD_ and _NSKD_, giving both methods the option to create _2147483648_ different first-level keys from a single zero-level key.
 
-The **hardened secret key derivation** takes the zero-level private key **$sk_0\$**, the zero-level chain code **$cc_0\$** and the integer **i** as an input. 
+The **hardened secret key derivation** takes the zero-level private key **$sk_0$**, the zero-level chain code **$cc_0$** and the integer **i** as an input. 
 
-By convention, the top of the integer range, from **$2^{31}\$** to **$2^{32}-1\$**, of **i**, is used for the hardened secret key derivation method.
+By convention, the top of the integer range, from **$2^{31}$** to **$2^{32}-1$**, of **i**, is used for the hardened secret key derivation method.
 
-In other words, using the _HSKD_ method, the first-level private key **$sk_1\$** is a function of three values:
+In other words, using the _HSKD_ method, the first-level private key **$sk_1$** is a function of three values:
 
 $$
 sk_1 = HSKD(sk_0, c_0, i)
 $$
 
-The **non-hardened secret key derivation** (_NSKD_) additionally takes the zero-level public key **$PK_0\$** into account. In the non-hardened secret key derivation method, **i** will by convention take on values between **0** and **$2^{31}-1\$**, so the lower half of the total range of **i**.
+The **non-hardened secret key derivation** (_NSKD_) additionally takes the zero-level public key **$PK_0$** into account. In the non-hardened secret key derivation method, **i** will by convention take on values between **0** and **$2^{31}-1$**, so the lower half of the total range of **i**.
 
-In other words, using the _HSKD_ method the obtained first-level private key **$sk_1\$** is a function of four values:
+In other words, using the _HSKD_ method the obtained first-level private key **$sk_1$** is a function of four values:
 
 $$
 sk_1 = NSKD(sk_0, PK_0 c_0, i)
@@ -149,31 +149,31 @@ _HMAC_ consumes several inputs. For our purposes we group them into two: the _ke
 
 ![hardened secret key derivation](/img/mnemonic-phrases/hardened-secret-key-derivation.jpg)
 
-For the _HSKD_ method, the concatenation of **$sk_0\$** and our variable integer **i** is used as the data and the zero-level chain code **$c_0\$** as the key.
+For the _HSKD_ method, the concatenation of **$sk_0$** and our variable integer **i** is used as the data and the zero-level chain code **$c_0$** as the key.
 
 The resulting **512-bit** output is split into two parts of **256** bits each.
-- The **first** half becomes our first-level private key **$sk_1\$**
-- The **second** half our first-level chain code **$cc_1\$**. 
+- The **first** half becomes our first-level private key **$sk_1$**
+- The **second** half our first-level chain code **$cc_1$**. 
 
-By applying elliptic curve cryptography to **$sk_1\$** we can obtain our first-level public key **$PK_1\$**.
+By applying elliptic curve cryptography to **$sk_1$** we can obtain our first-level public key **$PK_1$**.
 
-By incrementing **i** we can generate **$2^{31}\$** or **2147483648** different first level private keys and chain codes.
+By incrementing **i** we can generate **$2^{31}$** or **2147483648** different first level private keys and chain codes.
 
 ### Non-Hardened Secret Key Derivation - NSKD
 
-We can also derive a first level private key using a combination of our zero-level public key **$PK_0\$**, zero-level secret key **$sk_0\$** and our zero-level chain code **$cc_0\$**. 
+We can also derive a first level private key using a combination of our zero-level public key **$PK_0$**, zero-level secret key **$sk_0$** and our zero-level chain code **$cc_0$**. 
 
 This method is called **Non-Hardened Secret Key Derivation** (NSKD).
 
 ![non hardened secret key derivation](/img/mnemonic-phrases/non-hardened-secret-key-derivation.jpg)
 
-Again, we will use the **HMAC-SHA256** function, but this time we use the concatenation of **$PK_0\$** and **i** as out _data_ and once again **$cc_0\$** as our _key_. 
+Again, we will use the **HMAC-SHA256** function, but this time we use the concatenation of **$PK_0$** and **i** as out _data_ and once again **$cc_0$** as our _key_. 
 
-Again, the resulting **512-bit** output is split into two parts of **256** bits each. While the _second_ part becomes our first level chain code **$cc_1\$** as it did in the _HSKD_ method, the first **256** bits are handled differently.
+Again, the resulting **512-bit** output is split into two parts of **256** bits each. While the _second_ part becomes our first level chain code **$cc_1$** as it did in the _HSKD_ method, the first **256** bits are handled differently.
 
-It doesn't yield our first level private key directly, but instead an [_addition modulo N_](https://www.oxfordreference.com/display/10.1093/oi/authority.20110803100203745;jsessionid=439EAAEED9BD2AF347440E879FD8528A) with the initial private key **$sk_0\$** is performed in order to obtain the first level private key. 
+It doesn't yield our first level private key directly, but instead an [_addition modulo N_](https://www.oxfordreference.com/display/10.1093/oi/authority.20110803100203745;jsessionid=439EAAEED9BD2AF347440E879FD8528A) with the initial private key **$sk_0$** is performed in order to obtain the first level private key. 
 
-_Lastly_, _ECC_ is used to generate our first level **NSKD** public key **$PK_1\$**.
+_Lastly_, _ECC_ is used to generate our first level **NSKD** public key **$PK_1$**.
 
 Now imagine a case where a large number of addresses, or public keys respectively, need to be generated on a continuous basis - think a merchant accepting crypto payments. 
 
@@ -183,17 +183,17 @@ The zero-level private key is also the key that will allow the merchant to spend
 
 ### Non-Hardened Public Key Derivation - NPKD
 
-Using the _Non-Hardened Public Key Derivation_ method, our zero level private key **$sk_0\$** isn't needed at all. The first steps in the _NPKD_ method are analogous to the _NSKD_ method.
+Using the _Non-Hardened Public Key Derivation_ method, our zero level private key **$sk_0$** isn't needed at all. The first steps in the _NPKD_ method are analogous to the _NSKD_ method.
 
 ![non hardened public key derivation](/img/mnemonic-phrases/non-hardened-public-key-derivation.jpg)
 
-The concatenation of **$PK_0\$** and **i** is used as _data_ and **$cc_0\$** as our _key_. Again, the resulting **512-bit** output is split into two parts of **256** bits.
+The concatenation of **$PK_0$** and **i** is used as _data_ and **$cc_0$** as our _key_. Again, the resulting **512-bit** output is split into two parts of **256** bits.
 
-The first **256** bits are used as an input to the _ECC_ module, producing an intermediary result we call **$PRE_1\$**. 
+The first **256** bits are used as an input to the _ECC_ module, producing an intermediary result we call **$PRE_1$**. 
 
-Applying the addition module **N** together with our zero-level public key **$PK_0\$** we get a first level public key **$PK_1\$** without having to touch **$sk_0\$** at all.
+Applying the addition module **N** together with our zero-level public key **$PK_0$** we get a first level public key **$PK_1$** without having to touch **$sk_0$** at all.
 
-Spending funds received at an address derived from a first-level public key yielded from this method works with **$sk_0\$**, as the first-level public key obtained using **NPKD** is equivalent to the first-level public key produced with the **NSKD** method.
+Spending funds received at an address derived from a first-level public key yielded from this method works with **$sk_0$**, as the first-level public key obtained using **NPKD** is equivalent to the first-level public key produced with the **NSKD** method.
 
 ## Summary - Mnemonic Phrases
 

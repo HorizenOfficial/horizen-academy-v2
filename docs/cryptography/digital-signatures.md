@@ -70,7 +70,7 @@ $$
 n \bullet P + r \bullet P = (n + r) \bullet P
 $$
 
-2. We get the equation below by multiplying with **$text{hash} (m, r \bullet P)\\)** on both sides and factoring out the base point **$P$** on the right side of the equation. This equation holds for _any_ **$m$**, **$r$** and **$n$**.
+2. We get the equation below by multiplying with **$\text{hash} (m, r \bullet P)$** on both sides and factoring out the base point **$P$** on the right side of the equation. This equation holds for _any_ **$m$**, **$r$** and **$n$**.
 
 $$
 \text{hash} (m, r \bullet P) \bullet n \bullet P + r \bullet P = (\text{hash}(m, r \bullet P) \cdot n+r) \bullet P
@@ -82,7 +82,7 @@ $$
 sk \bullet P = PK
 $$
 
-4. We replace the universal variable **$n$** with our private key **$sk$**, and use **$PK$** to simplify the expression **$sk \bullet P\$**. 
+4. We replace the universal variable **$n$** with our private key **$sk$**, and use **$PK$** to simplify the expression **$sk \bullet P$**. 
 
 Let's do this in two steps, first replacing _**n**_:
 
@@ -90,13 +90,13 @@ $$
 \text{hash} (m, r \bullet P) \bullet {\color{red} sk} \bullet P + r \bullet P = (\text{hash}(m, r \bullet P) \cdot {\color{red} sk}+r) \bullet P
 $$
 
-and next simplifying **$sk \bullet P\$** to _**PK**_:
+and next simplifying **$sk \bullet P$** to _**PK**_:
 
 $$
 \text{hash} (m, r \bullet P) \bullet {\color{red} PK} + r \bullet P = (\text{hash}(m, r \bullet P) \cdot sk+r) \bullet P
 $$
 
-5. Now, we will replace **$r \bullet P\$** with **$R$**. This follows the convention that the scalar **$r$** multiplied with the base point **$P$** gives us a point on the curve, the *vector* **$R$**.
+5. Now, we will replace **$r \bullet P$** with **$R$**. This follows the convention that the scalar **$r$** multiplied with the base point **$P$** gives us a point on the curve, the *vector* **$R$**.
 
 $$
 \text{hash} (m, {\color{red} R}) \bullet (PK + {\color{red} R}) = \text{hash}(m, {\color{red} R}) \cdot (sk+r) \bullet P
@@ -134,8 +134,8 @@ _Two conditions must be met in order for this to be the case:_
 _Let's assume you know **sk**._
 
 1. First, you choose random value for **$r$** and a message **$m$** to sign. 
-2. Next, you compute **$R = r \bullet P\$**. 
-3. Lastly, you compute **$s = \text{hash}(m,R) \cdot (sk + r)\$**.
+2. Next, you compute **$R = r \bullet P$**. 
+3. Lastly, you compute **$s = \text{hash}(m,R) \cdot (sk + r)$**.
 
 _If you plug these values into the equation.._
 
@@ -192,10 +192,10 @@ Without knowledge of **$r$** you cannot compute **$sk$** from **$s$**.
 #### Quick Recap - Creating a Digital Signature
 
 - **First**, we used the distributive property to build an equality.
-- We multiplied both sides with with **$text{hash} (m, r \bullet P)\$**.
-- We replaced the variable **$n$** with our private key **$sk$** and the expression **$sk \bullet P\$** which represents the product of our private key **$sk$** with the base point **$P$** with the public key **$PK$**.
-- We defined **$R$** to be the product **$r \bullet P\$**.
-- We defined **$s$** as the term **$text{hash}(m,R) \cdot (sk + r)\$**.
+- We multiplied both sides with with **$\text{hash} (m, r \bullet P)$**.
+- We replaced the variable **$n$** with our private key **$sk$** and the expression **$sk \bullet P$** which represents the product of our private key **$sk$** with the base point **$P$** with the public key **$PK$**.
+- We defined **$R$** to be the product **$r \bullet P$**.
+- We defined **$s$** as the term **$\text{hash}(m,R) \cdot (sk + r)$**.
 - We showed that if you can provide an **$m$**, **$R$**, and **$s$** that satisfy the resulting equation, it proves knowledge of the private key **$sk$** corresponding to the public key **$PK$**.
 - We also proved that without knowledge of **$sk$**, you cannot provide working values for **$m$**, **$R$**, and **$s$**.
 - **Lastly**, we showed that you can reveal **$m$**, **$R$**, and **$s$** without revealing any information about the private key **$sk$**.
