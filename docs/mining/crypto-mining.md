@@ -63,7 +63,7 @@ The _difficulty_ is a different way to express the current target. The difficult
 
 $$Difficulty = \frac{max. target}{target}$$
 
-On the [Bitcoin](cryptocurrency/bitcoin-glossary.md) network, which has seen the biggest growth in hash power since its inception the current difficulty (at the time of writing) is about _1.3 \cdot 10^{13}\_ meaning it is _13 trillion_ times harder to find a block _today_, than it was when the [protocol](architecture/blockchain-protocols.md) was _launched_.
+On the [Bitcoin](cryptocurrency/bitcoin-glossary.md) network, which has seen the biggest growth in hash power since its inception the current difficulty (at the time of writing) is about $1.3 \cdot 10^{13}$ meaning it is _13 trillion_ times harder to find a block _today_, than it was when the [protocol](architecture/blockchain-protocols.md) was _launched_.
 
 ## What is the Role of a Miner?
 
@@ -115,7 +115,7 @@ Most of the data in the block is fixed, but there is a special data field in eac
 
 Its sole purpose is to be a _variable_ (a number used _once_), that the miner can put different values in, to change the output of the hash function - the _block hash._
 
-What follows is a trial-and-error approach of getting the block hash below the target. The block hash can be interpreted as a regular number. The lowest number a _256-bit_ integer can represent is _0_, the highest number is 1.1579 $cdot 10^{77}$
+What follows is a trial-and-error approach of getting the block hash below the target. The block hash can be interpreted as a regular number. The lowest number a _256-bit_ integer can represent is _0_, the highest number is $1.1579 \cdot 10^{77}$
 
 **115792089237316195423570985008687907853269984665640564039457584007913129639936**
 
