@@ -180,7 +180,7 @@ $$
 (2^0 \cdot P), (2^1 \cdot P), (2^2 \cdot P), (2^3 \cdot P), (2^4 \cdot P), (2^5 \cdot P), ... , (2^{255} \cdot P)
 $$
 
-...with 255 computational steps and computed our desired **\\(x \cdot P\\)** with a maximum of **255** additional steps, totalling **510** point addition operations at maximum.
+...with 255 computational steps and computed our desired **$(x \cdot P)$** with a maximum of **255** additional steps, totalling **510** point addition operations at maximum.
 
 Because of the discrete log problem the computation we just performed is not reversible, there is no known algorithm for it.
 

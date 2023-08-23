@@ -130,11 +130,7 @@ $$
 
 Writing a function that calculates the factorial of a given number is elegantly achieved using recursion. 
 
-The idea is that the factorial of the number 5 is equal to five times the factorial of the number four:
-
-$$
-5! = 5 \cdot 4!\
-$$
+The idea is that the factorial of the number 5 is equal to five times the factorial of the number four: $5! = 5 \cdot 4!$
 
 The solution to the problem _5!_ then depends on a smaller instance of the same problem: **4!**.
 
@@ -206,7 +202,7 @@ $$
 
 This construction is of great value for verifiable sidechains. Not only can states be computed recursively, but so can proofs for each state and state transition. What is needed for the Zendoo protocol is a proof of the statement:
 
-There was a series of state transitions $t_1, ..., t_n)$, and by applying these state transitions to the initial state $s_1$ one after another the state $s_{n+1}$ is reached.
+There was a series of state transitions $(t_1, ..., t_n)$, and by applying these state transitions to the initial state $s_1$ one after another the state $s_{n+1}$ is reached.
 
 We now understand how to compute states recursively. _But why do we want to compute a proof for each of those transitions?_ Remember that the mainchain does not monitor the different sidechains and verify the state transitions.
 

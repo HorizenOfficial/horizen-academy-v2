@@ -107,7 +107,7 @@ The _HMAC-SHA256_ function is used at several steps in the key derivation proces
 
 - We _generated_ a random bit sequence and used it as an input to a deterministic random bit generator that produced a **seed**.
 - From this _seed,_ we _generated_ a **mnemonic phrase**, which in turn was converted into a _512-bit binary seed_.
-- We _split_ our seed into the zero-level private key **$sk_0$** and the zero-level chain code $cc_0\$. A zero-level public key **$PK_0$** is generated from **$sk_0$** using [elliptic curve cryptography](cryptography/elliptic-curve-cryptography-ecc.md)
+- We _split_ our seed into the zero-level private key **$sk_0$** and the zero-level chain code $cc_0$. A zero-level public key $PK_0$ is generated from **$sk_0$** using [elliptic curve cryptography](cryptography/elliptic-curve-cryptography-ecc.md)
 
 ## Hardened vs. Non-Hardened Secret Key Derivation
 

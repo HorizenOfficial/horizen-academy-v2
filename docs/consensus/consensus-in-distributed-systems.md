@@ -221,7 +221,7 @@ It is referred to as the **Byzantine Generals Problem** in a paper by *Lamport, 
 
 A major contribution of their work was precisely defining the number of Byzantine Nodes a system can handle while still being able to reach consensus.
 
-The result is less than a third of all nodes *n*: $frac{(n-1)}{3}\$
+The result is less than a third of all nodes *n*: $frac{(n-1)}{3}$
 
 ![maximum byzantine actors](/img/consensus-in-distributed-systems/maximum-byzantine-actors.jpg)
 
