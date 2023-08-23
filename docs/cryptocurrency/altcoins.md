@@ -71,6 +71,9 @@ _This is a necessary development_. You cannot know for sure if an idea works if 
  - Mining-based
  - Staking-based
 
+### The ERC-20 token example
+
+ERC-20 tokens are a type of token standard on the Ethereum network. They are issued within a smart contract that defines the total supply and the conditions for token transfers, among other things. This standard allows for easy issuance and integration with different wallets and exchanges. ERC-20 tokens are fungible, meaning each unit carries the same value and can be exchanged one for one, similar to traditional currencies like dollars or euros. They exist on top of a blockchain as an entry on the ledger, allowing anyone to attest to the rules around the tokens supply, ownership, and functionality as it is written in its smart contract.
 
 ## How to Research Altcoins
 
