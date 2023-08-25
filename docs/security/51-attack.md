@@ -29,7 +29,7 @@ For [proof of work](consensus/proof-of-work-pow.md) chains, the _biggest_ factor
 
 So, _could [Bitcoin](cryptocurrency/bitcoin-glossary.md) suffer a 51% attack?_
 
-This is not only incredibly expensive, current estimates put the cost of a 51% on the Bitcoin blockchain at $13.5 billion, this amount alone would not guarantee that a bad actor could successfully control the network.
+This would be an incredibly expensive endeavor. Estimates put the cost of achieving the hashrate necessary to launch a 51% attack on the Bitcoin blockchain at [$7.9 billion](https://www.investopedia.com/terms/1/51-attack.asp). not including the costs to host the equipment, hire maintenance staff, pay for electricity, and cooling. This amount alone would not guarantee that a bad actor could successfully control the network.
 
 _For one thing_, accumulating enough [mining rigs](mining/crypto-mining.md) to attempt a 51% attack on the Bitcoin network would take a considerable amount of time and attract enough attention that the attack would likely be perceived well in advance.
 

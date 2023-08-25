@@ -72,6 +72,8 @@ The following are strategies and tools you can use to protect your digital ident
 
 ## Strong Passwords
 
+![Strong password](/img/digital-privacy/ACADEMY-graphics_passwords.jpg)
+
 **Reusing the same password on many websites and applications is the number one security bad practice.**
 
  Even large and strong platforms are being hacked and their users’ credentials are sold over black markets. There have been cases when the stolen data was available publicly too. Imagine if your credentials were in one of these databases - every account you used the same password for, is essentially hacked too.
