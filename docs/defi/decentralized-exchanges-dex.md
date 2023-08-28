@@ -93,7 +93,7 @@ In the DeFi space, lending your tokens to liquidity pools and earning fees from 
 
 ![yield farming](/img/decentralized-exchanges-dex/yield-farming.jpg)
 
-Fees are typically [0.3% per trade]([https://docs.uniswap.org/protocol/V2/concepts/advanced-topics/fees](https://docs.uniswap.org/concepts/protocol/fees) - they do not include gas fees, which are paid to Ethereum miners. 
+Fees are typically [0.3% per trade](https://docs.uniswap.org/contracts/v2/concepts/advanced-topics/fees#:~:text=There%20is%20a%200.3%25%20fee,immediately%20deposited%20into%20liquidity%20reserves) - they do not include gas fees, which are paid to Ethereum miners. 
 
 The price of tokens in the liquidity pool are determined by a mathematical formula that adjusts the price of each asset based on the ratio of each token within the pool, which is influenced by the supply and demand of each token. 
 

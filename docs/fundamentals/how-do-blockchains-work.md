@@ -94,6 +94,10 @@ _Nodes_ are operated by ‘miners’ who are individuals or entities that have a
 
 ![distributed ledger technology](/img/how-do-blockchains-work/distributed-ledger-technology.jpeg)
 
+### The Nakamoto Consensus
+
+One of the key consensus protocols used in Bitcoin is the Nakamoto consensus, named after Bitcoin's pseudonymous creator, Satoshi Nakamoto. This protocol dictates that all nodes in the network agree on the state of the distributed ledger, ensuring all transactions are validated and each copy of the blockchain is identical.  Furthermore, Nakamoto consensus incorporates the longest chain rule, also known as the proof-of-work chain rule. This rule asserts that if there are multiple versions of the blockchain within the network, the correct one is always the longest chain (the chain with the most proof-of-work effort invested). The longest chain rule helps prevent malicious activity and double-spending by ensuring all nodes are working on the same version of the blockchain, thus maintaining security and integrity in the Bitcoin network.
+
 ## The Architecture of a Blockchain
 
 Now, let’s break down the key components of a blockchain and how each component integrates with the other.

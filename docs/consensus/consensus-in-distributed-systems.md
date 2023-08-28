@@ -177,7 +177,7 @@ Alright, now we know what consensus means and what kind of failures a robust con
 
 ## The Early Days of Distributed System Design
 
-While one might think all this is cutting edge stuff from the 21st century, people have been studying distributed consensus for decades! 
+While one might think all this is cutting-edge stuff from the 21st century, people have been studying distributed consensus for decades! 
 
 A milestone in the exploration of distributed computing was a paper from 1985 written by **Fischer, Lynch and Paterson** with the title “[*Impossibility of Distributed Consensus with One Faulty Process*](https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf)”.
 
@@ -221,15 +221,15 @@ It is referred to as the **Byzantine Generals Problem** in a paper by *Lamport, 
 
 A major contribution of their work was precisely defining the number of Byzantine Nodes a system can handle while still being able to reach consensus.
 
-The result is less than a third of all nodes *n*: \\(\frac{(n-1)}{3}\\)
+The result is less than a third of all nodes *n*: $frac{(n-1)}{3}$
 
 ![maximum byzantine actors](/img/consensus-in-distributed-systems/maximum-byzantine-actors.jpg)
 
-**The argumentation for getting this result is straight-forward:**
+**The argumentation for getting this result is straightforward:**
 
 1. If ***x*** is the number of *Byzantine nodes*, the system must work in case they are unresponsive, so with ***(n-x)*** nodes.
 2. Now it is possible that the unresponsive nodes suffered from crash-faults and all ***x*** Byzantine nodes are still live. In this case ***(2x)*** nodes are either not responsive or Byzantine.
-3. Because a majority of honest nodes is required to achieve consensus, we need a total of ***n = 3x + 1*** nodes, which in turn means a maximum of \\(x = \frac{(n-1)}{3}\\) nodes can be Byzantine for the system to keep working.
+3. Because a majority of honest nodes is required to achieve consensus, we need a total of ***n = 3x + 1*** nodes, which in turn means a maximum of $x = \frac{(n-1)}{3}$ nodes can be Byzantine for the system to keep working.
 
 What we have learned from looking at the Byzantine Generals Problem is that the threshold for the maximum share of Byzantine participants on the network is rather low, clocking in at one third of the total node count.
 
@@ -257,7 +257,7 @@ In 1999, yet another consensus algorithm was published - [*practical Byzantine F
 
 ![pbft](/img/consensus-in-distributed-systems/pbft.jpg)
 
-pBFT can guarantee safety under all circumstances (assuming a maximum of \\(x = \frac{(n-1)}{3}\\) Byzantine nodes), but it relies on the synchronous model to achieve liveness. 
+pBFT can guarantee safety under all circumstances (assuming a maximum of $x = \frac{(n-1)}{3}$ Byzantine nodes), but it relies on the synchronous model to achieve liveness. 
 
 Put differently, in an unreliable communications network the system might halt. 
 
@@ -273,7 +273,7 @@ The important leap was moving away from a deterministic definition of consensus.
 
 Using determinism means, that each new state is decided on by all nodes in a binary fashion: *correct or false.* 
 
-The consensus mechanism therefore had nodes agreed on some fixed new state.
+The consensus mechanism, therefore, had nodes agree on some fixed new state.
 
 In the non-deterministic model, the consensus mechanism lets all nodes agree on the probability of a new state being the global state. Remember that a new state in a blockchain is reached when a new block is added to the chain. 
 
@@ -293,7 +293,7 @@ But wait, *how does the Nakamoto consensus actually achieve consensus?*
 
 In the mechanisms we outlined above you can break down the process of achieving consensus to a _proposer_ suggesting a state transition and a group of _acceptors_ coordinating to either accept or decline the proposed state. 
 
-This coordination displays characteristics of a ballot. A shortened *Demiro Massessi* quote reads:
+This coordination displays the characteristics of a ballot. A shortened *Demiro Massessi* quote reads:
 
 > *“In one way or another, […] consensus algorithms boil down to some kind of vote […].” - Demiro Massessi*
 
@@ -307,7 +307,7 @@ The chance of finding such a *nonce* is proportional to the relative hash power 
 
 The limited resource in the case of the traditional Nakamoto Consensus using Proof-of-Work is computing power.
 
-The genius part was adding an incentive system on top of the consensus mechanism. Participants spend real world resources (computations = electricity) on achieving consensus within the network. 
+The genius part was adding an incentive system on top of the consensus mechanism. Participants spend real-world resources (computations = electricity) on achieving consensus within the network. 
 
 By rewarding the miner of each block with the block subsidy, there is an incentive for rational actors to perform this task. Once the native currency of the network has a value greater than zero, the network can pay for its own maintenance without anybody being in charge.
 
@@ -320,7 +320,7 @@ The consensus mechanism is composed of two parts.
 
 The longest chain rule is applied in case two miners find valid blocks at roughly the same time - a tie because both blocks are valid according to the protocol. 
 
-The other miners start building on the block they received first, but keep the second candidate in memory. Different miners can have different views on which block came first, depending on their geographical location and their connectivity in the network graph. 
+The other miners start building on the block they received first but keep the second candidate in memory. Different miners can have different views on which block came first, depending on their geographical location and their connectivity in the network graph. 
 
 The tie is broken once the next block is found.
 
@@ -336,7 +336,7 @@ This share is defined via the amount of computational power rather than nodes on
 
 PoW and its relatives can be seen as _Sybil-resistance mechanisms_. In a [Sybil Attack](security/blockchain-attacks.md), a malicious party creates a large number of centrally controlled identities and tries to achieve certain, mostly malicious, goals by exerting influence through these fake identities. 
 
-Online voting is the most intuitive example of a situation, where many fake identities can be used to game the results. Sybil-resistance mechanisms prevent this by tying an entity's voting power to a scarce resource that is harder to obtain than fake user-accounts or IP-addresses. 
+Online voting is the most intuitive example of a situation, where many fake identities can be used to game the results. Sybil-resistance mechanisms prevent this by tying an entity's voting power to a scarce resource that is harder to obtain than fake user accounts or IP-addresses. 
 
 In the case of PoW, this scarce resource is computing power. The longest chain rule is the “*actual consensus mechanism*” that has nodes agree on a single version of truth in case several candidate versions exist.
 

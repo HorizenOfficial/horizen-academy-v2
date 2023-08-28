@@ -63,6 +63,8 @@ When _Back et al._ introduced the sidechain concept in 2014, they provided the f
 
 In other words, a sidechain is a blockchain that can communicate and interoperate with one or more other chains. When you hear the term sidechain today, people are mostly talking about *pegged sidechains*, which allow you to transfer assets back and forth between chains.
 
+As an example of this, Horizen recently launched EON, an Ethereum Virtual Machine (EVM) compatible sidechain and smart contracting platform, designed to drive the blockchain industry forward. With the launch of EON, Horizen now offers a market-leading solution: a permissionless, interoperable, customizable sidechain network that seamlessly integrates zero-knowledge proofs to enhance scalability and privacy in on-chain transactions.
+
 ### Benefits of Sidechains
 
 Most blockchains facilitating cryptocurrencies use the proof-of-work consensus algorithm and have incorporated the core functionalities of the Bitcoin protocol. Therefore, they inherited a lot of the constraints from the code created by [_Satoshi Nakamoto_](fundamentals/satoshi-nakamoto.md).
