@@ -197,7 +197,7 @@ The base case here is the first state transition resulting in state $s_2$. Once 
 **A general mathematical expression for this is**
 
 $$
-s_{n+1} = update(t_{n}, s_{n}) = update(t_{n}, update (t_{n-1}, s_{n-1})
+s_{n+1} = update(t_{n}, s_{n}) = update(t_{n}, update (t_{n-1}, s_{n-1}))
 $$
 
 This construction is of great value for verifiable sidechains. Not only can states be computed recursively, but so can proofs for each state and state transition. What is needed for the Zendoo protocol is a proof of the statement:
