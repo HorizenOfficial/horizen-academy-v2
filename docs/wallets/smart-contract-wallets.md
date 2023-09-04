@@ -4,7 +4,7 @@ sidebar_label: Smart Contract Wallets
 title: Smart Contract Wallets
 slug: /smart-contract-wallets/
 description: In this article, you will learn what smart contract wallets are and how they function.
-image: https://www.horizen.io/academy/img/wallets/Horizen_Academy-meta-image-smart-contract-wallet.jpg
+image: https://www.horizen.io/academy/img/smart-contract-wallets/Horizen_Academy-meta-image-smart-contract-wallet.jpg
 last_update:
   date: 7/11/2023
   author: Horizen Contributor
