@@ -4,7 +4,7 @@ sidebar_label: Protocols
 title: What is a Protocol in Crypto?
 slug: /blockchain-protocols/
 description: We compare blockchains as protocols to transfer money with the internet as a protocol to transfer information at an advanced level.
-image: https://www.horizen.io/academy/static/img/blockchain-protocols/blockchain-protocols-meta.jpeg
+image: https://www.horizen.io/academy/img/blockchain-protocols/blockchain-protocols-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor
