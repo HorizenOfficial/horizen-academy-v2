@@ -4,7 +4,7 @@ sidebar_label: Proof of Work POW
 title: What is Proof of Work? - POW
 slug: /proof-of-work-pow/
 description: Proof of Work makes it infeasible to change records on the blockchain because an attacker would have to redo all the work that went into building the blocks.
-image: /img/proof-of-work-pow/proof-of-work-pow-meta.jpeg
+image: https://www.horizen.io/academy/static/img/proof-of-work-pow/proof-of-work-pow-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

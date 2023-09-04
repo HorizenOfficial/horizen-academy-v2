@@ -4,7 +4,7 @@ sidebar_label: Ethereum
 title: What is Ethereum? - An Ethereum Glossary
 slug: /ethereum-glossary/
 description: Ethereum is a blockchain network that enables developers to launch their own tokens and build decentralized applications (DApps) using smart contracts.
-image: /img/ethereum-glossary/ethereum-glossary-meta.jpeg
+image: https://www.horizen.io/academy/static/img/ethereum-glossary/ethereum-glossary-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

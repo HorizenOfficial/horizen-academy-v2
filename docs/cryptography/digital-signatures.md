@@ -4,7 +4,7 @@ sidebar_label: Digital Signatures
 title: What is a Digital Signature?
 slug: /digital-signatures/
 description: Digital signatures allow you to prove your knowledge of a private key corresponding to a particular address without revealing any information about it.
-image: /img/digital-signatures/digital-signatures-meta.jpeg
+image: https://www.horizen.io/academy/static/img/digital-signatures/digital-signatures-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

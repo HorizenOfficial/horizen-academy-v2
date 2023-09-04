@@ -4,7 +4,7 @@ sidebar_label: MultiSig
 title: What is MultiSig? - Multi-Signature
 slug: /multisig/
 description: In order to spend a UTXO, a valid cryptographic signature is required. Multi-signature transactions, or MultiSig, rely on more than one signature.
-image: /img/multisig/multisig-meta.jpg
+image: https://www.horizen.io/academy/static/img/multisig/multisig-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

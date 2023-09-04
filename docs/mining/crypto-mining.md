@@ -4,7 +4,7 @@ sidebar_label: Mining
 title: What is Crypto Mining?
 slug: /mining-in-blockchain/
 description: In this article, you learn about how cryptocurrency miners secure the blockchain with their computational power at an advanced level.
-image: /img/crypto-mining/crypto-mining-meta.jpeg
+image: https://www.horizen.io/academy/static/img/crypto-mining/crypto-mining-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

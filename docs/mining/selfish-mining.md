@@ -4,7 +4,7 @@ sidebar_label: Selfish Mining
 title: What is Selfish Mining?
 slug: /selfish-mining/
 description: The general idea of selfish mining is to selectively publish blocks to increase revenue in the long term.
-image: /img/selfish-mining/selfish-mining-meta.jpeg
+image: https://www.horizen.io/academy/static/img/selfish-mining/selfish-mining-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

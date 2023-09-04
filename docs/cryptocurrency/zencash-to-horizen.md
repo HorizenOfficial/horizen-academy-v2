@@ -4,7 +4,7 @@ sidebar_label: ZenCash to Horizen
 title: From ZenCash to Horizen
 slug: /zencash-to-horizen/
 description: This article describes our journey from ZenCash to Horizen. The initial Horizen team was not selected, it emerged from committed, passionate volunteers.
-image: /img/zencash-to-horizen/zencash-to-horizen-meta.jpeg
+image: https://www.horizen.io/academy/static/img/zencash-to-horizen/zencash-to-horizen-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

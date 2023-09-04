@@ -4,7 +4,7 @@ sidebar_label: Blockchain Data Structure
 title: Blockchain as a Data Structure
 slug: /blockchain-as-a-data-structure/
 description: This article explains blockchain at an advanced level from a computer scientist's perspective looking at it as a data structure.
-image: /img/blockchain-data-structure/blockchain-data-structure-meta.jpeg
+image: https://www.horizen.io/academy/static/img/blockchain-data-structure/blockchain-data-structure-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

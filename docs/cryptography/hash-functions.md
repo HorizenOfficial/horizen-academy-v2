@@ -4,7 +4,7 @@ sidebar_label: Hash Functions
 title: What are Hash Functions?
 slug: /hash-functions/
 description: In this article, you learn why hash functions are an important part in every blockchain because they are used to verify the integrity of data.
-image: /img/hash-functions/hash-functions-meta.jpeg
+image: https://www.horizen.io/academy/static/img/hash-functions/hash-functions-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

@@ -4,7 +4,7 @@ sidebar_label: Decentralized Exchanges - DEX
 title: What is a DEX? - Decentralized Exchanges
 slug: /decentralized-exchanges-dex/
 description: DEXs, or Decentralized Exchange, are an open & permissionless alternative to centralized exchanges. Traders can buy and sell tokens P2P using smart contracts.
-image: /img/decentralized-exchanges-dex/decentralized-exchanges-dex-meta.jpg
+image: https://www.horizen.io/academy/static/img/decentralized-exchanges-dex/decentralized-exchanges-dex-meta.jpg
 last_update:
   date: 3/30/2023
   author: Horizen Contributor
