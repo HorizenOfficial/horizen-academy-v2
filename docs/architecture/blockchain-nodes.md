@@ -4,7 +4,7 @@ sidebar_label: Nodes
 title: What is a Node in Blockchain?
 slug: /blockchain-nodes/
 description: Nodes are operated by miners or validators, individuals or entities that earn block rewards for helping validate transactions.
-image: https://www.horizen.io/academy/static/img/blockchain-nodes/crypto-nodes-meta.jpeg
+image: /img/blockchain-nodes/crypto-nodes-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor
