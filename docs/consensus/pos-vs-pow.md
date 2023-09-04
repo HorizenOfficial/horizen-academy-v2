@@ -4,7 +4,7 @@ sidebar_label: POS vs POW
 title: Proof of Stake vs Proof of Work
 slug: /pos-vs-pow/
 description: In this article, we define and compare two of the most popular consensus mechanisms in blockchain - Proof of Work and Proof of Stake.
-image: https://www.horizen.io/academy/static/img/pos-vs-pow/proof-of-stake-vs-proof-of-work-meta.jpeg
+image: https://www.horizen.io/academy/img/pos-vs-pow/proof-of-stake-vs-proof-of-work-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

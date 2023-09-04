@@ -4,7 +4,7 @@ sidebar_label: Interoperability
 title: What is Blockchain Interoperability?
 slug: /blockchain-interoperability/
 description: Interoperability is the process of enabling different computer systems to exchange information with each other using a common framework.
-image: https://www.horizen.io/academy/static/img/blockchain-interoperability/blockchain-interoperability-meta.jpg
+image: https://www.horizen.io/academy/img/blockchain-interoperability/blockchain-interoperability-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

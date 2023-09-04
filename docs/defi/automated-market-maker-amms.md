@@ -4,7 +4,7 @@ sidebar_label: Automated Market Makers - AMM
 title: What is an AMM? Automated Market Maker
 slug: /automated-market-maker-amm/
 description: In DeFi, the traditional market maker is replaced by an Automated Market Maker, which is a set of rules written into code and executed via smart contracts.
-image: https://www.horizen.io/academy/static/img/automated-market-maker-amms/automated-market-maker-amm-meta.jpeg
+image: https://www.horizen.io/academy/img/automated-market-maker-amms/automated-market-maker-amm-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

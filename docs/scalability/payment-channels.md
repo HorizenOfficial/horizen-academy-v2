@@ -4,7 +4,7 @@ sidebar_label: Payment Channels
 title: What are Payment Channels?
 slug: /payment-channels/
 description: We cover a highly promising approach to make blockchains security promise accessible to a more substantial user-base - payment and state channels
-image: https://www.horizen.io/academy/static/img/payment-channels/payment-channels-meta.jpeg
+image: https://www.horizen.io/academy/img/payment-channels/payment-channels-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

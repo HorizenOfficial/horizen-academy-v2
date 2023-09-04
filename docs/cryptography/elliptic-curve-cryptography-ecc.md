@@ -4,7 +4,7 @@ sidebar_label: Elliptic Curve Cryptography
 title: What is Elliptic Curve Cryptography? - ECC
 slug: /elliptic-curve-cryptography-ecc/
 description: Elliptic curve cryptography is based on discrete mathematics. In discrete math, elements can only take on certain discrete values.
-image: https://www.horizen.io/academy/static/img/elliptic-curve-cryptography-ecc/elliptic-curve-cryptography-meta.jpeg
+image: https://www.horizen.io/academy/img/elliptic-curve-cryptography-ecc/elliptic-curve-cryptography-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

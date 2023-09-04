@@ -4,7 +4,7 @@ sidebar_label: Ethereum Virtual Machine - EVM
 title: What is EVM? - Ethereum Virtual Machine
 slug: /ethereum-virtual-machine-evm/
 description: In this article, we’ll cover what the Ethereum Virtual Machine or EVM is, and why it is a critical piece to the growth of the blockchain ecosystem.
-image: https://www.horizen.io/academy/static/img/ethereum-virtual-machine-evm/ethereum-virtual-machine-meta.jpg
+image: https://www.horizen.io/academy/img/ethereum-virtual-machine-evm/ethereum-virtual-machine-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

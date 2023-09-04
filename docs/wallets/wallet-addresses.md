@@ -4,7 +4,7 @@ sidebar_label: Wallet Addresses
 title: What is a Wallet Address?
 slug: /wallet-addresses/
 description: A public key is derived from the newly generated private key through elliptic curve multiplication, while addresses are derived from public keys.
-image: https://www.horizen.io/academy/static/img/wallet-addresses/wallet-addresses-and-keys-meta.jpeg
+image: https://www.horizen.io/academy/img/wallet-addresses/wallet-addresses-and-keys-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

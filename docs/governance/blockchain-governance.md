@@ -4,7 +4,7 @@ sidebar_label: Governance
 title: Governance on the Blockchain
 slug: /blockchain-governance/
 description: There is scrutiny of the process for generating new blocks, but less focus on the process for changing a protocol's code. Governance is the keyword here.
-image: https://www.horizen.io/academy/static/img/blockchain-governance/blockchain-governance-meta.jpeg
+image: https://www.horizen.io/academy/img/blockchain-governance/blockchain-governance-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

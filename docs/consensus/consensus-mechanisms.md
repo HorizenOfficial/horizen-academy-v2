@@ -4,7 +4,7 @@ sidebar_label: Consensus Mechanisms
 title: What are Consensus Mechanisms?
 slug: /consensus-mechanisms/
 description: A Consensus Mechanism is the set of protocols used by nodes on a blockchain or DLS to come to an agreement on the current state of the network.
-image: https://www.horizen.io/academy/static/img/consensus-mechanisms/consensus-mechanisms-meta.jpeg
+image: https://www.horizen.io/academy/img/consensus-mechanisms/consensus-mechanisms-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

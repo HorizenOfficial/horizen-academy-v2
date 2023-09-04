@@ -4,7 +4,7 @@ sidebar_label: Play-to-Earn Games
 title: What are Play-to-Earn Games? - Blockchain Games
 slug: /play-to-earn-games/
 description: Play-to-Earn is a type of game where players can earn tokens or NFTs when they win or accumulate tokens in the process of gameplay.
-image: https://www.horizen.io/academy/static/img/play-to-earn-games/play-to-earn-games-meta.jpeg
+image: https://www.horizen.io/academy/img/play-to-earn-games/play-to-earn-games-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

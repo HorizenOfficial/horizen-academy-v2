@@ -4,7 +4,7 @@ sidebar_label: Cypherpunks
 title: The Cypherpunk Movement
 slug: /cypherpunks/
 description: In this article, we discuss a group of computer scientists known as The Cypherpunks. The Cypherpunk movement started in the 1970s.
-image: https://www.horizen.io/academy/static/img/cypherpunk-movement/cypherpunk-movement-meta.jpeg
+image: https://www.horizen.io/academy/img/cypherpunk-movement/cypherpunk-movement-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

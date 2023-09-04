@@ -4,7 +4,7 @@ sidebar_label: Smart Contracts
 title: What are Smart Contracts?
 slug: /smart-contracts/
 description: Smart contracts can not only be used to govern the transfer of digital assets such as cryptocurrencies, they could govern many other types of value transfer.
-image: https://www.horizen.io/academy/static/img/smart-contracts/smart-contracts-meta.jpeg
+image: https://www.horizen.io/academy/img/smart-contracts/smart-contracts-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

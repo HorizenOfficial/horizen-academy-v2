@@ -4,7 +4,7 @@ sidebar_label: Layer 2
 title: What is a Layer 2 Blockchain?
 slug: /layer-2/
 description: A Layer 2 is a scaling solution that sits on top of a layer 1 blockchain like Bitcoin. L2s increase the speed and reduce the cost of transacting on a blockchain.
-image: https://www.horizen.io/academy/static/img/layer-2/layer-2-meta.jpg
+image: https://www.horizen.io/academy/img/layer-2/layer-2-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

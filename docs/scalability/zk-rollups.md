@@ -4,7 +4,7 @@ sidebar_label: zk-Rollups
 title: What are zk-Rollups in Blockchain?
 slug: /zk-rollups/
 description: ZK-Rollups enable layer 2 transactions to be transmitted and verified by the Ethereum mainnet without nodes knowing the details of each transaction. 
-image: https://www.horizen.io/academy/static/img/zk-rollups/zk-rollups-meta.jpeg
+image: https://www.horizen.io/academy/img/zk-rollups/zk-rollups-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

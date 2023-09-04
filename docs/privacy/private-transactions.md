@@ -4,7 +4,7 @@ sidebar_label: Private Transactions
 title: Private Transactions in Crypto
 slug: /private-transactions/
 description: In this article, we introduce you to the different technologies that enable private transactions on a public blockchain.
-image: https://www.horizen.io/academy/static/img/private-transactions/private-transactions-meta.jpeg
+image: https://www.horizen.io/academy/img/private-transactions/private-transactions-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

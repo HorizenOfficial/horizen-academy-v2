@@ -4,7 +4,7 @@ sidebar_label: Blockchain Components
 title: The Components of Blockchain
 slug: /components-of-blockchain/
 description: In this article, we give you an advanced overview of the different elements that make a blockchain work.
-image: https://www.horizen.io/academy/static/img/components-of-a-blockchain/components-of-a-blockchain-meta.jpeg
+image: https://www.horizen.io/academy/img/components-of-a-blockchain/components-of-a-blockchain-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor
