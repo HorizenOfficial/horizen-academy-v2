@@ -4,7 +4,7 @@ sidebar_label: Oracles
 title: What are Blockchain Oracles?
 slug: /blockchain-oracles/
 description: An Oracle is a decentralized protocol that transmits data from external sources into smart contracts to help them execute according to predefined conditions.
-image: https://www.horizen.io/academy/img/blockchain-oracles/blockchain-oracles-meta.jpg
+image: https://www.horizen.io/academy/img/blockchain-oracles/blockchain-oracles-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor
