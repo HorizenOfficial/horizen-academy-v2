@@ -3,7 +3,7 @@
 sidebar_label: Software Developer Kits
 title: SDK Software Developer Kits
 slug: /software-developer-kits/
-description: In this article, you learn about SDKs, Software Developer Kits.
+description: In this article, you will learn about SDKs, Software Developer Kits.
 image: /img/software-developer-kits/Horizen_Academy-meta-image-blockchain-SDKs.jpg
 
 last_update:
