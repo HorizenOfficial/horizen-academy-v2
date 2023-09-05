@@ -4,7 +4,7 @@ sidebar_label: Tokens - What are They?
 title: What is a Crypto Token?
 slug: /what-is-a-token/
 description: A Token is a digital unit of account that can be used to represent any kind of physical or digital asset on a blockchain.
-imgage: https://www.horizen.io/academy/img/what-is-a-token/what-is-a-token-meta.jpg
+image: https://www.horizen.io/academy/img/what-is-a-token/what-is-a-token-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor
