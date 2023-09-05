@@ -4,7 +4,7 @@ sidebar_label: Cold Wallets
 title: What are Cold Wallets?
 slug: /cold-wallets/
 description: A cold wallet or hardware wallet is a type of wallet that lives on a hardware device like a USB and does not require a connection to the internet to function.
-image: /img/cold-wallets/cold-wallets-meta.jpg
+image: https://www.horizen.io/academy/img/cold-wallets/cold-wallets-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

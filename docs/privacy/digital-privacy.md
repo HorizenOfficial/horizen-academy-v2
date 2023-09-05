@@ -4,7 +4,7 @@ sidebar_label: Digital Privacy
 title: Protecting Your Digital Privacy
 slug: /digital-privacy/
 description: In this article, we show you how your online privacy is compromised digitally, as well as strategies and tools to protect your privacy.
-image: /img/digital-privacy/digital-privacy-meta.jpeg
+image: https://www.horizen.io/academy/img/digital-privacy/digital-privacy-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

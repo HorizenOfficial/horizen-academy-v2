@@ -4,7 +4,7 @@ sidebar_label: Altcoins
 title: What are Altcoins?
 slug: /altcoins/
 description: The term 'altcoin' stems from a combination of 'alternative' and 'coin' in cryptocurrency. All cryptocurrencies besides Bitcoin are referred to as altcoins.
-image: /img/altcoins/altcoins-meta.jpeg
+image: https://www.horizen.io/academy/img/altcoins/altcoins-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

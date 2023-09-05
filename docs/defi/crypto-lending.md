@@ -4,7 +4,7 @@ sidebar_label: Lending
 title: What is Crypto Lending?
 slug: /crypto-lending/
 description: Crypto lending is simply the process of lending and borrowing digital assets that are recorded on a blockchain between parties of two or more.
-image: /img/crypto-lending/crypto-lending-meta.jpeg
+image: https://www.horizen.io/academy/img/crypto-lending/crypto-lending-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

@@ -4,7 +4,7 @@ sidebar_label: Cross-Chain Transactions
 title: What are Cross Chain Transactions?
 slug: /cross-chain-transactions/
 description: In this article, we take a close look at transactions that move assets between different blockchains, specifically a mainchain and its sidechains
-image: /img/cross-chain-transactions/cross-chain-transactions-meta.jpeg
+image: https://www.horizen.io/academy/img/cross-chain-transactions/cross-chain-transactions-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

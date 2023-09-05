@@ -4,7 +4,7 @@ sidebar_label: Blockchains - How They Work
 title: How Does a Blockchain Work?
 slug: /how-does-blockchain-work/
 description: In this article, we will cover what a blockchain is at a high level followed by a more granular look at blockchain architecture and how a blockchain works.
-image: /img/how-do-blockchains-work/how-do-blockchain-work-meta.jpeg
+image: https://www.horizen.io/academy/img/how-do-blockchains-work/how-do-blockchain-work-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

@@ -4,7 +4,7 @@ sidebar_label: Modular vs Monolithic Blockchains
 title: Modular vs Monolithic Blockchains
 slug: /modular-vs-monolithic-blockchains/
 description: While blockchain modularization seems like the obvious approach to solving the scalability trilemma, it can come with its own share of challenges.
-image: /img/modular-vs-monolithic-blockchains/modular-vs-monolithic-blockchains-meta.jpg
+image: https://www.horizen.io/academy/img/modular-vs-monolithic-blockchains/modular-vs-monolithic-blockchains-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

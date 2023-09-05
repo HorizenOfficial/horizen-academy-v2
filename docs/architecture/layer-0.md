@@ -4,7 +4,7 @@ sidebar_label: Layer 0
 title: What is a Layer 0 Blockchain?
 slug: /layer-0/
 description: Layer 0 networks solve three critical problems for web3 development and adoption - scalability, flexibility and interoperability. Learn more in this article
-image: /img/layer-0/layer-0-meta.jpg
+image: https://www.horizen.io/academy/img/layer-0/layer-0-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

@@ -4,7 +4,7 @@ sidebar_label: Zero-Knowledge Proofs - ZKP
 title: What are Zero-Knowledge Proofs? - ZKPs
 slug: /zero-knowledge-proofs-zkp/
 description: A Zero-Knowledge Proof algorithm must contain the following 3 properties - Completeness, Soundness, and Zero-Knowledge
-image: /img/zero-knowledge-proofs-zkp/zero-knowledge-proofs-zkp-meta.jpg
+image: https://www.horizen.io/academy/img/zero-knowledge-proofs-zkp/zero-knowledge-proofs-zkp-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

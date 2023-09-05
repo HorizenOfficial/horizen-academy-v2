@@ -4,7 +4,7 @@ sidebar_label: Decentralized Social Networks
 title: Decentralized Social Networks
 slug: /decentralized-social-networks/
 description: In this article, you learn about decentralized social networks.
-image: /img/decentralized-social-networks/Horizen_Academy-meta-image-decentralized-soc-networks.jpg
+image: https://www.horizen.io/academy/img/decentralized-social-networks/Horizen_Academy-meta-image-decentralized-soc-networks.jpg
 
 last_update:
   date: 8/29/2023

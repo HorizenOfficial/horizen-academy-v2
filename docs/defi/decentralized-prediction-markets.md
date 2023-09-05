@@ -4,7 +4,7 @@ sidebar_label: Decentralized Prediction Markets
 title: What is a Decentralized Prediction Market?
 slug: /decentralized-prediction-markets/
 description: A prediction market is simply a market where participants can get financially rewarded for correctly predicting the outcome of a future event.
-image: /img/decentralized-prediction-markets/decentralized-prediction-markets-meta.jpg
+image: https://www.horizen.io/academy/img/decentralized-prediction-markets/decentralized-prediction-markets-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

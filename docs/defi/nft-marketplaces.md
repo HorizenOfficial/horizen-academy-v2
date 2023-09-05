@@ -4,7 +4,7 @@ sidebar_label: NFT Marketplaces
 title: What is an NFT Marketplace?
 slug: /nft-marketplaces/
 description: NFT Marketplaces are decentralized platforms that leverage smart contracts to trade ERC-721 and ERC-1155 tokens in an open and permissionless manner. 
-image: /img/nft-marketplaces/nft-marketplaces-meta.jpg
+image: https://www.horizen.io/academy/img/nft-marketplaces/nft-marketplaces-meta.jpg
 last_update:
   date: 3/30/2023
   author: Horizen Contributor

@@ -4,7 +4,7 @@ sidebar_label: Sidechains
 title: What is a Sidechain?
 slug: /sidechains/
 description: Sidechains benefit from the decentralization and security of the underlying main blockchain, and maintain the flexibility to solve highly specific use cases.
-image: /img/sidechains/sidechains-meta.jpeg
+image: https://www.horizen.io/academy/img/sidechains/sidechains-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

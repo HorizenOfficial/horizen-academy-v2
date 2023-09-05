@@ -4,7 +4,7 @@ sidebar_label: Web3
 title: What is Web3? - Web 3.0
 slug: /web3/
 description: Web3 refers to a category of technologies that leverage internet protocols built on top of open source, distributed and decentralized systems.
-image: /img/web3/web3-meta.jpeg
+image: https://www.horizen.io/academy/img/web3/web3-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

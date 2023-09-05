@@ -4,7 +4,7 @@ sidebar_label: Attacks
 title: Attacks on the Blockchain
 slug: /blockchain-attacks/
 description: In this article, you will learn the most common attack scenarios on public blockchains and how their risk can be mitigated.
-image: /img/blockchain-attacks/blockchain-attacks-meta.jpeg
+image: https://www.horizen.io/academy/img/blockchain-attacks/blockchain-attacks-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

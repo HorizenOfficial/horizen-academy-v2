@@ -4,7 +4,7 @@ sidebar_label: Directed Acyclic Graph - DAG
 title: What is a DAG? - Directed Acyclic Graphs
 slug: /directed-acyclic-graph-dag/
 description: The term DAG stands for Directed Acyclic Graph. A DAG is a mathematical concept, technically, a blockchain is the most simple form of a DAG.
-image: /img/directed-acyclic-graph-dag/directed-acyclic-graph-dag-meta.jpeg
+image: https://www.horizen.io/academy/img/directed-acyclic-graph-dag/directed-acyclic-graph-dag-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

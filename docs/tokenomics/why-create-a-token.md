@@ -4,7 +4,7 @@ sidebar_label: Tokens - Why Create Them?
 title: Why Create a Cryptocurrency Token?
 slug: /why-create-a-token/
 description: Just like a website for selling sneakers or an app for delivering food, a token must have a clear and obvious reason for existing.
-image: /img/why-create-a-token/why-create-a-token-meta.jpg
+image: https://www.horizen.io/academy/img/why-create-a-token/why-create-a-token-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

@@ -4,7 +4,7 @@ sidebar_label: Bitcoin
 title: What is Bitcoin? - A Bitcoin Glossary
 slug: /bitcoin-glossary/
 description: Bitcoin is the first form of money to rely solely on a transparent and globally distributed network of nodes abiding by a unified set of protocols
-image: /img/bitcoin-glossary/bitcoin-glossary-meta.jpeg
+image: https://www.horizen.io/academy/img/bitcoin-glossary/bitcoin-glossary-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

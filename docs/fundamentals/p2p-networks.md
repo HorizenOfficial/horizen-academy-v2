@@ -4,7 +4,7 @@ sidebar_label: P2P Networks
 title: What is a P2P Network? - Peer-to-Peer Networks
 slug: /peer-to-peer-networks-p2p/
 description: In this article, you learn about the peer-to-peer network, also known as the physical infrastructure that blockchains run on.
-image: /img/p2p-networks/p2p-networks-meta.jpeg
+image: https://www.horizen.io/academy/img/p2p-networks/p2p-networks-meta.jpeg
 
 last_update:
   date: 2/21/2023

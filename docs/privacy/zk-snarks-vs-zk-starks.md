@@ -4,7 +4,7 @@ sidebar_label: zk-SNARKs vs zk-STARKs
 title: zk-SNARKs vs zk-STARKs
 slug: /zk-snarks-vs-zk-starks/
 description: SNARKs & STARKs are 2 distinct methods for verifying proof of computation for transactions on a blockchain without revealing the data within the computation.
-image: /img/zk-snarks-vs-zk-starks/zk-snarks-vs-zk-starks-meta.jpg
+image: https://www.horizen.io/academy/img/zk-snarks-vs-zk-starks/zk-snarks-vs-zk-starks-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

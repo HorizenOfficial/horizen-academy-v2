@@ -4,7 +4,7 @@ sidebar_label: Atomic Swaps
 title: What are Atomic Swaps?
 slug: /atomic-swaps/
 description: Atomic Swaps are a technology that allows you to trade Peer-to-Peer without a third party. Learn about atomic swaps at an advanced level.
-image: /img/atomic-swaps/atomic-swaps-meta.jpeg
+image: https://www.horizen.io/academy/img/atomic-swaps/atomic-swaps-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

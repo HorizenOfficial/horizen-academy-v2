@@ -4,7 +4,7 @@ sidebar_label: Consensus in Distributed Systems
 title: Consensus in Distributed Systems
 slug: /consensus-in-distributed-systems/
 description: Distributed Systems - A set of processes, distributed across many locations, trying to achieve a common goal through coordination and communication via messages.
-image: /img/consensus-in-distributed-systems/consensus-in-distributed-systems-meta.jpeg
+image: https://www.horizen.io/academy/img/consensus-in-distributed-systems/consensus-in-distributed-systems-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

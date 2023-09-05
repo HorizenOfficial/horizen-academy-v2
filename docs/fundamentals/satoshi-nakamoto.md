@@ -4,7 +4,7 @@ sidebar_label: Satoshi Nakamoto
 title: Who is Satoshi Nakamoto?
 slug: /satoshi-nakamoto/
 description: There have been many attempts to identify the man/woman/group behind the pseudonym Satoshi Nakamoto, the creator of Bitcoin, none of them successful.
-image: /img/satoshi-nakamoto/satoshi-nakamoto-meta.jpeg
+image: https://www.horizen.io/academy/img/satoshi-nakamoto/satoshi-nakamoto-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

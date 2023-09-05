@@ -4,7 +4,7 @@ sidebar_label: Zendoo
 title: Zendoo - Cross-Chain Platform
 slug: /zendoo/
 description: The Zendoo protocol allows a Bitcoin-based blockchain protocol to operate with any domain-specific blockchain or blockchain-like system.
-image: /img/zendoo/zendoo-meta.jpeg
+image: https://www.horizen.io/academy/img/zendoo/zendoo-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

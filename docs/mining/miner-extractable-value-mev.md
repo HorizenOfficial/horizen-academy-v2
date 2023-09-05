@@ -4,7 +4,7 @@ sidebar_label: Miner Extractable Value - MEV
 title: What is MEV? - Miner Extractable Value
 slug: /miner-extractable-value-mev/
 description: MEV is the process of reordering, inserting or censoring transactions within a block in order to extract additional value.
-image: /img/miner-extractable-value-mev/miner-extractable-value-mev-meta.jpeg
+image: https://www.horizen.io/academy/img/miner-extractable-value-mev/miner-extractable-value-mev-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

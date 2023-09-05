@@ -4,7 +4,7 @@ sidebar_label: Wallets
 title: What is a Crypto Wallet?
 slug: /crypto-wallets/
 description: A wallet is an app for generating, managing, and storing cryptographic keys - public and private keys. You can check your balance, receive, and send funds.
-image: /img/crypto-wallets/crypto-wallets-meta.jpg
+image: https://www.horizen.io/academy/img/crypto-wallets/crypto-wallets-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

@@ -4,7 +4,7 @@ sidebar_label: Public-Key Cryptography
 title: What is Public-Key Cryptography? - PKC
 slug: /public-key-cryptography-pkc/
 description: Public-Key Cryptography makes it possible to represent identity on the blockchain. It is the second cornerstone of blockchain technology besides hash functions
-image: /img/public-key-cryptography-pkc/public-key-cryptography-pkc-meta.jpeg
+image: https://www.horizen.io/academy/img/public-key-cryptography-pkc/public-key-cryptography-pkc-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

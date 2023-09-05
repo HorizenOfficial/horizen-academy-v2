@@ -4,7 +4,7 @@ sidebar_label: 51% Attacks
 title: What is a 51% Attack?
 slug: /51-attacks/
 description: 51% attacks are seen as a greater threat for newer blockchain networks that are still small in size and are therefore vulnerable to being taken over.
-image: /img/51-attack/51-percent-attack-meta.jpg
+image: https://www.horizen.io/academy/img/51-attack/51-percent-attack-meta.jpg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor

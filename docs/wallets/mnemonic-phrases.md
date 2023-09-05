@@ -4,7 +4,7 @@ sidebar_label: Mnemonic Phrases
 title: What are Mnemonic Phrases?
 slug: /mnemonic-phrases/
 description: A Mnemonic Phrase is a backup of your private key that is used by most wallets, it is a list of random words given to you when creating a wallet.
-image: /img/mnemonic-phrases/mnemonic-phrases-meta.jpeg
+image: https://www.horizen.io/academy/img/mnemonic-phrases/mnemonic-phrases-meta.jpeg
 last_update:
   date: 2/21/2023
   author: Horizen Contributor
