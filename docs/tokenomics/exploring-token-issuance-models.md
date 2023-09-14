@@ -4,7 +4,7 @@ sidebar_label: Tokens - Exploring Token Issuance Models
 title: Exploring Token Issuance Models
 slug: /exploring-token-issuance-models/
 description: Mastering Tokenization: A Comprehensive Look at Different Token Issuance Models
-image: https://www.horizen.io/academy/img/exploring-token-issuance-models/
+image: https://www.horizen.io/academy/img/exploring-token-issuance-models/Horizen_Academy-meta-image-exploring-token-issuance-models.jpg
 last_update:
   date: 9/10/2023
   author: Horizen Contributor
