@@ -10,6 +10,7 @@ last_update:
   author: Horizen Contributor
 
 ---
+
 # Exploring Token Issuance Models
 
 **On January 3, 2009, the first Bitcoin was issued**. Over 13 years later, nearly **19 million Bitcoin** are in circulation, representing around [90%](https://www.businessinsider.in/investment/news/bitcoin-limited-supply-has-driven-up-its-value-nearly-90-percent-has-be/articleshow/85349471.cms) of the total 21 million Bitcoin that will ever be issued. 
