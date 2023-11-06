@@ -17,7 +17,7 @@ Blockchain technology is seeping its way into many important industries like _lo
 
 However, when it comes to mainstream adoption of this technology, most people are excited about the potential for blockchain games to bring in the most number of users to the crypto space. 
 
-Today, [video games](https://www.statista.com/outlook/dmo/digital-media/video-games/worldwide) are a nearly $150 billion industry enjoyed by over [3,3 billion](https://solitaired.com/infographics/gaming-statistics/) people around the world. Incentive mechanisms built into video games are so strong that the average gamer currently spends as much as [8 hours](https://www.techrepublic.com/article/8-hours-and-27-minutes-thats-how-long-the-average-gamer-plays-each-week/) a week playing. 
+Today, [video games](https://www.statista.com/outlook/dmo/digital-media/video-games/worldwide) are a nearly $150 billion industry enjoyed by over [3.3 billion](https://solitaired.com/infographics/gaming-statistics/) people around the world. Incentive mechanisms built into video games are so strong that the average gamer currently spends as much as [8 hours](https://www.techrepublic.com/article/8-hours-and-27-minutes-thats-how-long-the-average-gamer-plays-each-week/) a week playing. 
 
 The synergy between blockchain technology and gaming can be seen in how both industries leverage incentive mechanisms to create user engagement and form circular economies.
 
