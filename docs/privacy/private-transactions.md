@@ -6,16 +6,16 @@ slug: /private-transactions/
 description: In this article, we introduce you to the different technologies that enable private transactions on a public blockchain.
 image: https://www.horizen.io/academy/img/private-transactions/private-transactions-meta.jpeg
 last_update:
-  date: 2/21/2023
+  date: 1/17/2024
   author: Horizen Contributor
 
 ---
 
 # Private Transactions in Crypto
 
-One of the great value propositions of blockchains is the _transparency_ that such public ledgers offer. There are many cases though where it is desirable to conduct _private transactions_. 
+One of the great value propositions of blockchains is the _transparency_ that such public ledgers offer. In this article, we want to introduce you to _four concepts_ that aim to increase the level of privacy for transactions on public blockchains. 
 
-In this article, we want to introduce you to _four concepts_ that aim to increase the level of privacy for transactions on public blockchains. It is a common misconception that cryptocurrencies are anonymous. 
+It is a common misconception that cryptocurrencies are anonymous. 
 
 Most of them are **pseudonymous**, meaning that real-world identities are represented by addresses. [Addresses](wallets/wallet-addresses.md) and identities can be connected through ongoing data analysis.
 
@@ -112,7 +112,7 @@ This allows the _sender_, _receiver_, and the _amount_ to remain private.
 
 Another use-case that is perfect for the application of zk-Proofs is identity verification. 
 
-For example, you could prove to an entity that you are of a certain age without revealing any personal data like your DOB. Horizen uses _zk-SNARKs_ for it's _shielded_ transactions. 
+For example, you could prove to an entity that you are of a certain age without revealing any personal data like your DOB. Horizen used to use _zk-SNARKs_ for it's _shielded_ transactions. 
 
 [zk-SNARKs](privacy/zk-snarks-vs-zk-starks.md) are a special type of _Zero-Knowledge Proofs_, namely **Zero-Knowledge Succinct Non-interactive Arguments of Knowledge**.
 
@@ -121,15 +121,8 @@ For example, you could prove to an entity that you are of a certain age without 
 - With non-interactive proofs, the prover can construct the proof entirely on his own without the need for communication in the process. This proof can be written to the blockchain to be verified at any time.
 - **_Arguments of knowledge_**: describes the proof being computationally sound, i.e. no adversary can construct a false proof even if he has access to huge computational resources.
 
-To use _private transactions_ with Horizen, you will just use a different _address type_.
+Since the succesful votes on [ZenIP 42204](https://github.com/HorizenOfficial/ZenIPs/blob/master/zenip-42204.md) and [ZenIP 42207](https://github.com/HorizenOfficial/ZenIPs/blob/master/zenip-42207.md), _private transactions_ are no longer available on  the Horizen ecosystem.
 
-In your wallet, you can either generate **t-Addresses** (_transparent Addresses_) or **z-Addresses** (_shielded Addresses_). 
-
-- When you send funds to a _z-Address,_ the amount and sender are recorded on the blockchain, but not the receiving address.
-
-- If you transact between **two** z-Addresses, no information about the transaction gets publicly recorded - neither the sender, receiver nor the amount. 
-
-If you want to try this feature, you can download our flagship app [Sphere by Horizen](https://www.horizen.io/spherebyhorizen/). Make sure to activate **full mode** in the settings otherwise, you won't be able to generate _z-Addresses_.
 
 ## Summary - Private Transactions on the Blockchain
 
@@ -137,4 +130,4 @@ There are many ways to reclaim your privacy on a public blockchain. The approach
 
 Ring Signatures and Zero-Knowledge Proofs are more advanced concepts that actually allow you to transact entirely private, even on fully open and public blockchains. 
 
-Horizen offers what we call _selective privacy_ - depending on what address type you use, you can decide if you want to transact _transparently_ or _privately_.
+

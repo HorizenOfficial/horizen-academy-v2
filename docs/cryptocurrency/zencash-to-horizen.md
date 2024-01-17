@@ -71,7 +71,7 @@ Community developers were important during 2017. They added important tools, lik
 
 January 2018 marks an important date for ZenCash, now **Horizen**. The leadership team formalized for the first time during the _IOHK_ conference in _Lisbon, Portugal_. 
 
-Rob, Rosario, **Rowan** (Director of Business Development), **Gustavo** (User Experience Director) and **Alberto** (Director of R&D) gathered in the Airbnb they rented as a temporary office. 
+Rob, Rosario, **Rowan** (Director of Business Development), **Gustavo** (User Experience Director) and **Alberto** (Former Director of R&D) gathered in the Airbnb they rented as a temporary office. 
 
 They discussed and evaluated the performance of the volunteers who received stipends. They selected the most active and highest performing volunteers and offered them positions within the team. 
 
@@ -157,6 +157,6 @@ This brings us to the present. We have had our ups and downs in these last five 
 
 ### From a privacy coin to a privacy enabler network
 
-Horizen is transitioning from a privacy chain to an ecosystem for web3 applications thanks to Horizen EON. EON is Horizen's first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
+Horizen transitionned from a privacy chain to an ecosystem for web3 applications thanks to Horizen EON. EON is Horizen's first public proof-of-stake sidechain and a fully EVM-compatible smart contracting platform that allows developers to efficiently build and deploy dapps on Horizen, while fully benefiting from the Ethereum ecosystem.
 
-Horizen is investing a significant amount of product, technical, and business development resources into making EON a success. We believe that EON has the potential to supercharge the utility of ZEN, grow the popularity of the Horizen ecosystem, and reinvigorate the community that has been by our side since the launch of ZenCash
+Horizen is investing a significant amount of product, technical, and business development resources into making EON a success. We believe that EON has the potential to supercharge the utility of ZEN, grow the popularity of the Horizen ecosystem, and reinvigorate the community that has been by our side since the launch of ZenCash.
