@@ -82,7 +82,7 @@ About **liquidity pool** rug pulls, the scammer uses new DeFi products with new 
 
 _*In a liquidity pool, users make cryptocurrencies available, on a pair at a time, for other users to borrow, lend, or trade via the pool. Exchanges are facilitated by moving from an order book technology, where a buyer must necessarily have a seller in front of him, to an AMM, Automated Market Maker, where the seller or buyer is no longer required in front of him to conclude the exchange._
 
-In these rug puls, users are incentivized to provide liquidity on a pair, for which they usually have to exchange (here, we say “swap”) BTC for the newly created token. To conclude the scam, the malicious actors remove all BTC from the pool.
+In these rug pulls, users are incentivized to provide liquidity on a pair, for which they usually have to exchange (here, we say “swap”) BTC for the newly created token. To conclude the scam, the malicious actors remove all BTC from the pool.
 
 **How to protect yourself from rug pull?**
 - **DYOR**: read the white paper, have a look at the team (can you find the information online and not only on the website?), verify the tokenomics and token projections, number of token holders, number of DEX used to list the token, verify if the code is open-source, audited, where is the development of the product compared to the marketing made.  
