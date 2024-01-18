@@ -17,7 +17,7 @@ The internet was quickly successful because the mass adopters didn’t know what
 - [What is a private key and why it’s important](https://www.horizen.io/academy/public-key-cryptography-pkc/)
 - How to Do Your Own Research (DYOR) not to get scammed
 
-We recommend you read the Horizen Academy article about the private key, which will bring you lots of information about blockchain and crypto technologies, new articles are added often, so feel free to bookmark them and come back! 
+We recommend you read the Horizen Academy article about the private key, which will bring you lots of information about blockchain and crypto technologies. New articles are added often, so feel free to bookmark them and come back! 
 
 If you are here to learn about how to do your research and some tips to not get scammed, this article is for you. **Note that new scamming schemes can appear and that this list is not exhaustive**.
 # Basic Security Rules
