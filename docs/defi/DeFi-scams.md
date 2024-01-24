@@ -11,7 +11,7 @@ last_update:
 
 ---
 # Ode to DYOR
-One of the most important revolutions brought with blockchain and cryptocurrencies is ownership and banking freedom. But with great power comes responsibilities. This new era comes with education, the new paradigm shift; not knowing and relying totally on third parties means losing security and ownership and is not the goal of these new technologies.
+One of the most important revolutions brought with blockchain and cryptocurrencies is ownership and banking freedom. But with great power comes great responsibility. This new era comes with education, the new paradigm shift; not knowing and relying totally on third parties means losing security and ownership and is not the goal of these new technologies.
 
 The internet was quickly successful because the mass adopters didn’t know what they were dealing with. They didn’t have to learn TCP-IP protocols to use it. But blockchain and cryptos are slightly different. Of course, you don’t have to learn how to code a smart contract or a blockchain protocol to use it, but some things are more important than others with everything you have to know:
 - [What is a private key and why it’s important](https://www.horizen.io/academy/public-key-cryptography-pkc/)
