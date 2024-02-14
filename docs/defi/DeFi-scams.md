@@ -1,10 +1,10 @@
 ---
 
-sidebar_label: DeFi scams awarness
+sidebar_label: DeFi scams
 title: What are DeFi scams and how to protect yourself
 slug: /defi-scams/
-description: How to protect yourself in the Web worlds, a focus on DeFi and Web3
-image: https://www.horizen.io/academy/img/defi-scams/Horizen_Academy-meta-image-DEFI-scams.jpg
+description: How to protect yourself in the digital age, a focus on DeFi and Web3
+image: https://www.horizen.io/academy/img/Horizen_Academy-meta-image-DEFI-scams.jpg
 last_update:
   date: 1/14/2024
   author: Horizen Contributor
@@ -13,24 +13,24 @@ last_update:
 # Ode to DYOR
 One of the most important revolutions brought with blockchain and cryptocurrencies is ownership and banking freedom. But with great power comes responsibilities. This new era comes with education, the new paradigm shift; not knowing and relying totally on third parties means losing security and ownership and is not the goal of these new technologies.
 
-The internet was quickly successful because the mass adopters didn’t know what they were dealing with. They didn’t have to learn TCP-IP protocols to use it. But blockchain and cryptos are slightly different. Of course, you don’t have to learn how to code a smart contract or a blockchain protocol to use it, but some things are more important than others with everything you have to know:
+The internet was quickly successful because the mass adopters didn’t know what they were dealing with. They didn’t have to learn TCP-IP protocols to use it. But blockchain and crypto are slightly different. Of course, you don’t have to learn how to code a smart contract or a blockchain protocol to use it, but some things are more important than others with everything you have to know:
 - [What is a private key and why it’s important](https://www.horizen.io/academy/public-key-cryptography-pkc/);
-- How to Do Your Own Research (DYOR) not to get scammed.
+- How to Do Your Own Research (DYOR) to not get scammed.
 
-We recommend you read the Horizen Academy article about the private key, which will bring you lots of information about blockchain and crypto technologies, new articles are added often, so feel free to bookmark them and come back! 
+We recommend you read the Horizen Academy article about private keys, which will bring you lots of information about blockchain and crypto technologies, new articles are added often, so feel free to bookmark them and come back! 
 
-If you are here to learn about how to do your research and some tips to not get scammed, this article is for you. **Note that new scamming schemes can appear and that this list is not exhaustive**.
+If you are here to learn about how to do your research and some tips to not get scammed, this article is for you. **Note that new scam attack vectors can appear and that this list is not exhaustive**.
 # Basic Security Rules
 
 These basic rules to protect yourself can apply to all Web 1 to Web 3 and would still be available up to Web 10. 
  
-- **Don’t trust anyone**; always verify the info by yourself. Check the official sources for built-in applications, software, wallets, dapps, or smart contracts;
+- **Don’t trust anyone**; always verify the info yourself. Check the official sources for built-in applications, software, wallets, dapps, or smart contracts;
 - Protecting yourself means protecting **your online identity**. We recommend you look at this article on the Horizen Academy to learn more about [protecting your digital privacy](https://www.horizen.io/academy/digital-privacy/) (2FA, browsers, virtual phone numbers, etc.);
 - **Use multiple MetaMask/web wallet accounts** connected to your browsers. If you want to participate in airdrops/tests, do it from a wallet with few cryptocurrencies. You can use them on different browsers and even different computers. One browser/computer will be reserved for more serious activities and the other for testing. It is the same as credit card payments on the Internet, for these purchases, it is recommended to use single-use cards, available in many neo-banks;
 - **Keep your private keys in a safe place**, do not copy/save them on your computer, and **never share them with anyone**;
 - **Learn**. You invest in cryptocurrencies and support some projects; **you must know what you deal with**. [The Horizen Academy](https://www.horizen.io/academy/) is a great tool to develop your knowledge, and it’s free! So use it as much as you need, get curious, and stay updated.
 - **Multiply the learning/media sources**. If you see news somewhere, check on a second article that deals with the same information.
-- Last but not least: **in investment, always invest what you can afford to lose**: even an audited project (even big audit companies!) can have non-spotted loopholes in its code.
+- Last but not least: **with investments, always invest what you can afford to lose**: even an audited project (even big audit companies!) can have non-spotted loopholes in its code.
 
 ![safety basic rules](/img/defi-scams/ZBF_Academy_scam_article_safety-basic-rules.jpg)
 
@@ -50,7 +50,7 @@ The user, or the third-party owning information on the user, thinks they are in 
 - If you receive an email/call asking you to update your data, **go to the website** in question from your browser, not the links in the email. **If you have data to update, you will be notified on your account on the website in question**;  
 - Check the sender's email address carefully. If the brand name is misspelled or redirected after numbers and letters; it’s a fake one;
 - Always look at the website address to be sure that you are on a good website: **look for typos**, https://, and extended domain names;
-- **A support service will never DM you first. If someone comes to help you in DM, it’s 99% sure it’s a scam**;
+- **A support service will never DM you first. If someone comes to help you in DM, it’s a 99% chance it’s a scam**;
 - Always check the links from official sources, such as the website or investor’s decks;
 - In doubt, ask the support service on the official website/ social media.
 
@@ -84,7 +84,7 @@ _*In a liquidity pool, users make cryptocurrencies available, on a pair at a tim
 
 In these rug puls, users are incentivized to provide liquidity on a pair, for which they usually have to exchange (here, we say “swap”) BTC for the newly created token. To conclude the scam, the malicious actors remove all BTC from the pool.
 
-**How to protect yourself from rug pull?**
+**How to protect yourself from a rug pull?**
 - **DYOR**: read the white paper, have a look at the team (can you find the information online and not only on the website?), verify the tokenomics and token projections, number of token holders, number of DEX used to list the token, verify if the code is open-source, audited, where is the development of the product compared to the marketing made.  
 - **Hear the communities**: go on social media, and talk to developers and other community members to know what they think about the project
 
@@ -108,9 +108,9 @@ A common example is the **Elon scam**, where a fake Elon Musk asks you to send s
 
 ![airdrop scams](/img/defi-scams/ZBF_Academy_scam_article_airdrop-scams.jpg)
 
-## Pumps and Dumps
+## Pump and Dumps
 
-Pumps and dumps are common and well-known thanks to meme tokens. The marketing around the token will be focused on creating a FOMO (fear of missing out) to buy the token, and when the price is high, having the team sell their tokens to make a large profit. **Note that it can happen in the crypto world and is not limited to DeFi protocols**.
+Pump and dumps are common and well-known thanks to meme tokens. The marketing around the token will be focused on creating a FOMO (fear of missing out) to buy the token, and when the price is high, having the team sell their tokens to make a large profit. **Note that it can happen in the crypto world and is not limited to DeFi protocols**.
 
 **How to protect yourself from pumps and dumps?**
 - What is the token based on? Is the team easy to reach? Is the community speaking seriously and not just inviting you to FOMO?
@@ -153,7 +153,7 @@ Example: [Balancer Hack](https://cointelegraph.com/news/defi-protocol-balancer-h
 # Focus on NFTs
 
 Non-Fungible Tokens are quite new in the Web3 ecosystem, and it’s easier to get scammed by something new, shiny, and in the grip of scams. 
-NFTs, like other products, can be included in rug pulls, phishing attacks, pumps and dumps. Some scams are more common in the NFT world than in the common crypto space.
+NFTs, like other products, can be included in rug pulls, phishing attacks, pump and dumps. Some scams are more common in the NFT world than in the common crypto space.
 
 ## Bidding scams
 Bidding scams happen when you try to sell your NFTs on the secondary market. 
@@ -163,8 +163,8 @@ The malicious actor bids on your NFT but changes the cryptocurrency used without
 
 Always look at the cryptocurrency used and don’t accept an offer if this one doesn’t fill your needs.
 
-## Counterfeits NFTs
-Some scammers steal other NFT artists' creations. When you will want to sell the NFT, the price may drop a lot if it’s noticed
+## Counterfeit NFTs
+Some scammers steal other NFT artists' creations. When you want to sell the NFT, the price may drop a lot if it’s noticed
 
 **How to avoid plagiarized NFTs?**
 
@@ -184,10 +184,10 @@ To avoid this kind of scammy DMs, protect yourself on social media by disabling 
 ![Discord Safety](/img/defi-scams/Defi-scams-Privacy&Safety-Discord.png)
 
 ## Paid Google Ads Phishing
-**Google Ad scam** is a type of fraud that involves creating fake ads on Google's advertising platform, Google Ads. These scams include creating fake websites or businesses that appear legitimate, but are designed to steal account credentials or other important information.
+**Google Ad scam** is a type of fraud that involves creating fake ads on Google's advertising platform, Google Ads. These scams include creating fake websites or businesses that appear legitimate but are designed to steal account credentials or other important information.
 
 **How to avoid Google Ad scam?**
-- Use a browser that hides the Google Ad from Soogle search results;
+- Use a browser that hides the Google Ad from Google search results;
 - Check URLs for look-alike and typosquatting sites. Verify that it's the brand's legitimate domain.
 - The domain in the ad may look correct, but once you open it, you may be redirected to a lookalike domain. - Double-check the domain once you are on the site.
 - Do not use Google Ad links within search results; only click on actual search results.
@@ -200,4 +200,4 @@ The URLs above obviously do not lead to the official Trezor website, but these s
 
 # Conclusion
 
-The internet would be a safer place today with way fewer people scammed if education followed the mass adoption. We have to learn from our experiences, and these experiences lead us to make sure that the end-user understands what he deals with when he enters the crypto world to ride it safely. We hope this guide helped you understand more about the risks and made you want to learn more.
+The internet would be a safer place today with way fewer people scammed if education followed the mass adoption. We have to learn from our experiences, and these experiences lead us to make sure that the end-user understands what he deals with when he enters the crypto world to ride it safely. We hope this guide helped you to understand more about the risks in the digital age and made you want to continue learning more on this subject.
