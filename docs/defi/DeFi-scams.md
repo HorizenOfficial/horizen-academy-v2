@@ -177,11 +177,11 @@ Make sure you are buying from a trusted seller. Get your links from official sou
 
 Invitations in DM to participate in a pump. Even if the person who comes in DM tells you they are honest, 99% aren’t. **The best answer is to report them and block them**.
 
-![DM scam](/img/defi-scams/DeFi-scams-DM.png)
+<img src="/img/defi-scams/DeFi-scams-DM.png" alt="DM scams" width="400"/>
 
 To avoid this kind of scammy DMs, protect yourself on social media by disabling the possibility of sending you DMs.
 
-![Discord Safety](/img/defi-scams/Defi-scams-Privacy&Safety-Discord.png)
+<img src="/img/defi-scams/Defi-scams-Privacy&Safety-Discord.png" alt="Discord Safety" width="400"/>
 
 ## Paid Google Ads Phishing
 **Google Ad scam** is a type of fraud that involves creating fake ads on Google's advertising platform, Google Ads. These scams include creating fake websites or businesses that appear legitimate but are designed to steal account credentials or other important information.
@@ -194,7 +194,6 @@ To avoid this kind of scammy DMs, protect yourself on social media by disabling 
 
 Example with Trezor:
 
-![Trezor example](/img/defi-scams/DeFi-scams-Trezor.png)
 <img src="/img/defi-scams/DeFi-scams-Trezor.png" alt="Trezor example" width="400"/>
 
 The URLs above obviously do not lead to the official Trezor website, but these scams can be harder to detect. For example, they may use domains like "biṇaṇce.com". You may not have noticed this initially, but it uses an "ṇ", a Latin character, instead of an "n".
