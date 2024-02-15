@@ -11,9 +11,9 @@ last_update:
 
 ---
 # Ode to DYOR
-One of the most important revolutions brought with blockchain and cryptocurrencies is ownership and banking freedom. But with great power comes responsibilities. This new era comes with education, the new paradigm shift; not knowing and relying totally on third parties means losing security and ownership and is not the goal of these new technologies.
+One of the most important revolutions brought with blockchain and cryptocurrencies is ownership and banking freedom. But with great power comes great responsibilities. This new era comes with education, the new paradigm shift; not knowing and relying totally on third parties means losing security and ownership and is not the goal of these new technologies.
 
-The internet was quickly successful because the mass adopters didn’t know what they were dealing with. They didn’t have to learn TCP-IP protocols to use it. But blockchain and crypto are slightly different. Of course, you don’t have to learn how to code a smart contract or a blockchain protocol to use it, but some things are more important than others with everything you have to know:
+The internet was quickly successful because the mass adopters didn’t know what they were dealing with. They didn’t have to learn TCP-IP protocols to use it. But blockchain and cryptos is slightly different. Of course, you don’t have to learn how to code a smart contract or a blockchain protocol to use it, but some things are more important than others with everything you have to know:
 - [What is a private key and why it’s important](https://www.horizen.io/academy/public-key-cryptography-pkc/);
 - How to Do Your Own Research (DYOR) to not get scammed.
 
@@ -82,7 +82,7 @@ About **liquidity pool** rug pulls, the scammer uses new DeFi products with new 
 
 _*In a liquidity pool, users make cryptocurrencies available, on a pair at a time, for other users to borrow, lend, or trade via the pool. Exchanges are facilitated by moving from an order book technology, where a buyer must necessarily have a seller in front of him, to an AMM, Automated Market Maker, where the seller or buyer is no longer required in front of him to conclude the exchange._
 
-In these rug puls, users are incentivized to provide liquidity on a pair, for which they usually have to exchange (here, we say “swap”) BTC for the newly created token. To conclude the scam, the malicious actors remove all BTC from the pool.
+In these rug pulls, users are incentivized to provide liquidity on a pair, for which they usually have to exchange (here, we say “swap”) BTC for the newly created token. To conclude the scam, the malicious actors remove all BTC from the pool.
 
 **How to protect yourself from a rug pull?**
 - **DYOR**: read the white paper, have a look at the team (can you find the information online and not only on the website?), verify the tokenomics and token projections, number of token holders, number of DEX used to list the token, verify if the code is open-source, audited, where is the development of the product compared to the marketing made.  
