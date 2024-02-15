@@ -195,6 +195,7 @@ To avoid this kind of scammy DMs, protect yourself on social media by disabling 
 Example with Trezor:
 
 ![Trezor example](/img/defi-scams/DeFi-scams-Trezor.png)
+<img src="/img/defi-scams/DeFi-scams-Trezor.png" alt="Trezor example" width="400"/>
 
 The URLs above obviously do not lead to the official Trezor website, but these scams can be harder to detect. For example, they may use domains like "biṇaṇce.com". You may not have noticed this initially, but it uses an "ṇ", a Latin character, instead of an "n".
 
