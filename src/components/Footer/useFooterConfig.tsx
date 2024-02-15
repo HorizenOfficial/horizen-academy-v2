@@ -66,10 +66,6 @@ const useFooterConfig = (): IFooterConfig => {
                             url: "https://www.horizen.io/what-is-horizen/",
                         },
                         {
-                            title: "Team",
-                            url: "https://www.horizen.io/team/",
-                        },
-                        {
                             title: "Roadmap",
                             url: "https://www.horizen.io/roadmap/",
                         },
