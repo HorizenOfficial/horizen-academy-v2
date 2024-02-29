@@ -1,7 +1,7 @@
 ---
 
 sidebar_label: Cross-Chain Swaps
-title: Cross-Chain Swaps: Revolutionizing Blockchain Interoperability
+title: "Cross-Chain Swaps: Revolutionizing Blockchain Interoperability"
 slug: /cross-chain-swaps/
 description: Whats are Cross-Chain swaps and how they are functionning
 image: Horizen_Academy-meta-cross-chain-swaps.jpg
