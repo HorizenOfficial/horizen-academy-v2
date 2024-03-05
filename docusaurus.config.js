@@ -11,6 +11,9 @@ const config = {
     title: process.env.TITLE,
     url: process.env.URL,
     baseUrl: process.env.BASE_URL,
+    customFields: {
+        newsletterURL: process.env.NEWSLETTER_SIGNUP_WORKER_URL,
+    },
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.png",

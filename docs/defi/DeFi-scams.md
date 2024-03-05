@@ -4,7 +4,7 @@ sidebar_label: DeFi scams
 title: What are DeFi scams and how to protect yourself
 slug: /defi-scams/
 description: How to protect yourself in the digital age, a focus on DeFi and Web3
-image: https://www.horizen.io/academy/img/Horizen_Academy-meta-image-DEFI-scams.jpg
+image: https://www.horizen.io/academy/img/defi-scams/Horizen_Academy-meta-image-DEFI-scams.jpg
 last_update:
   date: 1/14/2024
   author: Horizen Contributor
