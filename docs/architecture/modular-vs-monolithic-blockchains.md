@@ -242,20 +242,6 @@ This gives traditional companies the flexibility to leverage public blockchain n
 
 These distinctions make Horizen one of the most flexible modular blockchain networks available today.
 
-### The Case for Horizen as Web3’s Modular Proof Verification Layer
-
-Modularization is a necessity for blockchains to evolve beyond their initial utility for storing and exchanging data in a decentralized manner. To deliver multi-purpose applications across a variety of industries while maintaining decentralization, blockchains can be broken up into multiple components that are optimized for transaction execution, consensus/security, and data storage. 
-
-This foundational shift is at the heart of Horizen's transformation into "New Horizen," marking a pivotal stride towards addressing the blockchain scalability trilemma with a modular approach that emphasizes proof verification and settlement efficiency.
-
-[New Horizen](https://horizen.discourse.group/t/zenip-42400-modernizing-horizen-technology-via-a-modular-proof-verification-layer/394/85) embodies Horizen's ambition to significantly reduce the security and verification costs associated with Layer 2 solutions and application-specific chains. By employing a Proof-of-Stake consensus mechanism and developing a flexible proof verification system, it aims to enhance interoperability and improve the overall efficiency of the blockchain ecosystem. With strategic updates like the introduction of an EVM-compatible sidechain, "New Horizen" is designed to carve out a unique position in the competitive Web3 landscape, focusing on modular blockchain solutions that respond to the increasing demands for scalability, efficiency, and adaptability.
-
-This initiative envisions alleviating the economic challenges facing Layer 2 solutions and application-specific chains by substantially reducing the costs associated with verifying proofs when settling to another blockchain to inherit their security. Starting with zero-knowledge rollups, the potential extends to a broader range of rollups, appchains, and even Web2 services, setting the stage for a more efficient, secure, and collaborative blockchain future.
-
-Furthermore, New Horizen tackles the composability issue in modular blockchain networks by offering rollups enhanced flexibility in selecting their settlement layers. This adaptability is crucial for the seamless integration and interaction of decentralized applications, facilitating the creation of complex, feature-rich applications, improving liquidity, enhancing user experiences, and encouraging the development of innovative financial instruments and services.
-
-In essence, "New Horizen" represents Horizen's strategic leap forward, establishing a scalable, secure, and flexible infrastructure for decentralized application development and underscoring its commitment to innovation and leadership in modular blockchain solutions.
-
 ### Ethereum 2.0
 
 - **Sidechain** = Shards/Shard Chains
@@ -294,7 +280,19 @@ The party responsible for submitting batches of transactions to the Ethereum net
 
 ZK-Rollups leverage _ZK-SNARKs_ to offer greater scalability to the Ethereum network by only requiring the Ethereum nodes to verify the proof of computation of batches of transactions rather than verifying each transaction on the mainchain.
 
-## The Case for Horizen as the Ultimate Modular Blockchain
+## The Case for Horizen as Web3’s Modular Proof Verification Layer
+
+Modularization is a necessity for blockchains to evolve beyond their initial utility for storing and exchanging data in a decentralized manner. To deliver multi-purpose applications across a variety of industries while maintaining decentralization, blockchains can be broken up into multiple components that are optimized for transaction execution, consensus/security, and data storage. 
+
+This foundational shift is at the heart of Horizen's transformation into "New Horizen," marking a pivotal stride towards addressing the blockchain scalability trilemma with a modular approach that emphasizes proof verification and settlement efficiency.
+
+[New Horizen](https://horizen.discourse.group/t/zenip-42400-modernizing-horizen-technology-via-a-modular-proof-verification-layer/394/85) embodies Horizen's ambition to significantly reduce the security and verification costs associated with Layer 2 solutions and application-specific chains. By employing a Proof-of-Stake consensus mechanism and developing a flexible proof verification system, it aims to enhance interoperability and improve the overall efficiency of the blockchain ecosystem. With strategic updates like the introduction of an EVM-compatible sidechain, "New Horizen" is designed to carve out a unique position in the competitive Web3 landscape, focusing on modular blockchain solutions that respond to the increasing demands for scalability, efficiency, and adaptability.
+
+This initiative envisions alleviating the economic challenges facing Layer 2 solutions and application-specific chains by substantially reducing the costs associated with verifying proofs when settling to another blockchain to inherit their security. Starting with zero-knowledge rollups, the potential extends to a broader range of rollups, appchains, and even Web2 services, setting the stage for a more efficient, secure, and collaborative blockchain future.
+
+Furthermore, New Horizen tackles the composability issue in modular blockchain networks by offering rollups enhanced flexibility in selecting their settlement layers. This adaptability is crucial for the seamless integration and interaction of decentralized applications, facilitating the creation of complex, feature-rich applications, improving liquidity, enhancing user experiences, and encouraging the development of innovative financial instruments and services.
+
+In essence, "New Horizen" represents Horizen's strategic leap forward, establishing a scalable, secure, and flexible infrastructure for decentralized application development and underscoring its commitment to innovation and leadership in modular blockchain solutions.
 
 Modularization is an absolute necessity for blockchains to evolve beyond their initial utility for storing and exchanging data in a decentralized manner.
 
