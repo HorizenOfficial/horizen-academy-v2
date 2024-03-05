@@ -1,7 +1,9 @@
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import { useMutation } from "@tanstack/react-query"
 import axios from "axios"
 import { useCallback, useState } from "react"
 import { TFormData } from "./Newsletter.types"
+import { NEWSLETTER_LIST_ID } from "./Newsletter.utils"
 
 enum NEWSLETTER_STATUS {
     INITIAL,
@@ -12,13 +14,17 @@ enum NEWSLETTER_STATUS {
 
 const useNewsletter = () => {
     const [status, setStatus] = useState(NEWSLETTER_STATUS.INITIAL)
+    const {
+        siteConfig: { customFields },
+    } = useDocusaurusContext()
 
     const sendDataMutation = useMutation({
         mutationFn: async ({ firstName, email }: TFormData) => {
-            await axios.post(
-                "https://hook.integromat.com/bfkxy01gjtmn6nbdo7qw6bcizmwp3q6e",
-                { name: firstName, email }
-            )
+            await axios.post(customFields.newsletterURL, {
+                first_name: firstName,
+                email,
+                listId: NEWSLETTER_LIST_ID,
+            })
         },
         onMutate() {
             setStatus(NEWSLETTER_STATUS.LOADING)
