@@ -301,7 +301,7 @@ The attacker spends coins in a transaction that is included in the honest chain.
 
 Once this sequence of blocks is broadcast and accepted by the other network participants he is in control of his coins again and can spend them a second time - a double spend.
 
-[Horizen](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf) has a mechanism in place to make it significantly harder to perform a 51% attack. We introduced a block acceptance delay in relation to the amount of time the block has been withheld from the public network. 
+[Horizen](/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf) has a mechanism in place to make it significantly harder to perform a 51% attack. We introduced a block acceptance delay in relation to the amount of time the block has been withheld from the public network. 
 
 _This can be best described with a short example:_
 

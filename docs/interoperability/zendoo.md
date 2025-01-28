@@ -59,7 +59,7 @@ A sidechain in Zendoo can run a different [consensus mechanism](consensus/consen
 
 A Horizen-compatible sidechain allows for great freedom. 
 
-As a first step, Horizen provides a reference implementation for a sidechain consensus protocol named **Latus**, based on a delegated Proof of Stake consensus mechanism inspired by [Ouroboros Praos](https://eprint.iacr.org/2016/889.pdf). A detailed description of the Latus construction is out of scope for this article. We refer the interested reader to our [Zendoo paper](https://www.horizen.io/assets/files/Horizen-Sidechain-Zendoo-A_zk-SNARK-Verifiable-Cross-Chain-Transfer-Protocol.pdf) to learn more.
+As a first step, Horizen provides a reference implementation for a sidechain consensus protocol named **Latus**, based on a delegated Proof of Stake consensus mechanism inspired by [Ouroboros Praos](https://eprint.iacr.org/2016/889.pdf). A detailed description of the Latus construction is out of scope for this article. We refer the interested reader to our [Zendoo paper](/assets/files/Horizen-Sidechain-Zendoo-A_zk-SNARK-Verifiable-Cross-Chain-Transfer-Protocol.pdf) to learn more.
 
 ### Modifications of the Mainchain Protocol
 

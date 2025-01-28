@@ -181,7 +181,7 @@ The most significant number of sidechain protocols are built on the Ethereum net
 - The _design_ is **symmetric**, requiring the mainchain to monitor all sidechains to verify backward transfers 
 - The _construction_ is **asymmetric**, and the mainchain relies on some sort of certifiers to verify and broadcast transactions from the sidechains to the mainchain.
 
-_A first iteration_ of [Horizen’s sidechain construction](https://www.horizen.io/assets/files/Horizen-Sidechains-Decoupled-Consensus-Between-Chains.pdf) also relied on certifiers to sign backward transfers batched in withdrawal certificates.
+_A first iteration_ of [Horizen’s sidechain construction](/assets/files/Horizen-Sidechains-Decoupled-Consensus-Between-Chains.pdf) also relied on certifiers to sign backward transfers batched in withdrawal certificates.
 
 ## Why Does Horizen Look at Sidechains?
 

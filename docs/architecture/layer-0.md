@@ -267,7 +267,7 @@ Being consensus agnostic ensures that the Horizen’s network can come as close 
 
 ### Underlying Security Model Built for Robustness
 
-The Horizen team has built a more secure version of the proof-of-work consensus mechanism for their mainchain network, leveraging what we call a ‘[penalty system for delayed block submission](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against [51% attacks](security/51-attack.md). 
+The Horizen team has built a more secure version of the proof-of-work consensus mechanism for their mainchain network, leveraging what we call a ‘[penalty system for delayed block submission](/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against [51% attacks](security/51-attack.md). 
 
 No matter the level of decentralization of a sidechain, once the sidechain transaction data is verified by the mainchain, it becomes _anchored_ to the same security model as its modified proof-of-work consensus mechanism.
 
