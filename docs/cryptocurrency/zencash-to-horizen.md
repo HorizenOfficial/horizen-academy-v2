@@ -135,7 +135,7 @@ The team began executing the mitigation procedures they had been working on to s
 
 We determined the best solution was to enhance the _longest chain rule_ (Nakamoto Consensus) and introduce a penalty for delayed block reporting. This makes it exponentially more difficult and costly for those looking to perform a 51% attack. 
 
-You can read our [Solution to 51% Attacks](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf) whitepaper.
+You can read our [Solution to 51% Attacks](/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf) whitepaper.
 
 ### Brand Expansion - from ZenCash to Horizen
 

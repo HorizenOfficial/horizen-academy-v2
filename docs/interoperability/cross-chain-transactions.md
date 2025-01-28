@@ -63,7 +63,7 @@ A _forward transfer_ moves assets from the mainchain to one of its sidechains. T
 
 It is the responsibility of sidechain nodes to monitor the mainchain for incoming transactions, and include them in a sidechain block.
 
-> "**Generally, the scenario looks as follows:** an MC to SC transfer is represented by a pair of transactions which we can consider as "sending" and "receiving". "Sending" is done on the mainchain side by means of the Forward Transfer [...] and "receiving" is done on the sidechain side by means of aggregated Forward Transfers transaction [...]. While "sending" destroys coins in the mainchain, "receiving" creates the corresponding number of coins in the sidechain." - [Zendoo protocol](https://www.horizen.io/assets/files/Horizen-Sidechain-Zendoo-A_zk-SNARK-Verifiable-Cross-Chain-Transfer-Protocol.pdf)
+> "**Generally, the scenario looks as follows:** an MC to SC transfer is represented by a pair of transactions which we can consider as "sending" and "receiving". "Sending" is done on the mainchain side by means of the Forward Transfer [...] and "receiving" is done on the sidechain side by means of aggregated Forward Transfers transaction [...]. While "sending" destroys coins in the mainchain, "receiving" creates the corresponding number of coins in the sidechain." - [Zendoo protocol](/assets/files/Horizen-Sidechain-Zendoo-A_zk-SNARK-Verifiable-Cross-Chain-Transfer-Protocol.pdf)
 
 ### Initiating a Forward Transfer on the Mainchain
 
@@ -100,7 +100,7 @@ The other **two** outputs are sending coins to a single sidechain (ledgerId 0x30
 
 ### Finalizing a Forward Transfer on the Sidechain
 
-A sidechain developer is free to come up with a mechanism to process incoming forward transfers. Since there is only one implementation of a sidechain consensus protocol at the time of writing, we will explain how [Latus](https://www.horizen.io/assets/files/Horizen-Sidechain-Zendoo-A_zk-SNARK-Verifiable-Cross-Chain-Transfer-Protocol.pdf) handles forward transfers.
+A sidechain developer is free to come up with a mechanism to process incoming forward transfers. Since there is only one implementation of a sidechain consensus protocol at the time of writing, we will explain how [Latus](/assets/files/Horizen-Sidechain-Zendoo-A_zk-SNARK-Verifiable-Cross-Chain-Transfer-Protocol.pdf) handles forward transfers.
 
 The overall idea is to group forward transfers from one or more mainchain blocks into a special **Forward Transfers Transaction** (FTTx). This transaction is similar to the coinbase transaction on the mainchain in that it does not include any chain-internal inputs. It can be considered a transaction minting coins on the sidechain. 
 

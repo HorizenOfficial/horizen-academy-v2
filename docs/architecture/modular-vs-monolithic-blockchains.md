@@ -232,7 +232,7 @@ As we have seen from the three previous examples, the common design amongst modu
 
 To perform these functions, the mainchains need to serve as the definitive point of truth.
 
-To achieve this, a mainchain needs to be highly secure, which is why Horizen is the only modular network that has chosen to stick with PoW and has actually designed a more secure version of the PoW consensus mechanism; leveraging a ‘[penalty system for delayed block submission](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against [51% attacks](security/51-attack.md).
+To achieve this, a mainchain needs to be highly secure, which is why Horizen is the only modular network that has chosen to stick with PoW and has actually designed a more secure version of the PoW consensus mechanism; leveraging a ‘[penalty system for delayed block submission](/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against [51% attacks](security/51-attack.md).
 
 The Horizen mainchain also consists of over 35,000 [nodes](https://www.horizen.io/zennodes/), making it the largest node network in the Web3 space.
 

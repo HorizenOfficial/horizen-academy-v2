@@ -75,7 +75,7 @@ As an investor, this could turn out to be a positive outcome if there is enough 
 
 ## How Does Horizen Prevent 51% Attacks?
 
-Horizen has designed a more secure version of the proof-of-work [consensus mechanism](consensus/consensus-mechanisms.md), leveraging what we call a ‘[penalty system for delayed block submission](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against 51% attacks.
+Horizen has designed a more secure version of the proof-of-work [consensus mechanism](consensus/consensus-mechanisms.md), leveraging what we call a ‘[penalty system for delayed block submission](/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf)’ to enhance protection against 51% attacks.
 
 Under the original _Nakamoto Consensus_ algorithm, it is possible to privately mine new blocks in a parallel forked chain at a faster rate than the public chain and for an indefinite period of time.
 

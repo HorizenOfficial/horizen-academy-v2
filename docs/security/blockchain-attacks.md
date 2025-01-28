@@ -84,7 +84,7 @@ _This has happened to many smaller blockchains in the past._
 
 In fact, Horizen suffered from a 51% attack in early _June 2018_. We immediately started to work on a solution to mitigate the risk of a 51% attack on smaller blockchains that are not secured by as much computing power as for example the [Bitcoin](cryptocurrency/bitcoin-glossary.md) blockchain.
 
-We came up with a solution that penalizes [delayed block submissions](https://www.horizen.io/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf). There is no legitimate reason for a miner to broadcast several blocks to the network at once. 
+We came up with a solution that penalizes [delayed block submissions](/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-Horizen.pdf). There is no legitimate reason for a miner to broadcast several blocks to the network at once. 
 
 Our protection mechanism makes these attacks very costly. 
 
