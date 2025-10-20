@@ -1,3 +1,19 @@
+> ⚠️ **Repository Archived**
+
+---
+
+### 🚫 Deprecated — No Longer Maintained
+
+This repository has been **archived** and is **no longer actively maintained**.
+
+-   ❌ No further updates, issues, or pull requests will be accepted.
+-   📦 The code remains available for **reference purposes only**.
+-   ⚠️ **Use at your own discretion.**
+
+---
+
+**Archived on:** _2025-10-15_
+
 # Horizen Academy V2
 
 This repository hosts the source code for the Horizen Academy website. You can view the deployed site at [horizen.io/academy](https://www.horizen.io/academy/)
