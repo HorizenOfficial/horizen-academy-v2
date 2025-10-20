@@ -289,7 +289,7 @@ It explains the rationale behind the proposed idea and elaborates on why certain
 
 The document needs to contain an abstract, a section about the motivation for the proposed change, a specification, as well as a reference implementation. The draft is publicized by creating a pull request against the [ZenIP GitHub repository](https://github.com/HorizenOfficial/ZenIPs).
 
-![zenip process](/img/blockchain-governance/zenip-process.jpg)
+![zenip process](/img/blockchain-governance/HZ_Academy_ZenIP_approval_process.jpg)
 
 _Editors act as the repository maintainers and there are currently three of them:_
 - One representing **the Zen Blockchain Foundation**
@@ -306,15 +306,13 @@ We invite you to check out the [ZenIP repository](https://github.com/HorizenOffi
 
 ### The Horizen Treasury DAO
 
-Horizen is dedicated to building a DAO as one of the first [sidechain](scalability/sidechains.md) applications. It will enable decentralized, community based governance, especially with regards to resource allocation. 
-
 Part of the Horizen block subsidy goes to the _Zen Blockchain Foundation_ treasury, which uses it to fund the development of the _protocol_, _sidechain implementation_, _marketing_ and _business development_.
 
 The basic model of the treasury system is described in [a paper](https://www.lancaster.ac.uk/staff/zhangb2/treasury.pdf) written by our research and development partner, Input Output Hong Kong (IOHK) in collaboration with Lancaster University.
 
 The idea of the Horizen DAO is to have stakeholders in the Horizen ecosystem vote on how Zen Blockchain Foundations treasury funds are spent. Anyone in the community can submit a proposal for consideration. Stakeholders can review the proposals and vote.
 
-There are many types of voting mechanisms and electoral systems to choose from. The Horizen DAO will use a form of _liquid democracy_ as the mechanism for voting. A thorough discussion of voting schemes would blow the scope of this article. 
+There are many types of voting mechanisms and electoral systems to choose from. The Horizen DAO will use a form of _liquid democracy_ as the mechanism for voting, meaning that users can delegate their voting power. A thorough discussion of voting schemes would blow the scope of this article. 
 
 Still, we would like to outline the core idea behind liquid democracy.
 
